@@ -6,3 +6,8 @@ DerivedData/
 .swiftpm/configuration/registries.json
 .swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
 .netrc
+__pycache__/
+*.pyc
+
+# Reference-only checkout (not committed)
+/References/WebKit/

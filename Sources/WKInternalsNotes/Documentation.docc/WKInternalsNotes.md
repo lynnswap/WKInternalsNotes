@@ -1,0 +1,67 @@
+# ``WKInternalsNotes``
+
+## Overview
+- Baseline WebKit revision: [`WebKit-7623.1.14.10.9`](https://github.com/WebKit/WebKit/tree/WebKit-7623.1.14.10.9)
+このモジュールの Swift-DocC カタログです。WebKit API（private headers）の調査メモと、既定値/挙動の追跡用ドキュメントをまとめます。
+
+## Topics
+
+### Headers
+- ``WKInternalsNotes/_WKInspectorPrivate``
+- ``WKInternalsNotes/_WKRemoteWebInspectorViewControllerPrivate``
+- ``WKInternalsNotes/_WKUserContentExtensionStorePrivate``
+- ``WKInternalsNotes/_WKUserContentFilterPrivate``
+- ``WKInternalsNotes/_WKWebExtensionCommandPrivate``
+- ``WKInternalsNotes/_WKWebExtensionContextPrivate``
+- ``WKInternalsNotes/_WKWebExtensionControllerConfigurationPrivate``
+- ``WKInternalsNotes/_WKWebExtensionControllerPrivate``
+- ``WKInternalsNotes/_WKWebExtensionMatchPatternPrivate``
+- ``WKInternalsNotes/_WKWebExtensionMessagePortPrivate``
+- ``WKInternalsNotes/_WKWebExtensionPrivate``
+- ``WKInternalsNotes/NSAttributedStringPrivate``
+- ``WKInternalsNotes/WKBackForwardListItemPrivate``
+- ``WKInternalsNotes/WKBackForwardListPrivate``
+- ``WKInternalsNotes/WKBrowsingContextControllerPrivate``
+- ``WKInternalsNotes/WKBrowsingContextGroupPrivate``
+- ``WKInternalsNotes/WKBrowsingContextLoadDelegatePrivate``
+- ``WKInternalsNotes/WKContentRuleListPrivate``
+- ``WKInternalsNotes/WKContentRuleListStorePrivate``
+- ``WKInternalsNotes/WKContentWorldPrivate``
+- ``WKInternalsNotes/WKContextMenuElementInfoPrivate``
+- ``WKInternalsNotes/WKDownloadDelegatePrivate``
+- ``WKInternalsNotes/WKErrorPrivate``
+- ``WKInternalsNotes/WKFrameInfoPrivate``
+- ``WKInternalsNotes/WKHistoryDelegatePrivate``
+- ``WKInternalsNotes/WKHTTPCookieStorePrivate``
+- ``WKInternalsNotes/WKMenuItemIdentifiersPrivate``
+- ``WKInternalsNotes/WKNavigationActionPrivate``
+- ``WKInternalsNotes/WKNavigationDelegatePrivate``
+- ``WKInternalsNotes/WKNavigationPrivate``
+- ``WKInternalsNotes/WKNavigationResponsePrivate``
+- ``WKInternalsNotes/WKOpenPanelParametersPrivate``
+- ``WKInternalsNotes/WKPreferencesPrivate``
+- ``WKInternalsNotes/WKProcessPoolPrivate``
+- ``WKInternalsNotes/WKSecurityOriginPrivate``
+- ``WKInternalsNotes/WKSnapshotConfigurationPrivate``
+- ``WKInternalsNotes/WKUIDelegatePrivate``
+- ``WKInternalsNotes/WKURLSchemeTaskPrivate``
+- ``WKInternalsNotes/WKUserContentControllerPrivate``
+- ``WKInternalsNotes/WKUserScriptPrivate``
+- ``WKInternalsNotes/WKViewPrivate``
+- ``WKInternalsNotes/WKWebExtensionActionPrivate``
+- ``WKInternalsNotes/WKWebExtensionCommandPrivate``
+- ``WKInternalsNotes/WKWebExtensionContextPrivate``
+- ``WKInternalsNotes/WKWebExtensionControllerConfigurationPrivate``
+- ``WKInternalsNotes/WKWebExtensionControllerDelegatePrivate``
+- ``WKInternalsNotes/WKWebExtensionControllerPrivate``
+- ``WKInternalsNotes/WKWebExtensionDataRecordPrivate``
+- ``WKInternalsNotes/WKWebExtensionMatchPatternPrivate``
+- ``WKInternalsNotes/WKWebExtensionMessagePortPrivate``
+- ``WKInternalsNotes/WKWebExtensionPermissionPrivate``
+- ``WKInternalsNotes/WKWebExtensionPrivate``
+- ``WKInternalsNotes/WKWebpagePreferencesPrivate``
+- ``WKInternalsNotes/WKWebsiteDataRecordPrivate``
+- ``WKInternalsNotes/WKWebsiteDataStorePrivate``
+- ``WKInternalsNotes/WKWebViewConfigurationPrivate``
+- ``WKInternalsNotes/WKWebViewPrivate``
+- ``WKInternalsNotes/WKWindowFeaturesPrivate``

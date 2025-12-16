@@ -1,0 +1,26 @@
+# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_scrollToTextFragmentMarkingEnabled``
+
+scroll-to-text-fragment の marking
+
+## Objective-C Declaration
+```objective-c
+@property (nonatomic, setter=_setScrollToTextFragmentMarkingEnabled:) BOOL _scrollToTextFragmentMarkingEnabled WK_API_AVAILABLE(macos(15.0), ios(18.0), visionos(2.0));
+```
+
+## Default Value
+iOS: `YES` / macOS: `YES`
+
+## Discussion
+- この API を使わない場合: 既定値のまま動作する。
+- `_scrollToTextFragmentMarkingEnabled = YES`: scroll-to-text-fragment の marking。
+- `_scrollToTextFragmentMarkingEnabled = NO`: scroll-to-text-fragment の marking（無効）。
+
+## References
+- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L178`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L178)
+- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L265`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L265)
+
+## Metadata
+| Key | Value |
+| --- | ----- |
+| Status | Draft |
+| Last updated | 2025-12-16 |
