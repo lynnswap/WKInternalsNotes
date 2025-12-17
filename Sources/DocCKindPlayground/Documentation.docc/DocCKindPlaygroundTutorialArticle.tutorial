@@ -1,0 +1,9 @@
+@Article(time: 1) {
+    @Intro(title: "Tutorial Article") {
+        `DocumentationNode.Kind.tutorialArticle` を確認するための最小ページ。
+    }
+
+    ## Landmark
+
+    この見出しは `landmark` として扱われます（`DocumentationNode.Kind.onPageLandmark`）。
+}

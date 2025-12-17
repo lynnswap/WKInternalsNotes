@@ -1,0 +1,18 @@
+@Tutorial(time: 1) {
+    @Intro(title: "Tutorial") {
+        `DocumentationNode.Kind.tutorial` を確認するための最小チュートリアル。
+    }
+
+    @Section(title: "Section") {
+        @ContentAndMedia {
+            `Section` は `landmark` として扱われます（`DocumentationNode.Kind.onPageLandmark`）。
+        }
+
+        @Steps {
+            @Step {
+                これは最小の Step。
+            }
+        }
+    }
+}
+

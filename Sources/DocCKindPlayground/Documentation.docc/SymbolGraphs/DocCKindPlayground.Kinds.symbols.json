@@ -1,0 +1,3089 @@
+{
+  "metadata": {
+    "formatVersion": {
+      "major": 0,
+      "minor": 6,
+      "patch": 0
+    },
+    "generator": "DocCKindPlayground DocC kind playground generator"
+  },
+  "module": {
+    "name": "DocCKindPlayground",
+    "platform": {
+      "architecture": "arm64",
+      "operatingSystem": {
+        "minimumVersion": {
+          "major": 10,
+          "minor": 13
+        },
+        "name": "macosx"
+      },
+      "vendor": "apple"
+    }
+  },
+  "relationships": [],
+  "symbols": [
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "kind"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "landingPage"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/landingPage"
+      },
+      "kind": {
+        "displayName": "Landing Page",
+        "identifier": "org.swift.docc.kind.landingPage"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "landingPage"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "kind"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "landingPage"
+          }
+        ],
+        "title": "landingPage"
+      },
+      "pathComponents": [
+        "landingPage"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "kind"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "collection"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/collection"
+      },
+      "kind": {
+        "displayName": "Collection",
+        "identifier": "org.swift.docc.kind.collection"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "collection"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "kind"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "collection"
+          }
+        ],
+        "title": "collection"
+      },
+      "pathComponents": [
+        "collection"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "kind"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "collectionGroup"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/collectionGroup"
+      },
+      "kind": {
+        "displayName": "CollectionGroup",
+        "identifier": "org.swift.docc.kind.collectionGroup"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "collectionGroup"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "kind"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "collectionGroup"
+          }
+        ],
+        "title": "collectionGroup"
+      },
+      "pathComponents": [
+        "collectionGroup"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "kind"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "root"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/root"
+      },
+      "kind": {
+        "displayName": "Documentation",
+        "identifier": "org.swift.docc.kind.root"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "root"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "kind"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "root"
+          }
+        ],
+        "title": "root"
+      },
+      "pathComponents": [
+        "root"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "module"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "module"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/module"
+      },
+      "kind": {
+        "displayName": "Module",
+        "identifier": "swift.module"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "module"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "module"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "module"
+          }
+        ],
+        "title": "module"
+      },
+      "pathComponents": [
+        "module"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "kind"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "article"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/article"
+      },
+      "kind": {
+        "displayName": "Article",
+        "identifier": "org.swift.docc.kind.article"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "article"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "kind"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "article"
+          }
+        ],
+        "title": "article"
+      },
+      "pathComponents": [
+        "article"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "kind"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "sampleCode"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/sampleCode"
+      },
+      "kind": {
+        "displayName": "Sample Code",
+        "identifier": "org.swift.docc.kind.sampleCode"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "sampleCode"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "kind"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "sampleCode"
+          }
+        ],
+        "title": "sampleCode"
+      },
+      "pathComponents": [
+        "sampleCode"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "kind"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "volume"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/volume"
+      },
+      "kind": {
+        "displayName": "Volume",
+        "identifier": "org.swift.docc.kind.technology.volume"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "volume (isPage=false)"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "kind"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "volume"
+          }
+        ],
+        "title": "volume (isPage=false)"
+      },
+      "pathComponents": [
+        "volume"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "kind"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "chapter"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/chapter"
+      },
+      "kind": {
+        "displayName": "Chapter",
+        "identifier": "org.swift.docc.kind.chapter"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "chapter (isPage=false)"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "kind"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "chapter"
+          }
+        ],
+        "title": "chapter (isPage=false)"
+      },
+      "pathComponents": [
+        "chapter"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "kind"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "tutorial"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/tutorial"
+      },
+      "kind": {
+        "displayName": "Tutorial",
+        "identifier": "org.swift.docc.kind.tutorial"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "tutorial"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "kind"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "tutorial"
+          }
+        ],
+        "title": "tutorial"
+      },
+      "pathComponents": [
+        "tutorial"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "kind"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "tutorialArticle"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/tutorialArticle"
+      },
+      "kind": {
+        "displayName": "Article",
+        "identifier": "org.swift.docc.kind.tutorialarticle"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "tutorialArticle"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "kind"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "tutorialArticle"
+          }
+        ],
+        "title": "tutorialArticle"
+      },
+      "pathComponents": [
+        "tutorialArticle"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "kind"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "onPageLandmark"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/onPageLandmark"
+      },
+      "kind": {
+        "displayName": "Landmark",
+        "identifier": "org.swift.docc.kind.landmark"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "onPageLandmark (isPage=false)"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "kind"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "onPageLandmark"
+          }
+        ],
+        "title": "onPageLandmark (isPage=false)"
+      },
+      "pathComponents": [
+        "onPageLandmark"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "class"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "class"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/class"
+      },
+      "kind": {
+        "displayName": "Class",
+        "identifier": "swift.class"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "class"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "class"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "class"
+          }
+        ],
+        "title": "class"
+      },
+      "pathComponents": [
+        "class"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "struct"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "structure"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/structure"
+      },
+      "kind": {
+        "displayName": "Structure",
+        "identifier": "swift.struct"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "structure"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "struct"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "structure"
+          }
+        ],
+        "title": "structure"
+      },
+      "pathComponents": [
+        "structure"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "enum"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "enumeration"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/enumeration"
+      },
+      "kind": {
+        "displayName": "Enumeration",
+        "identifier": "swift.enum"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "enumeration"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "enum"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "enumeration"
+          }
+        ],
+        "title": "enumeration"
+      },
+      "pathComponents": [
+        "enumeration"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "protocol"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "protocol"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/protocol"
+      },
+      "kind": {
+        "displayName": "Protocol",
+        "identifier": "swift.protocol"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "protocol"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "protocol"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "protocol"
+          }
+        ],
+        "title": "protocol"
+      },
+      "pathComponents": [
+        "protocol"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "kind"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "tutorialTableOfContents"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/tutorialTableOfContents"
+      },
+      "kind": {
+        "displayName": "Tutorial Table of Contents",
+        "identifier": "org.swift.docc.kind.technology"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "tutorialTableOfContents"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "kind"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "tutorialTableOfContents"
+          }
+        ],
+        "title": "tutorialTableOfContents"
+      },
+      "pathComponents": [
+        "tutorialTableOfContents"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "extension"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "extension"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/extension"
+      },
+      "kind": {
+        "displayName": "Extension",
+        "identifier": "swift.extension"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "extension"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "extension"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "extension"
+          }
+        ],
+        "title": "extension"
+      },
+      "pathComponents": [
+        "extension"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "dictionary"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "dictionary"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/dictionary"
+      },
+      "kind": {
+        "displayName": "Dictionary",
+        "identifier": "swift.dictionary"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "dictionary"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "dictionary"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "dictionary"
+          }
+        ],
+        "title": "dictionary"
+      },
+      "pathComponents": [
+        "dictionary"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "kind"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "httpRequest"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/httpRequest"
+      },
+      "kind": {
+        "displayName": "HTTP Request",
+        "identifier": "swift.httpRequest"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "httpRequest"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "kind"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "httpRequest"
+          }
+        ],
+        "title": "httpRequest"
+      },
+      "pathComponents": [
+        "httpRequest"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "namespace"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "namespace"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/namespace"
+      },
+      "kind": {
+        "displayName": "Namespace",
+        "identifier": "swift.namespace"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "namespace"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "namespace"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "namespace"
+          }
+        ],
+        "title": "namespace"
+      },
+      "pathComponents": [
+        "namespace"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "let"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "localVariable"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/localVariable"
+      },
+      "kind": {
+        "displayName": "Local Variable",
+        "identifier": "swift.var"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "localVariable"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "let"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "localVariable"
+          }
+        ],
+        "title": "localVariable"
+      },
+      "pathComponents": [
+        "localVariable"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "let"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "globalVariable"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/globalVariable"
+      },
+      "kind": {
+        "displayName": "Global Variable",
+        "identifier": "swift.var"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "globalVariable"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "let"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "globalVariable"
+          }
+        ],
+        "title": "globalVariable"
+      },
+      "pathComponents": [
+        "globalVariable"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "typealias"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "typeAlias"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/typeAlias"
+      },
+      "kind": {
+        "displayName": "Type Alias",
+        "identifier": "swift.typealias"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "typeAlias"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "typealias"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "typeAlias"
+          }
+        ],
+        "title": "typeAlias"
+      },
+      "pathComponents": [
+        "typeAlias"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "typealias"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "typeDef"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/typeDef"
+      },
+      "kind": {
+        "displayName": "Type Definition",
+        "identifier": "swift.typealias"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "typeDef"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "typealias"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "typeDef"
+          }
+        ],
+        "title": "typeDef"
+      },
+      "pathComponents": [
+        "typeDef"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "static"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "keyword",
+          "spelling": "let"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "typeConstant"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/typeConstant"
+      },
+      "kind": {
+        "displayName": "Type Constant",
+        "identifier": "swift.type.property"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "typeConstant"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "static"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "keyword",
+            "spelling": "let"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "typeConstant"
+          }
+        ],
+        "title": "typeConstant"
+      },
+      "pathComponents": [
+        "typeConstant"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "associatedtype"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "associatedType"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/associatedType"
+      },
+      "kind": {
+        "displayName": "Associated Type",
+        "identifier": "swift.associatedtype"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "associatedType"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "associatedtype"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "associatedType"
+          }
+        ],
+        "title": "associatedType"
+      },
+      "pathComponents": [
+        "associatedType"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "func"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "function"
+        },
+        {
+          "kind": "text",
+          "spelling": "()"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/function"
+      },
+      "kind": {
+        "displayName": "Function",
+        "identifier": "swift.func"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "function"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "func"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "function"
+          },
+          {
+            "kind": "text",
+            "spelling": "()"
+          }
+        ],
+        "title": "function"
+      },
+      "pathComponents": [
+        "function"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "operator"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "operator"
+        },
+        {
+          "kind": "text",
+          "spelling": "()"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/operator"
+      },
+      "kind": {
+        "displayName": "Operator",
+        "identifier": "swift.func.op"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "operator"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "operator"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "operator"
+          },
+          {
+            "kind": "text",
+            "spelling": "()"
+          }
+        ],
+        "title": "operator"
+      },
+      "pathComponents": [
+        "operator"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "macro"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "macro"
+        },
+        {
+          "kind": "text",
+          "spelling": "()"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/macro"
+      },
+      "kind": {
+        "displayName": "Macro",
+        "identifier": "swift.macro"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "macro"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "macro"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "macro"
+          },
+          {
+            "kind": "text",
+            "spelling": "()"
+          }
+        ],
+        "title": "macro"
+      },
+      "pathComponents": [
+        "macro"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "union"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "union"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/union"
+      },
+      "kind": {
+        "displayName": "Union",
+        "identifier": "swift.union"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "union"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "union"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "union"
+          }
+        ],
+        "title": "union"
+      },
+      "pathComponents": [
+        "union"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "kind"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "dictionaryKey"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/dictionaryKey"
+      },
+      "kind": {
+        "displayName": "Dictionary Key",
+        "identifier": "swift.dictionaryKey"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "dictionaryKey (isPage=false)"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "kind"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "dictionaryKey"
+          }
+        ],
+        "title": "dictionaryKey (isPage=false)"
+      },
+      "pathComponents": [
+        "dictionaryKey"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "kind"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "enumerationCase"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/enumerationCase"
+      },
+      "kind": {
+        "displayName": "Enumeration Case",
+        "identifier": "swift.enum.case"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "enumerationCase"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "kind"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "enumerationCase"
+          }
+        ],
+        "title": "enumerationCase"
+      },
+      "pathComponents": [
+        "enumerationCase"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "kind"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "httpBody"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/httpBody"
+      },
+      "kind": {
+        "displayName": "HTTP Body",
+        "identifier": "swift.httpBody"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "httpBody (isPage=false)"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "kind"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "httpBody"
+          }
+        ],
+        "title": "httpBody (isPage=false)"
+      },
+      "pathComponents": [
+        "httpBody"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "kind"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "httpParameter"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/httpParameter"
+      },
+      "kind": {
+        "displayName": "HTTP Parameter",
+        "identifier": "swift.httpParameter"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "httpParameter (isPage=false)"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "kind"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "httpParameter"
+          }
+        ],
+        "title": "httpParameter (isPage=false)"
+      },
+      "pathComponents": [
+        "httpParameter"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "kind"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "httpResponse"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/httpResponse"
+      },
+      "kind": {
+        "displayName": "HTTP Response",
+        "identifier": "swift.httpResponse"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "httpResponse (isPage=false)"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "kind"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "httpResponse"
+          }
+        ],
+        "title": "httpResponse (isPage=false)"
+      },
+      "pathComponents": [
+        "httpResponse"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "init"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "initializer"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/initializer"
+      },
+      "kind": {
+        "displayName": "Initializer",
+        "identifier": "swift.init"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "initializer"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "init"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "initializer"
+          }
+        ],
+        "title": "initializer"
+      },
+      "pathComponents": [
+        "initializer"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "deinit"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "deinitializer"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/deinitializer"
+      },
+      "kind": {
+        "displayName": "Deinitializer",
+        "identifier": "swift.deinit"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "deinitializer"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "deinit"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "deinitializer"
+          }
+        ],
+        "title": "deinitializer"
+      },
+      "pathComponents": [
+        "deinitializer"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "func"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "instanceMethod"
+        },
+        {
+          "kind": "text",
+          "spelling": "()"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/instanceMethod"
+      },
+      "kind": {
+        "displayName": "Instance Method",
+        "identifier": "swift.method"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "instanceMethod"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "func"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "instanceMethod"
+          },
+          {
+            "kind": "text",
+            "spelling": "()"
+          }
+        ],
+        "title": "instanceMethod"
+      },
+      "pathComponents": [
+        "instanceMethod"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "var"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "instanceProperty"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/instanceProperty"
+      },
+      "kind": {
+        "displayName": "Instance Property",
+        "identifier": "swift.property"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "instanceProperty"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "var"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "instanceProperty"
+          }
+        ],
+        "title": "instanceProperty"
+      },
+      "pathComponents": [
+        "instanceProperty"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "subscript"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "instanceSubscript"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/instanceSubscript"
+      },
+      "kind": {
+        "displayName": "Subscript",
+        "identifier": "swift.subscript"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "instanceSubscript"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "subscript"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "instanceSubscript"
+          }
+        ],
+        "title": "instanceSubscript"
+      },
+      "pathComponents": [
+        "instanceSubscript"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "var"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "instanceVariable"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/instanceVariable"
+      },
+      "kind": {
+        "displayName": "Instance Variable",
+        "identifier": "swift.ivar"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "instanceVariable"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "var"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "instanceVariable"
+          }
+        ],
+        "title": "instanceVariable"
+      },
+      "pathComponents": [
+        "instanceVariable"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "static"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "keyword",
+          "spelling": "func"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "typeMethod"
+        },
+        {
+          "kind": "text",
+          "spelling": "()"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/typeMethod"
+      },
+      "kind": {
+        "displayName": "Type Method",
+        "identifier": "swift.type.method"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "typeMethod"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "static"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "keyword",
+            "spelling": "func"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "typeMethod"
+          },
+          {
+            "kind": "text",
+            "spelling": "()"
+          }
+        ],
+        "title": "typeMethod"
+      },
+      "pathComponents": [
+        "typeMethod"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "static"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "keyword",
+          "spelling": "var"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "typeProperty"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/typeProperty"
+      },
+      "kind": {
+        "displayName": "Type Property",
+        "identifier": "swift.type.property"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "typeProperty"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "static"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "keyword",
+            "spelling": "var"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "typeProperty"
+          }
+        ],
+        "title": "typeProperty"
+      },
+      "pathComponents": [
+        "typeProperty"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "static"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "keyword",
+          "spelling": "subscript"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "typeSubscript"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/typeSubscript"
+      },
+      "kind": {
+        "displayName": "Type Subscript",
+        "identifier": "swift.type.subscript"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "typeSubscript"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "static"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "keyword",
+            "spelling": "subscript"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "typeSubscript"
+          }
+        ],
+        "title": "typeSubscript"
+      },
+      "pathComponents": [
+        "typeSubscript"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "kind"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "buildSetting"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/buildSetting"
+      },
+      "kind": {
+        "displayName": "Build Setting",
+        "identifier": "org.swift.docc.kind.buildSetting"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "buildSetting"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "kind"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "buildSetting"
+          }
+        ],
+        "title": "buildSetting"
+      },
+      "pathComponents": [
+        "buildSetting"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "kind"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "propertyListKey"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/propertyListKey"
+      },
+      "kind": {
+        "displayName": "Property List Key",
+        "identifier": "org.swift.docc.kind.propertyListKey"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "propertyListKey"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "kind"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "propertyListKey"
+          }
+        ],
+        "title": "propertyListKey"
+      },
+      "pathComponents": [
+        "propertyListKey"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "kind"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "extendedModule"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/extendedModule"
+      },
+      "kind": {
+        "displayName": "Extended Module",
+        "identifier": "swift.extendedModule"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "extendedModule"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "kind"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "extendedModule"
+          }
+        ],
+        "title": "extendedModule"
+      },
+      "pathComponents": [
+        "extendedModule"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "kind"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "extendedStructure"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/extendedStructure"
+      },
+      "kind": {
+        "displayName": "Extended Structure",
+        "identifier": "swift.extendedStructure"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "extendedStructure"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "kind"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "extendedStructure"
+          }
+        ],
+        "title": "extendedStructure"
+      },
+      "pathComponents": [
+        "extendedStructure"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "kind"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "extendedClass"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/extendedClass"
+      },
+      "kind": {
+        "displayName": "Extended Class",
+        "identifier": "swift.extendedClass"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "extendedClass"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "kind"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "extendedClass"
+          }
+        ],
+        "title": "extendedClass"
+      },
+      "pathComponents": [
+        "extendedClass"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "kind"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "extendedEnumeration"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/extendedEnumeration"
+      },
+      "kind": {
+        "displayName": "Extended Enumeration",
+        "identifier": "swift.extendedEnumeration"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "extendedEnumeration"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "kind"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "extendedEnumeration"
+          }
+        ],
+        "title": "extendedEnumeration"
+      },
+      "pathComponents": [
+        "extendedEnumeration"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "kind"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "extendedProtocol"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/extendedProtocol"
+      },
+      "kind": {
+        "displayName": "Extended Protocol",
+        "identifier": "swift.extendedProtocol"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "extendedProtocol"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "kind"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "extendedProtocol"
+          }
+        ],
+        "title": "extendedProtocol"
+      },
+      "pathComponents": [
+        "extendedProtocol"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "kind"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "unknownExtendedType"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/unknownExtendedType"
+      },
+      "kind": {
+        "displayName": "Extended Type",
+        "identifier": "swift.unknownExtendedType"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "unknownExtendedType"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "kind"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "unknownExtendedType"
+          }
+        ],
+        "title": "unknownExtendedType"
+      },
+      "pathComponents": [
+        "unknownExtendedType"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "kind"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "keyword"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/keyword"
+      },
+      "kind": {
+        "displayName": "Keyword",
+        "identifier": "org.swift.docc.kind.keyword"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "keyword"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "kind"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "keyword"
+          }
+        ],
+        "title": "keyword"
+      },
+      "pathComponents": [
+        "keyword"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "kind"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "restAPI"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/restAPI"
+      },
+      "kind": {
+        "displayName": "Web Service Endpoint",
+        "identifier": "org.swift.docc.kind.restAPIRequest"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "restAPI"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "kind"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "restAPI"
+          }
+        ],
+        "title": "restAPI"
+      },
+      "pathComponents": [
+        "restAPI"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "kind"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "tag"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/tag"
+      },
+      "kind": {
+        "displayName": "Tag",
+        "identifier": "org.swift.docc.kind.tag"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "tag"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "kind"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "tag"
+          }
+        ],
+        "title": "tag"
+      },
+      "pathComponents": [
+        "tag"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "kind"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "propertyList"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/propertyList"
+      },
+      "kind": {
+        "displayName": "Property List",
+        "identifier": "org.swift.docc.kind.propertyList"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "propertyList"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "kind"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "propertyList"
+          }
+        ],
+        "title": "propertyList"
+      },
+      "pathComponents": [
+        "propertyList"
+      ]
+    },
+    {
+      "accessLevel": "public",
+      "declarationFragments": [
+        {
+          "kind": "keyword",
+          "spelling": "object"
+        },
+        {
+          "kind": "text",
+          "spelling": " "
+        },
+        {
+          "kind": "identifier",
+          "spelling": "object"
+        }
+      ],
+      "identifier": {
+        "interfaceLanguage": "swift",
+        "precise": "wkapi-kindplayground:DocCKindPlayground/object"
+      },
+      "kind": {
+        "displayName": "Object",
+        "identifier": "swift.dictionary"
+      },
+      "names": {
+        "navigator": [
+          {
+            "kind": "identifier",
+            "spelling": "object"
+          }
+        ],
+        "subHeading": [
+          {
+            "kind": "keyword",
+            "spelling": "object"
+          },
+          {
+            "kind": "text",
+            "spelling": " "
+          },
+          {
+            "kind": "identifier",
+            "spelling": "object"
+          }
+        ],
+        "title": "object"
+      },
+      "pathComponents": [
+        "object"
+      ]
+    }
+  ]
+}

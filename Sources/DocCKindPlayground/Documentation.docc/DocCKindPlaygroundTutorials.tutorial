@@ -1,0 +1,20 @@
+@Tutorials(name: "DocC Kind Playground") {
+    @Intro(title: "DocC Kind Playground") {
+        Tutorial 系の kind（`tutorialTableOfContents` / `volume` / `chapter` / `tutorial` / `tutorialArticle` / `landmark`）を生成するための最小構成。
+    }
+
+    @Volume(name: "Volume") {
+        Volume のノード（`DocumentationNode.Kind.volume`）を生成する。
+
+        @Image(source: "DocCKindPlayground.png", alt: "Placeholder")
+
+        @Chapter(name: "Chapter") {
+            Chapter のノード（`DocumentationNode.Kind.chapter`）を生成する。
+
+            @Image(source: "DocCKindPlayground.png", alt: "Placeholder")
+
+            @TutorialReference(tutorial: "doc:DocCKindPlaygroundTutorial")
+            @TutorialReference(tutorial: "doc:DocCKindPlaygroundTutorialArticle")
+        }
+    }
+}

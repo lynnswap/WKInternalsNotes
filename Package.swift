@@ -11,6 +11,10 @@ let package = Package(
             name: "WKInternalsNotes",
             targets: ["WKInternalsNotes"]
         ),
+        .library(
+            name: "DocCKindPlayground",
+            targets: ["DocCKindPlayground"]
+        ),
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-docc-plugin.git", from: "1.4.5"),
@@ -20,6 +24,9 @@ let package = Package(
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "WKInternalsNotes"
+        ),
+        .target(
+            name: "DocCKindPlayground"
         ),
         .testTarget(
             name: "WKInternalsNotesTests",
