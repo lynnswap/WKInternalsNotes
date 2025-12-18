@@ -1,7 +1,5 @@
 # ``WKInternalsNotes/WKWebpagePreferences``
 
-WKWebpagePreferences の Objective-C private/testing API をカテゴリ別に整理した一覧。
-
 ## Topics
 
 ### WKPrivate

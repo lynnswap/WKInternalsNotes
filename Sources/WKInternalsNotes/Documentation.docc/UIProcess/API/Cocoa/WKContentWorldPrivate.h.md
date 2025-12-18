@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentWorld``
 
-WKContentWorld の Objective-C private/testing API をカテゴリ別に整理した一覧。
+WKContentWorld は、WKWebView に表示されるコンテンツとのやり取りを、互いに干渉しない複数の役割（world）に分離するためのオブジェクトです。
 
 ## Topics
 

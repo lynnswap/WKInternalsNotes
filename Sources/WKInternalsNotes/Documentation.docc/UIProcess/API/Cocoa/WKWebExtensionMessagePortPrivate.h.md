@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKWebExtensionMessagePort``
 
-WKWebExtensionMessagePort の Objective-C private/testing API をカテゴリ別に整理した一覧。
+WKWebExtensionMessagePort は、Web 拡張とのメッセージベースの通信を管理するオブジェクトです。
 
 ## Topics
 

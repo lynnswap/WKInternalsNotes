@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKWebExtensionController``
 
-WKWebExtensionController の Objective-C private/testing API をカテゴリ別に整理した一覧。
+WKWebExtensionController は、ロードされた extension context の集合を管理するオブジェクトです。
 
 ## Topics
 

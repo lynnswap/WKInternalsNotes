@@ -29,6 +29,7 @@
     ```markdown
     # ``WKInternalsNotes/<Type>``
     ```
+  - H1 直下の Summary（Abstract）は、WebKit の公式ヘッダに “型そのもの” の説明がある場合のみ、その日本語訳を書く。なければ空でよい（プレースホルダーは書かない）。
   - `## Topics` は `<Category>` でグルーピングする（例: `### WKPrivate`）。
 - Member pages（型メンバー=1エントリ=1ページ）:
   - 先頭は次の形式にする（DocC documentation extension）。

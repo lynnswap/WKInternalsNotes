@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKWebExtensionContext``
 
-WKWebExtensionContext の Objective-C private/testing API をカテゴリ別に整理した一覧。
+WKWebExtensionContext は、Web 拡張の実行時環境を表すオブジェクトです。
 
 ## Topics
 

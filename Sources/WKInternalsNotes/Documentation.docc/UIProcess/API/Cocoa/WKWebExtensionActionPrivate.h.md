@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKWebExtensionAction``
 
-WKWebExtensionAction の Objective-C private/testing API をカテゴリ別に整理した一覧。
+WKWebExtensionAction は、個々の Web 拡張の action のプロパティをカプセル化するオブジェクトです。
 
 ## Topics
 

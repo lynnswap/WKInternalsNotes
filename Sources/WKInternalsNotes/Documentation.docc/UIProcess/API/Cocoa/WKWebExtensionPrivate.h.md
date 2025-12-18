@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKWebExtension``
 
-WKWebExtension の Objective-C private/testing API をカテゴリ別に整理した一覧。
+WKWebExtension は、`manifest.json` で定義される Web 拡張のリソースをカプセル化するオブジェクトです。
 
 ## Topics
 

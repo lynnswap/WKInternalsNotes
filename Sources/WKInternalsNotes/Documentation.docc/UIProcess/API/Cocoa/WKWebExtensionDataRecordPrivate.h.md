@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKWebExtensionDataRecord``
 
-WKWebExtensionDataRecord の Objective-C private/testing API をカテゴリ別に整理した一覧。
+WKWebExtensionDataRecord は、特定の extension context に保存されたデータのレコードを表すオブジェクトです。
 
 ## Topics
 

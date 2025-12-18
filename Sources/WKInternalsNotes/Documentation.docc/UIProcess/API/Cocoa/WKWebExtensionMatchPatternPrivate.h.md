@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKWebExtensionMatchPattern``
 
-WKWebExtensionMatchPattern の Objective-C private/testing API をカテゴリ別に整理した一覧。
+WKWebExtensionMatchPattern は、URL のグループを指定する方法を表すオブジェクトです。
 
 ## Topics
 

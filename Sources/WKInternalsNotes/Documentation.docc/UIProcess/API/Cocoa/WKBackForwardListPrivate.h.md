@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKBackForwardList``
 
-WKBackForwardList の Objective-C private/testing API をカテゴリ別に整理した一覧。
+WKBackForwardList は、WebView で過去に訪問したページのリストで、戻る/進むで到達できる項目を保持します。
 
 ## Topics
 

@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKWebExtensionCommand``
 
-WKWebExtensionCommand の Objective-C private/testing API をカテゴリ別に整理した一覧。
+WKWebExtensionCommand は、個々の Web 拡張の command のプロパティをカプセル化するオブジェクトです。
 
 ## Topics
 

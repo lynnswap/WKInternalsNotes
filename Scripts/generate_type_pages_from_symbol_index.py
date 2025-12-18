@@ -8,7 +8,11 @@ This script reads:
 and generates documentation extension pages (type pages) that group members by Objective-C category:
   - Sources/WKInternalsNotes/Documentation.docc/UIProcess/API/Cocoa/<HeaderName>.h.md
 
-The output is intentionally minimal: a 1-line summary, Topics grouped by category, and a metadata table.
+The output is intentionally minimal: Topics grouped by category, and a metadata table.
+
+Type overviews (abstract) are intentionally omitted by default. Add them manually only when WebKit's
+official headers contain an appropriate description (then translate it into Japanese). Otherwise,
+keeping the overview blank is preferred over writing placeholders.
 """
 
 from __future__ import annotations
@@ -137,8 +141,6 @@ def _render_page(*, symbol: str, categories: dict[str, list[str]], revision: str
     today = date.today().isoformat()
     out: list[str] = []
     out.append(f"# ``{MODULE_NAME}/{symbol}``")
-    out.append("")
-    out.append(f"{symbol} の Objective-C private/testing API をカテゴリ別に整理した一覧。")
     out.append("")
     out.extend(_render_topics(symbol, categories))
     out.extend(_render_metadata(revision=revision, header_name=header_name, today=today))
