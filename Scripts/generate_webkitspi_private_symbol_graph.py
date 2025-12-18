@@ -79,6 +79,21 @@ SWIFT_PRECISE_TYPE_IDS: dict[str, str] = {
     "Float": "s:Sf",
 }
 
+OBJC_TO_SWIFT_BRIDGED_TYPE_NAMES: dict[str, str] = {
+    "NSURL": "URL",
+    "NSURLRequest": "URLRequest",
+    "NSURLResponse": "URLResponse",
+    "NSHTTPURLResponse": "HTTPURLResponse",
+    "NSData": "Data",
+    "NSDate": "Date",
+    "NSError": "Error",
+    "NSIndexPath": "IndexPath",
+    "NSNotification": "Notification",
+    "NSLocale": "Locale",
+    "NSTimeZone": "TimeZone",
+    "NSUUID": "UUID",
+}
+
 
 PLATFORM_DOMAIN_MAP: dict[str, str] = {
     "macos": "macOS",
@@ -161,6 +176,62 @@ def _split_top_level_commas(text: str) -> list[str]:
     return parts
 
 
+def _split_top_level_commas_in_types(text: str) -> list[str]:
+    parts: list[str] = []
+    buf: list[str] = []
+    paren_depth = 0
+    angle_depth = 0
+    in_string = False
+    escape = False
+
+    for ch in text:
+        if in_string:
+            buf.append(ch)
+            if escape:
+                escape = False
+                continue
+            if ch == "\\":
+                escape = True
+                continue
+            if ch == "\"":
+                in_string = False
+            continue
+
+        if ch == "\"":
+            in_string = True
+            buf.append(ch)
+            continue
+        if ch == "(":
+            paren_depth += 1
+            buf.append(ch)
+            continue
+        if ch == ")":
+            paren_depth = max(paren_depth - 1, 0)
+            buf.append(ch)
+            continue
+        if ch == "<":
+            angle_depth += 1
+            buf.append(ch)
+            continue
+        if ch == ">":
+            angle_depth = max(angle_depth - 1, 0)
+            buf.append(ch)
+            continue
+        if ch == "," and paren_depth == 0 and angle_depth == 0:
+            part = "".join(buf).strip()
+            if part:
+                parts.append(part)
+            buf = []
+            continue
+
+        buf.append(ch)
+
+    tail = "".join(buf).strip()
+    if tail:
+        parts.append(tail)
+    return parts
+
+
 def _find_matching_paren(text: str, open_index: int) -> int | None:
     depth = 0
     for i in range(open_index, len(text)):
@@ -168,6 +239,19 @@ def _find_matching_paren(text: str, open_index: int) -> int | None:
         if ch == "(":
             depth += 1
         elif ch == ")":
+            depth -= 1
+            if depth == 0:
+                return i
+    return None
+
+
+def _find_matching_angle(text: str, open_index: int) -> int | None:
+    depth = 0
+    for i in range(open_index, len(text)):
+        ch = text[i]
+        if ch == "<":
+            depth += 1
+        elif ch == ">":
             depth -= 1
             if depth == 0:
                 return i
@@ -273,7 +357,121 @@ def _availability_from_objc_declaration(objc_declaration: str) -> list[dict[str,
 
 
 def _objc_type_to_swift(objc_type: str) -> SwiftType:
-    normalized = objc_type
+    s = objc_type.strip()
+    if not s:
+        return SwiftType("Any")
+
+    # Translate WebKit's C++ CompletionHandler into a Swift closure when possible.
+    # Example:
+    #   CompletionHandler<void(BOOL, NSURL *)>&& -> (Bool, URL) -> Void
+    if "CompletionHandler" in s:
+        m = re.search(r"\bCompletionHandler\s*<", s)
+        if m:
+            open_index = s.find("<", m.start())
+            close_index = _find_matching_angle(s, open_index) if open_index != -1 else None
+            if close_index is not None:
+                templ = s[open_index + 1 : close_index].strip()
+                m_sig = re.match(r"^void\s*\(\s*(.*?)\s*\)\s*$", templ, flags=re.S)
+                if m_sig:
+                    params_text = m_sig.group(1).strip()
+                    params: list[str] = []
+                    if params_text and params_text != "void":
+                        for part in _split_top_level_commas_in_types(params_text):
+                            params.append(_objc_type_to_swift(part).name)
+                    return SwiftType(f"({', '.join(params)}) -> Void")
+                if templ == "void":
+                    return SwiftType("() -> Void")
+        return SwiftType("Any")
+
+    # Translate WTF::Function (often imported as `Function<...>`) into a Swift closure when possible.
+    # Example:
+    #   Function<BOOL(UIScrollView *)>&& -> (UIScrollView) -> Bool
+    if "Function" in s:
+        m = re.search(r"\bFunction\s*<", s)
+        if m:
+            open_index = s.find("<", m.start())
+            close_index = _find_matching_angle(s, open_index) if open_index != -1 else None
+            if close_index is not None:
+                templ = s[open_index + 1 : close_index].strip()
+                m_sig = re.match(r"^(.+?)\(\s*(.*?)\s*\)\s*$", templ, flags=re.S)
+                if m_sig:
+                    ret_text = m_sig.group(1).strip()
+                    params_text = m_sig.group(2).strip()
+
+                    swift_return = "Void" if ret_text in {"", "void"} else _objc_type_to_swift(ret_text).name
+                    params: list[str] = []
+                    if params_text and params_text != "void":
+                        for part in _split_top_level_commas_in_types(params_text):
+                            params.append(_objc_type_to_swift(part).name)
+                    return SwiftType(f"({', '.join(params)}) -> {swift_return}")
+        return SwiftType("Any")
+
+    # C++ types leaked into Objective-C++ headers (.h/.mm) are common in UIProcess internals.
+    # There is no meaningful Swift spelling for `WebKit::Foo` / `WebCore::Foo` / etc, so prefer
+    # an opaque type over a misleading identifier like "WebKit".
+    if "::" in s:
+        return SwiftType("Any")
+
+    # Preserve protocol-qualified Objective-C "id<...>" as a protocol type rather than "Any".
+    #
+    # Examples:
+    #   - id<NSSecureCoding> -> NSSecureCoding
+    #   - id<WKURLSchemeHandler> -> WKURLSchemeHandler
+    #   - id<NSSecureCoding, NSCopying> -> NSSecureCoding & NSCopying
+    s_no_qual = s
+    s_no_qual = re.sub(r"\b(_Nullable|_Nonnull|nullable|nonnull)\b", "", s_no_qual)
+    s_no_qual = re.sub(r"\b(__unsafe_unretained|__strong|__weak|__autoreleasing)\b", "", s_no_qual)
+    s_no_qual = re.sub(r"\b(const|volatile)\b", "", s_no_qual)
+    s_no_qual = re.sub(r"\s+", " ", s_no_qual).strip()
+
+    m_id_proto = re.match(r"^id\s*<\s*(.+?)\s*>$", s_no_qual)
+    if m_id_proto:
+        raw = m_id_proto.group(1).strip()
+        parts = _split_top_level_commas_in_types(raw)
+        protos: list[str] = []
+        for part in parts:
+            m_name = re.search(r"\b([A-Za-z_][A-Za-z0-9_]*)\b", part.strip())
+            if not m_name:
+                continue
+            name = m_name.group(1)
+            protos.append(OBJC_TO_SWIFT_BRIDGED_TYPE_NAMES.get(name, name))
+        if protos:
+            return SwiftType(" & ".join(protos))
+
+    if s == "instancetype":
+        return SwiftType("Self")
+    if s == "id":
+        return SwiftType("Any")
+    if s == "Class":
+        return SwiftType("AnyClass")
+    if s == "SEL":
+        return SwiftType("Selector")
+
+    # Objective-C blocks: "void (^)(...)" -> "(...) -> Void"
+    m_block = re.search(r"\(\s*\^\s*", s)
+    if m_block:
+        block_open = m_block.start()
+        block_close = _find_matching_paren(s, block_open)
+        if block_close is not None:
+            i = block_close + 1
+            while i < len(s) and s[i].isspace():
+                i += 1
+            if i < len(s) and s[i] == "(":
+                params_open = i
+                params_close = _find_matching_paren(s, params_open)
+                if params_close is not None:
+                    objc_return_type = s[:block_open].strip()
+                    objc_params = s[params_open + 1 : params_close].strip()
+
+                    swift_return = "Void" if objc_return_type in {"", "void"} else _objc_type_to_swift(objc_return_type).name
+                    swift_params: list[str] = []
+                    if objc_params and objc_params != "void":
+                        for part in _split_top_level_commas_in_types(objc_params):
+                            swift_params.append(_objc_type_to_swift(part).name)
+
+                    return SwiftType(f"({', '.join(swift_params)}) -> {swift_return}")
+
+    normalized = s
     normalized = re.sub(r"\b(_Nullable|_Nonnull|nullable|nonnull)\b", "", normalized)
     normalized = re.sub(r"\b(__unsafe_unretained|__strong|__weak|__autoreleasing)\b", "", normalized)
     normalized = re.sub(r"\b(const|volatile)\b", "", normalized)
@@ -281,8 +479,14 @@ def _objc_type_to_swift(objc_type: str) -> SwiftType:
     normalized = re.sub(r"<[^>]+>", " ", normalized)
     normalized = re.sub(r"\s+", " ", normalized).strip()
 
-    if "^" in normalized:
+    if normalized in {"instancetype"}:
+        return SwiftType("Self")
+    if normalized in {"id"}:
         return SwiftType("Any")
+    if normalized in {"Class"}:
+        return SwiftType("AnyClass")
+    if normalized in {"SEL"}:
+        return SwiftType("Selector")
 
     if re.search(r"\bBOOL\b|\bbool\b", normalized):
         return SwiftType("Bool", SWIFT_PRECISE_TYPE_IDS["Bool"])
@@ -297,11 +501,17 @@ def _objc_type_to_swift(objc_type: str) -> SwiftType:
     if re.search(r"\bNSString\b", normalized):
         return SwiftType("String", SWIFT_PRECISE_TYPE_IDS["String"])
 
-    m = re.search(r"\b([A-Za-z_][A-Za-z0-9_]*)\b", normalized)
-    if m:
-        name = m.group(1)
-        if name.startswith("_WK") or name.startswith("WK"):
+    for name in re.findall(r"\b([A-Za-z_][A-Za-z0-9_]*)\b", normalized):
+        if name in {"struct", "enum", "union"}:
+            continue
+        mapped = OBJC_TO_SWIFT_BRIDGED_TYPE_NAMES.get(name)
+        if mapped is not None:
+            return SwiftType(mapped)
+        if name.startswith(("_WK", "WK")):
             return SwiftType(name)
+        if name[:1].isupper() or name.startswith("_"):
+            return SwiftType(name)
+        break
 
     return SwiftType("Any")
 
@@ -326,7 +536,7 @@ def _condense_whitespace(text: str) -> str:
 
 
 def _parse_property_symbol(objc_decl: str) -> tuple[str, SwiftType]:
-    line = _condense_whitespace(objc_decl.splitlines()[0])
+    line = _condense_whitespace(objc_decl)
     line = re.split(r"\bWK_API_", line)[0].rstrip(";").strip()
     line = _strip_trailing_objc_attributes(line)
     line = re.sub(r"^@property\s*\([^)]*\)\s*", "", line)
@@ -334,7 +544,8 @@ def _parse_property_symbol(objc_decl: str) -> tuple[str, SwiftType]:
 
     m_block = re.search(r"\(\s*\^\s*([A-Za-z_][A-Za-z0-9_]*)\s*\)", line)
     if m_block:
-        return m_block.group(1), SwiftType("Any")
+        name = m_block.group(1)
+        return name, _objc_type_to_swift(line)
 
     m_name = re.search(r"([A-Za-z_][A-Za-z0-9_]*)\s*$", line)
     if not m_name:
@@ -356,7 +567,7 @@ class MethodSig:
 
 
 def _parse_method_symbol(objc_decl: str) -> MethodSig:
-    line = _condense_whitespace(objc_decl.splitlines()[0])
+    line = _condense_whitespace(objc_decl)
     kind = "type" if line.lstrip().startswith("+") else "instance"
     line = re.split(r"\bWK_API_", line)[0].rstrip(";").strip()
     line = _strip_trailing_objc_attributes(line)
@@ -514,14 +725,15 @@ def _strip_trailing_objc_attributes(line: str) -> str:
 
 
 def _parse_extern_symbol(objc_decl: str) -> tuple[str, SwiftType]:
-    line = _condense_whitespace(objc_decl.splitlines()[0])
+    line = _condense_whitespace(objc_decl)
     line = re.split(r"\bWK_API_", line)[0].rstrip(";").strip()
     line = _strip_trailing_objc_attributes(line)
     line = re.sub(r"^(extern|FOUNDATION_EXPORT|WK_EXTERN)\s+", "", line).strip()
 
     m_block = re.search(r"\(\s*\^\s*([A-Za-z_][A-Za-z0-9_]*)\s*\)", line)
     if m_block:
-        return m_block.group(1), SwiftType("Any")
+        name = m_block.group(1)
+        return name, _objc_type_to_swift(line)
 
     m_name = re.search(r"\b([A-Za-z_][A-Za-z0-9_]*)\b\s*$", line)
     if not m_name:
@@ -532,7 +744,7 @@ def _parse_extern_symbol(objc_decl: str) -> tuple[str, SwiftType]:
 
 
 def _parse_typedef_symbol(objc_decl: str) -> tuple[str, SwiftType]:
-    line = _condense_whitespace(objc_decl.splitlines()[0])
+    line = _condense_whitespace(objc_decl)
     line = re.split(r"\bWK_API_", line)[0].rstrip(";").strip()
     line = _strip_trailing_objc_attributes(line)
     if not line.startswith("typedef "):
@@ -543,7 +755,8 @@ def _parse_typedef_symbol(objc_decl: str) -> tuple[str, SwiftType]:
 
     m_block = re.search(r"\(\s*\^\s*([A-Za-z_][A-Za-z0-9_]*)\s*\)", line)
     if m_block:
-        return m_block.group(1), SwiftType("Any")
+        name = m_block.group(1)
+        return name, _objc_type_to_swift(line)
 
     m_ptr = re.search(r"\(\s*\*\s*([A-Za-z_][A-Za-z0-9_]*)\s*\)", line)
     if m_ptr:

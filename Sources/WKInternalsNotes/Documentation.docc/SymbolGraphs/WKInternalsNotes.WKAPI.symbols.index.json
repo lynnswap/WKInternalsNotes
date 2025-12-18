@@ -261,7 +261,7 @@
       "_zoomToRect(_:withOrigin:fitEntireRect:minimumScale:maximumScale:minimumScrollDistance:)",
       "didFinishScrolling()",
       "didInterruptScrolling()",
-      "didUpdateVisibleRect(_:)",
+      "didUpdateVisibleRect(_:unobscuredRect:contentInsets:unobscuredRectInScrollViewCoordinates:obscuredInsets:unobscuredSafeAreaInsets:inputViewBounds:scale:minimumScale:viewStability:enclosedInScrollableAncestorView:sendEvenIfUnchanged:)",
       "didZoomToScale(_:)",
       "initWithFrame(_:processPool:configuration:webView:)",
       "interfaceOrientation",

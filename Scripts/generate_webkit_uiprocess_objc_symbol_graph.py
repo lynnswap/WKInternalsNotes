@@ -195,6 +195,13 @@ def _iter_semicolon_decls(lines: list[str], *, starters: tuple[str, ...]) -> Ite
             i += 1
             continue
 
+        # C++ linkage specifications like `extern "C" {` are not declarations.
+        # If we treat them as `extern` and scan until the next `;`, we can accidentally
+        # consume an `@class Foo;` forward-decl and emit a bogus global variable symbol.
+        if stripped.startswith("extern") and re.match(r'^extern\s+"[^"]+"\s*\{?\s*$', stripped):
+            i += 1
+            continue
+
         buf: list[str] = [lines[i].rstrip()]
         i += 1
         while i < len(lines) and ";" not in buf[-1]:
