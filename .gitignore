@@ -8,6 +8,7 @@ DerivedData/
 .netrc
 __pycache__/
 *.pyc
+AGENTS.md
 
 # Reference-only checkout (not committed)
 /References/WebKit/
