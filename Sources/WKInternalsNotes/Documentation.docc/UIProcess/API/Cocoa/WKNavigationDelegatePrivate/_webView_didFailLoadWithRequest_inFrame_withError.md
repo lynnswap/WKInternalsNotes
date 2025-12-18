@@ -1,0 +1,21 @@
+# ``WKInternalsNotes/WKNavigationDelegatePrivate/_webView(_:didFailLoadWithRequest:inFrame:withError:)``
+
+フレームのロード失敗を通知する。
+
+## Objective-C Declaration
+```objective-c
+- (void)_webView:(WKWebView *)webView didFailLoadWithRequest:(NSURLRequest *)request inFrame:(WKFrameInfo *)frame withError:(NSError *)error WK_API_AVAILABLE(macos(11.0), ios(14.0));
+```
+
+## Discussion
+didFailLoadWithErrorForFrame で recovery attempter 付きの NSError を作成し、request と FrameInfo を渡して呼び出す。
+
+## References
+- [`WKNavigationDelegatePrivate.h#L106`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationDelegatePrivate.h#L106)
+- [`NavigationState.mm#L1124`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm#L1124)
+
+## Metadata
+| Key | Value |
+| --- | ----- |
+| Status | Draft |
+| Last updated | 2025-12-19 |

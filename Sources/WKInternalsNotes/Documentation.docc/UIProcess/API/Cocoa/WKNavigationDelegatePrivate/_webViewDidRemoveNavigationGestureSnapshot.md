@@ -1,0 +1,21 @@
+# ``WKInternalsNotes/WKNavigationDelegatePrivate/_webViewDidRemoveNavigationGestureSnapshot(_:)``
+
+ナビゲーションジェスチャのスナップショット削除を通知する。
+
+## Objective-C Declaration
+```objective-c
+- (void)_webViewDidRemoveNavigationGestureSnapshot:(WKWebView *)webView WK_API_AVAILABLE(macos(10.12), ios(10.0));
+```
+
+## Discussion
+navigationGestureSnapshotWasRemoved で delegate を確認して呼び出す。
+
+## References
+- [`WKNavigationDelegatePrivate.h#L95`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationDelegatePrivate.h#L95)
+- [`NavigationState.mm#L326`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm#L326)
+
+## Metadata
+| Key | Value |
+| --- | ----- |
+| Status | Draft |
+| Last updated | 2025-12-19 |
