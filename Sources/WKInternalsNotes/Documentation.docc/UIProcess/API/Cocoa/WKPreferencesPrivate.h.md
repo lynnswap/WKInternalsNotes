@@ -1,7 +1,7 @@
 # ``WKInternalsNotes/WKPreferences``
 
 ## Purpose
-`WKPreferences` の private category（`WKPrivate` / `WKPrivateDeprecated`）に定義されている API を、Overview と Default Value を含めて追跡可能な形でまとめる。
+`WKPreferences` の non-public category/extension（`WKPrivate` / `WKPrivateDeprecated` / class extension など）に定義されている API を、Overview と Default Value を含めて追跡可能な形でまとめる。
 
 ## Default Value Definition
 - 原則: `WKPreferences()` 直後（未変更）

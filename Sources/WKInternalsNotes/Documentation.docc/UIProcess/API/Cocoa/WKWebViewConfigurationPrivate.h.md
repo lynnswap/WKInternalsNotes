@@ -1,7 +1,7 @@
 # ``WKInternalsNotes/WKWebViewConfiguration``
 
 ## Purpose
-`WKWebViewConfiguration` の private category（`WKPrivate` / `WKPrivateDeprecated`）に定義されている API を、Overview と Default Value を含めて追跡可能な形でまとめる。
+`WKWebViewConfiguration` の non-public category/extension（`WKPrivate` / `WKPrivateDeprecated` / class extension など）に定義されている API を、Overview と Default Value を含めて追跡可能な形でまとめる。
 
 ## Default Value Definition
 - 原則: `WKWebViewConfiguration()` 直後（`processPool` / `websiteDataStore` などの lazy 初期化対象へ未アクセスの状態）
@@ -13,14 +13,16 @@
 ## Enums
 - ``WKInternalsNotes/_WKDragLiftDelay``
   - ドラッグ開始（lift）までの遅延
-- `_WKAttributionOverrideTesting`
+- ``WKInternalsNotes/_WKAttributionOverrideTesting``
   - Attribution のテスト用オーバーライド
-- `_WKContentSecurityPolicyModeForExtension`
+- ``WKInternalsNotes/_WKContentSecurityPolicyModeForExtension``
   - Web Extension 向け CSP モード
 
 ## Topics
 
-### Available via Public API
+### WKPrivate
+
+#### Available via Public API
 - ``WKInternalsNotes/WKWebViewConfiguration/_showsSystemScreenTimeBlockingView``
 - ``WKInternalsNotes/WKWebViewConfiguration/_markedTextInputEnabled``
 - ``WKInternalsNotes/WKWebViewConfiguration/_printsBackgrounds``
@@ -30,7 +32,7 @@
 - ``WKInternalsNotes/WKWebViewConfiguration/_weakWebExtensionController``
 - ``WKInternalsNotes/WKWebViewConfiguration/_webExtensionController``
 
-### Related / Session / Extensions
+#### Related / Session / Extensions
 - ``WKInternalsNotes/WKWebViewConfiguration/_relatedWebView``
 - ``WKInternalsNotes/WKWebViewConfiguration/_webViewToCloneSessionStorageFrom``
 - ``WKInternalsNotes/WKWebViewConfiguration/_groupIdentifier``
@@ -38,7 +40,7 @@
 - ``WKInternalsNotes/WKWebViewConfiguration/_requiredWebExtensionBaseURL``
 - ``WKInternalsNotes/WKWebViewConfiguration/_alternateWebViewForNavigationGestures``
 
-### Rendering / Page Behavior
+#### Rendering / Page Behavior
 - ``WKInternalsNotes/WKWebViewConfiguration/_respectsImageOrientation``
 - ``WKInternalsNotes/WKWebViewConfiguration/_incrementalRenderingSuppressionTimeout``
 - ``WKInternalsNotes/WKWebViewConfiguration/_allowsJavaScriptMarkup``
@@ -62,7 +64,7 @@
 - ``WKInternalsNotes/WKWebViewConfiguration/_drawsBackground``
 - ``WKInternalsNotes/WKWebViewConfiguration/_shouldDeferAsynchronousScriptsUntilAfterDocumentLoad``
 
-### Networking / Security
+#### Networking / Security
 - ``WKInternalsNotes/WKWebViewConfiguration/_websiteDataStoreIfExists``
 - ``WKInternalsNotes/WKWebViewConfiguration/_corsDisablingPatterns``
 - ``WKInternalsNotes/WKWebViewConfiguration/_maskedURLSchemes``
@@ -78,11 +80,11 @@
 - ``WKInternalsNotes/WKWebViewConfiguration/_contentSecurityPolicyModeForExtension``
 - ``WKInternalsNotes/WKWebViewConfiguration/_overrideContentSecurityPolicy``
 
-### Testing / Internal
+#### Testing / Internal
 - ``WKInternalsNotes/WKWebViewConfiguration/_allowPostingLegacySynchronousMessages``
 - ``WKInternalsNotes/WKWebViewConfiguration/_shouldSendConsoleLogsToUIProcessForTesting``
 
-### Media / Playback / Process
+#### Media / Playback / Process
 - ``WKInternalsNotes/WKWebViewConfiguration/_applePayEnabled``
 - ``WKInternalsNotes/WKWebViewConfiguration/_mediaContentTypesRequiringHardwareSupport``
 - ``WKInternalsNotes/WKWebViewConfiguration/_legacyEncryptedMediaAPIEnabled``
@@ -101,7 +103,7 @@
 - ``WKInternalsNotes/WKWebViewConfiguration/_sampledPageTopColorMaxDifference``
 - ``WKInternalsNotes/WKWebViewConfiguration/_sampledPageTopColorMinHeight``
 
-### iOS-only
+#### iOS-only
 - ``WKInternalsNotes/WKWebViewConfiguration/_alwaysRunsAtForegroundPriority``
 - ``WKInternalsNotes/WKWebViewConfiguration/_inlineMediaPlaybackRequiresPlaysInlineAttribute``
 - ``WKInternalsNotes/WKWebViewConfiguration/_allowsInlineMediaPlaybackAfterFullscreen``
@@ -112,9 +114,8 @@
 - ``WKInternalsNotes/WKWebViewConfiguration/_canShowWhileLocked``
 - ``WKInternalsNotes/WKWebViewConfiguration/_clickInteractionDriverForTesting``
 - ``WKInternalsNotes/WKWebViewConfiguration/_appInitiatedOverrideValueForTesting``
-- ``WKInternalsNotes/WKWebViewConfiguration/_textInteractionGesturesEnabled``
 
-### macOS-only
+#### macOS-only
 - ``WKInternalsNotes/WKWebViewConfiguration/_showsURLsInToolTips``
 - ``WKInternalsNotes/WKWebViewConfiguration/_serviceControlsEnabled``
 - ``WKInternalsNotes/WKWebViewConfiguration/_imageControlsEnabled``
@@ -122,9 +123,16 @@
 - ``WKInternalsNotes/WKWebViewConfiguration/_requiresUserActionForEditingControlsManager``
 - ``WKInternalsNotes/WKWebViewConfiguration/_pageGroup``
 
-### visionOS-only (reference)
+#### visionOS-only (reference)
 - ``WKInternalsNotes/WKWebViewConfiguration/_gamepadAccessRequiresExplicitConsent``
 - ``WKInternalsNotes/WKWebViewConfiguration/_cssTransformStyleSeparatedEnabled``
+
+### WKPrivateDeprecated
+- ``WKInternalsNotes/WKWebViewConfiguration/_textInteractionGesturesEnabled``
+
+### Class Extension
+- ``WKInternalsNotes/WKWebViewConfiguration/_applicationNameForDesktopUserAgent``
+- ``WKInternalsNotes/WKWebViewConfiguration/_isValidCustomScheme(_:)``
 
 ## Metadata
 | Key | Value |
