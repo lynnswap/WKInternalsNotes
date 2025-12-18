@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKGlobals/_WKDragLiftDelay``
+# ``WKInternalsNotes/_WKDragLiftDelay``
 
 ドラッグ開始（lift）までの遅延プリセット
 

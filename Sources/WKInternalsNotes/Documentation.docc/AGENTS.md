@@ -36,9 +36,9 @@
     # ``WKInternalsNotes/<Type>/<Symbol>``
     ```
 - Global pages（トップレベル=1エントリ=1ページ）:
-  - トップレベルの `@protocol` / `typedef` / `NS_ENUM(NS_OPTIONS)` / `extern` は “擬似コンテナ” `WKGlobals` 以下へ集約する。
+  - トップレベルの `@protocol` / `typedef` / `NS_ENUM(NS_OPTIONS)` / `extern` はモジュール直下のシンボルとして扱う（擬似コンテナは作らない）。
     ```markdown
-    # ``WKInternalsNotes/WKGlobals/<Symbol>``
+    # ``WKInternalsNotes/<Symbol>``
     ```
   - H1 直下は 1 行 Summary（Abstract）のみとし、作業ステータスや日付は `## Metadata`（ページ末尾）に置く。
     ```markdown
@@ -60,7 +60,7 @@
   - Generator: `Scripts/generate_webkit_uiprocess_objc_symbol_graph.py`
 - symbol graph は “ヘッダ解析結果” を一次情報として生成し、次を満たすこと:
   - `@interface <Type> (<Category>)` 内の宣言は `<Type>` のメンバーとして `memberOf` を張る。
-  - トップレベル宣言は `WKGlobals` 以下に寄せる（モジュール直下に散らさない）。
+  - トップレベル宣言はモジュール直下のシンボルとして出す（追加のコンテナには入れない）。
   - Public ヘッダ由来のシンボルは除外する（Rule A）。
 - Objective-C の宣言行を更新したら、原則として symbol graph も更新する（DocC の宣言/availability 表示に影響するため）。
 

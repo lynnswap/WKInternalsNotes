@@ -6,9 +6,9 @@ Goals:
   - Type-centric navigation (DocC-style):
       - Members declared in @interface <Type> (<Category>) are modeled as members of <Type>.
       - Type pages can group members by <Category> in Topics.
-  - Avoid cluttering the module namespace:
-      - Top-level symbols (@protocol / typedef / NS_ENUM / NS_OPTIONS / extern) are grouped under
-        a pseudo container: WKGlobals.
+  - Expose top-level symbols at module root:
+      - Top-level symbols (@protocol / typedef / NS_ENUM / NS_OPTIONS / extern) are modeled as
+        module-level symbols so DocC can auto-group them (Protocols / Enumerations / Type Aliases / ...).
   - Filter out public API up-front (Rule A):
       - Build a public symbol set from "public headers" under UIProcess/API/Cocoa, then exclude
         matching symbols when generating the synthetic graph.
@@ -40,8 +40,6 @@ OUTPUT_PATH = OUTPUT_DIR / "WKInternalsNotes.WKAPI.symbols.json"
 DEFAULT_WEBKIT_CHECKOUT = REPO_ROOT / "References" / "WebKit"
 WEBKIT_UI_PROCESS_DIR = Path("Source/WebKit/UIProcess")
 WEBKIT_PUBLIC_COCOA_DIR = Path("Source/WebKit/UIProcess/API/Cocoa")
-
-GLOBAL_CONTAINER = "WKGlobals"
 
 EXCLUDED_PORT_PATH_PARTS = {
     "glib",
@@ -223,22 +221,122 @@ def _build_public_set(webkit_root: Path) -> PublicSet:
 
     return PublicSet(types=frozenset(types), member_keys=frozenset(member_keys), global_keys=frozenset(global_keys))
 
-
-def _make_globals_container_symbol() -> dict[str, Any]:
-    name = GLOBAL_CONTAINER
+def _make_top_level_protocol_symbol(name: str, *, availability: list[dict[str, Any]]) -> dict[str, Any]:
     decl = [
-        objc._fragment("keyword", "struct"),  # noqa: SLF001
+        objc._fragment("keyword", "protocol"),  # noqa: SLF001
         objc._fragment("text", " "),  # noqa: SLF001
         objc._fragment("identifier", name),  # noqa: SLF001
     ]
-    return {
+    symbol: dict[str, Any] = {
         "accessLevel": "public",
-        "kind": {"identifier": "swift.struct", "displayName": "Structure"},
+        "kind": {"identifier": "swift.protocol", "displayName": "Protocol"},
         "identifier": {"precise": objc._make_precise_id(name), "interfaceLanguage": "swift"},  # noqa: SLF001
         "pathComponents": [name],
         "names": {"title": name, "navigator": [objc._fragment("identifier", name)], "subHeading": decl},  # noqa: SLF001
         "declarationFragments": decl,
     }
+    if availability:
+        symbol["availability"] = availability
+    return symbol
+
+
+def _make_top_level_enum_symbol(enum_name: str, *, availability: list[dict[str, Any]]) -> dict[str, Any]:
+    decl = [
+        objc._fragment("keyword", "enum"),  # noqa: SLF001
+        objc._fragment("text", " "),  # noqa: SLF001
+        objc._fragment("identifier", enum_name),  # noqa: SLF001
+    ]
+    symbol: dict[str, Any] = {
+        "accessLevel": "public",
+        "kind": {"identifier": "swift.enum", "displayName": "Enumeration"},
+        "identifier": {"precise": objc._make_precise_id(enum_name), "interfaceLanguage": "swift"},  # noqa: SLF001
+        "pathComponents": [enum_name],
+        "names": {
+            "title": enum_name,
+            "navigator": [objc._fragment("identifier", enum_name)],  # noqa: SLF001
+            "subHeading": decl,
+        },
+        "declarationFragments": decl,
+    }
+    if availability:
+        symbol["availability"] = availability
+    return symbol
+
+
+def _make_top_level_enum_case_symbol(
+    enum_name: str,
+    case_name: str,
+    *,
+    availability: list[dict[str, Any]],
+) -> dict[str, Any]:
+    decl = [
+        objc._fragment("keyword", "case"),  # noqa: SLF001
+        objc._fragment("text", " "),  # noqa: SLF001
+        objc._fragment("identifier", case_name),  # noqa: SLF001
+    ]
+    symbol: dict[str, Any] = {
+        "accessLevel": "public",
+        "kind": {"identifier": "swift.enum.case", "displayName": "Case"},
+        "identifier": {"precise": objc._make_precise_id(enum_name, case_name), "interfaceLanguage": "swift"},  # noqa: SLF001
+        "pathComponents": [enum_name, case_name],
+        "names": {"title": f"{enum_name}.{case_name}", "subHeading": decl},
+        "declarationFragments": decl,
+    }
+    if availability:
+        symbol["availability"] = availability
+    return symbol
+
+
+def _make_top_level_typealias_symbol(
+    name: str,
+    swift_type: objc.SwiftType,  # noqa: SLF001
+    *,
+    availability: list[dict[str, Any]],
+) -> dict[str, Any]:
+    decl = [
+        objc._fragment("keyword", "typealias"),  # noqa: SLF001
+        objc._fragment("text", " "),  # noqa: SLF001
+        objc._fragment("identifier", name),  # noqa: SLF001
+        objc._fragment("text", " = "),  # noqa: SLF001
+        objc._type_fragment(swift_type),  # noqa: SLF001
+    ]
+    symbol: dict[str, Any] = {
+        "accessLevel": "public",
+        "kind": {"identifier": "swift.typealias", "displayName": "Type Alias"},
+        "identifier": {"precise": objc._make_precise_id(name), "interfaceLanguage": "swift"},  # noqa: SLF001
+        "pathComponents": [name],
+        "names": {"title": name, "subHeading": decl},
+        "declarationFragments": decl,
+    }
+    if availability:
+        symbol["availability"] = availability
+    return symbol
+
+
+def _make_top_level_global_var_symbol(
+    name: str,
+    swift_type: objc.SwiftType,  # noqa: SLF001
+    *,
+    availability: list[dict[str, Any]],
+) -> dict[str, Any]:
+    decl = [
+        objc._fragment("keyword", "let"),  # noqa: SLF001
+        objc._fragment("text", " "),  # noqa: SLF001
+        objc._fragment("identifier", name),  # noqa: SLF001
+        objc._fragment("text", ": "),  # noqa: SLF001
+        objc._type_fragment(swift_type),  # noqa: SLF001
+    ]
+    symbol: dict[str, Any] = {
+        "accessLevel": "public",
+        "kind": {"identifier": "swift.var", "displayName": "Global Variable"},
+        "identifier": {"precise": objc._make_precise_id(name), "interfaceLanguage": "swift"},  # noqa: SLF001
+        "pathComponents": [name],
+        "names": {"title": name, "subHeading": decl},
+        "declarationFragments": decl,
+    }
+    if availability:
+        symbol["availability"] = availability
+    return symbol
 
 
 def _iter_global_decls(text: str) -> Iterable[str]:
@@ -267,10 +365,6 @@ def _collect_symbols_from_headers(
     members_by_type_and_category: dict[str, dict[str, list[str]]] = {}
     included_types: set[str] = set()
 
-    # Always include the pseudo global container.
-    symbols.append(_make_globals_container_symbol())
-    globals_id = objc._make_precise_id(GLOBAL_CONTAINER)  # noqa: SLF001
-
     exts = (".h", ".m", ".mm") if include_implementations else (".h",)
 
     for path in _iter_files(ui_process_root, exts=exts):
@@ -290,27 +384,18 @@ def _collect_symbols_from_headers(
                         continue
                     if public.is_public_global("protocol", name):
                         continue
-                    proto = objc._make_protocol_symbol(GLOBAL_CONTAINER, name, availability=availability)  # noqa: SLF001
-                    symbols.append(proto)
-                    relationships.append(
-                        {"kind": "memberOf", "source": proto["identifier"]["precise"], "target": globals_id}
-                    )
+                    symbols.append(_make_top_level_protocol_symbol(name, availability=availability))
                 elif "typedef NS_ENUM" in decl or "typedef NS_OPTIONS" in decl:
                     enum_name, cases = objc._parse_enum_symbol(decl)  # noqa: SLF001
                     if not _is_candidate_symbol_name(enum_name):
                         continue
                     if public.is_public_global("enum", enum_name):
                         continue
-                    enum_symbol = objc._make_enum_symbol(GLOBAL_CONTAINER, enum_name, availability=availability)  # noqa: SLF001
+                    enum_symbol = _make_top_level_enum_symbol(enum_name, availability=availability)
                     symbols.append(enum_symbol)
-                    relationships.append(
-                        {"kind": "memberOf", "source": enum_symbol["identifier"]["precise"], "target": globals_id}
-                    )
                     enum_id = enum_symbol["identifier"]["precise"]
                     for case in cases:
-                        case_symbol = objc._make_enum_case_symbol(  # noqa: SLF001
-                            GLOBAL_CONTAINER, enum_name, case, availability=availability
-                        )
+                        case_symbol = _make_top_level_enum_case_symbol(enum_name, case, availability=availability)
                         symbols.append(case_symbol)
                         relationships.append(
                             {"kind": "memberOf", "source": case_symbol["identifier"]["precise"], "target": enum_id}
@@ -322,22 +407,14 @@ def _collect_symbols_from_headers(
                     if public.is_public_global("typealias", name):
                         continue
                     alias_type = swift_type if swift_type.name != "Any" else objc.SwiftType("Any")  # noqa: SLF001
-                    alias = objc._make_typealias_symbol(GLOBAL_CONTAINER, name, alias_type, availability=availability)  # noqa: SLF001
-                    symbols.append(alias)
-                    relationships.append(
-                        {"kind": "memberOf", "source": alias["identifier"]["precise"], "target": globals_id}
-                    )
+                    symbols.append(_make_top_level_typealias_symbol(name, alias_type, availability=availability))
                 elif re.match(r"^(extern|FOUNDATION_EXPORT|WK_EXTERN)\b", decl_first):
                     name, swift_type = objc._parse_extern_symbol(decl)  # noqa: SLF001
                     if not _is_candidate_symbol_name(name):
                         continue
                     if public.is_public_global("var", name):
                         continue
-                    var_symbol = objc._make_global_var_symbol(GLOBAL_CONTAINER, name, swift_type, availability=availability)  # noqa: SLF001
-                    symbols.append(var_symbol)
-                    relationships.append(
-                        {"kind": "memberOf", "source": var_symbol["identifier"]["precise"], "target": globals_id}
-                    )
+                    symbols.append(_make_top_level_global_var_symbol(name, swift_type, availability=availability))
             except Exception:
                 continue
 
