@@ -60,12 +60,25 @@
   - Generator: `Scripts/generate_webkit_uiprocess_objc_symbol_graph.py`
   - Type page 生成（カテゴリ別Topicsの骨組み）: `Scripts/generate_type_pages_from_symbol_index.py`
   - まとめて更新（推奨）: `python3 Scripts/sync_webkit_cocoa_private_headers.py`
-    - `.m/.mm` の class extension も拾う: `python3 Scripts/sync_webkit_cocoa_private_headers.py --include-implementations`
+    - 既定で `.h` + `.m/.mm` を解析し、class extension/category も拾う
+    - `.h` のみにしたい場合: `python3 Scripts/sync_webkit_cocoa_private_headers.py --headers-only`
 - symbol graph は “ヘッダ解析結果” を一次情報として生成し、次を満たすこと:
   - `@interface <Type> (<Category>)` 内の宣言は `<Type>` のメンバーとして `memberOf` を張る。
   - トップレベル宣言はモジュール直下のシンボルとして出す（追加のコンテナには入れない）。
   - Public ヘッダ由来のシンボルは除外する（Rule A）。
 - Objective-C の宣言行を更新したら、原則として symbol graph も更新する（DocC の宣言/availability 表示に影響するため）。
+
+## Workflow
+- 個別メンバーのページは全件自動生成しない（必要なシンボルだけ作る）。
+- 作業単位:
+  - 1シンボル = 1ブランチ
+  - 1エントリ（1ページ）= 1コミット
+- 雛形生成:
+  - Member page: `python3 Scripts/generate_member_page.py <Type>/<Member>`
+    - 例: `python3 Scripts/generate_member_page.py WKPreferences/_acceleratedDrawingEnabled`
+    - 既に存在する場合は `skip`（上書きは `--overwrite`）
+  - WebKit checkout を切り替える場合:
+    - `WKINTERNALS_WEBKIT_CHECKOUT=/path/to/WebKit` または `--webkit-root /path/to/WebKit`
 
 ## Public Filtering (Rule A)
 - Public シンボルは事前に除外する（“public headers から構築した publicSet と一致するものは出さない”）。
