@@ -1,4 +1,19 @@
 {
+  "WKARPresentationSession": {
+    "Type": [
+      "collectInputSources()",
+      "colorTexture",
+      "completionEvent",
+      "currentFrame",
+      "present()",
+      "renderingFrameIndex",
+      "session",
+      "sessionEndRequested",
+      "startFrame()",
+      "terminate()",
+      "view"
+    ]
+  },
   "WKARPresentationSessionDescriptor": {
     "Type": [
       "colorFormat",
@@ -46,6 +61,48 @@
       "currentlyAvailableMediaControlsContextMenuItems()"
     ]
   },
+  "WKActionSheetAssistantDelegate": {
+    "Type": [
+      "_actionSheetAssistant(_:performAction:onElements:)",
+      "_allowAnimationControls()",
+      "actionSheetAssistant(_:copySubject:sourceMIMEType:)",
+      "actionSheetAssistant(_:decideActionsForElement:defaultActions:)",
+      "actionSheetAssistant(_:getAlternateURLForImage:completion:)",
+      "actionSheetAssistant(_:lookUpImage:imageURL:title:imageBounds:)",
+      "actionSheetAssistant(_:openElementAtLocation:)",
+      "actionSheetAssistant(_:performAction:)",
+      "actionSheetAssistant(_:shareElementWithImage:rect:)",
+      "actionSheetAssistant(_:shareElementWithURL:rect:)",
+      "actionSheetAssistant(_:shouldIncludeAppLinkActionsForElement:)",
+      "actionSheetAssistant(_:shouldIncludeLookUpImageActionForElement:)",
+      "actionSheetAssistant(_:shouldIncludeShowTextActionForElement:)",
+      "actionSheetAssistant(_:showCustomSheetForElement:)",
+      "actionSheetAssistant(_:showTextForImage:imageURL:title:imageBounds:)",
+      "actionSheetAssistant(_:willStartInteractionWithElement:)",
+      "actionSheetAssistantDidDismissContextMenu(_:)",
+      "actionSheetAssistantDidShowContextMenu(_:)",
+      "actionSheetAssistantDidStopInteraction(_:)",
+      "actionSheetAssistantShouldIncludeCopySubjectAction(_:)",
+      "additionalMediaControlsContextMenuItemsForActionSheetAssistant(_:)",
+      "createTargetedContextMenuHintForActionSheetAssistant(_:)",
+      "dataDetectionContextForActionSheetAssistant(_:positionInformation:)",
+      "positionInformationForActionSheetAssistant(_:)",
+      "removeContextMenuViewIfPossibleForActionSheetAssistant(_:)",
+      "selectedTextForActionSheetAssistant(_:)",
+      "unoccludedWindowBoundsForActionSheetAssistant(_:)",
+      "updatePositionInformationForActionSheetAssistant(_:)"
+    ]
+  },
+  "WKActionSheetDelegate": {
+    "Type": [
+      "hostViewForSheet()",
+      "initialPresentationRectInHostViewForSheet()",
+      "presentationRectForElementUsingClosestIndicatedRect()",
+      "presentationRectForIndicatedElement()",
+      "presentationRectInHostViewForSheet()",
+      "updatePositionInformation()"
+    ]
+  },
   "WKAirPlayRoutePicker": {
     "Type": [
       "showFromView(_:routeSharingPolicy:routingContextUID:hasVideo:)"
@@ -90,6 +147,19 @@
       "updateInteractiveScrollVelocity()"
     ]
   },
+  "WKBaseScrollViewDelegate": {
+    "Type": [
+      "axesToPreventScrollingForPanGestureInScrollView(_:)",
+      "shouldAllowPanGestureRecognizerToReceiveTouchesInScrollView(_:)"
+    ]
+  },
+  "WKBrowsingContextLoadDelegatePrivate": {
+    "Type": [
+      "browsingContextController(_:canAuthenticateAgainstProtectionSpace:)",
+      "browsingContextController(_:didReceiveAuthenticationChallenge:)",
+      "browsingContextControllerWebProcessDidCrash(_:)"
+    ]
+  },
   "WKColorExtensionView": {
     "Type": [
       "cancelFadeAnimation()",
@@ -97,6 +167,20 @@
       "hiddenOrFadingOut",
       "initWithFrame(_:delegate:)",
       "updateColor(_:)"
+    ]
+  },
+  "WKColorExtensionViewDelegate": {
+    "Type": [
+      "colorExtensionViewDidAppear(_:)",
+      "colorExtensionViewWillDisappear(_:)"
+    ]
+  },
+  "WKColorPickerUIMac": {
+    "Type": [
+      "didChooseColor(_:)",
+      "invalidate()",
+      "setAndShowPicker(_:withColor:supportsAlpha:suggestions:)",
+      "setColor(_:)"
     ]
   },
   "WKCompositingLayer": {
@@ -113,6 +197,12 @@
     ],
     "WKTesting": [
       "dismissWithContacts(_:)"
+    ]
+  },
+  "WKContactPickerDelegate": {
+    "Type": [
+      "contactPickerDidDismiss(_:)",
+      "contactPickerDidPresent(_:)"
     ]
   },
   "WKContentRuleList": {
@@ -467,6 +557,12 @@
       "presentInView(_:sourceRect:completion:)"
     ]
   },
+  "WKDatePickerPopoverControllerDelegate": {
+    "Type": [
+      "datePickerPopoverControllerDidDismiss(_:)",
+      "datePickerPopoverControllerDidReset(_:)"
+    ]
+  },
   "WKDatePickerViewController": {
     "Type": [
       "delegate",
@@ -494,12 +590,33 @@
       "shouldDeferGestureRecognizer(_:)"
     ]
   },
+  "WKDeferringGestureRecognizerDelegate": {
+    "Type": [
+      "deferringGestureRecognizer(_:didEndTouchesWithEvent:)",
+      "deferringGestureRecognizer(_:didTransitionToState:)",
+      "deferringGestureRecognizer(_:shouldDeferOtherGestureRecognizer:)",
+      "deferringGestureRecognizer(_:willBeginTouchesWithEvent:)"
+    ]
+  },
   "WKDigitalCredentialsPicker": {
     "Type": [
       "delegate",
       "dismissWithCompletionHandler(_:)",
       "initWithView(_:page:)",
       "presentWithRequestData(_:completionHandler:)"
+    ]
+  },
+  "WKDigitalCredentialsPickerDelegate": {
+    "Type": [
+      "digitalCredentialsPickerDidDismiss(_:)",
+      "digitalCredentialsPickerDidPresent(_:)"
+    ]
+  },
+  "WKDownloadDelegatePrivate": {
+    "Type": [
+      "_download(_:decidePlaceholderPolicy:)",
+      "_download(_:didReceiveFinalURL:)",
+      "_download(_:didReceivePlaceholderURL:completionHandler:)"
     ]
   },
   "WKEditCommand": {
@@ -548,6 +665,12 @@
       "extrinsicContentSize"
     ]
   },
+  "WKExtrinsicButtonDelegate": {
+    "Type": [
+      "wkExtrinsicButtonWillDismissMenu(_:)",
+      "wkExtrinsicButtonWillDisplayMenu(_:)"
+    ]
+  },
   "WKFileUploadPanel": {
     "Type": [
       "_moveToNewTemporaryDirectory(_:fileCoordinator:fileManager:asCopy:)",
@@ -558,6 +681,13 @@
       "initWithView(_:)",
       "presentWithParameters(_:resultListener:)",
       "repositionContextMenuIfNeeded(_:)"
+    ]
+  },
+  "WKFileUploadPanelDelegate": {
+    "Type": [
+      "fileUploadPanelDestinationIsManaged(_:)",
+      "fileUploadPanelDidDismiss(_:)",
+      "fileUploadPanelPhotoPickerPrefersOriginalImageFormat(_:)"
     ]
   },
   "WKFindResult": {
@@ -581,6 +711,23 @@
       "visible"
     ]
   },
+  "WKFocusedFormControlViewDelegate": {
+    "Type": [
+      "actionNameForFocusedFormControlView(_:)",
+      "focusedFormControlViewDidBeginEditing(_:)",
+      "focusedFormControlViewDidCancel(_:)",
+      "focusedFormControlViewDidRequestNextNode(_:)",
+      "focusedFormControlViewDidRequestPreviousNode(_:)",
+      "focusedFormControlViewDidSubmit(_:)",
+      "focusedFormControllerDidUpdateSuggestions(_:)",
+      "hasNextNodeForFocusedFormControlView(_:)",
+      "hasPreviousNodeForFocusedFormControlView(_:)",
+      "nextRectForFocusedFormControlView(_:)",
+      "previousRectForFocusedFormControlView(_:)",
+      "rectForFocusedFormControlView(_:)",
+      "scrollViewForFocusedFormControlView(_:)"
+    ]
+  },
   "WKFormAccessoryView": {
     "Type": [
       "autoFillButtonItem",
@@ -592,6 +739,13 @@
       "showAutoFillButtonWithTitle(_:)"
     ]
   },
+  "WKFormAccessoryViewDelegate": {
+    "Type": [
+      "accessoryView(_:tabInDirection:)",
+      "accessoryViewAutoFill(_:)",
+      "accessoryViewDone(_:)"
+    ]
+  },
   "WKFormColorControl": {
     "Type": [
       "initWithView(_:)"
@@ -600,11 +754,31 @@
       "selectColor(_:)"
     ]
   },
+  "WKFormControl": {
+    "Type": [
+      "controlBeginEditing()",
+      "controlEndEditing()",
+      "controlHandleKeyEvent(_:)",
+      "controlUpdateEditing()",
+      "controlView()"
+    ]
+  },
   "WKFormInputSession": {
     "Type": [
       "endEditing()",
       "initWithContentView(_:focusedElementInfo:requiresStrongPasswordAssistance:)",
       "invalidate()"
+    ]
+  },
+  "WKFormPeripheral": {
+    "Type": [
+      "assistantView()",
+      "beginEditing()",
+      "endEditing()",
+      "handleKeyEvent(_:)",
+      "isEditing()",
+      "singleTapShouldEndEditing",
+      "updateEditing()"
     ]
   },
   "WKFormPeripheralBase": {
@@ -686,6 +860,15 @@
       "videosInElementFullscreenChanged()"
     ]
   },
+  "WKFullScreenViewControllerDelegate": {
+    "Type": [
+      "fullScreenViewController(_:bestVideoPresentationInterfaceDidChange:)",
+      "fullScreenViewControllerDidInvalidate(_:)",
+      "hideUI()",
+      "requestExitFullScreen()",
+      "showUI()"
+    ]
+  },
   "WKFullScreenWindowController": {
     "Type": [
       "beganEnterFullScreenWithInitialFrame(_:finalFrame:completionHandler:)",
@@ -746,10 +929,24 @@
       "lastTouchedScrollView"
     ]
   },
+  "WKHistoryDelegatePrivate": {
+    "Type": [
+      "_webView(_:didNavigateWithNavigationData:)",
+      "_webView(_:didPerformClientRedirectFromURL:toURL:)",
+      "_webView(_:didPerformServerRedirectFromURL:toURL:)",
+      "_webView(_:didUpdateHistoryTitle:forURL:)"
+    ]
+  },
   "WKImageAnalysisGestureRecognizer": {
     "Type": [
       "initWithImageAnalysisGestureDelegate(_:)",
       "lastTouchedScrollView"
+    ]
+  },
+  "WKImageAnalysisGestureRecognizerDelegate": {
+    "Type": [
+      "imageAnalysisGestureDidBegin(_:)",
+      "imageAnalysisGestureDidFail(_:)"
     ]
   },
   "WKImagePreviewViewController": {
@@ -791,9 +988,29 @@
       "webView"
     ]
   },
+  "WKInspectorViewControllerDelegate": {
+    "Type": [
+      "inspectorViewController(_:openURLExternally:)",
+      "inspectorViewController(_:willMoveToWindow:)",
+      "inspectorViewControllerDidBecomeActive(_:)",
+      "inspectorViewControllerDidMoveToWindow(_:)",
+      "inspectorViewControllerInspectorDidCrash(_:)",
+      "inspectorViewControllerInspectorIsHorizontallyAttached(_:)",
+      "inspectorViewControllerInspectorIsUnderTest(_:)"
+    ]
+  },
   "WKInspectorWKWebView": {
     "Type": [
       "inspectorWKWebViewDelegate"
+    ]
+  },
+  "WKInspectorWKWebViewDelegate": {
+    "Type": [
+      "inspectorWKWebView(_:willMoveToWindow:)",
+      "inspectorWKWebViewDidBecomeActive(_:)",
+      "inspectorWKWebViewDidMoveToWindow(_:)",
+      "inspectorWKWebViewReload(_:)",
+      "inspectorWKWebViewReloadFromOrigin(_:)"
     ]
   },
   "WKKeyboardScrollViewAnimator": {
@@ -807,6 +1024,14 @@
       "scrollView()",
       "stopScrollingImmediately()",
       "willStartInteractiveScroll()"
+    ]
+  },
+  "WKKeyboardScrollViewAnimatorDelegate": {
+    "Type": [
+      "isScrollableForKeyboardScrollViewAnimator(_:)",
+      "keyboardScrollViewAnimator(_:distanceForIncrement:inDirection:)",
+      "keyboardScrollViewAnimatorDidFinishScrolling(_:)",
+      "keyboardScrollViewAnimatorWillScroll(_:)"
     ]
   },
   "WKMaterialHostingView": {
@@ -852,6 +1077,12 @@
       "view"
     ]
   },
+  "WKMouseInteractionDelegate": {
+    "Type": [
+      "mouseInteraction(_:changedWithEvent:)",
+      "mouseInteractionDidLoseMouseDeviceDuringPointerLock(_:)"
+    ]
+  },
   "WKMultipleSelectPicker": {
     "Type": [
       "initWithView(_:)"
@@ -890,6 +1121,55 @@
       "_userInitiatedAction"
     ]
   },
+  "WKNavigationDelegatePrivate": {
+    "Type": [
+      "_webCryptoMasterKeyForWebView(_:)",
+      "_webCryptoMasterKeyForWebView(_:completionHandler:)",
+      "_webView(_:URL:contentRuleListIdentifiers:notifications:)",
+      "_webView(_:authenticationChallenge:shouldAllowLegacyTLS:)",
+      "_webView(_:backForwardListItemAdded:removed:)",
+      "_webView(_:contentRuleListWithIdentifier:performedAction:forURL:)",
+      "_webView(_:contextMenuDidCreateDownload:)",
+      "_webView(_:decidePolicyForNavigationAction:preferences:userInfo:decisionHandler:)",
+      "_webView(_:decidePolicyForPluginLoadWithCurrentPolicy:pluginInfo:completionHandler:)",
+      "_webView(_:decidePolicyForSOAuthorizationLoadWithCurrentPolicy:forExtension:completionHandler:)",
+      "_webView(_:didBlockInsecurePluginVersionWithInfo:)",
+      "_webView(_:didChangeLookalikeCharactersFromURL:toURL:)",
+      "_webView(_:didCommitLoadWithRequest:inFrame:)",
+      "_webView(_:didFailLoadDueToNetworkConnectionIntegrityWithURL:)",
+      "_webView(_:didFailLoadWithRequest:inFrame:withError:)",
+      "_webView(_:didFailNavigation:withError:userInfo:)",
+      "_webView(_:didFailProvisionalLoadWithRequest:inFrame:withError:)",
+      "_webView(_:didFailToInitializePlugInWithInfo:)",
+      "_webView(_:didFinishLoadForQuickLookDocumentInMainFrame:)",
+      "_webView(_:didFinishLoadWithRequest:inFrame:)",
+      "_webView(_:didGeneratePageLoadTiming:)",
+      "_webView(_:didNegotiateModernTLSForURL:)",
+      "_webView(_:didPerformClientRedirectFromURL:toURL:)",
+      "_webView(_:didPromptForStorageAccess:forSubFrameDomain:forQuirk:)",
+      "_webView(_:didStartLoadForQuickLookDocumentInMainFrameWithFileName:uti:)",
+      "_webView(_:didStartProvisionalLoadWithRequest:inFrame:)",
+      "_webView(_:navigation:didFailProvisionalLoadInSubframe:withError:)",
+      "_webView(_:navigation:didSameDocumentNavigation:)",
+      "_webView(_:navigationDidFinishDocumentLoad:)",
+      "_webView(_:renderingProgressDidChange:)",
+      "_webView(_:shouldGoToBackForwardListItem:inPageCache:completionHandler:)",
+      "_webView(_:webContentProcessDidTerminateWithReason:)",
+      "_webView(_:willGoToBackForwardListItem:inPageCache:)",
+      "_webView(_:willPerformClientRedirectToURL:delay:)",
+      "_webView(_:willSnapshotBackForwardListItem:)",
+      "_webViewDidBeginNavigationGesture(_:)",
+      "_webViewDidCancelClientRedirect(_:)",
+      "_webViewDidEndNavigationGesture(_:withNavigationToBackForwardListItem:)",
+      "_webViewDidRemoveNavigationGestureSnapshot(_:)",
+      "_webViewDidRequestPasswordForQuickLookDocument(_:)",
+      "_webViewDidStopRequestingPasswordForQuickLookDocument(_:)",
+      "_webViewWebProcessDidBecomeResponsive(_:)",
+      "_webViewWebProcessDidBecomeUnresponsive(_:)",
+      "_webViewWebProcessDidCrash(_:)",
+      "_webViewWillEndNavigationGesture(_:withNavigationToBackForwardListItem:)"
+    ]
+  },
   "WKNavigationResponse": {
     "WKPrivate": [
       "_downloadAttribute",
@@ -920,6 +1200,12 @@
   "WKObservingLayer": {
     "Type": [
       "layerDelegate"
+    ]
+  },
+  "WKObservingLayerDelegate": {
+    "Type": [
+      "layerSeparatedDidChange(_:)",
+      "layerWasCleared(_:)"
     ]
   },
   "WKOpenPanelParameters": {
@@ -1248,6 +1534,12 @@
       "isControlling(_:)"
     ]
   },
+  "WKQuickboardViewControllerDelegate": {
+    "Type": [
+      "initialValueForViewController(_:)",
+      "inputLabelTextForViewController(_:)"
+    ]
+  },
   "WKReloadFrameErrorRecoveryAttempter": {
     "Type": [
       "initWithWebView(_:frameHandle:urlString:)"
@@ -1270,6 +1562,11 @@
       "presentPopoverAnimated(_:)",
       "presentationPoint",
       "view"
+    ]
+  },
+  "WKRotatingPopoverDelegate": {
+    "Type": [
+      "popoverWasDismissed(_:)"
     ]
   },
   "WKSOAuthorizationDelegate": {
@@ -1338,6 +1635,16 @@
       "initWithDelegate(_:dictationMode:)"
     ]
   },
+  "WKSelectMenuListViewControllerDelegate": {
+    "Type": [
+      "numberOfItemsInSelectMenu(_:)",
+      "selectMenu(_:didCheckItemAtIndex:checked:)",
+      "selectMenu(_:didSelectItemAtIndex:)",
+      "selectMenu(_:displayTextForItemAtIndex:)",
+      "selectMenu(_:hasSelectedOptionAtIndex:)",
+      "selectMenuUsesMultipleSelection(_:)"
+    ]
+  },
   "WKSelectMultiplePicker": {
     "Type": [
       "initWithView(_:)"
@@ -1360,6 +1667,13 @@
       "initWithView(_:)"
     ]
   },
+  "WKSelectTesting": {
+    "Type": [
+      "menuItemTitles()",
+      "selectFormAccessoryHasCheckedItemAtRow(_:)",
+      "selectRow(_:inComponent:extendingSelection:)"
+    ]
+  },
   "WKSeparatedImageView": {
     "Type": [
       "init()",
@@ -1374,6 +1688,12 @@
       "dismissIfNeededWithReason(_:)",
       "initWithView(_:)",
       "presentWithParameters(_:inRect:completionHandler:)"
+    ]
+  },
+  "WKShareSheetDelegate": {
+    "Type": [
+      "shareSheet(_:willShowActivityItems:)",
+      "shareSheetDidDismiss(_:)"
     ]
   },
   "WKSharingServicePickerDelegate": {
@@ -1555,6 +1875,16 @@
       "updateTextSuggestions(_:)"
     ]
   },
+  "WKTextInputListViewControllerDelegate": {
+    "Type": [
+      "allowsDictationInputForListViewController(_:)",
+      "allowsLanguageSelectionForListViewController(_:)",
+      "inputContextViewForViewController(_:)",
+      "numericInputModeForListViewController(_:)",
+      "shouldDisplayInputContextViewForListViewController(_:)",
+      "textInputContextForListViewController(_:)"
+    ]
+  },
   "WKTextInteractionWrapper": {
     "Type": [
       "activateSelection()",
@@ -1600,6 +1930,12 @@
       "initWithSelectionGeometry(_:delegate:)"
     ]
   },
+  "WKTextSelectionRectDelegate": {
+    "Type": [
+      "scaleFactorForSelectionRect(_:)",
+      "selectionRect(_:convertQuadToSelectionContainer:)"
+    ]
+  },
   "WKTimePickerViewController": {
     "Testing": [
       "setHour(_:minute:)"
@@ -1617,6 +1953,14 @@
       "setTouchActions(_:forTouchIdentifier:)"
     ]
   },
+  "WKTouchActionGestureRecognizerDelegate": {
+    "Type": [
+      "gestureRecognizerMayDoubleTapToZoomWebView(_:)",
+      "gestureRecognizerMayPanWebView(_:)",
+      "gestureRecognizerMayPinchToZoomWebView(_:)",
+      "touchActionActiveTouches()"
+    ]
+  },
   "WKTouchEventsGestureRecognizer": {
     "Type": [
       "activeTouchesByIdentifier",
@@ -1628,12 +1972,176 @@
       "lastTouchEvent"
     ]
   },
+  "WKUIDelegateInternal": {
+    "Type": [
+      "_webView(_:geometryDidChange:)"
+    ]
+  },
+  "WKUIDelegatePrivate": {
+    "Type": [
+      "_attachmentListForWebView(_:)",
+      "_attachmentListForWebView(_:sourceIsManaged:)",
+      "_cancelImmediateActionAnimationForWebView(_:)",
+      "_completeImmediateActionAnimationForWebView(_:)",
+      "_contextMenuHintPreviewContainerViewForWebView(_:)",
+      "_dataDetectionContextForWebView(_:)",
+      "_focusWebView(_:)",
+      "_focusWebViewFromServiceWorker(_:)",
+      "_hostSceneBundleIdentifierForWebView(_:)",
+      "_hostSceneIdentifierForWebView(_:)",
+      "_prepareForImmediateActionAnimationForWebView(_:)",
+      "_presentingViewControllerForWebView(_:)",
+      "_showWebView(_:)",
+      "_unfocusWebView(_:)",
+      "_webView(_:actionsForElement:defaultActions:)",
+      "_webView(_:adjustedColorForTopContentInsetColor:)",
+      "_webView(_:adjustedDataInteractionItemProviders:)",
+      "_webView(_:adjustedDataInteractionItemProvidersForItemProvider:representingObjects:additionalData:)",
+      "_webView(_:alternateActionForURL:)",
+      "_webView(_:alternateURLFromImage:userInfo:)",
+      "_webView(_:checkUserMediaPermissionForURL:mainFrameURL:frameIdentifier:decisionHandler:)",
+      "_webView(_:commitPreviewedImageWithURL:)",
+      "_webView(_:commitPreviewedViewController:)",
+      "_webView(_:configurationForLocalInspector:)",
+      "_webView(_:contextMenu:forElement:)",
+      "_webView(_:contextMenu:forElement:userInfo:)",
+      "_webView(_:contextMenuConfigurationForElement:completionHandler:)",
+      "_webView(_:contextMenuContentPreviewForElement:)",
+      "_webView(_:contextMenuDidEndForElement:)",
+      "_webView(_:contextMenuForElement:willCommitWithAnimator:)",
+      "_webView(_:contextMenuWillPresentForElement:)",
+      "_webView(_:createWebViewWithConfiguration:forNavigationAction:windowFeatures:completionHandler:)",
+      "_webView(_:dataInteraction:session:didEndWithOperation:)",
+      "_webView(_:dataInteraction:sessionWillBegin:)",
+      "_webView(_:dataInteractionOperationWasHandled:forSession:itemProviders:)",
+      "_webView(_:dataOwnerForDragSession:)",
+      "_webView(_:dataOwnerForDropSession:)",
+      "_webView(_:decideDatabaseQuotaForSecurityOrigin:currentQuota:currentOriginUsage:currentDatabaseUsage:expectedUsage:decisionHandler:)",
+      "_webView(_:decideDatabaseQuotaForSecurityOrigin:databaseName:displayName:currentQuota:currentOriginUsage:currentDatabaseUsage:expectedUsage:decisionHandler:)",
+      "_webView(_:decidePolicyForScreenCaptureUnmutingForOrigin:initiatedByFrame:decisionHandler:)",
+      "_webView(_:didAdjustVisibilityWithSelectors:)",
+      "_webView(_:didAttachLocalInspector:)",
+      "_webView(_:didChangeFontAttributes:)",
+      "_webView(_:didChangeSafeAreaShouldAffectObscuredInsets:)",
+      "_webView(_:didClickAutoFillButtonWithUserInfo:)",
+      "_webView(_:didDismissFocusedElementViewController:)",
+      "_webView(_:didDismissPreviewViewController:)",
+      "_webView(_:didDismissPreviewViewController:committing:)",
+      "_webView(_:didInsertAttachment:withSource:)",
+      "_webView(_:didInvalidateDataForAttachment:)",
+      "_webView(_:didNotHandleTapAsClickAtPoint:)",
+      "_webView(_:didNotHandleWheelEvent:)",
+      "_webView(_:didPerformDragOperation:)",
+      "_webView(_:didPresentFocusedElementViewController:)",
+      "_webView(_:didReceiveConsoleLogForTesting:)",
+      "_webView(_:didRemoveAttachment:)",
+      "_webView(_:didResignInputElementStrongPasswordAppearanceWithUserInfo:)",
+      "_webView(_:dragDestinationActionMaskForDraggingInfo:)",
+      "_webView(_:drawFooterInRect:forPageWithTitle:URL:)",
+      "_webView(_:drawHeaderInRect:forPageWithTitle:URL:)",
+      "_webView(_:editorStateDidChange:)",
+      "_webView(_:fileUploadPanelContentIsManagedWithInitiatingFrame:)",
+      "_webView(_:finalObscuredInsetsForScrollView:withVelocity:targetContentOffset:)",
+      "_webView(_:gamepadsConnectedStateDidChange:)",
+      "_webView(_:gestureRecognizerCanBePreventedByTouchEvents:)",
+      "_webView(_:gestureRecognizerCouldPinch:)",
+      "_webView(_:getAlternateURLFromImage:completionHandler:)",
+      "_webView(_:getContextMenuFromProposedMenu:forElement:userInfo:completionHandler:)",
+      "_webView(_:getWindowFrameWithCompletionHandler:)",
+      "_webView(_:handleAutoplayEvent:withFlags:)",
+      "_webView(_:hasVideoInPictureInPictureDidChange:)",
+      "_webView(_:imageOrMediaDocumentSizeChanged:)",
+      "_webView(_:includeSensitiveMediaDeviceDetails:)",
+      "_webView(_:indexIntoAttachmentListForElement:)",
+      "_webView(_:mediaCaptureStateDidChange:)",
+      "_webView(_:mouseDidMoveOverElement:withFlags:userInfo:)",
+      "_webView(_:performDataInteractionOperationWithItemProviders:)",
+      "_webView(_:previewForCancellingItem:withDefault:)",
+      "_webView(_:previewForLiftingItem:session:)",
+      "_webView(_:previewViewControllerForAnimatedImageAtURL:defaultActions:elementInfo:imageSize:)",
+      "_webView(_:previewViewControllerForImage:alternateURL:defaultActions:elementInfo:)",
+      "_webView(_:previewViewControllerForURL:)",
+      "_webView(_:previewViewControllerForURL:defaultActions:elementInfo:)",
+      "_webView(_:printFrame:)",
+      "_webView(_:printFrame:pdfFirstPageSize:completionHandler:)",
+      "_webView(_:queryPermission:forOrigin:completionHandler:)",
+      "_webView(_:requestCookieConsentWithMoreInfoHandler:decisionHandler:)",
+      "_webView(_:requestDisplayCapturePermissionForOrigin:initiatedByFrame:withSystemAudio:decisionHandler:)",
+      "_webView(_:requestGeolocationAuthorizationForURL:frame:decisionHandler:)",
+      "_webView(_:requestGeolocationPermissionForFrame:decisionHandler:)",
+      "_webView(_:requestGeolocationPermissionForOrigin:initiatedByFrame:decisionHandler:)",
+      "_webView(_:requestNotificationPermissionForSecurityOrigin:decisionHandler:)",
+      "_webView(_:requestPermissionForXRSessionOrigin:mode:grantedFeatures:consentRequiredFeatures:consentOptionalFeatures:completionHandler:)",
+      "_webView(_:requestPermissionForXRSessionOrigin:mode:grantedFeatures:consentRequiredFeatures:consentOptionalFeatures:requiredFeaturesRequested:optionalFeaturesRequested:completionHandler:)",
+      "_webView(_:requestSpeechRecognitionPermissionForOrigin:decisionHandler:)",
+      "_webView(_:requestStorageAccessPanelForDomain:underCurrentDomain:completionHandler:)",
+      "_webView(_:requestStorageAccessPanelForDomain:underCurrentDomain:forQuirkDomains:completionHandler:)",
+      "_webView(_:requestUserMediaAuthorizationForDevices:url:mainFrameURL:decisionHandler:)",
+      "_webView(_:requestWebAuthenticationConditionalMediationRegistrationForUser:completionHandler:)",
+      "_webView(_:runBeforeUnloadConfirmPanelWithMessage:initiatedByFrame:completionHandler:)",
+      "_webView(_:runWebAuthenticationPanel:initiatedByFrame:completionHandler:)",
+      "_webView(_:saveDataToFile:suggestedFilename:mimeType:originatingURL:)",
+      "_webView(_:setRecentlyAccessedGamepads:)",
+      "_webView(_:setResizable:)",
+      "_webView(_:setShouldKeepScreenAwake:)",
+      "_webView(_:setWindowFrame:)",
+      "_webView(_:shouldAllowPDFAtURL:toOpenFromFrame:completionHandler:)",
+      "_webView(_:shouldIncludeAppLinkActionsForElement:)",
+      "_webView(_:showCustomSheetForElement:)",
+      "_webView(_:startXRSessionWithCompletionHandler:)",
+      "_webView(_:startXRSessionWithFeatures:colorFormat:depthFormat:completionHandler:)",
+      "_webView(_:supportedXRSessionFeatures:arFeatures:)",
+      "_webView(_:takeFocus:)",
+      "_webView(_:touchEventsMustRequireGestureRecognizerToFail:)",
+      "_webView(_:unavailablePlugInButtonClickedWithReason:plugInInfo:)",
+      "_webView(_:updatedAppBadge:fromSecurityOrigin:)",
+      "_webView(_:willCloseLocalInspector:)",
+      "_webView(_:willPerformDropWithSession:)",
+      "_webView(_:willPreviewImageWithURL:)",
+      "_webView(_:willShareActivityItems:)",
+      "_webView(_:willUpdateDataInteractionOperationToOperation:forSession:)",
+      "_webView(_:willUpdateDropProposalToProposal:forSession:)",
+      "_webViewCanBecomeFocused(_:)",
+      "_webViewClose(_:)",
+      "_webViewDidDisableInspectorBrowserDomain(_:)",
+      "_webViewDidEnableInspectorBrowserDomain(_:)",
+      "_webViewDidEnterFullscreen(_:)",
+      "_webViewDidEnterStandbyForTesting(_:)",
+      "_webViewDidExitFullscreen(_:)",
+      "_webViewDidExitStandbyForTesting(_:)",
+      "_webViewDidLosePointerLock(_:)",
+      "_webViewDidRequestPointerLock(_:completionHandler:)",
+      "_webViewDidScroll(_:)",
+      "_webViewDidShowSafeBrowsingWarning(_:)",
+      "_webViewEndXRSession(_:)",
+      "_webViewEndXRSession(_:withReason:)",
+      "_webViewFooterHeight(_:)",
+      "_webViewFullscreenMayReturnToInline(_:)",
+      "_webViewHeaderHeight(_:)",
+      "_webViewLockScreenOrientation(_:lockType:)",
+      "_webViewRecentlyAccessedGamepadsForTesting(_:)",
+      "_webViewRequestPointerLock(_:)",
+      "_webViewRunModal(_:)",
+      "_webViewStatusBarWasTapped(_:)",
+      "_webViewStoppedAccessingGamepadsForTesting(_:)",
+      "_webViewUnlockScreenOrientation(_:)",
+      "_webViewWillEnterFullscreen(_:)"
+    ]
+  },
   "WKUIScrollEdgeEffect": {
     "Type": [
       "hidden",
       "initWithScrollView(_:scrollEdgeEffect:boxSide:)",
       "internallyHidden",
       "usesHardStyle"
+    ]
+  },
+  "WKURLSchemeTaskPrivate": {
+    "Type": [
+      "_didPerformRedirection(_:newRequest:)",
+      "_frame",
+      "_requestOnlyIfCached",
+      "_willPerformRedirection(_:newRequest:completionHandler:)"
     ]
   },
   "WKUserContentController": {
@@ -1770,6 +2278,12 @@
       "stopPropagatingVisibilityToProcess(_:)"
     ]
   },
+  "WKWebAllowDenyPolicyListener": {
+    "Type": [
+      "allow()",
+      "deny()"
+    ]
+  },
   "WKWebEvent": {
     "Type": [
       "initWithEvent(_:)",
@@ -1838,6 +2352,26 @@
       "_temporary",
       "_temporaryConfiguration()",
       "_webExtensionControllerConfiguration"
+    ]
+  },
+  "WKWebExtensionControllerDelegatePrivate": {
+    "Type": [
+      "_webExtensionController(_:bookmarksForExtensionContext:completionHandler:)",
+      "_webExtensionController(_:closeSidebar:forExtensionContext:completionHandler:)",
+      "_webExtensionController(_:createBookmarkWithParentIdentifier:index:url:title:forExtensionContext:completionHandler:)",
+      "_webExtensionController(_:didCreateBackgroundWebView:forExtensionContext:)",
+      "_webExtensionController(_:didUpdateSidebar:forExtensionContext:)",
+      "_webExtensionController(_:logTestMessage:andSourceURL:lineNumber:)",
+      "_webExtensionController(_:moveBookmarkWithIdentifier:toParent:atIndex:forExtensionContext:completionHandler:)",
+      "_webExtensionController(_:presentSidebar:forExtensionContext:completionHandler:)",
+      "_webExtensionController(_:receivedTestMessage:withArgument:andSourceURL:lineNumber:)",
+      "_webExtensionController(_:recordTestAddedWithName:andSourceURL:lineNumber:)",
+      "_webExtensionController(_:recordTestAssertionResult:withMessage:andSourceURL:lineNumber:)",
+      "_webExtensionController(_:recordTestEqualityResult:expectedValue:actualValue:withMessage:andSourceURL:lineNumber:)",
+      "_webExtensionController(_:recordTestFinishedWithName:result:message:andSourceURL:lineNumber:)",
+      "_webExtensionController(_:recordTestStartedWithName:andSourceURL:lineNumber:)",
+      "_webExtensionController(_:removeBookmarkWithIdentifier:removeFolderWithChildren:forExtensionContext:completionHandler:)",
+      "_webExtensionController(_:updateBookmarkWithIdentifier:title:url:forExtensionContext:completionHandler:)"
     ]
   },
   "WKWebExtensionDataRecord": {
@@ -2763,6 +3297,22 @@
       "_textInteractionGesturesEnabled"
     ]
   },
+  "WKWebViewContentProvider": {
+    "Type": [
+      "web_computedContentInsetDidChange()",
+      "web_contentView",
+      "web_countStringMatches(_:options:maxCount:)",
+      "web_didSameDocumentNavigation(_:)",
+      "web_findString(_:options:maxCount:)",
+      "web_hideFindUI()",
+      "web_initWithFrame(_:webView:mimeType:)",
+      "web_isBackground",
+      "web_setContentProviderData(_:suggestedFilename:completionHandler:)",
+      "web_setFixedOverlayView(_:)",
+      "web_setMinimumSize(_:)",
+      "web_setOverlaidAccessoryViewsInset(_:)"
+    ]
+  },
   "WKWebViewContentProviderRegistry": {
     "Type": [
       "_mimeTypesWithCustomContentProviders()",
@@ -2958,6 +3508,11 @@
       "text"
     ]
   },
+  "_WKAppHighlightDelegate": {
+    "Type": [
+      "_webView(_:storeAppHighlight:inNewGroup:requestOriginatedInApp:)"
+    ]
+  },
   "_WKApplicationManifest": {
     "Type": [
       "applicationDescription",
@@ -3095,6 +3650,15 @@
       "userVerification"
     ]
   },
+  "_WKAutomationDelegate": {
+    "Type": [
+      "_processPool(_:didRequestAutomationSessionWithIdentifier:configuration:)",
+      "_processPoolAllowsRemoteAutomation(_:)",
+      "_processPoolBrowserNameForAutomation(_:)",
+      "_processPoolBrowserVersionForAutomation(_:)",
+      "_processPoolDidRequestInspectorDebuggablesToWakeUp(_:)"
+    ]
+  },
   "_WKAutomationSession": {
     "Type": [
       "configuration",
@@ -3116,6 +3680,27 @@
       "alwaysAllowAutoplay",
       "siteIsolationEnabled",
       "suppressesICECandidateFiltering"
+    ]
+  },
+  "_WKAutomationSessionDelegate": {
+    "Type": [
+      "_automationSession(_:acceptCurrentJavaScriptDialogForWebView:)",
+      "_automationSession(_:currentPresentationForWebView:)",
+      "_automationSession(_:defaultTextOfCurrentJavaScriptDialogForWebView:)",
+      "_automationSession(_:dismissCurrentJavaScriptDialogForWebView:)",
+      "_automationSession(_:isShowingJavaScriptDialogForWebView:)",
+      "_automationSession(_:loadWebExtensionWithOptions:resource:completionHandler:)",
+      "_automationSession(_:messageOfCurrentJavaScriptDialogForWebView:)",
+      "_automationSession(_:requestHideWindowOfWebView:completionHandler:)",
+      "_automationSession(_:requestMaximizeWindowOfWebView:completionHandler:)",
+      "_automationSession(_:requestNewWebViewWithOptions:completionHandler:)",
+      "_automationSession(_:requestRestoreWindowOfWebView:completionHandler:)",
+      "_automationSession(_:requestSwitchToWebView:completionHandler:)",
+      "_automationSession(_:setUserInput:forCurrentJavaScriptDialogForWebView:)",
+      "_automationSession(_:typeOfCurrentJavaScriptDialogForWebView:)",
+      "_automationSession(_:unloadWebExtensionWithIdentifier:completionHandler:)",
+      "_automationSession(_:userInputOfCurrentJavaScriptDialogForWebView:)",
+      "_automationSessionDidDisconnectFromRemote(_:)"
     ]
   },
   "_WKContentRuleListAction": {
@@ -3163,6 +3748,25 @@
       "webView"
     ]
   },
+  "_WKDataTaskDelegate": {
+    "Type": [
+      "dataTask(_:didCompleteWithError:)",
+      "dataTask(_:didReceiveAuthenticationChallenge:completionHandler:)",
+      "dataTask(_:didReceiveData:)",
+      "dataTask(_:didReceiveResponse:decisionHandler:)",
+      "dataTask(_:willPerformHTTPRedirection:newRequest:decisionHandler:)"
+    ]
+  },
+  "_WKDiagnosticLoggingDelegate": {
+    "Type": [
+      "_webView(_:logDiagnosticMessage:description:)",
+      "_webView(_:logDiagnosticMessage:description:valueDictionary:)",
+      "_webView(_:logDiagnosticMessageWithDomain:domain:)",
+      "_webView(_:logDiagnosticMessageWithEnhancedPrivacy:description:)",
+      "_webView(_:logDiagnosticMessageWithResult:description:result:)",
+      "_webView(_:logDiagnosticMessageWithValue:description:value:)"
+    ]
+  },
   "_WKDownload": {
     "Type": [
       "cancel()",
@@ -3174,6 +3778,24 @@
       "request",
       "resumeData",
       "wasUserInitiated"
+    ]
+  },
+  "_WKDownloadDelegate": {
+    "Type": [
+      "_download(_:decideDestinationWithSuggestedFilename:allowOverwrite:)",
+      "_download(_:decideDestinationWithSuggestedFilename:completionHandler:)",
+      "_download(_:didCreateDestination:)",
+      "_download(_:didFailWithError:)",
+      "_download(_:didReceiveAuthenticationChallenge:completionHandler:)",
+      "_download(_:didReceiveData:)",
+      "_download(_:didReceiveResponse:)",
+      "_download(_:didReceiveServerRedirectToURL:)",
+      "_download(_:didWriteData:totalBytesWritten:totalBytesExpectedToWrite:)",
+      "_download(_:shouldDecodeSourceDataOfMIMEType:)",
+      "_downloadDidCancel(_:)",
+      "_downloadDidFinish(_:)",
+      "_downloadDidStart(_:)",
+      "_downloadProcessDidCrash(_:)"
     ]
   },
   "_WKElementAction": {
@@ -3198,6 +3820,11 @@
       "uiActionForElementInfo(_:)"
     ]
   },
+  "_WKErrorRecoveryAttempting": {
+    "Type": [
+      "attemptRecovery()"
+    ]
+  },
   "_WKFeature": {
     "Type": [
       "category",
@@ -3209,6 +3836,41 @@
       "status"
     ]
   },
+  "_WKFindDelegate": {
+    "Type": [
+      "_webView(_:didAddLayerForFindOverlay:)",
+      "_webView(_:didCountMatches:forString:)",
+      "_webView(_:didFailToFindString:)",
+      "_webView(_:didFindMatches:forString:withMatchIndex:)",
+      "_webViewDidRemoveLayerForFindOverlay(_:)"
+    ]
+  },
+  "_WKFocusedElementInfo": {
+    "Type": [
+      "frame",
+      "label",
+      "placeholder",
+      "type",
+      "userInitiated",
+      "userObject",
+      "value"
+    ]
+  },
+  "_WKFormInputSession": {
+    "Type": [
+      "accessoryViewCustomButtonTitle",
+      "accessoryViewShouldNotShow",
+      "customInputAccessoryView",
+      "customInputView",
+      "focusedElementInfo",
+      "forceSecureTextEntry",
+      "reloadFocusedElementContextView()",
+      "requiresStrongPasswordAssistance",
+      "suggestions",
+      "userObject",
+      "valid"
+    ]
+  },
   "_WKFrameTreeNode": {
     "Type": [
       "childFrames",
@@ -3217,9 +3879,65 @@
       "new()"
     ]
   },
+  "_WKFullscreenDelegate": {
+    "Type": [
+      "_webView(_:didFullscreenImageWithQuickLook:)",
+      "_webView(_:requestPresentingViewControllerWithCompletionHandler:)",
+      "_webViewDidEnterElementFullscreen(_:)",
+      "_webViewDidEnterFullscreen(_:)",
+      "_webViewDidExitElementFullscreen(_:)",
+      "_webViewDidExitFullscreen(_:)",
+      "_webViewPreventDockingFromElementFullscreen(_:)",
+      "_webViewWillEnterElementFullscreen(_:)",
+      "_webViewWillEnterFullscreen(_:)",
+      "_webViewWillExitElementFullscreen(_:)",
+      "_webViewWillExitFullscreen(_:)"
+    ]
+  },
+  "_WKGeolocationCoreLocationListener": {
+    "Type": [
+      "errorOccurred(_:)",
+      "geolocationAuthorizationDenied()",
+      "geolocationAuthorizationGranted()",
+      "positionChanged(_:)",
+      "resetGeolocation()"
+    ]
+  },
+  "_WKGeolocationCoreLocationProvider": {
+    "Type": [
+      "requestGeolocationAuthorization()",
+      "setEnableHighAccuracy(_:)",
+      "setListener(_:)",
+      "start()",
+      "stop()"
+    ]
+  },
   "_WKGeolocationPosition": {
     "Type": [
       "positionWithLocation(_:)"
+    ]
+  },
+  "_WKIconLoadingDelegate": {
+    "Type": [
+      "webView(_:shouldLoadIconWithParameters:completionHandler:)"
+    ]
+  },
+  "_WKInputDelegate": {
+    "Type": [
+      "_webView(_:accessoryViewCustomButtonTappedInFormInputSession:)",
+      "_webView(_:decidePolicyForFocusedElement:)",
+      "_webView(_:didStartInputSession:)",
+      "_webView(_:focusRequiresStrongPasswordAssistance:)",
+      "_webView(_:focusRequiresStrongPasswordAssistance:completionHandler:)",
+      "_webView(_:focusShouldStartInputSession:)",
+      "_webView(_:focusedElementContextViewForInputSession:)",
+      "_webView(_:focusedElementContextViewHeightForFittingSize:inputSession:)",
+      "_webView(_:insertTextSuggestion:inInputSession:)",
+      "_webView(_:shouldRevealFocusOverlayForInputSession:)",
+      "_webView(_:willStartInputSession:)",
+      "_webView(_:willSubmitFormValues:frameInfo:sourceFrameInfo:userObject:submissionHandler:)",
+      "_webView(_:willSubmitFormValues:userObject:submissionHandler:)",
+      "_webViewAdditionalContextForStrongPasswordAssistance(_:)"
     ]
   },
   "_WKInspector": {
@@ -3270,6 +3988,12 @@
       "targetProductVersion"
     ]
   },
+  "_WKInspectorDelegate": {
+    "Type": [
+      "inspector(_:openURLExternally:)",
+      "inspectorFrontendLoaded(_:)"
+    ]
+  },
   "_WKInspectorExtension": {
     "Type": [
       "createTabWithName(_:tabIconURL:sourceURL:completionHandler:)",
@@ -3281,6 +4005,31 @@
       "navigateToURL(_:inTabWithIdentifier:completionHandler:)",
       "new()",
       "reloadIgnoringCache(_:userAgent:injectedScript:completionHandler:)"
+    ]
+  },
+  "_WKInspectorExtensionDelegate": {
+    "Type": [
+      "inspectorExtension(_:didHideTabWithIdentifier:)",
+      "inspectorExtension(_:didNavigateTabWithIdentifier:newURL:)",
+      "inspectorExtension(_:didShowTabWithIdentifier:withFrameHandle:)",
+      "inspectorExtension(_:inspectedPageDidNavigate:)"
+    ]
+  },
+  "_WKInspectorExtensionHost": {
+    "Type": [
+      "extensionHostWebView",
+      "navigateExtensionTabWithIdentifier(_:toURL:completionHandler:)",
+      "registerExtensionWithID(_:extensionBundleIdentifier:displayName:completionHandler:)",
+      "showExtensionTabWithIdentifier(_:completionHandler:)",
+      "unregisterExtension(_:completionHandler:)"
+    ]
+  },
+  "_WKInspectorIBActions": {
+    "Type": [
+      "close()",
+      "show()",
+      "showConsole()",
+      "showResources()"
     ]
   },
   "_WKInspectorWindow": {
@@ -3312,6 +4061,31 @@
       "mimeType",
       "size",
       "url"
+    ]
+  },
+  "_WKMediaSessionCoordinator": {
+    "Type": [
+      "delegate",
+      "identifier",
+      "joinWithCompletion(_:)",
+      "leave()",
+      "pauseWithCompletion(_:)",
+      "playWithCompletion(_:)",
+      "playbackStateChanged(_:)",
+      "positionStateChanged(_:)",
+      "readyStateChanged(_:)",
+      "seekTo(_:withCompletion:)",
+      "setTrack(_:withCompletion:)",
+      "trackIdentifierChanged(_:)"
+    ]
+  },
+  "_WKMediaSessionCoordinatorDelegate": {
+    "Type": [
+      "coordinatorStateChanged(_:)",
+      "pauseSessionWithCompletion(_:)",
+      "playSessionWithCompletion(_:)",
+      "seekSessionToTime(_:withCompletion:)",
+      "setSessionTrack(_:withCompletion:)"
     ]
   },
   "_WKModalContainerInfo": {
@@ -3366,6 +4140,18 @@
       "artist",
       "sourceApplicationIdentifier",
       "title"
+    ]
+  },
+  "_WKObservablePageState": {
+    "Type": [
+      "URL",
+      "_webProcessIsResponsive",
+      "estimatedProgress",
+      "hasOnlySecureContent",
+      "loading",
+      "serverTrust",
+      "title",
+      "unreachableURL"
     ]
   },
   "_WKPageLoadTiming": {
@@ -3510,6 +4296,21 @@
     ],
     "WKPrivate": [
       "_diagnosticLoggingDelegate"
+    ]
+  },
+  "_WKRemoteWebInspectorViewControllerDelegate": {
+    "Type": [
+      "inspectorViewController(_:sendMessageToBackend:)",
+      "inspectorViewControllerInspectorDidClose(_:)"
+    ]
+  },
+  "_WKResourceLoadDelegate": {
+    "Type": [
+      "webView(_:resourceLoad:didCompleteWithError:response:)",
+      "webView(_:resourceLoad:didPerformHTTPRedirection:newRequest:)",
+      "webView(_:resourceLoad:didReceiveChallenge:)",
+      "webView(_:resourceLoad:didReceiveResponse:)",
+      "webView(_:resourceLoad:didSendRequest:)"
     ]
   },
   "_WKResourceLoadInfo": {
@@ -3662,6 +4463,12 @@
     "Type": [
       "exclusionRules",
       "includeSubframes"
+    ]
+  },
+  "_WKTextManipulationDelegate": {
+    "Type": [
+      "_webView(_:didFindTextManipulationItem:)",
+      "_webView(_:didFindTextManipulationItems:)"
     ]
   },
   "_WKTextManipulationExclusionRule": {
@@ -3873,6 +4680,17 @@
       "mockConfiguration"
     ]
   },
+  "_WKWebAuthenticationPanelDelegate": {
+    "Type": [
+      "panel(_:decidePolicyForLocalAuthenticatorWithCompletionHandler:)",
+      "panel(_:dismissWebAuthenticationPanelWithResult:)",
+      "panel(_:requestLAContextForUserVerificationWithCompletionHandler:)",
+      "panel(_:requestNewPINWithMinLength:completionHandler:)",
+      "panel(_:requestPINWithRemainingRetries:completionHandler:)",
+      "panel(_:selectAssertionResponse:source:completionHandler:)",
+      "panel(_:updateWebAuthenticationPanel:)"
+    ]
+  },
   "_WKWebContentProcessInfo": {
     "Type": [
       "runningServiceWorkers",
@@ -3882,6 +4700,18 @@
       "totalSuspendedTime",
       "webContentState",
       "webViews"
+    ]
+  },
+  "_WKWebExtensionBookmark": {
+    "Type": [
+      "bookmarkTypeForWebExtensionContext(_:)",
+      "childrenForWebExtensionContext(_:)",
+      "dateAddedForWebExtensionContext(_:)",
+      "identifierForWebExtensionContext(_:)",
+      "indexForWebExtensionContext(_:)",
+      "parentIdentifierForWebExtensionContext(_:)",
+      "titleForWebExtensionContext(_:)",
+      "urlStringForWebExtensionContext(_:)"
     ]
   },
   "_WKWebExtensionDeclarativeNetRequestRule": {
@@ -4006,6 +4836,14 @@
       "snapshotFirstPage"
     ]
   },
+  "_WKWebViewPrintProvider": {
+    "Type": [
+      "_wk_pageCountForPrintFormatter(_:)",
+      "_wk_printFormatterRequiresMainThread",
+      "_wk_requestDocumentForPrintFormatter(_:)",
+      "_wk_requestImageForPrintFormatter(_:)"
+    ]
+  },
   "_WKWebsiteDataSize": {
     "Class Extension": [
       "initWithSize(_:)"
@@ -4078,6 +4916,25 @@
       "webContentRestrictionsConfigurationURL",
       "webPushMachServiceName",
       "webPushPartitionString"
+    ]
+  },
+  "_WKWebsiteDataStoreDelegate": {
+    "Type": [
+      "didReceiveAuthenticationChallenge(_:completionHandler:)",
+      "notificationPermissionsForWebsiteDataStore(_:)",
+      "notifyBackgroundFetchChange(_:change:)",
+      "requestBackgroundFetchPermission(_:frameOrigin:decisionHandler:)",
+      "requestStorageSpace(_:frameOrigin:quota:currentSize:spaceRequired:decisionHandler:)",
+      "webCryptoMasterKey(_:)",
+      "websiteDataStore(_:didAllowPrivateTokenUsageByThirdPartyForTesting:forResourceURL:)",
+      "websiteDataStore(_:domain:didExceedMemoryFootprintThreshold:withPageCount:processLifetime:inForeground:wasPrivateRelayed:canSuspend:)",
+      "websiteDataStore(_:domain:didOpenDomainViaWindowOpen:withProperty:directly:)",
+      "websiteDataStore(_:getDisplayedNotificationsForWorkerOrigin:completionHandler:)",
+      "websiteDataStore(_:navigateToNotificationActionURL:)",
+      "websiteDataStore(_:openWindow:fromServiceWorkerOrigin:completionHandler:)",
+      "websiteDataStore(_:reportServiceWorkerConsoleMessage:)",
+      "websiteDataStore(_:showNotification:)",
+      "websiteDataStore(_:workerOrigin:updatedAppBadge:)"
     ]
   }
 }

@@ -118,6 +118,75 @@ def _iter_interface_blocks(text: str) -> Iterable[InterfaceBlock]:
             i += 1
 
 
+@dataclass(frozen=True)
+class ProtocolBlock:
+    name: str
+    header_line: str
+    body_lines: list[str]  # Empty for forward declarations.
+
+
+_PROTOCOL_RE = re.compile(r"^\s*@protocol\b")
+
+
+def _parse_protocol_names_from_forward_decl(line: str) -> list[str]:
+    # Examples:
+    #   @protocol Foo;
+    #   @protocol Foo, Bar;
+    #   @protocol Foo <Bar>;   (rare; best-effort)
+    if not line.strip().endswith(";"):
+        return []
+    rest = line.split("@protocol", 1)[1]
+    rest = rest.split(";", 1)[0]
+    rest = rest.split("<", 1)[0]
+    names = []
+    for part in rest.split(","):
+        name = part.strip()
+        if name:
+            names.append(name)
+    return names
+
+
+def _iter_protocol_blocks(text: str) -> Iterable[ProtocolBlock]:
+    lines = text.splitlines()
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        if not _PROTOCOL_RE.match(line):
+            i += 1
+            continue
+
+        # Forward declarations (no @end).
+        forward_names = _parse_protocol_names_from_forward_decl(line)
+        if forward_names:
+            for name in forward_names:
+                yield ProtocolBlock(name=name, header_line=line, body_lines=[])
+            i += 1
+            continue
+
+        # Definitions (up to @end).
+        try:
+            name = objc._parse_protocol_symbol(line)  # noqa: SLF001
+        except Exception:
+            i += 1
+            continue
+
+        header_line = line
+        body: list[str] = []
+        i += 1
+        while i < len(lines):
+            if re.match(r"^\s*@end\b", lines[i]):
+                break
+            body.append(lines[i])
+            i += 1
+        yield ProtocolBlock(name=name, header_line=header_line, body_lines=body)
+
+        # Skip "@end"
+        while i < len(lines) and not re.match(r"^\s*@end\b", lines[i]):
+            i += 1
+        if i < len(lines):
+            i += 1
+
+
 def _iter_semicolon_decls(lines: list[str], *, starters: tuple[str, ...]) -> Iterable[str]:
     i = 0
     while i < len(lines):
@@ -201,6 +270,24 @@ def _build_public_set(webkit_root: Path) -> PublicSet:
             m = re.match(r"^\s*@protocol\s+([A-Za-z_][A-Za-z0-9_]*)\b", line)
             if m:
                 global_keys.add(("protocol", m.group(1)))
+
+        # Protocol blocks: members.
+        for block in _iter_protocol_blocks(text):
+            if not _is_candidate_symbol_name(block.name):
+                continue
+            if not block.body_lines:
+                continue
+            for decl in _iter_semicolon_decls(block.body_lines, starters=("@property", "-", "+")):
+                first = objc._condense_whitespace(decl.splitlines()[0])  # noqa: SLF001
+                try:
+                    if first.startswith("@property"):
+                        name, _ty = objc._parse_property_symbol(decl)  # noqa: SLF001
+                        member_keys.add(f"{block.name}/{name}")
+                    elif first.startswith("-") or first.startswith("+"):
+                        sig = objc._parse_method_symbol(decl)  # noqa: SLF001
+                        member_keys.add(f"{block.name}/{sig.path_component}")
+                except Exception:
+                    continue
 
         # Interface blocks: types + members.
         for block in _iter_interface_blocks(text):
@@ -344,10 +431,6 @@ def _iter_global_decls(text: str) -> Iterable[str]:
     # NOTE: We intentionally ignore 'static' and macros here; only exported globals matter for docs.
     yield from _iter_semicolon_decls(lines, starters=("typedef", "extern", "FOUNDATION_EXPORT", "WK_EXTERN"))
 
-    for line in lines:
-        if re.match(r"^\s*@protocol\b", line):
-            yield line.strip()
-
 
 def _collect_symbols_from_headers(
     webkit_root: Path,
@@ -434,6 +517,47 @@ def _collect_symbols_from_headers(
                     add_symbol(_make_top_level_global_var_symbol(name, swift_type, availability=availability))
             except Exception:
                 continue
+
+        # Protocol blocks (protocols + members).
+        for block in _iter_protocol_blocks(text):
+            if not _is_candidate_symbol_name(block.name):
+                continue
+            if public.is_public_global("protocol", block.name):
+                continue
+
+            availability = objc._availability_from_objc_declaration(block.header_line)  # noqa: SLF001
+            add_symbol(_make_top_level_protocol_symbol(block.name, availability=availability))
+
+            if not block.body_lines:
+                continue
+
+            protocol_id = objc._make_precise_id(block.name)  # noqa: SLF001
+            for decl in _iter_semicolon_decls(block.body_lines, starters=("@property", "-", "+")):
+                decl_first = objc._condense_whitespace(decl.splitlines()[0])  # noqa: SLF001
+                availability = objc._availability_from_objc_declaration(decl)  # noqa: SLF001
+                try:
+                    if decl_first.startswith("@property"):
+                        name, swift_type = objc._parse_property_symbol(decl)  # noqa: SLF001
+                        if public.is_public_member(block.name, name):
+                            continue
+                        symbol = objc._make_property_symbol(block.name, name, swift_type, availability=availability)  # noqa: SLF001
+                        add_symbol(symbol)
+                        add_relationship("memberOf", symbol["identifier"]["precise"], protocol_id)
+                        member_path = name
+                    elif decl_first.startswith("-") or decl_first.startswith("+"):
+                        sig = objc._parse_method_symbol(decl)  # noqa: SLF001
+                        if public.is_public_member(block.name, sig.path_component):
+                            continue
+                        symbol = objc._make_method_symbol(block.name, sig, availability=availability)  # noqa: SLF001
+                        add_symbol(symbol)
+                        add_relationship("memberOf", symbol["identifier"]["precise"], protocol_id)
+                        member_path = sig.path_component
+                    else:
+                        continue
+                except Exception:
+                    continue
+
+                members_by_type_and_category.setdefault(block.name, {}).setdefault("Type", set()).add(member_path)
 
         # Interface blocks (types + members).
         for block in _iter_interface_blocks(text):
