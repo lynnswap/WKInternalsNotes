@@ -1,0 +1,21 @@
+# ``WKInternalsNotes/WKUIDelegatePrivate/_webView(_:dataOwnerForDropSession:)``
+
+Drop session の data owner を delegate に問い合わせる。
+
+## Objective-C Declaration
+```objective-c
+- (NSInteger)_webView:(WKWebView *)webView dataOwnerForDropSession:(id <UIDropSession>)session WK_API_AVAILABLE(ios(11.0));
+```
+
+## Discussion
+delegate が応答すればその値を返し、未実装時は 0 を返す。
+
+## References
+- [`WKUIDelegatePrivate.h#L287`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L287)
+- [`WKContentViewInteraction.mm#L11350`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L11350)
+
+## Metadata
+| Key | Value |
+| --- | ----- |
+| Status | Draft |
+| Last updated | 2025-12-19 |
