@@ -7,5 +7,10 @@
 ## Topics
 
 ### Cocoa (UIProcess/API/Cocoa)
+- ``WKInternalsNotes/WKNavigation``
 - ``WKInternalsNotes/WKPreferences``
+- ``WKInternalsNotes/WKProcessPool``
+- ``WKInternalsNotes/WKUserContentController``
+- ``WKInternalsNotes/WKWebsiteDataStore``
+- ``WKInternalsNotes/WKWebView``
 - ``WKInternalsNotes/WKWebViewConfiguration``

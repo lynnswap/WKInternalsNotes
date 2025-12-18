@@ -2,6 +2,10 @@
 """
 Generate a synthetic symbol graph for WKInternalsNotes DocC entry pages.
 
+NOTE: This is a legacy generator kept for the parsing helpers it provides.
+The primary symbol graph used by DocC is now generated from WebKit sources via:
+  - Scripts/generate_webkit_uiprocess_objc_symbol_graph.py
+
 This script scans DocC markdown pages under:
   - Sources/WKInternalsNotes/Documentation.docc/UIProcess/API/Cocoa/<HeaderName>/
 
@@ -13,6 +17,8 @@ reference pages (e.g. "Instance Property" labels and availability badges).
 """
 
 from __future__ import annotations
+
+import argparse
 
 import json
 import re
@@ -832,6 +838,28 @@ def _iter_entry_markdown_files(header_dir: Path) -> Iterable[Path]:
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--output",
+        type=Path,
+        default=None,
+        help=(
+            "Write the legacy symbol graph to this path. "
+            "If omitted, the script is disabled to avoid overwriting the primary WKAPI symbol graph."
+        ),
+    )
+    args = parser.parse_args()
+
+    if args.output is None:
+        print(
+            "error: legacy generator is disabled.\n"
+            "  - Use: python3 Scripts/generate_webkit_uiprocess_objc_symbol_graph.py --write-index\n"
+            "  - Reason: this legacy script used to write to the same output path and could overwrite WKAPI.\n"
+            "  - To run anyway, pass: --output /path/to/file.json",
+            file=sys.stderr,
+        )
+        return 2
+
     header_containers = discover_header_containers()
     if not header_containers:
         print(f"error: no header containers found under: {COCOA_API_ROOT}", file=sys.stderr)
@@ -935,7 +963,7 @@ def main() -> int:
             except Exception as e:  # noqa: BLE001
                 print(f"warning: failed to parse {md_path}: {e}", file=sys.stderr)
 
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    args.output.parent.mkdir(parents=True, exist_ok=True)
     graph = {
         "metadata": {
             "formatVersion": {"major": 0, "minor": 6, "patch": 0},
@@ -945,8 +973,12 @@ def main() -> int:
         "symbols": symbols,
         "relationships": relationships,
     }
-    OUTPUT_PATH.write_text(json.dumps(graph, indent=2, sort_keys=True) + "\n", encoding="utf-8")
-    print(f"Wrote: {OUTPUT_PATH.relative_to(REPO_ROOT)} ({len(symbols)} symbols)")
+    args.output.write_text(json.dumps(graph, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    try:
+        rel = args.output.relative_to(REPO_ROOT)
+    except ValueError:
+        rel = args.output
+    print(f"Wrote: {rel} ({len(symbols)} symbols)")
     return 0
 
 

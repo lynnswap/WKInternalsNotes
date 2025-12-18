@@ -294,21 +294,24 @@ def _rewrite_implementation_line(
     return updated if replaced else line
 
 
-def _update_header_overview_page(markdown: str, *, revision: str) -> str:
+def _update_header_overview_page(markdown: str, *, revision: str, header_repo_rel: str) -> str:
     lines = markdown.splitlines()
     out: list[str] = []
+    header_name = header_repo_rel.rsplit("/", 1)[-1]
     for line in lines:
         if line.startswith("- WebKit revision:"):
             out.append(f"- WebKit revision: [`{revision}`]({WEBKIT_GITHUB_BASE}/tree/{revision})")
             continue
         if line.startswith("- Header (WebKit repo-relative path):"):
-            m = re.search(r"`(Source/[^`]+)`", line)
-            if not m:
-                out.append(line)
-                continue
-            path = m.group(1)
-            url = _github_url(revision, path)
-            out.append(f"- Header (WebKit repo-relative path): [`{path}`]({url})")
+            url = _github_url(revision, header_repo_rel)
+            out.append(f"- Header (WebKit repo-relative path): [`{header_name}`]({url})")
+            continue
+        if line.startswith("| WebKit revision |"):
+            out.append(f"| WebKit revision | [`{revision}`]({WEBKIT_GITHUB_BASE}/tree/{revision}) |")
+            continue
+        if line.startswith("| Header (WebKit repo-relative path) |"):
+            url = _github_url(revision, header_repo_rel)
+            out.append(f"| Header (WebKit repo-relative path) | [`{header_name}`]({url}) |")
             continue
         out.append(line)
     return "\n".join(out) + ("\n" if markdown.endswith("\n") else "")
@@ -355,8 +358,9 @@ def main() -> int:
 
     # Update header overview pages and entry pages.
     for header_page in sorted(COCOA_API_ROOT.glob("*.h.md")):
+        header_repo_rel = f"Source/WebKit/UIProcess/API/Cocoa/{header_page.name[:-len('.md')]}"
         original = header_page.read_text(encoding="utf-8")
-        updated = _update_header_overview_page(original, revision=revision)
+        updated = _update_header_overview_page(original, revision=revision, header_repo_rel=header_repo_rel)
         if updated != original:
             header_page.write_text(updated, encoding="utf-8")
             changed += 1

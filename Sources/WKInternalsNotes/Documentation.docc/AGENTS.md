@@ -58,6 +58,7 @@
 - エントリを UIKit 風の「シンボル」ページとして表示するため、合成 symbol graph を同梱する。
   - File: `Sources/WKInternalsNotes/Documentation.docc/SymbolGraphs/WKInternalsNotes.WKAPI.symbols.json`
   - Generator: `Scripts/generate_webkit_uiprocess_objc_symbol_graph.py`
+  - Type page 生成（カテゴリ別Topicsの骨組み）: `Scripts/generate_type_pages_from_symbol_index.py`
 - symbol graph は “ヘッダ解析結果” を一次情報として生成し、次を満たすこと:
   - `@interface <Type> (<Category>)` 内の宣言は `<Type>` のメンバーとして `memberOf` を張る。
   - トップレベル宣言はモジュール直下のシンボルとして出す（追加のコンテナには入れない）。
