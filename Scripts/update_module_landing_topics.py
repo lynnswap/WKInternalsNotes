@@ -22,7 +22,11 @@ DOCC_ROOT = REPO_ROOT / "Sources" / "WKInternalsNotes" / "Documentation.docc"
 LANDING_PAGE = DOCC_ROOT / "WKInternalsNotes.md"
 COCOA_DIR = DOCC_ROOT / "UIProcess" / "API" / "Cocoa"
 
-SECTION_HEADING = "### Cocoa (UIProcess/API/Cocoa)"
+PREFERRED_SECTION_HEADING = "### Types"
+SECTION_HEADING_CANDIDATES = [
+    PREFERRED_SECTION_HEADING,
+    "### Cocoa (UIProcess/API/Cocoa)",  # legacy
+]
 
 
 def _extract_symbol_ref(markdown: str) -> str | None:
@@ -36,12 +40,19 @@ def _extract_symbol_ref(markdown: str) -> str | None:
 
 def _rewrite_bullets(lines: list[str], *, heading: str, new_bullets: list[str]) -> list[str]:
     heading_index = None
+    found_heading = None
     for i, line in enumerate(lines):
-        if line.rstrip("\n") == heading:
+        candidate = line.rstrip("\n")
+        if candidate in SECTION_HEADING_CANDIDATES:
             heading_index = i
+            found_heading = candidate
             break
-    if heading_index is None:
+    if heading_index is None or found_heading is None:
         raise RuntimeError(f"missing section heading: {heading}")
+
+    if found_heading != heading:
+        lines = list(lines)
+        lines[heading_index] = heading + ("\n" if lines[heading_index].endswith("\n") else "")
 
     start = heading_index + 1
     end = start
@@ -51,7 +62,20 @@ def _rewrite_bullets(lines: list[str], *, heading: str, new_bullets: list[str]) 
         end += 1
 
     bullet_block = [b if b.endswith("\n") else b + "\n" for b in new_bullets]
-    return lines[:start] + bullet_block + lines[end:]
+
+    bullet_start = None
+    for i in range(start, end):
+        if lines[i].startswith("- "):
+            bullet_start = i
+            break
+    if bullet_start is None:
+        bullet_start = end
+
+    # Keep any descriptive preamble between the heading and the bullet list.
+    prefix = list(lines[:bullet_start])
+    if prefix and prefix[-1].strip() != "" and bullet_block:
+        prefix.append("\n")
+    return prefix + bullet_block + list(lines[end:])
 
 
 def main() -> int:
@@ -76,7 +100,7 @@ def main() -> int:
     bullets = [f"- ``{ref}``" for ref in symbol_refs]
 
     original_lines = LANDING_PAGE.read_text(encoding="utf-8").splitlines(keepends=True)
-    updated_lines = _rewrite_bullets(original_lines, heading=SECTION_HEADING, new_bullets=bullets)
+    updated_lines = _rewrite_bullets(original_lines, heading=PREFERRED_SECTION_HEADING, new_bullets=bullets)
     updated_text = "".join(updated_lines)
     original_text = "".join(original_lines)
 
@@ -91,4 +115,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

@@ -2,11 +2,15 @@
 
 ## Overview
 - Baseline WebKit revision: [`WebKit-7623.1.14.10.9`](https://github.com/WebKit/WebKit/tree/WebKit-7623.1.14.10.9)
-このモジュールの Swift-DocC カタログです。WebKit API（private headers）の調査メモと、既定値/挙動の追跡用ドキュメントをまとめます。
+このモジュールは WebKit の UIProcess で使われる Objective-C API（公開/非公開を含む）の調査メモです。
+Swift-DocC のシンボルページとして読めるように、WebKit のソース（`Source/WebKit/UIProcess/`）から合成した symbol graph を同梱しています。
+各型のページでは Objective-C category 名（例: `WKPrivate`）ごとにメンバーを整理し、個別ページで挙動/既定値/参照（WebKit のパス）を追跡します。
 
 ## Topics
 
-### Cocoa (UIProcess/API/Cocoa)
+### Types
+WebKit UIProcess に登場する型（class/protocol など）の一覧。
+
 - ``WKInternalsNotes/_WKInspector``
 - ``WKInternalsNotes/_WKRemoteWebInspectorViewController``
 - ``WKInternalsNotes/_WKUserContentExtensionStore``
