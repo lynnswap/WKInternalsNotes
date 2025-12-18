@@ -1,40 +1,44 @@
 # AGENTS.md — WKInternalsNotes Swift-DocC Guidelines
 
-このフォルダ（`Sources/WKInternalsNotes/Documentation.docc/`）配下で Swift-DocC ドキュメントを作成/更新するときの最小ルール。
+このフォルダ（`Sources/WKInternalsNotes/Documentation.docc/`）以下で Swift-DocC ドキュメントを作成/更新するときの最小ルール。
 
 ## Scope
-- 対象: WebKit `Source/WebKit/UIProcess/API/Cocoa/` の `*Private.h`（Cocoa）の調査メモ。
-- 対象外: glib/gtk/wpe など LGPL 系ポートのヘッダ/実装。
+- 対象: WebKit `Source/WebKit/UIProcess/` 以下の Objective-C 層（公開/非公開 API を含む）の調査メモ。
+- 解析ソース（read-only）: `References/WebKit/Source/WebKit/UIProcess/`
+  - `.h`: ファイル名に `Private` が付く/付かないに関わらず全て対象（public 判定は別途行う）。
+  - `.m/.mm`: オプション。`@interface` ブロックのみを解析し、原則 `WK*` / `_WK*` の extension/category に限定する。
+- 対象外: glib/gtk/wpe など LGPL 系ポート向けのヘッダ/実装（パス名で除外する）。
 
 ## Language
 - 説明文（本文）は日本語で記述する（必要に応じて英語併記）。
 - セクション見出し・定型ラベルは英語で統一する（例: `## Default Value`, `## Discussion`, `## Details`）。
-- `## Metadata` 配下のメタ情報ラベルは英語で統一する（例: `Status`, `Last updated`, `WebKit revision`, `Header (WebKit repo-relative path)`）。
+- `## Metadata` 以下のメタ情報ラベルは英語で統一する（例: `Status`, `Last updated`, `WebKit revision`, `Header (WebKit repo-relative path)`）。
 - コード、識別子、ファイル名、シンボル名は原文のまま（英語）でよい。
 
 ## Layout
 - DocC catalog: `Sources/WKInternalsNotes/Documentation.docc`
-- DocC 上で WebKit のディレクトリ階層は再現しない（`UIProcess/API/...` の synthetic container は作らない）。
-- ファイルの配置は現状 `UIProcess/API/Cocoa/` 配下に置く（各種スクリプトがこのパスを前提にスキャンするため）。
-  - 例: `Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h` → `Sources/WKInternalsNotes/Documentation.docc/UIProcess/API/Cocoa/WKPreferencesPrivate.h.md`
+- DocC 上で WebKit のディレクトリ階層は再現しない（`UIProcess/...` の synthetic container は作らない）。
+- ファイル配置は任意だが、現状は `UIProcess/...` 以下に置く（スクリプト側の実装が追いつくまではこの前提で運用する）。
 - 以降の説明で:
-  - `<HeaderName>` はヘッダ/ディレクトリ名（例: `WKPreferencesPrivate`）
   - `<Type>` は DocC 上のコンテナシンボル名（例: `WKPreferences`）
+  - `<Category>` は Objective-C category 名（例: `WKPrivate`）
 - Module landing page: `Sources/WKInternalsNotes/Documentation.docc/WKInternalsNotes.md`
-  - `## Topics` で列挙しすぎない（大量のエントリは各ヘッダのページへ集約する）。
-- Header pages（ヘッダ単位のまとめ）:
-  - `Sources/WKInternalsNotes/Documentation.docc/UIProcess/API/Cocoa/<HeaderName>.h.md`
-  - 例: `Sources/WKInternalsNotes/Documentation.docc/UIProcess/API/Cocoa/WKPreferencesPrivate.h.md`
-  - これらは DocC の documentation extension として、先頭を次の形式にする（`*Private` は `Scripts/generate_webkitspi_private_symbol_graph.py` 側で `WK*` に正規化される）。
+- 入口（ナビ）を “型中心” に寄せるため、モジュール直下の `## Topics` は型の一覧を中心にする。
+- Type pages（型ごとのまとめ）:
+  - 先頭は次の形式にする（DocC documentation extension）。
     ```markdown
     # ``WKInternalsNotes/<Type>``
     ```
-  - ヘッダのメタ情報（WebKit revision など）は、H1 直下ではなく `## Metadata` に置き、ページ末尾にまとめる。
-- Entry pages（1エントリ=1ページ）:
-  - `Sources/WKInternalsNotes/Documentation.docc/UIProcess/API/Cocoa/<HeaderName>/*.md`
-  - 先頭は必ず次の形式にする（DocC documentation extension）。
+  - `## Topics` は `<Category>` でグルーピングする（例: `### WKPrivate`）。
+- Member pages（型メンバー=1エントリ=1ページ）:
+  - 先頭は次の形式にする（DocC documentation extension）。
     ```markdown
     # ``WKInternalsNotes/<Type>/<Symbol>``
+    ```
+- Global pages（トップレベル=1エントリ=1ページ）:
+  - トップレベルの `@protocol` / `typedef` / `NS_ENUM(NS_OPTIONS)` / `extern` は “擬似コンテナ” `WKGlobals` 以下へ集約する。
+    ```markdown
+    # ``WKInternalsNotes/WKGlobals/<Symbol>``
     ```
   - H1 直下は 1 行 Summary（Abstract）のみとし、作業ステータスや日付は `## Metadata`（ページ末尾）に置く。
     ```markdown
@@ -53,10 +57,20 @@
 ## Symbol Graph (synthetic)
 - エントリを UIKit 風の「シンボル」ページとして表示するため、合成 symbol graph を同梱する。
   - File: `Sources/WKInternalsNotes/Documentation.docc/SymbolGraphs/WKInternalsNotes.WKAPI.symbols.json`
-  - Generator: `Scripts/generate_webkitspi_private_symbol_graph.py`
-- `UIProcess/API/Cocoa/<HeaderName>.h.md` と `UIProcess/API/Cocoa/<HeaderName>/` から対象コンテナを自動検出する。
-  - `*Private` は `Scripts/generate_webkitspi_private_symbol_graph.py` 側で `WK*` に正規化される（例: `WKPreferencesPrivate` → `WKPreferences`）。
+  - Generator: （TBD: UIProcess 解析ベースの生成スクリプト）
+- symbol graph は “ヘッダ解析結果” を一次情報として生成し、次を満たすこと:
+  - `@interface <Type> (<Category>)` 内の宣言は `<Type>` のメンバーとして `memberOf` を張る。
+  - トップレベル宣言は `WKGlobals` 以下に寄せる（モジュール直下に散らさない）。
+  - Public ヘッダ由来のシンボルは除外する（Rule A）。
 - Objective-C の宣言行を更新したら、原則として symbol graph も更新する（DocC の宣言/availability 表示に影響するため）。
+
+## Public Filtering (Rule A)
+- Public シンボルは事前に除外する（“public headers から構築した publicSet と一致するものは出さない”）。
+- public headers の定義（暫定）:
+  - `Source/WebKit/UIProcess/API/Cocoa/` 以下の `.h` から、`*Private.h` / `*Internal.h` / `_*.h` / `*Testing.h` を除外した集合。
+- 一致判定の粒度:
+  - 型: シンボル名（`WKPreferences` など）
+  - メンバー: `<Type> + (property name | selector)`（例: `WKPreferences + _setWebAudioEnabled:`）
 
 ## Writing Rules
 - Summary / Discussion (must be behavioral)
