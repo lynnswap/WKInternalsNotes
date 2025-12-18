@@ -348,6 +348,7 @@ def main() -> int:
         type_pages_cmd.append("--overwrite")
     _run(type_pages_cmd)
 
+    _run([sys.executable, str(REPO_ROOT / "Scripts" / "update_module_landing_topics.py")])
     _run([sys.executable, str(REPO_ROOT / "Scripts" / "update_webkit_github_links.py")])
     _run([sys.executable, str(REPO_ROOT / "Scripts" / "ensure_entry_metadata.py")])
     return 0
