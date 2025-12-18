@@ -361,9 +361,28 @@ def _collect_symbols_from_headers(
 
     symbols: list[dict[str, Any]] = []
     relationships: list[dict[str, Any]] = []
+    symbol_by_precise_id: dict[str, dict[str, Any]] = {}
+    relationship_keys: set[tuple[str, str, str]] = set()
 
-    members_by_type_and_category: dict[str, dict[str, list[str]]] = {}
+    members_by_type_and_category: dict[str, dict[str, set[str]]] = {}
     included_types: set[str] = set()
+
+    def add_symbol(symbol: dict[str, Any]) -> None:
+        precise = symbol["identifier"]["precise"]
+        existing = symbol_by_precise_id.get(precise)
+        if existing is not None:
+            if "availability" not in existing and "availability" in symbol:
+                existing["availability"] = symbol["availability"]
+            return
+        symbol_by_precise_id[precise] = symbol
+        symbols.append(symbol)
+
+    def add_relationship(kind: str, source: str, target: str) -> None:
+        key = (kind, source, target)
+        if key in relationship_keys:
+            return
+        relationship_keys.add(key)
+        relationships.append({"kind": kind, "source": source, "target": target})
 
     exts = (".h", ".m", ".mm") if include_implementations else (".h",)
 
@@ -384,7 +403,7 @@ def _collect_symbols_from_headers(
                         continue
                     if public.is_public_global("protocol", name):
                         continue
-                    symbols.append(_make_top_level_protocol_symbol(name, availability=availability))
+                    add_symbol(_make_top_level_protocol_symbol(name, availability=availability))
                 elif "typedef NS_ENUM" in decl or "typedef NS_OPTIONS" in decl:
                     enum_name, cases = objc._parse_enum_symbol(decl)  # noqa: SLF001
                     if not _is_candidate_symbol_name(enum_name):
@@ -392,14 +411,12 @@ def _collect_symbols_from_headers(
                     if public.is_public_global("enum", enum_name):
                         continue
                     enum_symbol = _make_top_level_enum_symbol(enum_name, availability=availability)
-                    symbols.append(enum_symbol)
+                    add_symbol(enum_symbol)
                     enum_id = enum_symbol["identifier"]["precise"]
                     for case in cases:
                         case_symbol = _make_top_level_enum_case_symbol(enum_name, case, availability=availability)
-                        symbols.append(case_symbol)
-                        relationships.append(
-                            {"kind": "memberOf", "source": case_symbol["identifier"]["precise"], "target": enum_id}
-                        )
+                        add_symbol(case_symbol)
+                        add_relationship("memberOf", case_symbol["identifier"]["precise"], enum_id)
                 elif decl_first.startswith("typedef"):
                     name, swift_type = objc._parse_typedef_symbol(decl)  # noqa: SLF001
                     if not _is_candidate_symbol_name(name):
@@ -407,14 +424,14 @@ def _collect_symbols_from_headers(
                     if public.is_public_global("typealias", name):
                         continue
                     alias_type = swift_type if swift_type.name != "Any" else objc.SwiftType("Any")  # noqa: SLF001
-                    symbols.append(_make_top_level_typealias_symbol(name, alias_type, availability=availability))
+                    add_symbol(_make_top_level_typealias_symbol(name, alias_type, availability=availability))
                 elif re.match(r"^(extern|FOUNDATION_EXPORT|WK_EXTERN)\b", decl_first):
                     name, swift_type = objc._parse_extern_symbol(decl)  # noqa: SLF001
                     if not _is_candidate_symbol_name(name):
                         continue
                     if public.is_public_global("var", name):
                         continue
-                    symbols.append(_make_top_level_global_var_symbol(name, swift_type, availability=availability))
+                    add_symbol(_make_top_level_global_var_symbol(name, swift_type, availability=availability))
             except Exception:
                 continue
 
@@ -437,13 +454,11 @@ def _collect_symbols_from_headers(
                         if public.is_public_member(block.type_name, name):
                             continue
                         symbol = objc._make_property_symbol(block.type_name, name, swift_type, availability=availability)  # noqa: SLF001
-                        symbols.append(symbol)
-                        relationships.append(
-                            {
-                                "kind": "memberOf",
-                                "source": symbol["identifier"]["precise"],
-                                "target": objc._make_precise_id(block.type_name),  # noqa: SLF001
-                            }
+                        add_symbol(symbol)
+                        add_relationship(
+                            "memberOf",
+                            symbol["identifier"]["precise"],
+                            objc._make_precise_id(block.type_name),  # noqa: SLF001
                         )
                         member_path = name
                     elif decl_first.startswith("-") or decl_first.startswith("+"):
@@ -451,13 +466,11 @@ def _collect_symbols_from_headers(
                         if public.is_public_member(block.type_name, sig.path_component):
                             continue
                         symbol = objc._make_method_symbol(block.type_name, sig, availability=availability)  # noqa: SLF001
-                        symbols.append(symbol)
-                        relationships.append(
-                            {
-                                "kind": "memberOf",
-                                "source": symbol["identifier"]["precise"],
-                                "target": objc._make_precise_id(block.type_name),  # noqa: SLF001
-                            }
+                        add_symbol(symbol)
+                        add_relationship(
+                            "memberOf",
+                            symbol["identifier"]["precise"],
+                            objc._make_precise_id(block.type_name),  # noqa: SLF001
                         )
                         member_path = sig.path_component
                     else:
@@ -473,19 +486,19 @@ def _collect_symbols_from_headers(
                 if category is None:
                     category = "Type"
 
-                members_by_type_and_category.setdefault(block.type_name, {}).setdefault(category, []).append(member_path)
+                members_by_type_and_category.setdefault(block.type_name, {}).setdefault(category, set()).add(member_path)
 
     # Add container type symbols for any type that has at least one included member, and for any
     # non-public type definition we encountered in @interface blocks.
     for type_name in sorted(included_types):
-        symbols.append(objc._make_header_container_symbol(type_name))  # noqa: SLF001
+        add_symbol(objc._make_header_container_symbol(type_name))  # noqa: SLF001
 
     # Deterministic order for Topics generation.
-    for categories in members_by_type_and_category.values():
-        for paths in categories.values():
-            paths.sort()
+    members_index: dict[str, dict[str, list[str]]] = {}
+    for type_name, categories in members_by_type_and_category.items():
+        members_index[type_name] = {category: sorted(paths) for category, paths in categories.items()}
 
-    return symbols, relationships, members_by_type_and_category
+    return symbols, relationships, members_index
 
 
 def main() -> int:
