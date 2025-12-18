@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 from datetime import date
 from pathlib import Path
 
@@ -26,7 +27,8 @@ DOCC_ROOT = REPO_ROOT / "Sources" / "WKInternalsNotes" / "Documentation.docc"
 INDEX_PATH = DOCC_ROOT / "SymbolGraphs" / "WKInternalsNotes.WKAPI.symbols.index.json"
 OUTPUT_DIR = DOCC_ROOT / "UIProcess" / "API" / "Cocoa"
 
-WEBKIT_COCOA_HEADERS_DIR = REPO_ROOT / "References" / "WebKit" / "Source" / "WebKit" / "UIProcess" / "API" / "Cocoa"
+DEFAULT_WEBKIT_CHECKOUT = REPO_ROOT / "References" / "WebKit"
+WEBKIT_COCOA_HEADERS_DIR_REL = Path("Source/WebKit/UIProcess/API/Cocoa")
 WEBKIT_HEADER_REPO_REL_DIR = "Source/WebKit/UIProcess/API/Cocoa"
 
 MODULE_NAME = "WKInternalsNotes"
@@ -41,10 +43,17 @@ def _read_revision() -> str:
     raise RuntimeError(f"no revision found in: {REVISION_FILE}")
 
 
-def _find_header_for_symbol(symbol: str) -> str | None:
+def _webkit_root_from_env() -> Path:
+    env = os.environ.get("WKINTERNALS_WEBKIT_CHECKOUT")
+    if env:
+        return Path(env).expanduser()
+    return DEFAULT_WEBKIT_CHECKOUT
+
+
+def _find_header_for_symbol(symbol: str, *, webkit_headers_dir: Path) -> str | None:
     candidates = [f"{symbol}Private.h", f"{symbol}.h"]
     for name in candidates:
-        if (WEBKIT_COCOA_HEADERS_DIR / name).exists():
+        if (webkit_headers_dir / name).exists():
             return name
     return None
 
@@ -136,28 +145,69 @@ def _render_page(*, symbol: str, categories: dict[str, list[str]], revision: str
     return "\n".join(out)
 
 
+def _symbols_from_private_headers(*, webkit_headers_dir: Path, index: dict[str, dict[str, list[str]]]) -> list[str]:
+    symbols: list[str] = []
+    for header_path in sorted(webkit_headers_dir.glob("*Private.h")):
+        stem = header_path.stem  # e.g. WKWebViewPrivate, _WKInspectorPrivate
+        candidates: list[str] = []
+        if stem.endswith("Private"):
+            candidates.append(stem[: -len("Private")])
+        candidates.append(stem)
+        for cand in candidates:
+            if cand in index:
+                symbols.append(cand)
+                break
+    return sorted(set(symbols), key=str.casefold)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("symbols", nargs="+", help="Container symbol names to generate (e.g. WKWebView).")
+    parser.add_argument(
+        "symbols",
+        nargs="*",
+        help="Container symbol names to generate (e.g. WKWebView). Omit when using --all-private-headers.",
+    )
+    parser.add_argument(
+        "--all-private-headers",
+        action="store_true",
+        help="Generate type pages for all *Private.h headers under WebKit UIProcess/API/Cocoa (if present in index).",
+    )
     parser.add_argument("--overwrite", action="store_true", help="Overwrite existing files.")
+    parser.add_argument(
+        "--webkit-root",
+        type=Path,
+        default=_webkit_root_from_env(),
+        help="Path to WebKit checkout (defaults to References/WebKit or WKINTERNALS_WEBKIT_CHECKOUT).",
+    )
     args = parser.parse_args()
 
     revision = _read_revision()
     index: dict[str, dict[str, list[str]]] = json.loads(INDEX_PATH.read_text(encoding="utf-8"))
+
+    webkit_headers_dir = args.webkit_root / WEBKIT_COCOA_HEADERS_DIR_REL
+    if not webkit_headers_dir.exists():
+        raise RuntimeError(f"missing WebKit Cocoa headers dir: {webkit_headers_dir}")
+
+    symbols = list(args.symbols)
+    if args.all_private_headers:
+        symbols = _symbols_from_private_headers(webkit_headers_dir=webkit_headers_dir, index=index)
+
+    if not symbols:
+        raise RuntimeError("no symbols specified (pass symbols or --all-private-headers)")
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
     written = 0
     skipped = 0
 
-    for symbol in args.symbols:
+    for symbol in symbols:
         categories = index.get(symbol)
         if categories is None:
             print(f"warning: missing from index: {symbol}")
             skipped += 1
             continue
 
-        header_name = _find_header_for_symbol(symbol)
+        header_name = _find_header_for_symbol(symbol, webkit_headers_dir=webkit_headers_dir)
         output_name = f"{Path(header_name).stem}.h.md" if header_name is not None else f"{symbol}.md"
         out_path = OUTPUT_DIR / output_name
 
@@ -179,4 +229,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

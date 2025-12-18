@@ -1,22 +1,19 @@
 #!/usr/bin/env python3
 """
-Sync WKInternalsNotes DocC header scaffolds with WebKit private headers.
+Sync WKInternalsNotes DocC artifacts from a WebKit checkout.
 
-This script:
-  - scans References/WebKit/Source/WebKit/UIProcess/API/Cocoa for *Private.h
-  - ensures DocC header pages exist:
-      Sources/WKInternalsNotes/Documentation.docc/UIProcess/API/Cocoa/<Header>.h.md
-  - ensures entry directories exist:
-      Sources/WKInternalsNotes/Documentation.docc/UIProcess/API/Cocoa/<Header>/
-  - rewrites the module landing page section:
-      Sources/WKInternalsNotes/Documentation.docc/WKInternalsNotes.md (### Headers)
+Pipeline:
+  1) Generate synthetic WKAPI symbol graph + index from UIProcess Objective-C sources.
+  2) Ensure Cocoa *Private.h type pages exist (grouped by ObjC category) using the index.
+  3) Update GitHub links/metadata to WebKit.revision.
+  4) Ensure entry metadata blocks exist.
 
-WebKit checkout path can be overridden via WKINTERNALS_WEBKIT_CHECKOUT.
-Baseline revision is read from WebKit.revision.
+This script does not modify References/WebKit (read-only).
 """
 
 from __future__ import annotations
 
+import argparse
 import os
 import subprocess
 import sys
@@ -320,21 +317,39 @@ def _rewrite_landing_page_headers(containers: list[str]) -> None:
 
 
 def main() -> int:
-    revision = _read_revision()
-    webkit_root = Path(os.environ.get("WKINTERNALS_WEBKIT_CHECKOUT", str(DEFAULT_WEBKIT_CHECKOUT))).expanduser()
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--include-implementations",
+        action="store_true",
+        help="Also scan .m/.mm files (categories/class extensions) when generating the WKAPI symbol graph.",
+    )
+    parser.add_argument(
+        "--overwrite-type-pages",
+        action="store_true",
+        help="Overwrite existing generated type pages (manual pages like WKPreferencesPrivate.h.md should not use this).",
+    )
+    args = parser.parse_args()
 
-    container_entries = _discover_private_header_containers(webkit_root)
-    if not container_entries:
-        raise RuntimeError("no *Private.h headers found")
+    graph_cmd = [
+        sys.executable,
+        str(REPO_ROOT / "Scripts" / "generate_webkit_uiprocess_objc_symbol_graph.py"),
+        "--write-index",
+    ]
+    if args.include_implementations:
+        graph_cmd.append("--include-implementations")
+    _run(graph_cmd)
 
-    container_entries = sorted(container_entries, key=lambda item: item[0].casefold())
-    for container, header_repo_rel in container_entries:
-        _ensure_header_scaffold(container=container, revision=revision, header_repo_rel=header_repo_rel)
+    type_pages_cmd = [
+        sys.executable,
+        str(REPO_ROOT / "Scripts" / "generate_type_pages_from_symbol_index.py"),
+        "--all-private-headers",
+    ]
+    if args.overwrite_type_pages:
+        type_pages_cmd.append("--overwrite")
+    _run(type_pages_cmd)
 
-    _rewrite_landing_page_headers([container for container, _ in container_entries])
-    _run([sys.executable, str(REPO_ROOT / "Scripts" / "generate_webkitspi_private_symbol_graph.py")])
+    _run([sys.executable, str(REPO_ROOT / "Scripts" / "update_webkit_github_links.py")])
     _run([sys.executable, str(REPO_ROOT / "Scripts" / "ensure_entry_metadata.py")])
-    print(f"Synced {len(container_entries)} headers.")
     return 0
 
 
