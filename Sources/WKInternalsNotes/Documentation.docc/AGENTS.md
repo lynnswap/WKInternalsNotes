@@ -84,7 +84,3 @@
   - 例: `- \`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm\``
   - 可能なら GitHub の固定revリンク（行番号付き）にする（基準revは `WebKit.revision`）。
     - 例: `- [\`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L123\`](https://github.com/WebKit/WebKit/blob/<rev>/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L123)`
-
-## Paths
-- ローカル環境依存の絶対パス（例: `/Users/...`）は書かない。
-- WebKit 側の参照は「WebKit リポジトリ相対パス」（例: `Source/WebKit/...`）で書く。
