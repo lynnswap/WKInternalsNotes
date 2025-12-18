@@ -8,15 +8,15 @@
 - WebPreferences 由来の既定値は `Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml`（`WebKit` セクション）を根拠として記録する。
 
 ## Enums
-- `_WKStorageBlockingPolicy`
+- ``WKInternalsNotes/_WKStorageBlockingPolicy``
   - ストレージブロッキングのポリシー
-- `_WKDebugOverlayRegions`
+- ``WKInternalsNotes/_WKDebugOverlayRegions``
   - Debug overlay の表示対象領域
-- `_WKJavaScriptRuntimeFlags`
+- ``WKInternalsNotes/_WKJavaScriptRuntimeFlags``
   - JavaScript runtime flags（現状は AllEnabled のみ）
-- `_WKEditableLinkBehavior`
+- ``WKInternalsNotes/_WKEditableLinkBehavior``
   - 編集可能領域でのリンク挙動
-- `_WKPitchCorrectionAlgorithm`
+- ``WKInternalsNotes/_WKPitchCorrectionAlgorithm``
   - pitch correction のアルゴリズム
 
 ## Topics
@@ -180,6 +180,9 @@
 - ``WKInternalsNotes/WKPreferences/_pageCacheSupportsPlugins``
 - ``WKInternalsNotes/WKPreferences/_plugInSnapshottingEnabled``
 - ``WKInternalsNotes/WKPreferences/_subpixelCSSOMElementMetricsEnabled``
+
+### Class Extension
+- ``WKInternalsNotes/WKPreferences/_useSystemAppearance``
 
 
 ### Methods
