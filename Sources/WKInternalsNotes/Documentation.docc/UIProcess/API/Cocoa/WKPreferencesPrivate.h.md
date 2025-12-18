@@ -21,14 +21,16 @@
 
 ## Topics
 
-### Available via Public API
+### WKPrivate
+
+#### Available via Public API
 - ``WKInternalsNotes/WKPreferences/_fullScreenEnabled``
 - ``WKInternalsNotes/WKPreferences/_needsSiteSpecificQuirks``
 - ``WKInternalsNotes/WKPreferences/_overlayRegionsEnabled``
 - ``WKInternalsNotes/WKPreferences/_safeBrowsingEnabled``
 - ``WKInternalsNotes/WKPreferences/_shouldPrintBackgrounds``
 
-### WKPrivate
+#### Properties
 - ``WKInternalsNotes/WKPreferences/_acceleratedCompositingEnabled``
 - ``WKInternalsNotes/WKPreferences/_acceleratedDrawingEnabled``
 - ``WKInternalsNotes/WKPreferences/_accessHandleEnabled``
@@ -126,7 +128,7 @@
 - ``WKInternalsNotes/WKPreferences/_webAudioEnabled``
 
 
-### macOS-only（#if !TARGET_OS_IPHONE）
+#### macOS-only（#if !TARGET_OS_IPHONE）
 - ``WKInternalsNotes/WKPreferences/_aggressiveTileRetentionEnabled``
 - ``WKInternalsNotes/WKPreferences/_allowsInlineMediaPlayback``
 - ``WKInternalsNotes/WKPreferences/_appNapEnabled``
@@ -162,30 +164,7 @@
 - ``WKInternalsNotes/WKPreferences/_webSecurityEnabled``
 
 
-### WKPrivateDeprecated
-- ``WKInternalsNotes/WKPreferences/_clientBadgeEnabled``
-- ``WKInternalsNotes/WKPreferences/_displayListDrawingEnabled``
-- ``WKInternalsNotes/WKPreferences/_mediaStreamEnabled``
-- ``WKInternalsNotes/WKPreferences/_offlineApplicationCacheIsEnabled``
-- ``WKInternalsNotes/WKPreferences/_requestAnimationFrameEnabled``
-- ``WKInternalsNotes/WKPreferences/_shouldAllowDesignSystemUIFonts``
-- ``WKInternalsNotes/WKPreferences/_subpixelAntialiasedLayerTextEnabled``
-
-
-### WKPrivateDeprecated macOS-only（#if !TARGET_OS_IPHONE）
-- ``WKInternalsNotes/WKPreferences/_artificialPluginInitializationDelayEnabled``
-- ``WKInternalsNotes/WKPreferences/_asynchronousPluginInitializationEnabled``
-- ``WKInternalsNotes/WKPreferences/_dnsPrefetchingEnabled``
-- ``WKInternalsNotes/WKPreferences/_experimentalPlugInSandboxProfilesEnabled``
-- ``WKInternalsNotes/WKPreferences/_pageCacheSupportsPlugins``
-- ``WKInternalsNotes/WKPreferences/_plugInSnapshottingEnabled``
-- ``WKInternalsNotes/WKPreferences/_subpixelCSSOMElementMetricsEnabled``
-
-### Class Extension
-- ``WKInternalsNotes/WKPreferences/_useSystemAppearance``
-
-
-### Methods
+#### Methods
 - ``WKInternalsNotes/WKPreferences/_disableMediaPlaybackRelatedFeatures()``
 - ``WKInternalsNotes/WKPreferences/_disableRichJavaScriptFeatures()``
 - ``WKInternalsNotes/WKPreferences/_experimentalFeatures()``
@@ -197,6 +176,29 @@
 - ``WKInternalsNotes/WKPreferences/_setEnabled(_:forExperimentalFeature:)``
 - ``WKInternalsNotes/WKPreferences/_setEnabled(_:forFeature:)``
 - ``WKInternalsNotes/WKPreferences/_setEnabled(_:forInternalDebugFeature:)``
+
+### WKPrivateDeprecated
+- ``WKInternalsNotes/WKPreferences/_clientBadgeEnabled``
+- ``WKInternalsNotes/WKPreferences/_displayListDrawingEnabled``
+- ``WKInternalsNotes/WKPreferences/_mediaStreamEnabled``
+- ``WKInternalsNotes/WKPreferences/_offlineApplicationCacheIsEnabled``
+- ``WKInternalsNotes/WKPreferences/_requestAnimationFrameEnabled``
+- ``WKInternalsNotes/WKPreferences/_shouldAllowDesignSystemUIFonts``
+- ``WKInternalsNotes/WKPreferences/_subpixelAntialiasedLayerTextEnabled``
+
+
+#### macOS-only（#if !TARGET_OS_IPHONE）
+- ``WKInternalsNotes/WKPreferences/_artificialPluginInitializationDelayEnabled``
+- ``WKInternalsNotes/WKPreferences/_asynchronousPluginInitializationEnabled``
+- ``WKInternalsNotes/WKPreferences/_dnsPrefetchingEnabled``
+- ``WKInternalsNotes/WKPreferences/_experimentalPlugInSandboxProfilesEnabled``
+- ``WKInternalsNotes/WKPreferences/_pageCacheSupportsPlugins``
+- ``WKInternalsNotes/WKPreferences/_plugInSnapshottingEnabled``
+- ``WKInternalsNotes/WKPreferences/_subpixelCSSOMElementMetricsEnabled``
+
+### Class Extension
+- ``WKInternalsNotes/WKPreferences/_useSystemAppearance``
+
 
 ## Metadata
 | Key | Value |
