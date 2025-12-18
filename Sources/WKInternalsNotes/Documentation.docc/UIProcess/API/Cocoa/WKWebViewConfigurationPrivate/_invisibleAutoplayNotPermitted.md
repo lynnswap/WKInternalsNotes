@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_invisibleAutoplayNotPermitted``
+# ``WKInternalsNotes/WKWebViewConfiguration/_invisibleAutoplayNotPermitted``
 
 “見えない autoplay” を禁止
 

@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_mediaSessionEnabled``
+# ``WKInternalsNotes/WKPreferences/_mediaSessionEnabled``
 
 Media Session API を有効/無効にする API
 

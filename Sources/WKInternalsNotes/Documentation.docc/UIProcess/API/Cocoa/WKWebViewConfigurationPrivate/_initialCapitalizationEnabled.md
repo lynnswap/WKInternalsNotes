@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_initialCapitalizationEnabled``
+# ``WKInternalsNotes/WKWebViewConfiguration/_initialCapitalizationEnabled``
 
 編集時の自動大文字化
 

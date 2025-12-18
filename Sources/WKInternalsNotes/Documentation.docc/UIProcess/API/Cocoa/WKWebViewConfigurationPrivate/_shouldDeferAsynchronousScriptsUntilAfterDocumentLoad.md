@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_shouldDeferAsynchronousScriptsUntilAfterDocumentLoad``
+# ``WKInternalsNotes/WKWebViewConfiguration/_shouldDeferAsynchronousScriptsUntilAfterDocumentLoad``
 
 async script を document load 後に遅延
 

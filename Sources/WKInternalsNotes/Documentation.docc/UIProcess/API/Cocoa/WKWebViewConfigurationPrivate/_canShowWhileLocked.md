@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_canShowWhileLocked``
+# ``WKInternalsNotes/WKWebViewConfiguration/_canShowWhileLocked``
 
 ロック中に表示可能
 

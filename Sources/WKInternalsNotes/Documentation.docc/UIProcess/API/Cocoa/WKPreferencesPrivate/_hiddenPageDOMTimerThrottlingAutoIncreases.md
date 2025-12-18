@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_hiddenPageDOMTimerThrottlingAutoIncreases``
+# ``WKInternalsNotes/WKPreferences/_hiddenPageDOMTimerThrottlingAutoIncreases``
 
 Hidden page DOM timer throttling auto-increases を有効/無効にする API
 

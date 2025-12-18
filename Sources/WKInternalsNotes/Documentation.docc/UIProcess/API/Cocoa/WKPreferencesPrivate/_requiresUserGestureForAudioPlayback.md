@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_requiresUserGestureForAudioPlayback``
+# ``WKInternalsNotes/WKPreferences/_requiresUserGestureForAudioPlayback``
 
 User Gesture For Audio Playback を切り替える API
 

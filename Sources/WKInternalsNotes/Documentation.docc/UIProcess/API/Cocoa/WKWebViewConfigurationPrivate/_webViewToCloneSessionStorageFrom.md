@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_webViewToCloneSessionStorageFrom``
+# ``WKInternalsNotes/WKWebViewConfiguration/_webViewToCloneSessionStorageFrom``
 
 SessionStorage を複製する元 `WKWebView`
 

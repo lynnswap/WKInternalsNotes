@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_features()``
+# ``WKInternalsNotes/WKPreferences/_features()``
 
 利用可能な `_WKFeature` 一覧を返す
 

@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_dragLiftDelay``
+# ``WKInternalsNotes/WKWebViewConfiguration/_dragLiftDelay``
 
 ドラッグ開始（lift）までの遅延
 

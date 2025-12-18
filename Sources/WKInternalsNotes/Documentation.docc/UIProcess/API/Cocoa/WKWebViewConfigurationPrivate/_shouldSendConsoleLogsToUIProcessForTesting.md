@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_shouldSendConsoleLogsToUIProcessForTesting``
+# ``WKInternalsNotes/WKWebViewConfiguration/_shouldSendConsoleLogsToUIProcessForTesting``
 
 console log を UIProcess に転送（テスト用）
 

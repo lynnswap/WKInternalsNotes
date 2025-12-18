@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_legacyEncryptedMediaAPIEnabled``
+# ``WKInternalsNotes/WKWebViewConfiguration/_legacyEncryptedMediaAPIEnabled``
 
 legacy EME API を有効化
 

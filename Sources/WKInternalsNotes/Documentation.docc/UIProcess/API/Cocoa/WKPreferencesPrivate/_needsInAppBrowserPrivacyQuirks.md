@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_needsInAppBrowserPrivacyQuirks``
+# ``WKInternalsNotes/WKPreferences/_needsInAppBrowserPrivacyQuirks``
 
 Needs In-App Browser Privacy Quirks を切り替える API
 

@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_internalDebugFeatures()``
+# ``WKInternalsNotes/WKPreferences/_internalDebugFeatures()``
 
 利用可能な `_WKInternalDebugFeature` 一覧を返す
 

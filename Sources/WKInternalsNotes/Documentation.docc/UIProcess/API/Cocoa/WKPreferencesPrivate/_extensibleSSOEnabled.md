@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_extensibleSSOEnabled``
+# ``WKInternalsNotes/WKPreferences/_extensibleSSOEnabled``
 
 Extensible SSO を有効/無効にする API
 

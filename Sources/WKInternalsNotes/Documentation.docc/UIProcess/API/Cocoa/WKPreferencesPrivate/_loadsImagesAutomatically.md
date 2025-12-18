@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_loadsImagesAutomatically``
+# ``WKInternalsNotes/WKPreferences/_loadsImagesAutomatically``
 
 Loads Images Automatically を有効/無効にする API
 

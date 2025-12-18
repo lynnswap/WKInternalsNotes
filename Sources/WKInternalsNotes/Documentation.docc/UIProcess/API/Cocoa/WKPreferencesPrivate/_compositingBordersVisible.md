@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_compositingBordersVisible``
+# ``WKInternalsNotes/WKPreferences/_compositingBordersVisible``
 
 Compositing borders visible を表示/非表示にする API
 

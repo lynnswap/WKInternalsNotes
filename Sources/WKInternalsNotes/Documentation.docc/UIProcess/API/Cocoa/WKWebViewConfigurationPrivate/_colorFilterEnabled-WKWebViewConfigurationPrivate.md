@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_colorFilterEnabled``
+# ``WKInternalsNotes/WKWebViewConfiguration/_colorFilterEnabled``
 
 color filter を有効化
 

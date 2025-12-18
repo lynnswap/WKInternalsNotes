@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_fileSystemAccessEnabled``
+# ``WKInternalsNotes/WKPreferences/_fileSystemAccessEnabled``
 
 File System API を有効/無効にする API
 

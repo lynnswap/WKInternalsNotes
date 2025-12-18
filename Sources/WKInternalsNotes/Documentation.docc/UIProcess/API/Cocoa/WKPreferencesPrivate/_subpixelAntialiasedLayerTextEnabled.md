@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_subpixelAntialiasedLayerTextEnabled``
+# ``WKInternalsNotes/WKPreferences/_subpixelAntialiasedLayerTextEnabled``
 
 no-op（常に `NO`）
 

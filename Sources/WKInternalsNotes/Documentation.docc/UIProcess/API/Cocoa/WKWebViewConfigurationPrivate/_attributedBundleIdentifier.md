@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_attributedBundleIdentifier``
+# ``WKInternalsNotes/WKWebViewConfiguration/_attributedBundleIdentifier``
 
 ネットワーク活動の attribution 対象 bundle id
 

@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_deviceOrientationEventEnabled``
+# ``WKInternalsNotes/WKPreferences/_deviceOrientationEventEnabled``
 
 Device Orientation Event を有効/無効にする API
 

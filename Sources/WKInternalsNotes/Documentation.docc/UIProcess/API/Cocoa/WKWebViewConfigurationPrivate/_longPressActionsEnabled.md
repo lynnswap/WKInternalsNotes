@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_longPressActionsEnabled``
+# ``WKInternalsNotes/WKWebViewConfiguration/_longPressActionsEnabled``
 
 long press actions を有効化
 

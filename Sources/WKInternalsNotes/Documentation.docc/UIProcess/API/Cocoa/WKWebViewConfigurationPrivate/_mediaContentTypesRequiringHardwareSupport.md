@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_mediaContentTypesRequiringHardwareSupport``
+# ``WKInternalsNotes/WKWebViewConfiguration/_mediaContentTypesRequiringHardwareSupport``
 
 HW サポート必須扱いの media content types
 

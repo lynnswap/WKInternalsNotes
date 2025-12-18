@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_sampledPageTopColorMinHeight``
+# ``WKInternalsNotes/WKWebViewConfiguration/_sampledPageTopColorMinHeight``
 
 page top color sampling の最小高さ
 

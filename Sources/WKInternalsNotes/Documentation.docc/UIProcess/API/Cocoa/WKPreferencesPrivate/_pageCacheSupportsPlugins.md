@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_pageCacheSupportsPlugins``
+# ``WKInternalsNotes/WKPreferences/_pageCacheSupportsPlugins``
 
 no-op（常に `NO`）
 

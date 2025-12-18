@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_attachmentElementEnabled``
+# ``WKInternalsNotes/WKWebViewConfiguration/_attachmentElementEnabled``
 
 attachment element を有効化
 

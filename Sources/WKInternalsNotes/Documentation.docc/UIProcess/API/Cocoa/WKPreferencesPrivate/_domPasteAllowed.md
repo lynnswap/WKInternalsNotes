@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_domPasteAllowed``
+# ``WKInternalsNotes/WKPreferences/_domPasteAllowed``
 
 DOM Paste を許可/禁止する API
 

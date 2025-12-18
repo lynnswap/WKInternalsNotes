@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_mainContentUserGestureOverrideEnabled``
+# ``WKInternalsNotes/WKPreferences/_mainContentUserGestureOverrideEnabled``
 
 main content user gesture override を有効/無効にする API
 

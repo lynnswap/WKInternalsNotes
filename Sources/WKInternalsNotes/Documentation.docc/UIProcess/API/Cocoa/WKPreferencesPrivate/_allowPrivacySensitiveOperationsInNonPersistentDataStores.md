@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_allowPrivacySensitiveOperationsInNonPersistentDataStores``
+# ``WKInternalsNotes/WKPreferences/_allowPrivacySensitiveOperationsInNonPersistentDataStores``
 
 Privacy-Sensitive Operations in Non-Persistent Data Stores を許可/禁止する API
 

@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_portsForUpgradingInsecureSchemeForTesting``
+# ``WKInternalsNotes/WKWebViewConfiguration/_portsForUpgradingInsecureSchemeForTesting``
 
 insecure→secure upgrade のテスト用ポート
 

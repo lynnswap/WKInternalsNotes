@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_mediaCaptureRequiresSecureConnection``
+# ``WKInternalsNotes/WKPreferences/_mediaCaptureRequiresSecureConnection``
 
 Limit Media Capture to Secure Sites を有効/無効にする API
 

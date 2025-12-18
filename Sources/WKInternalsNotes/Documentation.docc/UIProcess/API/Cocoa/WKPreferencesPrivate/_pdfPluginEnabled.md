@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_pdfPluginEnabled``
+# ``WKInternalsNotes/WKPreferences/_pdfPluginEnabled``
 
 PDF Plugin を有効/無効にする API
 

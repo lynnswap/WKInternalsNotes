@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_requiresUserActionForEditingControlsManager``
+# ``WKInternalsNotes/WKWebViewConfiguration/_requiresUserActionForEditingControlsManager``
 
 editing controls manager に user action を要求
 

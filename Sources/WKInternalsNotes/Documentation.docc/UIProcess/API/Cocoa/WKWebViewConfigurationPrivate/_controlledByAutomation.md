@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_controlledByAutomation``
+# ``WKInternalsNotes/WKWebViewConfiguration/_controlledByAutomation``
 
 自動化（テスト）制御フラグ
 

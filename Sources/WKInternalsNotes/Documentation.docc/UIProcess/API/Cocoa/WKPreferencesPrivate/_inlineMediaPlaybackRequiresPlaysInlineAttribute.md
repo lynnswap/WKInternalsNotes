@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_inlineMediaPlaybackRequiresPlaysInlineAttribute``
+# ``WKInternalsNotes/WKPreferences/_inlineMediaPlaybackRequiresPlaysInlineAttribute``
 
 Inline Media Playback Requires Plays Inline Attribute を有効/無効にする API
 

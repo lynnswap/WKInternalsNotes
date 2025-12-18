@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_privateClickMeasurementEnabled``
+# ``WKInternalsNotes/WKPreferences/_privateClickMeasurementEnabled``
 
 Private Click Measurement を有効/無効にする API
 

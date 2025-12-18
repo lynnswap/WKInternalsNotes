@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_drawsBackground``
+# ``WKInternalsNotes/WKWebViewConfiguration/_drawsBackground``
 
 背景を描画する
 

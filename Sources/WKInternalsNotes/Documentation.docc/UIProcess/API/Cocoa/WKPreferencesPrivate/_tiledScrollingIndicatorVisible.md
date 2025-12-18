@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_tiledScrollingIndicatorVisible``
+# ``WKInternalsNotes/WKPreferences/_tiledScrollingIndicatorVisible``
 
 Tiled scrolling indicator を表示/非表示にする API
 

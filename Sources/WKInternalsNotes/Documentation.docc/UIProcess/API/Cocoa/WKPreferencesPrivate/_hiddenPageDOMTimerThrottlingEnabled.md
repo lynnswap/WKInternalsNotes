@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_hiddenPageDOMTimerThrottlingEnabled``
+# ``WKInternalsNotes/WKPreferences/_hiddenPageDOMTimerThrottlingEnabled``
 
 hidden page DOM timer throttling を有効/無効にする API
 

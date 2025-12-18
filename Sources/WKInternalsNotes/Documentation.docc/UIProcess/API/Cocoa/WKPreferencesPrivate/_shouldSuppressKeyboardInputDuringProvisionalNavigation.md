@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_shouldSuppressKeyboardInputDuringProvisionalNavigation``
+# ``WKInternalsNotes/WKPreferences/_shouldSuppressKeyboardInputDuringProvisionalNavigation``
 
 Suppress Text Input From Editing During Provisional Navigation を切り替える API
 

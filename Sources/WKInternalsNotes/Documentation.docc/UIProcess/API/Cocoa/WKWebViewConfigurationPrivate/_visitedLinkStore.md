@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_visitedLinkStore``
+# ``WKInternalsNotes/WKWebViewConfiguration/_visitedLinkStore``
 
 visited link 状態の共有/分離単位となる store を指定する
 

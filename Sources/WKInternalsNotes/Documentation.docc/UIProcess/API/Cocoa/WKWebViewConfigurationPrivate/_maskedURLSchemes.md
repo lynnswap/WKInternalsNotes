@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_maskedURLSchemes``
+# ``WKInternalsNotes/WKWebViewConfiguration/_maskedURLSchemes``
 
 URL scheme マスク対象
 

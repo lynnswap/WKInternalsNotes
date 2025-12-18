@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_clickInteractionDriverForTesting``
+# ``WKInternalsNotes/WKWebViewConfiguration/_clickInteractionDriverForTesting``
 
 click interaction driver（テスト用）
 

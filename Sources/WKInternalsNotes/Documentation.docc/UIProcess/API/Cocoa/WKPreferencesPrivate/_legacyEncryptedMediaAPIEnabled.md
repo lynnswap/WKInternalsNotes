@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_legacyEncryptedMediaAPIEnabled``
+# ``WKInternalsNotes/WKPreferences/_legacyEncryptedMediaAPIEnabled``
 
 legacy EME API を有効/無効にする API
 

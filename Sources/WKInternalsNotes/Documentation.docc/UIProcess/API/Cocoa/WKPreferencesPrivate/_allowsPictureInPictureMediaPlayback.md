@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_allowsPictureInPictureMediaPlayback``
+# ``WKInternalsNotes/WKPreferences/_allowsPictureInPictureMediaPlayback``
 
 Picture In Picture Media Playback を許可/禁止する API
 

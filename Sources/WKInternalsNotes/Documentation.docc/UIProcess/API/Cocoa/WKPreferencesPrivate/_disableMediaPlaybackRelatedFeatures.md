@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_disableMediaPlaybackRelatedFeatures()``
+# ``WKInternalsNotes/WKPreferences/_disableMediaPlaybackRelatedFeatures()``
 
 media playback 関連 features をまとめて無効化する
 

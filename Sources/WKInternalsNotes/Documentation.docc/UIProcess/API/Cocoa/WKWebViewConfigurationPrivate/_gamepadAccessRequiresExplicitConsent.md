@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_gamepadAccessRequiresExplicitConsent``
+# ``WKInternalsNotes/WKWebViewConfiguration/_gamepadAccessRequiresExplicitConsent``
 
 gamepad access に明示同意を要求
 

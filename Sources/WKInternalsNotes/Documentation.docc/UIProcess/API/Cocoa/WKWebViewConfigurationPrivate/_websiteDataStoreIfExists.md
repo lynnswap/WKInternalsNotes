@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_websiteDataStoreIfExists``
+# ``WKInternalsNotes/WKWebViewConfiguration/_websiteDataStoreIfExists``
 
 生成済み DataStore があれば返す
 

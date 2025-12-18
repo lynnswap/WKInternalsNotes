@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_javaScriptCanAccessClipboard``
+# ``WKInternalsNotes/WKPreferences/_javaScriptCanAccessClipboard``
 
 JavaScript Can Access Clipboard を有効/無効にする API
 

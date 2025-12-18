@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_convertsPositionStyleOnCopy``
+# ``WKInternalsNotes/WKWebViewConfiguration/_convertsPositionStyleOnCopy``
 
 コピー時に `position` を変換する
 

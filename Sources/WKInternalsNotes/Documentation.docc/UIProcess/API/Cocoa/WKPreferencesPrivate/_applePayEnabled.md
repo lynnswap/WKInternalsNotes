@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_applePayEnabled``
+# ``WKInternalsNotes/WKPreferences/_applePayEnabled``
 
 Apple Pay を有効/無効にする API
 

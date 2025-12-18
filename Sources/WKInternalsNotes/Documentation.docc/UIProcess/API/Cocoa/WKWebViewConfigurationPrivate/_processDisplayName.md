@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_processDisplayName``
+# ``WKInternalsNotes/WKWebViewConfiguration/_processDisplayName``
 
 Web process の表示名
 

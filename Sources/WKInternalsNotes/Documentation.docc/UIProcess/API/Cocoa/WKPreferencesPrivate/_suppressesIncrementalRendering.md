@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_suppressesIncrementalRendering``
+# ``WKInternalsNotes/WKPreferences/_suppressesIncrementalRendering``
 
 Incremental Rendering を抑制するかどうかを切り替える API
 

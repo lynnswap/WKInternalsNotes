@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_allowMediaContentTypesRequiringHardwareSupportAsFallback``
+# ``WKInternalsNotes/WKWebViewConfiguration/_allowMediaContentTypesRequiringHardwareSupportAsFallback``
 
 HW 必須 type を fallback として許可
 

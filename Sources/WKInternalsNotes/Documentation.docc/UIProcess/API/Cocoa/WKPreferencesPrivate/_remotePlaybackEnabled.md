@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_remotePlaybackEnabled``
+# ``WKInternalsNotes/WKPreferences/_remotePlaybackEnabled``
 
 Remote Playback API を有効/無効にする API
 

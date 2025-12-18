@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_markedTextInputEnabled``
+# ``WKInternalsNotes/WKWebViewConfiguration/_markedTextInputEnabled``
 
 “marked text input” API（実装は `allowsInlinePredictions`）
 

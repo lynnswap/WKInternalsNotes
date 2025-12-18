@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_shouldPrintBackgrounds``
+# ``WKInternalsNotes/WKPreferences/_shouldPrintBackgrounds``
 
 Print Backgrounds を切り替える API
 

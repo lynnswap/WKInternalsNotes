@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_privateClickMeasurementDebugModeEnabled``
+# ``WKInternalsNotes/WKPreferences/_privateClickMeasurementDebugModeEnabled``
 
 Private Click Measurement Debug Mode を有効/無効にする API
 

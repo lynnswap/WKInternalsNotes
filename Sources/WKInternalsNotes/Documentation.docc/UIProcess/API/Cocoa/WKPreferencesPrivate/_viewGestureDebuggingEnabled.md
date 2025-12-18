@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_viewGestureDebuggingEnabled``
+# ``WKInternalsNotes/WKPreferences/_viewGestureDebuggingEnabled``
 
 view gesture debugging を有効/無効にする API
 

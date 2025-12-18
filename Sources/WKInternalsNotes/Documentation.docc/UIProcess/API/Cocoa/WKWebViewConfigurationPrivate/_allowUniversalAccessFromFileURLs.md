@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_allowUniversalAccessFromFileURLs``
+# ``WKInternalsNotes/WKWebViewConfiguration/_allowUniversalAccessFromFileURLs``
 
 `file://` からのユニバーサルアクセスを許可
 

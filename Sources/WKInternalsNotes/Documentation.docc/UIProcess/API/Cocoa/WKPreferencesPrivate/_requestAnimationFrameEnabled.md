@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_requestAnimationFrameEnabled``
+# ``WKInternalsNotes/WKPreferences/_requestAnimationFrameEnabled``
 
 no-op（常に `YES`）
 

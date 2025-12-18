@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_attachmentWideLayoutEnabled``
+# ``WKInternalsNotes/WKWebViewConfiguration/_attachmentWideLayoutEnabled``
 
 attachment の wide layout を有効化
 

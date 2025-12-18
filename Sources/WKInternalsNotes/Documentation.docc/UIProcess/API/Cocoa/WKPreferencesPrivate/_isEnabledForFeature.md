@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_isEnabledForFeature(_:)``
+# ``WKInternalsNotes/WKPreferences/_isEnabledForFeature(_:)``
 
 `_WKFeature` の有効状態を返す
 

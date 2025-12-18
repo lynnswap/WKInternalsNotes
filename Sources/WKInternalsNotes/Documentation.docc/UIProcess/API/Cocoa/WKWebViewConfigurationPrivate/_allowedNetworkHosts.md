@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_allowedNetworkHosts``
+# ``WKInternalsNotes/WKWebViewConfiguration/_allowedNetworkHosts``
 
 許可するネットワーク host 制限
 

@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_shouldDecidePolicyBeforeLoadingQuickLookPreview``
+# ``WKInternalsNotes/WKWebViewConfiguration/_shouldDecidePolicyBeforeLoadingQuickLookPreview``
 
 Quick Look preview の読み込み前に policy 決定
 

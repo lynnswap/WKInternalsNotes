@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_defaultFixedPitchFontSize``
+# ``WKInternalsNotes/WKPreferences/_defaultFixedPitchFontSize``
 
 Default Fixed Font Size を設定する API
 

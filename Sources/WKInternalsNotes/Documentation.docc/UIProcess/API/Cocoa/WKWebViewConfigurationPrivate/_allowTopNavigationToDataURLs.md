@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_allowTopNavigationToDataURLs``
+# ``WKInternalsNotes/WKWebViewConfiguration/_allowTopNavigationToDataURLs``
 
 top-level で `data:` への遷移を許可
 

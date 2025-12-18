@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_isEnabledForExperimentalFeature(_:)``
+# ``WKInternalsNotes/WKPreferences/_isEnabledForExperimentalFeature(_:)``
 
 `_WKExperimentalFeature` の有効状態を返す
 

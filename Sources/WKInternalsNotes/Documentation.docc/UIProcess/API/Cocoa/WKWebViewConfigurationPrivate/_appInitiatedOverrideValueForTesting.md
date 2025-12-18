@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_appInitiatedOverrideValueForTesting``
+# ``WKInternalsNotes/WKWebViewConfiguration/_appInitiatedOverrideValueForTesting``
 
 attribution override（テスト用）
 

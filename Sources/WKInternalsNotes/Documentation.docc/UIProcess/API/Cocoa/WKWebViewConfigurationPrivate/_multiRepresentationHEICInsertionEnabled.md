@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_multiRepresentationHEICInsertionEnabled``
+# ``WKInternalsNotes/WKWebViewConfiguration/_multiRepresentationHEICInsertionEnabled``
 
 `NSAdaptiveImageGlyph`（multi-representation HEIC）の挿入を許可する
 

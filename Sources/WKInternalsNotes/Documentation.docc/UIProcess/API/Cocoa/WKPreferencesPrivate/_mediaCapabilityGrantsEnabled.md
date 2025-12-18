@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_mediaCapabilityGrantsEnabled``
+# ``WKInternalsNotes/WKPreferences/_mediaCapabilityGrantsEnabled``
 
 Media Capability Grants を有効/無効にする API
 

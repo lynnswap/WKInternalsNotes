@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_interruptAudioOnPageVisibilityChangeEnabled``
+# ``WKInternalsNotes/WKPreferences/_interruptAudioOnPageVisibilityChangeEnabled``
 
 Interrupt Audio On Page Visibility Change を有効/無効にする API
 

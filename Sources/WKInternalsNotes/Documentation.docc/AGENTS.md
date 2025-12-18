@@ -14,20 +14,24 @@
 
 ## Layout
 - DocC catalog: `Sources/WKInternalsNotes/Documentation.docc`
-- ドキュメントの配置は WebKit リポジトリの `Source/WebKit`（= `WebKit/Source/WebKit` の最後の `WebKit`）を起点にした相対パスへ寄せる。
+- DocC 上で WebKit のディレクトリ階層は再現しない（`UIProcess/API/...` の synthetic container は作らない）。
+- ファイルの配置は現状 `UIProcess/API/Cocoa/` 配下に置く（各種スクリプトがこのパスを前提にスキャンするため）。
   - 例: `Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h` → `Sources/WKInternalsNotes/Documentation.docc/UIProcess/API/Cocoa/WKPreferencesPrivate.h.md`
+- 以降の説明で:
+  - `<HeaderName>` はヘッダ/ディレクトリ名（例: `WKPreferencesPrivate`）
+  - `<Type>` は DocC 上のコンテナシンボル名（例: `WKPreferences`）
 - Module landing page: `Sources/WKInternalsNotes/Documentation.docc/WKInternalsNotes.md`
   - `## Topics` で列挙しすぎない（大量のエントリは各ヘッダのページへ集約する）。
 - Header pages（ヘッダ単位のまとめ）:
-  - `Sources/WKInternalsNotes/Documentation.docc/UIProcess/API/Cocoa/<Type>.h.md`
-  - 例: `Sources/WKInternalsNotes/Documentation.docc/UIProcess/API/Cocoa/WKWebViewPrivate.h.md`
-  - これらは DocC の documentation extension として、先頭を次の形式にする。
+  - `Sources/WKInternalsNotes/Documentation.docc/UIProcess/API/Cocoa/<HeaderName>.h.md`
+  - 例: `Sources/WKInternalsNotes/Documentation.docc/UIProcess/API/Cocoa/WKPreferencesPrivate.h.md`
+  - これらは DocC の documentation extension として、先頭を次の形式にする（`*Private` は `Scripts/generate_webkitspi_private_symbol_graph.py` 側で `WK*` に正規化される）。
     ```markdown
     # ``WKInternalsNotes/<Type>``
     ```
   - ヘッダのメタ情報（WebKit revision など）は、H1 直下ではなく `## Metadata` に置き、ページ末尾にまとめる。
 - Entry pages（1エントリ=1ページ）:
-  - `Sources/WKInternalsNotes/Documentation.docc/UIProcess/API/Cocoa/<Type>/*.md`
+  - `Sources/WKInternalsNotes/Documentation.docc/UIProcess/API/Cocoa/<HeaderName>/*.md`
   - 先頭は必ず次の形式にする（DocC documentation extension）。
     ```markdown
     # ``WKInternalsNotes/<Type>/<Symbol>``
@@ -44,13 +48,14 @@
   - `## Declaration` は DocC が自動生成するため、Objective-C の宣言は `## Objective-C Declaration` に置く。
 - Links:
   - 目次や箇条書きのリンクは `<doc:...>` ではなくシンボルリンクを使う。
-    - 例: - ``WKInternalsNotes/WKPreferencesPrivate/_acceleratedDrawingEnabled``
+    - 例: - ``WKInternalsNotes/WKPreferences/_acceleratedDrawingEnabled``
 
 ## Symbol Graph (synthetic)
 - エントリを UIKit 風の「シンボル」ページとして表示するため、合成 symbol graph を同梱する。
   - File: `Sources/WKInternalsNotes/Documentation.docc/SymbolGraphs/WKInternalsNotes.WKAPI.symbols.json`
   - Generator: `Scripts/generate_webkitspi_private_symbol_graph.py`
-  - `UIProcess/API/Cocoa/<Type>.h.md` と `UIProcess/API/Cocoa/<Type>/` から対象コンテナを自動検出する。
+- `UIProcess/API/Cocoa/<HeaderName>.h.md` と `UIProcess/API/Cocoa/<HeaderName>/` から対象コンテナを自動検出する。
+  - `*Private` は `Scripts/generate_webkitspi_private_symbol_graph.py` 側で `WK*` に正規化される（例: `WKPreferencesPrivate` → `WKPreferences`）。
 - Objective-C の宣言行を更新したら、原則として symbol graph も更新する（DocC の宣言/availability 表示に影響するため）。
 
 ## Writing Rules

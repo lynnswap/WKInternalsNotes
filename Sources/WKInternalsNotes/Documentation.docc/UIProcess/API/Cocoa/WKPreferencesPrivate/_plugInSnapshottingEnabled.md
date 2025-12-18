@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_plugInSnapshottingEnabled``
+# ``WKInternalsNotes/WKPreferences/_plugInSnapshottingEnabled``
 
 no-op（常に `NO`）
 

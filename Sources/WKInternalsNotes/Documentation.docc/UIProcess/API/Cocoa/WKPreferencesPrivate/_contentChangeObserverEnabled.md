@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_contentChangeObserverEnabled``
+# ``WKInternalsNotes/WKPreferences/_contentChangeObserverEnabled``
 
 Content Change Observer を有効/無効にする API
 

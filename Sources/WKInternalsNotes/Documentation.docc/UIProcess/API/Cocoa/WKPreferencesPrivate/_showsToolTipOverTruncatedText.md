@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_showsToolTipOverTruncatedText``
+# ``WKInternalsNotes/WKPreferences/_showsToolTipOverTruncatedText``
 
 Shows Tool Tip Over Truncated Text を有効/無効にする API
 

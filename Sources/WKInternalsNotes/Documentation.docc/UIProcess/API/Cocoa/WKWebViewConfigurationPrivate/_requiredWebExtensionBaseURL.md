@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_requiredWebExtensionBaseURL``
+# ``WKInternalsNotes/WKWebViewConfiguration/_requiredWebExtensionBaseURL``
 
 Web Extension 用の「必須 base URL」制約
 

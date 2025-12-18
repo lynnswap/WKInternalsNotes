@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_mediaStreamEnabled``
+# ``WKInternalsNotes/WKPreferences/_mediaStreamEnabled``
 
 no-op（常に `YES`）
 

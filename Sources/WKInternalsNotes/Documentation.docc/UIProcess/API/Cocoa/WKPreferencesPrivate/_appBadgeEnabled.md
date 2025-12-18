@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_appBadgeEnabled``
+# ``WKInternalsNotes/WKPreferences/_appBadgeEnabled``
 
 App Badge を有効/無効にする API
 

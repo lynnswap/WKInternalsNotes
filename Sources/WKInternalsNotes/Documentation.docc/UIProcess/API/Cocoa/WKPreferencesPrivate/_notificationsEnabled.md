@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_notificationsEnabled``
+# ``WKInternalsNotes/WKPreferences/_notificationsEnabled``
 
 Notifications を有効/無効にする API
 

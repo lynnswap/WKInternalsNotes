@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_largeImageAsyncDecodingEnabled``
+# ``WKInternalsNotes/WKPreferences/_largeImageAsyncDecodingEnabled``
 
 Large Image Async Decoding を有効/無効にする API
 

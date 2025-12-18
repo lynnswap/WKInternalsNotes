@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_experimentalFeatures()``
+# ``WKInternalsNotes/WKPreferences/_experimentalFeatures()``
 
 利用可能な `_WKExperimentalFeature` 一覧を返す
 

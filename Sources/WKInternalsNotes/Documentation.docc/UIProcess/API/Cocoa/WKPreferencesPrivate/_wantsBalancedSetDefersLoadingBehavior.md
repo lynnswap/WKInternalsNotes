@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_wantsBalancedSetDefersLoadingBehavior``
+# ``WKInternalsNotes/WKPreferences/_wantsBalancedSetDefersLoadingBehavior``
 
 Balanced Set Defers Loading Behavior を切り替える API
 

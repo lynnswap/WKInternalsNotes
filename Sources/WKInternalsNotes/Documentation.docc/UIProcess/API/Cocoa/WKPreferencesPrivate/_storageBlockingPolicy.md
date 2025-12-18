@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_storageBlockingPolicy``
+# ``WKInternalsNotes/WKPreferences/_storageBlockingPolicy``
 
 Storage Blocking Policy を設定する API
 

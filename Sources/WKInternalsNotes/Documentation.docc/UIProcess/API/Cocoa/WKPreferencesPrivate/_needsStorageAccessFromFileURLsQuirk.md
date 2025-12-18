@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_needsStorageAccessFromFileURLsQuirk``
+# ``WKInternalsNotes/WKPreferences/_needsStorageAccessFromFileURLsQuirk``
 
 Needs storage access from file URLs quirk を切り替える API
 

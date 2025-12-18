@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_telephoneNumberDetectionIsEnabled``
+# ``WKInternalsNotes/WKPreferences/_telephoneNumberDetectionIsEnabled``
 
 Telephone Number Parsing を有効/無効にする API
 

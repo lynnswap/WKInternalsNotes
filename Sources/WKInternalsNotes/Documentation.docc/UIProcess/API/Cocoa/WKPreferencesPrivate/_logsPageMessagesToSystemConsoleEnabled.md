@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_logsPageMessagesToSystemConsoleEnabled``
+# ``WKInternalsNotes/WKPreferences/_logsPageMessagesToSystemConsoleEnabled``
 
 Log page messages to system console を有効/無効にする API
 

@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_allowFileAccessFromFileURLs``
+# ``WKInternalsNotes/WKPreferences/_allowFileAccessFromFileURLs``
 
 File Access From File URLs を許可/禁止する API
 

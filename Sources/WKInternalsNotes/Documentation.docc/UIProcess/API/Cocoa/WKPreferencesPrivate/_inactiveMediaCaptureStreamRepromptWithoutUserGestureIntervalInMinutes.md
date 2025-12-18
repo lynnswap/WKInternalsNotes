@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_inactiveMediaCaptureStreamRepromptWithoutUserGestureIntervalInMinutes``
+# ``WKInternalsNotes/WKPreferences/_inactiveMediaCaptureStreamRepromptWithoutUserGestureIntervalInMinutes``
 
 Inactive Media Capture Stream Reprompt Without User Gesture Interval In Minutes を設定する API
 

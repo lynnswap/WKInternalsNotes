@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_serviceControlsEnabled``
+# ``WKInternalsNotes/WKWebViewConfiguration/_serviceControlsEnabled``
 
 選択範囲/電話番号の Services overlay（Data Detectors highlight）を表示する
 

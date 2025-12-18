@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_interactionRegionMinimumCornerRadius``
+# ``WKInternalsNotes/WKPreferences/_interactionRegionMinimumCornerRadius``
 
 Interaction Region Minimum Corner Radius を設定する API
 

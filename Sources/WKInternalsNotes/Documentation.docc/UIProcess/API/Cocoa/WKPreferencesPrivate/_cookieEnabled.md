@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_cookieEnabled``
+# ``WKInternalsNotes/WKPreferences/_cookieEnabled``
 
 Cookies を有効/無効にする API
 

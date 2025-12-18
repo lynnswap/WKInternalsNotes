@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_respectsImageOrientation``
+# ``WKInternalsNotes/WKWebViewConfiguration/_respectsImageOrientation``
 
 画像の EXIF orientation を尊重する
 

@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_webExtensionController``
+# ``WKInternalsNotes/WKWebViewConfiguration/_webExtensionController``
 
 `_WKWebExtensionController`（実体は `WKWebExtensionController`）
 

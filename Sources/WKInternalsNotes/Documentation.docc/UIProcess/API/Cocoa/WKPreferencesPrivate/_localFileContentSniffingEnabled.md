@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_localFileContentSniffingEnabled``
+# ``WKInternalsNotes/WKPreferences/_localFileContentSniffingEnabled``
 
 Local File Content Sniffing を有効/無効にする API
 

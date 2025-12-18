@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_pushAPIEnabled``
+# ``WKInternalsNotes/WKPreferences/_pushAPIEnabled``
 
 Push API を有効/無効にする API
 

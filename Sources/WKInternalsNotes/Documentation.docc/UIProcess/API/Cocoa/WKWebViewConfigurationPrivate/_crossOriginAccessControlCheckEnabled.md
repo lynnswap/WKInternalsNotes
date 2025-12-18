@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_crossOriginAccessControlCheckEnabled``
+# ``WKInternalsNotes/WKWebViewConfiguration/_crossOriginAccessControlCheckEnabled``
 
 CORS の access control check を有効/無効にする
 

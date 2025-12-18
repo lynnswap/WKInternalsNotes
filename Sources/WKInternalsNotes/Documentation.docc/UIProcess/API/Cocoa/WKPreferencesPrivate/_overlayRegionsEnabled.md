@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_overlayRegionsEnabled``
+# ``WKInternalsNotes/WKPreferences/_overlayRegionsEnabled``
 
 Overlay Regions を有効/無効にする API
 

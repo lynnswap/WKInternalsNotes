@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_topNavigationToDataURLsAllowed``
+# ``WKInternalsNotes/WKPreferences/_topNavigationToDataURLsAllowed``
 
 top navigation to data: URLs を許可/禁止する API
 

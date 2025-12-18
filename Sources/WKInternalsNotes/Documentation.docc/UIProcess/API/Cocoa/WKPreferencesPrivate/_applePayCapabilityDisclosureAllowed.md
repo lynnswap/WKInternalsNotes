@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_applePayCapabilityDisclosureAllowed``
+# ``WKInternalsNotes/WKPreferences/_applePayCapabilityDisclosureAllowed``
 
 Apple Pay Capability Disclosure を許可/禁止する API
 

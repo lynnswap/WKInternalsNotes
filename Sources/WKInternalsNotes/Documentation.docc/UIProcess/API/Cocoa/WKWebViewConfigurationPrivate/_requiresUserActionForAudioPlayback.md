@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_requiresUserActionForAudioPlayback``
+# ``WKInternalsNotes/WKWebViewConfiguration/_requiresUserActionForAudioPlayback``
 
 audio の再生に user action を要求
 

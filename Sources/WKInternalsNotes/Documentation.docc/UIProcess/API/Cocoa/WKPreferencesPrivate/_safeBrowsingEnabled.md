@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_safeBrowsingEnabled``
+# ``WKInternalsNotes/WKPreferences/_safeBrowsingEnabled``
 
 Safe Browsing を有効/無効にする API
 

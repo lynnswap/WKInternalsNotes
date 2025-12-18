@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_appHighlightsEnabled``
+# ``WKInternalsNotes/WKWebViewConfiguration/_appHighlightsEnabled``
 
 App Highlights を有効化
 

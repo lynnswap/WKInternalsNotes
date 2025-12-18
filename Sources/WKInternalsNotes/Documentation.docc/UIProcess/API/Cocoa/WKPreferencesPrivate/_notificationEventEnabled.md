@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_notificationEventEnabled``
+# ``WKInternalsNotes/WKPreferences/_notificationEventEnabled``
 
 NotificationEvent support を有効/無効にする API
 

@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_weakWebExtensionController``
+# ``WKInternalsNotes/WKWebViewConfiguration/_weakWebExtensionController``
 
 弱参照の WebExtensionController
 

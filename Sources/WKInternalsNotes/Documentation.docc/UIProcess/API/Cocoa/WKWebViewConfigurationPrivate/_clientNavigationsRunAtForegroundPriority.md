@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_clientNavigationsRunAtForegroundPriority``
+# ``WKInternalsNotes/WKWebViewConfiguration/_clientNavigationsRunAtForegroundPriority``
 
 client navigation を foreground 優先度で実行
 

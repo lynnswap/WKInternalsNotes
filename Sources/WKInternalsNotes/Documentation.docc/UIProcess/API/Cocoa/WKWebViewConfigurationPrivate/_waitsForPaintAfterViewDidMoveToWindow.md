@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_waitsForPaintAfterViewDidMoveToWindow``
+# ``WKInternalsNotes/WKWebViewConfiguration/_waitsForPaintAfterViewDidMoveToWindow``
 
 view が window に入った後の paint を待つ
 

@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_accessHandleEnabled``
+# ``WKInternalsNotes/WKPreferences/_accessHandleEnabled``
 
 AccessHandle API を有効/無効にする API
 

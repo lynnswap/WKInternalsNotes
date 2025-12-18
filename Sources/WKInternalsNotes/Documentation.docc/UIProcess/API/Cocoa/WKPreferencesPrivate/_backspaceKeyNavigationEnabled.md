@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_backspaceKeyNavigationEnabled``
+# ``WKInternalsNotes/WKPreferences/_backspaceKeyNavigationEnabled``
 
 Backspace Key Navigation を有効/無効にする API
 

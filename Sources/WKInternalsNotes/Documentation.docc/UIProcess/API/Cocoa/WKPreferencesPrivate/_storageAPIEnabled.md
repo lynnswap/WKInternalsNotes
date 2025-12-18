@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_storageAPIEnabled``
+# ``WKInternalsNotes/WKPreferences/_storageAPIEnabled``
 
 Storage API を有効/無効にする API
 

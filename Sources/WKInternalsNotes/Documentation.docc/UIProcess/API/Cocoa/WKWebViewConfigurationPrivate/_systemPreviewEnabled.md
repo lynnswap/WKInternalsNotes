@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_systemPreviewEnabled``
+# ``WKInternalsNotes/WKWebViewConfiguration/_systemPreviewEnabled``
 
 system preview を有効化
 

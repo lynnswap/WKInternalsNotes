@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_webAudioEnabled``
+# ``WKInternalsNotes/WKPreferences/_webAudioEnabled``
 
 Web Audio を有効/無効にする API
 

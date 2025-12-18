@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_domTimersThrottlingEnabled``
+# ``WKInternalsNotes/WKPreferences/_domTimersThrottlingEnabled``
 
 DOM timer throttling を有効/無効にする API
 

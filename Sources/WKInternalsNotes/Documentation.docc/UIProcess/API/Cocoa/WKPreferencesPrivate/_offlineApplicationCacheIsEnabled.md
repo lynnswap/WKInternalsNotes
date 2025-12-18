@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_offlineApplicationCacheIsEnabled``
+# ``WKInternalsNotes/WKPreferences/_offlineApplicationCacheIsEnabled``
 
 no-op（常に `NO`）
 

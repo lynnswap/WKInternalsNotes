@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_clientBadgeEnabled``
+# ``WKInternalsNotes/WKPreferences/_clientBadgeEnabled``
 
 no-op（常に `NO`）
 

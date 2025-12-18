@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_acceleratedCompositingEnabled``
+# ``WKInternalsNotes/WKPreferences/_acceleratedCompositingEnabled``
 
 Accelerated Compositing を有効/無効にする API
 

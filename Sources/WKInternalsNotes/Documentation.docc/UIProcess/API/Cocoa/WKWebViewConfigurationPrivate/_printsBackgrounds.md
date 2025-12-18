@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_printsBackgrounds``
+# ``WKInternalsNotes/WKWebViewConfiguration/_printsBackgrounds``
 
 印刷時に背景を出力する
 

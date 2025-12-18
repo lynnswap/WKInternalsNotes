@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_invisibleMediaAutoplayNotPermitted``
+# ``WKInternalsNotes/WKPreferences/_invisibleMediaAutoplayNotPermitted``
 
 Invisible Autoplay Not Permitted を有効/無効にする API
 

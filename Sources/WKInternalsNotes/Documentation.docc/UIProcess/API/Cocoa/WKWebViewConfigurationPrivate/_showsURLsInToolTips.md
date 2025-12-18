@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_showsURLsInToolTips``
+# ``WKInternalsNotes/WKWebViewConfiguration/_showsURLsInToolTips``
 
 URL をツールチップに表示
 

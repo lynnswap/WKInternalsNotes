@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_incompleteImageBorderEnabled``
+# ``WKInternalsNotes/WKWebViewConfiguration/_incompleteImageBorderEnabled``
 
 incomplete image の border 表示
 

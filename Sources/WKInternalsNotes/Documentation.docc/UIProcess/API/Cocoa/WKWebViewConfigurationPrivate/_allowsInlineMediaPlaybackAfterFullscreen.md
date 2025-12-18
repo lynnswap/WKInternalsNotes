@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_allowsInlineMediaPlaybackAfterFullscreen``
+# ``WKInternalsNotes/WKWebViewConfiguration/_allowsInlineMediaPlaybackAfterFullscreen``
 
 fullscreen 後に inline 再生を許可
 

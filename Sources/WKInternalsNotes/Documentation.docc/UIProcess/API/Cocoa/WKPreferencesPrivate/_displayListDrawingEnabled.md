@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_displayListDrawingEnabled``
+# ``WKInternalsNotes/WKPreferences/_displayListDrawingEnabled``
 
 no-op（常に `NO`）
 

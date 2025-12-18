@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_serviceWorkerEntitlementDisabledForTesting``
+# ``WKInternalsNotes/WKPreferences/_serviceWorkerEntitlementDisabledForTesting``
 
 Service Worker Entitlement をテスト用に無効化する API
 

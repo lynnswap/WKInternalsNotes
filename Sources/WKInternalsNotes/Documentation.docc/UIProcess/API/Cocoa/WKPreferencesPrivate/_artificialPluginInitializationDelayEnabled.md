@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_artificialPluginInitializationDelayEnabled``
+# ``WKInternalsNotes/WKPreferences/_artificialPluginInitializationDelayEnabled``
 
 no-op（常に `NO`）
 

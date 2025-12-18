@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_shouldAllowUserInstalledFonts``
+# ``WKInternalsNotes/WKPreferences/_shouldAllowUserInstalledFonts``
 
 User Installed Fonts を切り替える API
 

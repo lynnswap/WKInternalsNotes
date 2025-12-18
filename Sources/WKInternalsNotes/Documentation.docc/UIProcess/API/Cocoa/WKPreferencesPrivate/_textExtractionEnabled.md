@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_textExtractionEnabled``
+# ``WKInternalsNotes/WKPreferences/_textExtractionEnabled``
 
 Text Extraction を有効/無効にする API
 

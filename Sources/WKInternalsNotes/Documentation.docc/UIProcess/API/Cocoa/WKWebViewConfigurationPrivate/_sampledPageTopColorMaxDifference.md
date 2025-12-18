@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_sampledPageTopColorMaxDifference``
+# ``WKInternalsNotes/WKWebViewConfiguration/_sampledPageTopColorMaxDifference``
 
 page top color sampling の許容差分
 

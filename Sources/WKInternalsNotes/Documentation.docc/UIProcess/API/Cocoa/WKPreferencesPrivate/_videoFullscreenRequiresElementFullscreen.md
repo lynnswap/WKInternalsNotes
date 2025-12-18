@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_videoFullscreenRequiresElementFullscreen``
+# ``WKInternalsNotes/WKPreferences/_videoFullscreenRequiresElementFullscreen``
 
 Video Fullscreen Requires Element Fullscreen を有効/無効にする API
 

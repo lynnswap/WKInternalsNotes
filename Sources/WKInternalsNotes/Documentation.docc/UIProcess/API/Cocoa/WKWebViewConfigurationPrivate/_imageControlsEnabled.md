@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_imageControlsEnabled``
+# ``WKInternalsNotes/WKWebViewConfiguration/_imageControlsEnabled``
 
 画像/Attachment に image controls（service 用ボタン）を表示する（macOS）
 

@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_compositingRepaintCountersVisible``
+# ``WKInternalsNotes/WKPreferences/_compositingRepaintCountersVisible``
 
 Compositing repaint counters visible を表示/非表示にする API
 

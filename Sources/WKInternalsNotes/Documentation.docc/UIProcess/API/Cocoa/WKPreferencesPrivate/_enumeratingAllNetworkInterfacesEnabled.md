@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_enumeratingAllNetworkInterfacesEnabled``
+# ``WKInternalsNotes/WKPreferences/_enumeratingAllNetworkInterfacesEnabled``
 
 Enumerating All Network Interfaces を有効/無効にする API
 

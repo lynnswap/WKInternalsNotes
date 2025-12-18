@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_avFoundationEnabled``
+# ``WKInternalsNotes/WKPreferences/_avFoundationEnabled``
 
 AVFoundation を有効/無効にする API
 

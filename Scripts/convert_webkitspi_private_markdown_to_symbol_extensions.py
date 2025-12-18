@@ -3,7 +3,7 @@
 Convert WKInternalsNotes private header markdown pages into DocC documentation extensions.
 
 This updates the H1 title of each entry page to use a symbol link, e.g.:
-  # ``WKInternalsNotes/WKPreferencesPrivate/_acceleratedDrawingEnabled``
+  # ``WKInternalsNotes/WKPreferences/_acceleratedDrawingEnabled``
 
 so DocC renders the page as a symbol reference page (not an article).
 """
@@ -108,9 +108,10 @@ def main() -> int:
     for md_path in sorted(COCOA_API_ROOT.glob("*.h.md")):
         original = md_path.read_text(encoding="utf-8")
         if md_path.name.endswith(".h.md"):
-            container = md_path.name[: -len(".h.md")]
+            header_container = md_path.name[: -len(".h.md")]
         else:
-            container = md_path.stem
+            header_container = md_path.stem
+        container = gen.container_symbol_name(header_container)
         updated = _replace_first_heading(original, f"# ``{gen.MODULE_NAME}/{container}``")
         if updated != original:
             md_path.write_text(updated, encoding="utf-8")

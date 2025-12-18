@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_speechRecognitionEnabled``
+# ``WKInternalsNotes/WKPreferences/_speechRecognitionEnabled``
 
 SpeechRecognition API を有効/無効にする API
 

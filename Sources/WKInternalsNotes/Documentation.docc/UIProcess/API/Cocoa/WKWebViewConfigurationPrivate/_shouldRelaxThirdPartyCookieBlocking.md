@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_shouldRelaxThirdPartyCookieBlocking``
+# ``WKInternalsNotes/WKWebViewConfiguration/_shouldRelaxThirdPartyCookieBlocking``
 
 3rd-party cookie blocking を緩める
 

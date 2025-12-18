@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_fixedPitchFontFamily``
+# ``WKInternalsNotes/WKPreferences/_fixedPitchFontFamily``
 
 Fixed Font Family を設定する API
 

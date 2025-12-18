@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_allowsJavaScriptMarkup``
+# ``WKInternalsNotes/WKWebViewConfiguration/_allowsJavaScriptMarkup``
 
 JavaScript 由来の markup を許可
 

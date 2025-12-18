@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_allowTestOnlyIPC``
+# ``WKInternalsNotes/WKWebViewConfiguration/_allowTestOnlyIPC``
 
 Test-only IPC を許可
 

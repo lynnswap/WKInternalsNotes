@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_visibleDebugOverlayRegions``
+# ``WKInternalsNotes/WKPreferences/_visibleDebugOverlayRegions``
 
 Visible Debug Overlay Regions を設定する API
 

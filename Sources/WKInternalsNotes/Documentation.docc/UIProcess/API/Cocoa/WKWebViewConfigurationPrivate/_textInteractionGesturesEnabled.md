@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_textInteractionGesturesEnabled``
+# ``WKInternalsNotes/WKWebViewConfiguration/_textInteractionGesturesEnabled``
 
 text selection / interaction gestures を有効/無効にする（iOS）
 

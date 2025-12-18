@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_contentSecurityPolicyModeForExtension``
+# ``WKInternalsNotes/WKWebViewConfiguration/_contentSecurityPolicyModeForExtension``
 
 Web Extension 向け CSP モード
 

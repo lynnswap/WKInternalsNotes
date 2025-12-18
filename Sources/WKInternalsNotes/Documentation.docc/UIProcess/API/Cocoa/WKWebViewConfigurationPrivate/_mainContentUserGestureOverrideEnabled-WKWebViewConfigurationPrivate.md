@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_mainContentUserGestureOverrideEnabled``
+# ``WKInternalsNotes/WKWebViewConfiguration/_mainContentUserGestureOverrideEnabled``
 
 main content の user gesture override
 

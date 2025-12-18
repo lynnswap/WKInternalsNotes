@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_subpixelCSSOMElementMetricsEnabled``
+# ``WKInternalsNotes/WKPreferences/_subpixelCSSOMElementMetricsEnabled``
 
 no-op（常に `NO`）
 

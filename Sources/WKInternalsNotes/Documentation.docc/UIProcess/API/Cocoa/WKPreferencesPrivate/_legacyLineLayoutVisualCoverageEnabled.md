@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_legacyLineLayoutVisualCoverageEnabled``
+# ``WKInternalsNotes/WKPreferences/_legacyLineLayoutVisualCoverageEnabled``
 
 legacy line layout visual coverage を有効/無効にする API
 

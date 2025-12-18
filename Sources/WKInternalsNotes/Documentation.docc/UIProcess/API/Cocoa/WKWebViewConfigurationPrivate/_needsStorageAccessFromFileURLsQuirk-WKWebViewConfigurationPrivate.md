@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_needsStorageAccessFromFileURLsQuirk``
+# ``WKInternalsNotes/WKWebViewConfiguration/_needsStorageAccessFromFileURLsQuirk``
 
 `file://` からの Storage Access の quirk
 

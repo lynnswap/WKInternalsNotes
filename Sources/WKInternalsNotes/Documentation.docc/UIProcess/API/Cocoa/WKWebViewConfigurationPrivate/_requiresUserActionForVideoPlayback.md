@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_requiresUserActionForVideoPlayback``
+# ``WKInternalsNotes/WKWebViewConfiguration/_requiresUserActionForVideoPlayback``
 
 video の再生に user action を要求
 

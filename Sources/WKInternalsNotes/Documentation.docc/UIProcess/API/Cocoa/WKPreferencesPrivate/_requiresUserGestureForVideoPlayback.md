@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_requiresUserGestureForVideoPlayback``
+# ``WKInternalsNotes/WKPreferences/_requiresUserGestureForVideoPlayback``
 
 User Gesture For Video Playback を切り替える API
 

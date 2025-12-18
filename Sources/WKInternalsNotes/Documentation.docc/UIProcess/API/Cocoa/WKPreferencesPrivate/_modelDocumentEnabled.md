@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_modelDocumentEnabled``
+# ``WKInternalsNotes/WKPreferences/_modelDocumentEnabled``
 
 HTML <model> element for model documents を有効/無効にする API
 

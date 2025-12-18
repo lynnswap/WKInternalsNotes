@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_allowsInlineMediaPlayback``
+# ``WKInternalsNotes/WKPreferences/_allowsInlineMediaPlayback``
 
 Inline Media Playback を許可/禁止する API
 

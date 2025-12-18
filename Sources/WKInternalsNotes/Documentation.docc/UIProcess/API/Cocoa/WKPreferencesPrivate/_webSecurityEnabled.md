@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_webSecurityEnabled``
+# ``WKInternalsNotes/WKPreferences/_webSecurityEnabled``
 
 Web Security を有効/無効にする API
 

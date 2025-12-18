@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_setEnabled(_:forFeature:)``
+# ``WKInternalsNotes/WKPreferences/_setEnabled(_:forFeature:)``
 
 `_WKFeature` の有効状態を更新する
 

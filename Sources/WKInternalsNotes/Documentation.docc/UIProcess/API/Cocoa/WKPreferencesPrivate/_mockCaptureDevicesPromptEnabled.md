@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_mockCaptureDevicesPromptEnabled``
+# ``WKInternalsNotes/WKPreferences/_mockCaptureDevicesPromptEnabled``
 
 Mock Capture Devices Prompt を有効/無効にする API
 

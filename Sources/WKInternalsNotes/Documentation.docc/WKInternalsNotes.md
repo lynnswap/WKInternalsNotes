@@ -6,5 +6,6 @@
 
 ## Topics
 
-### UIProcess
-- ``WKInternalsNotes/UIProcess``
+### Cocoa (UIProcess/API/Cocoa)
+- ``WKInternalsNotes/WKPreferences``
+- ``WKInternalsNotes/WKWebViewConfiguration``

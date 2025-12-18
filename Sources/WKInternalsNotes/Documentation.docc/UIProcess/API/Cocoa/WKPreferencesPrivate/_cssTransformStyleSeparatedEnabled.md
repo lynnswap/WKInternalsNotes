@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_cssTransformStyleSeparatedEnabled``
+# ``WKInternalsNotes/WKPreferences/_cssTransformStyleSeparatedEnabled``
 
 CSS transform-style: separated を有効/無効にする API
 

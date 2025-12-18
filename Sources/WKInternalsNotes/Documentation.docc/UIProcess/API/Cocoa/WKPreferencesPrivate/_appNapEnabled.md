@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_appNapEnabled``
+# ``WKInternalsNotes/WKPreferences/_appNapEnabled``
 
 page visibility-based process suppression を有効/無効にする API
 

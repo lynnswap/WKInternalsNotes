@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_alternateWebViewForNavigationGestures``
+# ``WKInternalsNotes/WKWebViewConfiguration/_alternateWebViewForNavigationGestures``
 
 ナビゲーションジェスチャの代替 `WKWebView`
 

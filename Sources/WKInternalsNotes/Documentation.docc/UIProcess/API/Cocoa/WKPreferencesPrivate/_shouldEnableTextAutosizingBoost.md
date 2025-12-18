@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_shouldEnableTextAutosizingBoost``
+# ``WKInternalsNotes/WKPreferences/_shouldEnableTextAutosizingBoost``
 
 Text Autosizing Boost を切り替える API
 

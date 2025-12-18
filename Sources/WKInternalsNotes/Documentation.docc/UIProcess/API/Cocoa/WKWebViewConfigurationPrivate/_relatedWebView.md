@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_relatedWebView``
+# ``WKInternalsNotes/WKWebViewConfiguration/_relatedWebView``
 
 関連する `WKWebView`（related page）
 

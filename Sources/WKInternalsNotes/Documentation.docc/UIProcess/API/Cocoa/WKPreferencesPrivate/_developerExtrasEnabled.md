@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_developerExtrasEnabled``
+# ``WKInternalsNotes/WKPreferences/_developerExtrasEnabled``
 
 Web Inspector などの開発者向け機能を有効/無効にする API
 

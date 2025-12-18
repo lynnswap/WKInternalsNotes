@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_requiresPageVisibilityToPlayAudio``
+# ``WKInternalsNotes/WKPreferences/_requiresPageVisibilityToPlayAudio``
 
 Page Visibility To Play Audio を切り替える API
 

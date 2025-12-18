@@ -362,7 +362,7 @@ def main() -> int:
     for container, directory in containers.items():
         if not directory.exists():
             continue
-        header_path = f"Source/WebKit/UIProcess/API/Cocoa/{container}.h"
+        header_path = f"Source/WebKit/UIProcess/API/Cocoa/{directory.name}.h"
         for md_path in sorted(directory.rglob("*.md")):
             original = md_path.read_text(encoding="utf-8")
             entry = _parse_entry_symbol(original)

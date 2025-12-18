@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_undoManagerAPIEnabled``
+# ``WKInternalsNotes/WKWebViewConfiguration/_undoManagerAPIEnabled``
 
 UndoManager API を有効化
 

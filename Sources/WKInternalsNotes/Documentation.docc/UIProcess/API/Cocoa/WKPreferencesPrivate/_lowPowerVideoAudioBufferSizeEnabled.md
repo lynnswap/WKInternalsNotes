@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_lowPowerVideoAudioBufferSizeEnabled``
+# ``WKInternalsNotes/WKPreferences/_lowPowerVideoAudioBufferSizeEnabled``
 
 Low Power Video Audio Buffer Size を有効/無効にする API
 

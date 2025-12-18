@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_mediaPreferredFullscreenWidth``
+# ``WKInternalsNotes/WKPreferences/_mediaPreferredFullscreenWidth``
 
 Media Preferred Fullscreen Width を設定する API
 

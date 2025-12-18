@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_updateSceneGeometryEnabled``
+# ``WKInternalsNotes/WKPreferences/_updateSceneGeometryEnabled``
 
 Update Scene Geometry を有効/無効にする API
 

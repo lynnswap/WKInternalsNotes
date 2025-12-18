@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_overrideContentSecurityPolicy``
+# ``WKInternalsNotes/WKWebViewConfiguration/_overrideContentSecurityPolicy``
 
 CSP を上書き
 

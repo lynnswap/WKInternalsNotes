@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_colorFilterEnabled``
+# ``WKInternalsNotes/WKPreferences/_colorFilterEnabled``
 
 Color Filter を有効/無効にする API
 

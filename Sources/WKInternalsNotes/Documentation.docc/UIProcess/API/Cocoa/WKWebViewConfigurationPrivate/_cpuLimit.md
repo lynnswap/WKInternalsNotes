@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_cpuLimit``
+# ``WKInternalsNotes/WKWebViewConfiguration/_cpuLimit``
 
 CPU リミット（macOS のみ）
 

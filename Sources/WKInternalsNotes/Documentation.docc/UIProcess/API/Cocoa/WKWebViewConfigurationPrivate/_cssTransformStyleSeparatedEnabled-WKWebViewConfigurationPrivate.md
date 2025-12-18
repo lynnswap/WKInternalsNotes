@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_cssTransformStyleSeparatedEnabled``
+# ``WKInternalsNotes/WKWebViewConfiguration/_cssTransformStyleSeparatedEnabled``
 
 separated layers の `transform-style`
 

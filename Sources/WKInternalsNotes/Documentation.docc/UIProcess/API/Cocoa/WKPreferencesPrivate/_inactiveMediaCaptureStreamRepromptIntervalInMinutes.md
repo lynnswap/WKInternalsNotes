@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_inactiveMediaCaptureStreamRepromptIntervalInMinutes``
+# ``WKInternalsNotes/WKPreferences/_inactiveMediaCaptureStreamRepromptIntervalInMinutes``
 
 Inactive Media Capture Stream Reprompt Interval In Minutes を設定する API
 

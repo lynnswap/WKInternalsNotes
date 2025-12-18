@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_defaultFontSize``
+# ``WKInternalsNotes/WKPreferences/_defaultFontSize``
 
 Default Font Size を設定する API
 

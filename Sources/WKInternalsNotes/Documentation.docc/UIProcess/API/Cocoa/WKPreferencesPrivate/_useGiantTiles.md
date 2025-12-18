@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_useGiantTiles``
+# ``WKInternalsNotes/WKPreferences/_useGiantTiles``
 
 Use giant tiles を有効/無効にする API
 

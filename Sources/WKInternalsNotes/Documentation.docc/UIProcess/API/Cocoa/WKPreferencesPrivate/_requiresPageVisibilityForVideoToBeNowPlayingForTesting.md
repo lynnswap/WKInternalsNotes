@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_requiresPageVisibilityForVideoToBeNowPlayingForTesting``
+# ``WKInternalsNotes/WKPreferences/_requiresPageVisibilityForVideoToBeNowPlayingForTesting``
 
 Page Visibility For Video To Be Now Playing を切り替える API
 

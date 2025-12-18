@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_ignoresAppBoundDomains``
+# ``WKInternalsNotes/WKWebViewConfiguration/_ignoresAppBoundDomains``
 
 App Bound Domains を無視
 

@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_groupIdentifier``
+# ``WKInternalsNotes/WKWebViewConfiguration/_groupIdentifier``
 
 Browsing context group（グループ ID）
 

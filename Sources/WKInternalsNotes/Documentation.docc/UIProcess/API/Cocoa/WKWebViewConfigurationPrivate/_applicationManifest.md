@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_applicationManifest``
+# ``WKInternalsNotes/WKWebViewConfiguration/_applicationManifest``
 
 WebPage 作成時に Application Manifest を固定で渡す
 

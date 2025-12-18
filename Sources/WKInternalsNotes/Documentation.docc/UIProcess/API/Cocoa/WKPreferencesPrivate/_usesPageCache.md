@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_usesPageCache``
+# ``WKInternalsNotes/WKPreferences/_usesPageCache``
 
 Back Forward Cache を使用するかどうかを切り替える API
 

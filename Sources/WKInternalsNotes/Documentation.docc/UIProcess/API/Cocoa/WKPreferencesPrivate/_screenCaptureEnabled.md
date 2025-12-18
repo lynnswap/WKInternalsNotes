@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_screenCaptureEnabled``
+# ``WKInternalsNotes/WKPreferences/_screenCaptureEnabled``
 
 ScreenCapture を有効/無効にする API
 

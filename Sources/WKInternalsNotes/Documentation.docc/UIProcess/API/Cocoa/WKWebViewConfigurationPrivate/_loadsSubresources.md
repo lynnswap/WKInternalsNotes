@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_loadsSubresources``
+# ``WKInternalsNotes/WKWebViewConfiguration/_loadsSubresources``
 
 subresource のロード可否
 

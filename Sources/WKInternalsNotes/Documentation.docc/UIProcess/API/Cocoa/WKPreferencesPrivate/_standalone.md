@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_standalone``
+# ``WKInternalsNotes/WKPreferences/_standalone``
 
 Standalone を有効/無効にする API
 

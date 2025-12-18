@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_managedMediaSourceHighThreshold``
+# ``WKInternalsNotes/WKPreferences/_managedMediaSourceHighThreshold``
 
 Managed Media Source High Threshold を設定する API
 

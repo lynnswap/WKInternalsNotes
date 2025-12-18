@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_textAreasAreResizable``
+# ``WKInternalsNotes/WKPreferences/_textAreasAreResizable``
 
 Text Areas Are Resizable を有効/無効にする API
 

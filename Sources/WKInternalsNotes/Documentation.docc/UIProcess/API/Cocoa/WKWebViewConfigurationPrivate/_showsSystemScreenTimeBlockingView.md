@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_showsSystemScreenTimeBlockingView``
+# ``WKInternalsNotes/WKWebViewConfiguration/_showsSystemScreenTimeBlockingView``
 
 Screen Time ブロック UI を表示
 

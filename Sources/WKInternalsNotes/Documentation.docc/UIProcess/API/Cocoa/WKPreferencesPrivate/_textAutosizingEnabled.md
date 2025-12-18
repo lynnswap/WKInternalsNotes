@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_textAutosizingEnabled``
+# ``WKInternalsNotes/WKPreferences/_textAutosizingEnabled``
 
 Text Autosizing を有効/無効にする API
 

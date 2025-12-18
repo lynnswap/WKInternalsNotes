@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_dnsPrefetchingEnabled``
+# ``WKInternalsNotes/WKPreferences/_dnsPrefetchingEnabled``
 
 no-op（常に `NO`）
 

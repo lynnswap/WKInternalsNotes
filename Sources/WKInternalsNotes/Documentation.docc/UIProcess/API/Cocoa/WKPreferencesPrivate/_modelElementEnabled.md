@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_modelElementEnabled``
+# ``WKInternalsNotes/WKPreferences/_modelElementEnabled``
 
 HTML <model> element を有効/無効にする API
 

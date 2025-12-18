@@ -31,14 +31,26 @@ OUTPUT_PATH = OUTPUT_DIR / "WKInternalsNotes.WKAPI.symbols.json"
 MODULE_NAME = "WKInternalsNotes"
 PRECISE_ID_PREFIX = "wkapi"
 
+def container_symbol_name(header_container_name: str) -> str:
+    """Map a header-based container name to the DocC symbol container name.
+
+    Example:
+      - WKPreferencesPrivate -> WKPreferences
+      - WKWebViewConfigurationPrivate -> WKWebViewConfiguration
+    """
+    if header_container_name.startswith("WK") and header_container_name.endswith("Private"):
+        return header_container_name[: -len("Private")]
+    return header_container_name
+
 
 def discover_header_containers() -> dict[str, Path]:
     containers: dict[str, Path] = {}
 
     # Header overview pages (one-per-header): UIProcess/API/Cocoa/<HeaderName>.h.md
     for header_page in sorted(COCOA_API_ROOT.glob("*.h.md")):
-        name = header_page.name[: -len(".h.md")]
-        containers.setdefault(name, COCOA_API_ROOT / name)
+        header_container_name = header_page.name[: -len(".h.md")]
+        container_name = container_symbol_name(header_container_name)
+        containers.setdefault(container_name, COCOA_API_ROOT / header_container_name)
 
     # Entry directories: UIProcess/API/Cocoa/<HeaderName>/...
     for directory in sorted(COCOA_API_ROOT.iterdir()):
@@ -46,27 +58,10 @@ def discover_header_containers() -> dict[str, Path]:
             continue
         if next(directory.rglob("*.md"), None) is None:
             continue
-        containers.setdefault(directory.name, directory)
+        container_name = container_symbol_name(directory.name)
+        containers.setdefault(container_name, directory)
 
     return dict(sorted(containers.items()))
-
-
-def collect_directory_paths(header_containers: dict[str, Path]) -> list[tuple[str, ...]]:
-    """Return directory paths (relative to DocC root) that should appear as containers."""
-    directory_paths: set[tuple[str, ...]] = set()
-
-    for path in header_containers.values():
-        try:
-            rel = path.relative_to(DOCC_ROOT)
-        except ValueError:
-            continue
-
-        rel_dir = rel.parent
-        while rel_dir.parts:
-            directory_paths.add(tuple(rel_dir.parts))
-            rel_dir = rel_dir.parent
-
-    return sorted(directory_paths)
 
 
 SWIFT_PRECISE_TYPE_IDS: dict[str, str] = {
@@ -525,32 +520,8 @@ def _parse_interface_symbol(objc_decl: str) -> str:
         raise ValueError(f"Unrecognized interface declaration: {objc_decl!r}")
     return m.group(1)
 
-HEADER_CONTAINER_KIND = {"identifier": "swift.struct", "displayName": "Header"}
-HEADER_CONTAINER_KEYWORD = "header"
-DIRECTORY_KIND = {"identifier": "swift.struct", "displayName": "Directory"}
-DIRECTORY_KEYWORD = "directory"
-
-
-def _make_directory_symbol(path_components: tuple[str, ...]) -> dict[str, Any]:
-    path_fragments: list[dict[str, Any]] = []
-    for idx, part in enumerate(path_components):
-        if idx > 0:
-            path_fragments.append(_fragment("text", "/"))
-        path_fragments.append(_fragment("identifier", part))
-
-    title = "/".join(path_components)
-    return {
-        "accessLevel": "public",
-        "kind": DIRECTORY_KIND,
-        "identifier": {"precise": _make_precise_id(*path_components), "interfaceLanguage": "swift"},
-        "pathComponents": list(path_components),
-        "names": {
-            "title": title,
-            "navigator": path_fragments,
-            "subHeading": [_fragment("keyword", DIRECTORY_KEYWORD), _fragment("text", " ")] + path_fragments,
-        },
-        "declarationFragments": [_fragment("keyword", DIRECTORY_KEYWORD), _fragment("text", " ")] + path_fragments,
-    }
+HEADER_CONTAINER_KIND = {"identifier": "swift.class", "displayName": "Class"}
+HEADER_CONTAINER_KEYWORD = "class"
 
 
 def _make_header_container_symbol(type_name: str) -> dict[str, Any]:
@@ -820,9 +791,6 @@ def main() -> int:
         print(f"error: no header containers found under: {COCOA_API_ROOT}", file=sys.stderr)
         return 2
 
-    directory_paths = collect_directory_paths(header_containers)
-    directory_path_set = set(directory_paths)
-
     platform = {
         "architecture": "arm64",
         "vendor": "apple",
@@ -832,30 +800,11 @@ def main() -> int:
     symbols: list[dict[str, Any]] = []
     relationships: list[dict[str, Any]] = []
 
-    for path_components in directory_paths:
-        dir_symbol = _make_directory_symbol(path_components)
-        symbols.append(dir_symbol)
-        if len(path_components) > 1:
-            parent_id = _make_precise_id(*path_components[:-1])
-            relationships.append(
-                {"kind": "memberOf", "source": dir_symbol["identifier"]["precise"], "target": parent_id}
-            )
-
     for container in header_containers.keys():
         symbols.append(_make_header_container_symbol(container))
 
     for container, directory in header_containers.items():
         container_id = _make_precise_id(container)
-
-        try:
-            parent_parts = tuple(directory.relative_to(DOCC_ROOT).parent.parts)
-        except ValueError:
-            parent_parts = ()
-
-        if parent_parts in directory_path_set:
-            relationships.append(
-                {"kind": "memberOf", "source": container_id, "target": _make_precise_id(*parent_parts)}
-            )
 
         if not directory.exists():
             print(f"warning: missing entry directory: {directory}", file=sys.stderr)

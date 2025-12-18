@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_additionalSupportedImageTypes``
+# ``WKInternalsNotes/WKWebViewConfiguration/_additionalSupportedImageTypes``
 
 追加でサポートする画像 UTI
 

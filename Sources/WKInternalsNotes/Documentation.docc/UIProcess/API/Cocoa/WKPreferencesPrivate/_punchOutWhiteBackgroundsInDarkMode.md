@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_punchOutWhiteBackgroundsInDarkMode``
+# ``WKInternalsNotes/WKPreferences/_punchOutWhiteBackgroundsInDarkMode``
 
 Punch Out White Backgrounds In Dark Mode を有効/無効にする API
 

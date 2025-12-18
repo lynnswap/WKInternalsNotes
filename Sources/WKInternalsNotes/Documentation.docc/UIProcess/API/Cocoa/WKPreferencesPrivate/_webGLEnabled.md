@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_webGLEnabled``
+# ``WKInternalsNotes/WKPreferences/_webGLEnabled``
 
 WebGL を有効/無効にする API
 

@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_delaysWebProcessLaunchUntilFirstLoad``
+# ``WKInternalsNotes/WKWebViewConfiguration/_delaysWebProcessLaunchUntilFirstLoad``
 
 初回ロードまで WebProcess 起動を遅延
 

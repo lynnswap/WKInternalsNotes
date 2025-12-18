@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_setEnabled(_:forExperimentalFeature:)``
+# ``WKInternalsNotes/WKPreferences/_setEnabled(_:forExperimentalFeature:)``
 
 `_WKExperimentalFeature` の有効状態を更新する
 

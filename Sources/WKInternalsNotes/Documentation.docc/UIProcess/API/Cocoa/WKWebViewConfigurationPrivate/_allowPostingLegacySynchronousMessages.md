@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_allowPostingLegacySynchronousMessages``
+# ``WKInternalsNotes/WKWebViewConfiguration/_allowPostingLegacySynchronousMessages``
 
 legacy synchronous message の投稿を許可
 

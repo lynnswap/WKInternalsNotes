@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_asynchronousPluginInitializationEnabled``
+# ``WKInternalsNotes/WKPreferences/_asynchronousPluginInitializationEnabled``
 
 no-op（常に `NO`）
 

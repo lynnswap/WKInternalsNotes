@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_aggressiveTileRetentionEnabled``
+# ``WKInternalsNotes/WKPreferences/_aggressiveTileRetentionEnabled``
 
 Aggressive Tile Retention を有効/無効にする API
 

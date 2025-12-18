@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_pitchCorrectionAlgorithm``
+# ``WKInternalsNotes/WKPreferences/_pitchCorrectionAlgorithm``
 
 Pitch Correction Algorithm を設定する API
 

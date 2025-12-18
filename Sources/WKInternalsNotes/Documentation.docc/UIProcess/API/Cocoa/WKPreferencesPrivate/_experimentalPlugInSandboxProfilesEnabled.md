@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_experimentalPlugInSandboxProfilesEnabled``
+# ``WKInternalsNotes/WKPreferences/_experimentalPlugInSandboxProfilesEnabled``
 
 no-op（常に `NO`）
 

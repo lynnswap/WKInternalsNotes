@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_corsDisablingPatterns``
+# ``WKInternalsNotes/WKWebViewConfiguration/_corsDisablingPatterns``
 
 CORS 無効化パターン
 

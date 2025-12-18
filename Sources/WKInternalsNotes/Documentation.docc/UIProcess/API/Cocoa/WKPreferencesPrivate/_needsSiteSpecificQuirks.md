@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_needsSiteSpecificQuirks``
+# ``WKInternalsNotes/WKPreferences/_needsSiteSpecificQuirks``
 
 site-specific quirks を切り替える API
 

@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_canvasUsesAcceleratedDrawing``
+# ``WKInternalsNotes/WKPreferences/_canvasUsesAcceleratedDrawing``
 
 Canvas uses accelerated drawing を有効/無効にする API
 

@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_disableRichJavaScriptFeatures()``
+# ``WKInternalsNotes/WKPreferences/_disableRichJavaScriptFeatures()``
 
 rich JavaScript features をまとめて無効化する
 

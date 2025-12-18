@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_videoQualityIncludesDisplayCompositingEnabled``
+# ``WKInternalsNotes/WKPreferences/_videoQualityIncludesDisplayCompositingEnabled``
 
 Video Quality Includes Display Compositing を有効/無効にする API
 

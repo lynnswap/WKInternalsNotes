@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_interactionRegionInlinePadding``
+# ``WKInternalsNotes/WKPreferences/_interactionRegionInlinePadding``
 
 Interaction Region Inline Padding を設定する API
 

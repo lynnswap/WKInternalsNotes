@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_modelNoPortalAttributeEnabled``
+# ``WKInternalsNotes/WKPreferences/_modelNoPortalAttributeEnabled``
 
 Model noportal attribute を有効/無効にする API
 

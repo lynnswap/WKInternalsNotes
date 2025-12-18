@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_webArchiveDebugModeEnabled``
+# ``WKInternalsNotes/WKPreferences/_webArchiveDebugModeEnabled``
 
 web archive debug mode を有効/無効にする API
 

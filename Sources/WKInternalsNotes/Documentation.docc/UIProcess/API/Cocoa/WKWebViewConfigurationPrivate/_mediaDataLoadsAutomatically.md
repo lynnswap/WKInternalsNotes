@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_mediaDataLoadsAutomatically``
+# ``WKInternalsNotes/WKWebViewConfiguration/_mediaDataLoadsAutomatically``
 
 media data を自動ロード
 

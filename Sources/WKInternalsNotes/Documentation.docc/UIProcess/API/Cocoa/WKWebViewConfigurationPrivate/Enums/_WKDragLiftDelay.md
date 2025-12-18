@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_WKDragLiftDelay``
+# ``WKInternalsNotes/WKWebViewConfiguration/_WKDragLiftDelay``
 
 ドラッグ開始（lift）までの遅延プリセット
 
@@ -17,7 +17,7 @@ typedef NS_ENUM(NSUInteger, _WKDragLiftDelay) {
 - `_WKDragLiftDelayLong`: lift delay を `0.65` 秒に設定する。
 
 ## Details
-- Related property: ``WKInternalsNotes/WKWebViewConfigurationPrivate/_dragLiftDelay``
+- Related property: ``WKInternalsNotes/WKWebViewConfiguration/_dragLiftDelay``
 - Search hint: `WebKitDebugDragLiftDelay`
 
 ## References

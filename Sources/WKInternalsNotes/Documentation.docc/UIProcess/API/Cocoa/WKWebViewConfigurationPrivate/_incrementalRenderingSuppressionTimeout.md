@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_incrementalRenderingSuppressionTimeout``
+# ``WKInternalsNotes/WKWebViewConfiguration/_incrementalRenderingSuppressionTimeout``
 
 incremental rendering 抑制のタイムアウト（秒）
 

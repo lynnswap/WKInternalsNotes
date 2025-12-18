@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_itpDebugModeEnabled``
+# ``WKInternalsNotes/WKPreferences/_itpDebugModeEnabled``
 
 ITP Debug Mode を有効/無効にする API
 

@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_diagnosticLoggingEnabled``
+# ``WKInternalsNotes/WKPreferences/_diagnosticLoggingEnabled``
 
 Diagnostic logging を有効/無効にする API
 

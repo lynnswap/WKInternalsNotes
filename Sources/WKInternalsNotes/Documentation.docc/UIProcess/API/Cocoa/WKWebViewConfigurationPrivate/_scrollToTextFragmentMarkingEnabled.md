@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_scrollToTextFragmentMarkingEnabled``
+# ``WKInternalsNotes/WKWebViewConfiguration/_scrollToTextFragmentMarkingEnabled``
 
 scroll-to-text-fragment の marking
 

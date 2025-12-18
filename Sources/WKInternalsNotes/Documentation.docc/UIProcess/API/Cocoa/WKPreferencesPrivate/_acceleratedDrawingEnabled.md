@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_acceleratedDrawingEnabled``
+# ``WKInternalsNotes/WKPreferences/_acceleratedDrawingEnabled``
 
 `GraphicsLayer` の accelerated drawing（Cocoa: `CALayer.drawsAsynchronously`）を有効/無効にする API
 

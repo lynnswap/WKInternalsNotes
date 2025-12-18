@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_authorAndUserStylesEnabled``
+# ``WKInternalsNotes/WKPreferences/_authorAndUserStylesEnabled``
 
 Author And User Styles を有効/無効にする API
 

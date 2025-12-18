@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_allowsMetaRefresh``
+# ``WKInternalsNotes/WKWebViewConfiguration/_allowsMetaRefresh``
 
 `<meta http-equiv=refresh>` を許可
 

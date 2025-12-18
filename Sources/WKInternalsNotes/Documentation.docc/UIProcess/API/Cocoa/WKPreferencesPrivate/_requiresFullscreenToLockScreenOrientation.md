@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_requiresFullscreenToLockScreenOrientation``
+# ``WKInternalsNotes/WKPreferences/_requiresFullscreenToLockScreenOrientation``
 
 Require being in Fullscreen to lock screen orientation を有効/無効にする API
 

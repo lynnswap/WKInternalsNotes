@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_managedMediaSourceEnabled``
+# ``WKInternalsNotes/WKPreferences/_managedMediaSourceEnabled``
 
 Managed Media Source API を有効/無効にする API
 

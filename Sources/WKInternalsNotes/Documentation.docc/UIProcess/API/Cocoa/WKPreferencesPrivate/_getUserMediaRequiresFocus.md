@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_getUserMediaRequiresFocus``
+# ``WKInternalsNotes/WKPreferences/_getUserMediaRequiresFocus``
 
 Require focus to start getUserMedia を有効/無効にする API
 

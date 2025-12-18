@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_secureContextChecksEnabled``
+# ``WKInternalsNotes/WKPreferences/_secureContextChecksEnabled``
 
 Secure Context Checks を有効/無効にする API
 

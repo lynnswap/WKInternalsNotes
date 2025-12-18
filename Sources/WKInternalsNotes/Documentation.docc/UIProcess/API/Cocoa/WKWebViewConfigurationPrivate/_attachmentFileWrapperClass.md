@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_attachmentFileWrapperClass``
+# ``WKInternalsNotes/WKWebViewConfiguration/_attachmentFileWrapperClass``
 
 attachment の `NSFileWrapper` クラス差し替え
 

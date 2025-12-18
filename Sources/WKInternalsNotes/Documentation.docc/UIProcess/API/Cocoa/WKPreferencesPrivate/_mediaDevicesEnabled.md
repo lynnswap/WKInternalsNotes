@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_mediaDevicesEnabled``
+# ``WKInternalsNotes/WKPreferences/_mediaDevicesEnabled``
 
 media devices を有効/無効にする API
 

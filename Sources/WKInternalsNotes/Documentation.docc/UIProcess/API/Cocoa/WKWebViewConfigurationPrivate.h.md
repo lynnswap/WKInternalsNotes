@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate``
+# ``WKInternalsNotes/WKWebViewConfiguration``
 
 ## Purpose
 `WKWebViewConfiguration` の private category（`WKPrivate` / `WKPrivateDeprecated`）に定義されている API を、Overview と Default Value を含めて追跡可能な形でまとめる。
@@ -11,7 +11,7 @@
   - compile-time feature（`ENABLE(...)`）
 
 ## Enums
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_WKDragLiftDelay``
+- ``WKInternalsNotes/WKWebViewConfiguration/_WKDragLiftDelay``
   - ドラッグ開始（lift）までの遅延
 - `_WKAttributionOverrideTesting`
   - Attribution のテスト用オーバーライド
@@ -21,110 +21,110 @@
 ## Topics
 
 ### Available via Public API
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_showsSystemScreenTimeBlockingView``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_markedTextInputEnabled``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_printsBackgrounds``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_requiresUserActionForAudioPlayback``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_requiresUserActionForVideoPlayback``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_strongWebExtensionController``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_weakWebExtensionController``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_webExtensionController``
+- ``WKInternalsNotes/WKWebViewConfiguration/_showsSystemScreenTimeBlockingView``
+- ``WKInternalsNotes/WKWebViewConfiguration/_markedTextInputEnabled``
+- ``WKInternalsNotes/WKWebViewConfiguration/_printsBackgrounds``
+- ``WKInternalsNotes/WKWebViewConfiguration/_requiresUserActionForAudioPlayback``
+- ``WKInternalsNotes/WKWebViewConfiguration/_requiresUserActionForVideoPlayback``
+- ``WKInternalsNotes/WKWebViewConfiguration/_strongWebExtensionController``
+- ``WKInternalsNotes/WKWebViewConfiguration/_weakWebExtensionController``
+- ``WKInternalsNotes/WKWebViewConfiguration/_webExtensionController``
 
 ### Related / Session / Extensions
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_relatedWebView``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_webViewToCloneSessionStorageFrom``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_groupIdentifier``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_visitedLinkStore``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_requiredWebExtensionBaseURL``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_alternateWebViewForNavigationGestures``
+- ``WKInternalsNotes/WKWebViewConfiguration/_relatedWebView``
+- ``WKInternalsNotes/WKWebViewConfiguration/_webViewToCloneSessionStorageFrom``
+- ``WKInternalsNotes/WKWebViewConfiguration/_groupIdentifier``
+- ``WKInternalsNotes/WKWebViewConfiguration/_visitedLinkStore``
+- ``WKInternalsNotes/WKWebViewConfiguration/_requiredWebExtensionBaseURL``
+- ``WKInternalsNotes/WKWebViewConfiguration/_alternateWebViewForNavigationGestures``
 
 ### Rendering / Page Behavior
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_respectsImageOrientation``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_incrementalRenderingSuppressionTimeout``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_allowsJavaScriptMarkup``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_convertsPositionStyleOnCopy``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_allowsMetaRefresh``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_allowUniversalAccessFromFileURLs``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_allowTopNavigationToDataURLs``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_needsStorageAccessFromFileURLsQuirk``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_mainContentUserGestureOverrideEnabled``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_invisibleAutoplayNotPermitted``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_mediaDataLoadsAutomatically``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_attachmentElementEnabled``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_attachmentWideLayoutEnabled``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_attachmentFileWrapperClass``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_initialCapitalizationEnabled``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_waitsForPaintAfterViewDidMoveToWindow``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_controlledByAutomation``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_applicationManifest``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_colorFilterEnabled``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_incompleteImageBorderEnabled``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_drawsBackground``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_shouldDeferAsynchronousScriptsUntilAfterDocumentLoad``
+- ``WKInternalsNotes/WKWebViewConfiguration/_respectsImageOrientation``
+- ``WKInternalsNotes/WKWebViewConfiguration/_incrementalRenderingSuppressionTimeout``
+- ``WKInternalsNotes/WKWebViewConfiguration/_allowsJavaScriptMarkup``
+- ``WKInternalsNotes/WKWebViewConfiguration/_convertsPositionStyleOnCopy``
+- ``WKInternalsNotes/WKWebViewConfiguration/_allowsMetaRefresh``
+- ``WKInternalsNotes/WKWebViewConfiguration/_allowUniversalAccessFromFileURLs``
+- ``WKInternalsNotes/WKWebViewConfiguration/_allowTopNavigationToDataURLs``
+- ``WKInternalsNotes/WKWebViewConfiguration/_needsStorageAccessFromFileURLsQuirk``
+- ``WKInternalsNotes/WKWebViewConfiguration/_mainContentUserGestureOverrideEnabled``
+- ``WKInternalsNotes/WKWebViewConfiguration/_invisibleAutoplayNotPermitted``
+- ``WKInternalsNotes/WKWebViewConfiguration/_mediaDataLoadsAutomatically``
+- ``WKInternalsNotes/WKWebViewConfiguration/_attachmentElementEnabled``
+- ``WKInternalsNotes/WKWebViewConfiguration/_attachmentWideLayoutEnabled``
+- ``WKInternalsNotes/WKWebViewConfiguration/_attachmentFileWrapperClass``
+- ``WKInternalsNotes/WKWebViewConfiguration/_initialCapitalizationEnabled``
+- ``WKInternalsNotes/WKWebViewConfiguration/_waitsForPaintAfterViewDidMoveToWindow``
+- ``WKInternalsNotes/WKWebViewConfiguration/_controlledByAutomation``
+- ``WKInternalsNotes/WKWebViewConfiguration/_applicationManifest``
+- ``WKInternalsNotes/WKWebViewConfiguration/_colorFilterEnabled``
+- ``WKInternalsNotes/WKWebViewConfiguration/_incompleteImageBorderEnabled``
+- ``WKInternalsNotes/WKWebViewConfiguration/_drawsBackground``
+- ``WKInternalsNotes/WKWebViewConfiguration/_shouldDeferAsynchronousScriptsUntilAfterDocumentLoad``
 
 ### Networking / Security
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_websiteDataStoreIfExists``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_corsDisablingPatterns``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_maskedURLSchemes``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_crossOriginAccessControlCheckEnabled``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_loadsFromNetwork``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_allowedNetworkHosts``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_loadsSubresources``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_ignoresAppBoundDomains``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_clientNavigationsRunAtForegroundPriority``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_portsForUpgradingInsecureSchemeForTesting``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_attributedBundleIdentifier``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_shouldRelaxThirdPartyCookieBlocking``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_contentSecurityPolicyModeForExtension``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_overrideContentSecurityPolicy``
+- ``WKInternalsNotes/WKWebViewConfiguration/_websiteDataStoreIfExists``
+- ``WKInternalsNotes/WKWebViewConfiguration/_corsDisablingPatterns``
+- ``WKInternalsNotes/WKWebViewConfiguration/_maskedURLSchemes``
+- ``WKInternalsNotes/WKWebViewConfiguration/_crossOriginAccessControlCheckEnabled``
+- ``WKInternalsNotes/WKWebViewConfiguration/_loadsFromNetwork``
+- ``WKInternalsNotes/WKWebViewConfiguration/_allowedNetworkHosts``
+- ``WKInternalsNotes/WKWebViewConfiguration/_loadsSubresources``
+- ``WKInternalsNotes/WKWebViewConfiguration/_ignoresAppBoundDomains``
+- ``WKInternalsNotes/WKWebViewConfiguration/_clientNavigationsRunAtForegroundPriority``
+- ``WKInternalsNotes/WKWebViewConfiguration/_portsForUpgradingInsecureSchemeForTesting``
+- ``WKInternalsNotes/WKWebViewConfiguration/_attributedBundleIdentifier``
+- ``WKInternalsNotes/WKWebViewConfiguration/_shouldRelaxThirdPartyCookieBlocking``
+- ``WKInternalsNotes/WKWebViewConfiguration/_contentSecurityPolicyModeForExtension``
+- ``WKInternalsNotes/WKWebViewConfiguration/_overrideContentSecurityPolicy``
 
 ### Testing / Internal
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_allowPostingLegacySynchronousMessages``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_shouldSendConsoleLogsToUIProcessForTesting``
+- ``WKInternalsNotes/WKWebViewConfiguration/_allowPostingLegacySynchronousMessages``
+- ``WKInternalsNotes/WKWebViewConfiguration/_shouldSendConsoleLogsToUIProcessForTesting``
 
 ### Media / Playback / Process
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_applePayEnabled``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_mediaContentTypesRequiringHardwareSupport``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_legacyEncryptedMediaAPIEnabled``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_allowMediaContentTypesRequiringHardwareSupportAsFallback``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_mediaCaptureEnabled``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_additionalSupportedImageTypes``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_undoManagerAPIEnabled``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_processDisplayName``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_allowTestOnlyIPC``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_delaysWebProcessLaunchUntilFirstLoad``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_cpuLimit``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_appHighlightsEnabled``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_multiRepresentationHEICInsertionEnabled``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_scrollToTextFragmentIndicatorEnabled``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_scrollToTextFragmentMarkingEnabled``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_sampledPageTopColorMaxDifference``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_sampledPageTopColorMinHeight``
+- ``WKInternalsNotes/WKWebViewConfiguration/_applePayEnabled``
+- ``WKInternalsNotes/WKWebViewConfiguration/_mediaContentTypesRequiringHardwareSupport``
+- ``WKInternalsNotes/WKWebViewConfiguration/_legacyEncryptedMediaAPIEnabled``
+- ``WKInternalsNotes/WKWebViewConfiguration/_allowMediaContentTypesRequiringHardwareSupportAsFallback``
+- ``WKInternalsNotes/WKWebViewConfiguration/_mediaCaptureEnabled``
+- ``WKInternalsNotes/WKWebViewConfiguration/_additionalSupportedImageTypes``
+- ``WKInternalsNotes/WKWebViewConfiguration/_undoManagerAPIEnabled``
+- ``WKInternalsNotes/WKWebViewConfiguration/_processDisplayName``
+- ``WKInternalsNotes/WKWebViewConfiguration/_allowTestOnlyIPC``
+- ``WKInternalsNotes/WKWebViewConfiguration/_delaysWebProcessLaunchUntilFirstLoad``
+- ``WKInternalsNotes/WKWebViewConfiguration/_cpuLimit``
+- ``WKInternalsNotes/WKWebViewConfiguration/_appHighlightsEnabled``
+- ``WKInternalsNotes/WKWebViewConfiguration/_multiRepresentationHEICInsertionEnabled``
+- ``WKInternalsNotes/WKWebViewConfiguration/_scrollToTextFragmentIndicatorEnabled``
+- ``WKInternalsNotes/WKWebViewConfiguration/_scrollToTextFragmentMarkingEnabled``
+- ``WKInternalsNotes/WKWebViewConfiguration/_sampledPageTopColorMaxDifference``
+- ``WKInternalsNotes/WKWebViewConfiguration/_sampledPageTopColorMinHeight``
 
 ### iOS-only
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_alwaysRunsAtForegroundPriority``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_inlineMediaPlaybackRequiresPlaysInlineAttribute``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_allowsInlineMediaPlaybackAfterFullscreen``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_dragLiftDelay``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_longPressActionsEnabled``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_systemPreviewEnabled``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_shouldDecidePolicyBeforeLoadingQuickLookPreview``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_canShowWhileLocked``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_clickInteractionDriverForTesting``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_appInitiatedOverrideValueForTesting``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_textInteractionGesturesEnabled``
+- ``WKInternalsNotes/WKWebViewConfiguration/_alwaysRunsAtForegroundPriority``
+- ``WKInternalsNotes/WKWebViewConfiguration/_inlineMediaPlaybackRequiresPlaysInlineAttribute``
+- ``WKInternalsNotes/WKWebViewConfiguration/_allowsInlineMediaPlaybackAfterFullscreen``
+- ``WKInternalsNotes/WKWebViewConfiguration/_dragLiftDelay``
+- ``WKInternalsNotes/WKWebViewConfiguration/_longPressActionsEnabled``
+- ``WKInternalsNotes/WKWebViewConfiguration/_systemPreviewEnabled``
+- ``WKInternalsNotes/WKWebViewConfiguration/_shouldDecidePolicyBeforeLoadingQuickLookPreview``
+- ``WKInternalsNotes/WKWebViewConfiguration/_canShowWhileLocked``
+- ``WKInternalsNotes/WKWebViewConfiguration/_clickInteractionDriverForTesting``
+- ``WKInternalsNotes/WKWebViewConfiguration/_appInitiatedOverrideValueForTesting``
+- ``WKInternalsNotes/WKWebViewConfiguration/_textInteractionGesturesEnabled``
 
 ### macOS-only
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_showsURLsInToolTips``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_serviceControlsEnabled``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_imageControlsEnabled``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_contextMenuQRCodeDetectionEnabled``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_requiresUserActionForEditingControlsManager``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_pageGroup``
+- ``WKInternalsNotes/WKWebViewConfiguration/_showsURLsInToolTips``
+- ``WKInternalsNotes/WKWebViewConfiguration/_serviceControlsEnabled``
+- ``WKInternalsNotes/WKWebViewConfiguration/_imageControlsEnabled``
+- ``WKInternalsNotes/WKWebViewConfiguration/_contextMenuQRCodeDetectionEnabled``
+- ``WKInternalsNotes/WKWebViewConfiguration/_requiresUserActionForEditingControlsManager``
+- ``WKInternalsNotes/WKWebViewConfiguration/_pageGroup``
 
 ### visionOS-only (reference)
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_gamepadAccessRequiresExplicitConsent``
-- ``WKInternalsNotes/WKWebViewConfigurationPrivate/_cssTransformStyleSeparatedEnabled``
+- ``WKInternalsNotes/WKWebViewConfiguration/_gamepadAccessRequiresExplicitConsent``
+- ``WKInternalsNotes/WKWebViewConfiguration/_cssTransformStyleSeparatedEnabled``
 
 ## Metadata
 | Key | Value |

@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_alwaysRunsAtForegroundPriority``
+# ``WKInternalsNotes/WKWebViewConfiguration/_alwaysRunsAtForegroundPriority``
 
 旧API（`_clientNavigationsRunAtForegroundPriority` 相当）
 

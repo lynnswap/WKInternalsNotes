@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_strongWebExtensionController``
+# ``WKInternalsNotes/WKWebViewConfiguration/_strongWebExtensionController``
 
 強参照の WebExtensionController
 

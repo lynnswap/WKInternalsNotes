@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_serviceControlsEnabled``
+# ``WKInternalsNotes/WKPreferences/_serviceControlsEnabled``
 
 Service Controls を有効/無効にする API
 

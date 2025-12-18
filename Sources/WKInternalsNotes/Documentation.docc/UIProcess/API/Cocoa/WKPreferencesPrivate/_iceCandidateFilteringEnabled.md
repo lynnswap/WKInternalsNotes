@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_iceCandidateFilteringEnabled``
+# ``WKInternalsNotes/WKPreferences/_iceCandidateFilteringEnabled``
 
 ICE Candidate Filtering を有効/無効にする API
 

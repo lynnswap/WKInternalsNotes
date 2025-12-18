@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_animatedImageAsyncDecodingEnabled``
+# ``WKInternalsNotes/WKPreferences/_animatedImageAsyncDecodingEnabled``
 
 Animated Image Async Decoding を有効/無効にする API
 

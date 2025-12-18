@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_mediaCaptureEnabled``
+# ``WKInternalsNotes/WKWebViewConfiguration/_mediaCaptureEnabled``
 
 media capture を有効化
 

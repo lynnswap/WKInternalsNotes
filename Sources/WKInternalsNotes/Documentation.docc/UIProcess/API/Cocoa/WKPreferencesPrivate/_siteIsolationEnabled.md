@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_siteIsolationEnabled``
+# ``WKInternalsNotes/WKPreferences/_siteIsolationEnabled``
 
 Site Isolation を有効/無効にする API
 

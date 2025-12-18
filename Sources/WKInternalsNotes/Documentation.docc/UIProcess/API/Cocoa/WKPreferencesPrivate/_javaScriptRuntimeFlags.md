@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_javaScriptRuntimeFlags``
+# ``WKInternalsNotes/WKPreferences/_javaScriptRuntimeFlags``
 
 JavaScript Runtime Flags を設定する API
 

@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_applePayEnabled``
+# ``WKInternalsNotes/WKWebViewConfiguration/_applePayEnabled``
 
 Apple Pay / Payment Request を許可
 

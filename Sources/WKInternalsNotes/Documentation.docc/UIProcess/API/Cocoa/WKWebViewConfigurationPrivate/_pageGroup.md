@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_pageGroup``
+# ``WKInternalsNotes/WKWebViewConfiguration/_pageGroup``
 
 旧 `WKPageGroupRef`（互換のための API）
 

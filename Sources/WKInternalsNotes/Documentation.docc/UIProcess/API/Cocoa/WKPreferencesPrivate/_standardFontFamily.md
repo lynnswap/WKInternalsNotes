@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_standardFontFamily``
+# ``WKInternalsNotes/WKPreferences/_standardFontFamily``
 
 Standard Font Family を設定する API
 

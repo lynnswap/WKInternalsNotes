@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_peerConnectionEnabled``
+# ``WKInternalsNotes/WKPreferences/_peerConnectionEnabled``
 
 RTCPeerConnection を有効/無効にする API
 

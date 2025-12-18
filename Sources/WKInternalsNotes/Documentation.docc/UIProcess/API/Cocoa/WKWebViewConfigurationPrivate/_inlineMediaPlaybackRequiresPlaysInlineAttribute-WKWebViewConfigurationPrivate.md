@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_inlineMediaPlaybackRequiresPlaysInlineAttribute``
+# ``WKInternalsNotes/WKWebViewConfiguration/_inlineMediaPlaybackRequiresPlaysInlineAttribute``
 
 inline 再生に `playsinline` 必須か
 

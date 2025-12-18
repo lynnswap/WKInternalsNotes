@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_fullScreenEnabled``
+# ``WKInternalsNotes/WKPreferences/_fullScreenEnabled``
 
 Fullscreen API を有効/無効にする API
 

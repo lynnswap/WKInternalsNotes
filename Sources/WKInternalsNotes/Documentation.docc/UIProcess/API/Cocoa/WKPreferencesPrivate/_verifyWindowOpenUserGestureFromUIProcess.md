@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_verifyWindowOpenUserGestureFromUIProcess``
+# ``WKInternalsNotes/WKPreferences/_verifyWindowOpenUserGestureFromUIProcess``
 
 Verify window.open user gesture を有効/無効にする API
 

@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_defaultTextEncodingName``
+# ``WKInternalsNotes/WKPreferences/_defaultTextEncodingName``
 
 Default Text Encoding Name を設定する API
 

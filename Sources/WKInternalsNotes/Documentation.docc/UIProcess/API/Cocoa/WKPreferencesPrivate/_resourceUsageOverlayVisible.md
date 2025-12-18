@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_resourceUsageOverlayVisible``
+# ``WKInternalsNotes/WKPreferences/_resourceUsageOverlayVisible``
 
 Resource usage overlay を表示/非表示にする API
 

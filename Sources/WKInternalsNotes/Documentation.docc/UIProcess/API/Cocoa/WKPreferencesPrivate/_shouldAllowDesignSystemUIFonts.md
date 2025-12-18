@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_shouldAllowDesignSystemUIFonts``
+# ``WKInternalsNotes/WKPreferences/_shouldAllowDesignSystemUIFonts``
 
 no-op（常に `YES`）
 

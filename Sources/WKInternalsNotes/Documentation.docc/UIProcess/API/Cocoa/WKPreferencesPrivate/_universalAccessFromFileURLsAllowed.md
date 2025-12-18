@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_universalAccessFromFileURLsAllowed``
+# ``WKInternalsNotes/WKPreferences/_universalAccessFromFileURLsAllowed``
 
 universal access from file: URLs を許可/禁止する API
 

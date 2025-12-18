@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_loadsFromNetwork``
+# ``WKInternalsNotes/WKWebViewConfiguration/_loadsFromNetwork``
 
 ネットワークからのロード可否
 

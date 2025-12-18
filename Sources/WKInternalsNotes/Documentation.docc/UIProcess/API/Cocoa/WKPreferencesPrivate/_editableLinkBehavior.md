@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_editableLinkBehavior``
+# ``WKInternalsNotes/WKPreferences/_editableLinkBehavior``
 
 Editable Link Behavior を設定する API
 

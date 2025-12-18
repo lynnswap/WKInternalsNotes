@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_shouldIgnoreMetaViewport``
+# ``WKInternalsNotes/WKPreferences/_shouldIgnoreMetaViewport``
 
 Ignore Meta Viewport を切り替える API
 

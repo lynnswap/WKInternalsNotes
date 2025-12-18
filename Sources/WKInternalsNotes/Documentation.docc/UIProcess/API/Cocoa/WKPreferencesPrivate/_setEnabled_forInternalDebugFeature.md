@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_setEnabled(_:forInternalDebugFeature:)``
+# ``WKInternalsNotes/WKPreferences/_setEnabled(_:forInternalDebugFeature:)``
 
 `_WKInternalDebugFeature` の有効状態を更新する
 

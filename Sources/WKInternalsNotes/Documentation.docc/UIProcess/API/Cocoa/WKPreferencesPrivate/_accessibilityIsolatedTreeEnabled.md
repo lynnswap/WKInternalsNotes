@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_accessibilityIsolatedTreeEnabled``
+# ``WKInternalsNotes/WKPreferences/_accessibilityIsolatedTreeEnabled``
 
 Isolated Accessibility Tree Mode を有効/無効にする API
 

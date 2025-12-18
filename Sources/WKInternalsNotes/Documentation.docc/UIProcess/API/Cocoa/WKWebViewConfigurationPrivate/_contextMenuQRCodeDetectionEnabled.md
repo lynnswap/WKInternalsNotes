@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKWebViewConfigurationPrivate/_contextMenuQRCodeDetectionEnabled``
+# ``WKInternalsNotes/WKWebViewConfiguration/_contextMenuQRCodeDetectionEnabled``
 
 コンテキストメニューの QR 検出
 

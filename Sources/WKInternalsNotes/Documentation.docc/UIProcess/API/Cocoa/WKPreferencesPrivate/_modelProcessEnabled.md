@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_modelProcessEnabled``
+# ``WKInternalsNotes/WKPreferences/_modelProcessEnabled``
 
 Model Process を有効/無効にする API
 

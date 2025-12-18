@@ -1,4 +1,4 @@
-# ``WKInternalsNotes/WKPreferencesPrivate/_pageVisibilityBasedProcessSuppressionEnabled``
+# ``WKInternalsNotes/WKPreferences/_pageVisibilityBasedProcessSuppressionEnabled``
 
 page visibility-based process suppression を有効/無効にする API
 
