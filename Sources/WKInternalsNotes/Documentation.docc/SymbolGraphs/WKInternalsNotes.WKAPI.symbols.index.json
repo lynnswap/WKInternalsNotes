@@ -490,6 +490,12 @@
       "_unregisterPreview()",
       "contextMenuInteraction"
     ],
+    "WKInteractionPrivate": [
+      "_accessibilityDidGetSelectionRects(_:withGranularity:atOffset:)",
+      "_internalContextMenuInteraction(_:configurationForMenuAtLocation:completion:)",
+      "accessibilitySpeakSelectionSetContent(_:)",
+      "webSelectionRectsForSelectionGeometries(_:)"
+    ],
     "WKTesting": [
       "_allowAnimationControls()",
       "_contentsOfUserInterfaceItem(_:)",
@@ -535,6 +541,16 @@
     ]
   },
   "WKDataListSuggestionsControl": {
+    "Class Extension": [
+      "isShowingSuggestions",
+      "showSuggestionsDropdown(_:activationType:)",
+      "suggestionAtIndex(_:)",
+      "suggestionLabelAtIndex(_:)",
+      "suggestionsCount()",
+      "textAlignment()",
+      "textSuggestions()",
+      "view"
+    ],
     "Type": [
       "didSelectOptionAtIndex(_:)",
       "initWithInformation(_:inView:)",
@@ -564,6 +580,12 @@
     ]
   },
   "WKDatePickerViewController": {
+    "Class Extension": [
+      "date",
+      "didBeginInteractingWithDatePicker(_:)",
+      "maximumDate",
+      "minimumDate"
+    ],
     "Type": [
       "delegate",
       "initWithCoder(_:)",
@@ -696,6 +718,15 @@
     ]
   },
   "WKFocusedFormControlView": {
+    "Class Extension": [
+      "dimmingMaskLayer",
+      "hasNextNode",
+      "hasPreviousNode",
+      "highlightedFrame",
+      "nextHighlightedFrame",
+      "previousHighlightedFrame",
+      "submitActionName"
+    ],
     "Type": [
       "delegate",
       "disengageFocusedFormControlNavigation()",
@@ -836,6 +867,11 @@
     ]
   },
   "WKFullScreenViewController": {
+    "Class Extension": [
+      "_effectiveFullscreenInsets",
+      "_manager",
+      "_webView"
+    ],
     "Type": [
       "animating",
       "configureEnvironmentPickerOrFullscreenVideoButtonView()",
@@ -870,6 +906,22 @@
     ]
   },
   "WKFullScreenWindowController": {
+    "Class Extension": [
+      "_webView",
+      "placeholderWillMoveToSuperview(_:)"
+    ],
+    "Logging": [
+      "logChannel",
+      "logIdentifier",
+      "loggerPtr"
+    ],
+    "Private": [
+      "_manager()",
+      "_protectedManager()",
+      "_replaceView(_:with:)",
+      "_startEnterFullScreenAnimationWithDuration(_:)",
+      "_startExitFullScreenAnimationWithDuration(_:)"
+    ],
     "Type": [
       "beganEnterFullScreenWithInitialFrame(_:finalFrame:completionHandler:)",
       "beganExitFullScreenWithInitialFrame(_:finalFrame:completionHandler:)",
@@ -903,6 +955,15 @@
       "videosInElementFullscreenChanged()",
       "webViewDidRemoveFromSuperviewWhileInFullscreen()",
       "webViewPlaceholder"
+    ],
+    "VideoPresentationManagerProxyClient": [
+      "didEnterPictureInPicture()",
+      "didEnterVideoFullscreen()",
+      "didExitPictureInPicture()",
+      "didExitVideoFullscreen()"
+    ],
+    "WKPreviewWindowControllerDelegate": [
+      "previewWindowControllerDidClose(_:)"
     ]
   },
   "WKFullscreenStackView": {
@@ -1034,6 +1095,20 @@
       "keyboardScrollViewAnimatorWillScroll(_:)"
     ]
   },
+  "WKKeyboardScrollableInternal": {
+    "Type": [
+      "boundedContentOffset(_:)",
+      "contentOffset()",
+      "didFinishScrolling()",
+      "distanceForIncrement(_:inDirection:)",
+      "interactiveScrollVelocity()",
+      "isKeyboardScrollable()",
+      "rubberbandableDirections()",
+      "scrollToContentOffset(_:animated:)",
+      "scrollableDirectionsFromOffset(_:)",
+      "willBeginScrollingToExtentWithAnimationInTrackingView(_:)"
+    ]
+  },
   "WKMaterialHostingView": {
     "Type": [
       "contentView",
@@ -1063,6 +1138,13 @@
     ]
   },
   "WKMouseInteraction": {
+    "Class Extension": [
+      "_mouseDidStopBeingCurrent(_:)",
+      "_setupMouseMovedHandlerForMouse(_:)",
+      "_startObservingMouseNotifications()",
+      "_stopObservingMouseNotifications()",
+      "_updateMouseTouches(_:)"
+    ],
     "Type": [
       "beginPointerLockMouseTracking()",
       "delegate",
@@ -1248,6 +1330,11 @@
       "showInScrollView(_:)",
       "showPasswordFailureAlert()",
       "userDidEnterPassword"
+    ]
+  },
+  "WKPopoverColorWellDelegate": {
+    "Type": [
+      "didClosePopover()"
     ]
   },
   "WKPreferenceObserver": {
@@ -1857,6 +1944,11 @@
     ]
   },
   "WKTextFinderClient": {
+    "Class Extension": [
+      "didFindStringMatchesWithRects(_:didWrapAround:)",
+      "didGetImageForMatchResult(_:)",
+      "getImageForMatchResult(_:completionHandler:)"
+    ],
     "Type": [
       "initWithPage(_:view:usePlatformFindUI:)",
       "willDestroyView(_:)"
@@ -1886,6 +1978,12 @@
     ]
   },
   "WKTextInteractionWrapper": {
+    "Class Extension": [
+      "asyncTextInteraction",
+      "shouldRestoreEditMenuAfterOverflowScrolling",
+      "textSelectionDisplayInteraction",
+      "view"
+    ],
     "Type": [
       "activateSelection()",
       "contextMenuInteraction",
@@ -2411,6 +2509,12 @@
     "Type": [
       "observeValueForKeyPath(_:ofObject:change:context:)",
       "sharedInstance()"
+    ]
+  },
+  "WKWebInspectorUIProxyObjCAdapter": {
+    "Class Extension": [
+      "initWithWebInspectorUIProxy(_:)",
+      "invalidate()"
     ]
   },
   "WKWebView": {
@@ -3057,6 +3161,10 @@
       "_shouldRequestCandidates",
       "_windowRelativeBoundsForCustomSwipeViewsForTesting"
     ],
+    "WKTextExtraction": [
+      "_requestTextExtractionInternal(_:completion:)",
+      "_validateText(_:inNode:completionHandler:)"
+    ],
     "WKViewInternalIOS": [
       "_accessibilitySettingsDidChange(_:)",
       "_addShortcut(_:)",
@@ -3453,6 +3561,9 @@
       "_trustServerForLocalPCMTesting(_:)",
       "_webPushPartition",
       "handleNotificationResponse(_:)"
+    ],
+    "WKWebPushHandling": [
+      "_handleWebPushAction(_:)"
     ]
   },
   "WKWindowFeatures": {
@@ -4114,7 +4225,17 @@
   "_WKNotificationData": {
     "Class Extension": [
       "_getCoreData()",
-      "_initWithCoreData(_:)"
+      "_init()",
+      "_initWithCoreData(_:)",
+      "alert",
+      "body",
+      "data",
+      "dir",
+      "lang",
+      "notificationUUID",
+      "serviceWorkerRegistrationURL",
+      "tag",
+      "title"
     ],
     "Type": [
       "alert",
@@ -4167,6 +4288,9 @@
     ]
   },
   "_WKProcessInfo": {
+    "Class Extension": [
+      "initWithTaskInfo(_:)"
+    ],
     "Type": [
       "physicalFootprint",
       "pid",
@@ -4285,6 +4409,10 @@
     ]
   },
   "_WKRemoteWebInspectorViewController": {
+    "Class Extension": [
+      "closeFromFrontend()",
+      "sendMessageToBackend(_:)"
+    ],
     "Type": [
       "configuration",
       "delegate",
@@ -4692,6 +4820,9 @@
     ]
   },
   "_WKWebContentProcessInfo": {
+    "Class Extension": [
+      "initWithTaskInfo(_:process:)"
+    ],
     "Type": [
       "runningServiceWorkers",
       "runningSharedWorkers",
@@ -4764,6 +4895,12 @@
     ]
   },
   "_WKWebPushAction": {
+    "Class Extension": [
+      "coreNotificationData",
+      "type",
+      "version",
+      "webClipIdentifier"
+    ],
     "Internal": [
       "coreNotificationData"
     ],

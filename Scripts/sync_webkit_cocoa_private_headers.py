@@ -319,9 +319,9 @@ def _rewrite_landing_page_headers(containers: list[str]) -> None:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "--include-implementations",
+        "--headers-only",
         action="store_true",
-        help="Also scan .m/.mm files (categories/class extensions) when generating the WKAPI symbol graph.",
+        help="Parse only .h files when generating the WKAPI symbol graph (skip .m/.mm).",
     )
     parser.add_argument(
         "--overwrite-type-pages",
@@ -335,7 +335,7 @@ def main() -> int:
         str(REPO_ROOT / "Scripts" / "generate_webkit_uiprocess_objc_symbol_graph.py"),
         "--write-index",
     ]
-    if args.include_implementations:
+    if not args.headers_only:
         graph_cmd.append("--include-implementations")
     _run(graph_cmd)
 
