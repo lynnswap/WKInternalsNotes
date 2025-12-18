@@ -1,0 +1,4105 @@
+{
+  "WKARPresentationSessionDescriptor": {
+    "Type": [
+      "colorFormat",
+      "colorUsage",
+      "presentingViewController",
+      "rasterSampleCount"
+    ]
+  },
+  "WKASCAuthorizationPresenterDelegate": {
+    "Type": [
+      "initWithCoordinator(_:)"
+    ]
+  },
+  "WKActionSheet": {
+    "Type": [
+      "arrowDirections",
+      "doneWithSheet(_:)",
+      "presentSheet(_:)",
+      "presentSheetFromRect(_:)",
+      "sheetDelegate",
+      "updateSheetPosition()"
+    ]
+  },
+  "WKActionSheetAssistant": {
+    "Type": [
+      "cleanupSheet()",
+      "defaultActionsForImageSheet(_:)",
+      "defaultActionsForLinkSheet(_:)",
+      "delegate",
+      "handleElementActionWithType(_:element:needsInteraction:)",
+      "hasContextMenuInteraction()",
+      "initWithView(_:)",
+      "interactionDidStartWithPositionInformation(_:)",
+      "isShowingSheet()",
+      "needsLinkIndicator",
+      "showDataDetectorsUIForPositionInformation(_:)",
+      "showImageSheet()",
+      "showLinkSheet()",
+      "showMediaControlsContextMenu(_:items:completionHandler:)",
+      "suggestedActionsForContextMenuWithPositionInformation(_:)",
+      "updateSheetPosition()"
+    ],
+    "WKTesting": [
+      "currentlyAvailableActionTitles()",
+      "currentlyAvailableMediaControlsContextMenuItems()"
+    ]
+  },
+  "WKAirPlayRoutePicker": {
+    "Type": [
+      "showFromView(_:routeSharingPolicy:routingContextUID:hasVideo:)"
+    ]
+  },
+  "WKApplicationStateTrackingView": {
+    "Type": [
+      "_applicationWillEnterForeground()",
+      "_contentView",
+      "initWithFrame(_:webView:)",
+      "isBackground"
+    ]
+  },
+  "WKBackForwardList": {
+    "WKPrivate": [
+      "_clear()",
+      "_removeAllItems()"
+    ]
+  },
+  "WKBackForwardListItem": {
+    "Class Extension": [
+      "_item"
+    ],
+    "WKPrivate": [
+      "_copySnapshotForTesting()",
+      "_scrollPosition",
+      "_wasCreatedByJSWithoutUserInteraction"
+    ]
+  },
+  "WKBaseScrollView": {
+    "Type": [
+      "_associateRelatedLayersForOverlayRegions(_:with:)",
+      "_hasEnoughContentForOverlayRegions()",
+      "_scrollingBehavior",
+      "_updateOverlayRegionRects(_:whileStable:)",
+      "_updateOverlayRegionsBehavior(_:)",
+      "axesToPreventMomentumScrolling",
+      "baseScrollViewDelegate",
+      "interactiveScrollVelocityInPointsPerSecond",
+      "overlayRegionAssociatedLayers",
+      "overlayRegionRects",
+      "updateInteractiveScrollVelocity()"
+    ]
+  },
+  "WKColorExtensionView": {
+    "Type": [
+      "cancelFadeAnimation()",
+      "fadeOut()",
+      "hiddenOrFadingOut",
+      "initWithFrame(_:delegate:)",
+      "updateColor(_:)"
+    ]
+  },
+  "WKCompositingLayer": {
+    "Type": [
+      "_setWKContents(_:withDisplayList:replayForTesting:)"
+    ]
+  },
+  "WKContactPicker": {
+    "Type": [
+      "delegate",
+      "dismissIfNeededWithReason(_:)",
+      "initWithView(_:)",
+      "presentWithRequestData(_:completionHandler:)"
+    ],
+    "WKTesting": [
+      "dismissWithContacts(_:)"
+    ]
+  },
+  "WKContentRuleList": {
+    "WKPrivate": [
+      "_parseRuleList(_:)",
+      "_supportsRegularExpression(_:)"
+    ]
+  },
+  "WKContentRuleListStore": {
+    "WKPrivate": [
+      "_corruptContentRuleListActionsMatchingEverythingForIdentifier(_:)",
+      "_corruptContentRuleListHeaderForIdentifier(_:usingCurrentVersion:)",
+      "_getContentRuleListSourceForIdentifier(_:completionHandler:)",
+      "_invalidateContentRuleListHeaderForIdentifier(_:)",
+      "_invalidateContentRuleListVersionForIdentifier(_:)",
+      "_removeAllContentRuleLists()",
+      "_setContentRuleListStoreForResourceMonitorURLsControllerForTesting(_:)",
+      "defaultStoreWithLegacyFilename()",
+      "storeWithURLAndLegacyFilename(_:)"
+    ]
+  },
+  "WKContentView": {
+    "PointerLock": [
+      "_beginPointerLockMouseTracking()",
+      "_endPointerLockMouseTracking()"
+    ],
+    "Type": [
+      "_contentZoomScale()",
+      "_createDrawingAreaProxy(_:)",
+      "_createVisibilityPropagationView()",
+      "_didCommitLayerTree(_:)",
+      "_didRelaunchProcess()",
+      "_gpuProcessDidCreateContextForVisibilityPropagation()",
+      "_gpuProcessDidExit()",
+      "_hideInspectorHighlight()",
+      "_initialScaleFactor()",
+      "_layerTreeCommitComplete()",
+      "_modelProcessDidCreateContextForVisibilityPropagation()",
+      "_modelProcessDidExit()",
+      "_processDidExit()",
+      "_processWillSwap()",
+      "_removeTemporaryDirectoriesWhenDeallocated(_:)",
+      "_removeVisibilityPropagationView(_:)",
+      "_scrollToRect(_:withOrigin:minimumScrollDistance:)",
+      "_setAcceleratedCompositingRootView(_:)",
+      "_setAccessibilityWebProcessToken(_:)",
+      "_setTransform3DForModelViews(_:)",
+      "_shouldExposeRollAngleAsTwist()",
+      "_showInspectorHighlight(_:)",
+      "_targetContentZoomScaleForRect(_:currentScale:fitEntireRect:minimumScale:maximumScale:)",
+      "_webProcessDidCreateContextForVisibilityPropagation()",
+      "_webViewDestroyed()",
+      "_zoomOutWithOrigin(_:)",
+      "_zoomToFocusRect(_:selectionRect:fontSize:minimumScale:maximumScale:allowScaling:forceScroll:)",
+      "_zoomToInitialScaleWithOrigin(_:)",
+      "_zoomToRect(_:withOrigin:fitEntireRect:minimumScale:maximumScale:minimumScrollDistance:)",
+      "didFinishScrolling()",
+      "didInterruptScrolling()",
+      "didUpdateVisibleRect(_:)",
+      "didZoomToScale(_:)",
+      "initWithFrame(_:processPool:configuration:webView:)",
+      "interfaceOrientation",
+      "isFocusingElement",
+      "page",
+      "resigningFirstResponder",
+      "rootContentView()",
+      "screenIsBeingCaptured()",
+      "showingInspectorIndication",
+      "sizeChangedSinceLastVisibleContentRectUpdate",
+      "spatialTrackingLabel",
+      "undoManagerForWebView",
+      "webView()",
+      "willStartZoomOrScroll()"
+    ],
+    "WKInteraction": [
+      "_accessibilityClearSelection()",
+      "_accessibilityRetrieveRectsAtSelectionOffset(_:withText:)",
+      "_accessibilityRetrieveRectsAtSelectionOffset(_:withText:completionHandler:)",
+      "_accessibilityRetrieveRectsEnclosingSelectionOffset(_:withGranularity:)",
+      "_accessibilityStoreSelection()",
+      "_action ## ForWebView(_:)",
+      "_attemptSyntheticClickAtLocation(_:modifierFlags:)",
+      "_becomeFirstResponderWithSelectionMovingForward(_:completionHandler:)",
+      "_canStartNavigationSwipeAtLastInteractionLocation",
+      "_closeCurrentTypingCommand()",
+      "_commitPotentialTapFailed()",
+      "_conversationContext",
+      "_createTargetedContextMenuHintPreviewForFocusedElement(_:)",
+      "_createTargetedContextMenuHintPreviewIfPossible()",
+      "_createTargetedPreviewFromTextIndicator(_:previewContainer:)",
+      "_currentPositionInformationIsValidForRequest(_:)",
+      "_dataDetectionResults()",
+      "_dataOwnerForPasteboard(_:)",
+      "_didChangeDragCaretRect(_:currentRect:)",
+      "_didChangeDragInteractionPolicy()",
+      "_didChangeLinkPreviewAvailability()",
+      "_didChangeWebViewEditability()",
+      "_didCommitLoadForMainFrame()",
+      "_didCompleteSyntheticClick()",
+      "_didEndScrollingOrZooming()",
+      "_didFinishTextInteractionInTextInputContext(_:)",
+      "_didGetTapHighlightForRequest(_:color:quads:topLeftRadius:topRightRadius:bottomLeftRadius:bottomRightRadius:nodeHasBuiltInClickHandling:)",
+      "_didHandleAdditionalDragItemsRequest(_:)",
+      "_didHandleDragStartRequest(_:)",
+      "_didHandleKeyEvent(_:eventWasHandled:)",
+      "_didHandleTapAsHover()",
+      "_didNotHandleTapAsClick(_:)",
+      "_didPerformDragOperation(_:)",
+      "_didProgrammaticallyClearFocusedElement(_:)",
+      "_didReceiveEditDragSnapshot(_:)",
+      "_didScroll()",
+      "_didStartProvisionalLoadForMainFrame()",
+      "_didUpdateEditorState()",
+      "_didUpdateInputMode(_:)",
+      "_disableDoubleTapGesturesDuringTapIfNecessary(_:)",
+      "_disableInspectorNodeSearch()",
+      "_dismissDigitalCredentialsPicker(_:)",
+      "_doneDeferringTouchEnd(_:)",
+      "_doneDeferringTouchMove(_:)",
+      "_doneDeferringTouchStart(_:)",
+      "_elementDidBlur()",
+      "_elementDidFocus(_:userIsInteracting:blurPreviousNode:activityStateChanges:userObject:)",
+      "_enableInspectorNodeSearch()",
+      "_endImageAnalysisGestureDeferral(_:)",
+      "_focusTextInputContext(_:placeCaretAt:completionHandler:)",
+      "_formControlRefreshEnabled()",
+      "_formInputSession()",
+      "_handleAutocorrectionContext(_:)",
+      "_handleSmartMagnificationInformationForPotentialTap(_:renderRect:fitEntireRect:viewportMinimumScale:viewportMaximumScale:nodeIsRootLevel:nodeIsPluginElement:)",
+      "_hardwareKeyboardAvailabilityChanged()",
+      "_hasEnclosingScrollView(_:matchingCriteria:)",
+      "_hasFocusedElement()",
+      "_interpretKeyEvent(_:withContext:)",
+      "_keyboardDidShow()",
+      "_keyboardWillShow()",
+      "_mayDisableDoubleTapGesturesDuringSingleTap()",
+      "_positionInformationDidChange(_:)",
+      "_provideSuggestionsToInputDelegate(_:)",
+      "_reconcileEnclosingScrollViewContentOffset(_:)",
+      "_removeContextMenuHintContainerIfPossible()",
+      "_requestDOMPasteAccessForCategory(_:requiresInteraction:elementRect:originIdentifier:completionHandler:)",
+      "_requestTextInputContextsInRect(_:completionHandler:)",
+      "_scrollingNodeScrollingDidEnd(_:)",
+      "_scrollingNodeScrollingWillBegin(_:)",
+      "_selectPositionAtPoint(_:stayingWithinFocusedElement:completionHandler:)",
+      "_selectionChanged()",
+      "_setDoubleTapGesturesEnabled(_:)",
+      "_setFontForWebView(_:sender:)",
+      "_setFontSizeForWebView(_:sender:)",
+      "_setMouseEventPolicy(_:)",
+      "_setTextColorForWebView(_:sender:)",
+      "_shouldAvoidResizingWhenInputViewBoundsChange",
+      "_shouldAvoidScrollingWhenFocusedContentIsVisible",
+      "_shouldAvoidSecurityHeuristicScoreUpdates",
+      "_shouldHideSelectionDuringOverflowScroll(_:)",
+      "_shouldIgnoreTouchEvent(_:)",
+      "_shouldUseContextMenus",
+      "_shouldUseContextMenusForFormControls",
+      "_shouldUseLegacySelectPopoverDismissalBehavior",
+      "_showContactPicker(_:completionHandler:)",
+      "_showDataDetectorsUIForPositionInformation(_:)",
+      "_showDigitalCredentialsPicker(_:completionHandler:)",
+      "_showMediaControlsContextMenu(_:items:completionHandler:)",
+      "_showPlaybackTargetPicker(_:fromRect:routeSharingPolicy:routingContextUID:)",
+      "_showRunOpenPanel(_:frameInfo:resultListener:)",
+      "_showShareSheet(_:inRect:completionHandler:)",
+      "_startDrag(_:item:nodeID:)",
+      "_startSuppressingSelectionAssistantForReason(_:)",
+      "_stopSuppressingSelectionAssistantForReason(_:)",
+      "_targetedPreviewContainerDidRemoveLastSubview(_:)",
+      "_toolTipChanged(_:)",
+      "_touchEvent(_:preventsNativeGestures:)",
+      "_touchEventsRecognized()",
+      "_tryToHandlePressesEvent(_:)",
+      "_updateChangedSelection()",
+      "_updateDoubleTapGestureRecognizerEnablement()",
+      "_updateFocusedElementInformation(_:)",
+      "_updateInputContextAfterBlurringAndRefocusingElement()",
+      "_updateRuntimeProtocolConformanceIfNeeded()",
+      "_willBeginTextInteractionInTextInputContext(_:)",
+      "_willInvalidateDraggedModelWithContainerView(_:)",
+      "_willReceiveEditDragSnapshot()",
+      "_willStartScrollingOrZooming()",
+      "_writePromisedAttachmentToPasteboard(_:)",
+      "_zoomToRevealFocusedElement()",
+      "accessibilityRetrieveSpeakSelectionContent()",
+      "accessoryDone()",
+      "accessoryOpen()",
+      "accessoryTab(_:)",
+      "activeTouchIdentifierForGestureRecognizer(_:)",
+      "addTextAnimationForAnimationID(_:withData:)",
+      "allViewsIntersectingSelectionRange",
+      "applyAutocorrection(_:toString:isCandidate:withCompletionHandler:)",
+      "autocorrectionData",
+      "becomeFirstResponderForWebView()",
+      "beginTextRecognitionForFullscreenVideo(_:playerViewController:)",
+      "beginTextRecognitionForVideoInElementFullscreen(_:bounds:)",
+      "buildMenuForWebViewWithBuilder(_:)",
+      "canBecomeFirstResponderForWebView()",
+      "canPerformActionForWebView(_:withSender:)",
+      "cancelPointersForGestureRecognizer(_:)",
+      "cancelTextRecognitionForFullscreenVideo(_:)",
+      "cancelTextRecognitionForVideoInElementFullscreen()",
+      "cleanUpInteraction()",
+      "cleanUpInteractionPreviewContainers()",
+      "clearTextIndicator(_:)",
+      "containerForContextMenuHintPreviews()",
+      "dataDetectionContextForPositionInformation(_:)",
+      "dataListTextSuggestions",
+      "dataListTextSuggestionsInputView",
+      "deferringGestures",
+      "didBeginTextSearchOperation()",
+      "didEndTextSearchOperation()",
+      "didReceiveInteractiveModelElement(_:)",
+      "dismissFilePicker()",
+      "dismissPickersIfNeededWithReason(_:)",
+      "doAfterEditorStateUpdateAfterFocusingElement(_:)",
+      "doAfterPositionInformationUpdate(_:forRequest:)",
+      "ensurePositionInformationIsUpToDate(_:)",
+      "filePickerAcceptedTypeIdentifiers()",
+      "focusedElementInformation",
+      "focusedSelectElementOptions()",
+      "formAccessoryView",
+      "generateSyntheticEditingCommand(_:)",
+      "gestureRecognizerConsistencyEnforcer",
+      "hasHiddenContentEditable()",
+      "imageAnalysisGestureRecognizer",
+      "inputAccessoryViewForWebView",
+      "inputAssistantItemForWebView",
+      "inputLabelText()",
+      "inputViewForWebView",
+      "isEditable",
+      "isPresentingEditMenu",
+      "isTextRecognitionInFullscreenVideoEnabled",
+      "keyboardScrollingAnimationRunning",
+      "lastInteractionLocation",
+      "makeTextSelectionViewsNonInteractiveForScope()",
+      "modelInteractionPanGestureDidBeginAtPoint(_:)",
+      "modelInteractionPanGestureDidEnd()",
+      "modelInteractionPanGestureDidUpdateWithPoint(_:)",
+      "offsetFromPosition(_:toPosition:inDocument:)",
+      "positionInformation",
+      "potentialTapInProgress",
+      "preventsPanningInXAxis",
+      "preventsPanningInYAxis",
+      "reloadContextViewForPresentedListViewController()",
+      "removeTextAnimationForAnimationID(_:)",
+      "requestRectForFoundTextRange(_:completionHandler:)",
+      "requestTextRecognition(_:imageData:sourceLanguageIdentifier:targetLanguageIdentifier:completionHandler:)",
+      "resignFirstResponderForWebView()",
+      "runModalJavaScriptDialog(_:)",
+      "scrollViewWillStartPanOrPinchGesture()",
+      "setContinuousSpellCheckingEnabled(_:)",
+      "setGrammarCheckingEnabled(_:)",
+      "setTextIndicatorAnimationProgress(_:)",
+      "setUpInteraction()",
+      "setUpTextIndicator(_:)",
+      "shouldHideSelectionInFixedPositionWhenScrolling",
+      "shouldIgnoreKeyboardWillHideNotification",
+      "shouldUseAsyncInteractions",
+      "sizeForLegacyFormControlPickerViews",
+      "startRelinquishingFirstResponderToFocusedElement()",
+      "stopRelinquishingFirstResponderToFocusedElement()",
+      "supportsTextReplacementForWebView",
+      "tapHighlightViewRect",
+      "targetForActionForWebView(_:withSender:)",
+      "textEffectsWindow()",
+      "textIndicatorInstallationLayer()",
+      "textInputTraitsForWebView",
+      "toolTipInteraction(_:configurationAtPoint:)",
+      "touchEventGestureRecognizer",
+      "unscaledView",
+      "updateFocusedElementFocusedWithDataListDropdown(_:)",
+      "updateFocusedElementSelectedIndex(_:allowsMultipleSelection:)",
+      "updateFocusedElementValue(_:)",
+      "updateFocusedElementValueAsColor(_:)",
+      "updateSelection()",
+      "updateSoftwareKeyboardSuppressionStateFromWebView()",
+      "updateTextIndicator(_:)",
+      "updateTextSuggestionsForInputDelegate()",
+      "willFinishIgnoringCalloutBarFadeAfterPerformingAction()"
+    ],
+    "WKInteractionPreview": [
+      "_registerPreview()",
+      "_unregisterPreview()",
+      "contextMenuInteraction"
+    ],
+    "WKTesting": [
+      "_allowAnimationControls()",
+      "_contentsOfUserInterfaceItem(_:)",
+      "_dismissContactPickerWithContacts(_:)",
+      "_doAfterReceivingEditDragSnapshotForTesting(_:)",
+      "_selectDataListOption(_:)",
+      "_setDataListSuggestionsControl(_:)",
+      "_simulateElementAction(_:atLocation:)",
+      "_simulateLongPressActionAtLocation(_:)",
+      "_simulateModelInteractionPanGestureBeginAtPoint(_:)",
+      "_simulateModelInteractionPanGestureUpdateAtPoint(_:)",
+      "_simulateSelectionStart()",
+      "_simulateTextEntered(_:)",
+      "_stageModeInfoForTesting()",
+      "animatingDragCancel",
+      "dateTimeInputControl",
+      "dismissFormAccessoryView()",
+      "formInputLabel",
+      "isShowingDataListSuggestions",
+      "selectControl",
+      "selectFormAccessoryHasCheckedItemAtRow(_:)",
+      "selectFormAccessoryPickerRow(_:)",
+      "selectFormPopoverTitle",
+      "selectWordBackwardForTesting()",
+      "setSelectedColorForColorPicker(_:)",
+      "setTimePickerValueToHour(_:minute:)",
+      "singleTapGestureRecognizer",
+      "textContentTypeForTesting",
+      "textInteractionAssistant",
+      "timePickerValueHour()",
+      "timePickerValueMinute()"
+    ]
+  },
+  "WKContentWorld": {
+    "WKPrivate": [
+      "_userContentWorld",
+      "_worldWithConfiguration(_:)"
+    ]
+  },
+  "WKContextMenuElementInfo": {
+    "WKPrivate": [
+      "_activatedElementInfo"
+    ]
+  },
+  "WKDataListSuggestionsControl": {
+    "Type": [
+      "didSelectOptionAtIndex(_:)",
+      "initWithInformation(_:inView:)",
+      "invalidate()",
+      "isShowingSuggestions",
+      "updateWithInformation(_:)"
+    ]
+  },
+  "WKDataListTextSuggestion": {
+    "Type": [
+      "textSuggestionWithInputText(_:)"
+    ]
+  },
+  "WKDatePickerPopoverController": {
+    "Type": [
+      "assertAccessoryViewCanBeHitTestedForTesting()",
+      "dismissDatePicker()",
+      "initWithCalendarView(_:selectionWeekOfYear:delegate:)",
+      "initWithDatePicker(_:delegate:)",
+      "presentInView(_:sourceRect:completion:)"
+    ]
+  },
+  "WKDatePickerViewController": {
+    "Type": [
+      "delegate",
+      "initWithCoder(_:)",
+      "initWithDelegate(_:)"
+    ]
+  },
+  "WKDateTimeInputControl": {
+    "Type": [
+      "initWithView(_:)"
+    ],
+    "WKTesting": [
+      "dateTimePickerCalendarType",
+      "dismissWithAnimationForTesting()",
+      "setTimePickerHour(_:minute:)",
+      "timePickerValueHour",
+      "timePickerValueMinute"
+    ]
+  },
+  "WKDeferringGestureRecognizer": {
+    "Type": [
+      "endDeferral(_:)",
+      "immediatelyFailsAfterTouchEnd",
+      "initWithDeferringGestureDelegate(_:)",
+      "shouldDeferGestureRecognizer(_:)"
+    ]
+  },
+  "WKDigitalCredentialsPicker": {
+    "Type": [
+      "delegate",
+      "dismissWithCompletionHandler(_:)",
+      "initWithView(_:page:)",
+      "presentWithRequestData(_:completionHandler:)"
+    ]
+  },
+  "WKEditCommand": {
+    "Type": [
+      "command()",
+      "init()",
+      "initWithWebEditCommandProxy(_:)"
+    ]
+  },
+  "WKEditorUndoTarget": {
+    "Type": [
+      "redoEditing(_:)",
+      "undoEditing(_:)"
+    ]
+  },
+  "WKExtendedTextInputTraits": {
+    "Type": [
+      "allowsNumberPadPopover",
+      "autocapitalizationType",
+      "autocorrectionType",
+      "conversationContext",
+      "enablesReturnKeyAutomatically",
+      "inlinePredictionType",
+      "insertionPointColor",
+      "keyboardAppearance",
+      "keyboardType",
+      "passwordRules",
+      "restoreDefaultValues()",
+      "returnKeyType",
+      "secureTextEntry",
+      "selectionHandleColor",
+      "selectionHighlightColor",
+      "setSelectionColorsToMatchTintColor(_:)",
+      "singleLineDocument",
+      "smartDashesType",
+      "smartInsertDeleteType",
+      "smartQuotesType",
+      "spellCheckingType",
+      "textContentType",
+      "typingAdaptationEnabled"
+    ]
+  },
+  "WKExtrinsicButton": {
+    "Type": [
+      "delegate",
+      "extrinsicContentSize"
+    ]
+  },
+  "WKFileUploadPanel": {
+    "Type": [
+      "_moveToNewTemporaryDirectory(_:fileCoordinator:fileManager:asCopy:)",
+      "acceptedTypeIdentifiers()",
+      "currentAvailableActionTitles()",
+      "delegate",
+      "dismissIfNeededWithReason(_:)",
+      "initWithView(_:)",
+      "presentWithParameters(_:resultListener:)",
+      "repositionContextMenuIfNeeded(_:)"
+    ]
+  },
+  "WKFindResult": {
+    "Class Extension": [
+      "_initWithMatchFound(_:)"
+    ]
+  },
+  "WKFocusedFormControlView": {
+    "Type": [
+      "delegate",
+      "disengageFocusedFormControlNavigation()",
+      "engageFocusedFormControlNavigation()",
+      "handleWheelEvent(_:)",
+      "hide(_:)",
+      "initWithCoder(_:)",
+      "initWithFrame(_:)",
+      "initWithFrame(_:delegate:)",
+      "reloadData(_:)",
+      "show(_:)",
+      "suggestions",
+      "visible"
+    ]
+  },
+  "WKFormAccessoryView": {
+    "Type": [
+      "autoFillButtonItem",
+      "hideAutoFillButton()",
+      "initWithInputAssistantItem(_:delegate:)",
+      "nextEnabled",
+      "previousEnabled",
+      "setNextPreviousItemsVisible(_:)",
+      "showAutoFillButtonWithTitle(_:)"
+    ]
+  },
+  "WKFormColorControl": {
+    "Type": [
+      "initWithView(_:)"
+    ],
+    "WKTesting": [
+      "selectColor(_:)"
+    ]
+  },
+  "WKFormInputSession": {
+    "Type": [
+      "endEditing()",
+      "initWithContentView(_:focusedElementInfo:requiresStrongPasswordAssistance:)",
+      "invalidate()"
+    ]
+  },
+  "WKFormPeripheralBase": {
+    "Type": [
+      "assistantView()",
+      "beginEditing()",
+      "control",
+      "editing",
+      "endEditing()",
+      "handleKeyEvent(_:)",
+      "init()",
+      "initWithView(_:control:)",
+      "singleTapShouldEndEditing",
+      "updateEditing()",
+      "view"
+    ]
+  },
+  "WKFormRotatingAccessoryPopover": {
+    "Type": [
+      "accessoryDone()"
+    ]
+  },
+  "WKFormSelectControl": {
+    "Type": [
+      "initWithView(_:)"
+    ],
+    "WKTesting": [
+      "menuItemTitles",
+      "selectFormAccessoryHasCheckedItemAtRow(_:)",
+      "selectFormPopoverTitle",
+      "selectRow(_:inComponent:extendingSelection:)"
+    ]
+  },
+  "WKFrameInfo": {
+    "WKPrivate": [
+      "_contentSize",
+      "_documentIdentifier",
+      "_errorOccurred",
+      "_handle",
+      "_isFocused",
+      "_isLocalFrame",
+      "_isSameFrame(_:)",
+      "_isScrollable",
+      "_parentFrameHandle",
+      "_processIdentifier",
+      "_serverTrust",
+      "_title",
+      "_visibleContentSize",
+      "_visibleContentSizeExcludingScrollbars"
+    ]
+  },
+  "WKFullKeyboardAccessWatcher": {
+    "Type": [
+      "fullKeyboardAccessEnabled()"
+    ]
+  },
+  "WKFullScreenViewController": {
+    "Type": [
+      "animating",
+      "configureEnvironmentPickerOrFullscreenVideoButtonView()",
+      "delegate",
+      "hideBanner()",
+      "hideCustomControls(_:)",
+      "hideUI()",
+      "inWindowFullscreenActive",
+      "initWithWebView(_:)",
+      "invalidate()",
+      "location",
+      "pictureInPictureActive",
+      "playing",
+      "prefersHomeIndicatorAutoHidden",
+      "prefersStatusBarHidden",
+      "resetSupportedOrientations()",
+      "setAnimatingViewAlpha(_:)",
+      "setSupportedOrientations(_:)",
+      "showBanner()",
+      "showUI()",
+      "videoControlsManagerDidChange()",
+      "videosInElementFullscreenChanged()"
+    ]
+  },
+  "WKFullScreenWindowController": {
+    "Type": [
+      "beganEnterFullScreenWithInitialFrame(_:finalFrame:completionHandler:)",
+      "beganEnterFullScreenWithInitialFrame(_:finalFrame:completionHandler:)",
+      "beganExitFullScreenWithInitialFrame(_:finalFrame:completionHandler:)",
+      "beganExitFullScreenWithInitialFrame(_:finalFrame:completionHandler:)",
+      "bestVideoFullscreenModeChanged()",
+      "close()",
+      "close()",
+      "didCleanupFullscreen()",
+      "didEnterVideoFullscreen()",
+      "didExitVideoFullscreen()",
+      "enterFullScreen(_:)",
+      "enterFullScreen(_:completionHandler:)",
+      "exitFullScreen(_:)",
+      "exitFullScreen(_:)",
+      "exitFullScreenImmediately()",
+      "finalFrame",
+      "fullScreenViewController",
+      "imageDimensions",
+      "initWithWebView(_:)",
+      "initWithWindow(_:webView:page:)",
+      "initialFrame",
+      "isFullScreen",
+      "isFullScreen()",
+      "isUsingQuickLook",
+      "prefersSceneDimming",
+      "requestExitFullScreen()",
+      "requestExitFullScreen()",
+      "requestRestoreFullScreen(_:)",
+      "resetSupportedOrientations()",
+      "savedConstraints",
+      "setSupportedOrientations(_:)",
+      "toggleSceneDimming()",
+      "updateImageSource()",
+      "videoControlsManagerDidChange()",
+      "videoControlsManagerDidChange()",
+      "videosInElementFullscreenChanged()",
+      "webViewDidRemoveFromSuperviewWhileInFullscreen()",
+      "webViewPlaceholder",
+      "webViewPlaceholder"
+    ]
+  },
+  "WKFullscreenStackView": {
+    "Type": [
+      "addArrangedSubview(_:applyingMaterialStyle:tintEffectStyle:)"
+    ]
+  },
+  "WKGeolocationProviderIOS": {
+    "Type": [
+      "decidePolicyForGeolocationRequestFromOrigin(_:completionHandler:view:)",
+      "initWithProcessPool(_:)"
+    ]
+  },
+  "WKHTTPCookieStore": {
+    "WKPrivate": [
+      "_flushCookiesToDiskWithCompletionHandler(_:)",
+      "_getCookiesForURL(_:completionHandler:)",
+      "_setCookieAcceptPolicy(_:completionHandler:)",
+      "_setCookies(_:completionHandler:)"
+    ]
+  },
+  "WKHighlightLongPressGestureRecognizer": {
+    "Type": [
+      "lastTouchedScrollView"
+    ]
+  },
+  "WKImageAnalysisGestureRecognizer": {
+    "Type": [
+      "initWithImageAnalysisGestureDelegate(_:)",
+      "lastTouchedScrollView"
+    ]
+  },
+  "WKImagePreviewViewController": {
+    "Type": [
+      "initWithCGImage(_:defaultActions:elementInfo:)"
+    ]
+  },
+  "WKImmediateActionController": {
+    "Type": [
+      "didPerformImmediateActionHitTest(_:contentPreventsDefault:userData:)",
+      "dismissContentRelativeChildWindows()",
+      "hasActiveImmediateAction()",
+      "initWithPage(_:view:viewImpl:recognizer:)",
+      "willDestroyView(_:)"
+    ]
+  },
+  "WKInspectorHighlightView": {
+    "Type": [
+      "update(_:scale:frame:)"
+    ]
+  },
+  "WKInspectorNodeSearchGestureRecognizer": {
+    "Type": [
+      "locationInView(_:)"
+    ]
+  },
+  "WKInspectorResourceURLSchemeHandler": {
+    "Type": [
+      "allowedURLSchemesForCSP"
+    ]
+  },
+  "WKInspectorViewController": {
+    "Type": [
+      "URLForInspectorResource(_:)",
+      "delegate",
+      "didAttachOrDetach()",
+      "initWithConfiguration(_:inspectedPage:)",
+      "viewIsInspectorWebView(_:)",
+      "webView"
+    ]
+  },
+  "WKInspectorWKWebView": {
+    "Type": [
+      "inspectorWKWebViewDelegate"
+    ]
+  },
+  "WKKeyboardScrollViewAnimator": {
+    "Type": [
+      "beginWithEvent(_:scrollView:)",
+      "delegate",
+      "handleKeyEvent(_:)",
+      "init()",
+      "invalidate()",
+      "scrollTriggeringKeyIsPressed()",
+      "scrollView()",
+      "stopScrollingImmediately()",
+      "willStartInteractiveScroll()"
+    ]
+  },
+  "WKMaterialHostingView": {
+    "Type": [
+      "contentView",
+      "updateHostingSize(_:)",
+      "updateMaterialEffectType(_:colorScheme:cornerRadius:)"
+    ]
+  },
+  "WKModelView": {
+    "Type": [
+      "initWithCoder(_:)",
+      "initWithFrame(_:)",
+      "initWithModel(_:layerID:page:)",
+      "preview"
+    ]
+  },
+  "WKMouseDeviceObserver": {
+    "Cpp": [
+      "mousePointerDevicesDidChange(_:)"
+    ],
+    "Type": [
+      "_setHasMouseDeviceForTesting(_:)",
+      "hasMouseDevice",
+      "new()",
+      "sharedInstance()",
+      "start()",
+      "stop()"
+    ]
+  },
+  "WKMouseInteraction": {
+    "Type": [
+      "beginPointerLockMouseTracking()",
+      "delegate",
+      "enabled",
+      "endPointerLockMouseTracking()",
+      "hasGesture(_:)",
+      "initWithDelegate(_:)",
+      "lastLocation",
+      "locationInView(_:)",
+      "mouseTouch",
+      "mouseTouchGestureRecognizer",
+      "view"
+    ]
+  },
+  "WKMultipleSelectPicker": {
+    "Type": [
+      "initWithView(_:)"
+    ]
+  },
+  "WKNFReaderSessionDelegate": {
+    "Type": [
+      "initWithConnection(_:)"
+    ]
+  },
+  "WKNavigation": {
+    "WKPrivate": [
+      "_initiatingFrame",
+      "_request",
+      "_userInitiated"
+    ]
+  },
+  "WKNavigationAction": {
+    "WKPrivate": [
+      "_canHandleRequest",
+      "_clickLocationInRootViewCoordinates",
+      "_hasOpener",
+      "_hitTestResult",
+      "_isContentExtensionRedirect",
+      "_isRedirect",
+      "_mainFrameNavigation",
+      "_originalURL",
+      "_shouldOpenAppLinks",
+      "_shouldOpenExternalSchemes",
+      "_shouldOpenExternalURLs",
+      "_shouldPerformDownload",
+      "_storeSKAdNetworkAttribution()",
+      "_syntheticClickType",
+      "_targetFrameName",
+      "_userInitiated",
+      "_userInitiatedAction"
+    ]
+  },
+  "WKNavigationResponse": {
+    "WKPrivate": [
+      "_downloadAttribute",
+      "_frame",
+      "_isFromNetwork",
+      "_navigation",
+      "_navigationInitiatingFrame",
+      "_proxyName",
+      "_request",
+      "_wasPrivateRelayed"
+    ]
+  },
+  "WKNumberPadView": {
+    "Type": [
+      "init()",
+      "initWithCoder(_:)",
+      "initWithFrame(_:)",
+      "initWithFrame(_:controller:)"
+    ]
+  },
+  "WKNumberPadViewController": {
+    "Type": [
+      "didSelectKey(_:)",
+      "initWithDelegate(_:initialText:inputMode:)",
+      "inputMode"
+    ]
+  },
+  "WKObservingLayer": {
+    "Type": [
+      "layerDelegate"
+    ]
+  },
+  "WKOpenPanelParameters": {
+    "WKPrivate": [
+      "_acceptedFileExtensions",
+      "_acceptedMIMETypes",
+      "_allowedFileExtensions"
+    ]
+  },
+  "WKPDFHUDView": {
+    "Type": [
+      "handleMouseDown(_:)",
+      "handleMouseUp(_:)",
+      "initWithFrame(_:pluginIdentifier:frameIdentifier:page:)",
+      "setDeviceScaleFactor(_:)"
+    ]
+  },
+  "WKPDFPageNumberIndicator": {
+    "Type": [
+      "currentPageNumber",
+      "initWithFrame(_:view:pageCount:)",
+      "pageCount",
+      "show()",
+      "updatePosition(_:)"
+    ]
+  },
+  "WKPageHostedModelView": {
+    "Type": [
+      "applyBackgroundColor(_:)",
+      "remoteModelView",
+      "setPortalCrossing(_:)",
+      "shouldDisablePortal"
+    ]
+  },
+  "WKPasswordView": {
+    "Type": [
+      "documentName",
+      "hide()",
+      "initWithFrame(_:documentName:)",
+      "showInScrollView(_:)",
+      "showPasswordFailureAlert()",
+      "userDidEnterPassword"
+    ]
+  },
+  "WKPreferenceObserver": {
+    "Type": [
+      "preferenceDidChange(_:key:encodedValue:)",
+      "sharedInstance()"
+    ]
+  },
+  "WKPreferences": {
+    "Class Extension": [
+      "_useSystemAppearance"
+    ],
+    "WKPrivate": [
+      "_acceleratedCompositingEnabled",
+      "_acceleratedDrawingEnabled",
+      "_accessHandleEnabled",
+      "_accessibilityIsolatedTreeEnabled",
+      "_aggressiveTileRetentionEnabled",
+      "_allowFileAccessFromFileURLs",
+      "_allowPrivacySensitiveOperationsInNonPersistentDataStores",
+      "_allowsInlineMediaPlayback",
+      "_allowsPictureInPictureMediaPlayback",
+      "_animatedImageAsyncDecodingEnabled",
+      "_appBadgeEnabled",
+      "_appNapEnabled",
+      "_applePayCapabilityDisclosureAllowed",
+      "_applePayEnabled",
+      "_authorAndUserStylesEnabled",
+      "_avFoundationEnabled",
+      "_backspaceKeyNavigationEnabled",
+      "_canvasUsesAcceleratedDrawing",
+      "_colorFilterEnabled",
+      "_compositingBordersVisible",
+      "_compositingRepaintCountersVisible",
+      "_contentChangeObserverEnabled",
+      "_cookieEnabled",
+      "_cssTransformStyleSeparatedEnabled",
+      "_defaultFixedPitchFontSize",
+      "_defaultFontSize",
+      "_defaultTextEncodingName",
+      "_developerExtrasEnabled",
+      "_deviceOrientationEventEnabled",
+      "_diagnosticLoggingEnabled",
+      "_disableMediaPlaybackRelatedFeatures()",
+      "_disableRichJavaScriptFeatures()",
+      "_domPasteAllowed",
+      "_domTimersThrottlingEnabled",
+      "_editableLinkBehavior",
+      "_enumeratingAllNetworkInterfacesEnabled",
+      "_experimentalFeatures()",
+      "_extensibleSSOEnabled",
+      "_features()",
+      "_fileSystemAccessEnabled",
+      "_fixedPitchFontFamily",
+      "_fullScreenEnabled",
+      "_getUserMediaRequiresFocus",
+      "_hiddenPageDOMTimerThrottlingAutoIncreases",
+      "_hiddenPageDOMTimerThrottlingEnabled",
+      "_iceCandidateFilteringEnabled",
+      "_inactiveMediaCaptureStreamRepromptIntervalInMinutes",
+      "_inactiveMediaCaptureStreamRepromptWithoutUserGestureIntervalInMinutes",
+      "_inlineMediaPlaybackRequiresPlaysInlineAttribute",
+      "_interactionRegionInlinePadding",
+      "_interactionRegionMinimumCornerRadius",
+      "_internalDebugFeatures()",
+      "_interruptAudioOnPageVisibilityChangeEnabled",
+      "_invisibleMediaAutoplayNotPermitted",
+      "_isEnabledForExperimentalFeature(_:)",
+      "_isEnabledForFeature(_:)",
+      "_isEnabledForInternalDebugFeature(_:)",
+      "_itpDebugModeEnabled",
+      "_javaScriptCanAccessClipboard",
+      "_javaScriptRuntimeFlags",
+      "_largeImageAsyncDecodingEnabled",
+      "_legacyEncryptedMediaAPIEnabled",
+      "_legacyLineLayoutVisualCoverageEnabled",
+      "_loadsImagesAutomatically",
+      "_localFileContentSniffingEnabled",
+      "_logsPageMessagesToSystemConsoleEnabled",
+      "_lowPowerVideoAudioBufferSizeEnabled",
+      "_mainContentUserGestureOverrideEnabled",
+      "_managedMediaSourceEnabled",
+      "_managedMediaSourceHighThreshold",
+      "_managedMediaSourceLowThreshold",
+      "_mediaCapabilityGrantsEnabled",
+      "_mediaCaptureRequiresSecureConnection",
+      "_mediaDevicesEnabled",
+      "_mediaPreferredFullscreenWidth",
+      "_mediaSessionEnabled",
+      "_mediaSourceEnabled",
+      "_mockCaptureDevicesEnabled",
+      "_mockCaptureDevicesPromptEnabled",
+      "_modelDocumentEnabled",
+      "_modelElementEnabled",
+      "_modelNoPortalAttributeEnabled",
+      "_modelProcessEnabled",
+      "_needsInAppBrowserPrivacyQuirks",
+      "_needsSiteSpecificQuirks",
+      "_needsStorageAccessFromFileURLsQuirk",
+      "_notificationEventEnabled",
+      "_notificationsEnabled",
+      "_overlayRegionsEnabled",
+      "_pageVisibilityBasedProcessSuppressionEnabled",
+      "_pdfPluginEnabled",
+      "_peerConnectionEnabled",
+      "_pitchCorrectionAlgorithm",
+      "_privateClickMeasurementDebugModeEnabled",
+      "_privateClickMeasurementEnabled",
+      "_punchOutWhiteBackgroundsInDarkMode",
+      "_pushAPIEnabled",
+      "_remotePlaybackEnabled",
+      "_requiresFullscreenToLockScreenOrientation",
+      "_requiresPageVisibilityForVideoToBeNowPlayingForTesting",
+      "_requiresPageVisibilityToPlayAudio",
+      "_requiresUserGestureForAudioPlayback",
+      "_requiresUserGestureForVideoPlayback",
+      "_resourceUsageOverlayVisible",
+      "_safeBrowsingEnabled",
+      "_screenCaptureEnabled",
+      "_secureContextChecksEnabled",
+      "_serviceControlsEnabled",
+      "_serviceWorkerEntitlementDisabledForTesting",
+      "_setEnabled(_:forExperimentalFeature:)",
+      "_setEnabled(_:forFeature:)",
+      "_setEnabled(_:forInternalDebugFeature:)",
+      "_shouldAllowUserInstalledFonts",
+      "_shouldEnableTextAutosizingBoost",
+      "_shouldIgnoreMetaViewport",
+      "_shouldPrintBackgrounds",
+      "_shouldSuppressKeyboardInputDuringProvisionalNavigation",
+      "_showsToolTipOverTruncatedText",
+      "_siteIsolationEnabled",
+      "_speechRecognitionEnabled",
+      "_standalone",
+      "_standardFontFamily",
+      "_storageAPIEnabled",
+      "_storageBlockingPolicy",
+      "_suppressesIncrementalRendering",
+      "_telephoneNumberDetectionIsEnabled",
+      "_textAreasAreResizable",
+      "_textAutosizingEnabled",
+      "_textExtractionEnabled",
+      "_tiledScrollingIndicatorVisible",
+      "_topNavigationToDataURLsAllowed",
+      "_universalAccessFromFileURLsAllowed",
+      "_useGiantTiles",
+      "_usesPageCache",
+      "_verifyWindowOpenUserGestureFromUIProcess",
+      "_videoFullscreenRequiresElementFullscreen",
+      "_videoQualityIncludesDisplayCompositingEnabled",
+      "_viewGestureDebuggingEnabled",
+      "_visibleDebugOverlayRegions",
+      "_wantsBalancedSetDefersLoadingBehavior",
+      "_webArchiveDebugModeEnabled",
+      "_webAudioEnabled",
+      "_webGLEnabled",
+      "_webSecurityEnabled"
+    ],
+    "WKPrivateDeprecated": [
+      "_artificialPluginInitializationDelayEnabled",
+      "_asynchronousPluginInitializationEnabled",
+      "_clientBadgeEnabled",
+      "_displayListDrawingEnabled",
+      "_dnsPrefetchingEnabled",
+      "_experimentalPlugInSandboxProfilesEnabled",
+      "_mediaStreamEnabled",
+      "_offlineApplicationCacheIsEnabled",
+      "_pageCacheSupportsPlugins",
+      "_plugInSnapshottingEnabled",
+      "_requestAnimationFrameEnabled",
+      "_shouldAllowDesignSystemUIFonts",
+      "_subpixelAntialiasedLayerTextEnabled",
+      "_subpixelCSSOMElementMetricsEnabled"
+    ]
+  },
+  "WKPreviewAction": {
+    "Type": [
+      "actionWithIdentifier(_:title:style:handler:)"
+    ]
+  },
+  "WKPreviewElementInfo": {
+    "Class Extension": [
+      "_initWithLinkURL(_:)"
+    ]
+  },
+  "WKPrintingView": {
+    "Type": [
+      "initWithFrameProxy(_:view:)"
+    ]
+  },
+  "WKProcessPool": {
+    "Class Extension": [
+      "_geolocationProvider",
+      "_initWithConfiguration(_:)"
+    ],
+    "WKPrivate": [
+      "_addSupportedPlugin(_:named:withMimeTypes:withExtensions:)",
+      "_allProcessPoolsForTesting()",
+      "_automationCapabilitiesDidChange()",
+      "_automationDelegate",
+      "_clearCaptivePortalModeEnabledGloballyForTesting()",
+      "_clearPermanentCredentialsForProtectionSpace(_:)",
+      "_clearSupportedPlugins()",
+      "_clearWebProcessCache()",
+      "_configuration",
+      "_cookieStoragePartitioningEnabled",
+      "_coreLocationProvider",
+      "_countWebPagesInAllProcessesForTesting(_:)",
+      "_crashOnMessageCheckFailureForTesting()",
+      "_downloadDelegate",
+      "_forceGameControllerFramework()",
+      "_garbageCollectJavaScriptObjectsForTesting()",
+      "_getActivePagesOriginsInWebProcessForTesting(_:completionHandler:)",
+      "_gpuProcessIdentifier()",
+      "_gpuProcessInfo()",
+      "_hasAudibleMediaActivity()",
+      "_hasPrewarmedWebProcess()",
+      "_isJITDisabledInAllRemoteWorkerProcesses(_:)",
+      "_isMetalDebugDeviceEnabledInGPUProcessForTesting()",
+      "_isMetalShaderValidationEnabledInGPUProcessForTesting()",
+      "_isWebProcessSuspended(_:)",
+      "_javaScriptConfigurationDirectory",
+      "_lockdownModeEnabledGloballyForTesting()",
+      "_makeNextWebProcessLaunchFailForTesting()",
+      "_maximumSuspendedPageCount()",
+      "_networkingProcessInfo()",
+      "_notificationManagerForTesting()",
+      "_numberOfConnectedGameControllerFrameworkGamepadsForTesting()",
+      "_numberOfConnectedGamepadsForTesting()",
+      "_numberOfConnectedHIDGamepadsForTesting()",
+      "_objectForBundleParameter(_:)",
+      "_pluginLoadClientPolicies",
+      "_pluginProcessCount()",
+      "_preconnectToServer(_:)",
+      "_prewarmedProcessIdentifiersForTesting()",
+      "_processCacheCapacity()",
+      "_processCacheSize()",
+      "_registerURLSchemeAsBypassingContentSecurityPolicy(_:)",
+      "_registerURLSchemeAsCanDisplayOnlyIfCanRequest(_:)",
+      "_registerURLSchemeAsSecure(_:)",
+      "_requestWebProcessTermination(_:)",
+      "_resetPluginLoadClientPolicies(_:)",
+      "_seedResourceLoadStatisticsForTestingWithFirstParty(_:thirdParty:shouldScheduleNotification:completionHandler:)",
+      "_serviceWorkerProcessCount()",
+      "_setAllowsSpecificHTTPSCertificate(_:forHost:)",
+      "_setAutomationSession(_:)",
+      "_setCachedProcessLifetimeForTesting(_:)",
+      "_setCanHandleHTTPSServerTrustEvaluation(_:)",
+      "_setCaptivePortalModeEnabledGloballyForTesting(_:)",
+      "_setDomainRelaxationForbiddenForURLScheme(_:)",
+      "_setEnableMetalDebugDeviceInNewGPUProcessesForTesting(_:)",
+      "_setEnableMetalShaderValidationInNewGPUProcessesForTesting(_:)",
+      "_setLinkedOnOrAfterEverything()",
+      "_setLinkedOnOrAfterEverythingForTesting()",
+      "_setLinkedOnOrBeforeEverythingForTesting()",
+      "_setObject(_:forBundleParameter:)",
+      "_setObjectsForBundleParametersWithDictionary(_:)",
+      "_setPLTResourceDelayIntervalForTesting(_:)",
+      "_setUseSeparateServiceWorkerProcess(_:)",
+      "_setUsesOnlyHIDGamepadProviderForTesting(_:)",
+      "_setWebProcessCountLimit(_:)",
+      "_sharedProcessPool()",
+      "_terminateAllWebContentProcesses()",
+      "_terminateServiceWorkers()",
+      "_warmInitialProcess()",
+      "_webContentProcessInfo()",
+      "_webPageContentProcessCount()",
+      "_webProcessCount()",
+      "_webProcessCountIgnoringPrewarmed()",
+      "_webProcessCountIgnoringPrewarmedAndCached()",
+      "_websiteDataURLForContainerWithURL(_:)",
+      "_websiteDataURLForContainerWithURL(_:bundleIdentifierIfNotInContainer:)"
+    ],
+    "WKPrivateMac": [
+      "_registerAdditionalFonts(_:)"
+    ]
+  },
+  "WKQuickLookPreviewController": {
+    "Type": [
+      "beginControl(_:)",
+      "closePanelIfNecessary()",
+      "endControl(_:)",
+      "initWithPage(_:imageData:title:imageURL:activity:)",
+      "isControlling(_:)"
+    ]
+  },
+  "WKReloadFrameErrorRecoveryAttempter": {
+    "Type": [
+      "initWithWebView(_:frameHandle:urlString:)"
+    ]
+  },
+  "WKRevealItemPresenter": {
+    "Type": [
+      "initWithWebViewImpl(_:item:frame:menuLocation:)",
+      "shouldUseDefaultHighlight",
+      "showContextMenu()"
+    ]
+  },
+  "WKRotatingPopover": {
+    "Type": [
+      "dismissPopoverAnimated(_:)",
+      "dismissionDelegate",
+      "initWithView(_:)",
+      "popoverArrowDirections()",
+      "popoverController",
+      "presentPopoverAnimated(_:)",
+      "presentationPoint",
+      "view"
+    ]
+  },
+  "WKSOAuthorizationDelegate": {
+    "Type": [
+      "setSession(_:)"
+    ]
+  },
+  "WKScreenTimeConfigurationObserver": {
+    "Type": [
+      "enforcesChildRestrictions()",
+      "initWithView(_:)",
+      "startObserving()",
+      "stopObserving()"
+    ]
+  },
+  "WKScrollView": {
+    "Type": [
+      "_contentInsetAdjustmentBehaviorWasExternallyOverridden",
+      "_contentInsetWasExternallyOverridden",
+      "_didChangeTopScrollEdgeEffectStyle()",
+      "_resetContentInset()",
+      "_resetContentInsetAdjustmentBehavior()",
+      "_setBackgroundColorInternal(_:)",
+      "_setBouncesInternal(_:vertical:)",
+      "_setContentInsetAdjustmentBehaviorInternal(_:)",
+      "_setContentScrollInsetInternal(_:)",
+      "_setContentSizePreservingContentOffsetDuringRubberband(_:)",
+      "_setDecelerationRateInternal(_:)",
+      "_setIndicatorStyleInternal(_:)",
+      "_setInternalTopPocketColor(_:)",
+      "_setScrollEnabledInternal(_:)",
+      "_setZoomEnabledInternal(_:)",
+      "_usesHardTopScrollEdgeEffect",
+      "_wk_bottomEdgeEffect()",
+      "_wk_leftEdgeEffect()",
+      "_wk_rightEdgeEffect()",
+      "_wk_topEdgeEffect()",
+      "internalDelegate"
+    ]
+  },
+  "WKScrollViewTrackingTapGestureRecognizer": {
+    "Type": [
+      "lastTouchedScrollView"
+    ]
+  },
+  "WKScrollingNodeScrollViewDelegate": {
+    "Type": [
+      "inUserInteraction",
+      "initWithScrollingTreeNodeDelegate(_:)"
+    ]
+  },
+  "WKSecurityOrigin": {
+    "WKPrivate": [
+      "isSameSiteAsOrigin(_:)",
+      "isSameSiteAsURL(_:)"
+    ]
+  },
+  "WKSelectMenuListViewController": {
+    "Testing": [
+      "selectItemAtIndex(_:)"
+    ],
+    "Type": [
+      "delegate",
+      "initWithCoder(_:)",
+      "initWithDelegate(_:)",
+      "initWithDelegate(_:dictationMode:)"
+    ]
+  },
+  "WKSelectMultiplePicker": {
+    "Type": [
+      "initWithView(_:)"
+    ]
+  },
+  "WKSelectPicker": {
+    "Type": [
+      "initWithView(_:)"
+    ]
+  },
+  "WKSelectPopover": {
+    "Type": [
+      "_userActionDismissedPopover(_:)",
+      "initWithView(_:hasGroups:)",
+      "tableViewController"
+    ]
+  },
+  "WKSelectSinglePicker": {
+    "Type": [
+      "initWithView(_:)"
+    ]
+  },
+  "WKSeparatedImageView": {
+    "Type": [
+      "init()",
+      "initWithCoder(_:)",
+      "layoutCustomSubtree()",
+      "setSurface(_:)"
+    ]
+  },
+  "WKShareSheet": {
+    "Type": [
+      "delegate",
+      "dismissIfNeededWithReason(_:)",
+      "initWithView(_:)",
+      "presentWithParameters(_:inRect:completionHandler:)"
+    ]
+  },
+  "WKSharingServicePickerDelegate": {
+    "Type": [
+      "menuProxy()",
+      "removeBackground()",
+      "setAttachmentID(_:)",
+      "setFiltersEditingServices(_:)",
+      "setHandlesEditingReplacement(_:)",
+      "setMenuProxy(_:)",
+      "setPicker(_:)",
+      "setSourceFrame(_:)",
+      "sharedSharingServicePickerDelegate()"
+    ]
+  },
+  "WKSnapshotConfiguration": {
+    "WKPrivate": [
+      "_includesSelectionHighlighting",
+      "_usesContentsRect",
+      "_usesTransparentBackground"
+    ]
+  },
+  "WKStylusDeviceObserver": {
+    "Type": [
+      "hasStylusDevice",
+      "init()",
+      "new()",
+      "sharedInstance()",
+      "start()",
+      "stop()"
+    ]
+  },
+  "WKSyntheticFlagsChangedWebEvent": {
+    "Type": [
+      "initWithCapsLockState(_:)",
+      "initWithShiftState(_:)"
+    ]
+  },
+  "WKSyntheticTapGestureRecognizer": {
+    "Type": [
+      "lastActiveTouchIdentifier",
+      "setGestureFailedTarget(_:action:)",
+      "setGestureIdentifiedTarget(_:action:)",
+      "setResetTarget(_:action:)",
+      "supportingTouchEventsGestureRecognizer"
+    ]
+  },
+  "WKTapHighlightView": {
+    "Type": [
+      "setColor(_:)",
+      "setCornerRadii(_:)",
+      "setFrames(_:)",
+      "setMinimumCornerRadius(_:)",
+      "setQuads(_:boundaryRect:)"
+    ]
+  },
+  "WKTextAnimationManager": {
+    "Type": [
+      "addTextAnimationForAnimationID(_:withData:)",
+      "hasActiveTextAnimationType()",
+      "hideTextAnimationView()",
+      "initWithWebViewImpl(_:)",
+      "removeTextAnimationForAnimationID(_:)",
+      "restoreTextAnimationType()",
+      "suppressTextAnimationType()"
+    ]
+  },
+  "WKTextExtractionContainerItem": {
+    "Type": [
+      "container",
+      "initWithContainer(_:rectInWebView:children:eventListeners:ariaAttributes:accessibilityRole:nodeIdentifier:)"
+    ]
+  },
+  "WKTextExtractionContentEditableItem": {
+    "Type": [
+      "contentEditableType",
+      "focused",
+      "initWithContentEditableType(_:isFocused:rectInWebView:children:eventListeners:ariaAttributes:accessibilityRole:nodeIdentifier:)"
+    ]
+  },
+  "WKTextExtractionEditable": {
+    "Type": [
+      "focused",
+      "initWithLabel(_:placeholder:isSecure:isFocused:)",
+      "label",
+      "placeholder",
+      "secure"
+    ]
+  },
+  "WKTextExtractionImageItem": {
+    "Type": [
+      "altText",
+      "initWithName(_:altText:rectInWebView:children:eventListeners:ariaAttributes:accessibilityRole:nodeIdentifier:)",
+      "name"
+    ]
+  },
+  "WKTextExtractionItem": {
+    "Type": [
+      "accessibilityRole",
+      "ariaAttributes",
+      "children",
+      "eventListeners",
+      "nodeIdentifier",
+      "rectInWebView"
+    ]
+  },
+  "WKTextExtractionLink": {
+    "Type": [
+      "initWithURL(_:range:)",
+      "range",
+      "url"
+    ]
+  },
+  "WKTextExtractionLinkItem": {
+    "Type": [
+      "initWithTarget(_:url:rectInWebView:children:eventListeners:ariaAttributes:accessibilityRole:nodeIdentifier:)",
+      "target",
+      "url"
+    ]
+  },
+  "WKTextExtractionResult": {
+    "Type": [
+      "initWithRootItem(_:)",
+      "rootItem"
+    ]
+  },
+  "WKTextExtractionScrollableItem": {
+    "Type": [
+      "contentSize",
+      "initWithContentSize(_:rectInWebView:children:eventListeners:ariaAttributes:accessibilityRole:nodeIdentifier:)"
+    ]
+  },
+  "WKTextExtractionSelectItem": {
+    "Type": [
+      "initWithSelectedValues(_:supportsMultiple:rectInWebView:children:eventListeners:ariaAttributes:accessibilityRole:nodeIdentifier:)",
+      "selectedValues",
+      "supportsMultiple"
+    ]
+  },
+  "WKTextExtractionTextFormControlItem": {
+    "Type": [
+      "autocomplete",
+      "checked",
+      "controlType",
+      "disabled",
+      "focused",
+      "initWithEditable(_:controlType:autocomplete:isReadonly:isDisabled:isChecked:rectInWebView:children:eventListeners:ariaAttributes:accessibilityRole:nodeIdentifier:)",
+      "label",
+      "placeholder",
+      "readonly",
+      "secure"
+    ]
+  },
+  "WKTextExtractionTextItem": {
+    "Type": [
+      "content",
+      "editable",
+      "initWithContent(_:selectedRange:links:editable:rectInWebView:children:eventListeners:ariaAttributes:accessibilityRole:nodeIdentifier:)",
+      "links",
+      "selectedRange"
+    ]
+  },
+  "WKTextFinderClient": {
+    "Type": [
+      "initWithPage(_:view:usePlatformFindUI:)",
+      "willDestroyView(_:)"
+    ]
+  },
+  "WKTextInputListViewController": {
+    "Testing": [
+      "enterText(_:)"
+    ],
+    "Type": [
+      "delegate",
+      "initWithCoder(_:)",
+      "initWithDelegate(_:)",
+      "initWithDelegate(_:dictationMode:)",
+      "reloadContextView()",
+      "updateTextSuggestions(_:)"
+    ]
+  },
+  "WKTextInteractionWrapper": {
+    "Type": [
+      "activateSelection()",
+      "contextMenuInteraction",
+      "deactivateSelection()",
+      "didConcludeDrop()",
+      "didEndScrollingOrZooming()",
+      "didEndScrollingOverflow()",
+      "initWithView(_:)",
+      "lookup(_:withRange:fromRect:)",
+      "managedTextSelectionViews",
+      "prepareToMoveSelectionContainer(_:)",
+      "reset()",
+      "scheduleChineseTransliterationForText(_:)",
+      "scheduleReplacementsForText(_:)",
+      "selectAll(_:)",
+      "selectWord()",
+      "selectionChanged()",
+      "selectionChangedWithGestureAt(_:withGesture:withState:withFlags:)",
+      "selectionChangedWithTouchAt(_:withSelectionTouch:withFlags:)",
+      "selectionHighlightView",
+      "setExternalContextMenuInteractionDelegate(_:)",
+      "setGestureRecognizers()",
+      "setNeedsSelectionUpdate()",
+      "showShareSheetFor(_:fromRect:)",
+      "showTextServiceFor(_:fromRect:)",
+      "textInteractionAssistant",
+      "translate(_:fromRect:)",
+      "willBeginDragLift()",
+      "willStartScrollingOrZooming()",
+      "willStartScrollingOverflow(_:)"
+    ]
+  },
+  "WKTextPlaceholder": {
+    "Type": [
+      "elementContext",
+      "initWithElementContext(_:)"
+    ]
+  },
+  "WKTextSelectionRect": {
+    "Type": [
+      "initWithCGRect(_:)",
+      "initWithSelectionGeometry(_:delegate:)"
+    ]
+  },
+  "WKTimePickerViewController": {
+    "Testing": [
+      "setHour(_:minute:)"
+    ],
+    "Type": [
+      "delegate",
+      "initWithCoder(_:)",
+      "initWithDelegate(_:)"
+    ]
+  },
+  "WKTouchActionGestureRecognizer": {
+    "Type": [
+      "clearTouchActionsForTouchIdentifier(_:)",
+      "initWithTouchActionDelegate(_:)",
+      "setTouchActions(_:forTouchIdentifier:)"
+    ]
+  },
+  "WKTouchEventsGestureRecognizer": {
+    "Type": [
+      "activeTouchesByIdentifier",
+      "cancel()",
+      "contentView",
+      "defaultPrevented",
+      "dispatchingTouchEvents",
+      "initWithContentView(_:)",
+      "lastTouchEvent"
+    ]
+  },
+  "WKUIScrollEdgeEffect": {
+    "Type": [
+      "hidden",
+      "initWithScrollView(_:scrollEdgeEffect:boxSide:)",
+      "internallyHidden",
+      "usesHardStyle"
+    ]
+  },
+  "WKUserContentController": {
+    "Class Extension": [
+      "_addScriptMessageHandler(_:)"
+    ],
+    "WKPrivate": [
+      "_addContentRuleList(_:extensionBaseURL:)",
+      "_addScriptMessageHandler(_:name:contentWorld:)",
+      "_addScriptMessageHandler(_:name:userContentWorld:)",
+      "_addUserContentFilter(_:)",
+      "_addUserScriptImmediately(_:)",
+      "_addUserStyleSheet(_:)",
+      "_removeAllScriptMessageHandlersAssociatedWithUserContentWorld(_:)",
+      "_removeAllUserContentFilters()",
+      "_removeAllUserScriptsAssociatedWithContentWorld(_:)",
+      "_removeAllUserStyleSheets()",
+      "_removeAllUserStyleSheetsAssociatedWithContentWorld(_:)",
+      "_removeScriptMessageHandlerForName(_:userContentWorld:)",
+      "_removeUserContentFilter(_:)",
+      "_removeUserScript(_:)",
+      "_removeUserStyleSheet(_:)",
+      "_userStyleSheets"
+    ]
+  },
+  "WKUserScript": {
+    "WKPrivate": [
+      "_contentWorld",
+      "_initWithSource(_:injectionTime:forMainFrameOnly:includeMatchPatternStrings:excludeMatchPatternStrings:associatedURL:contentWorld:)",
+      "_initWithSource(_:injectionTime:forMainFrameOnly:includeMatchPatternStrings:excludeMatchPatternStrings:associatedURL:contentWorld:deferRunningUntilNotification:)",
+      "_userContentWorld"
+    ]
+  },
+  "WKVideoView": {
+    "Type": [
+      "initWithFrame(_:playerView:)",
+      "playerLayer"
+    ]
+  },
+  "WKView": {
+    "Class Extension": [
+      "_thumbnailView"
+    ],
+    "Private": [
+      "_addMediaPlaybackControlsView(_:)",
+      "_automaticallyAdjustsContentInsets",
+      "_backgroundColor",
+      "_cancelImmediateActionAnimation()",
+      "_completeImmediateActionAnimation()",
+      "_didChangeContentSize(_:)",
+      "_dismissContentRelativeChildWindows()",
+      "_dismissContentRelativeChildWindowsWithAnimation(_:)",
+      "_doAfterNextPresentationUpdate(_:)",
+      "_fixedLayoutSize",
+      "_gestureEventWasNotHandledByWebCore(_:)",
+      "_ignoresAllEvents",
+      "_ignoresNonWheelEvents",
+      "_immediateActionAnimationControllerForHitTestResult(_:withType:userData:)",
+      "_inspectorAttachmentView",
+      "_layoutMode",
+      "_mediaPlaybackControlsView",
+      "_overlayScrollbarStyle",
+      "_overrideDeviceScaleFactor",
+      "_prepareForImmediateActionAnimation()",
+      "_prepareForMoveToWindow(_:withCompletionHandler:)",
+      "_removeMediaPlaybackControlsView()",
+      "_setCustomSwipeViews(_:)",
+      "_setCustomSwipeViewsTopContentInset(_:)",
+      "_setDidMoveSwipeSnapshotCallback(_:)",
+      "_setShouldSuppressFirstResponderChanges(_:)",
+      "_simulateMouseMove(_:)",
+      "_topContentInset",
+      "_totalHeightOfBanners",
+      "_tryToSwipeWithEvent(_:ignoringPinnedState:)",
+      "_useSystemAppearance",
+      "_viewScale",
+      "_wantsMediaPlaybackControlsView",
+      "allowsBackForwardNavigationGestures",
+      "allowsLinkPreview()",
+      "allowsMagnification",
+      "beginDeferringViewInWindowChanges()",
+      "canChangeFrameLayout(_:)",
+      "createFullScreenWindow()",
+      "disableFrameSizeUpdates()",
+      "enableFrameSizeUpdates()",
+      "endDeferringViewInWindowChanges()",
+      "endDeferringViewInWindowChangesSync()",
+      "frameSizeUpdatesDisabled()",
+      "fullScreenPlaceholderView()",
+      "hideWordDefinitionWindow()",
+      "initWithFrame(_:configurationRef:)",
+      "initWithFrame(_:contextRef:pageGroupRef:)",
+      "initWithFrame(_:contextRef:pageGroupRef:relatedToPage:)",
+      "isDeferringViewInWindowChanges()",
+      "magnification",
+      "minimumSizeForAutoLayout",
+      "pageRef",
+      "printOperationWithPrintInfo(_:forFrame:)",
+      "saveBackForwardSnapshotForCurrentItem()",
+      "saveBackForwardSnapshotForItem(_:)",
+      "setAllowsLinkPreview(_:)",
+      "setFrame(_:andScrollBy:)",
+      "setMagnification(_:centeredAtPoint:)",
+      "setWindowOcclusionDetectionEnabled(_:)",
+      "shouldClipToVisibleRect",
+      "shouldExpandToViewHeightForAutoLayout",
+      "sizeToContentAutoSizeMaximumSize",
+      "underlayColor",
+      "usingUISideCompositing",
+      "windowOcclusionDetectionEnabled()"
+    ],
+    "PrivateForSubclassToDefine": [
+      "_shouldLoadIconWithParameters(_:completionHandler:)"
+    ]
+  },
+  "WKViewLayoutStrategy": {
+    "Type": [
+      "didChangeFrameSize()",
+      "didChangeViewScale()",
+      "didEndLiveResize()",
+      "disableFrameSizeUpdates()",
+      "enableFrameSizeUpdates()",
+      "frameSizeUpdatesDisabled()",
+      "invalidate()",
+      "layoutMode",
+      "layoutStrategyWithPage(_:view:viewImpl:mode:)",
+      "willChangeLayoutStrategy()",
+      "willStartLiveResize()"
+    ]
+  },
+  "WKVisibilityPropagationView": {
+    "Type": [
+      "propagateVisibilityToProcess(_:)",
+      "stopPropagatingVisibilityToProcess(_:)"
+    ]
+  },
+  "WKWebEvent": {
+    "Type": [
+      "initWithEvent(_:)",
+      "uiEvent"
+    ]
+  },
+  "WKWebExtension": {
+    "Class Extension": [
+      "_hasModularBackgroundContent",
+      "_hasServiceWorkerBackgroundContent",
+      "_hasSidebar",
+      "_initWithAppExtensionBundle(_:error:)",
+      "_initWithAppExtensionBundle(_:resourceBaseURL:error:)",
+      "_initWithManifestDictionary(_:)",
+      "_initWithManifestDictionary(_:resources:)",
+      "_initWithResourceBaseURL(_:error:)",
+      "_initWithResources(_:)",
+      "_protectedWebExtension()",
+      "_webExtension",
+      "initWithAppExtensionBundle(_:error:)",
+      "initWithAppExtensionBundle(_:resourceBaseURL:error:)",
+      "initWithManifestDictionary(_:)",
+      "initWithManifestDictionary(_:resources:)",
+      "initWithResourceBaseURL(_:error:)",
+      "initWithResources(_:)"
+    ]
+  },
+  "WKWebExtensionAction": {
+    "Class Extension": [
+      "_protectedWebExtensionAction()",
+      "_webExtensionAction"
+    ]
+  },
+  "WKWebExtensionCommand": {
+    "Class Extension": [
+      "_isActionCommand",
+      "_matchesEvent(_:)",
+      "_protectedWebExtensionCommand()",
+      "_shortcut",
+      "_userVisibleShortcut",
+      "_webExtensionCommand"
+    ]
+  },
+  "WKWebExtensionContext": {
+    "Class Extension": [
+      "_backgroundContentURL",
+      "_backgroundWebView",
+      "_resetCommands()",
+      "_sendTestFinishedWithArgument(_:)",
+      "_sendTestMessage(_:withArgument:)",
+      "_sendTestStartedWithArgument(_:)",
+      "_webExtensionContext",
+      "sidebarForTab(_:)"
+    ]
+  },
+  "WKWebExtensionController": {
+    "Class Extension": [
+      "_testingMode",
+      "_webExtensionController"
+    ]
+  },
+  "WKWebExtensionControllerConfiguration": {
+    "Class Extension": [
+      "_protectedWebExtensionControllerConfiguration()",
+      "_storageDirectoryPath",
+      "_temporary",
+      "_temporaryConfiguration()",
+      "_webExtensionControllerConfiguration"
+    ]
+  },
+  "WKWebExtensionDataRecord": {
+    "Class Extension": [
+      "_webExtensionDataRecord"
+    ]
+  },
+  "WKWebExtensionMatchPattern": {
+    "Class Extension": [
+      "_protectedWebExtensionMatchPattern()",
+      "_webExtensionMatchPattern"
+    ]
+  },
+  "WKWebExtensionMessagePort": {
+    "Class Extension": [
+      "_webExtensionMessagePort"
+    ]
+  },
+  "WKWebExtensionTabConfiguration": {
+    "Class Extension": [
+      "_init()"
+    ]
+  },
+  "WKWebExtensionWindowConfiguration": {
+    "Class Extension": [
+      "_init()"
+    ]
+  },
+  "WKWebGeolocationPolicyDecider": {
+    "Type": [
+      "clearCache()",
+      "decidePolicyForGeolocationRequestFromOrigin(_:requestingURL:view:listener:)",
+      "sharedPolicyDecider()"
+    ]
+  },
+  "WKWebInspectorPreferenceObserver": {
+    "Type": [
+      "observeValueForKeyPath(_:ofObject:change:context:)",
+      "sharedInstance()"
+    ]
+  },
+  "WKWebView": {
+    "Class Extension": [
+      "_addReasonToHideTopScrollPocket(_:)",
+      "_addReasonToPreferSolidColorHardPocket(_:)",
+      "_addTextAnimationForAnimationID(_:withData:)",
+      "_adjustedColorForTopContentInsetColorFromUIDelegate(_:)",
+      "_clearBrowsingWarning()",
+      "_clearBrowsingWarningIfForMainFrameNavigation()",
+      "_clearWarningView()",
+      "_clearWarningViewIfForMainFrameNavigation()",
+      "_copyTopScrollPocket",
+      "_createPDFPageNumberIndicator(_:withFrame:pageCount:)",
+      "_didAccessBackForwardList()",
+      "_didChangeEditorState()",
+      "_didEndPartialIntelligenceTextAnimation()",
+      "_didInsertAttachment(_:withSource:)",
+      "_didInvalidateDataForAttachment(_:)",
+      "_didRemoveAttachment(_:)",
+      "_dismissDigitalCredentialsPicker(_:)",
+      "_doAfterAdjustingColorForTopContentInsetFromUIDelegate(_:)",
+      "_doAfterNextVisibleContentRectAndPresentationUpdate(_:)",
+      "_gamepadsConnected",
+      "_gamepadsConnectedStateChanged()",
+      "_hasActiveNowPlayingSession",
+      "_hasVisibleColorExtensionView(_:)",
+      "_horizontallyAttachedInspectorWebView",
+      "_installScreenTimeWebpageControllerIfNeeded()",
+      "_internalDoAfterNextPresentationUpdate(_:withoutWaitingForPainting:withoutWaitingForAnimatedResize:)",
+      "_invalidateWindowSnapshotReadinessHandler()",
+      "_isValid()",
+      "_page()",
+      "_pageForTesting()",
+      "_proofreadingSessionShowDetailsForSuggestionWithUUID(_:relativeToRect:)",
+      "_proofreadingSessionUpdateState(_:forSuggestionWithUUID:)",
+      "_protectedPage()",
+      "_recalculateViewportSizesWithMinimumViewportInset(_:maximumViewportInset:throwOnInvalidInput:)",
+      "_removeAnyPDFPageNumberIndicator()",
+      "_removePDFPageNumberIndicator(_:)",
+      "_removeReasonToHideTopScrollPocket(_:)",
+      "_removeReasonToPreferSolidColorHardPocket(_:)",
+      "_removeTextAnimationForAnimationID(_:)",
+      "_resolutionForShareSheetImmediateCompletionForTesting()",
+      "_screenTimeBlurredSnapshot()",
+      "_screenTimeBlurredSnapshot()",
+      "_screenTimeWebpageController()",
+      "_setAllowGamepadsAccess()",
+      "_setAllowGamepadsInput(_:)",
+      "_setGamepadsRecentlyAccessed(_:)",
+      "_showBrowsingWarning(_:completionHandler:)",
+      "_showDigitalCredentialsPicker(_:completionHandler:)",
+      "_showWarningView(_:completionHandler:)",
+      "_spatialBackdropSourceDidChange()",
+      "_storeAppHighlight(_:)",
+      "_uninstallScreenTimeWebpageController()",
+      "_updateFixedColorExtensionViewFrames()",
+      "_updateFixedColorExtensionViews()",
+      "_updateFixedContainerEdges(_:)",
+      "_updateHiddenScrollPocketEdges()",
+      "_updatePDFPageNumberIndicator(_:currentPage:)",
+      "_updatePDFPageNumberIndicator(_:withFrame:)",
+      "_updatePDFPageNumberIndicatorIfNeeded()",
+      "_updatePrefersSolidColorHardPocket()",
+      "_updateScreenTimeBasedOnWindowVisibility()",
+      "_updateScreenTimeViewGeometry()",
+      "_updateScrollGeometryWithContentOffset(_:contentSize:)",
+      "_updateTopScrollPocketCaptureColor()",
+      "_writingToolsTextReplacementsFinished()",
+      "allowedWritingToolsResultOptions()"
+    ],
+    "FullScreenAPI_Internal": [
+      "fullScreenWindowController()",
+      "fullScreenWindowSceneDimmingAction()"
+    ],
+    "FullScreenAPI_Private": [
+      "closeFullScreenWindowController()",
+      "hasFullScreenWindowController()"
+    ],
+    "NonCpp": [
+      "_allowsMagnification",
+      "_alwaysBounceHorizontal",
+      "_alwaysBounceVertical",
+      "_describeInteraction(_:completionHandler:)",
+      "_nameForVisualIdentificationOverlay",
+      "_requestTextExtraction(_:completionHandler:)",
+      "_scrollToEdge(_:animated:)",
+      "_setContentOffsetX(_:y:animated:)",
+      "_setNeedsScrollGeometryUpdates(_:)"
+    ],
+    "TextExtractionFilter": [
+      "_clearTextExtractionFilterCache()"
+    ],
+    "WKInternalMac": [
+      "_resetSecureInputState()",
+      "_takeFindStringFromSelectionInternal(_:)",
+      "insertText(_:replacementRange:)"
+    ],
+    "WKPrivate": [
+      "_MIMEType",
+      "_addAppHighlight()",
+      "_addAppHighlightInNewGroup(_:originatedInApp:)",
+      "_addsVisitedLinks",
+      "_adjustVisibilityForTargetedElements(_:completionHandler:)",
+      "_alignCenter(_:)",
+      "_alignJustified(_:)",
+      "_alignLeft(_:)",
+      "_alignRight(_:)",
+      "_allMediaPresentationsClosed()",
+      "_allowAnimationControls()",
+      "_allowsAnyAnimationToPlay",
+      "_allowsMediaDocumentInlinePlayback",
+      "_allowsRemoteInspection",
+      "_appHighlightDelegate",
+      "_applicationNameForUserAgent",
+      "_archiveWithConfiguration(_:completionHandler:)",
+      "_attachmentForIdentifier(_:)",
+      "_backgroundExtendsBeyondPage",
+      "_callAsyncJavaScript(_:arguments:inFrame:inContentWorld:completionHandler:)",
+      "_canEnterFullscreen",
+      "_canToggleInWindow",
+      "_canTogglePictureInPicture",
+      "_canUseCredentialStorage",
+      "_certificateChain",
+      "_changeListType(_:)",
+      "_clearBackForwardCache()",
+      "_clearServiceWorkerEntitlementOverride(_:)",
+      "_close()",
+      "_closeAllMediaPresentations()",
+      "_committedURL",
+      "_completeTextManipulation(_:completion:)",
+      "_completeTextManipulationForItems(_:completion:)",
+      "_confirmMalwareSentinel()",
+      "_convertPoint(_:fromFrame:toMainFrameCoordinates:)",
+      "_convertRect(_:fromFrame:toMainFrameCoordinates:)",
+      "_corsDisablingPatterns",
+      "_countStringMatches(_:options:maxCount:)",
+      "_createIconDataFromImageData(_:withLengths:completionHandler:)",
+      "_createWebArchiveForFrame(_:completionHandler:)",
+      "_createWebArchiveForFrames(_:rootFrame:completionHandler:)",
+      "_customUserAgent",
+      "_dataTaskWithRequest(_:completionHandler:)",
+      "_dataTaskWithRequest(_:runAtForegroundPriority:completionHandler:)",
+      "_debugTextWithConfiguration(_:completionHandler:)",
+      "_decodeImageData(_:preferredSize:completionHandler:)",
+      "_decodeImageData(_:preferredSize:completionHandler:)",
+      "_decreaseListLevel(_:)",
+      "_diagnosticLoggingDelegate",
+      "_didDisableBrowserExtensions(_:)",
+      "_didEnableBrowserExtensions(_:)",
+      "_didLoadAppInitiatedRequest(_:)",
+      "_didLoadNonAppInitiatedRequest(_:)",
+      "_disableURLSchemeCheckInDataDetectors()",
+      "_displayCaptureState",
+      "_displayCaptureSurfaces",
+      "_displayingPDF",
+      "_displayingStandaloneImageDocument",
+      "_displayingStandaloneMediaDocument",
+      "_doAfterNextPresentationUpdate(_:)",
+      "_doAfterNextPresentationUpdateWithoutWaitingForPainting(_:)",
+      "_doAfterNextVisibleContentRectUpdate(_:)",
+      "_dontResetTransientActivationAfterRunJavaScript",
+      "_editable",
+      "_enterFullscreen()",
+      "_enterInWindow()",
+      "_evaluateJavaScript(_:inFrame:inContentWorld:completionHandler:)",
+      "_evaluateJavaScript(_:withSourceURL:inFrame:inContentWorld:completionHandler:)",
+      "_evaluateJavaScript(_:withSourceURL:inFrame:inContentWorld:withUserGesture:completionHandler:)",
+      "_evaluateJavaScriptWithoutUserGesture(_:completionHandler:)",
+      "_executeEditCommand(_:argument:completion:)",
+      "_exitInWindow()",
+      "_fetchDataOfTypes(_:completionHandler:)",
+      "_findDelegate",
+      "_findString(_:options:maxCount:)",
+      "_fixedLayoutSize",
+      "_frameInfoFromHandle(_:completionHandler:)",
+      "_frameTrees(_:)",
+      "_frames(_:)",
+      "_fullscreenDelegate",
+      "_gapBetweenPages",
+      "_getApplicationManifestWithCompletionHandler(_:)",
+      "_getContentsAsAttributedStringWithCompletionHandler(_:)",
+      "_getContentsAsStringWithCompletionHandler(_:)",
+      "_getContentsAsStringWithCompletionHandlerKeepIPCConnectionAliveForTesting(_:)",
+      "_getContentsOfAllFramesAsStringWithCompletionHandler(_:)",
+      "_getInformationFromImageData(_:completionHandler:)",
+      "_getMainResourceDataWithCompletionHandler(_:)",
+      "_getPDFFirstPageSizeInFrame(_:completionHandler:)",
+      "_getProcessDisplayNameWithCompletionHandler(_:)",
+      "_getTextFragmentMatchWithCompletionHandler(_:)",
+      "_getWebArchiveDataWithCompletionHandler(_:)",
+      "_gpuProcessIdentifier",
+      "_grantAccessToAssetServices()",
+      "_handle",
+      "_handlesSafeBrowsing()",
+      "_hasActiveNowPlayingSession",
+      "_hideFindUI()",
+      "_historyDelegate",
+      "_hitTestAtPoint(_:inFrameCoordinateSpace:completionHandler:)",
+      "_iconLoadingDelegate",
+      "_increaseListLevel(_:)",
+      "_indent(_:)",
+      "_inputDelegate",
+      "_insertAttachmentWithFileWrapper(_:contentType:completion:)",
+      "_insertAttachmentWithFileWrapper(_:contentType:options:completion:)",
+      "_insertAttachmentWithFilename(_:contentType:data:options:completion:)",
+      "_insertNestedOrderedList(_:)",
+      "_insertNestedUnorderedList(_:)",
+      "_insertOrderedList(_:)",
+      "_insertUnorderedList(_:)",
+      "_inspector",
+      "_isBeingInspected",
+      "_isClosed()",
+      "_isContentFromNetwork",
+      "_isEnhancedSecurityEnabled(_:)",
+      "_isInFullscreen",
+      "_isInWindowActive",
+      "_isJITEnabled(_:)",
+      "_isPictureInPictureActive",
+      "_isSuspended",
+      "_killWebContentProcess()",
+      "_killWebContentProcessAndResetState()",
+      "_launchInitialProcessIfNecessary()",
+      "_layoutMode",
+      "_loadAlternateHTMLString(_:baseURL:forUnreachableURL:)",
+      "_loadAlternateHTMLString(_:baseURL:forUnreachableURL:withWebpagePreferences:)",
+      "_loadAndDecodeImage(_:constrainedToSize:maximumBytesFromNetwork:completionHandler:)",
+      "_loadAndDecodeImage(_:constrainedToSize:maximumBytesFromNetwork:completionHandler:)",
+      "_loadData(_:MIMEType:characterEncodingName:baseURL:userData:)",
+      "_loadRequest(_:shouldOpenExternalURLs:)",
+      "_loadRequest(_:shouldOpenExternalURLsPolicy:)",
+      "_loadServiceWorker(_:completionHandler:)",
+      "_loadServiceWorker(_:usingModules:completionHandler:)",
+      "_mainFrame",
+      "_mainFrameURL",
+      "_mediaCaptureEnabled",
+      "_mediaCaptureState",
+      "_mediaMutedState",
+      "_menuBarIsVisible",
+      "_minimumEffectiveDeviceWidth",
+      "_modelProcessIdentifier",
+      "_negotiatedLegacyTLS",
+      "_networkRequestsInProgress",
+      "_nowPlayingMediaTitleAndArtist(_:)",
+      "_numberOfVisibilityAdjustmentRectsWithCompletionHandler(_:)",
+      "_observedRenderingProgressEvents",
+      "_outdent(_:)",
+      "_overrideDeviceScaleFactor",
+      "_pageCount",
+      "_pageLength",
+      "_pageZoomFactor",
+      "_paginationBehavesLikeColumns",
+      "_paginationLineGridEnabled",
+      "_paginationMode",
+      "_pasteAndMatchStyle(_:)",
+      "_pasteAsQuotation(_:)",
+      "_pauseAllAnimationsWithCompletionHandler(_:)",
+      "_pauseNowPlayingMediaSession(_:)",
+      "_performInteraction(_:completionHandler:)",
+      "_permissionChanged(_:forOrigin:)",
+      "_playAllAnimationsWithCompletionHandler(_:)",
+      "_playPredominantOrNowPlayingMediaSession(_:)",
+      "_playingAudio",
+      "_preconnectToServer(_:)",
+      "_provisionalWebProcessIdentifier",
+      "_proxyName",
+      "_reloadExpiredOnly()",
+      "_reloadWithoutContentBlockers()",
+      "_remoteInspectionNameOverride",
+      "_remoteObjectRegistry",
+      "_removeDataDetectedLinks(_:)",
+      "_requestAllTargetableElementsInfo(_:completionHandler:)",
+      "_requestAllTextWithCompletionHandler(_:)",
+      "_requestTargetedElementInfo(_:completionHandler:)",
+      "_requiredWebExtensionBaseURL",
+      "_resetVisibilityAdjustmentsForTargetedElements(_:completionHandler:)",
+      "_resourceDirectoryURL",
+      "_resourceLoadDelegate",
+      "_restoreAndScrollToAppHighlight(_:)",
+      "_restoreAppHighlights(_:)",
+      "_restoreData(_:completionHandler:)",
+      "_restoreFromSessionStateData(_:)",
+      "_restoreSessionState(_:andNavigate:)",
+      "_resumeAllMediaPlayback()",
+      "_resumePage(_:)",
+      "_revokeAccessToAssetServices()",
+      "_sampledPageTopColor",
+      "_sampledPageTopColor",
+      "_sampledTopFixedPositionContentColor",
+      "_sampledTopFixedPositionContentColor",
+      "_saveBackForwardSnapshotForItem(_:)",
+      "_saveResources(_:suggestedFileName:completionHandler:)",
+      "_scrollPerformanceData",
+      "_scrollPerformanceDataCollectionEnabled",
+      "_selectionAttributes",
+      "_serviceWorkersEnabled(_:)",
+      "_sessionState",
+      "_sessionStateData",
+      "_sessionStateWithFilter(_:)",
+      "_setDisplayCaptureState(_:completionHandler:)",
+      "_setPageMuted(_:)",
+      "_setStatisticsCrossSiteLoadWithLinkDecorationForTesting(_:withToHost:withWasFiltered:withCompletionHandler:)",
+      "_setSystemAudioCaptureState(_:completionHandler:)",
+      "_shouldSuppressTopColorExtensionView",
+      "_showSafeBrowsingWarningWithTitle(_:warning:details:completionHandler:)",
+      "_showSafeBrowsingWarningWithURL(_:title:warning:details:completionHandler:)",
+      "_showSafeBrowsingWarningWithURL(_:title:warning:detailsWithLinks:completionHandler:)",
+      "_showingNavigationGestureSnapshot",
+      "_simulateClickOverFirstMatchingTextInViewportWithUserInteraction(_:completionHandler:)",
+      "_simulateDeviceOrientationChangeWithAlpha(_:beta:gamma:)",
+      "_spatialBackdropSource",
+      "_startImageAnalysis(_:target:)",
+      "_startTextManipulationsWithConfiguration(_:completion:)",
+      "_statusBarIsVisible",
+      "_stopAllMediaPlayback()",
+      "_stopMediaCapture()",
+      "_stringForFind",
+      "_supportsTextZoom",
+      "_suspendAllMediaPlayback()",
+      "_suspendPage(_:)",
+      "_switchFromStaticFontRegistryToUserFontRegistry()",
+      "_systemAudioCaptureState",
+      "_takeFindStringFromSelection(_:)",
+      "_takePDFSnapshotWithConfiguration(_:completionHandler:)",
+      "_takeSnapshotOfNode(_:completionHandler:)",
+      "_takeSnapshotOfNode(_:completionHandler:)",
+      "_targetedPreviewForElementWithID(_:completionHandler:)",
+      "_textFragmentDirectiveFromSelectionWithCompletionHandler(_:)",
+      "_textManipulationDelegate",
+      "_textPreviewsForElementWithID(_:completionHandler:)",
+      "_textZoomFactor",
+      "_toggleInWindow()",
+      "_togglePictureInPicture()",
+      "_toggleStrikeThrough(_:)",
+      "_toolbarsAreVisible",
+      "_tryClose()",
+      "_unreachableURL",
+      "_updateMediaPlaybackControlsManager()",
+      "_updateWebpagePreferences(_:)",
+      "_useSystemAppearance",
+      "_userAgent",
+      "_userContentExtensionsEnabled",
+      "_viewScale",
+      "_viewportSizeForCSSViewportUnits",
+      "_visitUnsafeWebsiteSentinel()",
+      "_wasPrivateRelayed",
+      "_webProcessIdentifier",
+      "_webProcessIsResponsive",
+      "_webProcessState",
+      "_willUpgradeToHTTPS(_:)",
+      "accessibilityRemoteChildTokenHash()",
+      "accessibilityUIProcessLocalTokenHash()",
+      "hasRemoteAccessibilityChild()",
+      "presentingApplicationAuditToken",
+      "registeredRemoteAccessibilityPids()"
+    ],
+    "WKPrivateIOS": [
+      "_accessibilityClearSelection()",
+      "_accessibilityDidGetSpeakSelectionContent(_:)",
+      "_accessibilityRetrieveRectsAtSelectionOffset(_:withText:completionHandler:)",
+      "_accessibilityRetrieveSpeakSelectionContent()",
+      "_accessibilityStoreSelection()",
+      "_addLayerForFindOverlay()",
+      "_allowsViewportShrinkToFit",
+      "_becomeFirstResponderWithSelectionMovingForward(_:completionHandler:)",
+      "_beginAnimatedResizeWithUpdates(_:)",
+      "_beginInteractiveObscuredInsetsChange()",
+      "_clearInterfaceOrientationOverride()",
+      "_clearOverrideLayoutParameters()",
+      "_contentViewIsFirstResponder",
+      "_contentVisibleRect",
+      "_convertPointFromContentsToView(_:)",
+      "_convertPointFromViewToContents(_:)",
+      "_dataDetectionResults()",
+      "_dataForDisplayedPDF",
+      "_detectDataWithTypes(_:completionHandler:)",
+      "_doAfterNextStablePresentationUpdate(_:)",
+      "_dragInteractionPolicy",
+      "_enclosingViewForExposedRectComputation",
+      "_endAnimatedResize()",
+      "_endInteractiveObscuredInsetsChange()",
+      "_ephemeralUIEventAttribution",
+      "_findInteraction",
+      "_findInteractionEnabled",
+      "_fullScreenPlaceholderView()",
+      "_hideContentUntilNextUpdate()",
+      "_interfaceOrientationOverride",
+      "_isForcedIntoAppBoundMode(_:)",
+      "_isNavigatingToAppBoundDomain(_:)",
+      "_layerForFindOverlay",
+      "_maximumUnobscuredSizeOverride",
+      "_minimumLayoutSizeOverride",
+      "_minimumUnobscuredSizeOverride",
+      "_obscuredInsetEdgesAffectedBySafeArea",
+      "_obscuredInsets",
+      "_overrideLayoutParametersWithMinimumLayoutSize(_:maximumUnobscuredSizeOverride:)",
+      "_overrideLayoutParametersWithMinimumLayoutSize(_:minimumUnobscuredSizeOverride:maximumUnobscuredSizeOverride:)",
+      "_overrideViewportWithArguments(_:)",
+      "_removeLayerForFindOverlay()",
+      "_requestActivatedElementAtPosition(_:completionBlock:)",
+      "_requestRectForFoundTextRange(_:completionHandler:)",
+      "_resizeWhileHidingContentWithUpdates(_:)",
+      "_retainActiveFocusedState()",
+      "_safeAreaShouldAffectObscuredInsets",
+      "_safeBrowsingWarning",
+      "_setEphemeralUIEventAttribution(_:forApplicationWithBundleID:)",
+      "_setFont(_:sender:)",
+      "_setFontSize(_:sender:)",
+      "_setOverlaidAccessoryViewsInset(_:)",
+      "_setTextColor(_:sender:)",
+      "_shouldAvoidResizingWhenInputViewBoundsChange",
+      "_snapshotLayerContentsForBackForwardListItem(_:)",
+      "_snapshotRect(_:intoImageOfWidth:completionHandler:)",
+      "_snapshotRectAfterScreenUpdates(_:rectInViewCoordinates:intoImageOfWidth:completionHandler:)",
+      "_suggestedFilenameForDisplayedPDF",
+      "_textInputTraits()",
+      "_uiEventAttribution",
+      "_uiTextCaretRect",
+      "_unobscuredSafeAreaInsets",
+      "_viewForFindUI()",
+      "_webViewPrintFormatter",
+      "_willOpenAppLink()",
+      "didEndFormControlInteraction()",
+      "didEnsurePositionInformationIsUpToDate()",
+      "didStartFormControlInteraction()"
+    ],
+    "WKPrivateMac": [
+      "_addMediaPlaybackControlsView(_:)",
+      "_alwaysShowsHorizontalScroller",
+      "_alwaysShowsVerticalScroller",
+      "_automaticallyAdjustsContentInsets",
+      "_backgroundColor",
+      "_beginDeferringViewInWindowChanges()",
+      "_canChangeFrameLayout(_:)",
+      "_clipsToVisibleRect",
+      "_disableFrameSizeUpdates()",
+      "_dismissContentRelativeChildWindows()",
+      "_drawsBackground",
+      "_enableFrameSizeUpdates()",
+      "_endDeferringViewInWindowChanges()",
+      "_endDeferringViewInWindowChangesSync()",
+      "_footerBannerLayer",
+      "_fullScreenPlaceholderView()",
+      "_fullScreenWindow()",
+      "_gestureEventWasNotHandledByWebCore(_:)",
+      "_hasActiveVideoForControlsManager",
+      "_headerBannerLayer",
+      "_ignoresAllEvents",
+      "_ignoresMouseMoveEvents",
+      "_ignoresNonWheelEvents",
+      "_immediateActionAnimationControllerForHitTestResult(_:withType:userData:)",
+      "_inspectorAttachmentView",
+      "_isSmartListsEnabled()",
+      "_mediaPlaybackControlsView",
+      "_minimumLayoutWidth",
+      "_obscuredContentInsets",
+      "_overflowHeightForTopScrollEdgeEffect",
+      "_overlayScrollbarStyle",
+      "_overrideTopScrollEdgeEffectColor",
+      "_pageRefForTransitionToWKWebView",
+      "_pinnedState",
+      "_prefersSolidColorHardScrollPocket",
+      "_prepareForMoveToWindow(_:completionHandler:)",
+      "_printOperationWithPrintInfo(_:)",
+      "_printOperationWithPrintInfo(_:forFrame:)",
+      "_removeMediaPlaybackControlsView()",
+      "_rubberBandingEnabled",
+      "_safeBrowsingWarning",
+      "_setCustomSwipeViews(_:)",
+      "_setCustomSwipeViewsObscuredContentInsets(_:)",
+      "_setCustomSwipeViewsTopContentInset(_:)",
+      "_setDidMoveSwipeSnapshotCallback(_:)",
+      "_setFont(_:sender:)",
+      "_setFrame(_:andScrollBy:)",
+      "_setObscuredContentInsets(_:immediate:)",
+      "_setShouldSuppressFirstResponderChanges(_:)",
+      "_setSmartListsEnabled(_:)",
+      "_setTopContentInset(_:immediate:)",
+      "_shouldExpandContentToViewHeightForAutoLayout",
+      "_showWritingTools()",
+      "_simulateMouseEnter(_:)",
+      "_simulateMouseMove(_:)",
+      "_sizeToContentAutoSizeMaximumSize",
+      "_spellCheckerDocumentTag",
+      "_thumbnailView",
+      "_toggleSmartLists(_:)",
+      "_topContentInset",
+      "_topScrollPocket",
+      "_totalHeightOfBanners",
+      "_tryToSwipeWithEvent(_:ignoringPinnedState:)",
+      "_underlayColor",
+      "_usePlatformFindUI",
+      "_usesAutomaticContentInsetBackgroundFill",
+      "_wantsMediaPlaybackControlsView",
+      "_windowOcclusionDetectionEnabled",
+      "minimumMagnification"
+    ],
+    "WKPrivateVision": [
+      "_defaultSTSLabel",
+      "_enterExternalPlaybackForNowPlayingMediaSessionWithEnterCompletionHandler(_:exitCompletionHandler:)",
+      "_exitExternalPlayback()"
+    ],
+    "WKTesting": [
+      "_addEventAttributionWithSourceID(_:destinationURL:sourceDescription:purchaser:reportEndpoint:optionalNonce:applicationBundleID:ephemeral:)",
+      "_appPrivacyReportTestingData(_:)",
+      "_audioRoutingArbitrationStatus()",
+      "_audioRoutingArbitrationUpdateTime()",
+      "_beginBackSwipeForTesting()",
+      "_caLayerTreeAsText",
+      "_cancelFixedColorExtensionFadeAnimationsForTesting()",
+      "_clearAppPrivacyReportTestingData(_:)",
+      "_clearApplicationBundleIdentifierTestingOverride()",
+      "_completeBackSwipeForTesting()",
+      "_computePagesForPrinting(_:completionHandler:)",
+      "_contentsOfUserInterfaceItem(_:)",
+      "_countOfUpdatesWithLayerChanges",
+      "_createMediaSessionCoordinatorForTesting(_:completionHandler:)",
+      "_denyNextUserMediaRequest()",
+      "_didDismissContactPicker()",
+      "_didDismissContextMenu()",
+      "_didPresentContactPicker()",
+      "_didShowContextMenu()",
+      "_disableBackForwardSnapshotVolatilityForTesting()",
+      "_dismissContactPickerWithContacts(_:)",
+      "_doAfterActivityStateUpdate(_:)",
+      "_doAfterNextPresentationUpdateWithoutWaitingForAnimatedResizeForTesting(_:)",
+      "_doAfterProcessingAllPendingMouseEvents(_:)",
+      "_dumpPrivateClickMeasurement(_:)",
+      "_fixedContainerEdges",
+      "_forwardedLogsCountForTesting()",
+      "_getNotifyStateForTesting(_:completionHandler:)",
+      "_getRenderTreeAsStringWithCompletionHandler(_:)",
+      "_gpuToWebProcessConnectionCountForTesting(_:)",
+      "_hasAccessibilityActivityForTesting",
+      "_hasServiceWorkerBackgroundActivityForTesting",
+      "_hasServiceWorkerForegroundActivityForTesting",
+      "_hasSleepDisabler()",
+      "_isLayerTreeFrozenForTesting(_:)",
+      "_isLoggerEnabledForTesting",
+      "_lastNavigationWasAppInitiated(_:)",
+      "_mediaCaptureReportingDelayForTesting",
+      "_modelProcessModelPlayerCountForTesting(_:)",
+      "_networkProcessIdentifier",
+      "_pageScale()",
+      "_processDidResumeForTesting()",
+      "_processWillSuspendForTesting(_:)",
+      "_processWillSuspendImminentlyForTesting()",
+      "_propertiesOfLayerWithID(_:)",
+      "_receivedLogsDuringLaunchForTesting()",
+      "_requestActiveNowPlayingSessionInfo(_:)",
+      "_resetInteraction()",
+      "_resetNavigationGestureStateForTesting()",
+      "_sampledBottomFixedPositionContentColor",
+      "_sampledBottomFixedPositionContentColor",
+      "_sampledLeftFixedPositionContentColor",
+      "_sampledLeftFixedPositionContentColor",
+      "_sampledRightFixedPositionContentColor",
+      "_sampledRightFixedPositionContentColor",
+      "_scrollbarStateForScrollingNodeID(_:processID:isVertical:)",
+      "_scrollingTreeAsText",
+      "_scrollingUpdatesDisabledForTesting",
+      "_setApplicationBundleIdentifier(_:)",
+      "_setConnectedToHardwareConsoleForTesting(_:)",
+      "_setContinuousSpellCheckingEnabledForTesting(_:)",
+      "_setGrammarCheckingEnabledForTesting(_:)",
+      "_setIndexOfGetDisplayMediaDeviceSelectedForTesting(_:)",
+      "_setMediaVolumeForTesting(_:)",
+      "_setNowPlayingMetadataObserver(_:)",
+      "_setPageScale(_:withOrigin:)",
+      "_setPrivateClickMeasurementAppBundleIDForTesting(_:completionHandler:)",
+      "_setPrivateClickMeasurementAttributionReportURLsForTesting(_:destinationURL:completionHandler:)",
+      "_setPrivateClickMeasurementAttributionTokenPublicKeyURLForTesting(_:completionHandler:)",
+      "_setPrivateClickMeasurementAttributionTokenSignatureURLForTesting(_:completionHandler:)",
+      "_setPrivateClickMeasurementOverrideTimerForTesting(_:completionHandler:)",
+      "_setShareSheetCompletesImmediatelyWithResolutionForTesting(_:)",
+      "_setSystemCanPromptForGetDisplayMediaForTesting(_:)",
+      "_setSystemPreviewCompletionHandlerForLoadTesting(_:)",
+      "_setThrottleStateForTesting(_:)",
+      "_shouldBypassGeolocationPromptForTesting()",
+      "_suspendMediaPlaybackCounter()",
+      "_terminateIdleServiceWorkersForTesting()",
+      "_textFragmentRangesWithCompletionHandlerForTesting(_:)",
+      "_webContentProcessVariantForFrame(_:)",
+      "_wirelessVideoPlaybackDisabled"
+    ],
+    "WKTestingIOS": [
+      "_animatingDragCancel",
+      "_colorExtensionViewForTesting(_:)",
+      "_didFinishTextInteractionInTextInputContext(_:)",
+      "_dismissFilePicker()",
+      "_doAfterNextVisibleContentRectAndStablePresentationUpdate(_:)",
+      "_doAfterReceivingEditDragSnapshotForTesting(_:)",
+      "_dragCaretRect",
+      "_filePickerAcceptedTypeIdentifiers()",
+      "_focusTextInputContext(_:placeCaretAt:completionHandler:)",
+      "_hasResizeAssertion()",
+      "_imageAnalysisGestureRecognizer",
+      "_inputViewBoundsInWindow",
+      "_isShowingDataListSuggestions()",
+      "_keyboardScrollingAnimationRunning",
+      "_mayContainEditableElementsInRect(_:)",
+      "_requestTextInputContextsInRect(_:completionHandler:)",
+      "_resetObscuredInsetsForTesting()",
+      "_resetPresentLockdownModeMessage()",
+      "_scrollbarState(_:processID:isVertical:)",
+      "_selectDataListOption(_:)",
+      "_setDeviceOrientationUserPermissionHandlerForTesting(_:)",
+      "_simulateElementAction(_:atLocation:)",
+      "_simulateLongPressActionAtLocation(_:)",
+      "_simulateModelInteractionPanGestureBeginAtPoint(_:)",
+      "_simulateModelInteractionPanGestureUpdateAtPoint(_:)",
+      "_simulateSelectionStart()",
+      "_simulateTextEntered(_:)",
+      "_singleTapGestureRecognizer",
+      "_stableStateOverride",
+      "_stageModeInfoForTesting()",
+      "_tapHighlightViewRect",
+      "_triggerSystemPreviewActionOnElement(_:document:page:)",
+      "_uiViewTreeAsText",
+      "_willBeginTextInteractionInTextInputContext(_:)",
+      "dismissFormAccessoryView()",
+      "formInputLabel",
+      "keyboardAccessoryBarNext()",
+      "keyboardAccessoryBarPrevious()",
+      "selectFormAccessoryHasCheckedItemAtRow(_:)",
+      "selectFormAccessoryPickerRow(_:)",
+      "selectFormPopoverTitle",
+      "selectWordBackwardForTesting()",
+      "setSelectedColorForColorPicker(_:)",
+      "setTimePickerValueToHour(_:minute:)",
+      "textContentTypeForTesting",
+      "timePickerValueHour()",
+      "timePickerValueMinute()"
+    ],
+    "WKTestingMac": [
+      "_activeMenu",
+      "_allowsInlinePredictions",
+      "_candidateRect()",
+      "_createFlagsChangedEventMonitorForTesting()",
+      "_didHandleAcceptedCandidate()",
+      "_didUpdateCandidateListVisibility(_:)",
+      "_forceRequestCandidates()",
+      "_handleAcceptedCandidate(_:)",
+      "_handleControlledElementIDResponse(_:)",
+      "_hasActiveVideoForControlsManager",
+      "_hasFlagsChangedEventMonitorForTesting()",
+      "_insertText(_:replacementRange:)",
+      "_pdfHUDs()",
+      "_requestControlledElementID()",
+      "_retrieveAccessibilityTreeData(_:)",
+      "_secureEventInputEnabledForTesting",
+      "_setSelectedColorForColorPicker(_:)",
+      "_shouldRequestCandidates",
+      "_windowRelativeBoundsForCustomSwipeViewsForTesting"
+    ],
+    "WKViewInternalIOS": [
+      "_accessibilitySettingsDidChange(_:)",
+      "_addShortcut(_:)",
+      "_allowsDoubleTapGestures",
+      "_beginAnimatedFullScreenExit()",
+      "_beginLiveResize()",
+      "_clearLockdownModeWarningNeeded()",
+      "_computedObscuredInset",
+      "_computedUnobscuredSafeAreaInset",
+      "_contentProviderRegistry",
+      "_contentRectForUserInteraction",
+      "_contentSizeCategory()",
+      "_contentSizeCategoryDidChange(_:)",
+      "_contentZoomScale()",
+      "_couldNotRestorePageState()",
+      "_currentContentView()",
+      "_decrementFocusPreservationCount()",
+      "_define(_:)",
+      "_deviceOrientationIgnoringOverrides",
+      "_didCommitLayerTree(_:)",
+      "_didCommitLoadForMainFrame()",
+      "_didCompleteAnimatedResize()",
+      "_didFailNavigation(_:)",
+      "_didFinishLoadingDataForCustomContentProviderWithSuggestedFilename(_:data:)",
+      "_didFinishNavigation(_:)",
+      "_didFinishScrolling(_:)",
+      "_didInvokeUIScrollViewDelegateCallback()",
+      "_didRelaunchProcess()",
+      "_didRequestPasswordForDocument()",
+      "_didSameDocumentNavigationForMainFrame(_:)",
+      "_didStartProvisionalLoadForMainFrame()",
+      "_didStopRequestingPasswordForDocument()",
+      "_dispatchSetDeviceOrientation(_:)",
+      "_effectiveAppearanceIsDark()",
+      "_effectiveDataOwner(_:)",
+      "_effectiveUserInterfaceLevelIsElevated()",
+      "_endAnimatedFullScreenExit()",
+      "_endLiveResize()",
+      "_findSelected(_:)",
+      "_forcesInitialScaleFactor",
+      "_frameOrBoundsMayHaveChanged()",
+      "_hasOverriddenLayoutParameters",
+      "_haveSetObscuredInsets",
+      "_haveSetUnobscuredSafeAreaInsets",
+      "_hideFindOverlay()",
+      "_hidePasswordView()",
+      "_incrementFocusPreservationCount()",
+      "_initialScaleFactor()",
+      "_insertionPointColor()",
+      "_invalidateResizeAssertions()",
+      "_isBackground",
+      "_isInStableState(_:)",
+      "_isNavigationSwipeGestureRecognizer(_:)",
+      "_isShowingVideoPictureInPicture()",
+      "_isSimulatingCompatibilityPointerTouches",
+      "_isWindowResizingEnabled",
+      "_keyboardDidChangeFrame(_:)",
+      "_keyboardDidShow(_:)",
+      "_keyboardWillChangeFrame(_:)",
+      "_keyboardWillHide(_:)",
+      "_keyboardWillShow(_:)",
+      "_layerTreeCommitComplete()",
+      "_lookup(_:)",
+      "_mayAutomaticallyShowVideoPictureInPicture()",
+      "_navigationGestureDidBegin()",
+      "_navigationGestureDidEnd()",
+      "_nextAccessoryTab(_:)",
+      "_passwordView",
+      "_previousAccessoryTab(_:)",
+      "_processDidExit()",
+      "_processWillSwap()",
+      "_promptForReplace(_:)",
+      "_registerForNotifications()",
+      "_resetCachedScrollViewBackgroundColor()",
+      "_resetContentOffset()",
+      "_resetFocusPreservationCount()",
+      "_resetObscuredInsets()",
+      "_resetScrollViewInsetAdjustmentBehavior()",
+      "_resetUnobscuredSafeAreaInsets()",
+      "_restorePageScrollPosition(_:scrollOrigin:previousObscuredInset:scale:)",
+      "_restorePageStateToUnobscuredCenter(_:scale:)",
+      "_retainingActiveFocusedState",
+      "_scheduleForcedVisibleContentRectUpdate()",
+      "_scheduleVisibleContentRectUpdate()",
+      "_scrollToContentScrollPosition(_:scrollOrigin:animated:)",
+      "_scrollToRect(_:origin:minimumScrollDistance:)",
+      "_scrollViewInternal",
+      "_searchableObject()",
+      "_selectionGranularity",
+      "_setHasCustomContentView(_:loadedMIMEType:)",
+      "_setObscuredInsetsInternal(_:)",
+      "_setOpaqueInternal(_:)",
+      "_setPointerTouchCompatibilitySimulatorEnabled(_:)",
+      "_setupScrollAndContentViews()",
+      "_share(_:)",
+      "_shouldAvoidSecurityHeuristicScoreUpdates",
+      "_shouldDeferGeometryUpdates()",
+      "_shouldHideTopScrollPocket",
+      "_showFindOverlay()",
+      "_showPasswordViewWithDocumentName(_:passwordHandler:)",
+      "_takeViewSnapshot()",
+      "_targetContentZoomScaleForRect(_:currentScale:fitEntireRect:minimumScale:maximumScale:)",
+      "_translate(_:)",
+      "_transliterateChinese(_:)",
+      "_updateOverlayRegions()",
+      "_updatePageLoadObserverState()",
+      "_updateScrollViewBackground()",
+      "_updateScrollViewIndicatorStyle()",
+      "_updateScrollViewInsetAdjustmentBehavior()",
+      "_videoControlsManagerDidChange()",
+      "_videosInElementFullscreenChanged()",
+      "_willInvalidateDraggedModelWithContainerView(_:)",
+      "_willInvokeUIScrollViewDelegateCallback()",
+      "_windowDidRotate(_:)",
+      "_wkScrollView()",
+      "_zoomOutWithOrigin(_:animated:)",
+      "_zoomToFocusRect(_:selectionRect:fontSize:minimumScale:maximumScale:allowScaling:forceScroll:)",
+      "_zoomToInitialScaleWithOrigin(_:animated:)",
+      "_zoomToRect(_:withOrigin:fitEntireRect:minimumScale:maximumScale:minimumScrollDistance:)",
+      "activeViewLayoutSize(_:)",
+      "alignCenter(_:)",
+      "alignJustified(_:)",
+      "alignLeft(_:)",
+      "alignRight(_:)",
+      "currentlyVisibleContentInsetsWithScale(_:obscuredInsets:)",
+      "find(_:)",
+      "findAndReplace(_:)",
+      "findNext(_:)",
+      "findPrevious(_:)",
+      "replace(_:)",
+      "scrollView(_:handleScrollUpdate:completion:)",
+      "useSelectionForFind(_:)",
+      "usesStandardContentView()"
+    ],
+    "WKWindowSnapshot": [
+      "_windowSnapshotInRect(_:withOptions:)"
+    ],
+    "_WKWebViewPrintFormatter": [
+      "_printProvider"
+    ]
+  },
+  "WKWebViewConfiguration": {
+    "Class Extension": [
+      "_applicationNameForDesktopUserAgent",
+      "_isValidCustomScheme(_:)"
+    ],
+    "WKPrivate": [
+      "_additionalSupportedImageTypes",
+      "_allowMediaContentTypesRequiringHardwareSupportAsFallback",
+      "_allowPostingLegacySynchronousMessages",
+      "_allowTestOnlyIPC",
+      "_allowTopNavigationToDataURLs",
+      "_allowUniversalAccessFromFileURLs",
+      "_allowedNetworkHosts",
+      "_allowsInlineMediaPlaybackAfterFullscreen",
+      "_allowsJavaScriptMarkup",
+      "_allowsMetaRefresh",
+      "_alternateWebViewForNavigationGestures",
+      "_alwaysRunsAtForegroundPriority",
+      "_appHighlightsEnabled",
+      "_appInitiatedOverrideValueForTesting",
+      "_applePayEnabled",
+      "_applicationManifest",
+      "_attachmentElementEnabled",
+      "_attachmentFileWrapperClass",
+      "_attachmentWideLayoutEnabled",
+      "_attributedBundleIdentifier",
+      "_canShowWhileLocked",
+      "_clickInteractionDriverForTesting",
+      "_clientNavigationsRunAtForegroundPriority",
+      "_colorFilterEnabled",
+      "_contentSecurityPolicyModeForExtension",
+      "_contextMenuQRCodeDetectionEnabled",
+      "_controlledByAutomation",
+      "_convertsPositionStyleOnCopy",
+      "_corsDisablingPatterns",
+      "_cpuLimit",
+      "_crossOriginAccessControlCheckEnabled",
+      "_cssTransformStyleSeparatedEnabled",
+      "_delaysWebProcessLaunchUntilFirstLoad",
+      "_dragLiftDelay",
+      "_drawsBackground",
+      "_gamepadAccessRequiresExplicitConsent",
+      "_groupIdentifier",
+      "_ignoresAppBoundDomains",
+      "_imageControlsEnabled",
+      "_incompleteImageBorderEnabled",
+      "_incrementalRenderingSuppressionTimeout",
+      "_initialCapitalizationEnabled",
+      "_inlineMediaPlaybackRequiresPlaysInlineAttribute",
+      "_invisibleAutoplayNotPermitted",
+      "_legacyEncryptedMediaAPIEnabled",
+      "_loadsFromNetwork",
+      "_loadsSubresources",
+      "_longPressActionsEnabled",
+      "_mainContentUserGestureOverrideEnabled",
+      "_markedTextInputEnabled",
+      "_maskedURLSchemes",
+      "_mediaCaptureEnabled",
+      "_mediaContentTypesRequiringHardwareSupport",
+      "_mediaDataLoadsAutomatically",
+      "_multiRepresentationHEICInsertionEnabled",
+      "_needsStorageAccessFromFileURLsQuirk",
+      "_overrideContentSecurityPolicy",
+      "_overrideReferrerForAllRequests",
+      "_pageGroup",
+      "_portsForUpgradingInsecureSchemeForTesting",
+      "_printsBackgrounds",
+      "_processDisplayName",
+      "_relatedWebView",
+      "_requiredWebExtensionBaseURL",
+      "_requiresUserActionForAudioPlayback",
+      "_requiresUserActionForEditingControlsManager",
+      "_requiresUserActionForVideoPlayback",
+      "_respectsImageOrientation",
+      "_sampledPageTopColorMaxDifference",
+      "_sampledPageTopColorMinHeight",
+      "_scrollToTextFragmentIndicatorEnabled",
+      "_scrollToTextFragmentMarkingEnabled",
+      "_serviceControlsEnabled",
+      "_shouldDecidePolicyBeforeLoadingQuickLookPreview",
+      "_shouldDeferAsynchronousScriptsUntilAfterDocumentLoad",
+      "_shouldRelaxThirdPartyCookieBlocking",
+      "_shouldSendConsoleLogsToUIProcessForTesting",
+      "_showsSystemScreenTimeBlockingView",
+      "_showsURLsInToolTips",
+      "_strongWebExtensionController",
+      "_systemPreviewEnabled",
+      "_undoManagerAPIEnabled",
+      "_visitedLinkStore",
+      "_waitsForPaintAfterViewDidMoveToWindow",
+      "_weakWebExtensionController",
+      "_webExtensionController",
+      "_webViewToCloneSessionStorageFrom",
+      "_websiteDataStoreIfExists"
+    ],
+    "WKPrivateDeprecated": [
+      "_textInteractionGesturesEnabled"
+    ]
+  },
+  "WKWebViewContentProviderRegistry": {
+    "Type": [
+      "_mimeTypesWithCustomContentProviders()",
+      "initWithConfiguration(_:)",
+      "providerForMIMEType(_:)"
+    ]
+  },
+  "WKWebpagePreferences": {
+    "Class Extension": [
+      "defaultPreferences"
+    ],
+    "WKPrivate": [
+      "_activeContentRuleListActionPatterns",
+      "_allowPrivacyProxy",
+      "_allowSharedProcess",
+      "_allowSiteSpecificQuirksToOverrideCompatibilityMode",
+      "_allowedAutoplayQuirks",
+      "_allowsJSHandleCreationInPageWorld",
+      "_alternateRequest",
+      "_applicationNameForUserAgentWithModernCompatibility",
+      "_autoplayPolicy",
+      "_captivePortalModeEnabled",
+      "_colorSchemePreference",
+      "_contentBlockersEnabled",
+      "_customHeaderFields",
+      "_customNavigatorPlatform",
+      "_customUserAgent",
+      "_customUserAgentAsSiteSpecificQuirks",
+      "_deviceOrientationAndMotionAccessPolicy",
+      "_enhancedSecurityEnabled",
+      "_modalContainerObservationPolicy",
+      "_mouseEventPolicy",
+      "_networkConnectionIntegrityEnabled",
+      "_networkConnectionIntegrityPolicy",
+      "_popUpPolicy",
+      "_pushAndNotificationAPIEnabled",
+      "_setContentRuleListsEnabled(_:exceptions:)",
+      "_userContentController",
+      "_visibilityAdjustmentSelectors",
+      "_visibilityAdjustmentSelectorsIncludingShadowHosts",
+      "_websiteDataStore"
+    ]
+  },
+  "WKWebsiteDataRecord": {
+    "WKPrivate": [
+      "_dataSize",
+      "_originsStrings()"
+    ]
+  },
+  "WKWebsiteDataStore": {
+    "WKPrivate": [
+      "_abortBackgroundFetch(_:completionHandler:)",
+      "_allWebsiteDataTypesIncludingPrivate()",
+      "_allowTLSCertificateChain(_:forHost:)",
+      "_allowWebsiteDataRecordsForAllOrigins()",
+      "_allowsCellularAccess",
+      "_allowsTLSFallback",
+      "_appBoundDomains(_:)",
+      "_appBoundSchemes(_:)",
+      "_boundInterfaceIdentifier",
+      "_clearLoadedSubresourceDomainsFor(_:)",
+      "_clearPrevalentDomain(_:completionHandler:)",
+      "_clearResourceLoadStatistics(_:)",
+      "_clickBackgroundFetch(_:completionHandler:)",
+      "_closeDatabases(_:)",
+      "_configuration",
+      "_countNonDefaultSessionSets(_:)",
+      "_defaultDataStoreExists()",
+      "_defaultNetworkProcessExists()",
+      "_delegate",
+      "_deleteDefaultDataStoreForTesting()",
+      "_fetchAllIdentifiers(_:)",
+      "_fetchDataOfTypes(_:completionHandler:)",
+      "_fetchDataRecordsOfTypes(_:withOptions:completionHandler:)",
+      "_forceNetworkProcessToTaskSuspendForTesting()",
+      "_getAllBackgroundFetchIdentifiers(_:)",
+      "_getAppBadgeForTesting(_:)",
+      "_getBackgroundFetchState(_:completionHandler:)",
+      "_getIsPrevalentDomain(_:completionHandler:)",
+      "_getPendingPushMessage(_:)",
+      "_getPendingPushMessages(_:)",
+      "_getResourceLoadStatisticsDataSummary(_:)",
+      "_grantStorageAccessForTesting(_:withSubFrameDomains:completionHandler:)",
+      "_hasServiceWorkerBackgroundActivityForTesting()",
+      "_identifier",
+      "_initWithConfiguration(_:)",
+      "_isRegisteredAsSubresourceUnderFirstParty(_:thirdParty:completionHandler:)",
+      "_isRelationshipOnlyInDatabaseOnce(_:thirdParty:completionHandler:)",
+      "_isStorageSuspendedForTesting(_:)",
+      "_loadedSubresourceDomainsFor(_:completionHandler:)",
+      "_logUserInteraction(_:completionHandler:)",
+      "_makeNextNetworkProcessLaunchFailForTesting()",
+      "_networkProcessExists()",
+      "_networkProcessHasEntitlementForTesting(_:)",
+      "_networkProcessIdentifier()",
+      "_originDirectoryForTesting(_:topOrigin:type:completionHandler:)",
+      "_pauseBackgroundFetch(_:completionHandler:)",
+      "_perOriginStorageQuota",
+      "_persistedSites",
+      "_processPersistentNotificationClick(_:completionHandler:)",
+      "_processPersistentNotificationClose(_:completionHandler:)",
+      "_processPushMessage(_:completionHandler:)",
+      "_processStatisticsAndDataRecords(_:)",
+      "_proxyConfiguration",
+      "_removeDataStoreWithIdentifier(_:completionHandler:)",
+      "_renameOrigin(_:to:forDataOfTypes:completionHandler:)",
+      "_resourceLoadStatisticsDebugMode",
+      "_resourceLoadStatisticsEnabled",
+      "_restoreData(_:completionHandler:)",
+      "_resumeBackgroundFetch(_:completionHandler:)",
+      "_runningOrTerminatingServiceWorkerCountForTesting(_:)",
+      "_scheduleCookieBlockingUpdate(_:)",
+      "_scopeURL(_:hasPushSubscriptionForTesting:)",
+      "_sendNetworkProcessDidResume()",
+      "_sendNetworkProcessPrepareToSuspend(_:)",
+      "_sendNetworkProcessWillSuspendImminently()",
+      "_setBackupExclusionPeriodForTesting(_:completionHandler:)",
+      "_setCachedProcessSuspensionDelayForTesting(_:)",
+      "_setCompletionHandlerForRemovalFromNetworkProcess(_:)",
+      "_setNetworkProcessSuspensionAllowedForTesting(_:)",
+      "_setPrevalentDomain(_:completionHandler:)",
+      "_setPrivateClickMeasurementDebugModeEnabled(_:)",
+      "_setPrivateTokenIPCForTesting(_:)",
+      "_setResourceLoadStatisticsTestingCallback(_:)",
+      "_setResourceLoadStatisticsTimeAdvanceForTesting(_:completionHandler:)",
+      "_setRestrictedOpenerTypeForTesting(_:forDomain:)",
+      "_setServiceWorkerOverridePreferences(_:)",
+      "_setStorageAccessPromptQuirkForTesting(_:withSubFrameDomains:withTriggerPages:completionHandler:)",
+      "_setThirdPartyCookieBlockingMode(_:onlyOnSitesWithoutUserInteraction:completionHandler:)",
+      "_setUserAgentStringQuirkForTesting(_:withUserAgent:completionHandler:)",
+      "_setWebPushActionHandler(_:)",
+      "_sharedServiceWorkerNotificationManager()",
+      "_statisticsDatabaseHasAllTables(_:)",
+      "_storageSiteValidationEnabled",
+      "_storeServiceWorkerRegistrations(_:)",
+      "_synthesizeAppIsBackground(_:)",
+      "_terminateNetworkProcess()",
+      "_trustServerForLocalPCMTesting(_:)",
+      "_webPushPartition",
+      "handleNotificationResponse(_:)"
+    ]
+  },
+  "WKWindowFeatures": {
+    "WKPrivate": [
+      "_dialogDisplay",
+      "_fullscreenDisplay",
+      "_hasAdditionalFeatures",
+      "_locationBarVisibility",
+      "_popup",
+      "_scrollbarsVisibility",
+      "_wantsPopup"
+    ]
+  },
+  "_WKActivatedElementInfo": {
+    "Class Extension": [
+      "_animationsUnderElement",
+      "_initWithInteractionInformationAtPosition(_:isUsingAlternateURLForImage:userInfo:)",
+      "_initWithType(_:URL:image:information:)",
+      "_initWithType(_:URL:imageURL:information:)",
+      "_initWithType(_:URL:imageURL:location:title:ID:rect:image:imageMIMEType:isAnimatedImage:isAnimating:canShowAnimationControls:animationsUnderElement:userInfo:)",
+      "_initWithType(_:URL:imageURL:userInfo:information:)",
+      "_initWithType(_:URL:information:)",
+      "_initWithType(_:image:information:)",
+      "_interactionLocation",
+      "_isImage",
+      "_isUsingAlternateURLForImage",
+      "activatedElementInfoWithInteractionInformationAtPosition(_:userInfo:)",
+      "imageMIMEType"
+    ],
+    "Type": [
+      "ID",
+      "URL",
+      "boundingRect",
+      "canShowAnimationControls",
+      "image",
+      "image",
+      "imageURL",
+      "isAnimatedImage",
+      "isAnimating",
+      "isSpatialImage",
+      "title",
+      "type",
+      "userInfo"
+    ]
+  },
+  "_WKAppHighlight": {
+    "Class Extension": [
+      "initWithHighlight(_:text:image:)"
+    ],
+    "Type": [
+      "highlight",
+      "image",
+      "image",
+      "init()",
+      "text"
+    ]
+  },
+  "_WKApplicationManifest": {
+    "Type": [
+      "applicationDescription",
+      "applicationManifestFromJSON(_:manifestURL:documentURL:)",
+      "backgroundColor",
+      "backgroundColor",
+      "categories",
+      "dir",
+      "displayMode",
+      "icons",
+      "init()",
+      "initWithJSONData(_:manifestURL:documentURL:)",
+      "isDefaultScope",
+      "manifestId",
+      "manifestURL",
+      "name",
+      "rawJSON",
+      "scope",
+      "shortName",
+      "shortcuts",
+      "startURL",
+      "themeColor",
+      "themeColor"
+    ]
+  },
+  "_WKApplicationManifestIcon": {
+    "Type": [
+      "purposes",
+      "sizes",
+      "src",
+      "type"
+    ]
+  },
+  "_WKApplicationManifestShortcut": {
+    "Type": [
+      "icons",
+      "name",
+      "url"
+    ]
+  },
+  "_WKArchiveConfiguration": {
+    "Type": [
+      "directory",
+      "exclusionRules",
+      "suggestedFileName"
+    ]
+  },
+  "_WKArchiveExclusionRule": {
+    "Type": [
+      "attributeLocalNames",
+      "attributeValues",
+      "elementLocalName",
+      "init()",
+      "initWithElementLocalName(_:attributeLocalNames:attributeValues:)"
+    ]
+  },
+  "_WKAttachment": {
+    "Class Extension": [
+      "setData(_:newContentType:)"
+    ],
+    "Type": [
+      "connected",
+      "info",
+      "requestInfo(_:)",
+      "setData(_:newContentType:newFilename:completion:)",
+      "setFileWrapper(_:contentType:completion:)",
+      "uniqueIdentifier"
+    ]
+  },
+  "_WKAttachmentDisplayOptions": {
+    "Type": [
+      "mode"
+    ]
+  },
+  "_WKAttachmentInfo": {
+    "Type": [
+      "contentType",
+      "data",
+      "filePath",
+      "fileWrapper",
+      "name",
+      "shouldPreserveFidelity"
+    ]
+  },
+  "_WKAuthenticationExtensionsClientInputs": {
+    "Type": [
+      "appid"
+    ]
+  },
+  "_WKAuthenticationExtensionsClientOutputs": {
+    "Class Extension": [
+      "initWithAppid(_:)"
+    ],
+    "Type": [
+      "appid"
+    ]
+  },
+  "_WKAuthenticatorAssertionResponse": {
+    "Class Extension": [
+      "initWithClientDataJSON(_:rawId:extensionOutputsCBOR:authenticatorData:signature:userHandle:attachment:)",
+      "initWithClientDataJSON(_:rawId:extensions:authenticatorData:signature:userHandle:attachment:)"
+    ],
+    "Type": [
+      "authenticatorData",
+      "signature",
+      "userHandle"
+    ]
+  },
+  "_WKAuthenticatorAttestationResponse": {
+    "Class Extension": [
+      "initWithClientDataJSON(_:rawId:extensionOutputsCBOR:attestationObject:attachment:transports:)",
+      "initWithClientDataJSON(_:rawId:extensions:attestationObject:attachment:transports:)"
+    ],
+    "Type": [
+      "attestationObject",
+      "transports"
+    ]
+  },
+  "_WKAuthenticatorResponse": {
+    "Class Extension": [
+      "initWithClientDataJSON(_:rawId:extensionOutputsCBOR:attachment:)",
+      "initWithClientDataJSON(_:rawId:extensions:attachment:)"
+    ],
+    "Type": [
+      "attachment",
+      "clientDataJSON",
+      "extensionOutputsCBOR",
+      "extensions",
+      "rawId"
+    ]
+  },
+  "_WKAuthenticatorSelectionCriteria": {
+    "Type": [
+      "authenticatorAttachment",
+      "requireResidentKey",
+      "residentKey",
+      "userVerification"
+    ]
+  },
+  "_WKAutomationSession": {
+    "Type": [
+      "configuration",
+      "delegate",
+      "initWithConfiguration(_:)",
+      "markEventAsSynthesizedForAutomation(_:)",
+      "paired",
+      "pendingTermination",
+      "sessionIdentifier",
+      "simulatingUserInteraction",
+      "terminate()",
+      "wasEventSynthesizedForAutomation(_:)"
+    ]
+  },
+  "_WKAutomationSessionConfiguration": {
+    "Type": [
+      "acceptInsecureCertificates",
+      "allowsInsecureMediaCapture",
+      "alwaysAllowAutoplay",
+      "siteIsolationEnabled",
+      "suppressesICECandidateFiltering"
+    ]
+  },
+  "_WKContentRuleListAction": {
+    "Type": [
+      "blockedCookies",
+      "blockedLoad",
+      "madeHTTPS",
+      "modifiedHeaders",
+      "notifications",
+      "redirected"
+    ]
+  },
+  "_WKContentWorldConfiguration": {
+    "Type": [
+      "allowAccessToClosedShadowRoots",
+      "allowAutofill",
+      "allowElementUserInfo",
+      "allowJSHandleCreation",
+      "allowNodeSerialization",
+      "disableLegacyBuiltinOverrides",
+      "name"
+    ]
+  },
+  "_WKContextMenuElementInfo": {
+    "Type": [
+      "allowsFollowingImageURL",
+      "allowsFollowingLink",
+      "hasEntireImage",
+      "hitTestResult",
+      "qrCodePayloadString"
+    ]
+  },
+  "_WKCustomHeaderFields": {
+    "Type": [
+      "fields",
+      "thirdPartyDomains"
+    ]
+  },
+  "_WKDataTask": {
+    "Type": [
+      "cancel()",
+      "delegate",
+      "init()",
+      "new()",
+      "webView"
+    ]
+  },
+  "_WKDownload": {
+    "Type": [
+      "cancel()",
+      "downloadWithDownload(_:)",
+      "originatingFrame",
+      "originatingWebView",
+      "publishProgressAtURL(_:)",
+      "redirectChain",
+      "request",
+      "resumeData",
+      "wasUserInitiated"
+    ]
+  },
+  "_WKElementAction": {
+    "Class Extension": [
+      "_elementActionWithType(_:info:assistant:)",
+      "_elementActionWithType(_:info:assistant:disabled:)",
+      "_elementActionWithType(_:title:actionHandler:)",
+      "_runActionWithElementInfo(_:forActionSheetAssistant:)"
+    ],
+    "Type": [
+      "disabled",
+      "dismissalHandler",
+      "elementActionTypeForUIActionIdentifier(_:)",
+      "elementActionWithTitle(_:actionHandler:)",
+      "elementActionWithType(_:)",
+      "elementActionWithType(_:customTitle:)",
+      "elementActionWithType(_:title:actionHandler:)",
+      "imageForElementActionType(_:)",
+      "runActionWithElementInfo(_:)",
+      "title",
+      "type",
+      "uiActionForElementInfo(_:)"
+    ]
+  },
+  "_WKFeature": {
+    "Type": [
+      "category",
+      "defaultValue",
+      "details",
+      "hidden",
+      "key",
+      "name",
+      "status"
+    ]
+  },
+  "_WKFrameTreeNode": {
+    "Type": [
+      "childFrames",
+      "info",
+      "init()",
+      "new()"
+    ]
+  },
+  "_WKGeolocationPosition": {
+    "Type": [
+      "positionWithLocation(_:)"
+    ]
+  },
+  "_WKInspector": {
+    "Type": [
+      "attach()",
+      "connect()",
+      "delegate",
+      "detach()",
+      "hide()",
+      "init()",
+      "isConnected",
+      "isElementSelectionActive",
+      "isFront",
+      "isProfilingPage",
+      "isVisible",
+      "printErrorToConsole(_:)",
+      "showMainResourceForFrame(_:)",
+      "toggleElementSelection()",
+      "togglePageProfiling()",
+      "webView"
+    ],
+    "WKPrivate": [
+      "_diagnosticLoggingDelegate",
+      "extensionHostWebView"
+    ],
+    "WKTesting": [
+      "_fetchURLForTesting(_:)",
+      "_openURLExternallyForTesting(_:useFrontendAPI:)",
+      "inspectorWebView()"
+    ]
+  },
+  "_WKInspectorConfiguration": {
+    "Class Extension": [
+      "applyToWebViewConfiguration(_:)"
+    ],
+    "Type": [
+      "groupIdentifier",
+      "processPool",
+      "setURLSchemeHandler(_:forURLScheme:)"
+    ]
+  },
+  "_WKInspectorDebuggableInfo": {
+    "Type": [
+      "debuggableType",
+      "targetBuildVersion",
+      "targetIsSimulator",
+      "targetPlatformName",
+      "targetProductVersion"
+    ]
+  },
+  "_WKInspectorExtension": {
+    "Type": [
+      "createTabWithName(_:tabIconURL:sourceURL:completionHandler:)",
+      "delegate",
+      "evaluateScript(_:frameURL:contextSecurityOrigin:useContentScriptContext:completionHandler:)",
+      "evaluateScript(_:inTabWithIdentifier:completionHandler:)",
+      "extensionID",
+      "init()",
+      "navigateToURL(_:inTabWithIdentifier:completionHandler:)",
+      "new()",
+      "reloadIgnoringCache(_:userAgent:injectedScript:completionHandler:)"
+    ]
+  },
+  "_WKInspectorWindow": {
+    "Class Extension": [
+      "SUPPRESS_UNRETAINED_MEMBER",
+      "forRemoteTarget"
+    ],
+    "Type": [
+      "forRemoteTarget",
+      "inspectedWebView"
+    ]
+  },
+  "_WKJSHandle": {
+    "Type": [
+      "frame",
+      "init()",
+      "new()",
+      "windowFrameInfo(_:)",
+      "world"
+    ]
+  },
+  "_WKLinkIconParameters": {
+    "Class Extension": [
+      "_initWithLinkIcon(_:)"
+    ],
+    "Type": [
+      "attributes",
+      "iconType",
+      "mimeType",
+      "size",
+      "url"
+    ]
+  },
+  "_WKModalContainerInfo": {
+    "Type": [
+      "availableTypes"
+    ],
+    "WebKitInternal": [
+      "initWithTypes(_:)"
+    ]
+  },
+  "_WKMutableNotificationData": {
+    "Type": [
+      "alert",
+      "body",
+      "data",
+      "dir",
+      "init()",
+      "lang",
+      "securityOrigin",
+      "serviceWorkerRegistrationURL",
+      "tag",
+      "title",
+      "uuid"
+    ]
+  },
+  "_WKNotificationData": {
+    "Class Extension": [
+      "_getCoreData()",
+      "_initWithCoreData(_:)"
+    ],
+    "Type": [
+      "alert",
+      "body",
+      "data",
+      "dictionaryRepresentation()",
+      "dir",
+      "identifier",
+      "init()",
+      "lang",
+      "origin",
+      "securityOrigin",
+      "serviceWorkerRegistrationURL",
+      "tag",
+      "title",
+      "userInfo",
+      "uuid"
+    ]
+  },
+  "_WKNowPlayingMetadata": {
+    "Type": [
+      "album",
+      "artist",
+      "sourceApplicationIdentifier",
+      "title"
+    ]
+  },
+  "_WKPageLoadTiming": {
+    "Type": [
+      "allSubresourcesFinishedLoading",
+      "documentFinishedLoading",
+      "firstMeaningfulPaint",
+      "firstVisualLayout",
+      "navigationStart"
+    ],
+    "WKPrivate": [
+      "_initWithTiming(_:)"
+    ]
+  },
+  "_WKProcessInfo": {
+    "Type": [
+      "physicalFootprint",
+      "pid",
+      "state",
+      "totalSystemCPUTime",
+      "totalUserCPUTime"
+    ]
+  },
+  "_WKProcessPoolConfiguration": {
+    "Type": [
+      "JITEnabled",
+      "additionalReadAccessAllowedURLs",
+      "alwaysKeepAndReuseSwappedProcesses",
+      "alwaysRevalidatedURLSchemes",
+      "alwaysRunsAtBackgroundPriority",
+      "attrStyleEnabled",
+      "cachePartitionedURLSchemes",
+      "configureJSCForTesting",
+      "customClassesForParameterCoder",
+      "customWebContentServiceBundleIdentifier",
+      "diskCacheSizeOverride",
+      "diskCacheSpeculativeValidationEnabled",
+      "ignoreSynchronousMessagingTimeoutsForTesting",
+      "injectedBundleURL",
+      "maximumProcessCount",
+      "memoryFootprintNotificationThresholds",
+      "memoryFootprintPollIntervalForTesting",
+      "pageCacheEnabled",
+      "presentingApplicationPID",
+      "presentingApplicationProcessToken",
+      "prewarmedProcessCountLimitForTesting",
+      "prewarmsProcessesAutomatically",
+      "processSwapsOnNavigation",
+      "processSwapsOnNavigationWithinSameNonHTTPFamilyProtocol",
+      "shouldCaptureAudioInUIProcess",
+      "shouldTakeUIBackgroundAssertion",
+      "shouldThrowExceptionForGlobalConstantRedeclaration",
+      "sourceApplicationBundleIdentifier",
+      "sourceApplicationSecondaryIdentifier",
+      "suspendsWebProcessesAggressivelyOnMemoryPressure",
+      "timeZoneOverride",
+      "usesSingleWebProcess",
+      "usesWebProcessCache",
+      "wirelessContextIdentifier"
+    ]
+  },
+  "_WKPublicKeyCredentialCreationOptions": {
+    "Type": [
+      "attestation",
+      "authenticatorSelection",
+      "excludeCredentials",
+      "extensions",
+      "extensionsCBOR",
+      "init()",
+      "initWithRelyingParty(_:user:publicKeyCredentialParamaters:)",
+      "new()",
+      "publicKeyCredentialParamaters",
+      "relyingParty",
+      "timeout",
+      "user"
+    ]
+  },
+  "_WKPublicKeyCredentialDescriptor": {
+    "Type": [
+      "identifier",
+      "init()",
+      "initWithIdentifier(_:)",
+      "new()",
+      "transports"
+    ]
+  },
+  "_WKPublicKeyCredentialEntity": {
+    "Type": [
+      "icon",
+      "init()",
+      "initWithName(_:)",
+      "name",
+      "new()"
+    ]
+  },
+  "_WKPublicKeyCredentialParameters": {
+    "Type": [
+      "algorithm",
+      "init()",
+      "initWithAlgorithm(_:)",
+      "new()"
+    ]
+  },
+  "_WKPublicKeyCredentialRelyingPartyEntity": {
+    "Type": [
+      "identifier",
+      "init()",
+      "initWithName(_:)",
+      "new()"
+    ]
+  },
+  "_WKPublicKeyCredentialRequestOptions": {
+    "Type": [
+      "allowCredentials",
+      "authenticatorAttachment",
+      "extensions",
+      "extensionsCBOR",
+      "relyingPartyIdentifier",
+      "timeout",
+      "userVerification"
+    ]
+  },
+  "_WKPublicKeyCredentialUserEntity": {
+    "Type": [
+      "displayName",
+      "identifier",
+      "init()",
+      "initWithName(_:)",
+      "initWithName(_:identifier:displayName:)",
+      "new()"
+    ]
+  },
+  "_WKRemoteWebInspectorViewController": {
+    "Type": [
+      "configuration",
+      "delegate",
+      "initWithConfiguration(_:)",
+      "loadForDebuggable(_:backendCommandsURL:)",
+      "sendMessageToFrontend(_:)",
+      "webView",
+      "window"
+    ],
+    "WKPrivate": [
+      "_diagnosticLoggingDelegate"
+    ]
+  },
+  "_WKResourceLoadInfo": {
+    "Type": [
+      "documentID",
+      "eventTimestamp",
+      "frame",
+      "init()",
+      "loadedFromCache",
+      "new()",
+      "originalHTTPMethod",
+      "originalURL",
+      "parentFrame",
+      "resourceLoadID",
+      "resourceType"
+    ]
+  },
+  "_WKResourceLoadStatisticsFirstParty": {
+    "Type": [
+      "firstPartyDomain",
+      "init()",
+      "new()",
+      "thirdPartyStorageAccessGranted",
+      "timeLastUpdated"
+    ]
+  },
+  "_WKResourceLoadStatisticsThirdParty": {
+    "Type": [
+      "init()",
+      "new()",
+      "thirdPartyDomain",
+      "underFirstParties"
+    ]
+  },
+  "_WKSerializedNode": {
+    "Type": [
+      "init()",
+      "new()"
+    ]
+  },
+  "_WKSessionState": {
+    "Class Extension": [
+      "_initWithSessionState(_:)"
+    ],
+    "Type": [
+      "data",
+      "initWithData(_:)",
+      "isEqualForTesting(_:)"
+    ]
+  },
+  "_WKSpatialBackdropSource": {
+    "Class Extension": [
+      "initWithSpatialBackdropSource(_:)"
+    ],
+    "Type": [
+      "environmentMapURL",
+      "modelURL",
+      "sourceURL"
+    ]
+  },
+  "_WKSystemPreferences": {
+    "Type": [
+      "isCaptivePortalModeEnabled()",
+      "isCaptivePortalModeIgnored(_:)",
+      "setCaptivePortalModeEnabled(_:)",
+      "setCaptivePortalModeIgnored(_:ignore:)"
+    ]
+  },
+  "_WKTargetedElementInfo": {
+    "Type": [
+      "bounds",
+      "boundsInClientCoordinates",
+      "boundsInWebView",
+      "getChildFrames(_:)",
+      "hasAudibleMedia",
+      "hasLargeReplacedDescendant",
+      "inShadowTree",
+      "inVisibilityAdjustmentSubtree",
+      "isSameElement(_:)",
+      "mediaAndLinkURLs",
+      "nearbyTarget",
+      "offsetEdges",
+      "positionType",
+      "pseudoElement",
+      "renderedText",
+      "screenReaderText",
+      "searchableText",
+      "selectors",
+      "selectorsIncludingShadowHosts",
+      "takeSnapshotWithCompletionHandler(_:)"
+    ]
+  },
+  "_WKTargetedElementRequest": {
+    "Type": [
+      "canIncludeNearbyElements",
+      "initWithPoint(_:)",
+      "initWithSearchText(_:)",
+      "initWithSelectors(_:)",
+      "shouldIgnorePointerEventsNone"
+    ]
+  },
+  "_WKTextExtractionConfiguration": {
+    "Class Extension": [
+      "canIncludeIdentifiers",
+      "mergeParagraphs",
+      "shouldFilterText",
+      "skipNearlyTransparentContent"
+    ],
+    "Type": [
+      "includeRects",
+      "includeURLs",
+      "maxWordsPerParagraph",
+      "targetRect"
+    ]
+  },
+  "_WKTextExtractionInteraction": {
+    "Class Extension": [
+      "hasSetLocation"
+    ],
+    "Type": [
+      "action",
+      "debugDescriptionInWebView(_:completionHandler:)",
+      "init()",
+      "initWithAction(_:)",
+      "location",
+      "nodeIdentifier",
+      "replaceAll",
+      "text"
+    ]
+  },
+  "_WKTextExtractionInteractionResult": {
+    "Class Extension": [
+      "initWithErrorDescription(_:)"
+    ],
+    "Type": [
+      "error"
+    ]
+  },
+  "_WKTextInputContext": {
+    "Class Extension": [
+      "_initWithTextInputContext(_:)",
+      "_textInputContext()"
+    ],
+    "Type": [
+      "boundingRect",
+      "init()"
+    ]
+  },
+  "_WKTextManipulationConfiguration": {
+    "Type": [
+      "exclusionRules",
+      "includeSubframes"
+    ]
+  },
+  "_WKTextManipulationExclusionRule": {
+    "Type": [
+      "attributeName",
+      "attributeValue",
+      "className",
+      "elementName",
+      "init()",
+      "initExclusion(_:forAttribute:value:)",
+      "initExclusion(_:forClass:)",
+      "initExclusion(_:forElement:)",
+      "isExclusion"
+    ]
+  },
+  "_WKTextManipulationItem": {
+    "Type": [
+      "debugDescription",
+      "identifier",
+      "init()",
+      "initWithIdentifier(_:tokens:)",
+      "initWithIdentifier(_:tokens:isSubframe:isCrossSiteSubframe:)",
+      "isCrossSiteSubframe",
+      "isEqualToTextManipulationItem(_:includingContentEquality:)",
+      "isSubframe",
+      "tokens"
+    ]
+  },
+  "_WKTextManipulationToken": {
+    "Type": [
+      "content",
+      "debugDescription",
+      "excluded",
+      "identifier",
+      "isEqualToTextManipulationToken(_:includingContentEquality:)",
+      "userInfo"
+    ]
+  },
+  "_WKTextPreview": {
+    "Type": [
+      "initWithSnapshotImage(_:presentationFrame:)",
+      "presentationFrame",
+      "previewImage"
+    ]
+  },
+  "_WKTextRun": {
+    "Type": [
+      "rectInWebView",
+      "text"
+    ]
+  },
+  "_WKThumbnailView": {
+    "Class Extension": [
+      "_sublayerTranslation",
+      "_thumbnailLayer",
+      "_waitingForSnapshot"
+    ],
+    "Type": [
+      "exclusivelyUsesSnapshot",
+      "initWithFrame(_:fromWKView:)",
+      "initWithFrame(_:fromWKWebView:)",
+      "maximumSnapshotSize",
+      "overrideBackgroundColor",
+      "requestSnapshot()",
+      "scale",
+      "shouldKeepSnapshotWhenRemovedFromSuperview",
+      "snapshotSize"
+    ]
+  },
+  "_WKTouchEventGenerator": {
+    "Class Extension": [
+      "eventCallbacks",
+      "liftUp(_:window:)",
+      "moveToPoint(_:duration:window:)",
+      "touchDown(_:window:)"
+    ],
+    "Type": [
+      "liftUp(_:window:completionBlock:)",
+      "moveToPoint(_:duration:window:completionBlock:)",
+      "receivedHIDEvent(_:)",
+      "sharedTouchEventGenerator()",
+      "touchDown(_:window:completionBlock:)"
+    ]
+  },
+  "_WKUserContentExtensionStore": {
+    "Type": [
+      "compileContentExtensionForIdentifier(_:encodedContentExtension:encodedContentExtension completionHandler:)",
+      "defaultStore()",
+      "lookupContentExtensionForIdentifier(_:completionHandler:)",
+      "removeContentExtensionForIdentifier(_:completionHandler:)",
+      "storeWithURL(_:)"
+    ],
+    "WKPrivate": [
+      "_contentRuleListStore",
+      "_initWithWKContentRuleListStore(_:)",
+      "_invalidateContentExtensionVersionForIdentifier(_:)",
+      "_removeAllContentExtensions()"
+    ]
+  },
+  "_WKUserContentFilter": {
+    "WKPrivate": [
+      "_initWithWKContentRuleList(_:)"
+    ]
+  },
+  "_WKUserContentWorld": {
+    "Class Extension": [
+      "_initWithContentWorld(_:)"
+    ],
+    "Type": [
+      "name",
+      "normalWorld()",
+      "worldWithName(_:)"
+    ]
+  },
+  "_WKUserInitiatedAction": {
+    "Type": [
+      "consume()",
+      "consumed"
+    ]
+  },
+  "_WKUserStyleSheet": {
+    "Type": [
+      "baseURL",
+      "forMainFrameOnly",
+      "initWithSource(_:forMainFrameOnly:)",
+      "initWithSource(_:forWKWebView:forMainFrameOnly:includeMatchPatternStrings:excludeMatchPatternStrings:baseURL:level:contentWorld:)",
+      "source"
+    ]
+  },
+  "_WKVisitedLinkStore": {
+    "Type": [
+      "addVisitedLinkWithString(_:)",
+      "addVisitedLinkWithURL(_:)",
+      "containsVisitedLinkWithURL(_:)",
+      "removeAll()",
+      "removeVisitedLinkWithURL(_:)"
+    ]
+  },
+  "_WKWarningView": {
+    "Type": [
+      "forMainFrameNavigation()",
+      "initWithFrame(_:browsingWarning:completionHandler:)",
+      "warning"
+    ]
+  },
+  "_WKWarningViewBox": {
+    "Type": [
+      "setWarningViewBackgroundColor(_:)"
+    ]
+  },
+  "_WKWebAuthenticationAssertionResponse": {
+    "Type": [
+      "accessGroup",
+      "credentialID",
+      "displayName",
+      "group",
+      "name",
+      "setLAContext(_:)",
+      "synchronizable",
+      "userHandle"
+    ]
+  },
+  "_WKWebAuthenticationPanel": {
+    "Type": [
+      "cancel()",
+      "clearAllLocalAuthenticatorCredentials()",
+      "delegate",
+      "deleteLocalAuthenticatorCredentialWithGroupAndID(_:credential:)",
+      "deleteLocalAuthenticatorCredentialWithID(_:)",
+      "encodeGetAssertionCommandWithClientDataHash(_:options:userVerificationAvailability:)",
+      "encodeGetAssertionCommandWithClientDataHash(_:options:userVerificationAvailability:authenticatorSupportedExtensions:)",
+      "encodeGetAssertionCommandWithClientDataJSON(_:options:userVerificationAvailability:)",
+      "encodeGetAssertionCommandWithClientDataJSON(_:options:userVerificationAvailability:authenticatorSupportedExtensions:)",
+      "encodeMakeCredentialCommandWithClientDataHash(_:options:userVerificationAvailability:)",
+      "encodeMakeCredentialCommandWithClientDataHash(_:options:userVerificationAvailability:authenticatorSupportedExtensions:)",
+      "encodeMakeCredentialCommandWithClientDataJSON(_:options:userVerificationAvailability:)",
+      "encodeMakeCredentialCommandWithClientDataJSON(_:options:userVerificationAvailability:authenticatorSupportedExtensions:)",
+      "exportLocalAuthenticatorCredentialWithGroupAndID(_:credential:error:)",
+      "exportLocalAuthenticatorCredentialWithID(_:error:)",
+      "getAllLocalAuthenticatorCredentials()",
+      "getAllLocalAuthenticatorCredentialsWithCredentialID(_:)",
+      "getAllLocalAuthenticatorCredentialsWithRPID(_:)",
+      "getAssertionWithChallenge(_:origin:options:completionHandler:)",
+      "getAssertionWithClientDataHash(_:options:completionHandler:)",
+      "getAssertionWithMediationRequirement(_:clientDataHash:options:completionHandler:)",
+      "getClientDataJSONForAuthenticationType(_:challenge:origin:)",
+      "getClientDataJSONWithTopOrigin(_:challenge:origin:topOrigin:crossOrigin:)",
+      "importLocalAuthenticatorCredential(_:error:)",
+      "importLocalAuthenticatorWithAccessGroup(_:credential:error:)",
+      "init()",
+      "isUserVerifyingPlatformAuthenticatorAvailable()",
+      "makeCredentialWithChallenge(_:origin:options:completionHandler:)",
+      "makeCredentialWithClientDataHash(_:options:completionHandler:)",
+      "makeCredentialWithMediationRequirement(_:clientDataHash:options:completionHandler:)",
+      "relyingPartyID",
+      "setDisplayNameForLocalCredentialWithGroupAndID(_:credential:displayName:)",
+      "setNameForLocalCredentialWithGroupAndID(_:credential:name:)",
+      "transports",
+      "type",
+      "userName"
+    ],
+    "WKTesting": [
+      "convertToCoreCreationOptionsWithOptions(_:)",
+      "convertToCoreRequestOptionsWithOptions(_:)",
+      "encodeMakeCredentialCommandWithClientDataHash(_:options:userVerificationAvailability:authenticatorSupportedCredentialParameters:)",
+      "getAllLocalAuthenticatorCredentialsWithAccessGroup(_:)",
+      "getAllLocalAuthenticatorCredentialsWithCredentialIDAndAccessGroup(_:credentialID:)",
+      "getAllLocalAuthenticatorCredentialsWithRPIDAndAccessGroup(_:rpID:)",
+      "mockConfiguration"
+    ]
+  },
+  "_WKWebContentProcessInfo": {
+    "Type": [
+      "runningServiceWorkers",
+      "runningSharedWorkers",
+      "totalBackgroundTime",
+      "totalForegroundTime",
+      "totalSuspendedTime",
+      "webContentState",
+      "webViews"
+    ]
+  },
+  "_WKWebExtensionDeclarativeNetRequestRule": {
+    "Type": [
+      "action",
+      "compare(_:)",
+      "condition",
+      "init()",
+      "initWithDictionary(_:rulesetID:errorString:)",
+      "priority",
+      "ruleID",
+      "ruleInWebKitFormat",
+      "rulesetID"
+    ]
+  },
+  "_WKWebExtensionDeclarativeNetRequestTranslator": {
+    "Type": [
+      "init()",
+      "jsonObjectsFromData(_:errorStrings:)",
+      "translateRules(_:errorStrings:)"
+    ]
+  },
+  "_WKWebExtensionKeyCommand": {
+    "Type": [
+      "commandWithTitle(_:image:input:modifierFlags:identifier:)"
+    ]
+  },
+  "_WKWebExtensionMenuItem": {
+    "Type": [
+      "handler",
+      "initWithTitle(_:handler:)"
+    ]
+  },
+  "_WKWebExtensionSidebar": {
+    "Class Extension": [
+      "_webExtensionSidebar"
+    ],
+    "Type": [
+      "associatedTab",
+      "enabled",
+      "iconForSize(_:)",
+      "iconForSize(_:)",
+      "init()",
+      "new()",
+      "title",
+      "viewController",
+      "viewController",
+      "webExtensionContext",
+      "webView",
+      "willCloseSidebar()",
+      "willOpenSidebar()"
+    ]
+  },
+  "_WKWebPushAction": {
+    "Internal": [
+      "coreNotificationData"
+    ],
+    "Type": [
+      "_webPushActionWithNotificationResponse(_:)",
+      "beginBackgroundTaskForHandling()",
+      "init()",
+      "type",
+      "version",
+      "webClipIdentifier",
+      "webPushActionWithDictionary(_:)"
+    ]
+  },
+  "_WKWebPushDaemonConnection": {
+    "Type": [
+      "cancelNotification(_:uuid:)",
+      "getNextPendingPushMessage(_:)",
+      "getNotifications(_:tag:completionHandler:)",
+      "getPushPermissionStateForOrigin(_:completionHandler:)",
+      "getSubscriptionForScope(_:completionHandler:)",
+      "init()",
+      "initWithConfiguration(_:)",
+      "new()",
+      "requestPushPermissionForOrigin(_:completionHandler:)",
+      "setAppBadge(_:origin:)",
+      "showNotification(_:completionHandler:)",
+      "subscribeToPushServiceForScope(_:applicationServerKey:completionHandler:)",
+      "unsubscribeFromPushServiceForScope(_:completionHandler:)"
+    ]
+  },
+  "_WKWebPushDaemonConnectionConfiguration": {
+    "Type": [
+      "bundleIdentifierOverrideForTesting",
+      "hostApplicationAuditToken",
+      "init()",
+      "machServiceName",
+      "partition"
+    ]
+  },
+  "_WKWebPushMessage": {
+    "Type": [
+      "data",
+      "init()",
+      "new()",
+      "partition",
+      "scopeURL"
+    ]
+  },
+  "_WKWebPushSubscriptionData": {
+    "Type": [
+      "applicationServerKey",
+      "authenticationSecret",
+      "ecdhPublicKey",
+      "endpoint",
+      "init()",
+      "new()"
+    ]
+  },
+  "_WKWebViewPrintFormatter": {
+    "Class Extension": [
+      "_invalidatePrintRenderingState()",
+      "_setPrintPreviewImage(_:)",
+      "_setPrintedDocument(_:)",
+      "_setSnapshotPaperRect(_:)",
+      "_shouldDrawUsingBitmap()",
+      "_waitForPrintedDocumentOrImage()"
+    ],
+    "Type": [
+      "frameToPrint",
+      "snapshotFirstPage"
+    ]
+  },
+  "_WKWebsiteDataSize": {
+    "Class Extension": [
+      "initWithSize(_:)"
+    ],
+    "Type": [
+      "sizeOfDataTypes(_:)",
+      "totalSize"
+    ]
+  },
+  "_WKWebsiteDataStoreConfiguration": {
+    "Type": [
+      "_cacheStorageDirectory",
+      "_cookieStorageFile",
+      "_indexedDBDatabaseDirectory",
+      "_resourceLoadStatisticsDirectory",
+      "_resourceMonitorThrottlerDirectory",
+      "_serviceWorkerRegistrationDirectory",
+      "_shouldAcceptInsecureCertificatesForWebSockets",
+      "_webSQLDatabaseDirectory",
+      "_webStorageDirectory",
+      "allLoadsBlockedByDeviceManagementRestrictionsForTesting",
+      "allowsCellularAccess",
+      "allowsHSTSWithUntrustedRootCertificate",
+      "allowsServerPreconnect",
+      "alternativeServicesStorageDirectory",
+      "applicationCacheDirectory",
+      "applicationCacheFlatFileSubdirectoryName",
+      "boundInterfaceIdentifier",
+      "dataConnectionServiceType",
+      "defaultTrackingPreventionEnabledOverride",
+      "deviceIdHashSaltsStorageDirectory",
+      "deviceManagementRestrictionsEnabled",
+      "enableInAppBrowserPrivacyForTesting",
+      "fastServerTrustEvaluationEnabled",
+      "generalStorageDirectory",
+      "hstsStorageDirectory",
+      "httpProxy",
+      "httpsProxy",
+      "identifier",
+      "init()",
+      "initNonPersistentConfiguration()",
+      "initWithDirectory(_:)",
+      "initWithIdentifier(_:)",
+      "isDeclarativeWebPushEnabled",
+      "legacyTLSEnabled",
+      "mediaCacheDirectory",
+      "mediaKeysStorageDirectory",
+      "networkCacheDirectory",
+      "networkCacheSpeculativeValidationEnabled",
+      "originQuotaRatio",
+      "overrideServiceWorkerRegistrationCountTestingValue",
+      "pcmMachServiceName",
+      "perOriginStorageQuota",
+      "persistent",
+      "preventsSystemHTTPProxyAuthentication",
+      "proxyConfiguration",
+      "requiresSecureHTTPSProxyConnection",
+      "resourceLoadStatisticsDebugModeEnabled",
+      "serviceWorkerProcessTerminationDelayEnabled",
+      "shouldRunServiceWorkersOnMainThreadForTesting",
+      "sourceApplicationBundleIdentifier",
+      "sourceApplicationSecondaryIdentifier",
+      "standaloneApplicationURL",
+      "standardVolumeCapacity",
+      "suppressesConnectionTerminationOnSystemChange",
+      "testSpeedMultiplier",
+      "totalQuotaRatio",
+      "unifiedOriginStorageLevel",
+      "volumeCapacityOverride",
+      "webContentRestrictionsConfigurationURL",
+      "webPushMachServiceName",
+      "webPushPartitionString"
+    ]
+  }
+}

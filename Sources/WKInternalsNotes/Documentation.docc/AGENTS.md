@@ -57,7 +57,7 @@
 ## Symbol Graph (synthetic)
 - エントリを UIKit 風の「シンボル」ページとして表示するため、合成 symbol graph を同梱する。
   - File: `Sources/WKInternalsNotes/Documentation.docc/SymbolGraphs/WKInternalsNotes.WKAPI.symbols.json`
-  - Generator: （TBD: UIProcess 解析ベースの生成スクリプト）
+  - Generator: `Scripts/generate_webkit_uiprocess_objc_symbol_graph.py`
 - symbol graph は “ヘッダ解析結果” を一次情報として生成し、次を満たすこと:
   - `@interface <Type> (<Category>)` 内の宣言は `<Type>` のメンバーとして `memberOf` を張る。
   - トップレベル宣言は `WKGlobals` 以下に寄せる（モジュール直下に散らさない）。

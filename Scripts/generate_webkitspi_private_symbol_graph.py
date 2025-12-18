@@ -322,6 +322,7 @@ def _condense_whitespace(text: str) -> str:
 def _parse_property_symbol(objc_decl: str) -> tuple[str, SwiftType]:
     line = _condense_whitespace(objc_decl.splitlines()[0])
     line = re.split(r"\bWK_API_", line)[0].rstrip(";").strip()
+    line = _strip_trailing_objc_attributes(line)
     line = re.sub(r"^@property\s*\([^)]*\)\s*", "", line)
     line = re.sub(r"^@property\s*", "", line)
 
@@ -352,6 +353,7 @@ def _parse_method_symbol(objc_decl: str) -> MethodSig:
     line = _condense_whitespace(objc_decl.splitlines()[0])
     kind = "type" if line.lstrip().startswith("+") else "instance"
     line = re.split(r"\bWK_API_", line)[0].rstrip(";").strip()
+    line = _strip_trailing_objc_attributes(line)
 
     if not (line.lstrip().startswith("-") or line.lstrip().startswith("+")):
         raise ValueError(f"Unrecognized method declaration: {objc_decl!r}")
@@ -457,8 +459,52 @@ def _parse_enum_symbol(objc_decl: str) -> tuple[str, list[str]]:
 
 
 def _strip_trailing_objc_attributes(line: str) -> str:
-    # e.g. "... Foo NS_SWIFT_NONISOLATED" / "... Foo NS_SWIFT_NAME(Bar)"
-    return re.sub(r"(?:\s+\bNS_[A-Z0-9_]+(?:\([^)]*\))?)+\s*$", "", line).strip()
+    # e.g.
+    #   - "... Foo NS_SWIFT_NONISOLATED"
+    #   - "... Foo NS_SWIFT_NAME(Bar)"
+    #   - "... Foo API_AVAILABLE(macos(14.0), ios(17.0))"
+    s = line.strip()
+    while True:
+        s = s.rstrip()
+        if not s:
+            return s
+
+        if s.endswith(")"):
+            depth = 0
+            open_index: int | None = None
+            for i in range(len(s) - 1, -1, -1):
+                ch = s[i]
+                if ch == ")":
+                    depth += 1
+                elif ch == "(":
+                    depth -= 1
+                    if depth == 0:
+                        open_index = i
+                        break
+            if open_index is None:
+                break
+
+            j = open_index - 1
+            while j >= 0 and s[j].isspace():
+                j -= 1
+            k = j
+            while k >= 0 and (s[k].isalnum() or s[k] == "_"):
+                k -= 1
+            ident = s[k + 1 : j + 1]
+            if ident.startswith(("NS_", "WK_", "API_")):
+                s = s[: k + 1].rstrip()
+                continue
+            break
+
+        head, sep, tail = s.rpartition(" ")
+        if not sep:
+            break
+        if tail.startswith(("NS_", "WK_", "API_")):
+            s = head
+            continue
+        break
+
+    return s.strip()
 
 
 def _parse_extern_symbol(objc_decl: str) -> tuple[str, SwiftType]:

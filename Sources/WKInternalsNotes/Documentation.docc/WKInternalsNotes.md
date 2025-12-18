@@ -9,3 +9,6 @@
 ### Cocoa (UIProcess/API/Cocoa)
 - ``WKInternalsNotes/WKPreferences``
 - ``WKInternalsNotes/WKWebViewConfiguration``
+
+### Globals
+- ``WKInternalsNotes/WKGlobals``

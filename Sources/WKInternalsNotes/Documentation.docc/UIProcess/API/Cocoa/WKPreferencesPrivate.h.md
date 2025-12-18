@@ -119,7 +119,6 @@
 - ``WKInternalsNotes/WKPreferences/_textAutosizingEnabled``
 - ``WKInternalsNotes/WKPreferences/_textExtractionEnabled``
 - ``WKInternalsNotes/WKPreferences/_tiledScrollingIndicatorVisible``
-- ``WKInternalsNotes/WKPreferences/_updateSceneGeometryEnabled``
 - ``WKInternalsNotes/WKPreferences/_verifyWindowOpenUserGestureFromUIProcess``
 - ``WKInternalsNotes/WKPreferences/_videoFullscreenRequiresElementFullscreen``
 - ``WKInternalsNotes/WKPreferences/_videoQualityIncludesDisplayCompositingEnabled``
