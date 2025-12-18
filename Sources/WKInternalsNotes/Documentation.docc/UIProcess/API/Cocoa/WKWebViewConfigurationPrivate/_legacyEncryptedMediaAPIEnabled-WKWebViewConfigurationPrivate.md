@@ -16,8 +16,8 @@ iOS: `YES` / macOS: `YES`
 - `_legacyEncryptedMediaAPIEnabled = NO`: legacy EME API を有効化（無効）。
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L140`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L140)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L1408`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L1408)
+- [`WKWebViewConfigurationPrivate.h#L140`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L140)
+- [`WKWebViewConfiguration.mm#L1408`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L1408)
 
 ## Metadata
 | Key | Value |

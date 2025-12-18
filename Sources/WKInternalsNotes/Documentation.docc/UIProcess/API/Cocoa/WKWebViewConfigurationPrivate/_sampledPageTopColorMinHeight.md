@@ -18,8 +18,8 @@ iOS: `0` / macOS: `0`
 - `0` は制約なし
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L165`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L165)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L1527`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L1527)
+- [`WKWebViewConfigurationPrivate.h#L165`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L165)
+- [`WKWebViewConfiguration.mm#L1527`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L1527)
 
 ## Metadata
 | Key | Value |

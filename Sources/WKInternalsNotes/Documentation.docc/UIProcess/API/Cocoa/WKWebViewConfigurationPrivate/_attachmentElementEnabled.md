@@ -16,8 +16,8 @@ iOS: `NO` / macOS: `NO`
 - `_attachmentElementEnabled = NO`: attachment element を有効化（無効）。
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L86`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L86)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L1017`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L1017)
+- [`WKWebViewConfigurationPrivate.h#L86`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L86)
+- [`WKWebViewConfiguration.mm#L1017`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L1017)
 
 ## Metadata
 | Key | Value |

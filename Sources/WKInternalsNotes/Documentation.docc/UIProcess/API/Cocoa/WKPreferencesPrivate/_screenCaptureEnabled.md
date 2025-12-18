@@ -14,16 +14,16 @@ ScreenCapture を有効/無効にする API
 - この API を使わない場合: 既定値のまま動作する。
 - `_screenCaptureEnabled = YES`: ScreenCapture を有効化する。
 - `_screenCaptureEnabled = NO`: ScreenCapture を無効化する。
-- Implementation: [`Source/WebCore/Modules/mediastream/MediaDevices.idl#L44`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/mediastream/MediaDevices.idl#L44)（`EnabledBySetting=ScreenCaptureEnabled`）
+- Implementation: [`MediaDevices.idl#L44`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/mediastream/MediaDevices.idl#L44)（`EnabledBySetting=ScreenCaptureEnabled`）
 
 ## Details
 - WebPreferences key: `ScreenCaptureEnabled`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L118`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L118)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L680`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L680)
-- [`Source/WebCore/Modules/mediastream/MediaDevices.idl`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/mediastream/MediaDevices.idl)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L6643`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L6643) (key: `ScreenCaptureEnabled`)
+- [`WKPreferencesPrivate.h#L118`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L118)
+- [`WKPreferences.mm#L680`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L680)
+- [`MediaDevices.idl`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/mediastream/MediaDevices.idl)
+- [`UnifiedWebPreferences.yaml#L6643`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L6643) (key: `ScreenCaptureEnabled`)
 
 ## Metadata
 | Key | Value |

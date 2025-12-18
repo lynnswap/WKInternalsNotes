@@ -15,8 +15,8 @@ iOS: `5` / macOS: `5`
 - 値を変更すると: incremental rendering 抑制のタイムアウト（秒）の設定値として、その値が使われる。
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L76`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L76)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L745`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L745)
+- [`WKWebViewConfigurationPrivate.h#L76`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L76)
+- [`WKWebViewConfiguration.mm#L745`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L745)
 
 ## Metadata
 | Key | Value |

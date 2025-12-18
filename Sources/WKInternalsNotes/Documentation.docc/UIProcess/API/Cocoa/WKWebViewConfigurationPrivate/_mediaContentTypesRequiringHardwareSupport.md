@@ -19,8 +19,8 @@ iOS: `nil` / macOS: `nil`
 - null 文字列は `nil` として返る
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L139`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L139)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L1377`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L1377)
+- [`WKWebViewConfigurationPrivate.h#L139`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L139)
+- [`WKWebViewConfiguration.mm#L1377`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L1377)
 
 ## Metadata
 | Key | Value |

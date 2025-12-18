@@ -16,8 +16,8 @@ iOS: `YES` / macOS: `YES`
 - `_clientNavigationsRunAtForegroundPriority = NO`: client navigation を foreground 優先度で実行（無効）。
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L111`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L111)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L835`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L835)
+- [`WKWebViewConfigurationPrivate.h#L111`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L111)
+- [`WKWebViewConfiguration.mm#L835`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L835)
 
 ## Metadata
 | Key | Value |

@@ -16,8 +16,8 @@ iOS: `YES` / macOS: `YES`
 - `_allowsMetaRefresh = NO`: `<meta http-equiv=refresh>` を許可（無効）。
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L79`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L79)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L825`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L825)
+- [`WKWebViewConfigurationPrivate.h#L79`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L79)
+- [`WKWebViewConfiguration.mm#L825`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L825)
 
 ## Metadata
 | Key | Value |

@@ -15,11 +15,11 @@ iOS: `YES` / macOS: `YES`
 - WebPreferences key: `NeedsSiteSpecificQuirks`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L163`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L163)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L898`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L898)
-- [`Source/WebCore/bindings/js/JSDOMWindowBase.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/bindings/js/JSDOMWindowBase.cpp)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L5575`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L5575) (key: `NeedsSiteSpecificQuirks`)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.h`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.h)
+- [`WKPreferencesPrivate.h#L163`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L163)
+- [`WKPreferences.mm#L898`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L898)
+- [`JSDOMWindowBase.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/bindings/js/JSDOMWindowBase.cpp)
+- [`UnifiedWebPreferences.yaml#L5575`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L5575) (key: `NeedsSiteSpecificQuirks`)
+- [`WKPreferences.h`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.h)
 
 ## Metadata
 | Key | Value |

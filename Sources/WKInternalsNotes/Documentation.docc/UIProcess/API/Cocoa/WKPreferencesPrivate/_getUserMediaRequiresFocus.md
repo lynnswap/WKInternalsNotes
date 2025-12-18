@@ -14,16 +14,16 @@ iOS: `YES` / macOS: `YES`
 - この API を使わない場合: 既定値のまま動作する。
 - `_getUserMediaRequiresFocus = YES`: Require focus to start getUserMedia を有効化する。
 - `_getUserMediaRequiresFocus = NO`: Require focus to start getUserMedia を無効化する。
-- Implementation: [`Source/WebCore/Modules/mediastream/MediaDevices.cpp#L201`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/mediastream/MediaDevices.cpp#L201) の `UserMediaRequest::create` が `getUserMediaRequiresFocus()` を参照する。
+- Implementation: [`MediaDevices.cpp#L201`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/mediastream/MediaDevices.cpp#L201) の `UserMediaRequest::create` が `getUserMediaRequiresFocus()` を参照する。
 
 ## Details
 - WebPreferences key: `GetUserMediaRequiresFocus`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L117`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L117)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L670`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L670)
-- [`Source/WebCore/Modules/mediastream/MediaDevices.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/mediastream/MediaDevices.cpp)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L3281`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L3281) (key: `GetUserMediaRequiresFocus`)
+- [`WKPreferencesPrivate.h#L117`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L117)
+- [`WKPreferences.mm#L670`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L670)
+- [`MediaDevices.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/mediastream/MediaDevices.cpp)
+- [`UnifiedWebPreferences.yaml#L3281`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L3281) (key: `GetUserMediaRequiresFocus`)
 
 ## Metadata
 | Key | Value |

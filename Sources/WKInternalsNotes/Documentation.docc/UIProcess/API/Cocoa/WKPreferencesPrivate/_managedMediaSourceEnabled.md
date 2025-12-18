@@ -14,16 +14,16 @@ iOS: `WebKit::defaultManagedMediaSourceEnabled()` / macOS: `WebKit::defaultManag
 - この API を使わない場合: 既定値のまま動作する。
 - `_managedMediaSourceEnabled = YES`: Managed Media Source API を有効化する。
 - `_managedMediaSourceEnabled = NO`: Managed Media Source API を無効化する。
-- Implementation: [`Source/WebCore/Modules/mediasource/BufferedChangeEvent.idl#L28`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/mediasource/BufferedChangeEvent.idl#L28)（`EnabledBySetting=ManagedMediaSourceEnabled`）
+- Implementation: [`BufferedChangeEvent.idl#L28`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/mediasource/BufferedChangeEvent.idl#L28)（`EnabledBySetting=ManagedMediaSourceEnabled`）
 
 ## Details
 - WebPreferences key: `ManagedMediaSourceEnabled`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L192`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L192)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L928`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L928)
-- [`Source/WebCore/Modules/mediasource/BufferedChangeEvent.idl`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/mediasource/BufferedChangeEvent.idl)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L4732`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L4732) (key: `ManagedMediaSourceEnabled`)
+- [`WKPreferencesPrivate.h#L192`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L192)
+- [`WKPreferences.mm#L928`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L928)
+- [`BufferedChangeEvent.idl`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/mediasource/BufferedChangeEvent.idl)
+- [`UnifiedWebPreferences.yaml#L4732`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L4732) (key: `ManagedMediaSourceEnabled`)
 
 ## Metadata
 | Key | Value |

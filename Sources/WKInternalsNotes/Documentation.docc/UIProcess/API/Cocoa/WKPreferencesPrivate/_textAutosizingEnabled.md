@@ -14,16 +14,16 @@ iOS: `YES` / macOS: `NO`
 - この API を使わない場合: 既定値のまま動作する。
 - `_textAutosizingEnabled = YES`: Text Autosizing を有効化する。
 - `_textAutosizingEnabled = NO`: Text Autosizing を無効化する。
-- Implementation: [`Source/WebCore/page/LocalFrameViewLayoutContext.cpp#L617`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/page/LocalFrameViewLayoutContext.cpp#L617) の `LocalFrameViewLayoutContext::applyTextSizingIfNeeded` が `textAutosizingEnabled()` を参照する。
+- Implementation: [`LocalFrameViewLayoutContext.cpp#L617`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/page/LocalFrameViewLayoutContext.cpp#L617) の `LocalFrameViewLayoutContext::applyTextSizingIfNeeded` が `textAutosizingEnabled()` を参照する。
 
 ## Details
 - WebPreferences key: `TextAutosizingEnabled`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L86`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L86)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L426`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L426)
-- [`Source/WebCore/page/LocalFrameViewLayoutContext.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/page/LocalFrameViewLayoutContext.cpp)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L7864`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L7864) (key: `TextAutosizingEnabled`)
+- [`WKPreferencesPrivate.h#L86`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L86)
+- [`WKPreferences.mm#L426`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L426)
+- [`LocalFrameViewLayoutContext.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/page/LocalFrameViewLayoutContext.cpp)
+- [`UnifiedWebPreferences.yaml#L7864`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L7864) (key: `TextAutosizingEnabled`)
 
 ## Metadata
 | Key | Value |

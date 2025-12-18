@@ -19,8 +19,8 @@ iOS: `USE(QUICK_LOOK) ? linkedOnOrAfterSDKWithBehavior(SDKAlignedBehavior::Decid
 - SDK 依存
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L121`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L121)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L260`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L260)
+- [`WKWebViewConfigurationPrivate.h#L121`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L121)
+- [`WKWebViewConfiguration.mm#L260`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L260)
 
 ## Metadata
 | Key | Value |

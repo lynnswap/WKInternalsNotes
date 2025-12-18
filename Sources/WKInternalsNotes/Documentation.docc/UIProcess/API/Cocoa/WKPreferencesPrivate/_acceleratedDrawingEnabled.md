@@ -20,13 +20,13 @@ iOS: `YES` / macOS: `YES`
 - 反映先（Cocoa）: `PlatformCALayerCocoa::setAcceleratesDrawing` → `CALayer.drawsAsynchronously`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L82`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L82)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L386`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L386)
-- [`Source/WebCore/page/PageOverlayController.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/page/PageOverlayController.cpp)
-- [`Source/WebCore/rendering/RenderLayerBacking.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/rendering/RenderLayerBacking.cpp)
-- [`Source/WebCore/platform/graphics/ca/cocoa/PlatformCALayerCocoa.mm`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/platform/graphics/ca/cocoa/PlatformCALayerCocoa.mm)
-- [`Source/WebCore/svg/graphics/SVGImage.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/svg/graphics/SVGImage.cpp)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L124`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L124) (key: `AcceleratedDrawingEnabled`)
+- [`WKPreferencesPrivate.h#L82`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L82)
+- [`WKPreferences.mm#L386`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L386)
+- [`PageOverlayController.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/page/PageOverlayController.cpp)
+- [`RenderLayerBacking.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/rendering/RenderLayerBacking.cpp)
+- [`PlatformCALayerCocoa.mm`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/platform/graphics/ca/cocoa/PlatformCALayerCocoa.mm)
+- [`SVGImage.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/svg/graphics/SVGImage.cpp)
+- [`UnifiedWebPreferences.yaml#L124`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L124) (key: `AcceleratedDrawingEnabled`)
 
 ## Metadata
 | Key | Value |

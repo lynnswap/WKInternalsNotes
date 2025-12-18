@@ -14,16 +14,16 @@ macOS: `YES`
 - この API を使わない場合: 既定値のまま動作する。
 - `_webSecurityEnabled = YES`: Web Security を有効化する。
 - `_webSecurityEnabled = NO`: Web Security を無効化する。
-- Implementation: [`Source/WebCore/dom/Document.cpp#L8359`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/dom/Document.cpp#L8359) の `SecurityOriginPolicy::create` が `webSecurityEnabled()` を参照する。
+- Implementation: [`Document.cpp#L8359`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/dom/Document.cpp#L8359) の `SecurityOriginPolicy::create` が `webSecurityEnabled()` を参照する。
 
 ## Details
 - WebPreferences key: `WebSecurityEnabled`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L216`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L216)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1089`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1089)
-- [`Source/WebCore/dom/Document.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/dom/Document.cpp)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L9539`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L9539) (key: `WebSecurityEnabled`)
+- [`WKPreferencesPrivate.h#L216`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L216)
+- [`WKPreferences.mm#L1089`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1089)
+- [`Document.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/dom/Document.cpp)
+- [`UnifiedWebPreferences.yaml#L9539`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L9539) (key: `WebSecurityEnabled`)
 
 ## Metadata
 | Key | Value |

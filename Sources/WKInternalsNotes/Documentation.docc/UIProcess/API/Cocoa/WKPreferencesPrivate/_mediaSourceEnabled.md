@@ -14,16 +14,16 @@ Media Source API を有効/無効にする API
 - この API を使わない場合: 既定値のまま動作する。
 - `_mediaSourceEnabled = YES`: Media Source API を有効化する。
 - `_mediaSourceEnabled = NO`: Media Source API を無効化する。
-- Implementation: [`Source/WebCore/Modules/mediasource/AudioTrack+MediaSource.idl#L31`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/mediasource/AudioTrack+MediaSource.idl#L31)（`EnabledBySetting=MediaSourceEnabled`）
+- Implementation: [`AudioTrack+MediaSource.idl#L31`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/mediasource/AudioTrack+MediaSource.idl#L31)（`EnabledBySetting=MediaSourceEnabled`）
 
 ## Details
 - WebPreferences key: `MediaSourceEnabled`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L165`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L165)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L918`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L918)
-- [`Source/WebCore/Modules/mediasource/AudioTrack+MediaSource.idl`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/mediasource/AudioTrack+MediaSource.idl)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L5157`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L5157) (key: `MediaSourceEnabled`)
+- [`WKPreferencesPrivate.h#L165`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L165)
+- [`WKPreferences.mm#L918`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L918)
+- [`AudioTrack+MediaSource.idl`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/mediasource/AudioTrack+MediaSource.idl)
+- [`UnifiedWebPreferences.yaml#L5157`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L5157) (key: `MediaSourceEnabled`)
 
 ## Metadata
 | Key | Value |

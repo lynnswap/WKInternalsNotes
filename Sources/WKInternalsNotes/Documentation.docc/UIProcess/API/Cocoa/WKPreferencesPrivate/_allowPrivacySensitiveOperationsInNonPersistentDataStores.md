@@ -14,16 +14,16 @@ iOS: `NO` / macOS: `NO` / visionOS: `NO`
 - この API を使わない場合: 既定値のまま動作する。
 - `_allowPrivacySensitiveOperationsInNonPersistentDataStores = YES`: Privacy-Sensitive Operations in Non-Persistent Data Stores を許可する。
 - `_allowPrivacySensitiveOperationsInNonPersistentDataStores = NO`: Privacy-Sensitive Operations in Non-Persistent Data Stores を禁止する。
-- Implementation: [`Source/WebCore/Modules/webaudio/AudioContext.cpp#L572`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/webaudio/AudioContext.cpp#L572) の `MediaPlayer::invalidTime` が `allowPrivacySensitiveOperationsInNonPersistentDataStores()` を参照する。
+- Implementation: [`AudioContext.cpp#L572`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/webaudio/AudioContext.cpp#L572) の `MediaPlayer::invalidTime` が `allowPrivacySensitiveOperationsInNonPersistentDataStores()` を参照する。
 
 ## Details
 - WebPreferences key: `AllowPrivacySensitiveOperationsInNonPersistentDataStores`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L196`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L196)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1650`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1650)
-- [`Source/WebCore/Modules/webaudio/AudioContext.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/webaudio/AudioContext.cpp)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L262`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L262) (key: `AllowPrivacySensitiveOperationsInNonPersistentDataStores`)
+- [`WKPreferencesPrivate.h#L196`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L196)
+- [`WKPreferences.mm#L1650`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1650)
+- [`AudioContext.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/webaudio/AudioContext.cpp)
+- [`UnifiedWebPreferences.yaml#L262`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L262) (key: `AllowPrivacySensitiveOperationsInNonPersistentDataStores`)
 
 ## Metadata
 | Key | Value |

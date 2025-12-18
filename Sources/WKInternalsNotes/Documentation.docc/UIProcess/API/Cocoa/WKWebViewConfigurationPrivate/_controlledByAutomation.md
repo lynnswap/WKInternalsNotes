@@ -16,8 +16,8 @@ iOS: `NO` / macOS: `NO`
 - `_controlledByAutomation = NO`: 自動化（テスト）制御フラグ（無効）。
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L92`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L92)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm)
+- [`WKWebViewConfigurationPrivate.h#L92`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L92)
+- [`WKWebViewConfiguration.mm`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm)
 
 ## Metadata
 | Key | Value |

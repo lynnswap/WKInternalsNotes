@@ -20,12 +20,12 @@ iOS: `NO` / macOS: `NO` / visionOS: `NO`
 - Search hint: `EnabledBy=SiteIsolationEnabled`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L204`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L204)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1739`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1739)
-- [`Source/WebKit/UIProcess/BrowsingContextGroup.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/BrowsingContextGroup.cpp)
-- [`Source/WebKit/UIProcess/FrameProcess.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/FrameProcess.cpp)
-- [`Source/WebKit/UIProcess/WebFrameProxy.messages.in`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/WebFrameProxy.messages.in)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L7420`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L7420) (key: `SiteIsolationEnabled`)
+- [`WKPreferencesPrivate.h#L204`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L204)
+- [`WKPreferences.mm#L1739`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1739)
+- [`BrowsingContextGroup.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/BrowsingContextGroup.cpp)
+- [`FrameProcess.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/FrameProcess.cpp)
+- [`WebFrameProxy.messages.in`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/WebFrameProxy.messages.in)
+- [`UnifiedWebPreferences.yaml#L7420`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L7420) (key: `SiteIsolationEnabled`)
 
 ## Metadata
 | Key | Value |

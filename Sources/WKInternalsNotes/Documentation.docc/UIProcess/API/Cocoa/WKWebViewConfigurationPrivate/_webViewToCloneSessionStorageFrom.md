@@ -16,8 +16,8 @@ iOS: `nil` / macOS: `nil`
 - `nil` に戻すと: クローンしない。
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L59`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L59)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L685`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L685)
+- [`WKWebViewConfigurationPrivate.h#L59`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L59)
+- [`WKWebViewConfiguration.mm#L685`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L685)
 
 ## Metadata
 | Key | Value |

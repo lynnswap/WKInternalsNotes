@@ -14,16 +14,16 @@ iOS: `YES` / macOS: `YES`
 - この API を使わない場合: 既定値のまま動作する。
 - `_acceleratedCompositingEnabled = YES`: Accelerated Compositing を有効化する。
 - `_acceleratedCompositingEnabled = NO`: Accelerated Compositing を無効化する。
-- Implementation: [`Source/WebCore/html/HTMLCanvasElement.cpp#L341`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/html/HTMLCanvasElement.cpp#L341) の `HTMLCanvasElement::is2dType` が `acceleratedCompositingEnabled()` を参照する。
+- Implementation: [`HTMLCanvasElement.cpp#L341`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/html/HTMLCanvasElement.cpp#L341) の `HTMLCanvasElement::is2dType` が `acceleratedCompositingEnabled()` を参照する。
 
 ## Details
 - WebPreferences key: `AcceleratedCompositingEnabled`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L169`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L169)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L978`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L978)
-- [`Source/WebCore/html/HTMLCanvasElement.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/html/HTMLCanvasElement.cpp)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L99`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L99) (key: `AcceleratedCompositingEnabled`)
+- [`WKPreferencesPrivate.h#L169`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L169)
+- [`WKPreferences.mm#L978`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L978)
+- [`HTMLCanvasElement.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/html/HTMLCanvasElement.cpp)
+- [`UnifiedWebPreferences.yaml#L99`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L99) (key: `AcceleratedCompositingEnabled`)
 
 ## Metadata
 | Key | Value |

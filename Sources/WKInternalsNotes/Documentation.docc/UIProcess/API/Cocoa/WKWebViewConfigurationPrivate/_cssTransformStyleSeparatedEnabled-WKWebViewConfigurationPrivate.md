@@ -19,8 +19,8 @@ separated layers の `transform-style`
 - `HAVE(CORE_ANIMATION_SEPARATED_LAYERS)` が無効なら常に `NO`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L182`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L182)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L269`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L269)
+- [`WKWebViewConfigurationPrivate.h#L182`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L182)
+- [`WKWebViewConfiguration.mm#L269`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L269)
 
 ## Metadata
 | Key | Value |

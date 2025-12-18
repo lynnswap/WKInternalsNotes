@@ -14,16 +14,16 @@ macOS: `YES`
 - この API を使わない場合: 既定値のまま動作する。
 - `_cookieEnabled = YES`: Cookies を有効化する。
 - `_cookieEnabled = NO`: Cookies を無効化する。
-- Implementation: [`Source/WebCore/dom/Document.cpp#L7175`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/dom/Document.cpp#L7175) の `Document::cookie` が `cookieEnabled()` を参照する。
+- Implementation: [`Document.cpp#L7175`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/dom/Document.cpp#L7175) の `Document::cookie` が `cookieEnabled()` を参照する。
 
 ## Details
 - WebPreferences key: `CookieEnabled`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L220`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L220)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1129`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1129)
-- [`Source/WebCore/dom/Document.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/dom/Document.cpp)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L1994`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L1994) (key: `CookieEnabled`)
+- [`WKPreferencesPrivate.h#L220`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L220)
+- [`WKPreferences.mm#L1129`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1129)
+- [`Document.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/dom/Document.cpp)
+- [`UnifiedWebPreferences.yaml#L1994`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L1994) (key: `CookieEnabled`)
 
 ## Metadata
 | Key | Value |

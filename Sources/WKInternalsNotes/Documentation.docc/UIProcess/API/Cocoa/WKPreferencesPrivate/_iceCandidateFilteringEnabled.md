@@ -14,16 +14,16 @@ iOS: `YES` / macOS: `YES`
 - この API を使わない場合: 既定値のまま動作する。
 - `_iceCandidateFilteringEnabled = YES`: ICE Candidate Filtering を有効化する。
 - `_iceCandidateFilteringEnabled = NO`: ICE Candidate Filtering を無効化する。
-- Implementation: [`Source/WebCore/page/SettingsBase.cpp#L397`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/page/SettingsBase.cpp#L397) の `SettingsBase::iceCandidateFilteringEnabledChanged` が `iceCandidateFilteringEnabled()` を参照する。
+- Implementation: [`SettingsBase.cpp#L397`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/page/SettingsBase.cpp#L397) の `SettingsBase::iceCandidateFilteringEnabledChanged` が `iceCandidateFilteringEnabled()` を参照する。
 
 ## Details
 - WebPreferences key: `ICECandidateFilteringEnabled`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L123`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L123)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L760`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L760)
-- [`Source/WebCore/page/SettingsBase.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/page/SettingsBase.cpp)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L3481`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L3481) (key: `ICECandidateFilteringEnabled`)
+- [`WKPreferencesPrivate.h#L123`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L123)
+- [`WKPreferences.mm#L760`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L760)
+- [`SettingsBase.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/page/SettingsBase.cpp)
+- [`UnifiedWebPreferences.yaml#L3481`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L3481) (key: `ICECandidateFilteringEnabled`)
 
 ## Metadata
 | Key | Value |

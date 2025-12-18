@@ -14,16 +14,16 @@ iOS: `NO` / macOS: `NO`
 - この API を使わない場合: 既定値のまま動作する。
 - `_enumeratingAllNetworkInterfacesEnabled = YES`: Enumerating All Network Interfaces を有効化する。
 - `_enumeratingAllNetworkInterfacesEnabled = NO`: Enumerating All Network Interfaces を無効化する。
-- Implementation: [`Source/WebKit/UIProcess/WebPageProxy.cpp#L12069`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/WebPageProxy.cpp#L12069) の `WebProcessPool::urlSchemesWithCustomProtocolHandlers` が `enumeratingAllNetworkInterfacesEnabled()` を参照する。
+- Implementation: [`WebPageProxy.cpp#L12069`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/WebPageProxy.cpp#L12069) の `WebProcessPool::urlSchemesWithCustomProtocolHandlers` が `enumeratingAllNetworkInterfacesEnabled()` を参照する。
 
 ## Details
 - WebPreferences key: `EnumeratingAllNetworkInterfacesEnabled`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L122`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L122)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L750`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L750)
-- [`Source/WebKit/UIProcess/WebPageProxy.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/WebPageProxy.cpp)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L2688`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L2688) (key: `EnumeratingAllNetworkInterfacesEnabled`)
+- [`WKPreferencesPrivate.h#L122`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L122)
+- [`WKPreferences.mm#L750`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L750)
+- [`WebPageProxy.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/WebPageProxy.cpp)
+- [`UnifiedWebPreferences.yaml#L2688`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L2688) (key: `EnumeratingAllNetworkInterfacesEnabled`)
 
 ## Metadata
 | Key | Value |

@@ -14,16 +14,16 @@ macOS: `NO`
 - この API を使わない場合: 既定値のまま動作する。
 - `_localFileContentSniffingEnabled = YES`: Local File Content Sniffing を有効化する。
 - `_localFileContentSniffingEnabled = NO`: Local File Content Sniffing を無効化する。
-- Implementation: [`Source/WebCore/loader/EmptyClients.cpp#L247`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/loader/EmptyClients.cpp#L247) の `IDBClient::IDBConnectionToServer::create` が `localFileContentSniffingEnabled()` を参照する。
+- Implementation: [`EmptyClients.cpp#L247`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/loader/EmptyClients.cpp#L247) の `IDBClient::IDBConnectionToServer::create` が `localFileContentSniffingEnabled()` を参照する。
 
 ## Details
 - WebPreferences key: `LocalFileContentSniffingEnabled`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L213`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L213)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1059`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1059)
-- [`Source/WebCore/loader/EmptyClients.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/loader/EmptyClients.cpp)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L4580`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L4580) (key: `LocalFileContentSniffingEnabled`)
+- [`WKPreferencesPrivate.h#L213`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L213)
+- [`WKPreferences.mm#L1059`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1059)
+- [`EmptyClients.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/loader/EmptyClients.cpp)
+- [`UnifiedWebPreferences.yaml#L4580`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L4580) (key: `LocalFileContentSniffingEnabled`)
 
 ## Metadata
 | Key | Value |

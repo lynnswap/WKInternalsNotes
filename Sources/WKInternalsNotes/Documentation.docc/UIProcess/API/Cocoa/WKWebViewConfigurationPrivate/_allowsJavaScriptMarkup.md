@@ -16,8 +16,8 @@ iOS: `YES` / macOS: `YES`
 - `_allowsJavaScriptMarkup = NO`: JavaScript 由来の markup を許可（無効）。
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L77`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L77)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L755`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L755)
+- [`WKWebViewConfigurationPrivate.h#L77`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L77)
+- [`WKWebViewConfiguration.mm#L755`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L755)
 
 ## Metadata
 | Key | Value |

@@ -19,8 +19,8 @@ iOS: `!allowsInlineMediaPlayback`
 - iPhone: `YES`, iPad: `NO`（概ね）
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L116`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L116)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L871`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L871)
+- [`WKWebViewConfigurationPrivate.h#L116`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L116)
+- [`WKWebViewConfiguration.mm#L871`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L871)
 
 ## Metadata
 | Key | Value |

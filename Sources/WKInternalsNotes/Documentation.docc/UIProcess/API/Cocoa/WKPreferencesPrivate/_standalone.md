@@ -14,16 +14,16 @@ iOS: `NO` / macOS: `NO`
 - この API を使わない場合: 既定値のまま動作する。
 - `_standalone = YES`: Standalone を有効化する。
 - `_standalone = NO`: Standalone を無効化する。
-- Implementation: [`Source/WebCore/page/Navigator.cpp#L356`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/page/Navigator.cpp#L356) の `Navigator::standalone` が `standalone()` を参照する。
+- Implementation: [`Navigator.cpp#L356`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/page/Navigator.cpp#L356) の `Navigator::standalone` が `standalone()` を参照する。
 
 ## Details
 - WebPreferences key: `Standalone`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L99`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L99)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm)
-- [`Source/WebCore/page/Navigator.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/page/Navigator.cpp)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L7613`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L7613) (key: `Standalone`)
+- [`WKPreferencesPrivate.h#L99`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L99)
+- [`WKPreferences.mm`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm)
+- [`Navigator.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/page/Navigator.cpp)
+- [`UnifiedWebPreferences.yaml#L7613`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L7613) (key: `Standalone`)
 
 ## Metadata
 | Key | Value |

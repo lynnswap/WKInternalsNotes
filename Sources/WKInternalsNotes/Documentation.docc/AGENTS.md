@@ -97,4 +97,5 @@
 - `## References` は原則「ファイルパス」を列挙する（必要最小限の補足は可）。
   - 例: `- \`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm\``
   - 可能なら GitHub の固定revリンク（行番号付き）にする（基準revは `WebKit.revision`）。
-    - 例: `- [\`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L123\`](https://github.com/WebKit/WebKit/blob/<rev>/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L123)`
+    - 例: `- [\`WKPreferencesPrivate.h#L123\`](https://github.com/WebKit/WebKit/blob/<rev>/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L123)`
+    - 原則、リンクテキストは「ファイル名（+ 行番号）」までに短縮する（URL 側は WebKit repo 相対パスを保持する）。

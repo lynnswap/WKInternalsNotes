@@ -16,8 +16,8 @@ iOS: `NO` / macOS: `NO`
 - `_convertsPositionStyleOnCopy = NO`: コピー時に `position` を変換する（無効）。
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L78`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L78)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L815`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L815)
+- [`WKWebViewConfigurationPrivate.h#L78`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L78)
+- [`WKWebViewConfiguration.mm#L815`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L815)
 
 ## Metadata
 | Key | Value |

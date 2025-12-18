@@ -14,16 +14,16 @@ macOS: `NO`
 - この API を使わない場合: 既定値のまま動作する。
 - `_showsToolTipOverTruncatedText = YES`: Shows Tool Tip Over Truncated Text を有効化する。
 - `_showsToolTipOverTruncatedText = NO`: Shows Tool Tip Over Truncated Text を無効化する。
-- Implementation: [`Source/WebCore/page/Chrome.cpp#L348`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/page/Chrome.cpp#L348) の `Chrome::getToolTip` が `showsToolTipOverTruncatedText()` を参照する。
+- Implementation: [`Chrome.cpp#L348`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/page/Chrome.cpp#L348) の `Chrome::getToolTip` が `showsToolTipOverTruncatedText()` を参照する。
 
 ## Details
 - WebPreferences key: `ShowsToolTipOverTruncatedText`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L235`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L235)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1289`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1289)
-- [`Source/WebCore/page/Chrome.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/page/Chrome.cpp)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L7371`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L7371) (key: `ShowsToolTipOverTruncatedText`)
+- [`WKPreferencesPrivate.h#L235`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L235)
+- [`WKPreferences.mm#L1289`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1289)
+- [`Chrome.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/page/Chrome.cpp)
+- [`UnifiedWebPreferences.yaml#L7371`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L7371) (key: `ShowsToolTipOverTruncatedText`)
 
 ## Metadata
 | Key | Value |

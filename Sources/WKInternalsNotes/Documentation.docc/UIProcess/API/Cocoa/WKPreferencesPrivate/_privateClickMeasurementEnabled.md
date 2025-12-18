@@ -14,16 +14,16 @@ iOS: `YES` / macOS: `YES`
 - この API を使わない場合: 既定値のまま動作する。
 - `_privateClickMeasurementEnabled = YES`: Private Click Measurement を有効化する。
 - `_privateClickMeasurementEnabled = NO`: Private Click Measurement を無効化する。
-- Implementation: [`Source/WebCore/html/HTMLAnchorElement.idl#L24`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/html/HTMLAnchorElement.idl#L24)（`EnabledBySetting=PrivateClickMeasurementEnabled`）
+- Implementation: [`HTMLAnchorElement.idl#L24`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/html/HTMLAnchorElement.idl#L24)（`EnabledBySetting=PrivateClickMeasurementEnabled`）
 
 ## Details
 - WebPreferences key: `PrivateClickMeasurementEnabled`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L173`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L173)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1439`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1439)
-- [`Source/WebCore/html/HTMLAnchorElement.idl`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/html/HTMLAnchorElement.idl)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L6161`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L6161) (key: `PrivateClickMeasurementEnabled`)
+- [`WKPreferencesPrivate.h#L173`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L173)
+- [`WKPreferences.mm#L1439`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1439)
+- [`HTMLAnchorElement.idl`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/html/HTMLAnchorElement.idl)
+- [`UnifiedWebPreferences.yaml#L6161`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L6161) (key: `PrivateClickMeasurementEnabled`)
 
 ## Metadata
 | Key | Value |

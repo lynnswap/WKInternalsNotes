@@ -14,19 +14,19 @@ macOS: `NO`
 - この API を使わない場合: 既定値のまま動作する。
 - `_requiresUserGestureForVideoPlayback = YES`: User Gesture For Video Playback を有効化する。
 - `_requiresUserGestureForVideoPlayback = NO`: User Gesture For Video Playback を無効化する。
-- Implementation: [`Source/WebCore/dom/Document.cpp#L7719`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/dom/Document.cpp#L7719) の `Document::requiresUserGestureForVideoPlayback` が `requiresUserGestureForVideoPlayback()` を参照する。
+- Implementation: [`Document.cpp#L7719`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/dom/Document.cpp#L7719) の `Document::requiresUserGestureForVideoPlayback` が `requiresUserGestureForVideoPlayback()` を参照する。
 
 ## Details
 - WebPreferences key: `RequiresUserGestureForVideoPlayback`
 - Candidate Public API: `WKWebViewConfiguration.mediaTypesRequiringUserActionForPlayback`（Video bit で制御）
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L233`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L233)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1269`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1269)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.h`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.h)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm)
-- [`Source/WebCore/dom/Document.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/dom/Document.cpp)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L6471`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L6471) (key: `RequiresUserGestureForVideoPlayback`)
+- [`WKPreferencesPrivate.h#L233`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L233)
+- [`WKPreferences.mm#L1269`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1269)
+- [`WKWebViewConfiguration.h`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.h)
+- [`WKWebView.mm`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm)
+- [`Document.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/dom/Document.cpp)
+- [`UnifiedWebPreferences.yaml#L6471`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L6471) (key: `RequiresUserGestureForVideoPlayback`)
 
 ## Metadata
 | Key | Value |

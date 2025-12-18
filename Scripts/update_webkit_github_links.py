@@ -71,11 +71,17 @@ def _github_url(revision: str, path: str, *, line: int | None = None) -> str:
 
 def _extract_repo_path(line: str) -> str | None:
     m = re.search(r"`(Source/[^`#]+)(?:#L\d+)?`", line)
+    if m:
+        return m.group(1)
+    m = re.search(r"https://github\.com/WebKit/WebKit/blob/[^/]+/(Source/[^)#]+)", line)
     return m.group(1) if m else None
 
 
 def _extract_existing_line_anchor(line: str) -> int | None:
-    m = re.search(r"`Source/[^`]+#L(\d+)`", line)
+    m = re.search(r"`[^`]+#L(\d+)`", line)
+    if m:
+        return int(m.group(1))
+    m = re.search(r"#L(\d+)\b", line)
     return int(m.group(1)) if m else None
 
 
@@ -85,8 +91,12 @@ def _extract_key_hint(line: str) -> str | None:
 
 
 def _extract_bullet_suffix(line: str) -> str:
-    m = re.match(r"^-\s+(?:\[`Source/[^`]+`\]\([^)]*\)|`Source/[^`]+`)(.*)$", line)
+    m = re.match(r"^-\s+(?:\[`[^`]+`\]\([^)]*\)|`[^`]+`)(.*)$", line)
     return m.group(1) if m else ""
+
+def _short_link_text(repo_path: str, *, line: int | None) -> str:
+    base = repo_path.rsplit("/", 1)[-1]
+    return f"`{base}`" if line is None else f"`{base}#L{line}`"
 
 
 def _extract_webpreferences_key(markdown: str) -> str | None:
@@ -229,7 +239,7 @@ def _rewrite_reference_bullet(
         elif entry is not None:
             anchor_line = _entry_search_line(repo, revision, path, entry)
 
-    link_text = f"`{path}`" if anchor_line is None else f"`{path}#L{anchor_line}`"
+    link_text = _short_link_text(path, line=anchor_line)
     url = _github_url(revision, path, line=anchor_line)
 
     return f"- [{link_text}]({url}){suffix}"
@@ -269,26 +279,19 @@ def _rewrite_implementation_line(
     if anchor_line is None:
         anchor_line = existing_anchor_line
 
-    link_text = f"`{path}`" if anchor_line is None else f"`{path}#L{anchor_line}`"
+    link_text = _short_link_text(path, line=anchor_line)
     url = _github_url(revision, path, line=anchor_line)
     replacement = f"[{link_text}]({url})"
-    updated, replaced = re.subn(
-        rf"\[\[`{re.escape(path)}(?:#L\d+)?`\]\([^)]*\)\]\([^)]*\)",
-        replacement,
-        line,
-        count=1,
+    # Replace the first link that points to this repo path (label may be old/new style).
+    rx_url = re.compile(
+        rf"\[[^\]]*\]\({re.escape(WEBKIT_GITHUB_BASE)}/blob/[^/]+/{re.escape(path)}(?:#L\d+)?\)"
     )
+    updated, replaced = rx_url.subn(replacement, line, count=1)
     if replaced:
         return updated
-    updated, replaced = re.subn(
-        rf"\[`{re.escape(path)}(?:#L\d+)?`\]\([^)]*\)",
-        replacement,
-        line,
-        count=1,
-    )
-    if replaced:
-        return updated
-    return re.sub(rf"`{re.escape(path)}(?:#L\d+)?`", replacement, line, count=1)
+    # Fallback: replace old-style / plain backticked path.
+    updated, replaced = re.subn(rf"`{re.escape(path)}(?:#L\d+)?`", replacement, line, count=1)
+    return updated if replaced else line
 
 
 def _update_header_overview_page(markdown: str, *, revision: str) -> str:

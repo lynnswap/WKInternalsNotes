@@ -16,8 +16,8 @@ iOS: `NO` / macOS: `NO`
 - `_allowTopNavigationToDataURLs = NO`: top-level で `data:` への遷移を許可（無効）。
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L81`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L81)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L805`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L805)
+- [`WKWebViewConfigurationPrivate.h#L81`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L81)
+- [`WKWebViewConfiguration.mm#L805`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L805)
 
 ## Metadata
 | Key | Value |

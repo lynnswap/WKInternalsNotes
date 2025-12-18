@@ -19,8 +19,8 @@ iOS: `NO` / macOS: `NO`
 - setter は呼び出し元 bundle id を `RELEASE_ASSERT` で制限
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L100`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L100)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L680`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L680)
+- [`WKWebViewConfigurationPrivate.h#L100`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L100)
+- [`WKWebViewConfiguration.mm#L680`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L680)
 
 ## Metadata
 | Key | Value |

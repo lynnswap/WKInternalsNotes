@@ -14,16 +14,16 @@ iOS: `YES` / macOS: `YES`
 - この API を使わない場合: 既定値のまま動作する。
 - `_mediaCaptureRequiresSecureConnection = YES`: Limit Media Capture to Secure Sites を有効化する。
 - `_mediaCaptureRequiresSecureConnection = NO`: Limit Media Capture to Secure Sites を無効化する。
-- Implementation: [`Source/WebCore/dom/ScriptExecutionContext.cpp#L696`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/dom/ScriptExecutionContext.cpp#L696) の `ScriptExecutionContext::allowsMediaDevices` が `mediaCaptureRequiresSecureConnection()` を参照する。
+- Implementation: [`ScriptExecutionContext.cpp#L696`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/dom/ScriptExecutionContext.cpp#L696) の `ScriptExecutionContext::allowsMediaDevices` が `mediaCaptureRequiresSecureConnection()` を参照する。
 
 ## Details
 - WebPreferences key: `MediaCaptureRequiresSecureConnection`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L121`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L121)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L710`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L710)
-- [`Source/WebCore/dom/ScriptExecutionContext.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/dom/ScriptExecutionContext.cpp)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L4884`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L4884) (key: `MediaCaptureRequiresSecureConnection`)
+- [`WKPreferencesPrivate.h#L121`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L121)
+- [`WKPreferences.mm#L710`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L710)
+- [`ScriptExecutionContext.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/dom/ScriptExecutionContext.cpp)
+- [`UnifiedWebPreferences.yaml#L4884`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L4884) (key: `MediaCaptureRequiresSecureConnection`)
 
 ## Metadata
 | Key | Value |

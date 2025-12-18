@@ -14,16 +14,16 @@ macOS: `YES`
 - この API を使わない場合: 既定値のまま動作する。
 - `_legacyEncryptedMediaAPIEnabled = YES`: legacy EME API を有効化する。
 - `_legacyEncryptedMediaAPIEnabled = NO`: legacy EME API を無効化する。
-- Implementation: [`Source/WebCore/Modules/encryptedmedia/legacy/WebKitMediaKeyMessageEvent.idl#L28`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/encryptedmedia/legacy/WebKitMediaKeyMessageEvent.idl#L28)（`EnabledBySetting=LegacyEncryptedMediaAPIEnabled`）
+- Implementation: [`WebKitMediaKeyMessageEvent.idl#L28`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/encryptedmedia/legacy/WebKitMediaKeyMessageEvent.idl#L28)（`EnabledBySetting=LegacyEncryptedMediaAPIEnabled`）
 
 ## Details
 - WebPreferences key: `LegacyEncryptedMediaAPIEnabled`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L228`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L228)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1219`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1219)
-- [`Source/WebCore/Modules/encryptedmedia/legacy/WebKitMediaKeyMessageEvent.idl`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/encryptedmedia/legacy/WebKitMediaKeyMessageEvent.idl)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L4353`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L4353) (key: `LegacyEncryptedMediaAPIEnabled`)
+- [`WKPreferencesPrivate.h#L228`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L228)
+- [`WKPreferences.mm#L1219`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1219)
+- [`WebKitMediaKeyMessageEvent.idl`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/encryptedmedia/legacy/WebKitMediaKeyMessageEvent.idl)
+- [`UnifiedWebPreferences.yaml#L4353`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L4353) (key: `LegacyEncryptedMediaAPIEnabled`)
 
 ## Metadata
 | Key | Value |

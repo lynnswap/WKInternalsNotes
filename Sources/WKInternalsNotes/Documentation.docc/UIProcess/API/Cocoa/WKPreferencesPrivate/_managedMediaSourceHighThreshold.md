@@ -14,16 +14,16 @@ iOS: `30` / macOS: `30`
 - この API を使わない場合: 既定値のまま動作する。
 - `_managedMediaSourceHighThreshold` を設定すると: Managed Media Source High Threshold を設定する。
 - 既定値に戻すと: 既定の挙動に戻る。
-- Implementation: [`Source/WebCore/Modules/mediasource/ManagedMediaSource.cpp#L101`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/mediasource/ManagedMediaSource.cpp#L101) の `ManagedMediaSource::ensurePrefsRead` が `settingsValues().managedMediaSourceHighThreshold` を読み出す。
+- Implementation: [`ManagedMediaSource.cpp#L101`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/mediasource/ManagedMediaSource.cpp#L101) の `ManagedMediaSource::ensurePrefsRead` が `settingsValues().managedMediaSourceHighThreshold` を読み出す。
 
 ## Details
 - WebPreferences key: `ManagedMediaSourceHighThreshold`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L194`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L194)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L948`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L948)
-- [`Source/WebCore/Modules/mediasource/ManagedMediaSource.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/mediasource/ManagedMediaSource.cpp)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L4750`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L4750) (key: `ManagedMediaSourceHighThreshold`)
+- [`WKPreferencesPrivate.h#L194`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L194)
+- [`WKPreferences.mm#L948`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L948)
+- [`ManagedMediaSource.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/mediasource/ManagedMediaSource.cpp)
+- [`UnifiedWebPreferences.yaml#L4750`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L4750) (key: `ManagedMediaSourceHighThreshold`)
 
 ## Metadata
 | Key | Value |

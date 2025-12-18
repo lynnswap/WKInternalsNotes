@@ -20,9 +20,9 @@ iOS: `YES`
 - 置換先として `WKPreferences.textInteractionGesturesEnabled` が指定されているが、公開ヘッダ（`WKPreferences.h` 等）では確認できない
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L191`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L191)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L256`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L256)
-- [`Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L3630`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L3630)
+- [`WKWebViewConfigurationPrivate.h#L191`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L191)
+- [`WKWebViewConfiguration.mm#L256`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L256)
+- [`WKContentViewInteraction.mm#L3630`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L3630)
 
 ## Metadata
 | Key | Value |

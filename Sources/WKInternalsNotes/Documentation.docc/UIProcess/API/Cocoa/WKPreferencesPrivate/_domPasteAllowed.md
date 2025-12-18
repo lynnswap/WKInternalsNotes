@@ -14,16 +14,16 @@ iOS: `NO` / macOS: `NO`
 - この API を使わない場合: 既定値のまま動作する。
 - `_domPasteAllowed = YES`: DOM Paste を許可する。
 - `_domPasteAllowed = NO`: DOM Paste を禁止する。
-- Implementation: [`Source/WebCore/editing/EditorCommand.cpp#L1199`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/editing/EditorCommand.cpp#L1199) の `UnlinkCommand::create` が `domPasteAllowed()` を参照する。
+- Implementation: [`EditorCommand.cpp#L1199`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/editing/EditorCommand.cpp#L1199) の `UnlinkCommand::create` が `domPasteAllowed()` を参照する。
 
 ## Details
 - WebPreferences key: `DOMPasteAllowed`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L129`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L129)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1356`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1356)
-- [`Source/WebCore/editing/EditorCommand.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/editing/EditorCommand.cpp)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L2171`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L2171) (key: `DOMPasteAllowed`)
+- [`WKPreferencesPrivate.h#L129`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L129)
+- [`WKPreferences.mm#L1356`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1356)
+- [`EditorCommand.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/editing/EditorCommand.cpp)
+- [`UnifiedWebPreferences.yaml#L2171`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L2171) (key: `DOMPasteAllowed`)
 
 ## Metadata
 | Key | Value |

@@ -12,8 +12,8 @@ rich JavaScript features をまとめて無効化する
 - 呼び出すと: rich JavaScript features をまとめて無効化する。
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L150`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L150)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L604`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L604)
+- [`WKPreferencesPrivate.h#L150`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L150)
+- [`WKPreferences.mm#L604`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L604)
 
 ## Metadata
 | Key | Value |

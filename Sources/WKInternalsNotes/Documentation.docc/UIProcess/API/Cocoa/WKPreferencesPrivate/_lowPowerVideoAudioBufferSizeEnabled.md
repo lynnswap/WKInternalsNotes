@@ -14,16 +14,16 @@ iOS: `YES` / macOS: `YES`
 - この API を使わない場合: 既定値のまま動作する。
 - `_lowPowerVideoAudioBufferSizeEnabled = YES`: Low Power Video Audio Buffer Size を有効化する。
 - `_lowPowerVideoAudioBufferSizeEnabled = NO`: Low Power Video Audio Buffer Size を無効化する。
-- Implementation: [`Source/WebCore/page/DeprecatedGlobalSettings.h#L53`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/page/DeprecatedGlobalSettings.h#L53) で `lowPowerVideoAudioBufferSizeEnabled()` が参照される。
+- Implementation: [`DeprecatedGlobalSettings.h#L53`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/page/DeprecatedGlobalSettings.h#L53) で `lowPowerVideoAudioBufferSizeEnabled()` が参照される。
 
 ## Details
 - WebPreferences key: `LowPowerVideoAudioBufferSizeEnabled`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L159`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L159)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L878`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L878)
-- [`Source/WebCore/page/DeprecatedGlobalSettings.h#L53`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/page/DeprecatedGlobalSettings.h#L53)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L4694`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L4694) (key: `LowPowerVideoAudioBufferSizeEnabled`)
+- [`WKPreferencesPrivate.h#L159`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L159)
+- [`WKPreferences.mm#L878`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L878)
+- [`DeprecatedGlobalSettings.h#L53`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/page/DeprecatedGlobalSettings.h#L53)
+- [`UnifiedWebPreferences.yaml#L4694`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L4694) (key: `LowPowerVideoAudioBufferSizeEnabled`)
 
 ## Metadata
 | Key | Value |

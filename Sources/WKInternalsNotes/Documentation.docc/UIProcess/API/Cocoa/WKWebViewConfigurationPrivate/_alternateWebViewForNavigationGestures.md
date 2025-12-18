@@ -16,8 +16,8 @@ iOS: `nil` / macOS: `nil`
 - `nil` に戻すと: 差し替えを解除する。
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L72`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L72)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L700`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L700)
+- [`WKWebViewConfigurationPrivate.h#L72`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L72)
+- [`WKWebViewConfiguration.mm#L700`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L700)
 
 ## Metadata
 | Key | Value |

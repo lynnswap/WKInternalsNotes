@@ -14,16 +14,16 @@ iOS: `NO` / macOS: `NO`
 - この API を使わない場合: 既定値のまま動作する。
 - `_diagnosticLoggingEnabled = YES`: Diagnostic logging を有効化する。
 - `_diagnosticLoggingEnabled = NO`: Diagnostic logging を無効化する。
-- Implementation: [`Source/WebCore/page/Page.cpp#L1631`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/page/Page.cpp#L1631) の `Page::diagnosticLoggingClient` が `diagnosticLoggingEnabled()` を参照する。
+- Implementation: [`Page.cpp#L1631`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/page/Page.cpp#L1631) の `Page::diagnosticLoggingClient` が `diagnosticLoggingEnabled()` を参照する。
 
 ## Details
 - WebPreferences key: `DiagnosticLoggingEnabled`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L101`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L101)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L516`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L516)
-- [`Source/WebCore/page/Page.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/page/Page.cpp)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L2453`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L2453) (key: `DiagnosticLoggingEnabled`)
+- [`WKPreferencesPrivate.h#L101`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L101)
+- [`WKPreferences.mm#L516`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L516)
+- [`Page.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/page/Page.cpp)
+- [`UnifiedWebPreferences.yaml#L2453`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L2453) (key: `DiagnosticLoggingEnabled`)
 
 ## Metadata
 | Key | Value |

@@ -14,16 +14,16 @@ iOS: `YES` / macOS: `YES`
 - この API を使わない場合: 既定値のまま動作する。
 - `_secureContextChecksEnabled = YES`: Secure Context Checks を有効化する。
 - `_secureContextChecksEnabled = NO`: Secure Context Checks を無効化する。
-- Implementation: [`Source/WebCore/dom/Document.cpp#L8519`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/dom/Document.cpp#L8519) の `Document::isSecureContext` が `secureContextChecksEnabled()` を参照する。
+- Implementation: [`Document.cpp#L8519`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/dom/Document.cpp#L8519) の `Document::isSecureContext` が `secureContextChecksEnabled()` を参照する。
 
 ## Details
 - WebPreferences key: `SecureContextChecksEnabled`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L166`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L166)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L953`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L953)
-- [`Source/WebCore/dom/Document.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/dom/Document.cpp)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L6870`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L6870) (key: `SecureContextChecksEnabled`)
+- [`WKPreferencesPrivate.h#L166`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L166)
+- [`WKPreferences.mm#L953`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L953)
+- [`Document.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/dom/Document.cpp)
+- [`UnifiedWebPreferences.yaml#L6870`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L6870) (key: `SecureContextChecksEnabled`)
 
 ## Metadata
 | Key | Value |

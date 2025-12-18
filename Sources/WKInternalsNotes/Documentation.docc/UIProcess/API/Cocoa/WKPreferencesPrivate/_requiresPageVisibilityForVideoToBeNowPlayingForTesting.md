@@ -14,16 +14,16 @@ iOS: `defaultRequiresPageVisibilityForVideoToBeNowPlaying()` / macOS: `defaultRe
 - この API を使わない場合: 既定値のまま動作する。
 - `_requiresPageVisibilityForVideoToBeNowPlayingForTesting = YES`: Page Visibility For Video To Be Now Playing を有効化する。
 - `_requiresPageVisibilityForVideoToBeNowPlayingForTesting = NO`: Page Visibility For Video To Be Now Playing を無効化する。
-- Implementation: [`Source/WebCore/html/HTMLMediaElement.cpp#L684`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/html/HTMLMediaElement.cpp#L684) の `MediaElementSession::create` が `requiresPageVisibilityForVideoToBeNowPlaying()` を参照する。
+- Implementation: [`HTMLMediaElement.cpp#L684`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/html/HTMLMediaElement.cpp#L684) の `MediaElementSession::create` が `requiresPageVisibilityForVideoToBeNowPlaying()` を参照する。
 
 ## Details
 - WebPreferences key: `RequiresPageVisibilityForVideoToBeNowPlaying`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L203`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L203)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1730`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1730)
-- [`Source/WebCore/html/HTMLMediaElement.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/html/HTMLMediaElement.cpp)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L6422`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L6422) (key: `RequiresPageVisibilityForVideoToBeNowPlaying`)
+- [`WKPreferencesPrivate.h#L203`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L203)
+- [`WKPreferences.mm#L1730`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1730)
+- [`HTMLMediaElement.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/html/HTMLMediaElement.cpp)
+- [`UnifiedWebPreferences.yaml#L6422`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L6422) (key: `RequiresPageVisibilityForVideoToBeNowPlaying`)
 
 ## Metadata
 | Key | Value |

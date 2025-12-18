@@ -14,16 +14,16 @@ NotificationEvent support を有効/無効にする API
 - この API を使わない場合: 既定値のまま動作する。
 - `_notificationEventEnabled = YES`: NotificationEvent support を有効化する。
 - `_notificationEventEnabled = NO`: NotificationEvent support を無効化する。
-- Implementation: [`Source/WebCore/Modules/notifications/NotificationEvent.idl#L29`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/notifications/NotificationEvent.idl#L29)（`EnabledBySetting=NotificationEventEnabled`）
+- Implementation: [`NotificationEvent.idl#L29`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/notifications/NotificationEvent.idl#L29)（`EnabledBySetting=NotificationEventEnabled`）
 
 ## Details
 - WebPreferences key: `NotificationEventEnabled`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L183`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L183)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1550`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1550)
-- [`Source/WebCore/Modules/notifications/NotificationEvent.idl`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/notifications/NotificationEvent.idl)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L5602`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L5602) (key: `NotificationEventEnabled`)
+- [`WKPreferencesPrivate.h#L183`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L183)
+- [`WKPreferences.mm#L1550`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1550)
+- [`NotificationEvent.idl`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/notifications/NotificationEvent.idl)
+- [`UnifiedWebPreferences.yaml#L5602`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L5602) (key: `NotificationEventEnabled`)
 
 ## Metadata
 | Key | Value |

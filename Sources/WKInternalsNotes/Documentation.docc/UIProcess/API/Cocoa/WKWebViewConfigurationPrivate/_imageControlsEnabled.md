@@ -19,11 +19,11 @@ macOS: `NO`
 - WebPreferences key: `ImageControlsEnabled`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L128`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L128)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L1270`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L1270)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L784`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L784)
-- [`Source/WebCore/dom/mac/ImageControlsMac.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/dom/mac/ImageControlsMac.cpp)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L3642`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L3642) (key: `ImageControlsEnabled`)
+- [`WKWebViewConfigurationPrivate.h#L128`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L128)
+- [`WKWebViewConfiguration.mm#L1270`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L1270)
+- [`WKWebView.mm#L784`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L784)
+- [`ImageControlsMac.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/dom/mac/ImageControlsMac.cpp)
+- [`UnifiedWebPreferences.yaml#L3642`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L3642) (key: `ImageControlsEnabled`)
 
 ## Metadata
 | Key | Value |

@@ -14,16 +14,16 @@ iOS: `defaultVideoFullscreenRequiresElementFullscreen()` / macOS: `defaultVideoF
 - この API を使わない場合: 既定値のまま動作する。
 - `_videoFullscreenRequiresElementFullscreen = YES`: Video Fullscreen Requires Element Fullscreen を有効化する。
 - `_videoFullscreenRequiresElementFullscreen = NO`: Video Fullscreen Requires Element Fullscreen を無効化する。
-- Implementation: [`Source/WebCore/html/HTMLMediaElement.cpp#L7323`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/html/HTMLMediaElement.cpp#L7323) の `HTMLMediaElement::videoUsesElementFullscreen` が `videoFullscreenRequiresElementFullscreen()` を参照する。
+- Implementation: [`HTMLMediaElement.cpp#L7323`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/html/HTMLMediaElement.cpp#L7323) の `HTMLMediaElement::videoUsesElementFullscreen` が `videoFullscreenRequiresElementFullscreen()` を参照する。
 
 ## Details
 - WebPreferences key: `VideoFullscreenRequiresElementFullscreen`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L197`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L197)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1660`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1660)
-- [`Source/WebCore/html/HTMLMediaElement.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/html/HTMLMediaElement.cpp)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L8593`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L8593) (key: `VideoFullscreenRequiresElementFullscreen`)
+- [`WKPreferencesPrivate.h#L197`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L197)
+- [`WKPreferences.mm#L1660`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1660)
+- [`HTMLMediaElement.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/html/HTMLMediaElement.cpp)
+- [`UnifiedWebPreferences.yaml#L8593`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L8593) (key: `VideoFullscreenRequiresElementFullscreen`)
 
 ## Metadata
 | Key | Value |

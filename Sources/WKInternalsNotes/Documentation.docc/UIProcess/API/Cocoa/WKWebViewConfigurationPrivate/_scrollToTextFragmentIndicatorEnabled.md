@@ -16,8 +16,8 @@ iOS: `YES` / macOS: `YES`
 - `_scrollToTextFragmentIndicatorEnabled = NO`: scroll-to-text-fragment の indicator（無効）。
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L176`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L176)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L264`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L264)
+- [`WKWebViewConfigurationPrivate.h#L176`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L176)
+- [`WKWebViewConfiguration.mm#L264`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L264)
 
 ## Metadata
 | Key | Value |

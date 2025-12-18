@@ -19,11 +19,11 @@ macOS: `NO`
 - WebPreferences key: `ServiceControlsEnabled`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L127`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L127)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L1260`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L1260)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L783`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L783)
-- [`Source/WebCore/page/mac/ServicesOverlayController.mm`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/page/mac/ServicesOverlayController.mm)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L6951`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L6951) (key: `ServiceControlsEnabled`)
+- [`WKWebViewConfigurationPrivate.h#L127`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L127)
+- [`WKWebViewConfiguration.mm#L1260`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L1260)
+- [`WKWebView.mm#L783`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L783)
+- [`ServicesOverlayController.mm`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/page/mac/ServicesOverlayController.mm)
+- [`UnifiedWebPreferences.yaml#L6951`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L6951) (key: `ServiceControlsEnabled`)
 
 ## Metadata
 | Key | Value |

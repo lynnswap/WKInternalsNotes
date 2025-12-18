@@ -14,16 +14,16 @@ iOS: `YES` / macOS: `YES`
 - この API を使わない場合: 既定値のまま動作する。
 - `_webAudioEnabled = YES`: Web Audio を有効化する。
 - `_webAudioEnabled = NO`: Web Audio を無効化する。
-- Implementation: [`Source/WebCore/Modules/webaudio/AnalyserNode.idl#L27`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/webaudio/AnalyserNode.idl#L27)（`EnabledBySetting=WebAudioEnabled`）
+- Implementation: [`AnalyserNode.idl#L27`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/webaudio/AnalyserNode.idl#L27)（`EnabledBySetting=WebAudioEnabled`）
 
 ## Details
 - WebPreferences key: `WebAudioEnabled`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L168`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L168)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L968`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L968)
-- [`Source/WebCore/Modules/webaudio/AnalyserNode.idl`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/webaudio/AnalyserNode.idl)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L8932`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L8932) (key: `WebAudioEnabled`)
+- [`WKPreferencesPrivate.h#L168`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L168)
+- [`WKPreferences.mm#L968`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L968)
+- [`AnalyserNode.idl`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/webaudio/AnalyserNode.idl)
+- [`UnifiedWebPreferences.yaml#L8932`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L8932) (key: `WebAudioEnabled`)
 
 ## Metadata
 | Key | Value |

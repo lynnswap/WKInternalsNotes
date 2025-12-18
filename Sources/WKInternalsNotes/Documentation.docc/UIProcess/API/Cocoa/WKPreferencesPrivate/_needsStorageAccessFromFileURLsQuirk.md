@@ -14,16 +14,16 @@ macOS: `YES`
 - この API を使わない場合: 既定値のまま動作する。
 - `_needsStorageAccessFromFileURLsQuirk = YES`: Needs storage access from file URLs quirk を有効化する。
 - `_needsStorageAccessFromFileURLsQuirk = NO`: Needs storage access from file URLs quirk を無効化する。
-- Implementation: [`Source/WebCore/dom/Document.cpp#L8359`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/dom/Document.cpp#L8359) の `SecurityOriginPolicy::create` が `needsStorageAccessFromFileURLsQuirk()` を参照する。
+- Implementation: [`Document.cpp#L8359`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/dom/Document.cpp#L8359) の `SecurityOriginPolicy::create` が `needsStorageAccessFromFileURLsQuirk()` を参照する。
 
 ## Details
 - WebPreferences key: `NeedsStorageAccessFromFileURLsQuirk`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L230`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L230)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1239`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1239)
-- [`Source/WebCore/dom/Document.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/dom/Document.cpp)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L5590`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L5590) (key: `NeedsStorageAccessFromFileURLsQuirk`)
+- [`WKPreferencesPrivate.h#L230`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L230)
+- [`WKPreferences.mm#L1239`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1239)
+- [`Document.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/dom/Document.cpp)
+- [`UnifiedWebPreferences.yaml#L5590`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L5590) (key: `NeedsStorageAccessFromFileURLsQuirk`)
 
 ## Metadata
 | Key | Value |

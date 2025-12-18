@@ -14,16 +14,16 @@ iOS: `NO` / macOS: `NO`
 - この API を使わない場合: 既定値のまま動作する。
 - `_peerConnectionEnabled = YES`: RTCPeerConnection を有効化する。
 - `_peerConnectionEnabled = NO`: RTCPeerConnection を無効化する。
-- Implementation: [`Source/WebCore/Modules/mediastream/RTCAnswerOptions.idl#L28`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/mediastream/RTCAnswerOptions.idl#L28)（`EnabledBySetting=PeerConnectionEnabled`）
+- Implementation: [`RTCAnswerOptions.idl#L28`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/mediastream/RTCAnswerOptions.idl#L28)（`EnabledBySetting=PeerConnectionEnabled`）
 
 ## Details
 - WebPreferences key: `PeerConnectionEnabled`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L115`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L115)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L650`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L650)
-- [`Source/WebCore/Modules/mediastream/RTCAnswerOptions.idl`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/mediastream/RTCAnswerOptions.idl)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L5914`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L5914) (key: `PeerConnectionEnabled`)
+- [`WKPreferencesPrivate.h#L115`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L115)
+- [`WKPreferences.mm#L650`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L650)
+- [`RTCAnswerOptions.idl`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/mediastream/RTCAnswerOptions.idl)
+- [`UnifiedWebPreferences.yaml#L5914`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L5914) (key: `PeerConnectionEnabled`)
 
 ## Metadata
 | Key | Value |

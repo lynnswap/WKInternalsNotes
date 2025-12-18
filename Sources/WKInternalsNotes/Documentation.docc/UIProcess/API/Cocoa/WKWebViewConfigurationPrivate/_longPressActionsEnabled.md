@@ -16,8 +16,8 @@ iOS: `YES`
 - `_longPressActionsEnabled = NO`: long press actions を有効化（無効）。
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L119`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L119)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L258`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L258)
+- [`WKWebViewConfigurationPrivate.h#L119`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L119)
+- [`WKWebViewConfiguration.mm#L258`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L258)
 
 ## Metadata
 | Key | Value |

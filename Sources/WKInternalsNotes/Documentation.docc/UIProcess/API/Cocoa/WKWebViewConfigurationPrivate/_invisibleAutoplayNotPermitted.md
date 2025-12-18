@@ -19,8 +19,8 @@ iOS: `NO` / macOS: `NO`
 - 内部名は `invisibleAutoplayForbidden`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L84`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L84)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L997`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L997)
+- [`WKWebViewConfigurationPrivate.h#L84`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L84)
+- [`WKWebViewConfiguration.mm#L997`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L997)
 
 ## Metadata
 | Key | Value |

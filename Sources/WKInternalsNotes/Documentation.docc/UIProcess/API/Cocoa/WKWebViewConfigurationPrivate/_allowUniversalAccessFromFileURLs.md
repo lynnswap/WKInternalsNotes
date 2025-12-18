@@ -16,8 +16,8 @@ iOS: `NO` / macOS: `NO`
 - `_allowUniversalAccessFromFileURLs = NO`: `file://` からのユニバーサルアクセスを許可（無効）。
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L80`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L80)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L339`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L339)
+- [`WKWebViewConfigurationPrivate.h#L80`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L80)
+- [`WKWebViewConfiguration.mm#L339`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L339)
 
 ## Metadata
 | Key | Value |

@@ -14,16 +14,16 @@ macOS: `YES`
 - この API を使わない場合: 既定値のまま動作する。
 - `_backspaceKeyNavigationEnabled = YES`: Backspace Key Navigation を有効化する。
 - `_backspaceKeyNavigationEnabled = NO`: Backspace Key Navigation を無効化する。
-- Implementation: [`Source/WebCore/page/EventHandler.cpp#L4992`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/page/EventHandler.cpp#L4992) の `EventHandler::defaultBackspaceEventHandler` が `backspaceKeyNavigationEnabled()` を参照する。
+- Implementation: [`EventHandler.cpp#L4992`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/page/EventHandler.cpp#L4992) の `EventHandler::defaultBackspaceEventHandler` が `backspaceKeyNavigationEnabled()` を参照する。
 
 ## Details
 - WebPreferences key: `BackspaceKeyNavigationEnabled`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L223`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L223)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1159`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1159)
-- [`Source/WebCore/page/EventHandler.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/page/EventHandler.cpp)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L764`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L764) (key: `BackspaceKeyNavigationEnabled`)
+- [`WKPreferencesPrivate.h#L223`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L223)
+- [`WKPreferences.mm#L1159`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1159)
+- [`EventHandler.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/page/EventHandler.cpp)
+- [`UnifiedWebPreferences.yaml#L764`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L764) (key: `BackspaceKeyNavigationEnabled`)
 
 ## Metadata
 | Key | Value |

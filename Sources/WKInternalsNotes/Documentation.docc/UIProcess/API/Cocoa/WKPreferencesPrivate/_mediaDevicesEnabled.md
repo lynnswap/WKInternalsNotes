@@ -14,16 +14,16 @@ iOS: `NO` / macOS: `NO`
 - この API を使わない場合: 既定値のまま動作する。
 - `_mediaDevicesEnabled = YES`: media devices を有効化する。
 - `_mediaDevicesEnabled = NO`: media devices を無効化する。
-- Implementation: [`Source/WebCore/Modules/mediastream/Navigator+MediaDevices.idl#L35`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/mediastream/Navigator+MediaDevices.idl#L35)（`EnabledBySetting=MediaDevicesEnabled`）
+- Implementation: [`Navigator+MediaDevices.idl#L35`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/mediastream/Navigator+MediaDevices.idl#L35)（`EnabledBySetting=MediaDevicesEnabled`）
 
 ## Details
 - WebPreferences key: `MediaDevicesEnabled`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L116`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L116)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L660`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L660)
-- [`Source/WebCore/Modules/mediastream/Navigator+MediaDevices.idl`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/mediastream/Navigator+MediaDevices.idl)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L4988`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L4988) (key: `MediaDevicesEnabled`)
+- [`WKPreferencesPrivate.h#L116`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L116)
+- [`WKPreferences.mm#L660`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L660)
+- [`Navigator+MediaDevices.idl`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/mediastream/Navigator+MediaDevices.idl)
+- [`UnifiedWebPreferences.yaml#L4988`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L4988) (key: `MediaDevicesEnabled`)
 
 ## Metadata
 | Key | Value |

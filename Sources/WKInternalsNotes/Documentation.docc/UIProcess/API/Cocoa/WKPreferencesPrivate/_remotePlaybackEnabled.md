@@ -14,16 +14,16 @@ iOS: `YES` / macOS: `YES`
 - この API を使わない場合: 既定値のまま動作する。
 - `_remotePlaybackEnabled = YES`: Remote Playback API を有効化する。
 - `_remotePlaybackEnabled = NO`: Remote Playback API を無効化する。
-- Implementation: [`Source/WebCore/Modules/remoteplayback/HTMLMediaElement+RemotePlayback.idl#L30`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/remoteplayback/HTMLMediaElement+RemotePlayback.idl#L30)（`EnabledBySetting=RemotePlaybackEnabled`）
+- Implementation: [`HTMLMediaElement+RemotePlayback.idl#L30`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/remoteplayback/HTMLMediaElement+RemotePlayback.idl#L30)（`EnabledBySetting=RemotePlaybackEnabled`）
 
 ## Details
 - WebPreferences key: `RemotePlaybackEnabled`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L167`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L167)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L983`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L983)
-- [`Source/WebCore/Modules/remoteplayback/HTMLMediaElement+RemotePlayback.idl`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/remoteplayback/HTMLMediaElement+RemotePlayback.idl)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L6304`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L6304) (key: `RemotePlaybackEnabled`)
+- [`WKPreferencesPrivate.h#L167`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L167)
+- [`WKPreferences.mm#L983`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L983)
+- [`HTMLMediaElement+RemotePlayback.idl`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/remoteplayback/HTMLMediaElement+RemotePlayback.idl)
+- [`UnifiedWebPreferences.yaml#L6304`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L6304) (key: `RemotePlaybackEnabled`)
 
 ## Metadata
 | Key | Value |

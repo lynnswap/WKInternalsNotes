@@ -14,16 +14,16 @@ visionOS: `NO`
 - この API を使わない場合: 既定値のまま動作する。
 - `_cssTransformStyleSeparatedEnabled = YES`: CSS transform-style: separated を有効化する。
 - `_cssTransformStyleSeparatedEnabled = NO`: CSS transform-style: separated を無効化する。
-- Implementation: [`Source/WebCore/css/parser/CSSParserContext.cpp#L63`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/css/parser/CSSParserContext.cpp#L63) の `CSSParserContext::CSSParserContext` が `cssTransformStyleSeparatedEnabled()` を参照する。
+- Implementation: [`CSSParserContext.cpp#L63`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/css/parser/CSSParserContext.cpp#L63) の `CSSParserContext::CSSParserContext` が `cssTransformStyleSeparatedEnabled()` を参照する。
 
 ## Details
 - WebPreferences key: `CSSTransformStyleSeparatedEnabled`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L198`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L198)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1670`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1670)
-- [`Source/WebCore/css/parser/CSSParserContext.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/css/parser/CSSParserContext.cpp)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L1514`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L1514) (key: `CSSTransformStyleSeparatedEnabled`)
+- [`WKPreferencesPrivate.h#L198`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L198)
+- [`WKPreferences.mm#L1670`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1670)
+- [`CSSParserContext.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/css/parser/CSSParserContext.cpp)
+- [`UnifiedWebPreferences.yaml#L1514`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L1514) (key: `CSSTransformStyleSeparatedEnabled`)
 
 ## Metadata
 | Key | Value |

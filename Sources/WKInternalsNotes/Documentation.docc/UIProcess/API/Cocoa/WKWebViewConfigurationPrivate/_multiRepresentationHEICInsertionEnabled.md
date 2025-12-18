@@ -19,10 +19,10 @@ iOS: `NO` / macOS: `NO`
 - `ENABLE(MULTI_REPRESENTATION_HEIC)` が無効なら常に `NO`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L174`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L174)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L266`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L266)
-- [`Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14195`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14195)
-- [`Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1131`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1131)
+- [`WKWebViewConfigurationPrivate.h#L174`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L174)
+- [`WKWebViewConfiguration.mm#L266`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L266)
+- [`WKContentViewInteraction.mm#L14195`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14195)
+- [`WKWebViewMac.mm#L1131`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1131)
 
 ## Metadata
 | Key | Value |

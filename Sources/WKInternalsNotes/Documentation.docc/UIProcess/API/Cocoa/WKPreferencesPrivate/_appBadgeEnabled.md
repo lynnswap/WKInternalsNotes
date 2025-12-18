@@ -14,16 +14,16 @@ iOS: `NO` / macOS: `NO`
 - この API を使わない場合: 既定値のまま動作する。
 - `_appBadgeEnabled = YES`: App Badge を有効化する。
 - `_appBadgeEnabled = NO`: App Badge を無効化する。
-- Implementation: [`Source/WebCore/Modules/badge/NavigatorBadge.idl#L27`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/badge/NavigatorBadge.idl#L27)（`EnabledBySetting=AppBadgeEnabled`）
+- Implementation: [`NavigatorBadge.idl#L27`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/badge/NavigatorBadge.idl#L27)（`EnabledBySetting=AppBadgeEnabled`）
 
 ## Details
 - WebPreferences key: `AppBadgeEnabled`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L190`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L190)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1620`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1620)
-- [`Source/WebCore/Modules/badge/NavigatorBadge.idl`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/badge/NavigatorBadge.idl)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L468`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L468) (key: `AppBadgeEnabled`)
+- [`WKPreferencesPrivate.h#L190`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L190)
+- [`WKPreferences.mm#L1620`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1620)
+- [`NavigatorBadge.idl`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/badge/NavigatorBadge.idl)
+- [`UnifiedWebPreferences.yaml#L468`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L468) (key: `AppBadgeEnabled`)
 
 ## Metadata
 | Key | Value |

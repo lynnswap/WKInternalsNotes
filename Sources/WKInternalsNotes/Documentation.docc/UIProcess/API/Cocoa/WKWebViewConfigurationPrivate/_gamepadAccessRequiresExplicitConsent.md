@@ -19,8 +19,8 @@ gamepad access に明示同意を要求
 - `ENABLE(GAMEPAD)` が無効なら常に `NO`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L181`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L181)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L268`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L268)
+- [`WKWebViewConfigurationPrivate.h#L181`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L181)
+- [`WKWebViewConfiguration.mm#L268`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L268)
 
 ## Metadata
 | Key | Value |

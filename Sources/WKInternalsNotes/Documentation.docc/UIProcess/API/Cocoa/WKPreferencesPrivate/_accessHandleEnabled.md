@@ -14,16 +14,16 @@ iOS: `NO` / macOS: `NO`
 - この API を使わない場合: 既定値のまま動作する。
 - `_accessHandleEnabled = YES`: AccessHandle API を有効化する。
 - `_accessHandleEnabled = NO`: AccessHandle API を無効化する。
-- Implementation: [`Source/WebCore/Modules/filesystem/FileSystemFileHandle.idl#L29`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/filesystem/FileSystemFileHandle.idl#L29)（`EnabledBySetting=AccessHandleEnabled`）
+- Implementation: [`FileSystemFileHandle.idl#L29`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/filesystem/FileSystemFileHandle.idl#L29)（`EnabledBySetting=AccessHandleEnabled`）
 
 ## Details
 - WebPreferences key: `AccessHandleEnabled`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L181`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L181)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1525`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1525)
-- [`Source/WebCore/Modules/filesystem/FileSystemFileHandle.idl`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/filesystem/FileSystemFileHandle.idl)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L171`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L171) (key: `AccessHandleEnabled`)
+- [`WKPreferencesPrivate.h#L181`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L181)
+- [`WKPreferences.mm#L1525`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1525)
+- [`FileSystemFileHandle.idl`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/Modules/filesystem/FileSystemFileHandle.idl)
+- [`UnifiedWebPreferences.yaml#L171`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L171) (key: `AccessHandleEnabled`)
 
 ## Metadata
 | Key | Value |

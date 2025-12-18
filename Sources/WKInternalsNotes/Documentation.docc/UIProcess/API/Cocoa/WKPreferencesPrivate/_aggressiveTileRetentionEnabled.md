@@ -14,16 +14,16 @@ macOS: `NO`
 - この API を使わない場合: 既定値のまま動作する。
 - `_aggressiveTileRetentionEnabled = YES`: Aggressive Tile Retention を有効化する。
 - `_aggressiveTileRetentionEnabled = NO`: Aggressive Tile Retention を無効化する。
-- Implementation: [`Source/WebCore/rendering/RenderLayerBacking.cpp#L4310`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/rendering/RenderLayerBacking.cpp#L4310) の `RenderLayerBacking::shouldAggressivelyRetainTiles` が `aggressiveTileRetentionEnabled()` を参照する。
+- Implementation: [`RenderLayerBacking.cpp#L4310`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/rendering/RenderLayerBacking.cpp#L4310) の `RenderLayerBacking::shouldAggressivelyRetainTiles` が `aggressiveTileRetentionEnabled()` を参照する。
 
 ## Details
 - WebPreferences key: `AggressiveTileRetentionEnabled`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L239`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L239)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1329`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1329)
-- [`Source/WebCore/rendering/RenderLayerBacking.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/rendering/RenderLayerBacking.cpp)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L202`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L202) (key: `AggressiveTileRetentionEnabled`)
+- [`WKPreferencesPrivate.h#L239`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L239)
+- [`WKPreferences.mm#L1329`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1329)
+- [`RenderLayerBacking.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/rendering/RenderLayerBacking.cpp)
+- [`UnifiedWebPreferences.yaml#L202`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L202) (key: `AggressiveTileRetentionEnabled`)
 
 ## Metadata
 | Key | Value |

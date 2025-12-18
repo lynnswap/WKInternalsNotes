@@ -15,8 +15,8 @@ macOS: `NO`
 - この API で値を設定しても: 実装が no-op のため挙動は変わらない。
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L256`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L256)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1869`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1869)
+- [`WKPreferencesPrivate.h#L256`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L256)
+- [`WKPreferences.mm#L1869`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1869)
 
 ## Metadata
 | Key | Value |

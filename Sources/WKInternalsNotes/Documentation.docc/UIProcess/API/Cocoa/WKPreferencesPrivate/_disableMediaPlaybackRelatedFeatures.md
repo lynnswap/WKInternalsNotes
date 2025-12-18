@@ -12,8 +12,8 @@ media playback 関連 features をまとめて無効化する
 - 呼び出すと: media playback 関連 features をまとめて無効化する。
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L151`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L151)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L609`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L609)
+- [`WKPreferencesPrivate.h#L151`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L151)
+- [`WKPreferences.mm#L609`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L609)
 
 ## Metadata
 | Key | Value |

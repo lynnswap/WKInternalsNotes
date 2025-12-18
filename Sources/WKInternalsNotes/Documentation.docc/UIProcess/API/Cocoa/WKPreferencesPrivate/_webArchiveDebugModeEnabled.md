@@ -14,16 +14,16 @@ macOS: `NO`
 - この API を使わない場合: 既定値のまま動作する。
 - `_webArchiveDebugModeEnabled = YES`: web archive debug mode を有効化する。
 - `_webArchiveDebugModeEnabled = NO`: web archive debug mode を無効化する。
-- Implementation: [`Source/WebCore/loader/DocumentLoader.cpp#L1848`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/loader/DocumentLoader.cpp#L1848) の `DocumentLoader::scheduleArchiveLoad` が `webArchiveDebugModeEnabled()` を参照する。
+- Implementation: [`DocumentLoader.cpp#L1848`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/loader/DocumentLoader.cpp#L1848) の `DocumentLoader::scheduleArchiveLoad` が `webArchiveDebugModeEnabled()` を参照する。
 
 ## Details
 - WebPreferences key: `WebArchiveDebugModeEnabled`
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L212`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L212)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1049`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1049)
-- [`Source/WebCore/loader/DocumentLoader.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/loader/DocumentLoader.cpp)
-- [`Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L8887`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L8887) (key: `WebArchiveDebugModeEnabled`)
+- [`WKPreferencesPrivate.h#L212`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferencesPrivate.h#L212)
+- [`WKPreferences.mm#L1049`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKPreferences.mm#L1049)
+- [`DocumentLoader.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebCore/loader/DocumentLoader.cpp)
+- [`UnifiedWebPreferences.yaml#L8887`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L8887) (key: `WebArchiveDebugModeEnabled`)
 
 ## Metadata
 | Key | Value |

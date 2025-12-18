@@ -19,9 +19,9 @@ iOS: `default (lazy)` / macOS: `default (lazy)`
 - getter で default store を生成
 
 ## References
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L62`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L62)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L555`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L555)
-- [`Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L740`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L740)
+- [`WKWebViewConfigurationPrivate.h#L62`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L62)
+- [`WKWebViewConfiguration.mm#L555`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L555)
+- [`WKWebView.mm#L740`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L740)
 
 ## Metadata
 | Key | Value |
