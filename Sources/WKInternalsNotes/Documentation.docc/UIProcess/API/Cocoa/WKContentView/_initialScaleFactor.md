@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_initialScaleFactor()``
 
-宣言のみ確認（実装未調査）。
+初期ズーム倍率を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKWebView` の `_initialScaleFactor` に委譲する。
 
 ## References
 - [`WKContentView.h#L138`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.h#L138)
+- [`WKContentView.mm#L1082`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.mm#L1082)
 
 ## Metadata
 | Key | Value |
