@@ -97,6 +97,312 @@ _SWIFT_TYPE_DECL_RE = re.compile(
     r"([A-Za-z_][A-Za-z0-9_]*)"
 )
 
+_SWIFT_EXTENSION_RE = re.compile(r"^\s*extension\s+([A-Za-z_][A-Za-z0-9_\.]*)\b")
+_SWIFT_ACCESS_LEVELS = {"public", "open", "internal", "fileprivate", "private"}
+_SWIFT_MEMBER_KINDS = {"func", "init", "var", "let"}
+
+
+@dataclass(frozen=True)
+class SwiftExtensionMember:
+    container: str
+    kind: str  # func|init|var|let
+    name: str
+    path_component: str
+    params: list[tuple[str, str, objc.SwiftType]]  # (external, internal, type)
+    return_type: objc.SwiftType | None
+    is_static: bool
+
+
+def _strip_swift_attributes(text: str) -> str:
+    return re.sub(r"^(?:@[A-Za-z_][A-Za-z0-9_]*(?:\([^)]*\))?\s+)+", "", text).strip()
+
+
+def _split_swift_signature(text: str) -> str:
+    depth = 0
+    in_string = False
+    escape = False
+    for i, ch in enumerate(text):
+        if in_string:
+            if escape:
+                escape = False
+                continue
+            if ch == "\\":
+                escape = True
+                continue
+            if ch == "\"":
+                in_string = False
+            continue
+        if ch == "\"":
+            in_string = True
+            continue
+        if depth == 0 and ch in "{=":
+            return text[:i].strip()
+        if ch in "([{":
+            depth += 1
+            continue
+        if ch in ")]}":
+            depth = max(0, depth - 1)
+            continue
+    return text.strip()
+
+
+def _extract_paren_content(text: str, start_index: int) -> tuple[str, int] | None:
+    depth = 0
+    start = None
+    for i in range(start_index, len(text)):
+        ch = text[i]
+        if ch == "(":
+            if depth == 0:
+                start = i + 1
+            depth += 1
+            continue
+        if ch == ")":
+            depth -= 1
+            if depth == 0 and start is not None:
+                return text[start:i], i + 1
+    return None
+
+
+def _parse_swift_params(params_text: str) -> list[tuple[str, str, objc.SwiftType]]:
+    params: list[tuple[str, str, objc.SwiftType]] = []
+    for raw in objc._split_top_level_commas(params_text):  # noqa: SLF001
+        part = raw.strip()
+        if not part:
+            continue
+        part = part.split("=", 1)[0].strip()
+        if ":" not in part:
+            continue
+        name_part, type_part = part.split(":", 1)
+        name_part = name_part.strip()
+        type_part = type_part.strip()
+        type_part = re.sub(r"^(?:@[A-Za-z_][A-Za-z0-9_\.]*(?:\([^)]*\))?\s+)+", "", type_part)
+        for prefix in ("inout ", "consuming ", "borrowing ", "isolated "):
+            if type_part.startswith(prefix):
+                type_part = type_part[len(prefix) :].strip()
+        tokens = [t for t in name_part.split() if t and t not in {"inout", "consuming", "borrowing", "isolated"}]
+        if not tokens:
+            continue
+        if len(tokens) == 1:
+            external = internal = tokens[0]
+        else:
+            external = tokens[0]
+            internal = tokens[1]
+        params.append((external, internal, objc.SwiftType(type_part)))
+    return params
+
+
+def _swift_path_component(name: str, params: list[tuple[str, str, objc.SwiftType]]) -> str:
+    if not params:
+        return f"{name}()"
+    labels = [external for (external, _internal, _ty) in params]
+    return f"{name}({''.join(f'{label}:' for label in labels)})"
+
+
+def _parse_swift_member_decl(decl: str, *, extension_has_spi: bool) -> SwiftExtensionMember | None:
+    decl = _strip_swift_attributes(decl)
+    decl = _split_swift_signature(decl)
+    m = re.search(r"\b(func|init|var|let)\b", decl)
+    if not m:
+        return None
+
+    kind = m.group(1)
+    prefix = decl[: m.start()].strip()
+    suffix = decl[m.end() :].strip()
+
+    access = None
+    for token in prefix.split():
+        if token in _SWIFT_ACCESS_LEVELS:
+            access = token
+            break
+
+    if access in {"public", "open"} and not extension_has_spi:
+        return None
+    if access in {"private", "fileprivate"}:
+        return None
+
+    is_static = bool(re.search(r"\b(static|class)\b", prefix))
+
+    if kind in {"var", "let"}:
+        m_prop = re.match(r"([A-Za-z_][A-Za-z0-9_]*)\s*:\s*(.+)$", suffix)
+        if not m_prop:
+            return None
+        name = m_prop.group(1)
+        type_str = _split_swift_signature(m_prop.group(2))
+        return SwiftExtensionMember(
+            container="",
+            kind=kind,
+            name=name,
+            path_component=name,
+            params=[],
+            return_type=objc.SwiftType(type_str),
+            is_static=is_static,
+        )
+
+    if kind == "func":
+        m_name = re.match(r"([A-Za-z_][A-Za-z0-9_]*)", suffix)
+        if not m_name:
+            return None
+        name = m_name.group(1)
+        paren = _extract_paren_content(suffix, m_name.end())
+        if not paren:
+            return None
+        params_text, end_index = paren
+        params = _parse_swift_params(params_text)
+        remainder = suffix[end_index:].strip()
+        return_type = None
+        if "->" in remainder:
+            return_str = remainder.split("->", 1)[1].strip()
+            return_str = _split_swift_signature(return_str)
+            return_type = objc.SwiftType(return_str)
+        return SwiftExtensionMember(
+            container="",
+            kind=kind,
+            name=name,
+            path_component=_swift_path_component(name, params),
+            params=params,
+            return_type=return_type,
+            is_static=is_static,
+        )
+
+    if kind == "init":
+        name = "init"
+        if suffix.startswith(("?", "!")):
+            suffix = suffix[1:]
+        paren = _extract_paren_content(suffix, 0)
+        if not paren:
+            return None
+        params_text, _end_index = paren
+        params = _parse_swift_params(params_text)
+        return SwiftExtensionMember(
+            container="",
+            kind=kind,
+            name=name,
+            path_component=_swift_path_component(name, params),
+            params=params,
+            return_type=None,
+            is_static=False,
+        )
+
+    return None
+
+
+def _iter_swift_extension_members(text: str) -> Iterable[SwiftExtensionMember]:
+    lines = text.splitlines()
+    depth = 0
+    pending_extension_attrs: list[str] = []
+    pending_member_attrs: list[str] = []
+    i = 0
+
+    while i < len(lines):
+        line = lines[i]
+        stripped = line.strip()
+
+        if depth == 0 and stripped.startswith("@"):
+            pending_extension_attrs.append(stripped)
+            i += 1
+            continue
+
+        m_ext = _SWIFT_EXTENSION_RE.match(line) if depth == 0 else None
+        if m_ext:
+            container = m_ext.group(1)
+            extension_has_spi = any(attr.startswith("@_spi") or attr.startswith("@_spiOnly") for attr in pending_extension_attrs)
+            pending_extension_attrs = []
+
+            i += 1
+            depth += line.count("{") - line.count("}")
+            while i < len(lines):
+                line = lines[i]
+                stripped = line.strip()
+                if depth == 1 and stripped.startswith("@"):
+                    pending_member_attrs.append(stripped)
+                    i += 1
+                    continue
+                if depth == 1:
+                    first_token = stripped.split(" ", 1)[0] if stripped else ""
+                    if first_token in _SWIFT_MEMBER_KINDS or any(tok in stripped for tok in (" func ", " init", " var ", " let ")):
+                        decl_lines = [stripped]
+                        i += 1
+                        paren_depth = stripped.count("(") - stripped.count(")")
+                        while i < len(lines) and paren_depth > 0:
+                            next_line = lines[i].strip()
+                            decl_lines.append(next_line)
+                            paren_depth += next_line.count("(") - next_line.count(")")
+                            i += 1
+                        decl_text = " ".join(decl_lines)
+                        decl_text = " ".join(pending_member_attrs) + " " + decl_text if pending_member_attrs else decl_text
+                        pending_member_attrs = []
+                        member = _parse_swift_member_decl(decl_text, extension_has_spi=extension_has_spi)
+                        if member:
+                            yield SwiftExtensionMember(
+                                container=container,
+                                kind=member.kind,
+                                name=member.name,
+                                path_component=member.path_component,
+                                params=member.params,
+                                return_type=member.return_type,
+                                is_static=member.is_static,
+                            )
+                        depth += sum(dl.count("{") - dl.count("}") for dl in decl_lines)
+                        continue
+
+                pending_member_attrs = []
+                depth += line.count("{") - line.count("}")
+                if depth == 0:
+                    i += 1
+                    break
+                i += 1
+            continue
+
+        depth += line.count("{") - line.count("}")
+        if depth < 0:
+            depth = 0
+        i += 1
+
+
+def _make_swift_extension_property_symbol(
+    container: str,
+    member: SwiftExtensionMember,
+) -> dict[str, Any]:
+    kind_id = "swift.type.property" if member.is_static else "swift.property"
+    kind_name = "Type Property" if member.is_static else "Instance Property"
+    swift_type = member.return_type or objc.SwiftType("Any")  # noqa: SLF001
+    decl = [
+        objc._fragment("keyword", "static" if member.is_static else "var"),  # noqa: SLF001
+    ]
+    if member.is_static:
+        decl.append(objc._fragment("text", " "))  # noqa: SLF001
+        decl.append(objc._fragment("keyword", "var"))  # noqa: SLF001
+    decl.extend(
+        [
+            objc._fragment("text", " "),  # noqa: SLF001
+            objc._fragment("identifier", member.name),  # noqa: SLF001
+            objc._fragment("text", ": "),  # noqa: SLF001
+            objc._type_fragment(swift_type),  # noqa: SLF001
+        ]
+    )
+    return {
+        "accessLevel": "public",
+        "kind": {"identifier": kind_id, "displayName": kind_name},
+        "identifier": {"precise": objc._make_precise_id(container, member.path_component), "interfaceLanguage": "swift"},  # noqa: SLF001
+        "pathComponents": [container, member.path_component],
+        "names": {"title": member.path_component, "subHeading": decl},
+        "declarationFragments": decl,
+    }
+
+
+def _make_swift_extension_method_symbol(
+    container: str,
+    member: SwiftExtensionMember,
+) -> dict[str, Any]:
+    sig = objc.MethodSig(  # noqa: SLF001
+        kind="type" if member.is_static else "instance",
+        base_name=member.name,
+        path_component=member.path_component,
+        return_type=member.return_type,
+        params=member.params,
+    )
+    return objc._make_method_symbol(container, sig, availability=[])  # noqa: SLF001
+
 
 def _iter_swift_type_decls(text: str) -> Iterable[SwiftTypeDecl]:
     depth = 0
@@ -721,6 +1027,24 @@ def _collect_symbols_from_headers(
                     continue
                 add_symbol(_make_swift_container_symbol(decl.name, kind=decl.kind))
                 members_by_type_and_category.setdefault(decl.name, {})
+            for member in _iter_swift_extension_members(text):
+                container = member.container
+                if "." in container:
+                    continue
+                if not _is_candidate_symbol_name(container):
+                    continue
+                container_id = objc._make_precise_id(container)  # noqa: SLF001
+                if container_id not in symbol_by_precise_id:
+                    add_symbol(objc._make_header_container_symbol(container))  # noqa: SLF001
+                if member.kind in {"var", "let"}:
+                    symbol = _make_swift_extension_property_symbol(container, member)
+                else:
+                    symbol = _make_swift_extension_method_symbol(container, member)
+                add_symbol(symbol)
+                add_relationship("memberOf", symbol["identifier"]["precise"], container_id)
+                members_by_type_and_category.setdefault(container, {}).setdefault("Swift Extension", set()).add(
+                    member.path_component
+                )
 
     # Add container type symbols for any type that has at least one included member, and for any
     # non-public type definition we encountered in @interface blocks.

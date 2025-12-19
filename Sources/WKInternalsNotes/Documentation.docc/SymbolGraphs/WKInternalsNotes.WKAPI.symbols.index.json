@@ -1131,6 +1131,14 @@
     "Cpp": [
       "mousePointerDevicesDidChange(_:)"
     ],
+    "Swift Extension": [
+      "_setHasMouseDevice(forTesting:)",
+      "hasMouseDevice",
+      "init()",
+      "sharedInstance()",
+      "start()",
+      "stop()"
+    ],
     "Type": [
       "_setHasMouseDeviceForTesting(_:)",
       "hasMouseDevice",
@@ -1853,12 +1861,18 @@
     ]
   },
   "WKTextExtractionContainerItem": {
+    "Swift Extension": [
+      "container"
+    ],
     "Type": [
       "container",
       "initWithContainer(_:rectInWebView:children:eventListeners:ariaAttributes:accessibilityRole:nodeIdentifier:)"
     ]
   },
   "WKTextExtractionContentEditableItem": {
+    "Swift Extension": [
+      "isFocused"
+    ],
     "Type": [
       "contentEditableType",
       "focused",
@@ -1866,6 +1880,12 @@
     ]
   },
   "WKTextExtractionEditable": {
+    "Swift Extension": [
+      "isFocused",
+      "isSecure",
+      "label",
+      "placeholder"
+    ],
     "Type": [
       "focused",
       "initWithLabel(_:placeholder:isSecure:isFocused:)",
@@ -1875,6 +1895,10 @@
     ]
   },
   "WKTextExtractionImageItem": {
+    "Swift Extension": [
+      "altText",
+      "name"
+    ],
     "Type": [
       "altText",
       "initWithName(_:altText:rectInWebView:children:eventListeners:ariaAttributes:accessibilityRole:nodeIdentifier:)",
@@ -1882,6 +1906,14 @@
     ]
   },
   "WKTextExtractionItem": {
+    "Swift Extension": [
+      "accessibilityRole",
+      "ariaAttributes",
+      "children",
+      "eventListeners",
+      "nodeIdentifier",
+      "rectInWebView"
+    ],
     "Type": [
       "accessibilityRole",
       "ariaAttributes",
@@ -1892,6 +1924,10 @@
     ]
   },
   "WKTextExtractionLink": {
+    "Swift Extension": [
+      "range",
+      "url"
+    ],
     "Type": [
       "initWithURL(_:range:)",
       "range",
@@ -1899,6 +1935,10 @@
     ]
   },
   "WKTextExtractionLinkItem": {
+    "Swift Extension": [
+      "target",
+      "url"
+    ],
     "Type": [
       "initWithTarget(_:url:rectInWebView:children:eventListeners:ariaAttributes:accessibilityRole:nodeIdentifier:)",
       "target",
@@ -1906,18 +1946,28 @@
     ]
   },
   "WKTextExtractionResult": {
+    "Swift Extension": [
+      "rootItem"
+    ],
     "Type": [
       "initWithRootItem(_:)",
       "rootItem"
     ]
   },
   "WKTextExtractionScrollableItem": {
+    "Swift Extension": [
+      "contentSize"
+    ],
     "Type": [
       "contentSize",
       "initWithContentSize(_:rectInWebView:children:eventListeners:ariaAttributes:accessibilityRole:nodeIdentifier:)"
     ]
   },
   "WKTextExtractionSelectItem": {
+    "Swift Extension": [
+      "selectedValues",
+      "supportsMultiple"
+    ],
     "Type": [
       "initWithSelectedValues(_:supportsMultiple:rectInWebView:children:eventListeners:ariaAttributes:accessibilityRole:nodeIdentifier:)",
       "selectedValues",
@@ -1925,6 +1975,17 @@
     ]
   },
   "WKTextExtractionTextFormControlItem": {
+    "Swift Extension": [
+      "autocomplete",
+      "controlType",
+      "isChecked",
+      "isDisabled",
+      "isFocused",
+      "isReadonly",
+      "isSecure",
+      "label",
+      "placeholder"
+    ],
     "Type": [
       "autocomplete",
       "checked",
@@ -1939,6 +2000,12 @@
     ]
   },
   "WKTextExtractionTextItem": {
+    "Swift Extension": [
+      "content",
+      "editable",
+      "links",
+      "selectedRange"
+    ],
     "Type": [
       "content",
       "editable",
@@ -2609,6 +2676,11 @@
       "_scrollToEdge(_:animated:)",
       "_setContentOffsetX(_:y:animated:)",
       "_setNeedsScrollGeometryUpdates(_:)"
+    ],
+    "Swift Extension": [
+      "_intelligenceBaseClass",
+      "_intelligenceCollectContent(in:collector:)",
+      "_intelligenceCollectRemoteContent(in:remoteContextWrapper:)"
     ],
     "TextExtractionFilter": [
       "_clearTextExtractionFilterCache()"
@@ -3317,6 +3389,9 @@
       "_applicationNameForDesktopUserAgent",
       "_isValidCustomScheme(_:)"
     ],
+    "Swift Extension": [
+      "init(_:)"
+    ],
     "WKPrivate": [
       "_additionalSupportedImageTypes",
       "_allowMediaContentTypesRequiringHardwareSupportAsFallback",
@@ -3437,6 +3512,9 @@
   "WKWebpagePreferences": {
     "Class Extension": [
       "defaultPreferences"
+    ],
+    "Swift Extension": [
+      "init(_:)"
     ],
     "WKPrivate": [
       "_activeContentRuleListActionPatterns",
