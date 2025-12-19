@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/gestureRecognizerConsistencyEnforcer``
 
-宣言のみ確認（実装未調査）。
+ジェスチャ認識器の整合性管理用オブジェクトを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+初回アクセス時に `GestureRecognizerConsistencyEnforcer` を生成し、その参照を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+未生成の場合は `lazyInitialize` で `GestureRecognizerConsistencyEnforcer` を生成し、以降は保持中の参照を返す。
 
 ## References
 - [`WKContentViewInteraction.h#L346`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L346)
+- [`WKContentViewInteraction.mm#L2468`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L2468)
 
 ## Metadata
 | Key | Value |

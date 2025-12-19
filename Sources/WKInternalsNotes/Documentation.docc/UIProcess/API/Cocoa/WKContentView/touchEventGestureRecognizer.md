@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/touchEventGestureRecognizer``
 
-宣言のみ確認（実装未調査）。
+タッチイベントの収集に使う `WKTouchEventsGestureRecognizer` を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`setUpInteraction` で生成した `WKTouchEventsGestureRecognizer` を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`setUpInteraction` で `initWithContentView:` を用いて生成し、delegate を設定して `self` に追加する。getter は `_touchEventGestureRecognizer` を返す。
 
 ## References
 - [`WKContentViewInteraction.h#L347`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L347)
+- [`WKContentViewInteraction.mm#L1374`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L1374)
+- [`WKContentViewInteraction.mm#L2463`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L2463)
 
 ## Metadata
 | Key | Value |

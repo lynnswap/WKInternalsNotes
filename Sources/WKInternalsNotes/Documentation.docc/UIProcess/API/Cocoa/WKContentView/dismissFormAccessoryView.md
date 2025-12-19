@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/dismissFormAccessoryView()``
 
-宣言のみ確認（実装未調査）。
+フォームアクセサリ表示を閉じる。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`dateTimeInputControl` が `dismissWithAnimationForTesting` で閉じられる場合はそこで終了し、それ以外は `accessoryDone` を呼ぶ。watchOS では `dateTimeInputControl` 分岐は無効。
 
 ## References
 - [`WKContentViewInteraction.h#L1054`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L1054)
+- [`WKContentViewInteraction.mm#L14683`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14683)
 
 ## Metadata
 | Key | Value |

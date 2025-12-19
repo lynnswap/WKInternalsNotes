@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/textInteractionAssistant``
 
-宣言のみ確認（実装未調査）。
+テキスト操作支援用の `UIWKTextInteractionAssistant` を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`_textInteractionWrapper` が保持する `textInteractionAssistant` を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_textInteractionWrapper` から `textInteractionAssistant` を取得して返す。
 
 ## References
 - [`WKContentViewInteraction.h#L1073`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L1073)
+- [`WKContentViewInteraction.mm#L14707`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14707)
 
 ## Metadata
 | Key | Value |
