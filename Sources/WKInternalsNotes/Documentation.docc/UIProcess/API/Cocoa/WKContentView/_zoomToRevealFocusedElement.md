@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_zoomToRevealFocusedElement()``
 
-宣言のみ確認（実装未調査）。
+フォーカス要素が見えるようにズーム/スクロールする。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+スクロール禁止や選択抑制中は何もしない。条件が整えば `_zoomToFocusRect:` を呼び、フォーカス要素の矩形・フォントサイズ・スケール条件を渡して調整する。
 
 ## References
 - [`WKContentViewInteraction.h#L769`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L769)
+- [`WKContentViewInteraction.mm#L2913`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L2913)
 
 ## Metadata
 | Key | Value |

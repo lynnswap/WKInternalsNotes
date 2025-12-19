@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_keyboardDidShow()``
 
-宣言のみ確認（実装未調査）。
+キーボード表示完了後の処理を行う。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+メインループでフォーカス要素の再表示ディファラを解決し、必要に応じてコンテキストメニュー位置を再調整する。
 
 ## References
 - [`WKContentViewInteraction.h#L772`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L772)
+- [`WKContentViewInteraction.mm#L2891`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L2891)
 
 ## Metadata
 | Key | Value |

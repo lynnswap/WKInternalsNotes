@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_keyboardWillShow()``
 
-宣言のみ確認（実装未調査）。
+キーボード表示開始時の処理を行う。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+キーボード表示待ちフラグを解除し、必要ならフォーカス要素の再表示ディファラを解決する。
 
 ## References
 - [`WKContentViewInteraction.h#L771`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L771)
+- [`WKContentViewInteraction.mm#L2883`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L2883)
 
 ## Metadata
 | Key | Value |
