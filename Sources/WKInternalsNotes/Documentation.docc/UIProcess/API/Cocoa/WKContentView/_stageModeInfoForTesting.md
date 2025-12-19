@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_stageModeInfoForTesting()``
 
-宣言のみ確認（実装未調査）。
+モデル操作のテスト用ステージ情報を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_stageModeSession` が無ければ空の辞書を返し、存在する場合は `awaitingResult` と `hitTestSuccessful` を返す。
 
 ## References
 - [`WKContentViewInteraction.h#L1047`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L1047)
+- [`WKContentViewInteraction.mm#L14653`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14653)
 
 ## Metadata
 | Key | Value |
