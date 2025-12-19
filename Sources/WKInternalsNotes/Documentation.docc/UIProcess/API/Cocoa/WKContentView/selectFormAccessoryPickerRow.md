@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/selectFormAccessoryPickerRow(_:)``
 
-宣言のみ確認（実装未調査）。
+フォーム選択 UI の指定行を選択する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`PEPPER_UI_CORE` が有効なら `WKSelectMenuListViewController` に行選択を委譲し、無効なら `WKFormSelectControl` に対して `selectRow:inComponent:extendingSelection:` を呼ぶ。
 
 ## References
 - [`WKContentViewInteraction.h#L1033`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L1033)
+- [`WKContentViewInteraction.mm#L14493`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14493)
 
 ## Metadata
 | Key | Value |

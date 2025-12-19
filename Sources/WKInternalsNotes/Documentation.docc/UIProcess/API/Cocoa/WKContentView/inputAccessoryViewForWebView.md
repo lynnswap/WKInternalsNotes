@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/inputAccessoryViewForWebView``
 
-宣言のみ確認（実装未調査）。
+WebView に表示する inputAccessoryView を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+アクセサリが不要なら `nil`、必要ならカスタムビューまたは `formAccessoryView` を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`requiresAccessoryView` が `NO` の場合は `nil`。それ以外は `_formInputSession` の `customInputAccessoryView` を優先し、無ければ `formAccessoryView` を返す。
 
 ## References
 - [`WKContentViewInteraction.h#L730`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L730)
+- [`WKContentViewInteraction.mm#L4260`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L4260)
 
 ## Metadata
 | Key | Value |

@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/selectFormPopoverTitle``
 
-宣言のみ確認（実装未調査）。
+フォーム選択ポップオーバーのタイトルを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`_inputPeripheral` が `WKFormSelectControl` でない場合は `nil`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_inputPeripheral` が `WKFormSelectControl` の場合は `selectFormPopoverTitle` を返す。
 
 ## References
 - [`WKContentViewInteraction.h#L1062`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L1062)
+- [`WKContentViewInteraction.mm#L14536`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14536)
 
 ## Metadata
 | Key | Value |

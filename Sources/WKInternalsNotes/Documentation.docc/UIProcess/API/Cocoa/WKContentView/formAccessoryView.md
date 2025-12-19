@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/formAccessoryView``
 
-宣言のみ確認（実装未調査）。
+フォーム入力用のアクセサリビューを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+Apple TV / Vision では `nil`。それ以外は必要に応じて生成した `WKFormAccessoryView` を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`PLATFORM(APPLETV)` と Vision UI では常に `nil`。それ以外は `inputAssistantItem` を使って `WKFormAccessoryView` を遅延生成し、保持中のインスタンスを返す。
 
 ## References
 - [`WKContentViewInteraction.h#L405`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L405)
+- [`WKContentViewInteraction.mm#L6297`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L6297)
 
 ## Metadata
 | Key | Value |

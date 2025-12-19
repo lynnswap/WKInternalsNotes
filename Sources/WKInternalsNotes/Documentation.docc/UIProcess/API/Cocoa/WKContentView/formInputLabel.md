@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/formInputLabel``
 
-宣言のみ確認（実装未調査）。
+フォーム入力ラベル文字列を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`PEPPER_UI_CORE` が無効な環境では `nil`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`PEPPER_UI_CORE` が有効な場合は、`_presentedFullScreenInputViewController` に対する `inputLabelTextForViewController:` の結果を返す。
 
 ## References
 - [`WKContentViewInteraction.h#L1063`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L1063)
+- [`WKContentViewInteraction.mm#L14544`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14544)
 
 ## Metadata
 | Key | Value |
