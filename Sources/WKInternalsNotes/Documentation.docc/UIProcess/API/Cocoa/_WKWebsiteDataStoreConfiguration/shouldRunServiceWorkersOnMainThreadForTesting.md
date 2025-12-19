@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebsiteDataStoreConfiguration/shouldRunServiceWorkersOnMainThreadForTesting``
 
-宣言のみ確認（実装未調査）。
+テスト用に Service Worker をメインスレッドで動かすかを返す/設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`WebsiteDataStoreConfiguration` が保持する `shouldRunServiceWorkersOnMainThreadForTesting` の値を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+getter は `_configuration->shouldRunServiceWorkersOnMainThreadForTesting()` を返し、setter は `_configuration->setShouldRunServiceWorkersOnMainThreadForTesting` に委譲する。
 
 ## References
-- [`_WKWebsiteDataStoreConfiguration.h#L66`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L66)
+- [_WKWebsiteDataStoreConfiguration.h#L66](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L66)
+- [_WKWebsiteDataStoreConfiguration.mm#L731](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L731)
+- [_WKWebsiteDataStoreConfiguration.mm#L736](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L736)
 
 ## Metadata
 | Key | Value |

@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebsiteDataStoreConfiguration/sourceApplicationBundleIdentifier``
 
-宣言のみ確認（実装未調査）。
+送信元アプリの bundle identifier を返す/設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`WebsiteDataStoreConfiguration` が保持する `sourceApplicationBundleIdentifier` の値を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+getter は `_configuration->sourceApplicationBundleIdentifier()` を `NSString` に変換して返し、setter は `setSourceApplicationBundleIdentifier` に委譲する。
 
 ## References
-- [`_WKWebsiteDataStoreConfiguration.h#L48`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L48)
+- [_WKWebsiteDataStoreConfiguration.h#L48](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L48)
+- [_WKWebsiteDataStoreConfiguration.mm#L300](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L300)
+- [_WKWebsiteDataStoreConfiguration.mm#L295](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L295)
 
 ## Metadata
 | Key | Value |

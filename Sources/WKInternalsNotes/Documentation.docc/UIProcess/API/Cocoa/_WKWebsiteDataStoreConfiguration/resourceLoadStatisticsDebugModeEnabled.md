@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebsiteDataStoreConfiguration/resourceLoadStatisticsDebugModeEnabled``
 
-宣言のみ確認（実装未調査）。
+Resource Load Statistics のデバッグモードを有効にするかを返す/設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`WebsiteDataStoreConfiguration` が保持する `resourceLoadStatisticsDebugModeEnabled` の値を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+getter は `_configuration->resourceLoadStatisticsDebugModeEnabled()` を返し、setter は `_configuration->setResourceLoadStatisticsDebugModeEnabled` に委譲する。
 
 ## References
-- [`_WKWebsiteDataStoreConfiguration.h#L68`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L68)
+- [_WKWebsiteDataStoreConfiguration.h#L68](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L68)
+- [_WKWebsiteDataStoreConfiguration.mm#L826](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L826)
+- [_WKWebsiteDataStoreConfiguration.mm#L831](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L831)
 
 ## Metadata
 | Key | Value |

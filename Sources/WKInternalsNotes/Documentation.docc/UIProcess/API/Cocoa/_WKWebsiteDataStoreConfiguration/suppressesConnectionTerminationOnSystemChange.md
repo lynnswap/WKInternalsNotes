@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebsiteDataStoreConfiguration/suppressesConnectionTerminationOnSystemChange``
 
-宣言のみ確認（実装未調査）。
+システム変更時の接続終了抑止を返す/設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`WebsiteDataStoreConfiguration` が保持する `suppressesConnectionTerminationOnSystemChange` の値を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+getter は `_configuration->suppressesConnectionTerminationOnSystemChange()` を返し、setter は `_configuration->setSuppressesConnectionTerminationOnSystemChange` に委譲する。
 
 ## References
-- [`_WKWebsiteDataStoreConfiguration.h#L90`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L90)
+- [_WKWebsiteDataStoreConfiguration.h#L90](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L90)
+- [_WKWebsiteDataStoreConfiguration.mm#L646](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L646)
+- [_WKWebsiteDataStoreConfiguration.mm#L651](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L651)
 
 ## Metadata
 | Key | Value |

@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebsiteDataStoreConfiguration/overrideServiceWorkerRegistrationCountTestingValue``
 
-宣言のみ確認（実装未調査）。
+Service Worker 登録数のテスト用上書き値を返す/設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+未設定の場合は `0` を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+getter は `_configuration->overrideServiceWorkerRegistrationCountTestingValue().value_or(0)` を返し、setter は `_configuration->setOverrideServiceWorkerRegistrationCountTestingValue` に委譲する。
 
 ## References
-- [`_WKWebsiteDataStoreConfiguration.h#L67`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L67)
+- [_WKWebsiteDataStoreConfiguration.h#L67](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L67)
+- [_WKWebsiteDataStoreConfiguration.mm#L741](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L741)
+- [_WKWebsiteDataStoreConfiguration.mm#L746](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L746)
 
 ## Metadata
 | Key | Value |

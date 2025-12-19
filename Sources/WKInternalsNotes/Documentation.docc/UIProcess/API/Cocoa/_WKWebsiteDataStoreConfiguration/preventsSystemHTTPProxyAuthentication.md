@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebsiteDataStoreConfiguration/preventsSystemHTTPProxyAuthentication``
 
-宣言のみ確認（実装未調査）。
+システム HTTP プロキシ認証を抑止するかを返す/設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`WebsiteDataStoreConfiguration` が保持する `preventsSystemHTTPProxyAuthentication` の値を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+getter は `_configuration->preventsSystemHTTPProxyAuthentication()` を返し、setter は `_configuration->setPreventsSystemHTTPProxyAuthentication` に委譲する。
 
 ## References
-- [`_WKWebsiteDataStoreConfiguration.h#L64`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L64)
+- [_WKWebsiteDataStoreConfiguration.h#L64](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L64)
+- [_WKWebsiteDataStoreConfiguration.mm#L711](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L711)
+- [_WKWebsiteDataStoreConfiguration.mm#L716](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L716)
 
 ## Metadata
 | Key | Value |

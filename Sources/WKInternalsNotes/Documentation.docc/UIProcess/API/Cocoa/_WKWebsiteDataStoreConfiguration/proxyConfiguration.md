@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebsiteDataStoreConfiguration/proxyConfiguration``
 
-宣言のみ確認（実装未調査）。
+プロキシ設定の辞書を返す/設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`WebsiteDataStoreConfiguration` が保持する `proxyConfiguration` の値を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+getter は `_configuration->proxyConfiguration()` を `NSDictionary` にブリッジして返す。setter は引数を copy した上で `CFDictionaryRef` にブリッジし、`setProxyConfiguration` に渡す。
 
 ## References
-- [`_WKWebsiteDataStoreConfiguration.h#L62`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L62)
+- [_WKWebsiteDataStoreConfiguration.h#L62](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L62)
+- [_WKWebsiteDataStoreConfiguration.mm#L696](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L696)
+- [_WKWebsiteDataStoreConfiguration.mm#L761](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L761)
 
 ## Metadata
 | Key | Value |

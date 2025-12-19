@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebsiteDataStoreConfiguration/httpsProxy``
 
-宣言のみ確認（実装未調査）。
+HTTPS プロキシ設定を返す/設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`WebsiteDataStoreConfiguration` が保持する `httpsProxy` の値を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+getter は `_configuration->httpsProxy()` を `NSURL` に変換して返し、setter は `setHTTPSProxy` に委譲する。
 
 ## References
-- [`_WKWebsiteDataStoreConfiguration.h#L51`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L51)
+- [_WKWebsiteDataStoreConfiguration.h#L51](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L51)
+- [_WKWebsiteDataStoreConfiguration.mm#L204](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L204)
+- [_WKWebsiteDataStoreConfiguration.mm#L209](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L209)
 
 ## Metadata
 | Key | Value |

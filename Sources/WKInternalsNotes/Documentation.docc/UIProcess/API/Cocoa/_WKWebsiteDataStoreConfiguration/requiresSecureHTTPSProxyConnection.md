@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebsiteDataStoreConfiguration/requiresSecureHTTPSProxyConnection``
 
-宣言のみ確認（実装未調査）。
+HTTPS プロキシ接続のセキュア要求を返す/設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`WebsiteDataStoreConfiguration` が保持する `requiresSecureHTTPSProxyConnection` の値を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+getter は `_configuration->requiresSecureHTTPSProxyConnection()` を返し、setter は `_configuration->setRequiresSecureHTTPSProxyConnection` に委譲する。
 
 ## References
-- [`_WKWebsiteDataStoreConfiguration.h#L65`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L65)
+- [_WKWebsiteDataStoreConfiguration.h#L65](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L65)
+- [_WKWebsiteDataStoreConfiguration.mm#L721](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L721)
+- [_WKWebsiteDataStoreConfiguration.mm#L726](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L726)
 
 ## Metadata
 | Key | Value |

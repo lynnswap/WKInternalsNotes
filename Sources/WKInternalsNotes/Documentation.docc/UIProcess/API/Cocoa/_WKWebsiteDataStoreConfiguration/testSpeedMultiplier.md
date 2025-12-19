@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebsiteDataStoreConfiguration/testSpeedMultiplier``
 
-宣言のみ確認（実装未調査）。
+テスト用の速度倍率を返す/設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`WebsiteDataStoreConfiguration` が保持する `testSpeedMultiplier` の値を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+getter は `_configuration->testSpeedMultiplier()` を返し、setter は `_configuration->setTestSpeedMultiplier` に委譲する。
 
 ## References
-- [`_WKWebsiteDataStoreConfiguration.h#L89`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L89)
+- [_WKWebsiteDataStoreConfiguration.h#L89](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L89)
+- [_WKWebsiteDataStoreConfiguration.mm#L636](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L636)
+- [_WKWebsiteDataStoreConfiguration.mm#L641](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L641)
 
 ## Metadata
 | Key | Value |
