@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKFormRotatingAccessoryPopover/accessoryDone()``
 
-宣言のみ確認（実装未調査）。
+アクセサリの完了処理を通知する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKContentView` に対して `accessoryDone` を呼び出す。
 
 ## References
 - [`WKFormPopover.h#L55`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFormPopover.h#L55)
+- [`WKFormPopover.mm#L51`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFormPopover.mm#L51)
 
 ## Metadata
 | Key | Value |

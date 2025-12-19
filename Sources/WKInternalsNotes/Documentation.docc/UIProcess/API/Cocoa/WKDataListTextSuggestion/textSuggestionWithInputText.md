@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKDataListTextSuggestion/textSuggestionWithInputText(_:)``
 
-宣言のみ確認（実装未調査）。
+入力テキストから候補を生成する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`USE(BROWSERENGINEKIT)` の場合は `initWithInputText:` を使って生成し、それ以外は `super` の実装にフォールバックする。
 
 ## References
 - [`WebDataListSuggestionsDropdownIOS.h#L38`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WebDataListSuggestionsDropdownIOS.h#L38)
+- [`WebDataListSuggestionsDropdownIOS.mm#L85`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WebDataListSuggestionsDropdownIOS.mm#L85)
 
 ## Metadata
 | Key | Value |

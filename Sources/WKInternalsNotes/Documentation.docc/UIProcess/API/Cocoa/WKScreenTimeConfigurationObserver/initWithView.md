@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKScreenTimeConfigurationObserver/initWithView(_:)``
 
-宣言のみ確認（実装未調査）。
+Screen Time 観測用オブザーバを初期化する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+対象の `WKWebView` を保持する。
 
 ## References
 - [`WKScreenTimeConfigurationObserver.h#L32`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/WKScreenTimeConfigurationObserver.h#L32)
+- [`WKScreenTimeConfigurationObserver.mm#L45`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/WKScreenTimeConfigurationObserver.mm#L45)
 
 ## Metadata
 | Key | Value |

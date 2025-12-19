@@ -1,17 +1,18 @@
 # ``WKInternalsNotes/_WKTextInputContext/init()``
 
-宣言のみ確認（実装未調査）。
+使用不可のイニシャライザ。
 
 ## Objective-C Declaration
 ```objective-c
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype)init;
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+実装では常に `nil` を返す。`_initWithTextInputContext:` を使用する。
 
 ## References
 - [`_WKTextInputContext.h#L31`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextInputContext.h#L31)
+- [`_WKTextInputContext.mm#L37`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextInputContext.mm#L37)
 
 ## Metadata
 | Key | Value |

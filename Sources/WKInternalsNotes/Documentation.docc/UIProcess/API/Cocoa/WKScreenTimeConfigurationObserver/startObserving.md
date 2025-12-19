@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKScreenTimeConfigurationObserver/startObserving()``
 
-宣言のみ確認（実装未調査）。
+Screen Time 設定の監視を開始する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`STScreenTimeConfigurationObserver` を生成し、`configuration.enforcesChildRestrictions` の KVO を設定して監視を開始する。
 
 ## References
 - [`WKScreenTimeConfigurationObserver.h#L34`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/WKScreenTimeConfigurationObserver.h#L34)
+- [`WKScreenTimeConfigurationObserver.mm#L67`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/WKScreenTimeConfigurationObserver.mm#L67)
 
 ## Metadata
 | Key | Value |

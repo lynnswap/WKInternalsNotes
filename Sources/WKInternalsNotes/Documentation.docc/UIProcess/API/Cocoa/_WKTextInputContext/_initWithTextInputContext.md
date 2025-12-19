@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKTextInputContext/_initWithTextInputContext(_:)``
 
-宣言のみ確認（実装未調査）。
+WebCore の `ElementContext` から初期化する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`context` を `_textInputContext` に保存して返す。
 
 ## References
 - [`_WKTextInputContextInternal.h#L34`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextInputContextInternal.h#L34)
+- [`_WKTextInputContext.mm#L42`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextInputContext.mm#L42)
 
 ## Metadata
 | Key | Value |

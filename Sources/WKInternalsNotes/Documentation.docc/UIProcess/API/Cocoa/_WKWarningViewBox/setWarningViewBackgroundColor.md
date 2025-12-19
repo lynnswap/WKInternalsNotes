@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWarningViewBox/setWarningViewBackgroundColor(_:)``
 
-宣言のみ確認（実装未調査）。
+警告ビューの背景色を設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+macOS では `_backgroundColor` を保持して `wantsLayer` を有効化し、iOS では `backgroundColor` を直接設定する。
 
 ## References
 - [`_WKWarningView.h#L60`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/_WKWarningView.h#L60)
+- [`_WKWarningView.mm#L286`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/_WKWarningView.mm#L286)
 
 ## Metadata
 | Key | Value |

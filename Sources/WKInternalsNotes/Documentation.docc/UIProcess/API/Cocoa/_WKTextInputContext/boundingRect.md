@@ -1,20 +1,18 @@
 # ``WKInternalsNotes/_WKTextInputContext/boundingRect``
 
-宣言のみ確認（実装未調査）。
+対象要素のバウンディング矩形を返す。
 
 ## Objective-C Declaration
 ```objective-c
 @property (nonatomic, readonly) CGRect boundingRect;
 ```
 
-## Default Value
-未調査（初期化経路の確認が必要）。
-
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+内部の `ElementContext` が保持する `boundingRect` を返す。
 
 ## References
 - [`_WKTextInputContext.h#L33`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextInputContext.h#L33)
+- [`_WKTextInputContext.mm#L53`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextInputContext.mm#L53)
 
 ## Metadata
 | Key | Value |

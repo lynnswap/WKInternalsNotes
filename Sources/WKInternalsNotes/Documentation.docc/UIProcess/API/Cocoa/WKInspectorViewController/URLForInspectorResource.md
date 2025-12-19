@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKInspectorViewController/URLForInspectorResource(_:)``
 
-宣言のみ確認（実装未調査）。
+Inspector リソース用の URL を生成する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKInspectorResourceScheme` を使って URL を構築し、標準化したパスで返す。
 
 ## References
 - [`WKInspectorViewController.h#L50`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Inspector/mac/WKInspectorViewController.h#L50)
+- [`WKInspectorViewController.mm#L224`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Inspector/mac/WKInspectorViewController.mm#L224)
 
 ## Metadata
 | Key | Value |

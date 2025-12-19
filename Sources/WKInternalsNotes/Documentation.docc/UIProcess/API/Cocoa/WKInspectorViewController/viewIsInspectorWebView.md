@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKInspectorViewController/viewIsInspectorWebView(_:)``
 
-宣言のみ確認（実装未調査）。
+Inspector 用 WebView かどうかを判定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKInspectorWKWebView` クラスかどうかで判定する。
 
 ## References
 - [`WKInspectorViewController.h#L49`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Inspector/mac/WKInspectorViewController.h#L49)
+- [`WKInspectorViewController.mm#L219`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Inspector/mac/WKInspectorViewController.mm#L219)
 
 ## Metadata
 | Key | Value |

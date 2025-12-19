@@ -1,20 +1,18 @@
 # ``WKInternalsNotes/WKInspectorViewController/webView``
 
-宣言のみ確認（実装未調査）。
+Inspector 用の `WKWebView` を返す。
 
 ## Objective-C Declaration
 ```objective-c
 @property (nonatomic, readonly) WKWebView *webView;
 ```
 
-## Default Value
-未調査（初期化経路の確認が必要）。
-
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+初回アクセス時に `WKInspectorWKWebView` を生成し、UI/ナビゲーション/Inspector delegate を設定する。safe area 変更を監視して `obscuredContentInsets` を更新する。
 
 ## References
 - [`WKInspectorViewController.h#L44`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Inspector/mac/WKInspectorViewController.h#L44)
+- [`WKInspectorViewController.mm#L104`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Inspector/mac/WKInspectorViewController.mm#L104)
 
 ## Metadata
 | Key | Value |
