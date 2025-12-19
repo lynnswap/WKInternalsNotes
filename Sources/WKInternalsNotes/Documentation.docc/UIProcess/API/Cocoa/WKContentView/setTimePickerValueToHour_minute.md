@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/setTimePickerValueToHour(_:minute:)``
 
-宣言のみ確認（実装未調査）。
+時刻ピッカーに時刻値を設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`PEPPER_UI_CORE` が有効なら `WKTimePickerViewController` に `setHour:minute:` を呼び、無効なら `WKDateTimeInputControl` に `setTimePickerHour:minute:` を呼ぶ。
 
 ## References
 - [`WKContentViewInteraction.h#L1036`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L1036)
+- [`WKContentViewInteraction.mm#L14553`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14553)
 
 ## Metadata
 | Key | Value |

@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/setSelectedColorForColorPicker(_:)``
 
-宣言のみ確認（実装未調査）。
+カラーピッカーに選択色を反映する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_inputPeripheral` が `WKFormColorControl` の場合に `selectColor:` を呼ぶ。
 
 ## References
 - [`WKContentViewInteraction.h#L1035`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L1035)
+- [`WKContentViewInteraction.mm#L14513`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14513)
 
 ## Metadata
 | Key | Value |
