@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_focusTextInputContext(_:placeCaretAt:completionHandler:)``
 
-宣言のみ確認（実装未調査）。
+指定コンテキストへフォーカスしてキャレットを配置する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`becomeFirstResponder` に失敗した場合は `nil` を返す。既に同一コンテキストなら読み取り専用かどうかで返却値を決め、そうでなければ `focusTextInputContextAndPlaceCaret` を呼び出して結果を返す。
 
 ## References
 - [`WKContentViewInteraction.h#L917`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L917)
+- [`WKContentViewInteraction.mm#L7453`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L7453)
 
 ## Metadata
 | Key | Value |
