@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/targetForActionForWebView(_:withSender:)``
 
-宣言のみ確認（実装未調査）。
+WebView 向けアクションのターゲットを決定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+非同期テキスト入力経路を使う場合、フォールバック用のアクションは `nil` を返してシステム側へ委ねる。その他は `super` の決定結果を返す。
 
 ## References
 - [`WKContentViewInteraction.h#L761`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L761)
+- [`WKContentViewInteraction.mm#L4946`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L4946)
 
 ## Metadata
 | Key | Value |

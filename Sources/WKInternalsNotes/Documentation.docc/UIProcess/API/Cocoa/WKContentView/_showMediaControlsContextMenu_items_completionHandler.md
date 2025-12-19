@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_showMediaControlsContextMenu(_:items:completionHandler:)``
 
-宣言のみ確認（実装未調査）。
+メディアコントロールのコンテキストメニューを表示する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKActionSheetAssistant` にメニュー表示を委譲し、選択結果を `completionHandler` に返す。
 
 ## References
 - [`WKContentViewInteraction.h#L972`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L972)
+- [`WKContentViewInteraction.mm#L12258`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L12258)
 
 ## Metadata
 | Key | Value |

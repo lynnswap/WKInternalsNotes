@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_didHandleKeyEvent(_:eventWasHandled:)``
 
-宣言のみ確認（実装未調査）。
+キーイベント処理結果を反映する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+スクロールアニメータへの通知やアクティブキー処理状態を更新し、待機中の完了ハンドラに処理結果を返す。
 
 ## References
 - [`WKContentViewInteraction.h#L840`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L840)
+- [`WKContentViewInteraction.mm#L7719`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L7719)
 
 ## Metadata
 | Key | Value |
