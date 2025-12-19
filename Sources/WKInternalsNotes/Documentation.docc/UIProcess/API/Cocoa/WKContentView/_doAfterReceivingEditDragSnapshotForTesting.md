@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_doAfterReceivingEditDragSnapshotForTesting(_:)``
 
-宣言のみ確認（実装未調査）。
+編集ドラッグのスナップショット取得後にアクションを実行する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`ENABLE(DRAG_SUPPORT)` かつスナップショット待ちの場合はアクションを保持し、そうでなければ即時実行する。
 
 ## References
 - [`WKContentViewInteraction.h#L1040`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L1040)
+- [`WKContentViewInteraction.mm#L14415`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14415)
 
 ## Metadata
 | Key | Value |
