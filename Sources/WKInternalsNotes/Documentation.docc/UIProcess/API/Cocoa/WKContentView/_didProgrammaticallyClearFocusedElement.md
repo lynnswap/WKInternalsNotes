@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_didProgrammaticallyClearFocusedElement(_:)``
 
-宣言のみ確認（実装未調査）。
+プログラム的にフォーカス解除された要素に対する後処理を行う。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+フォーカス中の要素と `context` が一致する場合にテキスト入力コンテキストを無効化する。
 
 ## References
 - [`WKContentViewInteraction.h#L810`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L810)
+- [`WKContentViewInteraction.mm#L8695`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L8695)
 
 ## Metadata
 | Key | Value |

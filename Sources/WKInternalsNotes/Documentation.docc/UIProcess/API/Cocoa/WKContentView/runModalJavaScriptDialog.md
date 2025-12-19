@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/runModalJavaScriptDialog(_:)``
 
-宣言のみ確認（実装未調査）。
+モーダルな JavaScript ダイアログ処理を実行する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+キーボードでフォーカス移動中ならコールバックを保留し、それ以外は即座に実行する。
 
 ## References
 - [`WKContentViewInteraction.h#L885`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L885)
+- [`WKContentViewInteraction.mm#L6120`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L6120)
 
 ## Metadata
 | Key | Value |
