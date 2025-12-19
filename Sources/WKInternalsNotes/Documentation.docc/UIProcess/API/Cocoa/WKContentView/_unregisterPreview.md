@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_unregisterPreview()``
 
-宣言のみ確認（実装未調査）。
+リンクプレビュー用の登録を解除する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+UIContextMenu を使う構成では何もしない。レガシー経路では `UIPreviewItemController` の delegate を外し、ジェスチャ参照とコントローラを解放する。
 
 ## References
 - [`WKContentViewInteraction.h#L1085`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L1085)
+- [`WKContentViewInteraction.mm#L14770`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14770)
 
 ## Metadata
 | Key | Value |

@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_registerPreview()``
 
-宣言のみ確認（実装未調査）。
+リンクプレビュー用の登録処理を行う。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`allowsLinkPreview` が無ければ何もしない。UIContextMenu を使う構成では外部 delegate を設定し、必要ならクリックドライバーを上書きする。レガシー経路では `UIPreviewItemController` を生成して delegate と関連ジェスチャを保持する。
 
 ## References
 - [`WKContentViewInteraction.h#L1084`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L1084)
+- [`WKContentViewInteraction.mm#L14747`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14747)
 
 ## Metadata
 | Key | Value |

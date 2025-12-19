@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_createTargetedContextMenuHintPreviewForFocusedElement(_:)``
 
-宣言のみ確認（実装未調査）。
+フォーカス中要素向けのコンテキストメニューヒント用プレビューを生成する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+フォーカス要素の種別に応じて背景色を決め、`interactionRect` を基にプレビュー矩形を算出する。必要に応じて表示方向と空き領域から矩形を左右どちらかに寄せ、スナップショット由来の `UITargetedPreview` を作成して保持する。
 
 ## References
 - [`WKContentViewInteraction.h#L957`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L957)
+- [`WKContentViewInteraction.mm#L11719`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L11719)
 
 ## Metadata
 | Key | Value |
