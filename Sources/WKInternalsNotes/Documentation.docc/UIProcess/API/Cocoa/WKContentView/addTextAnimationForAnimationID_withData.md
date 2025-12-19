@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/addTextAnimationForAnimationID(_:withData:)``
 
-宣言のみ確認（実装未調査）。
+テキストアニメーションを登録する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+設定が無効なら何もしない。`Final` スタイルの場合は source/destination の対応を記録し、`WKTextAnimationManager` を遅延生成してアニメーションを登録する。
 
 ## References
 - [`WKContentViewInteraction.h#L935`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L935)
+- [`WKContentViewInteraction.mm#L14161`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14161)
 
 ## Metadata
 | Key | Value |

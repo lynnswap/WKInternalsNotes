@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_dataOwnerForPasteboard(_:)``
 
-宣言のみ確認（実装未調査）。
+Pasteboard アクセス意図に応じた data owner を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+読み取り/書き込みの意図に応じて `self._dataOwnerForPaste` / `self._dataOwnerForCopy` を選び、`WKWebView` の `effectiveDataOwner` を `WebCore::DataOwnerType` に変換して返す。
 
 ## References
 - [`WKContentViewInteraction.h#L977`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L977)
+- [`WKContentViewInteraction.mm#L10267`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L10267)
 
 ## Metadata
 | Key | Value |

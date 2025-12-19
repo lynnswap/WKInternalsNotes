@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_didCompleteSyntheticClick()``
 
-宣言のみ確認（実装未調査）。
+合成クリック完了時の後処理を行う。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+ポインタ ID を解放し、ログ出力の後に入力ビュー更新のデファリングを解除する。
 
 ## References
 - [`WKContentViewInteraction.h#L800`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L800)
+- [`WKContentViewInteraction.mm#L3974`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L3974)
 
 ## Metadata
 | Key | Value |

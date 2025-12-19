@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/removeTextAnimationForAnimationID(_:)``
 
-宣言のみ確認（実装未調査）。
+テキストアニメーションを解除する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+ID が無い場合や設定無効時、マネージャ未生成時は何もしない。条件が揃えば登録済みのアニメーションを削除する。
 
 ## References
 - [`WKContentViewInteraction.h#L936`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L936)
+- [`WKContentViewInteraction.mm#L14175`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14175)
 
 ## Metadata
 | Key | Value |
