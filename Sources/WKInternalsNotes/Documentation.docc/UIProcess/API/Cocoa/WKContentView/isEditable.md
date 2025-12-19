@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/isEditable``
 
-宣言のみ確認（実装未調査）。
+編集可能状態かどうかを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`_isEditable` を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+内部フラグ `_isEditable` を返す単純な getter。
 
 ## References
 - [`WKContentViewInteraction.h#L543`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L543)
+- [`WKContentViewInteraction.mm#L1948`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L1948)
 
 ## Metadata
 | Key | Value |

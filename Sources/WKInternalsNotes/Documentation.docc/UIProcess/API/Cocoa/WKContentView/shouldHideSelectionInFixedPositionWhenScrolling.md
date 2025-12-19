@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/shouldHideSelectionInFixedPositionWhenScrolling``
 
-宣言のみ確認（実装未調査）。
+固定位置要素内の選択をスクロール時に隠すべきかを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+編集状態や editorState の固定位置情報に依存して判定する。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`selectionHonorsOverflowScrolling` が有効なら `NO`。編集時は `_focusedElementInformation.insideFixedPosition`、それ以外は `editorState` の post-layout 情報を参照して判定する。
 
 ## References
 - [`WKContentViewInteraction.h#L722`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L722)
+- [`WKContentViewInteraction.mm#L1936`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L1936)
 
 ## Metadata
 | Key | Value |
