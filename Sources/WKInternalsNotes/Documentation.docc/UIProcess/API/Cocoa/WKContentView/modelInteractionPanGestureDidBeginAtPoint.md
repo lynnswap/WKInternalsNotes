@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/modelInteractionPanGestureDidBeginAtPoint(_:)``
 
-宣言のみ確認（実装未調査）。
+モデル操作のパン開始を処理する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+ステージモードセッションが無い場合に作成し、指定点で操作対象モデルの取得を要求する。
 
 ## References
 - [`WKContentViewInteraction.h#L904`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L904)
+- [`WKContentViewInteraction.mm#L11549`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L11549)
 
 ## Metadata
 | Key | Value |

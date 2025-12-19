@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_dismissContactPickerWithContacts(_:)``
 
-宣言のみ確認（実装未調査）。
+連絡先ピッカーを指定連絡先で閉じる。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+ContactsUI が有効な場合に `_contactPicker` へ `dismissWithContacts:` を委譲する。
 
 ## References
 - [`WKContentViewInteraction.h#L1041`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L1041)
+- [`WKContentViewInteraction.mm#L14635`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14635)
 
 ## Metadata
 | Key | Value |

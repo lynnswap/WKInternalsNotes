@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_showContactPicker(_:completionHandler:)``
 
-宣言のみ確認（実装未調査）。
+連絡先ピッカーを表示する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+ContactsUI が利用可能な場合は `WKContactPicker` を生成して delegate を設定し、`presentWithRequestData:completionHandler:` で表示する。未対応環境では `completionHandler` に `std::nullopt` を返す。
 
 ## References
 - [`WKContentViewInteraction.h#L831`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L831)
+- [`WKContentViewInteraction.mm#L9782`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L9782)
 
 ## Metadata
 | Key | Value |

@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_showDigitalCredentialsPicker(_:completionHandler:)``
 
-宣言のみ確認（実装未調査）。
+デジタルクレデンシャルのピッカーを表示する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKDigitalCredentialsPicker` を生成し、WebView と `WebPageProxy` を渡して `presentWithRequestData:completionHandler:` を呼ぶ。
 
 ## References
 - [`WKContentViewInteraction.h#L834`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L834)
+- [`WKContentViewInteraction.mm#L9765`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L9765)
 
 ## Metadata
 | Key | Value |

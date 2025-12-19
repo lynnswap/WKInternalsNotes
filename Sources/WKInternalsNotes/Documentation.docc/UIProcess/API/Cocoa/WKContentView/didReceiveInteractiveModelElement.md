@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/didReceiveInteractiveModelElement(_:)``
 
-宣言のみ確認（実装未調査）。
+インタラクティブモデル要素の受信結果を反映する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+ステージモードセッションが無いか準備中でなければ何もしない。準備中の場合は `nodeID` を保存し、値があれば準備完了として `isPreparingForInteraction` を false にする。
 
 ## References
 - [`WKContentViewInteraction.h#L907`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L907)
+- [`WKContentViewInteraction.mm#L11575`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L11575)
 
 ## Metadata
 | Key | Value |

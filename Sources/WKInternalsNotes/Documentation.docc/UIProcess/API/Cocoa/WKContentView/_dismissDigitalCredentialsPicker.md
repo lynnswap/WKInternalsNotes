@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_dismissDigitalCredentialsPicker(_:)``
 
-宣言のみ確認（実装未調査）。
+デジタルクレデンシャルピッカーを閉じる。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+ピッカーが表示されていなければログを残し、`completionHandler(false)` を返す。表示中なら `dismissWithCompletionHandler:` を呼ぶ。
 
 ## References
 - [`WKContentViewInteraction.h#L835`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L835)
+- [`WKContentViewInteraction.mm#L9771`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L9771)
 
 ## Metadata
 | Key | Value |
