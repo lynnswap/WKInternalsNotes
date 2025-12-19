@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_willStartScrollingOrZooming()``
 
-宣言のみ確認（実装未調査）。
+スクロール/ズーム開始時の内部処理を行う。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_textInteractionWrapper` に開始通知を送り、`WebPageProxy` の `isScrollingOrZooming` を `true` にする。Pepper UI Core 環境ではフォーカス移動ナビゲーションを解除する。
 
 ## References
 - [`WKContentViewInteraction.h#L823`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L823)
+- [`WKContentViewInteraction.mm#L4158`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L4158)
 
 ## Metadata
 | Key | Value |
