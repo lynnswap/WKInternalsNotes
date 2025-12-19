@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_removeTemporaryDirectoriesWhenDeallocated(_:)``
 
-宣言のみ確認（実装未調査）。
+破棄時に削除する一時ディレクトリを登録する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+渡された URL を `_temporaryURLsToDeleteWhenDeallocated` に追加する。
 
 ## References
 - [`WKContentView.h#L123`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.h#L123)
+- [`WKContentView.mm#L538`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.mm#L538)
 
 ## Metadata
 | Key | Value |
