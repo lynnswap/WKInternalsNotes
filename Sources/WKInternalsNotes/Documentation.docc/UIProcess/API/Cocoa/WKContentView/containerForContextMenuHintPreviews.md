@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/containerForContextMenuHintPreviews()``
 
-宣言のみ確認（実装未調査）。
+コンテキストメニューヒント用プレビューのコンテナを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+未生成なら専用コンテナを作成し、`WKUIDelegatePrivate` が提供するコンテナがあればそこに、無ければ `_interactionViewsContainerView` に追加する。
 
 ## References
 - [`WKContentViewInteraction.h#L954`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L954)
+- [`WKContentViewInteraction.mm#L10319`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L10319)
 
 ## Metadata
 | Key | Value |
