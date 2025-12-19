@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_didChangeWebViewEditability()``
 
-宣言のみ確認（実装未調査）。
+WebView の編集可否変更に応じて UI を更新する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+アクセサリの次/前ボタン表示や二本指タップの有効/無効を更新し、編集可の場合は `UITextInputMultiDocument` をプロトコル追加する。
 
 ## References
 - [`WKContentViewInteraction.h#L856`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L856)
+- [`WKContentViewInteraction.mm#L6415`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L6415)
 
 ## Metadata
 | Key | Value |
