@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebsiteDataStoreConfiguration/perOriginStorageQuota``
 
-宣言のみ確認（実装未調査）。
+Origin ごとのストレージ容量上限を返す/設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`WebsiteDataStoreConfiguration` が保持する `perOriginStorageQuota` の値を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+getter は `_configuration->perOriginStorageQuota()` を返し、setter は `_configuration->setPerOriginStorageQuota` に委譲する。
 
 ## References
-- [`_WKWebsiteDataStoreConfiguration.h#L55`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L55)
+- [_WKWebsiteDataStoreConfiguration.h#L55](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L55)
+- [_WKWebsiteDataStoreConfiguration.mm#L495](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L495)
+- [_WKWebsiteDataStoreConfiguration.mm#L500](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L500)
 
 ## Metadata
 | Key | Value |

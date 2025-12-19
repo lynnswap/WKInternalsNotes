@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebsiteDataStoreConfiguration/isDeclarativeWebPushEnabled``
 
-宣言のみ確認（実装未調査）。
+Declarative Web Push を有効にするかを返す/設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`ENABLE(DECLARATIVE_WEB_PUSH)` が無効な場合は常に `NO`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+getter は `ENABLE(DECLARATIVE_WEB_PUSH)` が有効な場合に `_configuration->isDeclarativeWebPushEnabled()` を返し、無効な場合は `NO` を返す。setter は機能有効時のみ `_configuration->setIsDeclarativeWebPushEnabled` に委譲する。
 
 ## References
-- [`_WKWebsiteDataStoreConfiguration.h#L104`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L104)
+- [_WKWebsiteDataStoreConfiguration.h#L104](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L104)
+- [_WKWebsiteDataStoreConfiguration.mm#L619](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L619)
+- [_WKWebsiteDataStoreConfiguration.mm#L628](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L628)
 
 ## Metadata
 | Key | Value |

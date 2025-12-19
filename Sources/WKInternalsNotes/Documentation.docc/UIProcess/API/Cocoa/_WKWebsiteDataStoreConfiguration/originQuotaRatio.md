@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebsiteDataStoreConfiguration/originQuotaRatio``
 
-宣言のみ確認（実装未調査）。
+Origin quota の比率を返す/設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+未設定の場合は `nil` を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+getter は `_configuration->originQuotaRatio()` が `std::nullopt` の場合に `nil` を返す。setter は 0.0〜1.0 の範囲外なら例外を投げ、範囲内なら `setOriginQuotaRatio` に委譲する。
 
 ## References
-- [`_WKWebsiteDataStoreConfiguration.h#L56`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L56)
+- [_WKWebsiteDataStoreConfiguration.h#L56](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L56)
+- [_WKWebsiteDataStoreConfiguration.mm#L505](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L505)
+- [_WKWebsiteDataStoreConfiguration.mm#L514](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L514)
 
 ## Metadata
 | Key | Value |

@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebsiteDataStoreConfiguration/volumeCapacityOverride``
 
-宣言のみ確認（実装未調査）。
+ボリューム容量の上書き値を返す/設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+未設定の場合は `nil` を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+getter は `_configuration->volumeCapacityOverride()` が `std::nullopt` の場合に `nil` を返し、設定されていれば `NSNumber` に変換して返す。setter は `NSNumber` を `std::optional<uint64_t>` に変換して設定する。
 
 ## References
-- [`_WKWebsiteDataStoreConfiguration.h#L103`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L103)
+- [_WKWebsiteDataStoreConfiguration.h#L103](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L103)
+- [_WKWebsiteDataStoreConfiguration.mm#L565](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L565)
+- [_WKWebsiteDataStoreConfiguration.mm#L574](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L574)
 
 ## Metadata
 | Key | Value |

@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebsiteDataStoreConfiguration/standaloneApplicationURL``
 
-宣言のみ確認（実装未調査）。
+スタンドアロンアプリの URL を返す/設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`WebsiteDataStoreConfiguration` が保持する `standaloneApplicationURL` の値を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+getter は `_configuration->standaloneApplicationURL()` を `NSURL` に変換して返し、setter は `setStandaloneApplicationURL` に委譲する。
 
 ## References
-- [`_WKWebsiteDataStoreConfiguration.h#L99`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L99)
+- [_WKWebsiteDataStoreConfiguration.h#L99](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L99)
+- [_WKWebsiteDataStoreConfiguration.mm#L766](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L766)
+- [_WKWebsiteDataStoreConfiguration.mm#L771](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L771)
 
 ## Metadata
 | Key | Value |

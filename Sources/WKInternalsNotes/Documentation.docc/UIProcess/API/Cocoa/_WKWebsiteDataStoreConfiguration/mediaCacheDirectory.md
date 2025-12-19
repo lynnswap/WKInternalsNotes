@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebsiteDataStoreConfiguration/mediaCacheDirectory``
 
-宣言のみ確認（実装未調査）。
+メディアキャッシュの保存先ディレクトリを返す/設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`WebsiteDataStoreConfiguration` が保持する `mediaCacheDirectory` の値を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+getter は `_configuration->mediaCacheDirectory()` からディレクトリ URL を作成して返す。setter は永続ストア以外または identifier 付き構成では例外を投げ、file URL を検証した上で `setMediaCacheDirectory` を呼ぶ。
 
 ## References
-- [`_WKWebsiteDataStoreConfiguration.h#L87`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L87)
+- [_WKWebsiteDataStoreConfiguration.h#L87](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L87)
+- [_WKWebsiteDataStoreConfiguration.mm#L333](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L333)
+- [_WKWebsiteDataStoreConfiguration.mm#L338](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L338)
 
 ## Metadata
 | Key | Value |

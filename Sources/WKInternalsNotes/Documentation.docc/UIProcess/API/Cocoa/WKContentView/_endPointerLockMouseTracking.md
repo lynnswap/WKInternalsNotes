@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_endPointerLockMouseTracking()``
 
-宣言のみ確認（実装未調査）。
+ポインタロック終了時にマウストラッキングを停止する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`ENABLE(POINTER_LOCK)` かつ `HAVE(UIKIT_WITH_MOUSE_SUPPORT)` のとき、`_mouseInteraction` に対して `endPointerLockMouseTracking` を呼ぶ。
 
 ## References
-- [`WKContentViewInteraction.h#L1092`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L1092)
+- [WKContentViewInteraction.h#L1092](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L1092)
+- [WKContentViewInteraction.mm#L14396](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14396)
 
 ## Metadata
 | Key | Value |
