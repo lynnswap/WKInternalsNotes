@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_disableInspectorNodeSearch()``
 
-宣言のみ確認（実装未調査）。
+インスペクタのノード検索モードを無効化する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+フラグを下げ、既定のジェスチャを復元して検索用ジェスチャを解除する。
 
 ## References
 - [`WKContentViewInteraction.h#L843`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L843)
+- [`WKContentViewInteraction.mm#L1891`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L1891)
 
 ## Metadata
 | Key | Value |

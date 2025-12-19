@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_showInspectorHighlight(_:)``
 
-宣言のみ確認（実装未調査）。
+インスペクタのハイライト表示を行う。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_inspectorHighlightView` が無ければ生成して `rootContentView` の上に追加し、ハイライト情報とズーム倍率/可視領域を渡して更新する。
 
 ## References
 - [`WKContentView.h#L125`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.h#L125)
+- [`WKContentView.mm#L613`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.mm#L613)
 
 ## Metadata
 | Key | Value |

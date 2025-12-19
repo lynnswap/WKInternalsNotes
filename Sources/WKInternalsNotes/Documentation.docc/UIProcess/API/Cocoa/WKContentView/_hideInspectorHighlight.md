@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_hideInspectorHighlight()``
 
-宣言のみ確認（実装未調査）。
+インスペクタのハイライト表示を終了する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_inspectorHighlightView` があれば `removeFromSuperview` して `nil` にする。
 
 ## References
 - [`WKContentView.h#L126`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.h#L126)
+- [`WKContentView.mm#L622`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.mm#L622)
 
 ## Metadata
 | Key | Value |
