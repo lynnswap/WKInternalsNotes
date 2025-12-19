@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKResourceLoadInfo/originalURL``
 
-宣言のみ確認（実装未調査）。
+元の URL を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -11,10 +11,11 @@
 未調査（初期化経路の確認が必要）。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+内部の `ResourceLoadInfo` が保持する `originalURL` を `NSURL` として返す。
 
 ## References
 - [`_WKResourceLoadInfo.h#L60`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKResourceLoadInfo.h#L60)
+- [`_WKResourceLoadInfo.mm#L113`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKResourceLoadInfo.mm#L113)
 
 ## Metadata
 | Key | Value |

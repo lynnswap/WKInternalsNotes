@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKResourceLoadInfo/parentFrame``
 
-宣言のみ確認（実装未調査）。
+親フレームのハンドルを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -11,10 +11,11 @@
 未調査（初期化経路の確認が必要）。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`parentFrameID` が存在する場合に `_WKFrameHandle` を生成して返し、無ければ `nil`。
 
 ## References
 - [`_WKResourceLoadInfo.h#L58`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKResourceLoadInfo.h#L58)
+- [`_WKResourceLoadInfo.mm#L99`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKResourceLoadInfo.mm#L99)
 
 ## Metadata
 | Key | Value |
