@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/potentialTapInProgress``
 
-宣言のみ確認（実装未調査）。
+潜在的なタップ処理中かどうかを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`_potentialTapInProgress` を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_potentialTapInProgress` の値をそのまま返す。
 
 ## References
 - [`WKContentViewInteraction.h#L547`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L547)
+- [`WKContentViewInteraction.mm#L3871`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L3871)
 
 ## Metadata
 | Key | Value |
