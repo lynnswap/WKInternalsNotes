@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_didScroll()``
 
-宣言のみ確認（実装未調査）。
+スクロール発生時の内部処理を行う。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+コンテキストメニューヒント用コンテナの位置更新後、ロングプレスをキャンセルし、進行中のインタラクションを解除する。
 
 ## References
 - [`WKContentViewInteraction.h#L824`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L824)
+- [`WKContentViewInteraction.mm#L2759`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L2759)
 
 ## Metadata
 | Key | Value |

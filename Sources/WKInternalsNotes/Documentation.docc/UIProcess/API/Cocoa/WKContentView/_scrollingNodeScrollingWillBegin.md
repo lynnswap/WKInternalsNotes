@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_scrollingNodeScrollingWillBegin(_:)``
 
-宣言のみ確認（実装未調査）。
+スクロールノードのスクロール開始を通知する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+対象ノードに対応する `UIScrollView` を取得し、`_textInteractionWrapper` にオーバーフロースクロール開始を伝える。
 
 ## References
 - [`WKContentViewInteraction.h#L826`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L826)
+- [`WKContentViewInteraction.mm#L2767`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L2767)
 
 ## Metadata
 | Key | Value |
