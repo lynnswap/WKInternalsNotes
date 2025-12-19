@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_setAcceleratedCompositingRootView(_:)``
 
-宣言のみ確認（実装未調査）。
+アクセラレーテッドコンポジット用のルートビューを設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_rootContentView` の子ビューを置き換え、`rootView` を追加する。
 
 ## References
 - [`WKContentView.h#L122`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.h#L122)
+- [`WKContentView.mm#L1043`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.mm#L1043)
 
 ## Metadata
 | Key | Value |

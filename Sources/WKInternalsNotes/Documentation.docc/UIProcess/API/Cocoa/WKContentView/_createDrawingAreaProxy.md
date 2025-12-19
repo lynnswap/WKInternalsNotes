@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_createDrawingAreaProxy(_:)``
 
-宣言のみ確認（実装未調査）。
+DrawingAreaProxy を生成する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`RemoteLayerTreeDrawingAreaProxyIOS` を生成して返す。
 
 ## References
 - [`WKContentView.h#L97`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.h#L97)
+- [`WKContentView.mm#L895`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.mm#L895)
 
 ## Metadata
 | Key | Value |
