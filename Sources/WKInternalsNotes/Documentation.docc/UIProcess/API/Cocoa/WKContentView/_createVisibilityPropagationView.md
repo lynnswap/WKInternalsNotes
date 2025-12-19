@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_createVisibilityPropagationView()``
 
-宣言のみ確認（実装未調査）。
+可視性伝播ビューを生成して登録する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKVisibilityPropagationView` を生成して保持集合に追加し、各プロセス向けの伝播設定を行ったうえで返す。
 
 ## References
 - [`WKContentView.h#L117`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.h#L117)
+- [`WKContentView.mm#L972`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.mm#L972)
 
 ## Metadata
 | Key | Value |

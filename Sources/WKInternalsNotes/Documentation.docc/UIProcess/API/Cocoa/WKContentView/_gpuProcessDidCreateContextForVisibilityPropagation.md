@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_gpuProcessDidCreateContextForVisibilityPropagation()``
 
-宣言のみ確認（実装未調査）。
+GPU プロセスの可視性伝播コンテキスト生成を通知する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_setupVisibilityPropagationForGPUProcess` を呼び、伝播ビューを再設定する。
 
 ## References
 - [`WKContentView.h#L111`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.h#L111)
+- [`WKContentView.mm#L960`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.mm#L960)
 
 ## Metadata
 | Key | Value |
