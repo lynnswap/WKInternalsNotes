@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_simulateTextEntered(_:)``
 
-宣言のみ確認（実装未調査）。
+テキスト入力をシミュレートする。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+フルスクリーンの入力リストや Quickboard が表示中であればそれぞれの入力経路に委譲し、該当しない場合は `insertText:` を呼ぶ。
 
 ## References
 - [`WKContentViewInteraction.h#L1032`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L1032)
+- [`WKContentViewInteraction.mm#L14452`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14452)
 
 ## Metadata
 | Key | Value |

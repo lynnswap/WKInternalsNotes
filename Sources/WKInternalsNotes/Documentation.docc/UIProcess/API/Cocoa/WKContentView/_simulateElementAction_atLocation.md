@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_simulateElementAction(_:atLocation:)``
 
-宣言のみ確認（実装未調査）。
+指定位置の要素アクションを実行する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+最新のレイヤーツリートランザクションIDを保持し、位置情報更新後に `_WKActivatedElementInfo` と `_WKElementAction` を構築して実行する。
 
 ## References
 - [`WKContentViewInteraction.h#L1030`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L1030)
+- [`WKContentViewInteraction.mm#L14474`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14474)
 
 ## Metadata
 | Key | Value |

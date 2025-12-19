@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_simulateLongPressActionAtLocation(_:)``
 
-宣言のみ確認（実装未調査）。
+指定位置のロングプレスアクションをシミュレートする。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+位置情報更新後に `_actionForLongPress` を取得し、該当アクションがあれば `performSelector:` で実行する。
 
 ## References
 - [`WKContentViewInteraction.h#L1031`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L1031)
+- [`WKContentViewInteraction.mm#L14484`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14484)
 
 ## Metadata
 | Key | Value |
