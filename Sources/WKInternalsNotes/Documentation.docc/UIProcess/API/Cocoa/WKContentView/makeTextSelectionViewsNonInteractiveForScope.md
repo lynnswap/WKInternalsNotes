@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/makeTextSelectionViewsNonInteractiveForScope()``
 
-宣言のみ確認（実装未調査）。
+テキスト選択ビューを一時的に非インタラクティブにする。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`managedTextSelectionViews` とその子孫で `userInteractionEnabled` のものを収集して無効化し、スコープ終了時に元へ戻す `ScopeExit` を返す。
 
 ## References
-- [`WKContentViewInteraction.h`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h)
+- [`WKContentViewInteraction.h#L1008`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L1008)
+- [`WKContentViewInteraction.mm#L1218`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L1218)
 
 ## Metadata
 | Key | Value |

@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/stopRelinquishingFirstResponderToFocusedElement()``
 
-宣言のみ確認（実装未調査）。
+フォーカス中要素へのレスポンダー移譲を終了する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+フラグを解除し、`WKWebView` のフォーカス保持カウントを減らす。
 
 ## References
 - [`WKContentViewInteraction.h#L868`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L868)
+- [`WKContentViewInteraction.mm#L9924`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L9924)
 
 ## Metadata
 | Key | Value |
