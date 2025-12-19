@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/supportsTextReplacementForWebView``
 
-宣言のみ確認（実装未調査）。
+テキスト置換が可能かどうかを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`self.webView._editable` を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKWebView` の編集可能状態をそのまま返す getter。
 
 ## References
 - [`WKContentViewInteraction.h#L985`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L985)
+- [`WKContentViewInteraction.mm#L12764`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L12764)
 
 ## Metadata
 | Key | Value |

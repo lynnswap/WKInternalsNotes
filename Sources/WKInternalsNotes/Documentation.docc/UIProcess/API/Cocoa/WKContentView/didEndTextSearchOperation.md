@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/didEndTextSearchOperation()``
 
-宣言のみ確認（実装未調査）。
+テキスト検索終了時の処理を行う。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+検索 UI を非表示にする。
 
 ## References
 - [`WKContentViewInteraction.h#L988`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L988)
+- [`WKContentViewInteraction.mm#L12754`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L12754)
 
 ## Metadata
 | Key | Value |
