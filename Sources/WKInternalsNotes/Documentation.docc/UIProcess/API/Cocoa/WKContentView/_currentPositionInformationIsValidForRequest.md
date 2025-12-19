@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_currentPositionInformationIsValidForRequest(_:)``
 
-宣言のみ確認（実装未調査）。
+現在の位置情報がリクエストに対して有効か判定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_hasValidPositionInformation` とリクエストの一致判定の両方を満たす場合に `YES` を返す。
 
 ## References
 - [`WKContentViewInteraction.h#L821`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L821)
+- [`WKContentViewInteraction.mm#L3320`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L3320)
 
 ## Metadata
 | Key | Value |

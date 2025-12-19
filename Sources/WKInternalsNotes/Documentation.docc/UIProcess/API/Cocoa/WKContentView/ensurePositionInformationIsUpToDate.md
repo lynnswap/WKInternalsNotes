@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/ensurePositionInformationIsUpToDate(_:)``
 
-宣言のみ確認（実装未調査）。
+位置情報が最新であることを同期的に保証する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+最新情報が無い場合、Web プロセスが利用可能なら非同期更新を要求して同期待機し、応答に応じて `_hasValidPositionInformation` を更新して返す。
 
 ## References
 - [`WKContentViewInteraction.h#L882`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L882)
+- [`WKContentViewInteraction.mm#L3284`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L3284)
 
 ## Metadata
 | Key | Value |
