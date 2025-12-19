@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/requestTextRecognition(_:imageData:sourceLanguageIdentifier:targetLanguageIdentifier:completionHandler:)``
 
-宣言のみ確認（実装未調査）。
+画像データのテキスト認識を要求する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`ShareableBitmap` と `CGImage` の生成に失敗した場合は空の `TextRecognitionResult` を返す。`ENABLE(IMAGE_ANALYSIS_ENHANCEMENTS)` かつ `targetLanguageIdentifier` が指定されている場合は `requestVisualTranslation` に委譲し、それ以外は `VKAnalysisTypeText` の解析リクエストを `imageAnalyzer` に送って結果を `completion` に渡す。
 
 ## References
 - [`WKContentViewInteraction.h#L981`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L981)
+- [`WKContentViewInteraction.mm#L13038`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L13038)
 
 ## Metadata
 | Key | Value |

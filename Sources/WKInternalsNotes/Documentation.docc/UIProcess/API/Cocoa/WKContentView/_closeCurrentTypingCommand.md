@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_closeCurrentTypingCommand()``
 
-宣言のみ確認（実装未調査）。
+現在のタイピングコマンドを閉じる。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_page` が存在する場合に `WebPageProxy::closeCurrentTypingCommand()` を呼び出す。
 
 ## References
 - [`WKContentViewInteraction.h#L1001`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L1001)
+- [`WKContentViewInteraction.mm#L14208`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14208)
 
 ## Metadata
 | Key | Value |

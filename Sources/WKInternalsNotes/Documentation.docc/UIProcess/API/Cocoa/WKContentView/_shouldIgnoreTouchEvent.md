@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_shouldIgnoreTouchEvent(_:)``
 
-宣言のみ確認（実装未調査）。
+タッチイベントを無視すべきか判定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_touchEventsCanPreventNativeGestures` を `YES` に戻したうえで、画像解析インタラクション上のタッチや慣性スクロールの中断と判定される場合は `YES` を返す。
 
 ## References
 - [`WKContentViewInteraction.h#L1003`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L1003)
+- [`WKContentViewInteraction.mm#L9942`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L9942)
 
 ## Metadata
 | Key | Value |
