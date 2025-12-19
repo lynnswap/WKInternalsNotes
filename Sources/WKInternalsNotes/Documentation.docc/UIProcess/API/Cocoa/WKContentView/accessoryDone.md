@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/accessoryDone()``
 
-宣言のみ確認（実装未調査）。
+フォームアクセサリの Done 操作を処理する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_formAccessoryView` を渡して `accessoryViewDone:` を呼び出す。
 
 ## References
 - [`WKContentViewInteraction.h#L870`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L870)
+- [`WKContentViewInteraction.mm#L6219`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L6219)
 
 ## Metadata
 | Key | Value |
