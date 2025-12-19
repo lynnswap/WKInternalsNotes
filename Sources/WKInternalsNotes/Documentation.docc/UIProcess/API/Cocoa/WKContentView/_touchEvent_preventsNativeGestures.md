@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_touchEvent(_:preventsNativeGestures:)``
 
-宣言のみ確認（実装未調査）。
+ネイティブジェスチャー抑止時の内部フラグを更新する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+抑止対象かつタッチイベント配信中の場合、ロングプレス可否を無効化し、ネイティブジェスチャー抑止フラグと `defaultPrevented` を更新する。
 
 ## References
 - [`WKContentViewInteraction.h#L790`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L790)
+- [`WKContentViewInteraction.mm#L2452`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L2452)
 
 ## Metadata
 | Key | Value |

@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/deferringGestures``
 
-宣言のみ確認（実装未調査）。
+デファリング中のジェスチャ認識器一覧を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+タッチ開始/終了のデファリング群と、必要に応じてタッチ移動・画像解析のデファリング認識器を含む。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+各種デファリング用の `WKDeferringGestureRecognizer` を集約して返す。
 
 ## References
 - [`WKContentViewInteraction.h#L735`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L735)
+- [`WKContentViewInteraction.mm#L2476`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L2476)
 
 ## Metadata
 | Key | Value |
