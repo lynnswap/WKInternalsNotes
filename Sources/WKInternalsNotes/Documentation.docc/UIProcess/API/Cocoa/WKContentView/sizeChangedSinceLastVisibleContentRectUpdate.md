@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/sizeChangedSinceLastVisibleContentRectUpdate``
 
-宣言のみ確認（実装未調査）。
+可視領域更新以降にサイズ変更があったかを示す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`didUpdateVisibleRect` 実行後に `NO` へリセットされる。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`VisibleContentRectUpdateInfo` へフラグを渡し、更新完了後に `NO` へ戻す。
 
 ## References
 - [`WKContentView.h#L64`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.h#L64)
+- [`WKContentView.mm#L718`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.mm#L718)
+- [`WKContentView.mm#L734`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.mm#L734)
 
 ## Metadata
 | Key | Value |

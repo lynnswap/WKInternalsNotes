@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/resigningFirstResponder``
 
-宣言のみ確認（実装未調査）。
+ファーストレスポンダーを辞める処理中かを示す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`_resigningFirstResponder` を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`resignFirstResponderForWebView` の実行中に `SetForScope` で `YES` になり、処理終了後に戻る内部フラグ。
 
 ## References
 - [`WKContentView.h#L63`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.h#L63)
+- [`WKContentViewInteraction.h#L576`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L576)
+- [`WKContentViewInteraction.mm#L2126`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L2126)
 
 ## Metadata
 | Key | Value |
