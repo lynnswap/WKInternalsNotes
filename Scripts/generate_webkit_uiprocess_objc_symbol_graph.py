@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Generate a synthetic symbol graph for WKInternalsNotes from WebKit UIProcess Objective-C sources.
+Generate a synthetic symbol graph for WKInternalsNotes from WebKit UIProcess Objective-C/Swift sources.
 
 Goals:
   - Type-centric navigation (DocC-style):
@@ -14,7 +14,8 @@ Goals:
         matching symbols when generating the synthetic graph.
 
 By default, this script parses only .h files. Use --include-implementations to also scan
-.m/.mm files (only @interface blocks, limited to WK*/_WK* types).
+.m/.mm files (only @interface blocks, limited to WK*/_WK* types). Use --include-swift to
+scan .swift files for non-public type declarations.
 """
 
 from __future__ import annotations
@@ -48,6 +49,20 @@ EXCLUDED_PORT_PATH_PARTS = {
     "libwpe",
 }
 
+SWIFT_TYPE_KIND_MAP = {
+    "class": ("swift.class", "Class", "class"),
+    "struct": ("swift.struct", "Structure", "struct"),
+    "enum": ("swift.enum", "Enumeration", "enum"),
+    "protocol": ("swift.protocol", "Protocol", "protocol"),
+    "actor": ("swift.actor", "Actor", "actor"),
+}
+
+
+@dataclass(frozen=True)
+class SwiftTypeDecl:
+    name: str
+    kind: str
+
 
 def _strip_comments(text: str) -> str:
     # Remove /* ... */ and // ... comments. This is a best-effort preprocessing for parsing.
@@ -65,6 +80,66 @@ def _iter_files(root: Path, *, exts: tuple[str, ...]) -> Iterable[Path]:
         if EXCLUDED_PORT_PATH_PARTS.intersection(path.parts):
             continue
         yield path
+
+
+def _strip_swift_comments(text: str) -> str:
+    # Best-effort removal for parsing; ignores string literal edge cases.
+    text = re.sub(r"/\*.*?\*/", "", text, flags=re.S)
+    text = re.sub(r"//.*", "", text)
+    return text
+
+
+_SWIFT_TYPE_DECL_RE = re.compile(
+    r"^\s*(?:@[^\s]+\s+)*"
+    r"(?:(public|open|internal|fileprivate|private)\s+)?"
+    r"(?:(?:final|indirect|nonisolated|isolated|dynamic|lazy|required|convenience|override)\s+)*"
+    r"(class|struct|enum|protocol|actor)\s+"
+    r"([A-Za-z_][A-Za-z0-9_]*)"
+)
+
+
+def _iter_swift_type_decls(text: str) -> Iterable[SwiftTypeDecl]:
+    depth = 0
+    for line in text.splitlines():
+        if depth == 0:
+            m = _SWIFT_TYPE_DECL_RE.match(line)
+            if m:
+                access = m.group(1)
+                kind = m.group(2)
+                name = m.group(3)
+                if access not in {"public", "open"}:
+                    yield SwiftTypeDecl(name=name, kind=kind)
+        depth += line.count("{") - line.count("}")
+        if depth < 0:
+            depth = 0
+
+
+def _iter_swift_files(ui_process_root: Path) -> Iterable[Path]:
+    yield from _iter_files(ui_process_root, exts=(".swift",))
+
+
+def _make_swift_container_symbol(type_name: str, *, kind: str) -> dict[str, Any]:
+    kind_id, display_name, keyword = SWIFT_TYPE_KIND_MAP.get(kind, SWIFT_TYPE_KIND_MAP["class"])
+    return {
+        "accessLevel": "public",
+        "kind": {"identifier": kind_id, "displayName": display_name},
+        "identifier": {"precise": objc._make_precise_id(type_name), "interfaceLanguage": "swift"},  # noqa: SLF001
+        "pathComponents": [type_name],
+        "names": {
+            "title": type_name,
+            "navigator": [objc._fragment("identifier", type_name)],  # noqa: SLF001
+            "subHeading": [
+                objc._fragment("keyword", keyword),  # noqa: SLF001
+                objc._fragment("text", " "),  # noqa: SLF001
+                objc._fragment("identifier", type_name),  # noqa: SLF001
+            ],
+        },
+        "declarationFragments": [
+            objc._fragment("keyword", keyword),  # noqa: SLF001
+            objc._fragment("text", " "),  # noqa: SLF001
+            objc._fragment("identifier", type_name),  # noqa: SLF001
+        ],
+    }
 
 
 @dataclass(frozen=True)
@@ -189,8 +264,23 @@ def _iter_protocol_blocks(text: str) -> Iterable[ProtocolBlock]:
 
 def _iter_semicolon_decls(lines: list[str], *, starters: tuple[str, ...]) -> Iterable[str]:
     i = 0
+    in_macro = False
     while i < len(lines):
-        stripped = lines[i].lstrip()
+        line = lines[i]
+        stripped = line.lstrip()
+
+        if in_macro:
+            if not line.rstrip().endswith("\\"):
+                in_macro = False
+            i += 1
+            continue
+
+        if stripped.startswith("#define"):
+            if line.rstrip().endswith("\\"):
+                in_macro = True
+            i += 1
+            continue
+
         if not stripped.startswith(starters):
             i += 1
             continue
@@ -202,7 +292,7 @@ def _iter_semicolon_decls(lines: list[str], *, starters: tuple[str, ...]) -> Ite
             i += 1
             continue
 
-        buf: list[str] = [lines[i].rstrip()]
+        buf: list[str] = [line.rstrip()]
         i += 1
         while i < len(lines) and ";" not in buf[-1]:
             buf.append(lines[i].rstrip())
@@ -444,6 +534,7 @@ def _collect_symbols_from_headers(
     *,
     public: PublicSet,
     include_implementations: bool,
+    include_swift: bool,
 ) -> tuple[list[dict[str, Any]], list[dict[str, Any]], dict[str, dict[str, list[str]]]]:
     ui_process_root = webkit_root / WEBKIT_UI_PROCESS_DIR
     if not ui_process_root.exists():
@@ -619,6 +710,18 @@ def _collect_symbols_from_headers(
 
                 members_by_type_and_category.setdefault(block.type_name, {}).setdefault(category, set()).add(member_path)
 
+    if include_swift:
+        for path in _iter_swift_files(ui_process_root):
+            text = _strip_swift_comments(path.read_text(encoding="utf-8", errors="ignore"))
+            for decl in _iter_swift_type_decls(text):
+                if public.is_public_type(decl.name):
+                    continue
+                precise_id = objc._make_precise_id(decl.name)  # noqa: SLF001
+                if precise_id in symbol_by_precise_id:
+                    continue
+                add_symbol(_make_swift_container_symbol(decl.name, kind=decl.kind))
+                members_by_type_and_category.setdefault(decl.name, {})
+
     # Add container type symbols for any type that has at least one included member, and for any
     # non-public type definition we encountered in @interface blocks.
     for type_name in sorted(included_types):
@@ -645,13 +748,21 @@ def main() -> int:
         action="store_true",
         help="Also scan .m/.mm files (only @interface categories / class extensions for WK*/_WK* types).",
     )
+    parser.add_argument(
+        "--include-swift",
+        action="store_true",
+        help="Also scan .swift files for non-public type declarations.",
+    )
     parser.add_argument("--write-index", action="store_true", help="Also write a JSON index next to the symbol graph.")
     args = parser.parse_args()
 
     public = _build_public_set(args.webkit_root)
 
     symbols, relationships, members_index = _collect_symbols_from_headers(
-        args.webkit_root, public=public, include_implementations=args.include_implementations
+        args.webkit_root,
+        public=public,
+        include_implementations=args.include_implementations,
+        include_swift=args.include_swift,
     )
 
     platform = {

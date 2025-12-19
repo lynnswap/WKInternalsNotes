@@ -1,24 +1,20 @@
 #!/usr/bin/env python3
 """
-Generate a DocC member entry page (documentation extension) for a single symbol.
+Generate missing DocC member pages from the synthetic symbol index.
 
-This creates a markdown file under:
-  Sources/WKInternalsNotes/Documentation.docc/UIProcess/API/Cocoa/<HeaderStem>/<Entry>.md
+Outputs:
+  Sources/WKInternalsNotes/Documentation.docc/UIProcess/API/Cocoa/<Container>/<Entry>.md
 
-Example:
-  python3 Scripts/generate_member_page.py WKNavigation/_request
-
-The page includes:
-  - Symbol-linked H1 (so DocC renders it as a symbol page)
-  - 1-line summary (Japanese placeholder)
-  - Objective-C declaration extracted from WebKit sources (best-effort)
-  - References with a fixed-revision GitHub link (line anchor when found)
-  - Metadata (Status/Last updated)
+Notes:
+  - The output directory is based on UIProcess/API/Cocoa headers when available.
+  - When no Cocoa header exists for a container, the container name is used as the folder name.
+  - Declarations are extracted from UIProcess .h/.m/.mm files (best-effort).
 """
 
 from __future__ import annotations
 
 import argparse
+import json
 import os
 import re
 import sys
@@ -33,6 +29,7 @@ import generate_webkitspi_private_symbol_graph as objc
 REPO_ROOT = Path(__file__).resolve().parents[1]
 REVISION_FILE = REPO_ROOT / "WebKit.revision"
 DOCC_ROOT = REPO_ROOT / "Sources" / "WKInternalsNotes" / "Documentation.docc"
+INDEX_PATH = DOCC_ROOT / "SymbolGraphs" / "WKInternalsNotes.WKAPI.symbols.index.json"
 DOCC_COCOA_DIR = DOCC_ROOT / "UIProcess" / "API" / "Cocoa"
 
 DEFAULT_WEBKIT_CHECKOUT = REPO_ROOT / "References" / "WebKit"
@@ -66,22 +63,15 @@ def _webkit_root_from_env() -> Path:
     return DEFAULT_WEBKIT_CHECKOUT
 
 
-def _strip_outer_backticks(text: str) -> str:
-    s = text.strip()
-    if s.startswith("``") and s.endswith("``"):
-        return s[2:-2].strip()
-    return s.strip("`").strip()
-
-
-def _parse_symbol_ref(arg: str) -> tuple[str, str]:
-    s = _strip_outer_backticks(arg)
-    if s.startswith(f"{MODULE_NAME}/"):
-        s = s[len(f"{MODULE_NAME}/") :]
-
-    parts = s.split("/", 1)
-    if len(parts) != 2:
-        raise ValueError(f"expected '<Type>/<Member>', got: {arg!r}")
-    return parts[0], parts[1]
+def _iter_files(root: Path, *, exts: tuple[str, ...]) -> Iterable[Path]:
+    for path in sorted(root.rglob("*")):
+        if not path.is_file():
+            continue
+        if path.suffix not in exts:
+            continue
+        if EXCLUDED_PORT_PATH_PARTS.intersection(path.parts):
+            continue
+        yield path
 
 
 def _find_cocoa_header_for_container(webkit_root: Path, container: str) -> Path | None:
@@ -105,33 +95,14 @@ def _entry_filename_for_member(member: str) -> str:
     return f"{name}.md"
 
 
-def _iter_files(root: Path, *, exts: tuple[str, ...]) -> Iterable[Path]:
-    for path in sorted(root.rglob("*")):
-        if not path.is_file():
-            continue
-        if path.suffix not in exts:
-            continue
-        if EXCLUDED_PORT_PATH_PARTS.intersection(path.parts):
-            continue
-        yield path
-
-
 @dataclass(frozen=True)
 class InterfaceBlock:
     type_name: str
-    category: str | None  # None: main interface, "": class extension (), "WKPrivate": category
     start_line: int
     body_lines: list[str]
 
 
-_INTERFACE_RE = re.compile(r"^\s*@interface\s+([A-Za-z_][A-Za-z0-9_]*)\b(.*)$")
-
-
-def _parse_interface_category(rest: str) -> str | None:
-    m = re.match(r"\s*\(\s*([^)]*)\s*\)", rest)
-    if not m:
-        return None
-    return m.group(1)
+_INTERFACE_RE = re.compile(r"^\s*@interface\s+([A-Za-z_][A-Za-z0-9_]*)\b")
 
 
 def _iter_interface_blocks(lines: list[str]) -> Iterable[InterfaceBlock]:
@@ -144,9 +115,7 @@ def _iter_interface_blocks(lines: list[str]) -> Iterable[InterfaceBlock]:
             continue
 
         type_name = m.group(1)
-        category = _parse_interface_category(m.group(2))
         start_line = i + 1
-
         body: list[str] = []
         i += 1
         while i < len(lines):
@@ -154,7 +123,7 @@ def _iter_interface_blocks(lines: list[str]) -> Iterable[InterfaceBlock]:
                 break
             body.append(lines[i])
             i += 1
-        yield InterfaceBlock(type_name=type_name, category=category, start_line=start_line, body_lines=body)
+        yield InterfaceBlock(type_name=type_name, start_line=start_line, body_lines=body)
 
         while i < len(lines) and not re.match(r"^\s*@end\b", lines[i]):
             i += 1
@@ -265,37 +234,52 @@ def _iter_semicolon_decls_with_location(
         yield start_line, "\n".join(buf).strip()
 
 
+def _strip_objc_comments(text: str) -> str:
+    text = re.sub(r"/\*.*?\*/", "", text, flags=re.S)
+    text = re.sub(r"//.*", "", text)
+    return text
+
+
 @dataclass(frozen=True)
-class FoundDecl:
+class DeclLocation:
     file_repo_rel: str
     line: int
     decl: str
 
 
-def _find_member_declaration(
-    *,
-    webkit_root: Path,
-    container: str,
-    member: str,
-    prefer_files: list[Path],
-) -> FoundDecl | None:
-    want_property = "(" not in member
-    want_method = "(" in member
+@dataclass
+class MemberDecls:
+    header: DeclLocation | None = None
+    implementation: DeclLocation | None = None
 
-    # Search preferred files first, then the entire UIProcess tree.
+    def primary(self) -> DeclLocation | None:
+        return self.header or self.implementation
+
+    def references(self) -> list[DeclLocation]:
+        refs: list[DeclLocation] = []
+        if self.header:
+            refs.append(self.header)
+        if self.implementation and self.implementation.file_repo_rel != (self.header.file_repo_rel if self.header else None):
+            refs.append(self.implementation)
+        return refs
+
+
+def _build_declaration_index(webkit_root: Path) -> dict[str, dict[str, MemberDecls]]:
     ui_process_root = webkit_root / WEBKIT_UI_PROCESS_DIR
-    candidates: list[Path] = []
-    seen: set[Path] = set()
-    for p in prefer_files:
-        if p.exists() and p not in seen:
-            candidates.append(p)
-            seen.add(p)
-    for p in _iter_files(ui_process_root, exts=(".h", ".m", ".mm")):
-        if p not in seen:
-            candidates.append(p)
-            seen.add(p)
+    if not ui_process_root.exists():
+        raise RuntimeError(f"missing WebKit UIProcess dir: {ui_process_root}")
 
-    for path in candidates:
+    index: dict[str, dict[str, MemberDecls]] = {}
+
+    def store_decl(container: str, member: str, location: DeclLocation, *, is_header: bool) -> None:
+        entry = index.setdefault(container, {}).setdefault(member, MemberDecls())
+        if is_header and entry.header is None:
+            entry.header = location
+        if not is_header and entry.implementation is None:
+            entry.implementation = location
+
+    for path in _iter_files(ui_process_root, exts=(".h", ".m", ".mm")):
+        is_header = path.suffix == ".h"
         try:
             raw_lines = path.read_text(encoding="utf-8", errors="ignore").splitlines(keepends=True)
         except Exception:
@@ -303,8 +287,6 @@ def _find_member_declaration(
 
         # Protocol members.
         for block in _iter_protocol_blocks(raw_lines):
-            if block.name != container:
-                continue
             if not block.body_lines:
                 continue
             for line_no, decl in _iter_semicolon_decls_with_location(
@@ -312,42 +294,58 @@ def _find_member_declaration(
                 starters=("@property", "-", "+"),
                 base_line=block.start_line,
             ):
-                first = objc._condense_whitespace(decl.splitlines()[0])  # noqa: SLF001
+                cleaned_decl = _strip_objc_comments(decl)
+                first = objc._condense_whitespace(cleaned_decl.splitlines()[0])  # noqa: SLF001
                 try:
-                    if want_property and first.startswith("@property"):
-                        name, _ty = objc._parse_property_symbol(decl)  # noqa: SLF001
-                        if name == member:
-                            return FoundDecl(file_repo_rel=str(path.relative_to(webkit_root)), line=line_no, decl=decl)
-                    if want_method and (first.startswith("-") or first.startswith("+")):
-                        sig = objc._parse_method_symbol(decl)  # noqa: SLF001
-                        if sig.path_component == member:
-                            return FoundDecl(file_repo_rel=str(path.relative_to(webkit_root)), line=line_no, decl=decl)
+                    if first.startswith("@property"):
+                        name, _ty = objc._parse_property_symbol(cleaned_decl)  # noqa: SLF001
+                        store_decl(
+                            block.name,
+                            name,
+                            DeclLocation(str(path.relative_to(webkit_root)), line_no, cleaned_decl),
+                            is_header=is_header,
+                        )
+                    elif first.startswith("-") or first.startswith("+"):
+                        sig = objc._parse_method_symbol(cleaned_decl)  # noqa: SLF001
+                        store_decl(
+                            block.name,
+                            sig.path_component,
+                            DeclLocation(str(path.relative_to(webkit_root)), line_no, cleaned_decl),
+                            is_header=is_header,
+                        )
                 except Exception:
                     continue
 
         # Interface members.
         for block in _iter_interface_blocks(raw_lines):
-            if block.type_name != container:
-                continue
             for line_no, decl in _iter_semicolon_decls_with_location(
                 block.body_lines,
                 starters=("@property", "-", "+"),
                 base_line=block.start_line,
             ):
-                first = objc._condense_whitespace(decl.splitlines()[0])  # noqa: SLF001
+                cleaned_decl = _strip_objc_comments(decl)
+                first = objc._condense_whitespace(cleaned_decl.splitlines()[0])  # noqa: SLF001
                 try:
-                    if want_property and first.startswith("@property"):
-                        name, _ty = objc._parse_property_symbol(decl)  # noqa: SLF001
-                        if name == member:
-                            return FoundDecl(file_repo_rel=str(path.relative_to(webkit_root)), line=line_no, decl=decl)
-                    if want_method and (first.startswith("-") or first.startswith("+")):
-                        sig = objc._parse_method_symbol(decl)  # noqa: SLF001
-                        if sig.path_component == member:
-                            return FoundDecl(file_repo_rel=str(path.relative_to(webkit_root)), line=line_no, decl=decl)
+                    if first.startswith("@property"):
+                        name, _ty = objc._parse_property_symbol(cleaned_decl)  # noqa: SLF001
+                        store_decl(
+                            block.type_name,
+                            name,
+                            DeclLocation(str(path.relative_to(webkit_root)), line_no, cleaned_decl),
+                            is_header=is_header,
+                        )
+                    elif first.startswith("-") or first.startswith("+"):
+                        sig = objc._parse_method_symbol(cleaned_decl)  # noqa: SLF001
+                        store_decl(
+                            block.type_name,
+                            sig.path_component,
+                            DeclLocation(str(path.relative_to(webkit_root)), line_no, cleaned_decl),
+                            is_header=is_header,
+                        )
                 except Exception:
                     continue
 
-    return None
+    return index
 
 
 def _github_blob_url(revision: str, repo_rel: str, *, line: int | None) -> str:
@@ -366,37 +364,42 @@ def _render_page(
     *,
     container: str,
     member: str,
-    objc_decl: str | None,
-    reference: FoundDecl | None,
+    decls: MemberDecls | None,
     revision: str,
 ) -> str:
     today = date.today().isoformat()
+    is_property = "(" not in member
+
+    primary = decls.primary() if decls else None
+    objc_decl = primary.decl.strip() if primary else "TODO"
 
     out: list[str] = []
     out.append(f"# ``{MODULE_NAME}/{container}/{member}``")
     out.append("")
-    out.append("TODO: この API が挙動に与える影響を 1 行で要約する。")
+    out.append("宣言のみ確認（実装未調査）。")
     out.append("")
 
     out.append("## Objective-C Declaration")
     out.append("```objective-c")
-    out.append(objc_decl.strip() if objc_decl else "TODO")
+    out.append(objc_decl)
     out.append("```")
     out.append("")
 
-    if "(" not in member:
+    if is_property:
         out.append("## Default Value")
-        out.append("TODO")
+        out.append("未調査（初期化経路の確認が必要）。")
         out.append("")
 
     out.append("## Discussion")
-    out.append("TODO: 実装/挙動ベースで説明する（宣言の言い換えで終わらせない）。")
+    out.append("実装未調査。宣言と対応実装の確認が必要。")
     out.append("")
 
     out.append("## References")
-    if reference is not None:
-        url = _github_blob_url(revision, reference.file_repo_rel, line=reference.line)
-        out.append(f"- [{_short_link_text(reference.file_repo_rel, line=reference.line)}]({url})")
+    refs = decls.references() if decls else []
+    if refs:
+        for ref in refs:
+            url = _github_blob_url(revision, ref.file_repo_rel, line=ref.line)
+            out.append(f"- [{_short_link_text(ref.file_repo_rel, line=ref.line)}]({url})")
     else:
         out.append("- TODO")
     out.append("")
@@ -413,8 +416,7 @@ def _render_page(
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("symbol", help="Symbol ref like 'WKNavigation/_request' or 'WKInternalsNotes/WKNavigation/_request'.")
-    parser.add_argument("--overwrite", action="store_true", help="Overwrite an existing entry page.")
+    parser.add_argument("--overwrite", action="store_true", help="Overwrite existing entry pages.")
     parser.add_argument(
         "--webkit-root",
         type=Path,
@@ -423,46 +425,43 @@ def main() -> int:
     )
     args = parser.parse_args()
 
-    container, member = _parse_symbol_ref(args.symbol)
-    revision = _read_revision()
-
-    cocoa_header = _find_cocoa_header_for_container(args.webkit_root, container)
-    if cocoa_header is None:
-        print(
-            "error: could not find a Cocoa header for this type.\n"
-            f"  - type: {container}\n"
-            f"  - searched: {args.webkit_root / WEBKIT_COCOA_HEADERS_DIR}\n"
-            "hint: currently this command targets UIProcess/API/Cocoa symbols.",
-            file=sys.stderr,
-        )
+    if not INDEX_PATH.exists():
+        print(f"error: missing symbol index: {INDEX_PATH}", file=sys.stderr)
         return 2
 
-    header_stem = cocoa_header.stem  # e.g. WKNavigationPrivate
-    out_dir = DOCC_COCOA_DIR / header_stem
-    out_dir.mkdir(parents=True, exist_ok=True)
-    out_path = out_dir / _entry_filename_for_member(member)
+    revision = _read_revision()
+    members_index: dict[str, dict[str, list[str]]] = json.loads(INDEX_PATH.read_text(encoding="utf-8"))
+    decl_index = _build_declaration_index(args.webkit_root)
 
-    if out_path.exists() and not args.overwrite:
-        print(f"skip: {out_path.relative_to(REPO_ROOT)} (already exists)")
-        return 0
+    written = 0
+    skipped = 0
+    missing_decl = 0
 
-    found = _find_member_declaration(
-        webkit_root=args.webkit_root,
-        container=container,
-        member=member,
-        prefer_files=[cocoa_header],
-    )
+    for container, categories in members_index.items():
+        cocoa_header = _find_cocoa_header_for_container(args.webkit_root, container)
+        folder_name = Path(cocoa_header.name).stem if cocoa_header else container
+        output_dir = DOCC_COCOA_DIR / folder_name
+        output_dir.mkdir(parents=True, exist_ok=True)
 
-    objc_decl = found.decl if found is not None else None
-    markdown = _render_page(
-        container=container,
-        member=member,
-        objc_decl=objc_decl,
-        reference=found,
-        revision=revision,
-    )
-    out_path.write_text(markdown, encoding="utf-8")
-    print(f"wrote: {out_path.relative_to(REPO_ROOT)}")
+        for members in categories.values():
+            for member in members:
+                filename = _entry_filename_for_member(member)
+                out_path = output_dir / filename
+                if out_path.exists() and not args.overwrite:
+                    skipped += 1
+                    continue
+
+                decls = decl_index.get(container, {}).get(member)
+                if decls is None or decls.primary() is None:
+                    missing_decl += 1
+
+                out_path.write_text(
+                    _render_page(container=container, member=member, decls=decls, revision=revision),
+                    encoding="utf-8",
+                )
+                written += 1
+
+    print(f"done: wrote {written}, skipped {skipped}, missing decl {missing_decl}")
     return 0
 
 

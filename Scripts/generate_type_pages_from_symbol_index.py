@@ -7,6 +7,7 @@ This script reads:
 
 and generates documentation extension pages (type pages) that group members by Objective-C category:
   - Sources/WKInternalsNotes/Documentation.docc/UIProcess/API/Cocoa/<HeaderName>.h.md
+  - Sources/WKInternalsNotes/Documentation.docc/UIProcess/API/Cocoa/<Symbol>.md
 
 The output is intentionally minimal: Topics grouped by category, and a metadata table.
 
@@ -174,6 +175,11 @@ def main() -> int:
         action="store_true",
         help="Generate type pages for all *Private.h headers under WebKit UIProcess/API/Cocoa (if present in index).",
     )
+    parser.add_argument(
+        "--all-symbols",
+        action="store_true",
+        help="Generate type pages for all container symbols present in the index.",
+    )
     parser.add_argument("--overwrite", action="store_true", help="Overwrite existing files.")
     parser.add_argument(
         "--webkit-root",
@@ -190,12 +196,17 @@ def main() -> int:
     if not webkit_headers_dir.exists():
         raise RuntimeError(f"missing WebKit Cocoa headers dir: {webkit_headers_dir}")
 
+    if args.all_private_headers and args.all_symbols:
+        raise RuntimeError("cannot combine --all-private-headers with --all-symbols")
+
     symbols = list(args.symbols)
     if args.all_private_headers:
         symbols = _symbols_from_private_headers(webkit_headers_dir=webkit_headers_dir, index=index)
+    if args.all_symbols:
+        symbols = sorted(index.keys(), key=str.casefold)
 
     if not symbols:
-        raise RuntimeError("no symbols specified (pass symbols or --all-private-headers)")
+        raise RuntimeError("no symbols specified (pass symbols or --all-private-headers/--all-symbols)")
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 

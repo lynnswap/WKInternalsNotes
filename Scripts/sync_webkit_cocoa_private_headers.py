@@ -3,7 +3,7 @@
 Sync WKInternalsNotes DocC artifacts from a WebKit checkout.
 
 Pipeline:
-  1) Generate synthetic WKAPI symbol graph + index from UIProcess Objective-C sources.
+  1) Generate synthetic WKAPI symbol graph + index from UIProcess Objective-C/Swift sources.
   2) Ensure Cocoa *Private.h type pages exist (grouped by ObjC category) using the index.
   3) Update GitHub links/metadata to WebKit.revision.
   4) Ensure entry metadata blocks exist.
@@ -324,6 +324,11 @@ def main() -> int:
         help="Parse only .h files when generating the WKAPI symbol graph (skip .m/.mm).",
     )
     parser.add_argument(
+        "--no-swift",
+        action="store_true",
+        help="Skip Swift files when generating the WKAPI symbol graph.",
+    )
+    parser.add_argument(
         "--overwrite-type-pages",
         action="store_true",
         help="Overwrite existing generated type pages (manual pages like WKPreferencesPrivate.h.md should not use this).",
@@ -337,6 +342,8 @@ def main() -> int:
     ]
     if not args.headers_only:
         graph_cmd.append("--include-implementations")
+    if not args.no_swift:
+        graph_cmd.append("--include-swift")
     _run(graph_cmd)
 
     type_pages_cmd = [
