@@ -1,0 +1,21 @@
+# ``WKInternalsNotes/WKWebView/_hidePasswordView()``
+
+`_hidePasswordView` を非表示にする。
+
+## Objective-C Declaration
+```objective-c
+- (void)_hidePasswordView;
+```
+
+## Discussion
+実装は `WKWebView` 側で処理される。
+
+## References
+- [`API/ios/WKWebViewIOS.h#L128`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/ios/WKWebViewIOS.h#L128)
+- [`API/ios/WKWebViewIOS.mm#L3571`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/ios/WKWebViewIOS.mm#L3571)
+
+## Metadata
+| Key | Value |
+| --- | ----- |
+| Status | Draft |
+| Last updated | 2025-12-19 |

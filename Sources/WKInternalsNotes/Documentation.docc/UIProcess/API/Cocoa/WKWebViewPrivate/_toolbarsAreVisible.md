@@ -1,0 +1,22 @@
+# ``WKInternalsNotes/WKWebView/_toolbarsAreVisible``
+
+`_toolbarsAreVisible` の値を取得/設定する。
+
+## Objective-C Declaration
+```objective-c
+@property (nonatomic, setter=_setToolbarsAreVisible:) BOOL _toolbarsAreVisible WK_API_AVAILABLE(macos(WK_MAC_TBA), ios(WK_IOS_TBA), visionos(WK_XROS_TBA));
+```
+
+## Discussion
+getter/setter を通じて値を取得/設定する。 setter は `_setToolbarsAreVisible:`。
+
+## References
+- [`API/Cocoa/WKWebViewPrivate.h#L448`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L448)
+- [`API/Cocoa/WKWebView.mm#L4356`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L4356)
+- [`API/Cocoa/WKWebView.mm#L4351`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L4351)
+
+## Metadata
+| Key | Value |
+| --- | ----- |
+| Status | Draft |
+| Last updated | 2025-12-19 |
