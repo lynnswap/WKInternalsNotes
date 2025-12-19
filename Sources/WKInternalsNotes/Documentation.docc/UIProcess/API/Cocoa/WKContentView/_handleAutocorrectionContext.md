@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_handleAutocorrectionContext(_:)``
 
-宣言のみ確認（実装未調査）。
+自動補正コンテキストの更新を反映する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+最新の自動補正コンテキストを保存し、必要ならソフトキーボード抑制解除を試みる。
 
 ## References
 - [`WKContentViewInteraction.h#L921`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L921)
+- [`WKContentViewInteraction.mm#L6088`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L6088)
 
 ## Metadata
 | Key | Value |
