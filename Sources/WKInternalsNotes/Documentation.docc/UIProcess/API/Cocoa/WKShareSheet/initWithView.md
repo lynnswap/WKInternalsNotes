@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKShareSheet/initWithView(_:)``
 
-宣言のみ確認（実装未調査）。
+共有シートを初期化する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKWebView` を保持し、共有シートの基盤として利用する。
 
 ## References
 - [`WKShareSheet.h#L43`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/WKShareSheet.h#L43)
+- [`WKShareSheet.mm#L253`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/WKShareSheet.mm#L253)
 
 ## Metadata
 | Key | Value |

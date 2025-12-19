@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKFileUploadPanel/delegate``
 
-宣言のみ確認（実装未調査）。
+ファイルアップロードパネルの delegate を設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`nil`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+パネルの終了通知や管理状態確認などのコールバック先として利用される。
 
 ## References
 - [`WKFileUploadPanel.h#L52`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFileUploadPanel.h#L52)
+- [`WKFileUploadPanel.mm#L431`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFileUploadPanel.mm#L431)
 
 ## Metadata
 | Key | Value |

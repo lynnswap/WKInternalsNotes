@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKShareSheetDelegate/shareSheetDidDismiss(_:)``
 
-宣言のみ確認（実装未調査）。
+共有シートが閉じたことを通知する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKShareSheet` の `dismiss` 完了後に呼ばれる。
 
 ## References
 - [`WKShareSheet.h#L54`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/WKShareSheet.h#L54)
+- [`WKShareSheet.mm#L476`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/WKShareSheet.mm#L476)
 
 ## Metadata
 | Key | Value |

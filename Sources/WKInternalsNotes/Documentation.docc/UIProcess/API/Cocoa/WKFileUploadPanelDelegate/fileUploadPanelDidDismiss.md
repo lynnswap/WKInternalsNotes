@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKFileUploadPanelDelegate/fileUploadPanelDidDismiss(_:)``
 
-宣言のみ確認（実装未調査）。
+パネルの終了を通知する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+パネルのキャンセルや完了時に `WKFileUploadPanel` から呼ばれる。
 
 ## References
 - [`WKFileUploadPanel.h#L70`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFileUploadPanel.h#L70)
+- [`WKFileUploadPanel.mm#L431`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFileUploadPanel.mm#L431)
 
 ## Metadata
 | Key | Value |

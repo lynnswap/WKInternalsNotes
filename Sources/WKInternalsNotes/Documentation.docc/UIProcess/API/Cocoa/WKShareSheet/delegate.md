@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKShareSheet/delegate``
 
-宣言のみ確認（実装未調査）。
+共有シートの delegate を設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`nil`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+共有シートの表示/非表示イベントを受け取る delegate を保持する。
 
 ## References
 - [`WKShareSheet.h#L49`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/WKShareSheet.h#L49)
+- [`WKShareSheet.mm#L243`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/WKShareSheet.mm#L243)
+- [`WKShareSheet.mm#L248`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/WKShareSheet.mm#L248)
 
 ## Metadata
 | Key | Value |

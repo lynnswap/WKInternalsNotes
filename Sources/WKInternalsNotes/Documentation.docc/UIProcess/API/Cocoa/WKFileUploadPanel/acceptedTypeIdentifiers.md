@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKFileUploadPanel/acceptedTypeIdentifiers()``
 
-宣言のみ確認（実装未調査）。
+受け入れ可能な UTI の一覧を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+受理対象の UTI をソート済み配列で返す。
 
 ## References
 - [`WKFileUploadPanel.h#L63`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFileUploadPanel.h#L63)
+- [`WKFileUploadPanel.mm#L618`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFileUploadPanel.mm#L618)
 
 ## Metadata
 | Key | Value |

@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKFileUploadPanel/currentAvailableActionTitles()``
 
-宣言のみ確認（実装未調査）。
+現在利用可能なアクション名を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+許可された画像/動画タイプに応じたアクションと、ファイル選択アクションのタイトルを組み立てる。
 
 ## References
 - [`WKFileUploadPanel.h#L62`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFileUploadPanel.h#L62)
+- [`WKFileUploadPanel.mm#L601`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFileUploadPanel.mm#L601)
 
 ## Metadata
 | Key | Value |

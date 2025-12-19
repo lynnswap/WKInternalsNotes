@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKShareSheet/dismissIfNeededWithReason(_:)``
 
-宣言のみ確認（実装未調査）。
+必要に応じて共有シートを閉じる。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+理由に応じて delegate を解除し、共有シートを閉じる。iOS ではフルスクリーン表示中のケースを考慮してキャンセルを見送る場合がある。
 
 ## References
 - [`WKShareSheet.h#L47`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/WKShareSheet.h#L47)
+- [`WKShareSheet.mm#L500`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/WKShareSheet.mm#L500)
 
 ## Metadata
 | Key | Value |
