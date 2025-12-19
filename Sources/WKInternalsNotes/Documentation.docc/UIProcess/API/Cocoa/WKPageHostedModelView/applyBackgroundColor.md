@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKPageHostedModelView/applyBackgroundColor(_:)``
 
-宣言のみ確認（実装未調査）。
+背景色をモデル表示に反映する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+ステレオコンテンツ有効時は埋め込みコンポーネントの clear color を更新する。無効時は `separatedOptions.material.clearColor` に白または指定色を設定する。
 
 ## References
 - [`WKPageHostedModelView.h#L37`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKPageHostedModelView.h#L37)
+- [`WKPageHostedModelView.mm#L256`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKPageHostedModelView.mm#L256)
 
 ## Metadata
 | Key | Value |

@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKLinkIconParameters/size``
 
-宣言のみ確認（実装未調査）。
+リンクアイコンのサイズを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`linkIcon.size` が無い場合は `nil`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`linkIcon.size` が存在する場合のみ `NSNumber` として保持する。
 
 ## References
 - [`_WKLinkIconParameters.h#L42`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKLinkIconParameters.h#L42)
+- [`_WKLinkIconParameters.mm#L47`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKLinkIconParameters.mm#L47)
+- [`_WKLinkIconParameters.mm#L79`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKLinkIconParameters.mm#L79)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |

@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKTextExtractionConfiguration/includeURLs``
 
-宣言のみ確認（実装未調査）。
+URL 属性を抽出結果に含めるかどうかを指定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`YES`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`href`/`src` などの URL 属性を抽出対象に含める。`init` で `YES` を設定する。
 
 ## References
+- [`_WKTextExtraction.h#L44`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtraction.h#L44)
 - [`_WKTextExtraction.h#L48`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtraction.h#L48)
+- [`_WKTextExtraction.mm#L42`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtraction.mm#L42)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |

@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKPageHostedModelView/setPortalCrossing(_:)``
 
-宣言のみ確認（実装未調査）。
+ポータル通過の有効/無効を設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+ステレオコンテンツ有効時に `REPortalCrossingFlagsComponent` のフラグを更新し、dirty をマークする。
 
 ## References
 - [`WKPageHostedModelView.h#L38`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKPageHostedModelView.h#L38)
+- [`WKPageHostedModelView.mm#L301`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKPageHostedModelView.mm#L301)
 
 ## Metadata
 | Key | Value |

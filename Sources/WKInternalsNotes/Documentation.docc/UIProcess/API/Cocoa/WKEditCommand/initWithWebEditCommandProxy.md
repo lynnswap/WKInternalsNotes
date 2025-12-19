@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKEditCommand/initWithWebEditCommandProxy(_:)``
 
-宣言のみ確認（実装未調査）。
+`WebEditCommandProxy` を保持して初期化する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WebEditCommandProxy` を `WTFMove` で `_command` に保持する。
 
 ## References
 - [`WKEditCommand.h#L36`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/WKEditCommand.h#L36)
+- [`WKEditCommand.mm#L33`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/WKEditCommand.mm#L33)
+- [`WKEditCommand.mm#L39`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/WKEditCommand.mm#L39)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |

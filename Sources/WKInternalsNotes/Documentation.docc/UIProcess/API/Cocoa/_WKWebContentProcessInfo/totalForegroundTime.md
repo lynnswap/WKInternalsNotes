@@ -1,23 +1,21 @@
 # ``WKInternalsNotes/_WKWebContentProcessInfo/totalForegroundTime``
 
-宣言のみ確認（実装未調査）。
+フォアグラウンド滞在時間（秒）を返す。
 
 ## Objective-C Declaration
 ```objective-c
 @property (nonatomic, readonly) NSTimeInterval totalForegroundTime;
 ```
 
-## Default Value
-未調査（初期化経路の確認が必要）。
-
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WebProcessProxy::totalForegroundTime().seconds()` を初期化時に保持する。
 
 ## References
 - [`WKProcessPoolPrivate.h#L69`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L69)
+- [`WKProcessPool.mm#L820`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L820)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |

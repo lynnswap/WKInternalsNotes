@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKTextExtractionConfiguration/maxWordsPerParagraph``
 
-宣言のみ確認（実装未調査）。
+段落あたりの最大単語数を指定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`NSUIntegerMax`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+段落ごとの単語数を制限し、超過分は省略される。`init` では `NSUIntegerMax` を設定する。
 
 ## References
+- [`_WKTextExtraction.h#L56`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtraction.h#L56)
 - [`_WKTextExtraction.h#L60`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtraction.h#L60)
+- [`_WKTextExtraction.mm#L45`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtraction.mm#L45)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |

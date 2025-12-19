@@ -1,23 +1,22 @@
 # ``WKInternalsNotes/_WKLinkIconParameters/iconType``
 
-宣言のみ確認（実装未調査）。
+リンクアイコンの種類を返す。
 
 ## Objective-C Declaration
 ```objective-c
 @property (nonatomic, readonly) WKLinkIconType iconType;
 ```
 
-## Default Value
-未調査（初期化経路の確認が必要）。
-
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WebCore::LinkIconType` を `WKLinkIconType` にマッピングして保持する。
 
 ## References
 - [`_WKLinkIconParameters.h#L40`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKLinkIconParameters.h#L40)
+- [`_WKLinkIconParameters.mm#L50`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKLinkIconParameters.mm#L50)
+- [`_WKLinkIconParameters.mm#L84`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKLinkIconParameters.mm#L84)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |

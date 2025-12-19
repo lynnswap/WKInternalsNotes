@@ -1,20 +1,19 @@
 # ``WKInternalsNotes/WKPageHostedModelView/remoteModelView``
 
-宣言のみ確認（実装未調査）。
+リモートモデル表示用のビューを設定する。
 
 ## Objective-C Declaration
 ```objective-c
 @property (nonatomic, retain) UIView *remoteModelView;
 ```
 
-## Default Value
-未調査（初期化経路の確認が必要）。
-
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+既存のビューを取り外し、新しいビューを `_containerView` に追加する。フレームと autoresizing を合わせて設定する。
 
 ## References
 - [`WKPageHostedModelView.h#L35`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKPageHostedModelView.h#L35)
+- [`WKPageHostedModelView.mm#L201`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKPageHostedModelView.mm#L201)
+- [`WKPageHostedModelView.mm#L206`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKPageHostedModelView.mm#L206)
 
 ## Metadata
 | Key | Value |
