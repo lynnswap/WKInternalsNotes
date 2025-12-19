@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/didZoomToScale(_:)``
 
-宣言のみ確認（実装未調査）。
+ズーム完了時の処理を行う。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`scale` は使用せず、`_didEndScrollingOrZooming` を呼び出す。
 
 ## References
 - [`WKContentView.h#L88`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.h#L88)
+- [`WKContentView.mm#L761`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.mm#L761)
 
 ## Metadata
 | Key | Value |

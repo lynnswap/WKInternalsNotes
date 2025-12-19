@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/willStartZoomOrScroll()``
 
-宣言のみ確認（実装未調査）。
+ズーム/スクロール開始時の処理を行う。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_willStartScrollingOrZooming` を呼び出す。
 
 ## References
 - [`WKContentView.h#L89`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.h#L89)
+- [`WKContentView.mm#L756`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.mm#L756)
 
 ## Metadata
 | Key | Value |
