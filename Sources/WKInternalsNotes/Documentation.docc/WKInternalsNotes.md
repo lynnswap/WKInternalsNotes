@@ -11,32 +11,27 @@ Swift-DocC のシンボルページとして読めるように、WebKit のソ�
 ### Types
 WebKit UIProcess に登場する型（class/protocol など）の一覧。
 
+#### Classes
 - ``WKInternalsNotes/_WKInspector``
 - ``WKInternalsNotes/_WKRemoteWebInspectorViewController``
 - ``WKInternalsNotes/_WKUserContentExtensionStore``
 - ``WKInternalsNotes/_WKUserContentFilter``
 - ``WKInternalsNotes/WKBackForwardList``
 - ``WKInternalsNotes/WKBackForwardListItem``
-- ``WKInternalsNotes/WKBrowsingContextLoadDelegatePrivate``
 - ``WKInternalsNotes/WKContentRuleList``
 - ``WKInternalsNotes/WKContentRuleListStore``
 - ``WKInternalsNotes/WKContentWorld``
 - ``WKInternalsNotes/WKContextMenuElementInfo``
-- ``WKInternalsNotes/WKDownloadDelegatePrivate``
 - ``WKInternalsNotes/WKFrameInfo``
-- ``WKInternalsNotes/WKHistoryDelegatePrivate``
 - ``WKInternalsNotes/WKHTTPCookieStore``
 - ``WKInternalsNotes/WKNavigation``
 - ``WKInternalsNotes/WKNavigationAction``
-- ``WKInternalsNotes/WKNavigationDelegatePrivate``
 - ``WKInternalsNotes/WKNavigationResponse``
 - ``WKInternalsNotes/WKOpenPanelParameters``
 - ``WKInternalsNotes/WKPreferences``
 - ``WKInternalsNotes/WKProcessPool``
 - ``WKInternalsNotes/WKSecurityOrigin``
 - ``WKInternalsNotes/WKSnapshotConfiguration``
-- ``WKInternalsNotes/WKUIDelegatePrivate``
-- ``WKInternalsNotes/WKURLSchemeTaskPrivate``
 - ``WKInternalsNotes/WKUserContentController``
 - ``WKInternalsNotes/WKUserScript``
 - ``WKInternalsNotes/WKView``
@@ -46,7 +41,6 @@ WebKit UIProcess に登場する型（class/protocol など）の一覧。
 - ``WKInternalsNotes/WKWebExtensionContext``
 - ``WKInternalsNotes/WKWebExtensionController``
 - ``WKInternalsNotes/WKWebExtensionControllerConfiguration``
-- ``WKInternalsNotes/WKWebExtensionControllerDelegatePrivate``
 - ``WKInternalsNotes/WKWebExtensionDataRecord``
 - ``WKInternalsNotes/WKWebExtensionMatchPattern``
 - ``WKInternalsNotes/WKWebExtensionMessagePort``
@@ -56,3 +50,12 @@ WebKit UIProcess に登場する型（class/protocol など）の一覧。
 - ``WKInternalsNotes/WKWebView``
 - ``WKInternalsNotes/WKWebViewConfiguration``
 - ``WKInternalsNotes/WKWindowFeatures``
+
+#### Protocols
+- ``WKInternalsNotes/WKBrowsingContextLoadDelegatePrivate``
+- ``WKInternalsNotes/WKDownloadDelegatePrivate``
+- ``WKInternalsNotes/WKHistoryDelegatePrivate``
+- ``WKInternalsNotes/WKNavigationDelegatePrivate``
+- ``WKInternalsNotes/WKUIDelegatePrivate``
+- ``WKInternalsNotes/WKURLSchemeTaskPrivate``
+- ``WKInternalsNotes/WKWebExtensionControllerDelegatePrivate``
