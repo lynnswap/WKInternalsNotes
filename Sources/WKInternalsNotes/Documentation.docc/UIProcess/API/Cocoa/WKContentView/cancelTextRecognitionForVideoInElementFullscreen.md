@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/cancelTextRecognitionForVideoInElementFullscreen()``
 
-宣言のみ確認（実装未調査）。
+要素フルスクリーン動画のテキスト認識をキャンセルする。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`ENABLE(IMAGE_ANALYSIS_ENHANCEMENTS)` 有効時に `installImageAnalysisInteraction:` で導入した UI を外し、進行中の解析リクエストがあればキャンセルする。
 
 ## References
 - [`WKContentViewInteraction.h#L998`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L998)
+- [`WKContentViewInteraction.mm#L13438`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L13438)
 
 ## Metadata
 | Key | Value |

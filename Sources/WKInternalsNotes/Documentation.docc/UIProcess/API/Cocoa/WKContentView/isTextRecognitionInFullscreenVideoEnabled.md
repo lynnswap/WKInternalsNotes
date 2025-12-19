@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/isTextRecognitionInFullscreenVideoEnabled``
 
-宣言のみ確認（実装未調査）。
+フルスクリーン動画のテキスト認識が有効かどうかを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`ENABLE(IMAGE_ANALYSIS_ENHANCEMENTS)` 有効時は `preferences().textRecognitionInVideosEnabled()`、無効時は `NO`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+ビルドフラグに応じて、`WebPageProxy` の `textRecognitionInVideosEnabled` 設定を返す。
 
 ## References
 - [`WKContentViewInteraction.h#L995`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L995)
+- [`WKContentViewInteraction.mm#L13401`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L13401)
 
 ## Metadata
 | Key | Value |
