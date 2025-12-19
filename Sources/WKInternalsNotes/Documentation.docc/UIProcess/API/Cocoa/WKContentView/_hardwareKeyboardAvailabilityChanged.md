@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_hardwareKeyboardAvailabilityChanged()``
 
-宣言のみ確認（実装未調査）。
+ハードウェアキーボードの利用可否変更を処理する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_seenHardwareKeyDownInNonEditableElement` を `NO` に戻し、`reloadInputViews` を呼ぶ。
 
 ## References
 - [`WKContentViewInteraction.h#L816`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L816)
+- [`WKContentViewInteraction.mm#L8744`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L8744)
 
 ## Metadata
 | Key | Value |

@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/shouldIgnoreKeyboardWillHideNotification``
 
-宣言のみ確認（実装未調査）。
+キーボードの willHide 通知を無視すべきかを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+回転中やフォーカス遷移中は `YES`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+回転中 (`UIPeripheralHost.sharedInstance.rotationState`) か、フォーカス変更中にキーボードを表示している場合は `YES`。それ以外は `NO`。
 
 ## References
 - [`WKContentViewInteraction.h#L723`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L723)
+- [`WKContentViewInteraction.mm#L8730`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L8730)
 
 ## Metadata
 | Key | Value |
