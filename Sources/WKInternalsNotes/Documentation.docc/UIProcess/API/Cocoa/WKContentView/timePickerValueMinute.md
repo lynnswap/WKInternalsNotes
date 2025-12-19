@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/timePickerValueMinute()``
 
-宣言のみ確認（実装未調査）。
+時刻ピッカーの分（minute）を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+watchOS 以外で `_inputPeripheral` が `WKDateTimeInputControl` の場合に `timePickerValueMinute` を返し、それ以外は `-1`。
 
 ## References
 - [`WKContentViewInteraction.h#L1038`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L1038)
+- [`WKContentViewInteraction.mm#L14573`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14573)
 
 ## Metadata
 | Key | Value |
