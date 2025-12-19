@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/accessibilityRetrieveSpeakSelectionContent()``
 
-宣言のみ確認（実装未調査）。
+Speak Selection 用の文字列を取得して通知する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+選択または内容文字列を Web プロセスから取得し、`WKWebView` の `_accessibilityDidGetSpeakSelectionContent` に渡す。`accessibilitySpeakSelectionSetContent:` を実装していれば同じ文字列を通知する。
 
 ## References
 - [`WKContentViewInteraction.h#L849`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L849)
+- [`WKContentViewInteraction.mm#L5064`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L5064)
 
 ## Metadata
 | Key | Value |

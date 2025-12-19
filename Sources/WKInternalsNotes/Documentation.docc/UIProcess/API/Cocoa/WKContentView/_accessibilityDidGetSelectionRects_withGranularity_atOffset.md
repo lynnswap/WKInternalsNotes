@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_accessibilityDidGetSelectionRects(_:withGranularity:atOffset:)``
 
-宣言のみ確認（実装未調査）。
+選択矩形取得の結果を通知する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_accessibilityRetrieveRectsEnclosingSelectionOffset:withGranularity:` などが取得した矩形を渡すコールバックとして利用される。
 
 ## References
 - [`WKContentViewInteraction.mm#L1144`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L1144)
+- [`WKContentViewInteraction.mm#L5079`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L5079)
 
 ## Metadata
 | Key | Value |
