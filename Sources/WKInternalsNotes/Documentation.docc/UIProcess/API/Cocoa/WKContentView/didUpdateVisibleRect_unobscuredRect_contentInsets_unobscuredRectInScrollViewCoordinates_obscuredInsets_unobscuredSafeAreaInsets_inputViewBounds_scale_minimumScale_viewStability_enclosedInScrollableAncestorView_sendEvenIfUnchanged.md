@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/didUpdateVisibleRect(_:unobscuredRect:contentInsets:unobscuredRectInScrollViewCoordinates:obscuredInsets:unobscuredSafeAreaInsets:inputViewBounds:scale:minimumScale:viewStability:enclosedInScrollableAncestorView:sendEvenIfUnchanged:)``
 
-宣言のみ確認（実装未調査）。
+可視領域情報を更新して Web プロセスへ通知する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -18,10 +18,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+描画領域が無ければ終了。スクロール速度や固定位置レイアウト矩形を計算して `VisibleContentRectUpdateInfo` を構築し、`WebPageProxy` に更新を通知する。レイアウトビューの調整後、内部フラグをリセットし、固定クリッピングビュー更新と安定状態遷移処理を行う。
 
 ## References
 - [`WKContentView.h#L74`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.h#L74)
+- [`WKContentView.mm#L678`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.mm#L678)
 
 ## Metadata
 | Key | Value |

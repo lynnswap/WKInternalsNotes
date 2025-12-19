@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_updateRuntimeProtocolConformanceIfNeeded()``
 
-宣言のみ確認（実装未調査）。
+必要なプロトコル適合をランタイムで追加する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+初回のみ実行される。BrowserEngineKit の使用状況に応じて `BETextInput` もしくは legacy UIKit プロトコル群を `class_addProtocol` で追加し、必要ならコンテキストメニューの async configuration 実装を差し替える。
 
 ## References
 - [`WKContentViewInteraction.h#L914`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L914)
+- [`WKContentViewInteraction.mm#L1254`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L1254)
 
 ## Metadata
 | Key | Value |
