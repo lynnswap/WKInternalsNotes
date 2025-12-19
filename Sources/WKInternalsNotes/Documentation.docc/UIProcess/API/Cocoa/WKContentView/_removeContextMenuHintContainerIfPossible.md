@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_removeContextMenuHintContainerIfPossible()``
 
-宣言のみ確認（実装未調査）。
+条件が整った場合にコンテキストメニューヒント用コンテナを削除する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+リンクプレビューやコンテキストメニュー表示中などの条件をチェックし、不要で空のときにコンテナを削除する。
 
 ## References
 - [`WKContentViewInteraction.h#L959`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L959)
+- [`WKContentViewInteraction.mm#L11822`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L11822)
 
 ## Metadata
 | Key | Value |

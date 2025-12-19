@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/cleanUpInteractionPreviewContainers()``
 
-宣言のみ確認（実装未調査）。
+インタラクション用プレビューコンテナを片付ける。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+コンテキストメニューのヒント用プレビューコンテナを削除する。
 
 ## References
 - [`WKContentViewInteraction.h#L749`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L749)
+- [`WKContentViewInteraction.mm#L1720`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L1720)
 
 ## Metadata
 | Key | Value |
