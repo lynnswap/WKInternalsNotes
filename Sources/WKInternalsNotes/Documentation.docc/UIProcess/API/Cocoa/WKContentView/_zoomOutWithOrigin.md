@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_zoomOutWithOrigin(_:)``
 
-宣言のみ確認（実装未調査）。
+指定位置を基準にズームアウトする。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKWebView` の `_zoomOutWithOrigin:animated:` に委譲する。
 
 ## References
 - [`WKContentView.h#L136`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.h#L136)
+- [`WKContentView.mm#L1072`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.mm#L1072)
 
 ## Metadata
 | Key | Value |

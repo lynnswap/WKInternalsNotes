@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_zoomToInitialScaleWithOrigin(_:)``
 
-宣言のみ確認（実装未調査）。
+指定位置を基準に初期ズームへ戻す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKWebView` の `_zoomToInitialScaleWithOrigin:animated:` に委譲する。
 
 ## References
 - [`WKContentView.h#L137`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.h#L137)
+- [`WKContentView.mm#L1077`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.mm#L1077)
 
 ## Metadata
 | Key | Value |
