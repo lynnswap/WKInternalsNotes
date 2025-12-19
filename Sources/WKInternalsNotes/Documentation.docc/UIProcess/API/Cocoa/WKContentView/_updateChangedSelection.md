@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_updateChangedSelection()``
 
-宣言のみ確認（実装未調査）。
+選択変更の反映処理を開始する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+引数付きの `_updateChangedSelection:` を `NO` で呼び出す。
 
 ## References
 - [`WKContentViewInteraction.h#L818`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L818)
+- [`WKContentViewInteraction.mm#L9388`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L9388)
 
 ## Metadata
 | Key | Value |
