@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_accessibilityRetrieveRectsAtSelectionOffset(_:withText:)``
 
-宣言のみ確認（実装未調査）。
+選択位置とテキストに基づく矩形取得を開始する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+completion handler なしで `_accessibilityRetrieveRectsAtSelectionOffset:withText:completionHandler:` を呼び出す薄いラッパー。
 
 ## References
-- [`WKContentViewInteraction.h#L851`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L851)
+- [WKContentViewInteraction.h#L852](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L852)
+- [WKContentViewInteraction.mm#L5084](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L5084)
 
 ## Metadata
 | Key | Value |

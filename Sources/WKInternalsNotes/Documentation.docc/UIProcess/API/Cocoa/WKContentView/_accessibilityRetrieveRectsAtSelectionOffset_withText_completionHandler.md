@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_accessibilityRetrieveRectsAtSelectionOffset(_:withText:completionHandler:)``
 
-宣言のみ確認（実装未調査）。
+選択位置とテキストに基づく矩形を取得し、必要ならコールバックする。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_page->requestRectsAtSelectionOffsetWithText` を呼び、結果を completion handler に渡した後 `_accessibilityDidGetSelectionRects:withGranularity:atOffset:` を `UITextGranularityWord` で通知する。
 
 ## References
-- [`WKContentViewInteraction.h#L851`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L851)
+- [WKContentViewInteraction.h#L851](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L851)
+- [WKContentViewInteraction.mm#L5089](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L5089)
 
 ## Metadata
 | Key | Value |

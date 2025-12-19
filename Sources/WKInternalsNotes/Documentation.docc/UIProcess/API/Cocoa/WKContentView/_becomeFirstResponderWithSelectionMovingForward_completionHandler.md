@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_becomeFirstResponderWithSelectionMovingForward(_:completionHandler:)``
 
-宣言のみ確認（実装未調査）。
+初期フォーカス方向を指定して first responder を取得する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_page->setInitialFocus` に `selectingForward` を渡して初期フォーカスを設定し、完了後に `becomeFirstResponder` を呼んで結果を completion handler に返す。
 
 ## References
-- [`WKContentViewInteraction.h#L844`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L844)
+- [WKContentViewInteraction.h#L844](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L844)
+- [WKContentViewInteraction.mm#L6180](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L6180)
 
 ## Metadata
 | Key | Value |

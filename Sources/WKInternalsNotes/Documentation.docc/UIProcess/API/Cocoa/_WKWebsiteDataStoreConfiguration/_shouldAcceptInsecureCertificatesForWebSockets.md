@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebsiteDataStoreConfiguration/_shouldAcceptInsecureCertificatesForWebSockets``
 
-宣言のみ確認（実装未調査）。
+WebSocket で不正な証明書を許可するかのフラグ（deprecated）。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`false` を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+getter は常に `false` を返し、setter は `UNUSED_PARAM` で実質的に何もしない。
 
 ## References
-- [`_WKWebsiteDataStoreConfiguration.h#L71`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L71)
+- [_WKWebsiteDataStoreConfiguration.h#L71](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L71)
+- [_WKWebsiteDataStoreConfiguration.mm#L751](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L751)
+- [_WKWebsiteDataStoreConfiguration.mm#L756](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L756)
 
 ## Metadata
 | Key | Value |

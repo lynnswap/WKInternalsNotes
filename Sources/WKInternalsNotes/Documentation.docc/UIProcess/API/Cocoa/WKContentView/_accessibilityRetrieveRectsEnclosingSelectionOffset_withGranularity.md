@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_accessibilityRetrieveRectsEnclosingSelectionOffset(_:withGranularity:)``
 
-宣言のみ確認（実装未調査）。
+選択範囲を包む矩形を granularity 単位で取得する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_page->requestRectsForGranularityWithSelectionOffset` を呼び、取得した `SelectionGeometry` を `webSelectionRectsForSelectionGeometries` で変換して `_accessibilityDidGetSelectionRects:withGranularity:atOffset:` に通知する。
 
 ## References
-- [`WKContentViewInteraction.h#L850`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L850)
+- [WKContentViewInteraction.h#L850](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L850)
+- [WKContentViewInteraction.mm#L5076](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L5076)
 
 ## Metadata
 | Key | Value |

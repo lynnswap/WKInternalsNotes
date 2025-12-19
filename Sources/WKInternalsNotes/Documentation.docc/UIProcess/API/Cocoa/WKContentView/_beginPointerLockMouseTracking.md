@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_beginPointerLockMouseTracking()``
 
-宣言のみ確認（実装未調査）。
+ポインタロック開始時にマウストラッキングを開始する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`ENABLE(POINTER_LOCK)` かつ `HAVE(UIKIT_WITH_MOUSE_SUPPORT)` のとき、`_mouseInteraction` に対して `beginPointerLockMouseTracking` を呼ぶ。
 
 ## References
-- [`WKContentViewInteraction.h#L1091`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L1091)
+- [WKContentViewInteraction.h#L1091](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L1091)
+- [WKContentViewInteraction.mm#L14389](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14389)
 
 ## Metadata
 | Key | Value |

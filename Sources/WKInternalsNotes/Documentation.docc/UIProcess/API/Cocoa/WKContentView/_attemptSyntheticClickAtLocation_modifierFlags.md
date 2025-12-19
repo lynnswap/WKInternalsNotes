@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_attemptSyntheticClickAtLocation(_:modifierFlags:)``
 
-宣言のみ確認（実装未調査）。
+合成クリックを WebPage に送る。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+first responder でなければ `becomeFirstResponder` し、入力周辺機器の編集を終了してから `_page->attemptSyntheticClick` を呼び出す。呼び出し時には `_layerTreeTransactionIdAtLastInteractionStart` を使用する。
 
 ## References
-- [`WKContentViewInteraction.h#L822`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L822)
+- [WKContentViewInteraction.h#L822](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L822)
+- [WKContentViewInteraction.mm#L4091](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L4091)
 
 ## Metadata
 | Key | Value |
