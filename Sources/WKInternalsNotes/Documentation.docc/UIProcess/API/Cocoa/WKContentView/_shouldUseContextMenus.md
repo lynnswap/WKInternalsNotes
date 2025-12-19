@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_shouldUseContextMenus``
 
-宣言のみ確認（実装未調査）。
+コンテキストメニューを使うべきかを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`USE(UICONTEXTMENU)` 有効時は `SDKAlignedBehavior::HasUIContextMenuInteraction` の判定結果、無効時は `NO`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+SDK アラインメントの条件に応じて `UIContextMenu` を利用するかを決める。
 
 ## References
 - [`WKContentViewInteraction.h#L939`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L939)
+- [`WKContentViewInteraction.mm#L10205`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L10205)
 
 ## Metadata
 | Key | Value |

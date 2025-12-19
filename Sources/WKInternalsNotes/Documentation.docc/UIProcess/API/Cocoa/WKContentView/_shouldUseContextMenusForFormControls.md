@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_shouldUseContextMenusForFormControls``
 
-宣言のみ確認（実装未調査）。
+フォームコントロールでコンテキストメニューを使うかを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`_formControlRefreshEnabled` と `_shouldUseContextMenus` の論理積。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+フォームコントロールの更新が可能で、かつコンテキストメニューが有効な場合のみ `YES`。
 
 ## References
 - [`WKContentViewInteraction.h#L940`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L940)
+- [`WKContentViewInteraction.mm#L10213`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L10213)
 
 ## Metadata
 | Key | Value |

@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_shouldAvoidScrollingWhenFocusedContentIsVisible``
 
-宣言のみ確認（実装未調査）。
+フォーカス要素が可視のときにスクロールを避けるべきかを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`_focusedElementInformation.shouldAvoidScrollingWhenFocusedContentIsVisible` を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+フォーカス中の要素のヒント情報に基づく単純な getter。
 
 ## References
 - [`WKContentViewInteraction.h#L942`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L942)
+- [`WKContentViewInteraction.mm#L10223`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L10223)
 
 ## Metadata
 | Key | Value |

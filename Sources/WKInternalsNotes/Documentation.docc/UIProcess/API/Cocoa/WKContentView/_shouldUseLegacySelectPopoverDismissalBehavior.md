@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_shouldUseLegacySelectPopoverDismissalBehavior``
 
-宣言のみ確認（実装未調査）。
+select のポップオーバーを旧挙動で閉じるべきかを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+小画面でないこと、`InputType::Select` であること、Data Activation 条件が揃うことが前提。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+Data Activation 環境で `select` がフォーカスされた場合のみ `YES` を返す。
 
 ## References
 - [`WKContentViewInteraction.h#L943`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L943)
+- [`WKContentViewInteraction.mm#L10228`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L10228)
 
 ## Metadata
 | Key | Value |
