@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKFormAccessoryView/showAutoFillButtonWithTitle(_:)``
 
-宣言のみ確認（実装未調査）。
+AutoFill ボタンを表示する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+AutoFill ボタンが未生成なら生成してタイトルを設定し、ユニバーサルコントロールバー利用時はグループを表示してレイアウトを更新する。
 
 ## References
 - [`WKFormAccessoryView.h#L49`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFormAccessoryView.h#L49)
+- [`WKFormAccessoryView.mm#L386`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFormAccessoryView.mm#L386)
 
 ## Metadata
 | Key | Value |

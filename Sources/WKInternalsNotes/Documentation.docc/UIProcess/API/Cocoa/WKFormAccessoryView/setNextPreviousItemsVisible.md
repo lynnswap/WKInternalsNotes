@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKFormAccessoryView/setNextPreviousItemsVisible(_:)``
 
-宣言のみ確認（実装未調査）。
+前後移動ボタンの表示を切り替える。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+ユニバーサルコントロールバーではボタングループの表示を切り替え、それ以外では左ツールバーの項目を追加・削除して更新する。
 
 ## References
 - [`WKFormAccessoryView.h#L51`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFormAccessoryView.h#L51)
+- [`WKFormAccessoryView.mm#L416`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFormAccessoryView.mm#L416)
 
 ## Metadata
 | Key | Value |
