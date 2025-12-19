@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKTextManipulationExclusionRule/elementName``
 
-宣言のみ確認（実装未調査）。
+対象要素名を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`initExclusion:forElement:` で指定された要素名。ほかの initializer では `nil` のまま。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+保持している `elementName` を返す。
 
 ## References
 - [`_WKTextManipulationExclusionRule.h#L38`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextManipulationExclusionRule.h#L38)
+- [`_WKTextManipulationExclusionRule.mm#L39`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextManipulationExclusionRule.mm#L39)
+- [`_WKTextManipulationExclusionRule.mm#L73`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextManipulationExclusionRule.mm#L73)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |

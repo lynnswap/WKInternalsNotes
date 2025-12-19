@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKTextManipulationExclusionRule/attributeValue``
 
-宣言のみ確認（実装未調査）。
+対象属性値を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`initExclusion:forAttribute:value:` で指定された属性値。ほかの initializer では `nil` のまま。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+保持している `attributeValue` を返す。
 
 ## References
 - [`_WKTextManipulationExclusionRule.h#L40`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextManipulationExclusionRule.h#L40)
+- [`_WKTextManipulationExclusionRule.mm#L50`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextManipulationExclusionRule.mm#L50)
+- [`_WKTextManipulationExclusionRule.mm#L83`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextManipulationExclusionRule.mm#L83)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |

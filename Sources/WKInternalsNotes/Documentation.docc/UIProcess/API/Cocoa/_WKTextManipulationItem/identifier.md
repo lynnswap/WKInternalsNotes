@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKTextManipulationItem/identifier``
 
-宣言のみ確認（実装未調査）。
+項目の識別子を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`initWithIdentifier:tokens:` などで渡した識別子。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+保持している `identifier` をそのまま返す。
 
 ## References
-- [`_WKTextManipulationItem.h#L37`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextManipulationItem.h#L37)
+- [`_WKTextManipulationItem.h#L40`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextManipulationItem.h#L40)
+- [`_WKTextManipulationItem.mm#L62`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextManipulationItem.mm#L62)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |
