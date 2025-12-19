@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_zoomToRect(_:withOrigin:fitEntireRect:minimumScale:maximumScale:minimumScrollDistance:)``
 
-宣言のみ確認（実装未調査）。
+指定矩形へのズームとスクロールを実行する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKWebView` の `_zoomToRect:withOrigin:fitEntireRect:minimumScale:maximumScale:minimumScrollDistance:` を呼び、ズーム可否の結果を返す。
 
 ## References
 - [`WKContentView.h#L135`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.h#L135)
+- [`WKContentView.mm#L1067`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.mm#L1067)
 
 ## Metadata
 | Key | Value |

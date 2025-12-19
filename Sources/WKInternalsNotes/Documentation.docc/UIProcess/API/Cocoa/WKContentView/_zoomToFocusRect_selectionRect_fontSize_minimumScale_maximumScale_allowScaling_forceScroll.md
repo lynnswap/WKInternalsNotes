@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_zoomToFocusRect(_:selectionRect:fontSize:minimumScale:maximumScale:allowScaling:forceScroll:)``
 
-宣言のみ確認（実装未調査）。
+指定矩形へのズームを実行する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKWebView` の `_zoomToFocusRect:selectionRect:fontSize:minimumScale:maximumScale:allowScaling:forceScroll:` に引き継ぎ、ズーム対象矩形やスケール制約を渡す。
 
 ## References
 - [`WKContentView.h#L134`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.h#L134)
+- [`WKContentView.mm#L1056`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.mm#L1056)
 
 ## Metadata
 | Key | Value |
