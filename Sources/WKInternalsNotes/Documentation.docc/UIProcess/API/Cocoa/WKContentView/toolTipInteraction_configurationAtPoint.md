@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/toolTipInteraction(_:configurationAtPoint:)``
 
-宣言のみ確認（実装未調査）。
+ツールチップ表示設定を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`interaction.defaultToolTip` を用いた `UIToolTipConfiguration` を返す。
 
 ## References
 - [`WKContentViewInteraction.h#L889`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L889)
+- [`WKContentViewInteraction.mm#L11541`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L11541)
 
 ## Metadata
 | Key | Value |
