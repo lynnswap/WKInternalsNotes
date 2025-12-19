@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_setTransform3DForModelViews(_:)``
 
-宣言のみ確認（実装未調査）。
+モデル表示のスケール変更を通知する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`modelPresentationManagerProxy` が存在する場合に `pageScaleDidChange` を呼び出す。
 
 ## References
 - [`WKContentView.h#L142`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.h#L142)
+- [`WKContentView.mm#L1098`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.mm#L1098)
 
 ## Metadata
 | Key | Value |

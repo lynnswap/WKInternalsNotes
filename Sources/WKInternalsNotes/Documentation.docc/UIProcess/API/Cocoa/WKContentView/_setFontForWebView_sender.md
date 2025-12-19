@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_setFontForWebView(_:sender:)``
 
-宣言のみ確認（実装未調査）。
+指定フォントに合わせて文字スタイルを更新する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`UIFont` から `FontChanges` を構築し、フォント名/サイズ/太字/斜体を設定して `changeFont` を呼び出す。
 
 ## References
 - [`WKContentViewInteraction.h#L785`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L785)
+- [`WKContentViewInteraction.mm#L4533`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L4533)
 
 ## Metadata
 | Key | Value |

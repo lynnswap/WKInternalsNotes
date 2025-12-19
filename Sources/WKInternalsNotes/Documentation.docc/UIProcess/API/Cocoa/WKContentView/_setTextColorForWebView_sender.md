@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_setTextColorForWebView(_:sender:)``
 
-宣言のみ確認（実装未調査）。
+テキスト色を変更する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+UIColor を `WebCore::Color` に変換して `ForeColor` コマンドを実行する。
 
 ## References
 - [`WKContentViewInteraction.h#L787`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L787)
+- [`WKContentViewInteraction.mm#L4555`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L4555)
 
 ## Metadata
 | Key | Value |
