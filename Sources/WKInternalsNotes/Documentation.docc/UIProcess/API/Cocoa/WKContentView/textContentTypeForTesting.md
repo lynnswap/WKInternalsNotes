@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/textContentTypeForTesting``
 
-宣言のみ確認（実装未調査）。
+テスト用に現在の textContentType を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+表示中の入力 UI があればそこから取得し、無ければ textInputTraits 由来の値を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+PEPPER UI では表示中の入力ビュー（`WKTextInputListViewController` / Quickboard）から取得する。BrowserEngineKit 使用時に legacy traits を使わない場合は `extendedTraitsDelegate.textContentType` を返し、最後に `textInputTraits.textContentType` を返す。
 
 ## References
 - [`WKContentViewInteraction.h#L1061`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L1061)
+- [`WKContentViewInteraction.mm#L14519`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14519)
 
 ## Metadata
 | Key | Value |

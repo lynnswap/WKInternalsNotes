@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/preventsPanningInXAxis``
 
-宣言のみ確認（実装未調査）。
+水平方向のパン操作を抑制しているかを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`_preventsPanningInXAxis` を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+内部フラグ `_preventsPanningInXAxis` の値を返す。
 
 ## References
 - [`WKContentViewInteraction.h#L350`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L350)
+- [`WKContentViewInteraction.mm#L1159`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L1159)
 
 ## Metadata
 | Key | Value |
