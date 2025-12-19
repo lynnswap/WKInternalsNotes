@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/generateSyntheticEditingCommand(_:)``
 
-宣言のみ確認（実装未調査）。
+編集コマンドを合成して実行する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WebPageProxy::generateSyntheticEditingCommand` に委譲する。
 
 ## References
 - [`WKContentViewInteraction.h#L863`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L863)
+- [`WKContentViewInteraction.mm#L7626`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L7626)
 
 ## Metadata
 | Key | Value |
