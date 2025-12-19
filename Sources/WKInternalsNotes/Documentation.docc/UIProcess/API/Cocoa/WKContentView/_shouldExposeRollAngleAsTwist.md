@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_shouldExposeRollAngleAsTwist()``
 
-宣言のみ確認（実装未調査）。
+ロール角を twist として公開するかを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WebPageProxy` の設定 `exposeRollAngleAsTwistEnabled` を返す。
 
 ## References
 - [`WKContentView.h#L144`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.h#L144)
+- [`WKContentView.mm#L1132`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.mm#L1132)
 
 ## Metadata
 | Key | Value |
