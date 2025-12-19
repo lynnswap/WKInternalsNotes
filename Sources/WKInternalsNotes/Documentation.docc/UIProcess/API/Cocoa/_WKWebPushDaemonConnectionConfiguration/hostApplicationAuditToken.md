@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebPushDaemonConnectionConfiguration/hostApplicationAuditToken``
 
-宣言のみ確認（実装未調査）。
+ホストアプリの audit token を設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`init` では設定されず、呼び出し元が値を設定する。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`USE(EXTENSIONKIT)` でない場合に `initWithConfiguration:` が audit token をバイト列へ変換し、接続設定に渡す。
 
 ## References
 - [`_WKWebPushDaemonConnection.h#L48`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebPushDaemonConnection.h#L48)
+- [`_WKWebPushDaemonConnection.mm#L88`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebPushDaemonConnection.mm#L88)
 
 ## Metadata
 | Key | Value |

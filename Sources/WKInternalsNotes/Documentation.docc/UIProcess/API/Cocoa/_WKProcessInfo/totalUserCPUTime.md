@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKProcessInfo/totalUserCPUTime``
 
-宣言のみ確認（実装未調査）。
+ユーザ CPU 時間（秒）を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`initWithTaskInfo:` で `info.totalUserCPUTime.seconds()` から設定される。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`TaskInfo` の user CPU time を秒に変換して保持する。
 
 ## References
 - [`WKProcessPoolPrivate.h#L58`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L58)
+- [`WKProcessPool.mm#L743`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L743)
+- [`WKProcessPool.mm#L769`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L769)
 
 ## Metadata
 | Key | Value |

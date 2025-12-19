@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKProcessInfo/state``
 
-宣言のみ確認（実装未調査）。
+プロセスの実行状態を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,16 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`initWithTaskInfo:` で `info.state` を `processStateFromThrottleState` で変換して設定される。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WebKit::ProcessThrottleState` を `_WKProcessState` に変換し、synthesize された getter で返す。
 
 ## References
 - [`WKProcessPoolPrivate.h#L57`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L57)
+- [`WKProcessPool.mm#L742`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L742)
+- [`WKProcessPool.mm#L747`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L747)
+- [`WKProcessPool.mm#L768`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L768)
 
 ## Metadata
 | Key | Value |

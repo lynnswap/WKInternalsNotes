@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKProcessInfo/physicalFootprint``
 
-宣言のみ確認（実装未調査）。
+物理メモリフットプリント（bytes）を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`initWithTaskInfo:` で `info.physicalFootprint` から設定される。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`TaskInfo` の physical footprint をそのまま保持して返す。
 
 ## References
 - [`WKProcessPoolPrivate.h#L60`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L60)
+- [`WKProcessPool.mm#L745`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L745)
+- [`WKProcessPool.mm#L771`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L771)
 
 ## Metadata
 | Key | Value |

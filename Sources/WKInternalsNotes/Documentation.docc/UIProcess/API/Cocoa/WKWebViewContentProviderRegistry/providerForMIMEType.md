@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKWebViewContentProviderRegistry/providerForMIMEType(_:)``
 
-宣言のみ確認（実装未調査）。
+MIME type に対応する content provider クラスを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+MIME type が空の場合や登録がない場合は `nil` を返す。登録済みのマップから一致するクラスを返す。
 
 ## References
 - [`WKWebViewContentProviderRegistry.h#L39`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/WKWebViewContentProviderRegistry.h#L39)
+- [`WKWebViewContentProviderRegistry.mm#L67`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/WKWebViewContentProviderRegistry.mm#L67)
 
 ## Metadata
 | Key | Value |

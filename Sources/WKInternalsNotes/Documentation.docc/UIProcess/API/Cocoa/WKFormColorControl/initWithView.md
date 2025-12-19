@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKFormColorControl/initWithView(_:)``
 
-宣言のみ確認（実装未調査）。
+カラー選択用のフォームコントロールを初期化する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKColorPicker` を生成し、`WKFormPeripheralBase` の `initWithView:control:` で初期化する。
 
 ## References
 - [`WKFormColorControl.h#L34`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFormColorControl.h#L34)
+- [`WKFormColorControl.mm#L161`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFormColorControl.mm#L161)
 
 ## Metadata
 | Key | Value |

@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebPushDaemonConnectionConfiguration/machServiceName``
 
-宣言のみ確認（実装未調査）。
+webpushd の Mach サービス名を指定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`init` で `ENABLE(RELOCATABLE_WEBPUSHD)` の有無に応じて既定値が設定される。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+既定値は `com.apple.webkit.webpushd.relocatable.service` または `com.apple.webkit.webpushd.service`。`dealloc` では `nil` にクリアされる。
 
 ## References
 - [`_WKWebPushDaemonConnection.h#L46`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebPushDaemonConnection.h#L46)
+- [`_WKWebPushDaemonConnection.mm#L53`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebPushDaemonConnection.mm#L53)
+- [`_WKWebPushDaemonConnection.mm#L61`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebPushDaemonConnection.mm#L61)
 
 ## Metadata
 | Key | Value |

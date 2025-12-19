@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebPushDaemonConnectionConfiguration/partition``
 
-宣言のみ確認（実装未調査）。
+パーティション名（nullable）を設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`init` では設定されず `nil`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`initWithConfiguration:` で `WebPushDaemonConnectionConfiguration` に渡され、接続先の partition として使われる。
 
 ## References
 - [`_WKWebPushDaemonConnection.h#L47`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebPushDaemonConnection.h#L47)
+- [`_WKWebPushDaemonConnection.mm#L66`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebPushDaemonConnection.mm#L66)
+- [`_WKWebPushDaemonConnection.mm#L84`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebPushDaemonConnection.mm#L84)
 
 ## Metadata
 | Key | Value |

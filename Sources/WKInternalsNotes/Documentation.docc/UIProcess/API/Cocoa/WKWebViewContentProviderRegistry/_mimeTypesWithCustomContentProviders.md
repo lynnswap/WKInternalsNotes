@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKWebViewContentProviderRegistry/_mimeTypesWithCustomContentProviders()``
 
-宣言のみ確認（実装未調査）。
+登録済みのカスタム provider の MIME type 一覧を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_contentProviderForMIMEType` に登録されたキー一覧を返す。
 
 ## References
 - [`WKWebViewContentProviderRegistry.h#L41`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/WKWebViewContentProviderRegistry.h#L41)
+- [`WKWebViewContentProviderRegistry.mm#L80`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/WKWebViewContentProviderRegistry.mm#L80)
 
 ## Metadata
 | Key | Value |

@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKProcessInfo/initWithTaskInfo(_:)``
 
-宣言のみ確認（実装未調査）。
+`TaskInfo` から `_WKProcessInfo` を初期化する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`info` から PID/状態/CPU 時間/physical footprint を読み取り、`processStateFromThrottleState` で状態を変換して各プロパティを設定する。
 
 ## References
-- [`WKProcessPool.mm#L80`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L80)
+- [`WKProcessPool.mm#L747`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L747)
+- [`WKProcessPool.mm#L762`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L762)
 
 ## Metadata
 | Key | Value |

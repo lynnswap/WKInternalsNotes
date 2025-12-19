@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKFormColorControl/selectColor(_:)``
 
-宣言のみ確認（実装未調査）。
+テスト用途で色を選択する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`self.control` が `WKColorPicker` の場合に `selectColor:` を呼び出す。
 
 ## References
 - [`WKFormColorControl.h#L38`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFormColorControl.h#L38)
+- [`WKFormColorControl.mm#L172`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFormColorControl.mm#L172)
 
 ## Metadata
 | Key | Value |
