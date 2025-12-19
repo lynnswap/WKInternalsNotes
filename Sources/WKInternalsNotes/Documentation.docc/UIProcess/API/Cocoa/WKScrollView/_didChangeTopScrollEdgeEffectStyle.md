@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKScrollView/_didChangeTopScrollEdgeEffectStyle()``
 
-宣言のみ確認（実装未調査）。
+トップエッジエフェクトのスタイル変更を内部へ通知する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+内部 delegate が存在する場合に、トップポケット色とハードポケット設定の更新を依頼する。
 
 ## References
 - [`WKScrollView.h#L59`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKScrollView.h#L59)
+- [`WKScrollView.mm#L704`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKScrollView.mm#L704)
 
 ## Metadata
 | Key | Value |

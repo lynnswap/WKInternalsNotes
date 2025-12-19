@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKSelectMenuListViewControllerDelegate/selectMenu(_:displayTextForItemAtIndex:)``
 
-宣言のみ確認（実装未調査）。
+指定インデックスの表示テキストを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+範囲外の場合は assertion を出して空文字列を返す。範囲内なら `focusedSelectElementOptions[index].text` を返す。
 
 ## References
-- [`WKSelectMenuListViewController.h#L34`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKSelectMenuListViewController.h#L34)
+- [`WKSelectMenuListViewController.h#L39`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKSelectMenuListViewController.h#L39)
+- [`WKContentViewInteraction.mm#L9220`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L9220)
 
 ## Metadata
 | Key | Value |

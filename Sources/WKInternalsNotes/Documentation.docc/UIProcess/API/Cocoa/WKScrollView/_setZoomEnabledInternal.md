@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKScrollView/_setZoomEnabledInternal(_:)``
 
-宣言のみ確認（実装未調査）。
+内部側のズーム可否を設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,12 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+内部フラグを更新し、クライアント設定との AND で最終的な `zoomEnabled` を決める。
 
 ## References
 - [`WKScrollView.h#L42`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKScrollView.h#L42)
+- [`WKScrollView.mm#L498`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKScrollView.mm#L498)
+- [`WKScrollView.mm#L504`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKScrollView.mm#L504)
 
 ## Metadata
 | Key | Value |

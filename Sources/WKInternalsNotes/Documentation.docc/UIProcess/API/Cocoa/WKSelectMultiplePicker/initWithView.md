@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKSelectMultiplePicker/initWithView(_:)``
 
-宣言のみ確認（実装未調査）。
+複数選択用のピッカーを初期化する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKSelectPickerTableViewController` とそれを包む `UINavigationController` を生成し、関連する `WKContentView` を保持する。
 
 ## References
-- [`WKFormSelectPicker.h#L38`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFormSelectPicker.h#L38)
+- [`WKFormSelectPicker.h#L54`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFormSelectPicker.h#L54)
+- [`WKFormSelectPicker.mm#L1242`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFormSelectPicker.mm#L1242)
 
 ## Metadata
 | Key | Value |

@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKScrollView/_setContentSizePreservingContentOffsetDuringRubberband(_:)``
 
-宣言のみ確認（実装未調査）。
+ラバーバンド中の contentSize 変更で contentOffset を保つ。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+ラバーバンド中（ドラッグ中や extents を超えた状態）に contentSize を変更する場合、現在のラバーバンド量を記録し、`setContentSize:` 後に offset を復元する。条件に当てはまらない場合はそのまま `setContentSize:` を呼ぶ。
 
 ## References
 - [`WKScrollView.h#L40`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKScrollView.h#L40)
+- [`WKScrollView.mm#L405`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKScrollView.mm#L405)
 
 ## Metadata
 | Key | Value |

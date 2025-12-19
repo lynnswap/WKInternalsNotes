@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKSelectMenuListViewControllerDelegate/selectMenu(_:didSelectItemAtIndex:)``
 
-宣言のみ確認（実装未調査）。
+単一選択の項目選択を反映する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+マルチセレクトでないことを前提に、`updateFocusedElementSelectedIndex:allowsMultipleSelection:` を `false` で呼び出す。
 
 ## References
 - [`WKSelectMenuListViewController.h#L34`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKSelectMenuListViewController.h#L34)
+- [`WKContentViewInteraction.mm#L9209`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L9209)
 
 ## Metadata
 | Key | Value |

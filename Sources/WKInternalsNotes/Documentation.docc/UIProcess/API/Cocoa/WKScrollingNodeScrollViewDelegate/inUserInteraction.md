@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKScrollingNodeScrollViewDelegate/inUserInteraction``
 
-宣言のみ確認（実装未調査）。
+ユーザー操作中かどうかを示すフラグ。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+初期は `NO`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`scrollViewWillBeginDragging:` で `YES` にし、`scrollViewDidEndDragging:`（減速なし）や `scrollViewDidEndDecelerating:` で `NO` に戻す。`scrollViewDidScroll:` の通知にも渡される。
 
 ## References
-- [`ScrollingTreeScrollingNodeDelegateIOS.h#L67`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/RemoteLayerTree/ios/ScrollingTreeScrollingNodeDelegateIOS.h#L67)
+- [`ScrollingTreeScrollingNodeDelegateIOS.h#L115`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/RemoteLayerTree/ios/ScrollingTreeScrollingNodeDelegateIOS.h#L115)
+- [`ScrollingTreeScrollingNodeDelegateIOS.mm#L84`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/RemoteLayerTree/ios/ScrollingTreeScrollingNodeDelegateIOS.mm#L84)
+- [`ScrollingTreeScrollingNodeDelegateIOS.mm#L93`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/RemoteLayerTree/ios/ScrollingTreeScrollingNodeDelegateIOS.mm#L93)
+- [`ScrollingTreeScrollingNodeDelegateIOS.mm#L150`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/RemoteLayerTree/ios/ScrollingTreeScrollingNodeDelegateIOS.mm#L150)
+- [`ScrollingTreeScrollingNodeDelegateIOS.mm#L163`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/RemoteLayerTree/ios/ScrollingTreeScrollingNodeDelegateIOS.mm#L163)
 
 ## Metadata
 | Key | Value |

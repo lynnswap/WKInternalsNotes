@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKSelectMenuListViewControllerDelegate/numberOfItemsInSelectMenu(_:)``
 
-宣言のみ確認（実装未調査）。
+select 要素の項目数を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`focusedSelectElementOptions` のサイズを返す。
 
 ## References
 - [`WKSelectMenuListViewController.h#L38`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKSelectMenuListViewController.h#L38)
+- [`WKContentViewInteraction.mm#L9215`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L9215)
 
 ## Metadata
 | Key | Value |

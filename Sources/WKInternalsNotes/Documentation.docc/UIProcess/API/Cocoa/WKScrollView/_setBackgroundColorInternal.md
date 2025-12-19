@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKScrollView/_setBackgroundColorInternal(_:)``
 
-宣言のみ確認（実装未調査）。
+内部的に背景色を設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+クライアントが背景色を明示設定している場合は何もしない。そうでなければ `super.backgroundColor` を更新し、内部 delegate のキャッシュをリセットする。
 
 ## References
 - [`WKScrollView.h#L38`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKScrollView.h#L38)
+- [`WKScrollView.mm#L266`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKScrollView.mm#L266)
 
 ## Metadata
 | Key | Value |

@@ -1,17 +1,21 @@
 # ``WKInternalsNotes/WKScrollView/_wk_rightEdgeEffect()``
 
-宣言のみ確認（実装未調査）。
+右エッジの `WKUIScrollEdgeEffect` を返す。
 
 ## Objective-C Declaration
 ```objective-c
 - (WKUIScrollEdgeEffect *)_wk_rightEdgeEffect;
 ```
 
+## Default Value
+元の `rightEdgeEffect` が存在しない場合は `nil`。
+
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+既存の `UIScrollEdgeEffect` を取得し、未ラップなら `WKUIScrollEdgeEffect` を生成してキャッシュする。
 
 ## References
 - [`WKScrollView.h#L63`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKScrollView.h#L63)
+- [`WKScrollView.mm#L637`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKScrollView.mm#L637)
 
 ## Metadata
 | Key | Value |

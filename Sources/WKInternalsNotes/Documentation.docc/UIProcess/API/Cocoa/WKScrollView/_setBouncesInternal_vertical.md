@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKScrollView/_setBouncesInternal(_:vertical:)``
 
-宣言のみ確認（実装未調査）。
+内部側のバウンス可否を設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,12 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+内部の水平/垂直バウンスフラグを更新し、クライアント設定との AND で `bouncesHorizontally`/`bouncesVertically` を更新する。
 
 ## References
 - [`WKScrollView.h#L43`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKScrollView.h#L43)
+- [`WKScrollView.mm#L479`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKScrollView.mm#L479)
+- [`WKScrollView.mm#L486`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKScrollView.mm#L486)
 
 ## Metadata
 | Key | Value |

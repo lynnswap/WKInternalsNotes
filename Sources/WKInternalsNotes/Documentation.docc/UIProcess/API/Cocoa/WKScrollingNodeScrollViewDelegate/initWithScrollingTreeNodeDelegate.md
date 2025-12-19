@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKScrollingNodeScrollViewDelegate/initWithScrollingTreeNodeDelegate(_:)``
 
-宣言のみ確認（実装未調査）。
+Scrolling tree delegate を保持して初期化する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`delegate` を `_scrollingTreeNodeDelegate` に保存する。
 
 ## References
 - [`ScrollingTreeScrollingNodeDelegateIOS.h#L117`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/RemoteLayerTree/ios/ScrollingTreeScrollingNodeDelegateIOS.h#L117)
+- [`ScrollingTreeScrollingNodeDelegateIOS.mm#L58`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/RemoteLayerTree/ios/ScrollingTreeScrollingNodeDelegateIOS.mm#L58)
 
 ## Metadata
 | Key | Value |

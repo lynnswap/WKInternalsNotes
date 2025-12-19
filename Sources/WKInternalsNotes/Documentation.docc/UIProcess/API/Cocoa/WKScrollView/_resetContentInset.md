@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKScrollView/_resetContentInset()``
 
-宣言のみ確認（実装未調査）。
+`contentInset` を初期値に戻す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`contentInset` を `UIEdgeInsetsZero` に戻し、可視領域の更新をスケジュールする。
 
 ## References
 - [`WKScrollView.h#L47`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKScrollView.h#L47)
+- [`WKScrollView.mm#L333`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKScrollView.mm#L333)
 
 ## Metadata
 | Key | Value |

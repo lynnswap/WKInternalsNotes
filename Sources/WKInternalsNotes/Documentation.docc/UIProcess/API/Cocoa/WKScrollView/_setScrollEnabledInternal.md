@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKScrollView/_setScrollEnabledInternal(_:)``
 
-宣言のみ確認（実装未調査）。
+内部側のスクロール可否を設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,12 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+内部フラグを更新し、クライアント設定との AND で最終的な `scrollEnabled` を決める。
 
 ## References
 - [`WKScrollView.h#L41`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKScrollView.h#L41)
+- [`WKScrollView.mm#L462`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKScrollView.mm#L462)
+- [`WKScrollView.mm#L468`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKScrollView.mm#L468)
 
 ## Metadata
 | Key | Value |

@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKSelectMenuListViewControllerDelegate/selectMenu(_:didCheckItemAtIndex:checked:)``
 
-宣言のみ確認（実装未調査）。
+複数選択のチェック状態を更新する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+マルチセレクト前提で、範囲外や状態が変わらない場合は assertion で終了する。状態が変わる場合は `updateFocusedElementSelectedIndex:allowsMultipleSelection:true` を呼び、オプションの `isSelected` を更新する。
 
 ## References
-- [`WKSelectMenuListViewController.h#L34`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKSelectMenuListViewController.h#L34)
+- [`WKSelectMenuListViewController.h#L35`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKSelectMenuListViewController.h#L35)
+- [`WKContentViewInteraction.mm#L9231`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L9231)
 
 ## Metadata
 | Key | Value |

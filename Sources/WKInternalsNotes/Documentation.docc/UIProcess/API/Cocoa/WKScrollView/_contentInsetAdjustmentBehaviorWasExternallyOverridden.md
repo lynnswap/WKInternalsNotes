@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKScrollView/_contentInsetAdjustmentBehaviorWasExternallyOverridden``
 
-宣言のみ確認（実装未調査）。
+外部から `contentInsetAdjustmentBehavior` が変更されたかを示す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+初期化時の `contentInsetAdjustmentBehavior` が `UIScrollViewContentInsetAdjustmentAutomatic` 以外なら `YES`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`setContentInsetAdjustmentBehavior:` が呼ばれると `YES` になり、`_resetContentInsetAdjustmentBehavior` で `NO` に戻る。
 
 ## References
 - [`WKScrollView.h#L52`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKScrollView.h#L52)
+- [`WKScrollView.mm#L342`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKScrollView.mm#L342)
 
 ## Metadata
 | Key | Value |

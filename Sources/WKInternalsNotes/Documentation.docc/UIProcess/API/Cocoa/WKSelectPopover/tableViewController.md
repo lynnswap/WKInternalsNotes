@@ -1,20 +1,18 @@
 # ``WKInternalsNotes/WKSelectPopover/tableViewController``
 
-宣言のみ確認（実装未調査）。
+内部のテーブルビューコントローラを返す。
 
 ## Objective-C Declaration
 ```objective-c
 @property (nonatomic, readonly) UITableViewController *tableViewController;
 ```
 
-## Default Value
-未調査（初期化経路の確認が必要）。
-
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKSelectTableViewController` を保持している `_tableViewController` を返す。
 
 ## References
 - [`WKFormSelectPopover.h#L37`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFormSelectPopover.h#L37)
+- [`WKFormSelectPopover.mm#L444`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFormSelectPopover.mm#L444)
 
 ## Metadata
 | Key | Value |
