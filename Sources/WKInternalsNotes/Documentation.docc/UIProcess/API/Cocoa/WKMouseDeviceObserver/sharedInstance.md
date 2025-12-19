@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKMouseDeviceObserver/sharedInstance()``
 
-宣言のみ確認（実装未調査）。
+共有インスタンスを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+Swift 実装では `private static let shared` を返すシングルトン。
 
 ## References
-- [`WKMouseDeviceObserver.h#L35`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKMouseDeviceObserver.h#L35)
+- [WKMouseDeviceObserver.h#L35](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKMouseDeviceObserver.h#L35)
+- [WKMouseDeviceObserver.swift#L63](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/WKMouseDeviceObserver.swift#L63)
 
 ## Metadata
 | Key | Value |

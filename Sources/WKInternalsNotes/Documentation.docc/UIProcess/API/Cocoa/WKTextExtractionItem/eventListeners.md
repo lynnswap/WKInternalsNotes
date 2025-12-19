@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTextExtractionItem/eventListeners``
 
-宣言のみ確認（実装未調査）。
+イベントリスナー種別を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`init(with:)` の引数値がそのまま保持される。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+Swift の `@_objcImplementation` extension で `let eventListeners` を保持し、`init(with:)` の引数から設定される。
 
 ## References
-- [`_WKTextExtractionInternal.h#L117`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtractionInternal.h#L117)
+- [_WKTextExtractionInternal.h#L117](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtractionInternal.h#L117)
+- [_WKTextExtraction.swift#L39](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtraction.swift#L39)
 
 ## Metadata
 | Key | Value |

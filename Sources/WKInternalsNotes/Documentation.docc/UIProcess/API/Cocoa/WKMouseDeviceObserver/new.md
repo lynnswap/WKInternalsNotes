@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKMouseDeviceObserver/new()``
 
-宣言のみ確認（実装未調査）。
+`new` は使用不可。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,10 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`sharedInstance` の利用を前提にしており、`new` は無効化されている。
 
 ## References
-- [`WKMouseDeviceObserver.h#L36`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKMouseDeviceObserver.h#L36)
+- [WKMouseDeviceObserver.h#L36](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKMouseDeviceObserver.h#L36)
 
 ## Metadata
 | Key | Value |

@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKMouseDeviceObserver/stop()``
 
-宣言のみ確認（実装未調査）。
+マウスデバイスの接続監視を停止する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`startCount` をデクリメントし、0 になった時点で接続/切断監視 Task をキャンセルする。
 
 ## References
-- [`WKMouseDeviceObserver.h#L39`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKMouseDeviceObserver.h#L39)
+- [WKMouseDeviceObserver.h#L39](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKMouseDeviceObserver.h#L39)
+- [WKMouseDeviceObserver.swift#L94](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/WKMouseDeviceObserver.swift#L94)
 
 ## Metadata
 | Key | Value |

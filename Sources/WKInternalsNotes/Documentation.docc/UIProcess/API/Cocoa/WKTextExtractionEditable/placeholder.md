@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTextExtractionEditable/placeholder``
 
-宣言のみ確認（実装未調査）。
+編集可能要素のプレースホルダを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`init(placeholder:...)` の引数値がそのまま保持される。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+Swift 実装では `let placeholder` として保持し、`init(label:placeholder:isSecure:isFocused:)` で設定される。
 
 ## References
-- [`_WKTextExtractionInternal.h#L107`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtractionInternal.h#L107)
+- [_WKTextExtractionInternal.h#L109](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtractionInternal.h#L109)
+- [_WKTextExtraction.swift#L230](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtraction.swift#L230)
 
 ## Metadata
 | Key | Value |

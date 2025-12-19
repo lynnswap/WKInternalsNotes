@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTextExtractionTextFormControlItem/autocomplete``
 
-宣言のみ確認（実装未調査）。
+autocomplete 属性値を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`init(autocomplete:...)` の引数値がそのまま保持される。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+Swift 実装では `let autocomplete` として保持し、`init(autocomplete:...)` で設定される。
 
 ## References
-- [`_WKTextExtractionInternal.h#L141`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtractionInternal.h#L141)
+- [_WKTextExtractionInternal.h#L147](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtractionInternal.h#L147)
+- [_WKTextExtraction.swift#L164](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtraction.swift#L164)
 
 ## Metadata
 | Key | Value |

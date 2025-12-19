@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTextExtractionTextFormControlItem/label``
 
-宣言のみ確認（実装未調査）。
+フォームコントロールのラベルを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`editable` の `label` をそのまま返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+Swift 実装では `editable.label` を返す。
 
 ## References
-- [`_WKTextExtractionInternal.h#L107`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtractionInternal.h#L107)
+- [_WKTextExtractionInternal.h#L142](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtractionInternal.h#L142)
+- [_WKTextExtraction.swift#L154](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtraction.swift#L154)
 
 ## Metadata
 | Key | Value |

@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTextExtractionLink/range``
 
-宣言のみ確認（実装未調査）。
+リンク範囲を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`init(url:range:)` の引数値がそのまま保持される。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+Swift 実装では `let range` として保持し、`init(url:range:)` で設定される。
 
 ## References
-- [`_WKTextExtractionInternal.h#L101`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtractionInternal.h#L101)
+- [_WKTextExtractionInternal.h#L103](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtractionInternal.h#L103)
+- [_WKTextExtraction.swift#L309](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtraction.swift#L309)
 
 ## Metadata
 | Key | Value |

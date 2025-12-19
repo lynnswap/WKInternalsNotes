@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTextExtractionResult/rootItem``
 
-宣言のみ確認（実装未調査）。
+抽出結果のルートアイテムを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`init(rootItem:)` の引数値がそのまま保持される。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+Swift 実装では `let rootItem` として保持し、`init(rootItem:)` で設定される。
 
 ## References
-- [`_WKTextExtractionInternal.h#L179`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtractionInternal.h#L179)
+- [_WKTextExtractionInternal.h#L180](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtractionInternal.h#L180)
+- [_WKTextExtraction.swift#L464](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtraction.swift#L464)
 
 ## Metadata
 | Key | Value |
