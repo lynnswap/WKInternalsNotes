@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_didCommitLayerTree(_:)``
 
-宣言のみ確認（実装未調査）。
+レイヤーツリーのコミット処理を反映する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+トランザクションからコンテンツ境界を算出して必要なら `bounds` を更新し、`WKWebView` にコミットを通知する。インタラクションビューの座標更新や固定位置の再計算を行い、条件が揃えば選択状態の更新も行う。
 
 ## References
 - [`WKContentView.h#L128`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.h#L128)
+- [`WKContentView.mm#L1000`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.mm#L1000)
 
 ## Metadata
 | Key | Value |
