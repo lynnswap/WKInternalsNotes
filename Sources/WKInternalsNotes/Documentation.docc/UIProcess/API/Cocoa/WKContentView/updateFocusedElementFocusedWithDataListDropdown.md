@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/updateFocusedElementFocusedWithDataListDropdown(_:)``
 
-宣言のみ確認（実装未調査）。
+datalist ドロップダウン表示中フラグを更新する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_focusedElementInformation.isFocusingWithDataListDropdown` を更新し、`reloadInputViews` を呼ぶ。
 
 ## References
 - [`WKContentViewInteraction.h#L877`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L877)
+- [`WKContentViewInteraction.mm#L6259`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L6259)
 
 ## Metadata
 | Key | Value |

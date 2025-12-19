@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/updateFocusedElementValueAsColor(_:)``
 
-宣言のみ確認（実装未調査）。
+フォーカス中要素の色値を更新する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+入力値を `WebCore::Color` に変換し、HTML 文字列へシリアライズして `_page->setFocusedElementValue` に渡す。`_focusedElementInformation.value` と `colorValue` を更新する。
 
 ## References
 - [`WKContentViewInteraction.h#L874`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L874)
+- [`WKContentViewInteraction.mm#L6240`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L6240)
 
 ## Metadata
 | Key | Value |

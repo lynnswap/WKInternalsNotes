@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/sizeForLegacyFormControlPickerViews``
 
-宣言のみ確認（実装未調査）。
+レガシーなフォームピッカー用のサイズを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+ウィンドウ幅を使い、高さは既定の inputView 高さに委ねる。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`self.window.bounds.size` をベースに高さを `0` にして返す（入力ビューの既定高さにフォールバックさせるため）。
 
 ## References
 - [`WKContentViewInteraction.h#L742`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L742)
+- [`WKContentViewInteraction.mm#L13546`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L13546)
 
 ## Metadata
 | Key | Value |

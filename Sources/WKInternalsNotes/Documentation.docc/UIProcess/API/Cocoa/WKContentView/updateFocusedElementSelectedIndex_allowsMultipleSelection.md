@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/updateFocusedElementSelectedIndex(_:allowsMultipleSelection:)``
 
-宣言のみ確認（実装未調査）。
+フォーカス中の選択要素で指定インデックスを選択する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_page->setFocusedElementSelectedIndex` にインデックスと複数選択可否を渡す。
 
 ## References
 - [`WKContentViewInteraction.h#L876`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L876)
+- [`WKContentViewInteraction.mm#L6254`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L6254)
 
 ## Metadata
 | Key | Value |
