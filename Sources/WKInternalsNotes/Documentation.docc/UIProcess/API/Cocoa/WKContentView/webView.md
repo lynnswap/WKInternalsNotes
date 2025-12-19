@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/webView()``
 
-宣言のみ確認（実装未調査）。
+親の `WKWebView` を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_webView` を autorelease して返す。
 
 ## References
 - [`WKContentView.h#L94`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.h#L94)
+- [`WKContentView.mm#L548`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.mm#L548)
 
 ## Metadata
 | Key | Value |

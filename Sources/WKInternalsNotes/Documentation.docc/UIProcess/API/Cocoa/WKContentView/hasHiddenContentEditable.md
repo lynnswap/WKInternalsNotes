@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/hasHiddenContentEditable()``
 
-宣言のみ確認（実装未調査）。
+隠れた contenteditable 状態があるかを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_suppressSelectionAssistantReasons` に透明/極小要素の理由が含まれているかで判定する。
 
 ## References
 - [`WKContentViewInteraction.h#L862`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L862)
+- [`WKContentViewInteraction.mm#L9560`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L9560)
 
 ## Metadata
 | Key | Value |

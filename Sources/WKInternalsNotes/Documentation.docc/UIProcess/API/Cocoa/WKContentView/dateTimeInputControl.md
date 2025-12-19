@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/dateTimeInputControl``
 
-宣言のみ確認（実装未調査）。
+日付/時刻入力コントロールを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`_inputPeripheral` が `WKDateTimeInputControl` の場合に返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+watchOS 以外で `_inputPeripheral` が `WKDateTimeInputControl` のときにキャストして返し、それ以外は `nil`。
 
 ## References
 - [`WKContentViewInteraction.h#L1065`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L1065)
+- [`WKContentViewInteraction.mm#L14428`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14428)
 
 ## Metadata
 | Key | Value |

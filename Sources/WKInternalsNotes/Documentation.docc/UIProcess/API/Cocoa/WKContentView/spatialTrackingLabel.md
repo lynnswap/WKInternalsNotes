@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/spatialTrackingLabel``
 
-宣言のみ確認（実装未調査）。
+空間トラッキング用ラベルを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`_spatialTrackingLabel` を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`HAVE(SPATIAL_TRACKING_LABEL)` のとき `_spatialTrackingLabel` を返す。
 
 ## References
 - [`WKContentView.h#L69`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.h#L69)
+- [`WKContentView.mm#L791`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.mm#L791)
 
 ## Metadata
 | Key | Value |
