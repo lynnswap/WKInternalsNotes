@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebsiteDataStoreConfiguration/webPushMachServiceName``
 
-宣言のみ確認（実装未調査）。
+Web Push 用 Mach service 名を返す/設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`WebsiteDataStoreConfiguration` が保持する `webPushMachServiceName` の値を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+getter は `_configuration->webPushMachServiceName()` を `NSString` に変換して返し、setter は `_configuration->setWebPushMachServiceName` に委譲する。
 
 ## References
-- [`_WKWebsiteDataStoreConfiguration.h#L96`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L96)
+- [_WKWebsiteDataStoreConfiguration.h#L96](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L96)
+- [_WKWebsiteDataStoreConfiguration.mm#L806](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L806)
+- [_WKWebsiteDataStoreConfiguration.mm#L811](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L811)
 
 ## Metadata
 | Key | Value |

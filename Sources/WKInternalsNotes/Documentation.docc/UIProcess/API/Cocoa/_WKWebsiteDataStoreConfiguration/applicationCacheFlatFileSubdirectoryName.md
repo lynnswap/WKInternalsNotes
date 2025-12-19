@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebsiteDataStoreConfiguration/applicationCacheFlatFileSubdirectoryName``
 
-宣言のみ確認（実装未調査）。
+Application Cache のサブディレクトリ名を返す/設定する（deprecated）。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+常に `nil` を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+getter は `nil` を返し、setter は空実装で何もしない。
 
 ## References
-- [`_WKWebsiteDataStoreConfiguration.h#L86`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L86)
+- [_WKWebsiteDataStoreConfiguration.h#L86](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L86)
+- [_WKWebsiteDataStoreConfiguration.mm#L324](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L324)
+- [_WKWebsiteDataStoreConfiguration.mm#L329](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L329)
 
 ## Metadata
 | Key | Value |

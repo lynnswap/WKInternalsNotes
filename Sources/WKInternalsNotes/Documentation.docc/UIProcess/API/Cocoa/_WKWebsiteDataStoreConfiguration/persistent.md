@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebsiteDataStoreConfiguration/persistent``
 
-宣言のみ確認（実装未調査）。
+永続構成かどうかを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`_configuration->isPersistent()` の結果を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+getter は `_configuration->isPersistent()` の値を返す。
 
 ## References
-- [`_WKWebsiteDataStoreConfiguration.h#L40`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L40)
+- [_WKWebsiteDataStoreConfiguration.h#L40](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L40)
+- [_WKWebsiteDataStoreConfiguration.mm#L104](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L104)
 
 ## Metadata
 | Key | Value |

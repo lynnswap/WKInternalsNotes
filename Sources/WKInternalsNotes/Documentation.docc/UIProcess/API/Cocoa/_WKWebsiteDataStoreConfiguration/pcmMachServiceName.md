@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebsiteDataStoreConfiguration/pcmMachServiceName``
 
-宣言のみ確認（実装未調査）。
+PCM 用 Mach service 名を返す/設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`WebsiteDataStoreConfiguration` が保持する `pcmMachServiceName` の値を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+getter は `_configuration->pcmMachServiceName()` を `NSString` に変換して返し、setter は `_configuration->setPCMMachServiceName` に委譲する。
 
 ## References
-- [`_WKWebsiteDataStoreConfiguration.h#L95`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L95)
+- [_WKWebsiteDataStoreConfiguration.h#L95](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L95)
+- [_WKWebsiteDataStoreConfiguration.mm#L796](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L796)
+- [_WKWebsiteDataStoreConfiguration.mm#L801](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L801)
 
 ## Metadata
 | Key | Value |

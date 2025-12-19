@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebsiteDataStoreConfiguration/identifier``
 
-宣言のみ確認（実装未調査）。
+構成の識別子を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+未設定の場合は `nil` を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_configuration->identifier()` が空の場合は `nil` を返し、設定されていれば `NSUUID` に変換して返す。
 
 ## References
-- [`_WKWebsiteDataStoreConfiguration.h#L42`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L42)
+- [_WKWebsiteDataStoreConfiguration.h#L42](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L42)
+- [_WKWebsiteDataStoreConfiguration.mm#L854](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L854)
 
 ## Metadata
 | Key | Value |

@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebsiteDataStoreConfiguration/initWithDirectory(_:)``
 
-宣言のみ確認（実装未調査）。
+指定ディレクトリを使用する構成を初期化する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+directory が `nil` の場合は例外を投げる。`directory.path` を取得し、同じパスを渡して `constructInWrapper` を呼ぶ。
 
 ## References
-- [`_WKWebsiteDataStoreConfiguration.h#L43`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L43)
+- [_WKWebsiteDataStoreConfiguration.h#L43](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L43)
+- [_WKWebsiteDataStoreConfiguration.mm#L81](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L81)
 
 ## Metadata
 | Key | Value |

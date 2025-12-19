@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebsiteDataStoreConfiguration/init()``
 
-宣言のみ確認（実装未調査）。
+永続的なデータストア構成を初期化する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,11 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`API::Object::constructInWrapper<WebsiteDataStoreConfiguration>` を `IsPersistent::Yes` で呼び、永続構成として初期化する。
 
 ## References
-- [`_WKWebsiteDataStoreConfiguration.h#L40`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L40)
-- [`_WKWebsiteDataStoreConfiguration.mm#L41`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L41)
+- [_WKWebsiteDataStoreConfiguration.h#L40](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h#L40)
+- [_WKWebsiteDataStoreConfiguration.mm#L41](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.mm#L41)
 
 ## Metadata
 | Key | Value |
