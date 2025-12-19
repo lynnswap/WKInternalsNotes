@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/textEffectsWindow()``
 
-宣言のみ確認（実装未調査）。
+現在の windowScene に紐づく text effects window を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`UITextEffectsWindow sharedTextEffectsWindowForWindowScene:` を使って `self.window.windowScene` の共有ウィンドウを返す。
 
 ## References
 - [`WKContentViewInteraction.h#L955`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L955)
+- [`WKContentViewInteraction.mm#L11595`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L11595)
 
 ## Metadata
 | Key | Value |

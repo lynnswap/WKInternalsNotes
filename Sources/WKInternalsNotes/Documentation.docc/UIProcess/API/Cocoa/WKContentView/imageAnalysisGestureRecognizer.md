@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/imageAnalysisGestureRecognizer``
 
-宣言のみ確認（実装未調査）。
+画像解析用のジェスチャ認識器を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`ENABLE(IMAGE_ANALYSIS)` のとき `_imageAnalysisGestureRecognizer` を返し、それ以外は `nil`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+画像解析が有効なビルドでは `_imageAnalysisGestureRecognizer` を返し、無効な場合は `nil` を返す。
 
 ## References
 - [`WKContentViewInteraction.h#L657`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L657)
+- [`WKContentViewInteraction.mm#L2615`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L2615)
 
 ## Metadata
 | Key | Value |
