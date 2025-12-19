@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/isPresentingEditMenu``
 
-宣言のみ確認（実装未調査）。
+編集メニューを表示中かどうかを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`_isPresentingEditMenu` を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+編集メニュー表示の内部フラグ `_isPresentingEditMenu` を返す。
 
 ## References
 - [`WKContentViewInteraction.h#L587`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L587)
+- [`WKContentViewInteraction.mm#L13541`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L13541)
 
 ## Metadata
 | Key | Value |

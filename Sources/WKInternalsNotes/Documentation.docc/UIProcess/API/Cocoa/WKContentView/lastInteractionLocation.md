@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/lastInteractionLocation``
 
-宣言のみ確認（実装未調査）。
+最後に記録したユーザー操作位置を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`_lastInteractionLocation` を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+タッチやジェスチャ処理で更新される `_lastInteractionLocation` を返す。
 
 ## References
 - [`WKContentViewInteraction.h#L518`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L518)
+- [`WKContentViewInteraction.mm#L1931`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L1931)
 
 ## Metadata
 | Key | Value |

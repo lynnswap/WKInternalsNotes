@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/tapHighlightViewRect``
 
-宣言のみ確認（実装未調査）。
+タップハイライト表示ビューのフレーム矩形を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`_tapHighlightView` の `frame` を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_tapHighlightView` の `frame` を返す単純な getter。
 
 ## References
 - [`WKContentViewInteraction.h#L737`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L737)
+- [`WKContentViewInteraction.mm#L2610`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L2610)
 
 ## Metadata
 | Key | Value |

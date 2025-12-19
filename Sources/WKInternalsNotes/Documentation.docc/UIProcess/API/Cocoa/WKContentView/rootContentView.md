@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/rootContentView()``
 
-宣言のみ確認（実装未調査）。
+内部の root コンテンツビューを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+初期化時に作成された `_rootContentView` を返す。
 
 ## References
 - [`WKContentView.h#L95`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.h#L95)
+- [`WKContentView.mm#L553`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.mm#L553)
 
 ## Metadata
 | Key | Value |
