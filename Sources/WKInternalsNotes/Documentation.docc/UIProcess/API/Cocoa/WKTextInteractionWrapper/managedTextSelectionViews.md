@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTextInteractionWrapper/managedTextSelectionViews``
 
-宣言のみ確認（実装未調査）。
+管理下の選択表示ビューを配列で返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+初期は空。`prepareToMoveSelectionContainer:` で更新される。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+弱参照で保持している `_managedTextSelectionViews` を走査し、解放済みのビューを除外して配列化する。
 
 ## References
 - [`WKTextInteractionWrapper.h#L71`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTextInteractionWrapper.h#L71)
+- [`WKTextInteractionWrapper.mm#L180`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTextInteractionWrapper.mm#L180)
+- [`WKTextInteractionWrapper.mm#L202`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTextInteractionWrapper.mm#L202)
 
 ## Metadata
 | Key | Value |

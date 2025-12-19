@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTextInteractionWrapper/view``
 
-宣言のみ確認（実装未調査）。
+関連する `WKContentView` を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`initWithView:` で設定され、それ以外は `nil`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+内部の `_view` をそのまま返す。
 
 ## References
 - [`WKTextInteractionWrapper.mm#L43`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTextInteractionWrapper.mm#L43)
+- [`WKTextInteractionWrapper.mm#L332`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTextInteractionWrapper.mm#L332)
 
 ## Metadata
 | Key | Value |

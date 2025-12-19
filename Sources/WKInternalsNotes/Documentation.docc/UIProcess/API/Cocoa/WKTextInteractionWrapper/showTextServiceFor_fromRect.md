@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTextInteractionWrapper/showTextServiceFor(_:fromRect:)``
 
-宣言のみ確認（実装未調査）。
+テキストサービス（ショートカット追加など）を表示する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_textInteractionAssistant showTextServiceFor:fromRect:` を呼び、`USE(BROWSERENGINEKIT)` では `addShortcutForText:fromRect:` を呼ぶ。
 
 ## References
 - [`WKTextInteractionWrapper.h#L50`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTextInteractionWrapper.h#L50)
+- [`WKTextInteractionWrapper.mm#L427`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTextInteractionWrapper.mm#L427)
 
 ## Metadata
 | Key | Value |

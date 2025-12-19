@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTextInteractionWrapper/scheduleReplacementsForText(_:)``
 
-宣言のみ確認（実装未調査）。
+置換候補を表示する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_textInteractionAssistant scheduleReplacementsForText:` を呼び、`USE(BROWSERENGINEKIT)` では `showReplacementsForText:` を呼ぶ。
 
 ## References
 - [`WKTextInteractionWrapper.h#L51`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTextInteractionWrapper.h#L51)
+- [`WKTextInteractionWrapper.mm#L435`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTextInteractionWrapper.mm#L435)
 
 ## Metadata
 | Key | Value |

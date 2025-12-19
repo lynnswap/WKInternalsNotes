@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTextInteractionWrapper/deactivateSelection()``
 
-宣言のみ確認（実装未調査）。
+テキスト選択表示を無効化する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`USE(BROWSERENGINEKIT)` の場合は `textSelectionDisplayInteraction.activated = NO` を設定し、edit menu 表示用のフラグとタイマーも解除する。通常は `UIWKTextInteractionAssistant` に委譲する。
 
 ## References
 - [`WKTextInteractionWrapper.h#L41`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTextInteractionWrapper.h#L41)
+- [`WKTextInteractionWrapper.mm#L301`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTextInteractionWrapper.mm#L301)
 
 ## Metadata
 | Key | Value |

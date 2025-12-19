@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTextInteractionWrapper/willStartScrollingOverflow(_:)``
 
-宣言のみ確認（実装未調査）。
+オーバーフロースクロール開始に合わせて edit menu を抑制する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+既存の `HideEditMenuScope` があれば何もしない。`_view _shouldHideSelectionDuringOverflowScroll:` の結果で選択を非アクティブ化するか決め、`HideEditMenuScope` を作成する。
 
 ## References
 - [`WKTextInteractionWrapper.h#L45`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTextInteractionWrapper.h#L45)
+- [`WKTextInteractionWrapper.mm#L355`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTextInteractionWrapper.mm#L355)
 
 ## Metadata
 | Key | Value |

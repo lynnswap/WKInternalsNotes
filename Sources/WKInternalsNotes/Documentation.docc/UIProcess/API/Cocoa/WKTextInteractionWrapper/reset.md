@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTextInteractionWrapper/reset()``
 
-宣言のみ確認（実装未調査）。
+内部状態をリセットする。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`shouldRestoreEditMenuAfterOverflowScrolling` を `NO` に戻し、`_hideEditMenuScope` を破棄する。
 
 ## References
 - [`WKTextInteractionWrapper.h#L64`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTextInteractionWrapper.h#L64)
+- [`WKTextInteractionWrapper.mm#L369`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTextInteractionWrapper.mm#L369)
 
 ## Metadata
 | Key | Value |

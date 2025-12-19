@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTextInteractionWrapper/textInteractionAssistant``
 
-宣言のみ確認（実装未調査）。
+`UIWKTextInteractionAssistant` を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`initWithView:` で生成されるが、`view.shouldUseAsyncInteractions` が `true` の場合は `nil`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+非同期インタラクションを使わない場合に `UIWKTextInteractionAssistant` を生成し、そのまま返す。
 
 ## References
 - [`WKTextInteractionWrapper.h#L72`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTextInteractionWrapper.h#L72)
+- [`WKTextInteractionWrapper.mm#L133`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTextInteractionWrapper.mm#L133)
+- [`WKTextInteractionWrapper.mm#L156`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTextInteractionWrapper.mm#L156)
 
 ## Metadata
 | Key | Value |

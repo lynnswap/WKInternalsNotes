@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTextInteractionWrapper/lookup(_:withRange:fromRect:)``
 
-宣言のみ確認（実装未調査）。
+辞書/調べる UI を表示する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_textInteractionAssistant lookup:withRange:fromRect:` を呼び、`USE(BROWSERENGINEKIT)` では `showDictionaryForTextInContext:...` も呼ぶ。
 
 ## References
 - [`WKTextInteractionWrapper.h#L48`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTextInteractionWrapper.h#L48)
+- [`WKTextInteractionWrapper.mm#L411`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTextInteractionWrapper.mm#L411)
 
 ## Metadata
 | Key | Value |

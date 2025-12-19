@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTextInteractionWrapper/setExternalContextMenuInteractionDelegate(_:)``
 
-宣言のみ確認（実装未調査）。
+コンテキストメニューの delegate を外部から設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_textInteractionAssistant` に delegate を設定し、`USE(BROWSERENGINEKIT)` の場合は `_asyncTextInteraction` にも設定する。
 
 ## References
 - [`WKTextInteractionWrapper.h#L67`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTextInteractionWrapper.h#L67)
+- [`WKTextInteractionWrapper.mm#L506`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTextInteractionWrapper.mm#L506)
 
 ## Metadata
 | Key | Value |

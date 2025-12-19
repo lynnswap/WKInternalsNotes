@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTextInteractionWrapper/selectAll(_:)``
 
-宣言のみ確認（実装未調査）。
+全選択を行う。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_textInteractionAssistant selectAll:` を呼ぶ。`USE(BROWSERENGINEKIT)` では次の選択変更で edit menu を表示するためフラグを立てる。
 
 ## References
 - [`WKTextInteractionWrapper.h#L56`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTextInteractionWrapper.h#L56)
+- [`WKTextInteractionWrapper.mm#L467`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTextInteractionWrapper.mm#L467)
 
 ## Metadata
 | Key | Value |

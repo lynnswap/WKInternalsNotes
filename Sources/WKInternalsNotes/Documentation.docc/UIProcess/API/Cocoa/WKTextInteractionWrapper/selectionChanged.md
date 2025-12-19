@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTextInteractionWrapper/selectionChanged()``
 
-宣言のみ確認（実装未調査）。
+選択変更を通知する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_textInteractionAssistant selectionChanged` を呼び出す。`USE(BROWSERENGINEKIT)` の場合は keyboard UI を更新し、`_showEditMenuAfterNextSelectionChange` が立っていれば 0.2 秒後に edit menu を表示するタイマーを設定する。
 
 ## References
 - [`WKTextInteractionWrapper.h#L43`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTextInteractionWrapper.h#L43)
+- [`WKTextInteractionWrapper.mm#L312`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTextInteractionWrapper.mm#L312)
 
 ## Metadata
 | Key | Value |

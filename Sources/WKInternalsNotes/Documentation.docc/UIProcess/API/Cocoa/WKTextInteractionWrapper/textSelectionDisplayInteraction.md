@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTextInteractionWrapper/textSelectionDisplayInteraction``
 
-宣言のみ確認（実装未調査）。
+選択表示用の `UITextSelectionDisplayInteraction` を取得する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+見つからない場合は `nil`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`USE(BROWSERENGINEKIT)` かつ `_asyncTextInteraction` がある場合はその `textSelectionDisplayInteraction` を返す。そうでなければ view の `interactions` を走査して `UITextSelectionDisplayInteraction` を探す。
 
 ## References
 - [`WKTextInteractionWrapper.mm#L47`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTextInteractionWrapper.mm#L47)
+- [`WKTextInteractionWrapper.mm#L163`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTextInteractionWrapper.mm#L163)
 
 ## Metadata
 | Key | Value |

@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTextInteractionWrapper/contextMenuInteraction``
 
-宣言のみ確認（実装未調査）。
+テキスト選択用の `UIContextMenuInteraction` を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`_asyncTextInteraction` がある場合はその context menu、なければ `_textInteractionAssistant` のもの。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`USE(UICONTEXTMENU)` 環境で、`BETextInteraction` の context menu を優先して返す。
 
 ## References
 - [`WKTextInteractionWrapper.h#L68`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTextInteractionWrapper.h#L68)
+- [`WKTextInteractionWrapper.mm#L497`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTextInteractionWrapper.mm#L497)
 
 ## Metadata
 | Key | Value |

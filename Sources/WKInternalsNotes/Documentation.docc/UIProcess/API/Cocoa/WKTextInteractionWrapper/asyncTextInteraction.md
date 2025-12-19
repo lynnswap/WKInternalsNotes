@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTextInteractionWrapper/asyncTextInteraction``
 
-宣言のみ確認（実装未調査）。
+BrowserEngineKit の非同期テキストインタラクションを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`view.shouldUseAsyncInteractions` が `true` のとき `initWithView:` で生成され、それ以外は `nil`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`USE(BROWSERENGINEKIT)` の場合に `BETextInteraction` を生成して view に追加し、保持したインスタンスを返す。
 
 ## References
 - [`WKTextInteractionWrapper.mm#L51`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTextInteractionWrapper.mm#L51)
+- [`WKTextInteractionWrapper.mm#L125`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTextInteractionWrapper.mm#L125)
+- [`WKTextInteractionWrapper.mm#L488`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTextInteractionWrapper.mm#L488)
 
 ## Metadata
 | Key | Value |

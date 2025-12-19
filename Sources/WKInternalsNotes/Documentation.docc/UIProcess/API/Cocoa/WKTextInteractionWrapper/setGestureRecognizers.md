@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTextInteractionWrapper/setGestureRecognizers()``
 
-宣言のみ確認（実装未調査）。
+テキスト操作のジェスチャ認識を設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_textInteractionAssistant setGestureRecognizers` を呼び出し、`USE(BROWSERENGINEKIT)` では `editabilityChanged` も通知する。
 
 ## References
 - [`WKTextInteractionWrapper.h#L44`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTextInteractionWrapper.h#L44)
+- [`WKTextInteractionWrapper.mm#L324`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTextInteractionWrapper.mm#L324)
 
 ## Metadata
 | Key | Value |
