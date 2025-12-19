@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/animatingDragCancel``
 
-宣言のみ確認（実装未調査）。
+ドラッグキャンセルのアニメーション中かどうか。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+NO（キャンセルアニメーション中のみYES）。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`dragInteraction:willAnimateCancelWithAnimator:` 開始時に `YES` となり、完了後に `NO` へ戻る。
 
 ## References
 - [`WKContentViewInteraction.h#L1069`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L1069)
+- [`WKContentViewInteraction.mm#L11297`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L11297)
+- [`WKContentViewInteraction.mm#L14445`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14445)
 
 ## Metadata
 | Key | Value |

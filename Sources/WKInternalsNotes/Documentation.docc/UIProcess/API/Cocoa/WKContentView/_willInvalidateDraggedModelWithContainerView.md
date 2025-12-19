@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_willInvalidateDraggedModelWithContainerView(_:)``
 
-宣言のみ確認（実装未調査）。
+ドラッグ中のモデルビューが破棄される前の処理を行う。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+ドラッグ中にモデルが破棄される場合、プレビュー用コンテナへ移してウィンドウ内に残しつつ非表示にする。
 
 ## References
 - [`WKContentViewInteraction.h#L1022`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L1022)
+- [`WKContentViewInteraction.mm#L14339`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14339)
 
 ## Metadata
 | Key | Value |

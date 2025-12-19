@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_didReceiveEditDragSnapshot(_:)``
 
-宣言のみ確認（実装未調査）。
+編集ドラッグのスナップショット受信後の後処理を行う。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+受信待ちフラグを下げ、遅延ドロッププレビューの配信とドラッグ状態のクリーンアップを行う。待機していた処理があれば実行する。
 
 ## References
 - [`WKContentViewInteraction.h#L899`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L899)
+- [`WKContentViewInteraction.mm#L10815`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L10815)
 
 ## Metadata
 | Key | Value |

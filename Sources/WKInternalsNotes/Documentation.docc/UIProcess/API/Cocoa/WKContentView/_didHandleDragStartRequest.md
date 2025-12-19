@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_didHandleDragStartRequest(_:)``
 
-宣言のみ確認（実装未調査）。
+ドラッグ開始要求の完了処理を行う。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+開始要求の完了ブロックを呼び出し、ドラッグアイテムが無い場合は状態をクリーンアップする。開始扱いだった場合は `dragstart` と整合するよう `dragend` を送出する。
 
 ## References
 - [`WKContentViewInteraction.h#L895`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L895)
+- [`WKContentViewInteraction.mm#L10652`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L10652)
 
 ## Metadata
 | Key | Value |

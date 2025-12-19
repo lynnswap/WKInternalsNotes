@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_didPerformDragOperation(_:)``
 
-宣言のみ確認（実装未調査）。
+ドラッグ操作完了後の処理を行う。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+保留中のペーストボード操作数を減らし、必要なら UIDelegate に完了通知する。座標を算出して状態をクリーンアップし、`dragEnded` を通知する。
 
 ## References
 - [`WKContentViewInteraction.h#L894`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L894)
+- [`WKContentViewInteraction.mm#L10856`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L10856)
 
 ## Metadata
 | Key | Value |
