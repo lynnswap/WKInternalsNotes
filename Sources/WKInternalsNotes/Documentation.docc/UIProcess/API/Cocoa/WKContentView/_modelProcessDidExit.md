@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_modelProcessDidExit()``
 
-宣言のみ確認（実装未調査）。
+Model プロセス終了時の後処理を行う。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+可視性伝播ビューを Model プロセスから切り離す。
 
 ## References
 - [`WKContentView.h#L103`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.h#L103)
+- [`WKContentView.mm#L925`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.mm#L925)
 
 ## Metadata
 | Key | Value |
