@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/shouldUseAsyncInteractions``
 
-宣言のみ確認（実装未調査）。
+非同期のUIKitインタラクションを使うべきかを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`_page->preferences().useAsyncUIKitInteractions()` を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WebPageProxy` の設定に基づく getter。
 
 ## References
 - [`WKContentViewInteraction.h#L1014`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L1014)
+- [`WKContentViewInteraction.mm#L1208`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L1208)
 
 ## Metadata
 | Key | Value |

@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/allViewsIntersectingSelectionRange``
 
-宣言のみ確認（実装未調査）。
+選択範囲と交差するビューの配列を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+選択がオーバーフロースクロールを尊重しない場合や視覚情報がない場合は空配列。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`selectionHonorsOverflowScrolling` が有効で視覚情報がある場合、`editorState` の `intersectingLayerIDs` から対応する `UIView` を構築して返す。
 
 ## References
 - [`WKContentViewInteraction.h#L1015`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L1015)
+- [`WKContentViewInteraction.mm#L14270`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14270)
 
 ## Metadata
 | Key | Value |

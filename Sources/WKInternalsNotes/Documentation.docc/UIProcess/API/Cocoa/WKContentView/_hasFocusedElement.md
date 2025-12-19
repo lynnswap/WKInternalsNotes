@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_hasFocusedElement()``
 
-宣言のみ確認（実装未調査）。
+フォーカス中の要素が存在するかを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_focusedElementInformation.elementType` が `InputType::None` かどうかで判定する。
 
 ## References
 - [`WKContentViewInteraction.h#L768`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L768)
+- [`WKContentViewInteraction.mm#L5423`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L5423)
 
 ## Metadata
 | Key | Value |
