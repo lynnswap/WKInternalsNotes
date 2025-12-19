@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKResourceLoadInfo/init()``
 
-宣言のみ確認（実装未調査）。
+既定の `init` は利用できない。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`init` は `NS_UNAVAILABLE` 指定のため使用できない。復元時は `NSSecureCoding` の `initWithCoder:` 経由で生成される。
 
 ## References
 - [`_WKResourceLoadInfo.h#L54`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKResourceLoadInfo.h#L54)
+- [`_WKResourceLoadInfo.mm#L148`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKResourceLoadInfo.mm#L148)
 
 ## Metadata
 | Key | Value |
