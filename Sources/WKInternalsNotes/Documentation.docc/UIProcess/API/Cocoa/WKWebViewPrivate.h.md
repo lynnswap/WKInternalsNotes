@@ -618,6 +618,11 @@
 
 - ``WKInternalsNotes/WKWebView/_clearTextExtractionFilterCache()``
 
+### WKTextExtraction
+
+- ``WKInternalsNotes/WKWebView/_requestTextExtractionInternal(_:completion:)``
+- ``WKInternalsNotes/WKWebView/_validateText(_:inNode:completionHandler:)``
+
 ### WKViewInternalIOS
 
 #### Properties

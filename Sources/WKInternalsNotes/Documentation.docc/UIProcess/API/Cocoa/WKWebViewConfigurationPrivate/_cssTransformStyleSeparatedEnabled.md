@@ -8,7 +8,7 @@ separated layers の `transform-style`
 ```
 
 ## Default Value
-`NO`
+visionOS: `NO`
 
 ## Discussion
 - この API を使わない場合: 既定値のまま動作する。
@@ -17,13 +17,16 @@ separated layers の `transform-style`
 
 ## Details
 - `HAVE(CORE_ANIMATION_SEPARATED_LAYERS)` が無効なら常に `NO`
+- WebPreferences key: `CSSTransformStyleSeparatedEnabled`
 
 ## References
 - [`WKWebViewConfigurationPrivate.h#L182`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L182)
-- [`WKWebViewConfiguration.mm#L269`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L269)
+- [`WKWebViewConfiguration.mm#L1599`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L1599)
+- [`APIPageConfiguration.h#L661`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/APIPageConfiguration.h#L661)
+- [`UnifiedWebPreferences.yaml#L1514`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L1514) (key: `CSSTransformStyleSeparatedEnabled`)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-16 |
+| Last updated | 2025-12-19 |

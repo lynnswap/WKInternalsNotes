@@ -97,6 +97,10 @@
 - ``WKInternalsNotes/WKWebsiteDataStore/_trustServerForLocalPCMTesting(_:)``
 - ``WKInternalsNotes/WKWebsiteDataStore/handleNotificationResponse(_:)``
 
+### WKWebPushHandling
+
+- ``WKInternalsNotes/WKWebsiteDataStore/_handleWebPushAction(_:)``
+
 ## Metadata
 | Key | Value |
 | --- | ----- |

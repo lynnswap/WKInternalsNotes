@@ -6,6 +6,11 @@
 
 - ``WKInternalsNotes/_WKRemoteWebInspectorViewController/_diagnosticLoggingDelegate``
 
+### Class Extension
+
+- ``WKInternalsNotes/_WKRemoteWebInspectorViewController/closeFromFrontend()``
+- ``WKInternalsNotes/_WKRemoteWebInspectorViewController/sendMessageToBackend(_:)``
+
 ### Type
 
 #### Properties
