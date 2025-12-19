@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTextExtractionResult/initWithRootItem(_:)``
 
-宣言のみ確認（実装未調査）。
+抽出結果を初期化する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`rootItem` を保持する Swift initializer。
 
 ## References
 - [`_WKTextExtractionInternal.h#L179`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtractionInternal.h#L179)
+- [`_WKTextExtraction.swift#L463`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtraction.swift#L463)
 
 ## Metadata
 | Key | Value |

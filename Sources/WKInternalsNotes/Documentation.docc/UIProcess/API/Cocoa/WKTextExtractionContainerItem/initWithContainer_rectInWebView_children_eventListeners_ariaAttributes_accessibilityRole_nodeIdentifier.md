@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTextExtractionContainerItem/initWithContainer(_:rectInWebView:children:eventListeners:ariaAttributes:accessibilityRole:nodeIdentifier:)``
 
-宣言のみ確認（実装未調査）。
+コンテナ項目の情報を初期化する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`container` を保持し、`WKTextExtractionItem` の `init(with:)` に共通項目を渡して初期化する。
 
 ## References
 - [`_WKTextExtractionInternal.h#L124`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtractionInternal.h#L124)
+- [`_WKTextExtraction.swift#L68`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtraction.swift#L68)
 
 ## Metadata
 | Key | Value |

@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTextExtractionTextItem/initWithContent(_:selectedRange:links:editable:rectInWebView:children:eventListeners:ariaAttributes:accessibilityRole:nodeIdentifier:)``
 
-宣言のみ確認（実装未調査）。
+テキスト項目の情報を初期化する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`content` / `selectedRange` / `links` / `editable` を保持し、`WKTextExtractionItem` の `init(with:)` に共通項目を渡して初期化する。
 
 ## References
 - [`_WKTextExtractionInternal.h#L154`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtractionInternal.h#L154)
+- [`_WKTextExtraction.swift#L324`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtraction.swift#L324)
 
 ## Metadata
 | Key | Value |
