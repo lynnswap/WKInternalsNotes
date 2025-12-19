@@ -11,9 +11,9 @@
 getter/setter を通じて値を取得/設定する。 setter は `_setUsesAutomaticContentInsetBackgroundFill:`。
 
 ## References
-- [`API/Cocoa/WKWebViewPrivate.h#L924`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L924)
-- [`API/mac/WKWebViewMac.mm#L1701`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1701)
-- [`API/mac/WKWebViewMac.mm#L1683`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1683)
+- [`WKWebViewPrivate.h#L924`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L924)
+- [`WKWebViewMac.mm#L1689`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1689)
+- [`WKWebViewMac.mm#L1689`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1689)
 
 ## Metadata
 | Key | Value |

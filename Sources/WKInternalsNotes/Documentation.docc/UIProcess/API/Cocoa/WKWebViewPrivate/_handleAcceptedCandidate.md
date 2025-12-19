@@ -11,8 +11,8 @@
 実装は `WKWebView` 側で処理される。
 
 ## References
-- [`API/mac/WKWebViewPrivateForTestingMac.h#L43`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewPrivateForTestingMac.h#L43)
-- [`API/mac/WKWebViewTestingMac.mm#L55`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewTestingMac.mm#L55)
+- [`WKWebViewPrivateForTestingMac.h#L43`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewPrivateForTestingMac.h#L43)
+- [`WKWebViewTestingMac.mm#L55`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewTestingMac.mm#L55)
 
 ## Metadata
 | Key | Value |

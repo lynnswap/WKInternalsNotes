@@ -11,9 +11,9 @@
 getter/setter を通じて値を取得/設定する。 setter は `_setInputDelegate:`。
 
 ## References
-- [`API/Cocoa/WKWebViewPrivate.h#L393`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L393)
-- [`API/Cocoa/WKWebView.mm#L5792`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L5792)
-- [`API/Cocoa/WKWebView.mm#L5797`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L5797)
+- [`WKWebViewPrivate.h#L393`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L393)
+- [`WKWebView.mm#L5792`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L5792)
+- [`WKWebView.mm#L5792`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L5792)
 
 ## Metadata
 | Key | Value |

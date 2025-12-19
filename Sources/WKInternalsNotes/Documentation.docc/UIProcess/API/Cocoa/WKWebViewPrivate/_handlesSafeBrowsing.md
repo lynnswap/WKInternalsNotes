@@ -11,8 +11,8 @@
 実装は `WKWebView` 側で処理される。
 
 ## References
-- [`API/Cocoa/WKWebViewPrivate.h#L312`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L312)
-- [`API/Cocoa/WKWebView.mm#L5085`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L5085)
+- [`WKWebViewPrivate.h#L312`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L312)
+- [`WKWebView.mm#L5085`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L5085)
 
 ## Metadata
 | Key | Value |

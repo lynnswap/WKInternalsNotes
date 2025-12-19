@@ -11,7 +11,7 @@ SDK アライン動作を全て無効化する（テスト用）。
 `disableAllSDKAlignedBehaviors()` を呼び出す。
 
 ## References
-- [`WKProcessPoolPrivate.h#L164`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L164)
+- [`WKProcessPoolPrivate.h#L165`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L165)
 - [`WKProcessPool.mm#L537`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L537)
 
 ## Metadata

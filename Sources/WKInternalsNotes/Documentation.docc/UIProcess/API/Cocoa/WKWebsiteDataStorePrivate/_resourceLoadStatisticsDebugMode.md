@@ -16,7 +16,7 @@ getter は `resourceLoadStatisticsDebugMode()` を返し、setter は `setResour
 ## References
 - [`WKWebsiteDataStorePrivate.h#L63`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStorePrivate.h#L63)
 - [`WKWebsiteDataStore.mm#L833`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStore.mm#L833)
-- [`WKWebsiteDataStore.mm#L838`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStore.mm#L838)
+- [`WKWebsiteDataStore.mm#L833`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStore.mm#L833)
 
 ## Metadata
 | Key | Value |

@@ -11,7 +11,7 @@ WebProcess の上限数を設定する。
 `WebKit::WebProcessProxy::setProcessCountLimit(limit)` を呼び出す。
 
 ## References
-- [`WKProcessPoolPrivate.h#L108`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L108)
+- [`WKProcessPoolPrivate.h#L109`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L109)
 - [`WKProcessPool.mm#L645`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L645)
 
 ## Metadata

@@ -11,7 +11,7 @@
 `numberOfConnectedGamepadsForTesting(GamepadType::All)` を返す。
 
 ## References
-- [`WKProcessPoolPrivate.h#L188`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L188)
+- [`WKProcessPoolPrivate.h#L189`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L189)
 - [`WKProcessPool.mm#L655`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L655)
 
 ## Metadata

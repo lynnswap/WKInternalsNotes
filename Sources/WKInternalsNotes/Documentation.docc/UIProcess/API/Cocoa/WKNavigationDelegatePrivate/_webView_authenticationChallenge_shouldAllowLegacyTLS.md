@@ -11,8 +11,8 @@
 NavigationState::NavigationClient::shouldAllowLegacyTLS が delegate の実装を確認し、CompletionHandlerCallChecker 付きで呼び出す。未実装の場合は data store の設定値で継続し、Deprecated TLS 版の delegate があればそちらを優先する。
 
 ## References
-- [`WKNavigationDelegatePrivate.h#L84`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationDelegatePrivate.h#L84)
-- [`NavigationState.mm#L1215`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm#L1215)
+- [`WKNavigationDelegatePrivate.h#L66`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationDelegatePrivate.h#L66)
+- [`NavigationState.mm#L191`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm#L191)
 
 ## Metadata
 | Key | Value |

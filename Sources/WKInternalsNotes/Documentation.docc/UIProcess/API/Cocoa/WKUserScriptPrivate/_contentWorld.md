@@ -14,8 +14,8 @@ user script に紐づく content world を返す。
 `_userScript->contentWorld()` の結果を `WKContentWorld` にラップして返す。
 
 ## References
-- [`WKUserScriptPrivate.h#L39`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUserScriptPrivate.h#L39)
-- [`WKUserScript.mm#L119`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUserScript.mm#L119)
+- [`WKUserScriptPrivate.h#L38`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUserScriptPrivate.h#L38)
+- [`WKUserScript.mm#L48`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUserScript.mm#L48)
 
 ## Metadata
 | Key | Value |

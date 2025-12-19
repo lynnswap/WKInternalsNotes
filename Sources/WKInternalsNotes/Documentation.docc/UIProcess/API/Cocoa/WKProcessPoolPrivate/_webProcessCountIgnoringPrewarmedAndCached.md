@@ -11,7 +11,7 @@
 `processes()` を走査して `isInProcessCache()` と `isPrewarmed()` のどちらでもないものだけを数える。
 
 ## References
-- [`WKProcessPoolPrivate.h#L141`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L141)
+- [`WKProcessPoolPrivate.h#L142`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L142)
 - [`WKProcessPool.mm#L476`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L476)
 
 ## Metadata

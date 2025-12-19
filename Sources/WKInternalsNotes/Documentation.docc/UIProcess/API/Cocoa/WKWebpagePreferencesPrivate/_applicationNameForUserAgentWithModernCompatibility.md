@@ -16,7 +16,7 @@ getter は `applicationNameForDesktopUserAgent()` を返し、setter は同値�
 ## References
 - [`WKWebpagePreferencesPrivate.h#L112`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferencesPrivate.h#L112)
 - [`WKWebpagePreferences.mm#L472`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L472)
-- [`WKWebpagePreferences.mm#L477`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L477)
+- [`WKWebpagePreferences.mm#L472`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L472)
 
 ## Metadata
 | Key | Value |

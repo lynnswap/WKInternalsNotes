@@ -16,7 +16,7 @@ JavaScript によるユーザー操作なし生成かどうかを返す。
 ## References
 - [`WKBackForwardListItemPrivate.h#L34`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKBackForwardListItemPrivate.h#L34)
 - [`WKBackForwardListItem.mm#L93`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKBackForwardListItem.mm#L93)
-- [`WebBackForwardList.cpp#L556`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/WebBackForwardList.cpp#L556)
+- [`WebBackForwardList.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/WebBackForwardList.cpp)
 
 ## Metadata
 | Key | Value |

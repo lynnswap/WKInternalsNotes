@@ -11,8 +11,8 @@
 読み取り専用のため setter は持たない。 getter は `_isDisplayingStandaloneMediaDocument`。
 
 ## References
-- [`API/Cocoa/WKWebViewPrivate.h#L397`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L397)
-- [`API/Cocoa/WKWebView.mm#L5884`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L5884)
+- [`WKWebViewPrivate.h#L397`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L397)
+- [`WKWebView.mm`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm)
 
 ## Metadata
 | Key | Value |

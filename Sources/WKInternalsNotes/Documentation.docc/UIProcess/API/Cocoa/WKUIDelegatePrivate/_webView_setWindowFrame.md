@@ -11,8 +11,8 @@ WebView のウィンドウフレーム設定を delegate に依頼する。
 UIDelegate::UIClient が `CGRect` を渡してウィンドウ位置とサイズの変更を delegate に委譲する。
 
 ## References
-- [`WKUIDelegatePrivate.h#L331`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L331)
-- [`UIDelegate.mm#L1130`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L1130)
+- [`WKUIDelegatePrivate.h#L321`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L321)
+- [`UIDelegate.mm#L139`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L139)
 
 ## Metadata
 | Key | Value |

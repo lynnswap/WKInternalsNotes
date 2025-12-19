@@ -14,8 +14,8 @@
 `_webExtensionCommand` を参照して返すだけで、`WKObject` 実装から内部 C++ オブジェクトへアクセスするために使われる。
 
 ## References
-- [`WKWebExtensionCommandInternal.h#L45`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebExtensionCommandInternal.h#L45)
-- [`WKWebExtensionCommand.mm#L164`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebExtensionCommand.mm#L164)
+- [`WKWebExtensionCommandInternal.h#L42`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebExtensionCommandInternal.h#L42)
+- [`WKWebExtensionCommand.mm#L48`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebExtensionCommand.mm#L48)
 
 ## Metadata
 | Key | Value |

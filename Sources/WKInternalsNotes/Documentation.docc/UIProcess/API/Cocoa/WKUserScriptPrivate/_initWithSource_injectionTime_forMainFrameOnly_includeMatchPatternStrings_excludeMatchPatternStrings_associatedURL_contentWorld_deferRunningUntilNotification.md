@@ -11,7 +11,7 @@ deferRunningUntilNotification を受け取る旧 initializer。
 実装では `deferRunningUntilNotification` は非対応として `NSParameterAssert` し、新しい initializer に委譲する。
 
 ## References
-- [`WKUserScriptPrivate.h#L36`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUserScriptPrivate.h#L36)
+- [`WKUserScriptPrivate.h#L35`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUserScriptPrivate.h#L35)
 - [`WKUserScript.mm#L101`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUserScript.mm#L101)
 
 ## Metadata

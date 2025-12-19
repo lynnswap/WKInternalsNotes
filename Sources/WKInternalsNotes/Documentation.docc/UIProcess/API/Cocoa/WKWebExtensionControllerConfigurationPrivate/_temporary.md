@@ -14,9 +14,9 @@
 `_webExtensionControllerConfiguration->storageIsTemporary()` を返す。`ENABLE(WK_WEB_EXTENSIONS)` 無効時は `NO`。
 
 ## References
-- [`WKWebExtensionControllerConfigurationPrivate.h#L44`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebExtensionControllerConfigurationPrivate.h#L44)
-- [`WKWebExtensionControllerConfiguration.mm#L193`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebExtensionControllerConfiguration.mm#L193)
-- [`WKWebExtensionControllerConfiguration.mm#L291`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebExtensionControllerConfiguration.mm#L291)
+- [`WKWebExtensionControllerConfigurationPrivate.h#L38`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebExtensionControllerConfigurationPrivate.h#L38)
+- [`WKWebExtensionControllerConfiguration.mm#L78`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebExtensionControllerConfiguration.mm#L78)
+- [`WKWebExtensionControllerConfiguration.mm#L78`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebExtensionControllerConfiguration.mm#L78)
 
 ## Metadata
 | Key | Value |

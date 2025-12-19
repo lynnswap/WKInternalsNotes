@@ -12,7 +12,7 @@ UIDelegate::UIClient が旧 API を検出した場合に delegate へ通知し�
 
 ## References
 - [`WKUIDelegatePrivate.h#L154`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L154)
-- [`UIDelegate.mm#L1754`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L1754)
+- [`UIDelegate.mm`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm)
 
 ## Metadata
 | Key | Value |

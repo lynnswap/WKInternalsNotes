@@ -17,8 +17,8 @@
 - [`_WKRemoteWebInspectorViewController.h#L45`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKRemoteWebInspectorViewController.h#L45)
 - [`_WKRemoteWebInspectorViewController.mm#L117`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKRemoteWebInspectorViewController.mm#L117)
 - [`RemoteWebInspectorUIProxy.h#L113`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Inspector/RemoteWebInspectorUIProxy.h#L113)
-- [`RemoteWebInspectorUIProxy.cpp#L88`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Inspector/RemoteWebInspectorUIProxy.cpp#L88)
-- [`RemoteWebInspectorUIProxyMac.mm#L116`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Inspector/mac/RemoteWebInspectorUIProxyMac.mm#L116)
+- [`RemoteWebInspectorUIProxy.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Inspector/RemoteWebInspectorUIProxy.cpp)
+- [`RemoteWebInspectorUIProxyMac.mm#L64`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Inspector/mac/RemoteWebInspectorUIProxyMac.mm#L64)
 
 ## Metadata
 | Key | Value |

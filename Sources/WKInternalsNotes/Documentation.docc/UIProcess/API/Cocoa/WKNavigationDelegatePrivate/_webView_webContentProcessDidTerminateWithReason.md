@@ -11,8 +11,8 @@ Web コンテンツプロセスの終了理由を通知する。
 processDidTerminate で `ProcessTerminationReason` を `_WKProcessTerminationReason` に変換し、理由付き delegate があればそちらを呼ぶ。
 
 ## References
-- [`WKNavigationDelegatePrivate.h#L101`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationDelegatePrivate.h#L101)
-- [`NavigationState.mm#L1285`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm#L1285)
+- [`WKNavigationDelegatePrivate.h#L84`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationDelegatePrivate.h#L84)
+- [`NavigationState.mm#L194`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm#L194)
 
 ## Metadata
 | Key | Value |

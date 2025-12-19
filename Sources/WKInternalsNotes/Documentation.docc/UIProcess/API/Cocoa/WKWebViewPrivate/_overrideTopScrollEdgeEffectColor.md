@@ -11,9 +11,9 @@
 getter/setter を通じて値を取得/設定する。 setter は `_setOverrideTopScrollEdgeEffectColor:`。
 
 ## References
-- [`API/Cocoa/WKWebViewPrivate.h#L925`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L925)
-- [`API/mac/WKWebViewMac.mm#L1638`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1638)
-- [`API/mac/WKWebViewMac.mm#L1643`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1643)
+- [`WKWebViewPrivate.h#L925`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L925)
+- [`WKWebViewMac.mm#L1638`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1638)
+- [`WKWebViewMac.mm#L1638`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1638)
 
 ## Metadata
 | Key | Value |

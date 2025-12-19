@@ -11,9 +11,9 @@
 getter/setter を通じて値を取得/設定する。 setter は `_setTextManipulationDelegate:`。
 
 ## References
-- [`API/Cocoa/WKWebViewPrivate.h#L259`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L259)
-- [`API/Cocoa/WKWebView.mm#L3912`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L3912)
-- [`API/Cocoa/WKWebView.mm#L3917`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L3917)
+- [`WKWebViewPrivate.h#L259`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L259)
+- [`WKWebView.mm#L3912`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L3912)
+- [`WKWebView.mm#L3912`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L3912)
 
 ## Metadata
 | Key | Value |

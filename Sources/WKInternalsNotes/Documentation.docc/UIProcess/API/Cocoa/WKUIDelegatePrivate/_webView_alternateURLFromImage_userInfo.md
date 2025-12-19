@@ -11,8 +11,8 @@
 WKContentViewInteraction の画像コンテキストメニュー処理で呼ばれ、返された URL と userInfo をプレビューに使用する。
 
 ## References
-- [`WKUIDelegatePrivate.h#L272`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L272)
-- [`WKContentViewInteraction.mm#L14942`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14942)
+- [`WKUIDelegatePrivate.h#L250`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L250)
+- [`WKContentViewInteraction.mm#L14940`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14940)
 
 ## Metadata
 | Key | Value |

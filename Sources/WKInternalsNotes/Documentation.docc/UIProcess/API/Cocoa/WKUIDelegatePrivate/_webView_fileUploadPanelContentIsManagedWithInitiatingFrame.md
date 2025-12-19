@@ -11,8 +11,8 @@
 WKContentViewInteraction が `fileUploadPanelDestinationIsManaged:` で呼び出し、保持していた `_frameInfoForFileUploadPanel` を `WKFrameInfo` に変換して渡す。判定後は frame 情報を消費する。
 
 ## References
-- [`WKUIDelegatePrivate.h#L239`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L239)
-- [`WKContentViewInteraction.mm#L9710`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L9710)
+- [`WKUIDelegatePrivate.h#L215`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L215)
+- [`WKContentViewInteraction.mm#L9709`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L9709)
 
 ## Metadata
 | Key | Value |

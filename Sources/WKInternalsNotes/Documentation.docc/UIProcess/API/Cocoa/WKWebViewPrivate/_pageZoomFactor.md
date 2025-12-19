@@ -11,9 +11,9 @@
 getter/setter を通じて値を取得/設定する。 setter は `_setPageZoomFactor:`。
 
 ## References
-- [`API/Cocoa/WKWebViewPrivate.h#L385`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L385)
-- [`API/Cocoa/WKWebView.mm#L5627`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L5627)
-- [`API/Cocoa/WKWebView.mm#L5632`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L5632)
+- [`WKWebViewPrivate.h#L385`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L385)
+- [`WKWebView.mm#L5627`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L5627)
+- [`WKWebView.mm#L5627`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L5627)
 
 ## Metadata
 | Key | Value |

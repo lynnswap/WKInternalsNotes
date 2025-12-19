@@ -11,8 +11,8 @@ App Link アクションを含めるか delegate に問い合わせる。
 UIDelegate::UIClient が delegate へ要素情報を渡し、未実装時は `true` を返す。
 
 ## References
-- [`WKUIDelegatePrivate.h#L233`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L233)
-- [`UIDelegate.mm#L1632`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L1632)
+- [`WKUIDelegatePrivate.h#L209`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L209)
+- [`UIDelegate.mm#L165`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L165)
 
 ## Metadata
 | Key | Value |

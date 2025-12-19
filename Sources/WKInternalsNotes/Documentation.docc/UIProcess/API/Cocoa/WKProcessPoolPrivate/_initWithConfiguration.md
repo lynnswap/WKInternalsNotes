@@ -11,7 +11,7 @@
 `[super init]` 成功後に `API::Object::constructInWrapper<WebKit::WebProcessPool>` を呼び、`configuration->_processPoolConfiguration` を使って `WebProcessPool` を構築する。
 
 ## References
-- [`WKProcessPoolPrivate.h#L74`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L74)
+- [`WKProcessPoolPrivate.h#L75`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L75)
 - [`WKProcessPool.mm#L111`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L111)
 
 ## Metadata

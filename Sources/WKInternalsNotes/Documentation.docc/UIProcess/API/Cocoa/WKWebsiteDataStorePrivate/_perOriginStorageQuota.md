@@ -16,7 +16,7 @@ getter は常に `0` を返し、setter は空実装。
 ## References
 - [`WKWebsiteDataStorePrivate.h#L64`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStorePrivate.h#L64)
 - [`WKWebsiteDataStore.mm#L880`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStore.mm#L880)
-- [`WKWebsiteDataStore.mm#L885`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStore.mm#L885)
+- [`WKWebsiteDataStore.mm#L880`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStore.mm#L880)
 
 ## Metadata
 | Key | Value |

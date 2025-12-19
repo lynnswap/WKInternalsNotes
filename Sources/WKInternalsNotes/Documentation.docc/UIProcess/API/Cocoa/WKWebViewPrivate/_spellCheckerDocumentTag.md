@@ -11,8 +11,8 @@
 読み取り専用のため setter は持たない。
 
 ## References
-- [`API/Cocoa/WKWebViewPrivate.h#L850`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L850)
-- [`API/mac/WKWebViewMac.mm#L1726`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1726)
+- [`WKWebViewPrivate.h#L850`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L850)
+- [`WKWebViewMac.mm#L1726`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1726)
 
 ## Metadata
 | Key | Value |

@@ -11,9 +11,9 @@
 getter/setter を通じて値を取得/設定する。 setter は `_setUsePlatformFindUI:`。
 
 ## References
-- [`API/Cocoa/WKWebViewPrivate.h#L872`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L872)
-- [`API/mac/WKWebViewMac.mm#L1870`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1870)
-- [`API/mac/WKWebViewMac.mm#L1875`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1875)
+- [`WKWebViewPrivate.h#L872`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L872)
+- [`WKWebViewMac.mm#L989`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L989)
+- [`WKWebViewMac.mm#L989`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L989)
 
 ## Metadata
 | Key | Value |

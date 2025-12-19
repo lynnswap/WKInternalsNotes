@@ -11,9 +11,9 @@
 getter/setter を通じて値を取得/設定する。 setter は `setPresentingApplicationAuditToken:`。
 
 ## References
-- [`API/Cocoa/WKWebViewPrivate.h#L638`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L638)
-- [`API/Cocoa/WKWebView.mm#L6440`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L6440)
-- [`API/Cocoa/WKWebView.mm#L6445`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L6445)
+- [`WKWebViewPrivate.h#L638`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L638)
+- [`WKWebView.mm#L6440`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L6440)
+- [`WKWebView.mm#L6440`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L6440)
 
 ## Metadata
 | Key | Value |

@@ -11,7 +11,7 @@
 MIME type と拡張子の `NSSet` を `HashSet<String>` に変換し、`addSupportedPlugin(domain, name, mimeTypes, extensions)` を呼び出す。
 
 ## References
-- [`WKProcessPoolPrivate.h#L116`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L116)
+- [`WKProcessPoolPrivate.h#L117`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L117)
 - [`WKProcessPool.mm#L366`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L366)
 
 ## Metadata

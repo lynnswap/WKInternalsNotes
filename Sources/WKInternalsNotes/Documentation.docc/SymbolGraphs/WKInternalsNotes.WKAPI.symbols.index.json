@@ -1,4 +1,8 @@
 {
+  "DefaultDialogPresenting": {},
+  "DefaultNavigationDecider": {},
+  "ObjCBlockConversion": {},
+  "UncheckedSendableKeyPathBox": {},
   "WKARPresentationSession": {
     "Type": [
       "collectInputSources()",
@@ -283,7 +287,6 @@
       "_accessibilityRetrieveRectsAtSelectionOffset(_:withText:completionHandler:)",
       "_accessibilityRetrieveRectsEnclosingSelectionOffset(_:withGranularity:)",
       "_accessibilityStoreSelection()",
-      "_action ## ForWebView(_:)",
       "_attemptSyntheticClickAtLocation(_:modifierFlags:)",
       "_becomeFirstResponderWithSelectionMovingForward(_:completionHandler:)",
       "_canStartNavigationSwipeAtLastInteractionLocation",
@@ -1203,6 +1206,7 @@
       "_userInitiatedAction"
     ]
   },
+  "WKNavigationDelegateAdapter": {},
   "WKNavigationDelegatePrivate": {
     "Type": [
       "_webCryptoMasterKeyForWebView(_:)",
@@ -2070,6 +2074,7 @@
       "lastTouchEvent"
     ]
   },
+  "WKUIDelegateAdapter": {},
   "WKUIDelegateInternal": {
     "Type": [
       "_webView(_:geometryDidChange:)"
@@ -2234,6 +2239,7 @@
       "usesHardStyle"
     ]
   },
+  "WKURLSchemeHandlerAdapter": {},
   "WKURLSchemeTaskPrivate": {
     "Type": [
       "_didPerformRedirection(_:newRequest:)",

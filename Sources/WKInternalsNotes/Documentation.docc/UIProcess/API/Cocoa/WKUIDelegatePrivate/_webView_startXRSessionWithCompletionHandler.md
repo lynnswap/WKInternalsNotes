@@ -11,8 +11,8 @@ XR セッション開始を delegate に依頼する（旧シグネチャ）。
 UIClient が新 API 未実装時に使用し、結果のみを返して `UIViewController` は `nil` で補完する。
 
 ## References
-- [`WKUIDelegatePrivate.h#L210`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L210)
-- [`UIDelegate.mm#L2248`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L2248)
+- [`WKUIDelegatePrivate.h#L187`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L187)
+- [`UIDelegate.mm#L220`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L220)
 
 ## Metadata
 | Key | Value |

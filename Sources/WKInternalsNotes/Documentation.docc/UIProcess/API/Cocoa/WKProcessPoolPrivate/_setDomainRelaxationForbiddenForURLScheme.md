@@ -11,7 +11,7 @@
 `setDomainRelaxationForbiddenForURLScheme(scheme)` を呼び出す。
 
 ## References
-- [`WKProcessPoolPrivate.h#L122`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L122)
+- [`WKProcessPoolPrivate.h#L123`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L123)
 - [`WKProcessPool.mm#L248`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L248)
 
 ## Metadata

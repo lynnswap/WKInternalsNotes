@@ -11,7 +11,7 @@
 WKContentViewInteraction の `dragInteraction:sessionWillBegin:` から呼び出される。
 
 ## References
-- [`WKUIDelegatePrivate.h#L277`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L277)
+- [`WKUIDelegatePrivate.h#L254`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L254)
 - [`WKContentViewInteraction.mm#L11259`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L11259)
 
 ## Metadata

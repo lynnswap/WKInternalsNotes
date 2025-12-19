@@ -11,7 +11,7 @@ Service Worker を終了する（テスト用）。
 `terminateServiceWorkers()` を呼び出す。
 
 ## References
-- [`WKProcessPoolPrivate.h#L129`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L129)
+- [`WKProcessPoolPrivate.h#L130`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L130)
 - [`WKProcessPool.mm#L383`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L383)
 
 ## Metadata

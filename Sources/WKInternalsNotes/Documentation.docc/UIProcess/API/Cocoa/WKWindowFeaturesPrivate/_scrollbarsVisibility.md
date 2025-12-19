@@ -11,7 +11,7 @@ scrollbar の可視性
 windowFeatures().scrollbarsVisible があれば NSNumber を返し、なければ `nil`。
 
 ## References
-- [`WKWindowFeaturesPrivate.h#L31`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWindowFeaturesPrivate.h#L31)
+- [`WKWindowFeaturesPrivate.h#L36`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWindowFeaturesPrivate.h#L36)
 - [`WKWindowFeatures.mm#L148`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWindowFeatures.mm#L148)
 
 ## Metadata

@@ -12,9 +12,9 @@ WKContentRuleList を保持する _WKUserContentFilter を初期化する。
 
 ## References
 - [`_WKUserContentFilterPrivate.h#L33`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKUserContentFilterPrivate.h#L33)
-- [`_WKUserContentFilterInternal.h#L35`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKUserContentFilterInternal.h#L35)
+- [`_WKUserContentFilterInternal.h`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKUserContentFilterInternal.h)
 - [`_WKUserContentFilter.mm#L54`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKUserContentFilter.mm#L54)
-- [`_WKUserContentExtensionStore.mm#L76`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKUserContentExtensionStore.mm#L76)
+- [`_WKUserContentExtensionStore.mm`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKUserContentExtensionStore.mm)
 
 ## Metadata
 | Key | Value |

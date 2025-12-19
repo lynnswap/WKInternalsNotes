@@ -16,7 +16,7 @@ getter は `persistedSiteURLs()` を `NSURL` 配列へ変換する。setter は�
 ## References
 - [`WKWebsiteDataStorePrivate.h#L71`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStorePrivate.h#L71)
 - [`WKWebsiteDataStore.mm#L858`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStore.mm#L858)
-- [`WKWebsiteDataStore.mm#L868`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStore.mm#L868)
+- [`WKWebsiteDataStore.mm#L858`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStore.mm#L858)
 
 ## Metadata
 | Key | Value |

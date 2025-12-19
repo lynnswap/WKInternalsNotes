@@ -16,7 +16,7 @@ getter は `userContentController()` をラップして返す。setter は `WKUs
 ## References
 - [`WKWebpagePreferencesPrivate.h#L105`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferencesPrivate.h#L105)
 - [`WKWebpagePreferences.mm#L422`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L422)
-- [`WKWebpagePreferences.mm#L427`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L427)
+- [`WKWebpagePreferences.mm#L422`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L422)
 
 ## Metadata
 | Key | Value |

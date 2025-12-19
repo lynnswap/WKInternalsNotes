@@ -16,7 +16,7 @@ getter は `_websiteDataStore->storageSiteValidationEnabled()` を返し、sette
 ## References
 - [`WKWebsiteDataStorePrivate.h#L70`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStorePrivate.h#L70)
 - [`WKWebsiteDataStore.mm#L848`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStore.mm#L848)
-- [`WKWebsiteDataStore.mm#L853`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStore.mm#L853)
+- [`WKWebsiteDataStore.mm#L848`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStore.mm#L848)
 
 ## Metadata
 | Key | Value |

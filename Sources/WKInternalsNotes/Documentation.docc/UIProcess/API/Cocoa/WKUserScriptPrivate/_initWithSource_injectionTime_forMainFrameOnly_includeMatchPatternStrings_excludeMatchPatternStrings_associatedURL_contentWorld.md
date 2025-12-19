@@ -12,7 +12,7 @@ match pattern、associated URL、注入タイミングを `WebCore::UserScript` 
 
 ## References
 - [`WKUserScriptPrivate.h#L35`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUserScriptPrivate.h#L35)
-- [`WKUserScript.mm#L109`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUserScript.mm#L109)
+- [`WKUserScript.mm#L101`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUserScript.mm#L101)
 
 ## Metadata
 | Key | Value |

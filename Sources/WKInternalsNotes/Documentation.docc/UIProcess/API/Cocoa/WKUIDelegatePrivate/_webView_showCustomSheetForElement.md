@@ -11,8 +11,8 @@
 WKContentViewInteraction の `_showAttachmentSheet` で、`_WKActivatedElementInfo` を渡して旧 API として呼び出される。
 
 ## References
-- [`WKUIDelegatePrivate.h#L260`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L260)
-- [`WKContentViewInteraction.mm#L3222`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L3222)
+- [`WKUIDelegatePrivate.h#L237`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L237)
+- [`WKContentViewInteraction.mm#L3217`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L3217)
 
 ## Metadata
 | Key | Value |

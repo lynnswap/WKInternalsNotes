@@ -11,7 +11,7 @@ Drag session の data owner を delegate に問い合わせる。
 delegate が応答すればその値を返し、未実装時は 0 を返す。
 
 ## References
-- [`WKUIDelegatePrivate.h#L288`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L288)
+- [`WKUIDelegatePrivate.h#L265`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L265)
 - [`WKContentViewInteraction.mm#L11134`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L11134)
 
 ## Metadata

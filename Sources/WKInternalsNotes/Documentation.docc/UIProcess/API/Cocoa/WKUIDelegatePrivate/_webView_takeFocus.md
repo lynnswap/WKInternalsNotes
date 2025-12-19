@@ -11,8 +11,8 @@ WebView がフォーカスを取る処理を delegate に通知する。
 UIDelegate::UIClient が `WKFocusDirection` を渡して delegate に通知し、処理できたかどうかを返す。
 
 ## References
-- [`WKUIDelegatePrivate.h#L192`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L192)
-- [`UIDelegate.mm#L788`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L788)
+- [`WKUIDelegatePrivate.h#L169`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L169)
+- [`UIDelegate.mm#L135`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L135)
 
 ## Metadata
 | Key | Value |

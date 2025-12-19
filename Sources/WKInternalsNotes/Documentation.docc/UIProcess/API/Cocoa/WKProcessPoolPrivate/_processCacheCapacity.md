@@ -11,7 +11,7 @@ WebProcessCache の容量を返す。
 `_processPool->webProcessCache().capacity()` を返す。
 
 ## References
-- [`WKProcessPoolPrivate.h#L147`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L147)
+- [`WKProcessPoolPrivate.h#L148`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L148)
 - [`WKProcessPool.mm#L508`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L508)
 
 ## Metadata

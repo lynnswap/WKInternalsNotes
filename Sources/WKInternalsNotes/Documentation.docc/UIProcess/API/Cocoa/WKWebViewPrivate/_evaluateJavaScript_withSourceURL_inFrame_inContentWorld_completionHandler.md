@@ -11,8 +11,8 @@
 `completionHandler` に結果を返す。
 
 ## References
-- [`API/Cocoa/WKWebViewPrivate.h#L280`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L280)
-- [`API/Cocoa/WKWebView.mm#L1454`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L1454)
+- [`WKWebViewPrivate.h#L279`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L279)
+- [`WKWebView.mm#L1241`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L1241)
 
 ## Metadata
 | Key | Value |

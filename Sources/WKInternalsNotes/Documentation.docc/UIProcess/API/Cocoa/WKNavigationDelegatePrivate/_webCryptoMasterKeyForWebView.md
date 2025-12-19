@@ -12,7 +12,7 @@ NavigationState::NavigationClient::legacyWebCryptoMasterKey が delegate の実�
 
 ## References
 - [`WKNavigationDelegatePrivate.h#L81`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationDelegatePrivate.h#L81)
-- [`NavigationState.mm#L1344`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm#L1344)
+- [`NavigationState.mm`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm)
 
 ## Metadata
 | Key | Value |

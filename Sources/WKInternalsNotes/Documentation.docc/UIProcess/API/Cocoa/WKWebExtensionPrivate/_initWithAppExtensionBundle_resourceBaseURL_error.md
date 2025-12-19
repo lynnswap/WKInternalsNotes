@@ -11,8 +11,8 @@
 `initWithAppExtensionBundle:resourceBaseURL:error:` をそのまま呼び出す薄いラッパー。
 
 ## References
-- [`WKWebExtensionPrivate.h#L34`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebExtensionPrivate.h#L34)
-- [`WKWebExtension.mm#L100`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebExtension.mm#L100)
+- [`WKWebExtensionPrivate.h#L32`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebExtensionPrivate.h#L32)
+- [`WKWebExtension.mm#L90`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebExtension.mm#L90)
 
 ## Metadata
 | Key | Value |

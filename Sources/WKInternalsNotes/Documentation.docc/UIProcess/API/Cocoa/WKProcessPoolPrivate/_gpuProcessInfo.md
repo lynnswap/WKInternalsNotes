@@ -11,7 +11,7 @@ GPU プロセスのタスク情報を `_WKProcessInfo` で返す。
 GPUProcessProxy の `taskInfo()` が得られる場合に `_WKProcessInfo` を生成し、取得できない場合は `nil` を返す。
 
 ## References
-- [`WKProcessPoolPrivate.h#L193`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L193)
+- [`WKProcessPoolPrivate.h#L194`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L194)
 - [`WKProcessPool.mm#L685`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L685)
 
 ## Metadata

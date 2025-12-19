@@ -11,7 +11,7 @@ location bar の可視性
 windowFeatures().locationBarVisible があれば NSNumber を返し、なければ `nil`。
 
 ## References
-- [`WKWindowFeaturesPrivate.h#L30`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWindowFeaturesPrivate.h#L30)
+- [`WKWindowFeaturesPrivate.h#L35`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWindowFeaturesPrivate.h#L35)
 - [`WKWindowFeatures.mm#L140`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWindowFeatures.mm#L140)
 
 ## Metadata

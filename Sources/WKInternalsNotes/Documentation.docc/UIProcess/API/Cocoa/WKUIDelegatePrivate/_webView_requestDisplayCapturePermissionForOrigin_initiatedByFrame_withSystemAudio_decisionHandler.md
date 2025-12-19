@@ -11,8 +11,8 @@
 UIClient がトップレベルオリジンと `WKFrameInfo` を用意し、システム音声付き要求かどうかを `withSystemAudio` で渡して決定を受け取る。
 
 ## References
-- [`WKUIDelegatePrivate.h#L165`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L165)
-- [`UIDelegate.mm#L1335`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L1335)
+- [`WKUIDelegatePrivate.h#L141`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L141)
+- [`UIDelegate.mm#L1298`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L1298)
 
 ## Metadata
 | Key | Value |

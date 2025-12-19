@@ -11,9 +11,9 @@
 getter/setter を通じて値を取得/設定する。 setter は `_setMediaCaptureReportingDelayForTesting:`。
 
 ## References
-- [`API/Cocoa/WKWebViewPrivateForTesting.h#L77`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivateForTesting.h#L77)
-- [`API/Cocoa/WKWebViewTesting.mm#L462`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewTesting.mm#L462)
-- [`API/Cocoa/WKWebViewTesting.mm#L467`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewTesting.mm#L467)
+- [`WKWebViewPrivateForTesting.h#L77`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivateForTesting.h#L77)
+- [`WKWebViewTesting.mm#L462`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewTesting.mm#L462)
+- [`WKWebViewTesting.mm#L462`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewTesting.mm#L462)
 
 ## Metadata
 | Key | Value |

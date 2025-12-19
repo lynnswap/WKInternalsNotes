@@ -13,8 +13,8 @@ text extraction の内部リクエストを発行する。
 - `USE(APPLE_INTERNAL_SDK)` もしくは watchOS/Apple TV 以外でのみ有効。
 
 ## References
-- [`API/Cocoa/WKWebView.mm#L330`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L330)
-- [`API/Cocoa/WKWebView.mm#L6825`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L6825)
+- [`WKWebView.mm#L331`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L331)
+- [`WKWebView.mm#L331`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L331)
 
 ## Metadata
 | Key | Value |

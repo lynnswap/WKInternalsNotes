@@ -15,7 +15,7 @@ setter は `coreModalContainerObservationPolicy` で変換して設定する。g
 
 ## References
 - [`WKWebpagePreferencesPrivate.h#L115`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferencesPrivate.h#L115)
-- [`WKWebpagePreferences.mm#L589`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L589)
+- [`WKWebpagePreferences.mm#L594`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L594)
 - [`WKWebpagePreferences.mm#L594`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L594)
 
 ## Metadata

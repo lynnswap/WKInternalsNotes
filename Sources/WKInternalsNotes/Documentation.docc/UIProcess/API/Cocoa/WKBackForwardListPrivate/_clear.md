@@ -13,7 +13,7 @@
 ## References
 - [`WKBackForwardListPrivate.h#L33`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKBackForwardListPrivate.h#L33)
 - [`WKBackForwardList.mm#L101`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKBackForwardList.mm#L101)
-- [`WebBackForwardList.cpp#L406`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/WebBackForwardList.cpp#L406)
+- [`WebBackForwardList.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/WebBackForwardList.cpp)
 
 ## Metadata
 | Key | Value |

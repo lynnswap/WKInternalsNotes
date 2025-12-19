@@ -11,8 +11,8 @@
 didGeneratePageLoadTiming で `WebPageLoadTiming` を `_WKPageLoadTiming` にラップして渡す。
 
 ## References
-- [`WKNavigationDelegatePrivate.h#L129`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationDelegatePrivate.h#L129)
-- [`NavigationState.mm#L1759`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm#L1759)
+- [`WKNavigationDelegatePrivate.h#L105`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationDelegatePrivate.h#L105)
+- [`NavigationState.mm#L230`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm#L230)
 
 ## Metadata
 | Key | Value |

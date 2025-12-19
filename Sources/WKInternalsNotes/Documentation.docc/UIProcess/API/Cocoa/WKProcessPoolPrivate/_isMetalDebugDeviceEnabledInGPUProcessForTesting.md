@@ -11,7 +11,7 @@ GPU プロセスで Metal debug device が有効かを返す（テスト用）�
 GPUProcessProxy singleton があれば `isMetalDebugDeviceEnabledForTesting()`、無ければ `isMetalDebugDeviceEnabledInNewGPUProcessesForTesting()` を返す。
 
 ## References
-- [`WKProcessPoolPrivate.h#L172`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L172)
+- [`WKProcessPoolPrivate.h#L173`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L173)
 - [`WKProcessPool.mm#L587`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L587)
 
 ## Metadata

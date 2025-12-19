@@ -11,7 +11,7 @@
 `_webProcessCount` から `_hasPrewarmedWebProcess` が true の場合に 1 を引いて返す。
 
 ## References
-- [`WKProcessPoolPrivate.h#L140`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L140)
+- [`WKProcessPoolPrivate.h#L141`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L141)
 - [`WKProcessPool.mm#L471`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L471)
 
 ## Metadata

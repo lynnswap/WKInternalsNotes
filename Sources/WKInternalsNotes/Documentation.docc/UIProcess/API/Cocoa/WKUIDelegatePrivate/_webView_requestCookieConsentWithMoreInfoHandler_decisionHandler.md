@@ -11,8 +11,8 @@ Cookie 同意の判断を delegate に求める。
 UIClient が `moreInfoHandler` を `nil` で渡し（FIXME で未対応）、`decisionHandler` の結果を Consent/Dissent に変換する。
 
 ## References
-- [`WKUIDelegatePrivate.h#L215`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L215)
-- [`UIDelegate.mm#L875`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L875)
+- [`WKUIDelegatePrivate.h#L192`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L192)
+- [`UIDelegate.mm#L231`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L231)
 
 ## Metadata
 | Key | Value |

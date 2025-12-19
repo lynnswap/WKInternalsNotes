@@ -15,7 +15,7 @@ API::Navigation の `wasUserInitiated()` を呼び、ユーザー起点かどう
 
 ## References
 - [`WKNavigationPrivate.h#L34`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationPrivate.h#L34)
-- [`WKNavigation.mm#L58`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigation.mm#L58)
+- [`WKNavigation.mm`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigation.mm)
 
 ## Metadata
 | Key | Value |

@@ -11,7 +11,7 @@
 `processes()` を走査し、pid 一致なら `requestTermination(RequestedByClient)` を呼ぶ。ループ内で YES を返すため、プロセスが存在すれば YES になる。
 
 ## References
-- [`WKProcessPoolPrivate.h#L154`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L154)
+- [`WKProcessPoolPrivate.h#L155`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L155)
 - [`WKProcessPool.mm#L438`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L438)
 
 ## Metadata

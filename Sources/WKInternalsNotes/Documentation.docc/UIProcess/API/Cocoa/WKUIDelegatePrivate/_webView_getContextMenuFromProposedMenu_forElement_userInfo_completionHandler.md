@@ -11,8 +11,8 @@
 UIDelegate が `CompletionHandlerCallChecker` を使って delegate に非同期メニュー生成を依頼し、完了後に `completionHandler` を呼び出す。未実装時は旧 `contextMenu:forElement:` 系へフォールバックする。
 
 ## References
-- [`WKUIDelegatePrivate.h#L335`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L335)
-- [`UIDelegate.mm#L294`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L294)
+- [`WKUIDelegatePrivate.h#L321`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L321)
+- [`UIDelegate.mm#L191`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L191)
 
 ## Metadata
 | Key | Value |

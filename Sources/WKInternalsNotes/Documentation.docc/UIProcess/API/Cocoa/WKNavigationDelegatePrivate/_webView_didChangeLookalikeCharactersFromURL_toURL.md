@@ -11,8 +11,8 @@
 didApplyLinkDecorationFiltering で original/adjusted URL を NSURL に変換して呼び出す。
 
 ## References
-- [`WKNavigationDelegatePrivate.h#L110`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationDelegatePrivate.h#L110)
-- [`NavigationState.mm#L1075`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm#L1075)
+- [`WKNavigationDelegatePrivate.h#L87`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationDelegatePrivate.h#L87)
+- [`NavigationState.mm#L187`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm#L187)
 
 ## Metadata
 | Key | Value |

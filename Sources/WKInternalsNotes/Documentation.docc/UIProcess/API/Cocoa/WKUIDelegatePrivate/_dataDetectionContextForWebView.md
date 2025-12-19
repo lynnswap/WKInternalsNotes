@@ -11,9 +11,9 @@ Data Detectors 用のコンテキスト辞書を返す。
 WKContentViewInteraction で Data Detectors のコンテキストとして利用され、UIDelegate の `dataDetectionReferenceDate` では参照日付の抽出に使われる。
 
 ## References
-- [`WKUIDelegatePrivate.h#L163`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L163)
-- [`WKContentViewInteraction.mm#L10104`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L10104)
-- [`UIDelegate.mm#L1732`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L1732)
+- [`WKUIDelegatePrivate.h#L164`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L164)
+- [`WKContentViewInteraction.mm`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm)
+- [`UIDelegate.mm`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm)
 
 ## Metadata
 | Key | Value |

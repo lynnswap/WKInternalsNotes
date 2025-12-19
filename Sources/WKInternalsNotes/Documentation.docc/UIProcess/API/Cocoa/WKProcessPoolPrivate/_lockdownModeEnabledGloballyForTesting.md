@@ -11,7 +11,7 @@
 `WebKit::lockdownModeEnabledBySystem()` を返す。
 
 ## References
-- [`WKProcessPoolPrivate.h#L167`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L167)
+- [`WKProcessPoolPrivate.h#L168`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L168)
 - [`WKProcessPool.mm#L567`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L567)
 
 ## Metadata

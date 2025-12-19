@@ -11,8 +11,8 @@
 didPromptForStorageAccess でドメインを NSString に変換し、quirk フラグとともに呼び出す。
 
 ## References
-- [`WKNavigationDelegatePrivate.h#L111`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationDelegatePrivate.h#L111)
-- [`NavigationState.mm#L1089`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm#L1089)
+- [`WKNavigationDelegatePrivate.h#L87`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationDelegatePrivate.h#L87)
+- [`NavigationState.mm#L187`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm#L187)
 
 ## Metadata
 | Key | Value |

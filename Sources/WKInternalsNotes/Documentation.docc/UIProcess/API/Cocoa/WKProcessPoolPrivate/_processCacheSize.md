@@ -11,7 +11,7 @@ WebProcessCache の現在サイズを返す。
 `_processPool->webProcessCache().size()` を返す。
 
 ## References
-- [`WKProcessPoolPrivate.h#L148`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L148)
+- [`WKProcessPoolPrivate.h#L149`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L149)
 - [`WKProcessPool.mm#L513`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L513)
 
 ## Metadata

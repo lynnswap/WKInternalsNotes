@@ -11,9 +11,9 @@
 getter/setter を通じて値を取得/設定する。 setter は `_setIgnoresNonWheelEvents:`。
 
 ## References
-- [`API/Cocoa/WKWebViewPrivate.h#L826`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L826)
-- [`API/mac/WKWebViewMac.mm#L1466`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1466)
-- [`API/mac/WKWebViewMac.mm#L1471`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1471)
+- [`WKWebViewPrivate.h#L826`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L826)
+- [`WKWebViewMac.mm#L1466`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1466)
+- [`WKWebViewMac.mm#L1466`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1466)
 
 ## Metadata
 | Key | Value |

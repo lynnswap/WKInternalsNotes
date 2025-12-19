@@ -11,8 +11,8 @@
 WKWebView の `_didChangeEditorState` 内で selection attributes が変化したタイミングに `dictionaryRepresentationForEditorState` の結果を渡す。コメントではテスト用途の API であることが示されている。
 
 ## References
-- [`WKUIDelegatePrivate.h#L179`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L179)
-- [`WKWebView.mm#L2295`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L2295)
+- [`WKUIDelegatePrivate.h#L158`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L158)
+- [`WKWebView.mm#L2290`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L2290)
 
 ## Metadata
 | Key | Value |

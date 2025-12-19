@@ -11,8 +11,8 @@
 shouldGoToBackForwardListItem で completionHandler を渡して呼び出し、未実装の場合は willGoToBackForwardListItem の通知後に true で継続する。
 
 ## References
-- [`WKNavigationDelegatePrivate.h#L131`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationDelegatePrivate.h#L131)
-- [`NavigationState.mm#L421`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm#L421)
+- [`WKNavigationDelegatePrivate.h#L107`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationDelegatePrivate.h#L107)
+- [`NavigationState.mm#L226`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm#L226)
 
 ## Metadata
 | Key | Value |

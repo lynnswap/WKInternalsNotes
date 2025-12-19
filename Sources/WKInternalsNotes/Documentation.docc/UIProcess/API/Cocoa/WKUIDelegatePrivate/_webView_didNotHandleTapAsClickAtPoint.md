@@ -11,8 +11,8 @@
 UIClient が point を渡して delegate に通知する。
 
 ## References
-- [`WKUIDelegatePrivate.h#L234`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L234)
-- [`UIDelegate.mm#L1665`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L1665)
+- [`WKUIDelegatePrivate.h#L211`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L211)
+- [`UIDelegate.mm#L169`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L169)
 
 ## Metadata
 | Key | Value |

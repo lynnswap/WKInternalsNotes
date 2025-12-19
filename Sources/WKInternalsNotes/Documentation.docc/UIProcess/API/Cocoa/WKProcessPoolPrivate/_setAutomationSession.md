@@ -11,7 +11,7 @@ Automation セッションを設定する。
 `_automationSession` を更新し、`setAutomationSession` にセッション（または nullptr）を渡す。
 
 ## References
-- [`WKProcessPoolPrivate.h#L112`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L112)
+- [`WKProcessPoolPrivate.h#L113`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L113)
 - [`WKProcessPool.mm#L348`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L348)
 
 ## Metadata

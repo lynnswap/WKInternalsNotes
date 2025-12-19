@@ -11,7 +11,7 @@
 dictionary を copyItems で複製して secure coding でエンコードし、`setValuesForKeysWithDictionary` で反映した後 `SetInjectedBundleParameters` を送信する。
 
 ## References
-- [`WKProcessPoolPrivate.h#L91`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L91)
+- [`WKProcessPoolPrivate.h#L92`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L92)
 - [`WKProcessPool.mm#L284`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L284)
 
 ## Metadata

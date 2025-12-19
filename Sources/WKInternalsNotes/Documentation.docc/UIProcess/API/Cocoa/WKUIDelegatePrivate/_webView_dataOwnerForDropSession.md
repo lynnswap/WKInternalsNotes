@@ -11,7 +11,7 @@ Drop session の data owner を delegate に問い合わせる。
 delegate が応答すればその値を返し、未実装時は 0 を返す。
 
 ## References
-- [`WKUIDelegatePrivate.h#L287`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L287)
+- [`WKUIDelegatePrivate.h#L264`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L264)
 - [`WKContentViewInteraction.mm#L11350`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L11350)
 
 ## Metadata

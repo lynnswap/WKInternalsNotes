@@ -11,9 +11,9 @@
 getter/setter を通じて値を取得/設定する。 setter は `_setUnderlayColor:`。
 
 ## References
-- [`API/Cocoa/WKWebViewPrivate.h#L840`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L840)
-- [`API/mac/WKWebViewMac.mm#L1537`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1537)
-- [`API/mac/WKWebViewMac.mm#L1542`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1542)
+- [`WKWebViewPrivate.h#L840`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L840)
+- [`WKWebViewMac.mm#L1537`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1537)
+- [`WKWebViewMac.mm#L1537`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1537)
 
 ## Metadata
 | Key | Value |

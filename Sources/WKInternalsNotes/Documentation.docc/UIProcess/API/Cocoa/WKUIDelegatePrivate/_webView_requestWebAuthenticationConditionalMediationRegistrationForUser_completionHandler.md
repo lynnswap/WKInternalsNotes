@@ -11,8 +11,8 @@ WebAuthn の条件付きメディエーション登録可否を delegate に問�
 UIDelegate::UIClient が `CompletionHandlerCallChecker` を使って user を渡し、結果を completionHandler に返す。
 
 ## References
-- [`WKUIDelegatePrivate.h#L194`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L194)
-- [`UIDelegate.mm#L1880`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L1880)
+- [`WKUIDelegatePrivate.h#L171`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L171)
+- [`UIDelegate.mm#L202`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L202)
 
 ## Metadata
 | Key | Value |

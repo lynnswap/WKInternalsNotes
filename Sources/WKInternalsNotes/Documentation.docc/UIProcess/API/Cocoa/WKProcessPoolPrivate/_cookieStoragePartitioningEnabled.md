@@ -14,9 +14,9 @@ Cookie ストレージ分割の有効状態を取得・設定する。
 getter は `_processPool->cookieStoragePartitioningEnabled()` を返し、setter は `setCookieStoragePartitioningEnabled` を呼び出す。
 
 ## References
-- [`WKProcessPoolPrivate.h#L181`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L181)
-- [`WKProcessPool.mm#L601`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L601)
-- [`WKProcessPool.mm#L606`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L606)
+- [`WKProcessPoolPrivate.h#L182`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L182)
+- [`WKProcessPool.mm`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm)
+- [`WKProcessPool.mm`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm)
 
 ## Metadata
 | Key | Value |

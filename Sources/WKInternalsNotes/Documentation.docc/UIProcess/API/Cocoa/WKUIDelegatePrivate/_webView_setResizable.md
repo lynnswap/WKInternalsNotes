@@ -11,8 +11,8 @@ WebView のリサイズ可否を delegate に通知する。
 UIDelegate::UIClient が window feature 由来の resizable 情報を delegate へ渡す。
 
 ## References
-- [`WKUIDelegatePrivate.h#L329`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L329)
-- [`UIDelegate.mm#L1114`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L1114)
+- [`WKUIDelegatePrivate.h#L321`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L321)
+- [`UIDelegate.mm#L139`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L139)
 
 ## Metadata
 | Key | Value |

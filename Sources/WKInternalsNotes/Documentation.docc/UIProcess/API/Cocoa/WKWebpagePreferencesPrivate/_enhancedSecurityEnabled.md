@@ -15,7 +15,7 @@ setter は `setEnhancedSecurityEnabled` を呼び、getter は `enhancedSecurity
 
 ## References
 - [`WKWebpagePreferencesPrivate.h#L138`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferencesPrivate.h#L138)
-- [`WKWebpagePreferences.mm#L502`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L502)
+- [`WKWebpagePreferences.mm#L507`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L507)
 - [`WKWebpagePreferences.mm#L507`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L507)
 
 ## Metadata

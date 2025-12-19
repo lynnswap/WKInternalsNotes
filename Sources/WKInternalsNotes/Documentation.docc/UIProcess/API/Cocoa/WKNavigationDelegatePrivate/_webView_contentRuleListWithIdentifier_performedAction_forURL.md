@@ -11,8 +11,8 @@ content rule list のアクション実行を通知する。
 contentRuleListNotification の結果を列挙し、identifier と action を Objective-C ラッパーに変換して URL とともに呼び出す。
 
 ## References
-- [`WKNavigationDelegatePrivate.h#L100`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationDelegatePrivate.h#L100)
-- [`NavigationState.mm#L757`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm#L757)
+- [`WKNavigationDelegatePrivate.h#L84`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationDelegatePrivate.h#L84)
+- [`NavigationState.mm#L210`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm#L210)
 
 ## Metadata
 | Key | Value |

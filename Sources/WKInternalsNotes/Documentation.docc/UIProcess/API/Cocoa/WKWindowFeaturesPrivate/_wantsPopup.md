@@ -11,7 +11,7 @@ popup を要求しているか
 windowFeatures().wantsPopup() を返す。
 
 ## References
-- [`WKWindowFeaturesPrivate.h#L27`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWindowFeaturesPrivate.h#L27)
+- [`WKWindowFeaturesPrivate.h#L32`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWindowFeaturesPrivate.h#L32)
 - [`WKWindowFeatures.mm#L122`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWindowFeatures.mm#L122)
 
 ## Metadata

@@ -11,7 +11,7 @@ fullscreen 表示
 windowFeatures().fullscreen があれば NSNumber を返し、なければ `nil`。
 
 ## References
-- [`WKWindowFeaturesPrivate.h#L32`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWindowFeaturesPrivate.h#L32)
+- [`WKWindowFeaturesPrivate.h#L37`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWindowFeaturesPrivate.h#L37)
 - [`WKWindowFeatures.mm#L156`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWindowFeatures.mm#L156)
 
 ## Metadata

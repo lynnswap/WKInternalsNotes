@@ -11,8 +11,8 @@ URL と既定アクションを渡してプレビュー用 view controller を d
 WKContentViewInteraction がリンクプレビューの既定アクションと `_WKActivatedElementInfo` を作成し、旧 API として `ALLOW_DEPRECATED_DECLARATIONS` 内で呼び出す。
 
 ## References
-- [`WKUIDelegatePrivate.h#L267`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L267)
-- [`WKContentViewInteraction.mm#L14910`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14910)
+- [`WKUIDelegatePrivate.h#L243`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L243)
+- [`WKContentViewInteraction.mm#L14788`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14788)
 
 ## Metadata
 | Key | Value |

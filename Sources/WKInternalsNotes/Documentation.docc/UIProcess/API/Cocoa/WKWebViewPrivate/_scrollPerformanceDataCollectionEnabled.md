@@ -11,9 +11,9 @@
 getter/setter を通じて値を取得/設定する。 setter は `_setScrollPerformanceDataCollectionEnabled:`。
 
 ## References
-- [`API/Cocoa/WKWebViewPrivate.h#L399`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L399)
-- [`API/Cocoa/WKWebView.mm#L6032`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L6032)
-- [`API/Cocoa/WKWebView.mm#L6026`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L6026)
+- [`WKWebViewPrivate.h#L399`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L399)
+- [`WKWebView.mm#L6032`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L6032)
+- [`WKWebView.mm#L6032`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L6032)
 
 ## Metadata
 | Key | Value |

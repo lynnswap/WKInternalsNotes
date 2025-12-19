@@ -11,7 +11,7 @@
 windowFeatures().hasAdditionalFeatures を返す。
 
 ## References
-- [`WKWindowFeaturesPrivate.h#L28`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWindowFeaturesPrivate.h#L28)
+- [`WKWindowFeaturesPrivate.h#L33`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWindowFeaturesPrivate.h#L33)
 - [`WKWindowFeatures.mm#L127`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWindowFeatures.mm#L127)
 
 ## Metadata

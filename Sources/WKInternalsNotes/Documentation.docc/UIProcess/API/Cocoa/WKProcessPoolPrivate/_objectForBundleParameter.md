@@ -11,7 +11,7 @@
 `protectedProcessPool(self)->protectedBundleParameters()` の辞書から `parameter` を取り出して返す。
 
 ## References
-- [`WKProcessPoolPrivate.h#L88`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L88)
+- [`WKProcessPoolPrivate.h#L89`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L89)
 - [`WKProcessPool.mm#L257`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L257)
 
 ## Metadata

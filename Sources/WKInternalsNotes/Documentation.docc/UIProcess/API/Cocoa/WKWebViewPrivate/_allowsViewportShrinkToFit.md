@@ -11,9 +11,9 @@
 getter/setter を通じて値を取得/設定する。 setter は `_setAllowsViewportShrinkToFit:`。
 
 ## References
-- [`API/Cocoa/WKWebViewPrivate.h#L714`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L714)
-- [`API/ios/WKWebViewIOS.mm#L4414`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/ios/WKWebViewIOS.mm#L4414)
-- [`API/ios/WKWebViewIOS.mm#L4409`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/ios/WKWebViewIOS.mm#L4409)
+- [`WKWebViewPrivate.h#L714`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L714)
+- [`WKWebViewIOS.mm#L4411`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/ios/WKWebViewIOS.mm#L4411)
+- [`WKWebViewIOS.mm#L4411`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/ios/WKWebViewIOS.mm#L4411)
 
 ## Metadata
 | Key | Value |

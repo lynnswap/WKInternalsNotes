@@ -11,7 +11,7 @@ Service Worker プロセス数を返す。
 `serviceWorkerProxiesCount()` を返す。
 
 ## References
-- [`WKProcessPoolPrivate.h#L143`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L143)
+- [`WKProcessPoolPrivate.h#L144`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L144)
 - [`WKProcessPool.mm#L518`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L518)
 
 ## Metadata

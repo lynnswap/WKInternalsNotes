@@ -11,8 +11,8 @@
 delegate が実装していればその戻り値を使い、`nil` の場合は `WKImagePreviewViewController` にフォールバックする。
 
 ## References
-- [`WKUIDelegatePrivate.h#L254`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L254)
-- [`WKContentViewInteraction.mm#L15176`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L15176)
+- [`WKUIDelegatePrivate.h#L233`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L233)
+- [`WKContentViewInteraction.mm#L15175`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L15175)
 
 ## Metadata
 | Key | Value |

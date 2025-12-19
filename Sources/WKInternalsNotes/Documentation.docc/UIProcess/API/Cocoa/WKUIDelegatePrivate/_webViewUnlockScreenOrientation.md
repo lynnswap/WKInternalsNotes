@@ -12,7 +12,7 @@ UIDelegate::UIClient が delegate を通じて画面回転ロック解除を依�
 
 ## References
 - [`WKUIDelegatePrivate.h#L292`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L292)
-- [`UIDelegate.mm#L759`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L759)
+- [`UIDelegate.mm`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm)
 
 ## Metadata
 | Key | Value |

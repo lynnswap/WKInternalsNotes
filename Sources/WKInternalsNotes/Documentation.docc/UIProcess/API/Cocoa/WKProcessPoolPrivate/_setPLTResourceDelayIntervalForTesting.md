@@ -11,7 +11,7 @@ PLT リソース遅延間隔を設定する（テスト用）。
 `_processPool->setPLTResourceDelayInterval(Seconds(interval))` を呼び出す。
 
 ## References
-- [`WKProcessPoolPrivate.h#L126`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L126)
+- [`WKProcessPoolPrivate.h#L127`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L127)
 - [`WKProcessPool.mm#L557`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L557)
 
 ## Metadata

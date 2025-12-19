@@ -11,8 +11,8 @@
 WKContentViewInteraction が `_gestureRecognizerCanBePreventedByTouchEvents:` から delegate に問い合わせ、ジェスチャの制御可否を決定する。
 
 ## References
-- [`WKUIDelegatePrivate.h#L302`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L302)
-- [`WKContentViewInteraction.mm#L2198`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L2198)
+- [`WKUIDelegatePrivate.h#L278`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L278)
+- [`WKContentViewInteraction.mm#L2191`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L2191)
 
 ## Metadata
 | Key | Value |

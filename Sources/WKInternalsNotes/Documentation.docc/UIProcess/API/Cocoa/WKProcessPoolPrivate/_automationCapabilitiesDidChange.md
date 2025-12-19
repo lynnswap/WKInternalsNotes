@@ -11,7 +11,7 @@ Automation の能力変更をプロセスプールへ通知する。
 `updateAutomationCapabilities()` を呼び出す。
 
 ## References
-- [`WKProcessPoolPrivate.h#L111`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L111)
+- [`WKProcessPoolPrivate.h#L112`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L112)
 - [`WKProcessPool.mm#L343`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L343)
 
 ## Metadata

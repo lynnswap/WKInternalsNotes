@@ -16,7 +16,7 @@ getter は Baseline/Fingerprinting/EnhancedNetworkPrivacy/LinkDecorationFilterin
 ## References
 - [`WKWebpagePreferencesPrivate.h#L122`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferencesPrivate.h#L122)
 - [`WKWebpagePreferences.mm#L631`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L631)
-- [`WKWebpagePreferences.mm#L641`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L641)
+- [`WKWebpagePreferences.mm#L631`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L631)
 
 ## Metadata
 | Key | Value |

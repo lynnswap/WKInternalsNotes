@@ -11,9 +11,9 @@
 getter/setter を通じて値を取得/設定する。 setter は `_setApplicationNameForUserAgent:`。
 
 ## References
-- [`API/Cocoa/WKWebViewPrivate.h#L218`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L218)
-- [`API/Cocoa/WKWebView.mm#L4835`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L4835)
-- [`API/Cocoa/WKWebView.mm#L4840`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L4840)
+- [`WKWebViewPrivate.h#L218`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L218)
+- [`WKWebView.mm#L4835`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L4835)
+- [`WKWebView.mm#L4835`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L4835)
 
 ## Metadata
 | Key | Value |

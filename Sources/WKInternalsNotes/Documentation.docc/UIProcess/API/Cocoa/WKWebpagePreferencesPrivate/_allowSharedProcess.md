@@ -16,7 +16,7 @@ getter は `allowSharedProcess()` を返し、setter は同値を設定する。
 ## References
 - [`WKWebpagePreferencesPrivate.h#L128`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferencesPrivate.h#L128)
 - [`WKWebpagePreferences.mm#L790`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L790)
-- [`WKWebpagePreferences.mm#L795`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L795)
+- [`WKWebpagePreferences.mm#L790`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L790)
 
 ## Metadata
 | Key | Value |

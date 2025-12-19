@@ -11,8 +11,8 @@
 UIClient が delegate 実装時に `_webView:configurationForLocalInspector:` を呼び出し、返った設定を API::InspectorConfiguration として使用する。
 
 ## References
-- [`WKUIDelegatePrivate.h#L341`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L341)
-- [`UIDelegate.mm#L1215`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L1215)
+- [`WKUIDelegatePrivate.h#L321`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L321)
+- [`UIDelegate.mm#L146`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L146)
 
 ## Metadata
 | Key | Value |

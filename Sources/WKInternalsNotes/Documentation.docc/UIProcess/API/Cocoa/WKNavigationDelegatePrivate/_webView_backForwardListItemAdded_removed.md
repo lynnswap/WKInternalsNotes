@@ -11,8 +11,8 @@
 didChangeBackForwardList で追加 item と削除 items をラップし、配列にまとめて delegate へ渡す。
 
 ## References
-- [`WKNavigationDelegatePrivate.h#L113`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationDelegatePrivate.h#L113)
-- [`NavigationState.mm#L395`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm#L395)
+- [`WKNavigationDelegatePrivate.h#L94`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationDelegatePrivate.h#L94)
+- [`NavigationState.mm#L226`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm#L226)
 
 ## Metadata
 | Key | Value |

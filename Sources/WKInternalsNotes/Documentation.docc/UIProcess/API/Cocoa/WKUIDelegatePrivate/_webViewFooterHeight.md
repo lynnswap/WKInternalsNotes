@@ -12,7 +12,7 @@ UIDelegate::UIClient が delegate からフッタの高さを取得し、未実�
 
 ## References
 - [`WKUIDelegatePrivate.h#L325`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L325)
-- [`UIDelegate.mm#L1002`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L1002)
+- [`UIDelegate.mm`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm)
 
 ## Metadata
 | Key | Value |

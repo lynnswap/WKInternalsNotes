@@ -11,8 +11,8 @@
 添付プレビューの生成時に `_WKActivatedElementInfo` を渡してインデックスを取得し、`NSNotFound` でなければ preview data に attachment list と index を格納する。
 
 ## References
-- [`WKUIDelegatePrivate.h#L264`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L264)
-- [`WKContentViewInteraction.mm#L15582`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L15582)
+- [`WKUIDelegatePrivate.h#L241`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L241)
+- [`WKContentViewInteraction.mm#L15514`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L15514)
 
 ## Metadata
 | Key | Value |

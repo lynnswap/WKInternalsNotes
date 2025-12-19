@@ -14,8 +14,8 @@
 API::NavigationResponse が持つ navigation を Objective-C ラッパーとして返す。
 
 ## References
-- [`WKNavigationResponsePrivate.h#L33`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationResponsePrivate.h#L33)
-- [`WKNavigationResponse.mm#L89`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationResponse.mm#L89)
+- [`WKNavigationResponsePrivate.h#L32`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationResponsePrivate.h#L32)
+- [`WKNavigationResponse.mm#L42`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationResponse.mm#L42)
 
 ## Metadata
 | Key | Value |

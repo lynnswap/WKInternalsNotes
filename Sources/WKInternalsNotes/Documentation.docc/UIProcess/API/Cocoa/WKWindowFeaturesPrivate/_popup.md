@@ -11,7 +11,7 @@ popup 指定
 windowFeatures().popup があれば NSNumber を返し、なければ `nil`。
 
 ## References
-- [`WKWindowFeaturesPrivate.h#L29`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWindowFeaturesPrivate.h#L29)
+- [`WKWindowFeaturesPrivate.h#L34`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWindowFeaturesPrivate.h#L34)
 - [`WKWindowFeatures.mm#L132`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWindowFeatures.mm#L132)
 
 ## Metadata

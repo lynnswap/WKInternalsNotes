@@ -14,8 +14,8 @@
 `_geolocationProvider` が未生成なら作成して保持し、以降はキャッシュされたインスタンスを返す。
 
 ## References
-- [`WKProcessPoolInternal.h#L51`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolInternal.h#L51)
-- [`WKProcessPool.mm#L182`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L182)
+- [`WKProcessPoolInternal.h#L52`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolInternal.h#L52)
+- [`WKProcessPool.mm#L102`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L102)
 
 ## Metadata
 | Key | Value |

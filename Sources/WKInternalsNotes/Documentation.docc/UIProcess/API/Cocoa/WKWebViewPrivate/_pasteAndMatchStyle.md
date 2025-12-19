@@ -11,8 +11,8 @@
 iOS では `WKContentViewInteraction` 側のハンドラに委譲される。
 
 ## References
-- [`API/Cocoa/WKWebViewPrivate.h#L345`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L345)
-- [`ios/WKContentViewInteraction.mm#L4500`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L4500)
+- [`WKWebViewPrivate.h#L345`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L345)
+- [`WKContentViewInteraction.mm`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm)
 
 ## Metadata
 | Key | Value |

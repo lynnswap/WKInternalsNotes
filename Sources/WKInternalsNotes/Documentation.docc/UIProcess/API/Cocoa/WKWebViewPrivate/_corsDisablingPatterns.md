@@ -11,9 +11,9 @@
 getter/setter を通じて値を取得/設定する。 setter は `_setCORSDisablingPatterns:`。
 
 ## References
-- [`API/Cocoa/WKWebViewPrivate.h#L266`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L266)
-- [`API/Cocoa/WKWebView.mm#L5281`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L5281)
-- [`API/Cocoa/WKWebView.mm#L5286`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L5286)
+- [`WKWebViewPrivate.h#L266`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L266)
+- [`WKWebView.mm#L5281`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L5281)
+- [`WKWebView.mm#L5281`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L5281)
 
 ## Metadata
 | Key | Value |

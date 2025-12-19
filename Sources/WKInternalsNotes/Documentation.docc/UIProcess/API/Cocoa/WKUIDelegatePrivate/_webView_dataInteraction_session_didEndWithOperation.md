@@ -11,8 +11,8 @@
 WKContentViewInteraction の `dragInteraction:session:didEndWithOperation:` から呼び出される。
 
 ## References
-- [`WKUIDelegatePrivate.h#L278`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L278)
-- [`WKContentViewInteraction.mm#L11274`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L11274)
+- [`WKUIDelegatePrivate.h#L255`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L255)
+- [`WKContentViewInteraction.mm#L11259`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L11259)
 
 ## Metadata
 | Key | Value |

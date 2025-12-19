@@ -15,7 +15,7 @@ setter は `coreMouseEventPolicy` で変換して設定する。getter は `mous
 
 ## References
 - [`WKWebpagePreferencesPrivate.h#L114`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferencesPrivate.h#L114)
-- [`WKWebpagePreferences.mm#L579`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L579)
+- [`WKWebpagePreferences.mm#L584`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L584)
 - [`WKWebpagePreferences.mm#L584`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L584)
 
 ## Metadata

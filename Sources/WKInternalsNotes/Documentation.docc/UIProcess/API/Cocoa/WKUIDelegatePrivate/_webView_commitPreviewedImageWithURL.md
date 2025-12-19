@@ -11,9 +11,9 @@
 コンテキストメニューのプレビュー確定時に、画像 URL が HTTP 系または data の場合に delegate を呼び出す。
 
 ## References
-- [`WKUIDelegatePrivate.h#L243`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L243)
-- [`WKContentViewInteraction.mm#L15351`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L15351)
-- [`WKContentViewInteraction.mm#L15705`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L15705)
+- [`WKUIDelegatePrivate.h#L227`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L227)
+- [`WKContentViewInteraction.mm#L15346`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L15346)
+- [`WKContentViewInteraction.mm#L15346`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L15346)
 
 ## Metadata
 | Key | Value |

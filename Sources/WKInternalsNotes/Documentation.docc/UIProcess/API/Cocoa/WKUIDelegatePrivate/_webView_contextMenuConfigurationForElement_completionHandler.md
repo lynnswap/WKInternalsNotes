@@ -11,8 +11,8 @@
 WKContentViewInteraction が `CompletionHandlerCallChecker` を使って delegate を呼び出し、返された `UIContextMenuConfiguration` を採用する。
 
 ## References
-- [`WKUIDelegatePrivate.h#L249`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L249)
-- [`WKContentViewInteraction.mm#L15231`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L15231)
+- [`WKUIDelegatePrivate.h#L217`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L217)
+- [`WKContentViewInteraction.mm#L14788`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14788)
 
 ## Metadata
 | Key | Value |

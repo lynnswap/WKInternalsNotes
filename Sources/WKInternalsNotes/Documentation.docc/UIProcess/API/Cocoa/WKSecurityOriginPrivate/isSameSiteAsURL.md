@@ -11,7 +11,7 @@
 自身の `WebCore::SecurityOrigin` と、`URL { url }` から生成した `WebCore::SecurityOrigin` を比較して `isSameSiteAs` の結果を返す。
 
 ## References
-- [`WKSecurityOriginPrivate.h#L29`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKSecurityOriginPrivate.h#L29)
+- [`WKSecurityOriginPrivate.h#L30`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKSecurityOriginPrivate.h#L30)
 - [`WKSecurityOrigin.mm#L76`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKSecurityOrigin.mm#L76)
 
 ## Metadata

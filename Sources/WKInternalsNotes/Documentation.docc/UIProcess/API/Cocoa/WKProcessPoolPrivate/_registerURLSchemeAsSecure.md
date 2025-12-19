@@ -11,7 +11,7 @@
 `registerURLSchemeAsSecure(scheme)` を呼び出す。
 
 ## References
-- [`WKProcessPoolPrivate.h#L120`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L120)
+- [`WKProcessPoolPrivate.h#L121`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L121)
 - [`WKProcessPool.mm#L238`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L238)
 
 ## Metadata

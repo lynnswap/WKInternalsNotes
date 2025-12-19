@@ -11,8 +11,8 @@
 表示トランジション完了後に delegate を呼び出す。
 
 ## References
-- [`WKUIDelegatePrivate.h#L295`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L295)
-- [`WKContentViewInteraction.mm#L9046`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L9046)
+- [`WKUIDelegatePrivate.h#L272`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L272)
+- [`WKContentViewInteraction.mm#L9045`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L9045)
 
 ## Metadata
 | Key | Value |

@@ -14,8 +14,8 @@ Web Push アクションを処理する。
 - 未知の type はログを出して終了する。
 
 ## References
-- [`WKWebsiteDataStore.mm#L95`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStore.mm#L95)
-- [`WKWebsiteDataStore.mm#L1554`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStore.mm#L1554)
+- [`WKWebsiteDataStore.mm#L96`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStore.mm#L96)
+- [`WKWebsiteDataStore.mm#L96`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStore.mm#L96)
 
 ## Metadata
 | Key | Value |

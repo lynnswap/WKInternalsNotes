@@ -11,8 +11,8 @@
 コンテキストメニューのプレビュー確定時に delegate を呼び出し、`UIContextMenuInteractionCommitAnimating` を渡す。
 
 ## References
-- [`WKUIDelegatePrivate.h#L252`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L252)
-- [`WKContentViewInteraction.mm#L15380`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L15380)
+- [`WKUIDelegatePrivate.h#L219`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L219)
+- [`WKContentViewInteraction.mm#L14788`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14788)
 
 ## Metadata
 | Key | Value |

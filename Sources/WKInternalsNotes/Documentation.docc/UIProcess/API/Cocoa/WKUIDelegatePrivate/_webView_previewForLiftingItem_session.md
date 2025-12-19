@@ -11,8 +11,8 @@
 delegate が `UITargetedDragPreview` を返した場合はそれを採用し、`nil` なら `_dragDropInteractionState.previewForLifting` を使う。
 
 ## References
-- [`WKUIDelegatePrivate.h#L285`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L285)
-- [`WKContentViewInteraction.mm#L11218`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L11218)
+- [`WKUIDelegatePrivate.h#L261`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L261)
+- [`WKContentViewInteraction.mm#L11217`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L11217)
 
 ## Metadata
 | Key | Value |

@@ -11,9 +11,9 @@ Service Worker 由来のフォーカス要求を delegate に問い合わせる�
 delegate 実装があれば結果を返し、未実装時は macOS でウィンドウを key/first responder にするフォールバックを行う。
 
 ## References
-- [`WKUIDelegatePrivate.h#L223`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L223)
-- [`UIDelegate.mm#L894`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L894)
-- [`UIDelegate.mm#L901`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L901)
+- [`WKUIDelegatePrivate.h#L224`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L224)
+- [`UIDelegate.mm`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm)
+- [`UIDelegate.mm`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm)
 
 ## Metadata
 | Key | Value |

@@ -11,7 +11,7 @@ GameController.framework を使うゲームパッドプロバイダに固定す�
 `ENABLE(GAMEPAD)` の場合に `UIGamepadProvider::setUsesGameControllerFramework()` を呼び出す。
 
 ## References
-- [`WKProcessPoolPrivate.h#L161`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L161)
+- [`WKProcessPoolPrivate.h#L162`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L162)
 - [`WKProcessPool.mm#L530`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L530)
 
 ## Metadata

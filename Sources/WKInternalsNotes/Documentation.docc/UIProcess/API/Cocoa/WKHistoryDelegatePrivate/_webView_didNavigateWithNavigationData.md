@@ -12,7 +12,7 @@ NavigationState::HistoryClient が history delegate の応答可否を確認し�
 
 ## References
 - [`WKHistoryDelegatePrivate.h#L37`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKHistoryDelegatePrivate.h#L37)
-- [`NavigationState.mm#L1508`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm#L1508)
+- [`NavigationState.mm#L243`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm#L243)
 
 ## Metadata
 | Key | Value |

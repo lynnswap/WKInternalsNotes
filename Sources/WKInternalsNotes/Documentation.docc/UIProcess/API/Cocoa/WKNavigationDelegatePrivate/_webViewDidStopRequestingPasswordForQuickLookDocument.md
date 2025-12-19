@@ -12,7 +12,7 @@ Quick Look ドキュメントのパスワード要求停止を通知する。
 
 ## References
 - [`WKNavigationDelegatePrivate.h#L119`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationDelegatePrivate.h#L119)
-- [`NavigationState.mm#L351`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm#L351)
+- [`NavigationState.mm`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm)
 
 ## Metadata
 | Key | Value |

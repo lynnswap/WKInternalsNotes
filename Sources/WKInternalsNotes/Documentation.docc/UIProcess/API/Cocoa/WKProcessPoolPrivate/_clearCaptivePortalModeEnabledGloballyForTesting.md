@@ -11,7 +11,7 @@
 `WebKit::setLockdownModeEnabledGloballyForTesting(std::nullopt)` を呼び出す。
 
 ## References
-- [`WKProcessPoolPrivate.h#L166`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L166)
+- [`WKProcessPoolPrivate.h#L167`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L167)
 - [`WKProcessPool.mm#L572`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L572)
 
 ## Metadata

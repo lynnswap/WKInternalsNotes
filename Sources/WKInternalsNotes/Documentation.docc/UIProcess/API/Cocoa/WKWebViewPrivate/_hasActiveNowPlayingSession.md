@@ -11,8 +11,8 @@
 PageClientImplCocoa から `_setHasActiveNowPlayingSession:` が呼ばれて更新される。
 
 ## References
-- [`API/Cocoa/WKWebViewPrivate.h#L619`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L619)
-- [`Cocoa/PageClientImplCocoa.mm#L422`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/PageClientImplCocoa.mm#L422)
+- [`WKWebViewPrivate.h#L619`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L619)
+- [`PageClientImplCocoa.mm#L416`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/PageClientImplCocoa.mm#L416)
 
 ## Metadata
 | Key | Value |

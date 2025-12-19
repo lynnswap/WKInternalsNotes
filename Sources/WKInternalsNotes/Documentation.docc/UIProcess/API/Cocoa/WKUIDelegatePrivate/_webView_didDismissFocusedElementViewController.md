@@ -11,8 +11,8 @@
 フルスクリーン入力ビューの dismiss 後に delegate を呼び出す。
 
 ## References
-- [`WKUIDelegatePrivate.h#L296`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L296)
-- [`WKContentViewInteraction.mm#L9073`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L9073)
+- [`WKUIDelegatePrivate.h#L273`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L273)
+- [`WKContentViewInteraction.mm#L9072`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L9072)
 
 ## Metadata
 | Key | Value |

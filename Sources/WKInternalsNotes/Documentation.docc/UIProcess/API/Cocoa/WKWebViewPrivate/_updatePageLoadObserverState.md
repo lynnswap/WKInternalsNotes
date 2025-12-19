@@ -11,8 +11,8 @@
 iOS では `PageClientImplIOS` から呼ばれて状態を更新する。
 
 ## References
-- [`API/ios/WKWebViewIOS.h#L232`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/ios/WKWebViewIOS.h#L232)
-- [`ios/PageClientImplIOS.mm#L183`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/PageClientImplIOS.mm#L183)
+- [`WKWebViewIOS.h#L232`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/ios/WKWebViewIOS.h#L232)
+- [`PageClientImplIOS.mm`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/PageClientImplIOS.mm)
 
 ## Metadata
 | Key | Value |

@@ -11,8 +11,8 @@
 UIDelegate::UIClient が `_WKInspector` を渡し、閉じる直前の通知として呼び出す。
 
 ## References
-- [`WKUIDelegatePrivate.h#L354`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L354)
-- [`UIDelegate.mm#L1247`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L1247)
+- [`WKUIDelegatePrivate.h#L330`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L330)
+- [`UIDelegate.mm#L150`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L150)
 
 ## Metadata
 | Key | Value |

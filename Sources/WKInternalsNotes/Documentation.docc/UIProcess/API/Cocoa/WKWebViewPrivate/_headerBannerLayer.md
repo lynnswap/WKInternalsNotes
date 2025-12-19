@@ -11,9 +11,9 @@
 getter/setter を通じて値を取得/設定する。 setter は `_setHeaderBannerLayer:`。
 
 ## References
-- [`API/Cocoa/WKWebViewPrivate.h#L865`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L865)
-- [`API/mac/WKWebViewMac.mm#L1829`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1829)
-- [`API/mac/WKWebViewMac.mm#L1821`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1821)
+- [`WKWebViewPrivate.h#L865`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L865)
+- [`WKWebViewMac.mm#L1829`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1829)
+- [`WKWebViewMac.mm#L1829`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1829)
 
 ## Metadata
 | Key | Value |

@@ -11,9 +11,9 @@
 getter/setter を通じて値を取得/設定する。 setter は `_setMediaCaptureEnabled:`。
 
 ## References
-- [`API/Cocoa/WKWebViewPrivate.h#L414`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L414)
-- [`API/Cocoa/WKWebView.mm#L6106`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L6106)
-- [`API/Cocoa/WKWebView.mm#L6100`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L6100)
+- [`WKWebViewPrivate.h#L414`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L414)
+- [`WKWebView.mm#L838`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L838)
+- [`WKWebView.mm#L838`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L838)
 
 ## Metadata
 | Key | Value |

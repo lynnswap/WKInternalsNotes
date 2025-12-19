@@ -11,8 +11,8 @@
 読み取り専用のため setter は持たない。 getter は `_isDisplayingPDF`。
 
 ## References
-- [`API/Cocoa/WKWebViewPrivate.h#L395`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L395)
-- [`API/Cocoa/WKWebView.mm#L5865`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L5865)
+- [`WKWebViewPrivate.h#L395`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L395)
+- [`WKWebView.mm`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm)
 
 ## Metadata
 | Key | Value |

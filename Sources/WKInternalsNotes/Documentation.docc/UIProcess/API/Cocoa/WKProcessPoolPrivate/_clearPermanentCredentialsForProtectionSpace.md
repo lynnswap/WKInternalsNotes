@@ -11,7 +11,7 @@
 `NSURLProtectionSpace` を `WebCore::ProtectionSpace` に変換して `clearPermanentCredentialsForProtectionSpace` を呼び出す。
 
 ## References
-- [`WKProcessPoolPrivate.h#L179`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L179)
+- [`WKProcessPoolPrivate.h#L180`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L180)
 - [`WKProcessPool.mm#L633`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L633)
 
 ## Metadata

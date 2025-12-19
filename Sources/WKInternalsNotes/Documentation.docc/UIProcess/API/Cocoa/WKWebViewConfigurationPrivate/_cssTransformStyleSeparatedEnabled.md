@@ -21,8 +21,8 @@ visionOS: `NO`
 
 ## References
 - [`WKWebViewConfigurationPrivate.h#L182`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfigurationPrivate.h#L182)
-- [`WKWebViewConfiguration.mm#L1599`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L1599)
-- [`APIPageConfiguration.h#L661`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/APIPageConfiguration.h#L661)
+- [`WKWebViewConfiguration.mm#L269`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewConfiguration.mm#L269)
+- [`APIPageConfiguration.h`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/APIPageConfiguration.h)
 - [`UnifiedWebPreferences.yaml#L1514`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WTF/Scripts/Preferences/UnifiedWebPreferences.yaml#L1514) (key: `CSSTransformStyleSeparatedEnabled`)
 
 ## Metadata

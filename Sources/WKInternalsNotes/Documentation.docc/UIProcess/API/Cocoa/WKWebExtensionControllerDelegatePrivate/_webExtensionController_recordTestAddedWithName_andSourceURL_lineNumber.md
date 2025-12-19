@@ -11,8 +11,8 @@ browser.test.addTest で追加されたテストを通知する。
 `WebExtensionController::testAdded` で delegate が実装していれば呼び出し、未実装時は追加ログを出力する。
 
 ## References
-- [`WKWebExtensionControllerDelegatePrivate.h#L67`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebExtensionControllerDelegatePrivate.h#L67)
-- [`WebExtensionControllerAPITestCocoa.mm#L108`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Extensions/Cocoa/API/WebExtensionControllerAPITestCocoa.mm#L108)
+- [`WKWebExtensionControllerDelegatePrivate.h#L43`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebExtensionControllerDelegatePrivate.h#L43)
+- [`WebExtensionControllerAPITestCocoa.mm#L84`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Extensions/Cocoa/API/WebExtensionControllerAPITestCocoa.mm#L84)
 
 ## Metadata
 | Key | Value |

@@ -11,9 +11,9 @@
 getter/setter を通じて値を取得/設定する。 setter は `_setForcesInitialScaleFactor:`。
 
 ## References
-- [`API/ios/WKWebViewIOS.h#L227`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/ios/WKWebViewIOS.h#L227)
-- [`API/ios/WKWebViewIOS.mm#L4173`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/ios/WKWebViewIOS.mm#L4173)
-- [`API/ios/WKWebViewIOS.mm#L4178`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/ios/WKWebViewIOS.mm#L4178)
+- [`WKWebViewIOS.h#L227`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/ios/WKWebViewIOS.h#L227)
+- [`WKWebViewIOS.mm#L1001`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/ios/WKWebViewIOS.mm#L1001)
+- [`WKWebViewIOS.mm#L1001`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/ios/WKWebViewIOS.mm#L1001)
 
 ## Metadata
 | Key | Value |

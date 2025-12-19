@@ -15,8 +15,8 @@ getter は `_delegate` を返す。setter は `_delegate` を更新し、`Websit
 
 ## References
 - [`WKWebsiteDataStorePrivate.h#L110`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStorePrivate.h#L110)
-- [`WKWebsiteDataStore.mm#L1134`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStore.mm#L1134)
-- [`WKWebsiteDataStore.mm#L1139`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStore.mm#L1139)
+- [`WKWebsiteDataStore.mm#L104`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStore.mm#L104)
+- [`WKWebsiteDataStore.mm#L104`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStore.mm#L104)
 
 ## Metadata
 | Key | Value |

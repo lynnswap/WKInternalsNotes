@@ -11,7 +11,7 @@ SDK アライン動作を全て有効化する。
 `enableAllSDKAlignedBehaviors()` を呼び出す。
 
 ## References
-- [`WKProcessPoolPrivate.h#L124`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L124)
+- [`WKProcessPoolPrivate.h#L125`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L125)
 - [`WKProcessPool.mm#L552`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L552)
 
 ## Metadata

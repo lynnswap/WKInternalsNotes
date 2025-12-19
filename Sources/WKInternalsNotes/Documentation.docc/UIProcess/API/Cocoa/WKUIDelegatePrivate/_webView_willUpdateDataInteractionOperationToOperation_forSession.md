@@ -11,8 +11,8 @@
 WKContentViewInteraction が現在の drag operation から算出した値を渡し、返った値で `UIDropProposal` を生成する。
 
 ## References
-- [`WKUIDelegatePrivate.h#L281`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L281)
-- [`WKContentViewInteraction.mm#L11386`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L11386)
+- [`WKUIDelegatePrivate.h#L257`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L257)
+- [`WKContentViewInteraction.mm#L11385`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L11385)
 
 ## Metadata
 | Key | Value |

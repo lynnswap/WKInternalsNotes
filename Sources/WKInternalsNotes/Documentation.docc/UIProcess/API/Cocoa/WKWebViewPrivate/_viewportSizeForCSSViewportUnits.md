@@ -11,9 +11,9 @@
 getter/setter を通じて値を取得/設定する。 setter は `_setViewportSizeForCSSViewportUnits:`。
 
 ## References
-- [`API/Cocoa/WKWebViewPrivate.h#L290`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L290)
-- [`API/Cocoa/WKWebView.mm#L3771`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L3771)
-- [`API/Cocoa/WKWebView.mm#L3776`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L3776)
+- [`WKWebViewPrivate.h#L290`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L290)
+- [`WKWebView.mm#L3771`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L3771)
+- [`WKWebView.mm#L3771`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L3771)
 
 ## Metadata
 | Key | Value |

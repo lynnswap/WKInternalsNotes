@@ -11,8 +11,8 @@
 読み取り専用のため setter は持たない。 getter は `_isRetainingActiveFocusedState`。
 
 ## References
-- [`API/ios/WKWebViewIOS.h#L208`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/ios/WKWebViewIOS.h#L208)
-- [`API/ios/WKWebViewIOS.mm#L346`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/ios/WKWebViewIOS.mm#L346)
+- [`WKWebViewIOS.h#L208`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/ios/WKWebViewIOS.h#L208)
+- [`WKWebViewIOS.mm`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/ios/WKWebViewIOS.mm)
 
 ## Metadata
 | Key | Value |

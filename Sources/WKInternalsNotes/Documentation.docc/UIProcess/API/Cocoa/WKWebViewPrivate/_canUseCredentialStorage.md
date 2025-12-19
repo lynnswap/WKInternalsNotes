@@ -11,9 +11,9 @@
 getter/setter を通じて値を取得/設定する。 setter は `_setCanUseCredentialStorage:`。
 
 ## References
-- [`API/Cocoa/WKWebViewPrivate.h#L466`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L466)
-- [`API/Cocoa/WKWebView.mm#L5767`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L5767)
-- [`API/Cocoa/WKWebView.mm#L5772`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L5772)
+- [`WKWebViewPrivate.h#L466`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L466)
+- [`WKWebView.mm#L5767`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L5767)
+- [`WKWebView.mm#L5767`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L5767)
 
 ## Metadata
 | Key | Value |

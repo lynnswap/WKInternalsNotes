@@ -11,9 +11,9 @@
 getter/setter を通じて値を取得/設定する。 setter は `_setUseSystemAppearance:`。
 
 ## References
-- [`API/Cocoa/WKWebViewPrivate.h#L298`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L298)
-- [`API/Cocoa/WKWebView.mm#L6450`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L6450)
-- [`API/Cocoa/WKWebView.mm#L6455`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L6455)
+- [`WKWebViewPrivate.h#L298`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L298)
+- [`WKWebView.mm#L6450`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L6450)
+- [`WKWebView.mm#L6450`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L6450)
 
 ## Metadata
 | Key | Value |

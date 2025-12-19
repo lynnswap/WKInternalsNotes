@@ -15,8 +15,8 @@ getter は `nil` を返し、setter は空実装。
 
 ## References
 - [`WKWebsiteDataStorePrivate.h#L68`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStorePrivate.h#L68)
-- [`WKWebsiteDataStore.mm#L907`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStore.mm#L907)
-- [`WKWebsiteDataStore.mm#L920`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStore.mm#L920)
+- [`WKWebsiteDataStore.mm#L408`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStore.mm#L408)
+- [`WKWebsiteDataStore.mm#L408`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStore.mm#L408)
 
 ## Metadata
 | Key | Value |

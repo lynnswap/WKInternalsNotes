@@ -11,8 +11,8 @@
 UIDelegate::UIClient の `saveDataToFileInDownloadsFolder` がデータ本体とファイル名、MIME type、元 URL を渡して保存を依頼する。
 
 ## References
-- [`WKUIDelegatePrivate.h#L323`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L323)
-- [`UIDelegate.mm#L1199`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L1199)
+- [`WKUIDelegatePrivate.h#L301`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L301)
+- [`UIDelegate.mm#L145`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L145)
 
 ## Metadata
 | Key | Value |

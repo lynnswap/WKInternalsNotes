@@ -15,7 +15,7 @@ setter は `_WKWebsitePopUpPolicy` を `WebsitePopUpPolicy` に変換して設�
 
 ## References
 - [`WKWebpagePreferencesPrivate.h#L103`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferencesPrivate.h#L103)
-- [`WKWebpagePreferences.mm#L369`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L369)
+- [`WKWebpagePreferences.mm#L384`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L384)
 - [`WKWebpagePreferences.mm#L384`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L384)
 
 ## Metadata

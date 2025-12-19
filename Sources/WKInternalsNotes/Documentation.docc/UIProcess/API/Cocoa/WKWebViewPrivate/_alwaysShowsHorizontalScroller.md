@@ -11,9 +11,9 @@
 getter/setter を通じて値を取得/設定する。 setter は `_setAlwaysShowsHorizontalScroller:`。
 
 ## References
-- [`API/Cocoa/WKWebViewPrivate.h#L859`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L859)
-- [`API/mac/WKWebViewMac.mm#L1781`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1781)
-- [`API/mac/WKWebViewMac.mm#L1786`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1786)
+- [`WKWebViewPrivate.h#L859`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L859)
+- [`WKWebViewMac.mm#L1781`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1781)
+- [`WKWebViewMac.mm#L1781`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1781)
 
 ## Metadata
 | Key | Value |

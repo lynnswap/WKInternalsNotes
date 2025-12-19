@@ -11,9 +11,9 @@
 getter/setter を通じて値を取得/設定する。 setter は `_setWantsMediaPlaybackControlsView:`。
 
 ## References
-- [`API/Cocoa/WKWebViewPrivate.h#L908`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L908)
-- [`API/mac/WKWebViewMac.mm#L1995`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1995)
-- [`API/mac/WKWebViewMac.mm#L2004`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L2004)
+- [`WKWebViewPrivate.h#L908`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L908)
+- [`WKWebViewMac.mm#L1995`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1995)
+- [`WKWebViewMac.mm#L1995`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1995)
 
 ## Metadata
 | Key | Value |

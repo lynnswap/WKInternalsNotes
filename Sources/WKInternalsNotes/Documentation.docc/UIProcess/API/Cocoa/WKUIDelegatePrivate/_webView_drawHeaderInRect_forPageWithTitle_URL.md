@@ -11,8 +11,8 @@
 UIClient が rect / title / URL を渡して描画を委譲する。
 
 ## References
-- [`WKUIDelegatePrivate.h#L325`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L325)
-- [`UIDelegate.mm#L1018`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L1018)
+- [`WKUIDelegatePrivate.h#L302`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L302)
+- [`UIDelegate.mm#L141`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L141)
 
 ## Metadata
 | Key | Value |

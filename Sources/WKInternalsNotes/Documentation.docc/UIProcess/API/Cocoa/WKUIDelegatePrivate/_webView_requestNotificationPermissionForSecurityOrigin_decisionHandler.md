@@ -11,8 +11,8 @@
 UIDelegate::UIClient が `CompletionHandlerCallChecker` を使って securityOrigin を渡し、結果を completionHandler に返す。
 
 ## References
-- [`WKUIDelegatePrivate.h#L211`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L211)
-- [`UIDelegate.mm#L851`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L851)
+- [`WKUIDelegatePrivate.h#L187`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L187)
+- [`UIDelegate.mm#L224`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L224)
 
 ## Metadata
 | Key | Value |

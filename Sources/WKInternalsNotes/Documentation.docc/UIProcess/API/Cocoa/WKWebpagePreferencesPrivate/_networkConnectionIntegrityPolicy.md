@@ -16,7 +16,7 @@ getter は `advancedPrivacyProtections` を `_WKWebsiteNetworkConnectionIntegrit
 ## References
 - [`WKWebpagePreferencesPrivate.h#L123`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferencesPrivate.h#L123)
 - [`WKWebpagePreferences.mm#L651`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L651)
-- [`WKWebpagePreferences.mm#L692`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L692)
+- [`WKWebpagePreferences.mm#L651`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L651)
 
 ## Metadata
 | Key | Value |

@@ -11,8 +11,8 @@ Immediate action アニメーションのキャンセルを delegate に通知�
 `_web_cancelImmediateActionAnimation` で delegate が実装済みなら呼び出し、未実装なら WebView の `_cancelImmediateActionAnimation` にフォールバックする。
 
 ## References
-- [`WKUIDelegatePrivate.h#L313`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L313)
-- [`WKWebViewMac.mm#L1307`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1307)
+- [`WKUIDelegatePrivate.h#L314`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L314)
+- [`WKWebViewMac.mm`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm)
 
 ## Metadata
 | Key | Value |

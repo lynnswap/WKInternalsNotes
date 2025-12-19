@@ -11,7 +11,7 @@ Back/Forward キャッシュの最大ページ数を返す。
 `_processPool->backForwardCache().capacity()` を返す。
 
 ## References
-- [`WKProcessPoolPrivate.h#L146`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L146)
+- [`WKProcessPoolPrivate.h#L147`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L147)
 - [`WKProcessPool.mm#L503`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L503)
 
 ## Metadata

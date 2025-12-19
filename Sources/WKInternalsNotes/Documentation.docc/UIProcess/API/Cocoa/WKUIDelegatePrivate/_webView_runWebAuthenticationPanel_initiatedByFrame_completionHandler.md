@@ -11,8 +11,8 @@ Web Authentication パネルの表示を delegate に依頼する。
 UIDelegate::UIClient が `CompletionHandlerCallChecker` を使い、パネルと `WKFrameInfo` を渡して結果を受け取る。
 
 ## References
-- [`WKUIDelegatePrivate.h#L196`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L196)
-- [`UIDelegate.mm#L1858`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L1858)
+- [`WKUIDelegatePrivate.h#L172`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L172)
+- [`UIDelegate.mm#L202`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L202)
 
 ## Metadata
 | Key | Value |

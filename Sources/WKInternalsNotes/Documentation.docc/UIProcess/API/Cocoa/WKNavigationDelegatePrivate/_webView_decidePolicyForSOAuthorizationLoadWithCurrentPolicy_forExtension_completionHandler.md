@@ -11,8 +11,8 @@ SO 認可ロードのポリシーを決定する。
 decidePolicyForSOAuthorizationLoad が delegate を確認し、CompletionHandlerCallChecker 付きで呼び出して policy を変換する。未実装や delegate 不在時は現在の policy をそのまま返す。
 
 ## References
-- [`WKNavigationDelegatePrivate.h#L127`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationDelegatePrivate.h#L127)
-- [`NavigationState.mm#L1488`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm#L1488)
+- [`WKNavigationDelegatePrivate.h#L103`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationDelegatePrivate.h#L103)
+- [`NavigationState.mm#L226`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm#L226)
 
 ## Metadata
 | Key | Value |

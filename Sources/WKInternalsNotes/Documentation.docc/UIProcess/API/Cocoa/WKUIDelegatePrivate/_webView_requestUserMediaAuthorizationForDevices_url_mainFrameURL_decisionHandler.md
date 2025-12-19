@@ -11,8 +11,8 @@
 UIClient が要求デバイス種別と frame URL / mainFrameURL を渡し、`decisionHandler` 経由で許可/拒否を受け取る。
 
 ## References
-- [`WKUIDelegatePrivate.h#L166`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L166)
-- [`UIDelegate.mm#L1442`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L1442)
+- [`WKUIDelegatePrivate.h#L144`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L144)
+- [`UIDelegate.mm#L1354`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L1354)
 
 ## Metadata
 | Key | Value |

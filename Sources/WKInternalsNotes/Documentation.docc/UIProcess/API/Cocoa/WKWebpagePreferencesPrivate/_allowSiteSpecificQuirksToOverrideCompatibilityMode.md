@@ -16,7 +16,7 @@ getter は `allowSiteSpecificQuirksToOverrideContentMode()` を返し、setter �
 ## References
 - [`WKWebpagePreferencesPrivate.h#L110`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferencesPrivate.h#L110)
 - [`WKWebpagePreferences.mm#L462`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L462)
-- [`WKWebpagePreferences.mm#L467`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L467)
+- [`WKWebpagePreferences.mm#L462`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L462)
 
 ## Metadata
 | Key | Value |

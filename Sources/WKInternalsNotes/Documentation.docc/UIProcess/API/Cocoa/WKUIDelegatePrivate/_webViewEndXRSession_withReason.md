@@ -11,8 +11,8 @@
 UIDelegate::UIClient が end reason を `_WKXRSessionEndReason` に変換して delegate に通知する。
 
 ## References
-- [`WKUIDelegatePrivate.h#L213`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L213)
-- [`UIDelegate.mm#L2267`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L2267)
+- [`WKUIDelegatePrivate.h#L212`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L212)
+- [`UIDelegate.mm#L245`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L245)
 
 ## Metadata
 | Key | Value |

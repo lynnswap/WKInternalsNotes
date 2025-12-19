@@ -16,7 +16,7 @@ getter は policy が `Yes` かどうかで判定し、setter は `Yes`/`No` を
 ## References
 - [`WKWebpagePreferencesPrivate.h#L132`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferencesPrivate.h#L132)
 - [`WKWebpagePreferences.mm#L800`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L800)
-- [`WKWebpagePreferences.mm#L805`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L805)
+- [`WKWebpagePreferences.mm#L800`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L800)
 
 ## Metadata
 | Key | Value |

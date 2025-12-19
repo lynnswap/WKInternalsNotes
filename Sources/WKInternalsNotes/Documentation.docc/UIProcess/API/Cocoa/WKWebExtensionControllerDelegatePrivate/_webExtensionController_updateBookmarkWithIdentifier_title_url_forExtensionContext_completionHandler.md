@@ -11,7 +11,7 @@
 `bookmarks.update` から呼び出される。未実装なら `it is not implemented` を返し、戻りの bookmark が `nil`/無効ならエラーに変換する。
 
 ## References
-- [`WKWebExtensionControllerDelegatePrivate.h#L164`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebExtensionControllerDelegatePrivate.h#L164)
+- [`WKWebExtensionControllerDelegatePrivate.h#L143`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebExtensionControllerDelegatePrivate.h#L143)
 - [`WebExtensionContextAPIBookmarksCocoa.mm#L540`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Extensions/Cocoa/API/WebExtensionContextAPIBookmarksCocoa.mm#L540)
 
 ## Metadata

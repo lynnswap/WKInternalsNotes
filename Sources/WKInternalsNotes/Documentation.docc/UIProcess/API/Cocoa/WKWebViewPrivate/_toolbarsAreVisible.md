@@ -11,9 +11,9 @@
 getter/setter を通じて値を取得/設定する。 setter は `_setToolbarsAreVisible:`。
 
 ## References
-- [`API/Cocoa/WKWebViewPrivate.h#L448`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L448)
-- [`API/Cocoa/WKWebView.mm#L4356`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L4356)
-- [`API/Cocoa/WKWebView.mm#L4351`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L4351)
+- [`WKWebViewPrivate.h#L448`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L448)
+- [`WKWebView.mm#L4356`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L4356)
+- [`WKWebView.mm#L4356`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L4356)
 
 ## Metadata
 | Key | Value |

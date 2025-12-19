@@ -12,7 +12,7 @@ UIDelegate::UIClient が `lockType` を `_WKScreenOrientationType` に変換し�
 
 ## References
 - [`WKUIDelegatePrivate.h#L291`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L291)
-- [`UIDelegate.mm#L743`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L743)
+- [`UIDelegate.mm#L197`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L197)
 
 ## Metadata
 | Key | Value |

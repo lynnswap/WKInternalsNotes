@@ -11,8 +11,8 @@
 `HAVE(MODERN_DOWNLOADPROGRESS)` の場合に呼ばれ、delegate が未設定または未実装なら何もしない。ブックマークデータから URL を復元し、失敗時はログを出して `url` にフォールバックする。private 版の実装があれば `_download:didReceiveFinalURL:` を呼び、なければ公開 API の `download:didReceiveFinalURL:` を呼ぶ。
 
 ## References
-- [`WKDownloadDelegatePrivate.h#L71`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKDownloadDelegatePrivate.h#L71)
-- [`WKDownload.mm#L246`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKDownload.mm#L246)
+- [`WKDownloadDelegatePrivate.h#L57`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKDownloadDelegatePrivate.h#L57)
+- [`WKDownload.mm#L51`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKDownload.mm#L51)
 
 ## Metadata
 | Key | Value |

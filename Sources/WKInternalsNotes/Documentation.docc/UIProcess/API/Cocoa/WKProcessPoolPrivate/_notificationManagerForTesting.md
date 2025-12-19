@@ -11,7 +11,7 @@
 `WebNotificationManagerProxy` の supplement を取得し、`WebKit::toAPI` で `WKNotificationManagerRef` に変換して返す。
 
 ## References
-- [`WKProcessPoolPrivate.h#L183`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L183)
+- [`WKProcessPoolPrivate.h#L184`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L184)
 - [`WKProcessPool.mm#L680`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L680)
 
 ## Metadata

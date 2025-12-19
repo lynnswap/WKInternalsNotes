@@ -11,7 +11,7 @@
 `WebExtensionContext::openSidebar` から、controller/delegate/wrapper が揃っている場合に呼び出される。`completionHandler` は空のブロックで渡される。
 
 ## References
-- [`WKWebExtensionControllerDelegatePrivate.h#L97`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebExtensionControllerDelegatePrivate.h#L97)
+- [`WKWebExtensionControllerDelegatePrivate.h#L73`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebExtensionControllerDelegatePrivate.h#L73)
 - [`WebExtensionContextAPISidebarCocoa.mm#L126`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Extensions/Cocoa/API/WebExtensionContextAPISidebarCocoa.mm#L126)
 
 ## Metadata

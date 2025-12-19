@@ -14,9 +14,9 @@ JavaScript 設定ディレクトリの URL を取得・設定する。
 getter は `WebProcessPool` の設定ディレクトリをファイル URL に変換して返す。setter は `file://` 以外の URL を `NSInvalidArgumentException` で拒否し、`setJavaScriptConfigurationDirectory` に path を渡す。
 
 ## References
-- [`WKProcessPoolPrivate.h#L114`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L114)
+- [`WKProcessPoolPrivate.h#L115`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L115)
 - [`WKProcessPool.mm#L354`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L354)
-- [`WKProcessPool.mm#L359`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L359)
+- [`WKProcessPool.mm#L354`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L354)
 
 ## Metadata
 | Key | Value |

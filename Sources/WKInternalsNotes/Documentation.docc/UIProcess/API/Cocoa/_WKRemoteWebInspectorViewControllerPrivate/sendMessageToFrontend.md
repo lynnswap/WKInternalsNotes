@@ -13,7 +13,7 @@ RemoteWebInspectorUIProxy に委譲し、inspector page が存在する場合に
 ## References
 - [`_WKRemoteWebInspectorViewController.h#L52`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKRemoteWebInspectorViewController.h#L52)
 - [`_WKRemoteWebInspectorViewController.mm#L142`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKRemoteWebInspectorViewController.mm#L142)
-- [`RemoteWebInspectorUIProxy.cpp#L128`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Inspector/RemoteWebInspectorUIProxy.cpp#L128)
+- [`RemoteWebInspectorUIProxy.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Inspector/RemoteWebInspectorUIProxy.cpp)
 
 ## Metadata
 | Key | Value |

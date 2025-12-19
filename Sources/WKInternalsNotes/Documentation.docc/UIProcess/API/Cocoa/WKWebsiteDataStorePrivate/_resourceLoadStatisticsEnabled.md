@@ -16,7 +16,7 @@ getter は `trackingPreventionEnabled()` を返し、setter は `setTrackingPrev
 ## References
 - [`WKWebsiteDataStorePrivate.h#L62`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStorePrivate.h#L62)
 - [`WKWebsiteDataStore.mm#L823`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStore.mm#L823)
-- [`WKWebsiteDataStore.mm#L828`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStore.mm#L828)
+- [`WKWebsiteDataStore.mm#L823`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStore.mm#L823)
 
 ## Metadata
 | Key | Value |

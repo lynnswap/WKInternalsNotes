@@ -11,8 +11,8 @@ XR セッションの権限を delegate に問い合わせる（requested featur
 UIDelegate::UIClient が requested features を含めて delegate に渡し、`CompletionHandlerCallChecker` で応答を処理する。
 
 ## References
-- [`WKUIDelegatePrivate.h#L208`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L208)
-- [`UIDelegate.mm#L2162`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L2162)
+- [`WKUIDelegatePrivate.h#L185`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L185)
+- [`UIDelegate.mm#L213`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L213)
 
 ## Metadata
 | Key | Value |

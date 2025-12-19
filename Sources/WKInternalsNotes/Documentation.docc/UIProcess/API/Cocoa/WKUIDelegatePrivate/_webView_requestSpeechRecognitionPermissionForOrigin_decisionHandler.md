@@ -11,7 +11,7 @@
 現行の UIProcess 実装では呼び出し箇所が見当たらず、宣言のみが存在する。
 
 ## References
-- [`WKUIDelegatePrivate.h#L202`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L202)
+- [`WKUIDelegatePrivate.h#L178`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L178)
 
 ## Metadata
 | Key | Value |

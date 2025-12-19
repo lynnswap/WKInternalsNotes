@@ -11,8 +11,8 @@
 `initWithAppExtensionBundle:resourceBaseURL:error:` を `appExtensionBundle` に `nil` を渡して呼び出す。
 
 ## References
-- [`WKWebExtensionPrivate.h#L54`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebExtensionPrivate.h#L54)
-- [`WKWebExtension.mm#L125`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebExtension.mm#L125)
+- [`WKWebExtensionPrivate.h#L33`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebExtensionPrivate.h#L33)
+- [`WKWebExtension.mm#L95`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebExtension.mm#L95)
 
 ## Metadata
 | Key | Value |

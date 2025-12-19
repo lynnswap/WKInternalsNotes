@@ -11,8 +11,8 @@
 delegate が `UITargetedDragPreview` を返した場合はそれを採用し、`nil` なら `_dragDropInteractionState.previewForCancelling` を使う。
 
 ## References
-- [`WKUIDelegatePrivate.h#L286`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L286)
-- [`WKContentViewInteraction.mm#L11288`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L11288)
+- [`WKUIDelegatePrivate.h#L264`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L264)
+- [`WKContentViewInteraction.mm#L11260`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L11260)
 
 ## Metadata
 | Key | Value |

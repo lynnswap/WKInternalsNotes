@@ -11,8 +11,8 @@
 UIClient がログ文字列を `NSString` に変換して delegate へ渡す。
 
 ## References
-- [`WKUIDelegatePrivate.h#L160`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L160)
-- [`UIDelegate.mm#L1996`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L1996)
+- [`WKUIDelegatePrivate.h#L141`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L141)
+- [`UIDelegate.mm#L1994`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L1994)
 
 ## Metadata
 | Key | Value |

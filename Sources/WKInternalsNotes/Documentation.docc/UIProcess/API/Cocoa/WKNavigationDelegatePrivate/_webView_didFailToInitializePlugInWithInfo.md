@@ -11,7 +11,7 @@
 WKNavigationDelegatePrivate で宣言されているが、UIProcess 内の呼び出しは現行ソースでは見当たらない。
 
 ## References
-- [`WKNavigationDelegatePrivate.h#L121`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationDelegatePrivate.h#L121)
+- [`WKNavigationDelegatePrivate.h#L97`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationDelegatePrivate.h#L97)
 
 ## Metadata
 | Key | Value |

@@ -14,9 +14,9 @@ Automation 用 delegate を取得・設定する。
 getter は `_automationDelegate` を返す。setter は `_automationDelegate` を更新し、`AutomationClient` を `WebProcessPool` に設定する。
 
 ## References
-- [`WKProcessPoolPrivate.h#L99`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L99)
-- [`WKProcessPool.mm#L327`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L327)
-- [`WKProcessPool.mm#L332`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L332)
+- [`WKProcessPoolPrivate.h#L100`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L100)
+- [`WKProcessPool.mm#L97`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L97)
+- [`WKProcessPool.mm#L97`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L97)
 
 ## Metadata
 | Key | Value |

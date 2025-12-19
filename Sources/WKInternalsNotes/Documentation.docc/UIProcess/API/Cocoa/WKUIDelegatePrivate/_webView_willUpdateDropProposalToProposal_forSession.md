@@ -11,8 +11,8 @@
 WKContentViewInteraction が生成した `UIDropProposal` を delegate が必要に応じて置き換える。
 
 ## References
-- [`WKUIDelegatePrivate.h#L284`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L284)
-- [`WKContentViewInteraction.mm#L11401`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L11401)
+- [`WKUIDelegatePrivate.h#L260`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L260)
+- [`WKContentViewInteraction.mm#L11385`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L11385)
 
 ## Metadata
 | Key | Value |

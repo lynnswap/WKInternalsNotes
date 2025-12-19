@@ -11,9 +11,9 @@
 getter/setter を通じて値を取得/設定する。 setter は `_setOverrideDeviceScaleFactor:`。
 
 ## References
-- [`API/Cocoa/WKWebViewPrivate.h#L529`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L529)
-- [`API/Cocoa/WKWebView.mm#L6251`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L6251)
-- [`API/Cocoa/WKWebView.mm#L6246`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L6246)
+- [`WKWebViewPrivate.h#L529`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L529)
+- [`WKWebView.mm#L6251`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L6251)
+- [`WKWebView.mm#L6251`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L6251)
 
 ## Metadata
 | Key | Value |

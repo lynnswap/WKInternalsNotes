@@ -11,8 +11,8 @@
 コンテキストメニューの終了時に `contextMenuDidEndForElement:` が呼ばれ、UIKit の多重呼び出しを避けるため `_contextMenuElementInfo` がある場合のみ通知する。
 
 ## References
-- [`WKUIDelegatePrivate.h#L255`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L255)
-- [`WKContentViewInteraction.mm#L15440`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L15440)
+- [`WKUIDelegatePrivate.h#L227`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L227)
+- [`WKContentViewInteraction.mm#L14788`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14788)
 
 ## Metadata
 | Key | Value |

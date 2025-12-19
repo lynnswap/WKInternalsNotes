@@ -14,9 +14,9 @@
 getter は `_downloadDelegate` を返す。setter は `_downloadDelegate` を更新し、`LegacyDownloadClient` を `WebProcessPool` に登録する。
 
 ## References
-- [`WKProcessPoolPrivate.h#L98`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L98)
-- [`WKProcessPool.mm#L316`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L316)
-- [`WKProcessPool.mm#L321`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L321)
+- [`WKProcessPoolPrivate.h#L99`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L99)
+- [`WKProcessPool.mm#L98`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L98)
+- [`WKProcessPool.mm#L98`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L98)
 
 ## Metadata
 | Key | Value |

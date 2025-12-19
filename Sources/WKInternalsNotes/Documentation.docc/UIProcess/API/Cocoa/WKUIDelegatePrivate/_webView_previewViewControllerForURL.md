@@ -11,8 +11,8 @@ URL のプレビュー用 view controller を delegate に返させる。
 リンクプレビュー生成で `previewViewControllerForURL:defaultActions:elementInfo:` が使えない場合のフォールバックとして呼び出される。
 
 ## References
-- [`WKUIDelegatePrivate.h#L241`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L241)
-- [`WKContentViewInteraction.mm#L14912`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14912)
+- [`WKUIDelegatePrivate.h#L217`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L217)
+- [`WKContentViewInteraction.mm#L14788`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14788)
 
 ## Metadata
 | Key | Value |

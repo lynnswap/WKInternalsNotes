@@ -13,7 +13,7 @@ RemoteWebInspectorUIProxy の `initialize` を呼び、debuggable 情報と URL 
 ## References
 - [`_WKRemoteWebInspectorViewController.h#L50`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKRemoteWebInspectorViewController.h#L50)
 - [`_WKRemoteWebInspectorViewController.mm#L127`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKRemoteWebInspectorViewController.mm#L127)
-- [`RemoteWebInspectorUIProxy.cpp#L88`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Inspector/RemoteWebInspectorUIProxy.cpp#L88)
+- [`RemoteWebInspectorUIProxy.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Inspector/RemoteWebInspectorUIProxy.cpp)
 
 ## Metadata
 | Key | Value |

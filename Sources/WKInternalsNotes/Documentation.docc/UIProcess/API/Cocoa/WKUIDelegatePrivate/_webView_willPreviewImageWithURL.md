@@ -11,8 +11,8 @@
 WKContentViewInteraction が画像プレビューの準備時に URL を渡して通知する（旧 API 経由）。
 
 ## References
-- [`WKUIDelegatePrivate.h#L243`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L243)
-- [`WKContentViewInteraction.mm#L14948`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14948)
+- [`WKUIDelegatePrivate.h#L219`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L219)
+- [`WKContentViewInteraction.mm#L14940`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14940)
 
 ## Metadata
 | Key | Value |

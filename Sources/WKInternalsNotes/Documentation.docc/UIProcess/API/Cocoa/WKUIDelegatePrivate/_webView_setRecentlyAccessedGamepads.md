@@ -11,8 +11,8 @@
 visionOS で明示的な同意が必要な場合に、`_gamepadsRecentlyAccessed` の更新と合わせて delegate へ通知する。
 
 ## References
-- [`WKUIDelegatePrivate.h#L227`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L227)
-- [`WKWebView.mm#L2954`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L2954)
+- [`WKUIDelegatePrivate.h#L207`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L207)
+- [`WKWebView.mm#L2953`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L2953)
 
 ## Metadata
 | Key | Value |

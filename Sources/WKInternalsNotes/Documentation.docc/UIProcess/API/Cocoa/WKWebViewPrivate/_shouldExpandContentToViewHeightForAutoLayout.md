@@ -11,9 +11,9 @@
 getter/setter を通じて値を取得/設定する。 setter は `_setShouldExpandContentToViewHeightForAutoLayout:`。
 
 ## References
-- [`API/Cocoa/WKWebViewPrivate.h#L854`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L854)
-- [`API/mac/WKWebViewMac.mm#L1731`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1731)
-- [`API/mac/WKWebViewMac.mm#L1736`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1736)
+- [`WKWebViewPrivate.h#L854`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L854)
+- [`WKWebViewMac.mm#L1731`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1731)
+- [`WKWebViewMac.mm#L1731`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1731)
 
 ## Metadata
 | Key | Value |

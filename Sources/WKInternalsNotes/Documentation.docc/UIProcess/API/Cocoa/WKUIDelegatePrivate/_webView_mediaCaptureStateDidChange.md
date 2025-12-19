@@ -11,8 +11,8 @@
 UIClient が `mediaCaptureState` の KVO を更新した後、`WebCore::MediaProducerMediaStateFlags` を `_WKMediaCaptureStateDeprecated` に変換して delegate へ渡す。
 
 ## References
-- [`WKUIDelegatePrivate.h#L172`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L172)
-- [`UIDelegate.mm#L1498`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L1498)
+- [`WKUIDelegatePrivate.h#L158`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L158)
+- [`UIDelegate.mm#L178`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L178)
 
 ## Metadata
 | Key | Value |

@@ -11,8 +11,8 @@ Modern TLS をネゴシエートした URL を通知する。
 didNegotiateModernTLS で URL を NSURL に変換して呼び出す。
 
 ## References
-- [`WKNavigationDelegatePrivate.h#L85`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationDelegatePrivate.h#L85)
-- [`NavigationState.mm#L1236`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm#L1236)
+- [`WKNavigationDelegatePrivate.h#L66`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationDelegatePrivate.h#L66)
+- [`NavigationState.mm#L194`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm#L194)
 
 ## Metadata
 | Key | Value |

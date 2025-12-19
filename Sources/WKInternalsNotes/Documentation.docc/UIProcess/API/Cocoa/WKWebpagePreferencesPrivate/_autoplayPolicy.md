@@ -15,7 +15,7 @@ setter は `_WKWebsiteAutoplayPolicy` を `WebsiteAutoplayPolicy` にマップ�
 
 ## References
 - [`WKWebpagePreferencesPrivate.h#L101`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferencesPrivate.h#L101)
-- [`WKWebpagePreferences.mm#L289`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L289)
+- [`WKWebpagePreferences.mm#L307`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L307)
 - [`WKWebpagePreferences.mm#L307`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L307)
 
 ## Metadata

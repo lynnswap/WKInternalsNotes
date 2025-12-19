@@ -11,7 +11,7 @@
 `clearSupportedPlugins()` を呼び出す。
 
 ## References
-- [`WKProcessPoolPrivate.h#L117`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L117)
+- [`WKProcessPoolPrivate.h#L118`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L118)
 - [`WKProcessPool.mm#L378`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L378)
 
 ## Metadata

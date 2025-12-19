@@ -16,7 +16,7 @@ WKContentWorld をラップする _WKUserContentWorld を生成して返す。
 ## References
 - [`WKContentWorldPrivate.h#L37`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKContentWorldPrivate.h#L37)
 - [`WKContentWorld.mm#L95`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKContentWorld.mm#L95)
-- [`_WKUserContentWorldInternal.h#L37`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKUserContentWorldInternal.h#L37)
+- [`_WKUserContentWorldInternal.h`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKUserContentWorldInternal.h)
 
 ## Metadata
 | Key | Value |

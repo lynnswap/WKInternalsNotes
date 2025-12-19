@@ -15,7 +15,7 @@ getter は `NO` を返し、setter は空実装。
 
 ## References
 - [`WKViewPrivate.h#L65`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKViewPrivate.h#L65)
-- [`WKView.mm#L1255`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKView.mm#L1255)
+- [`WKView.mm#L1251`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKView.mm#L1251)
 
 ## Metadata
 | Key | Value |

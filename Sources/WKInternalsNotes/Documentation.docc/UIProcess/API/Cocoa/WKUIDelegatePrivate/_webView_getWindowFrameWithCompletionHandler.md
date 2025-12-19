@@ -11,8 +11,8 @@ WebView のウィンドウフレーム取得を delegate に依頼する。
 UIDelegate::UIClient が `CompletionHandlerCallChecker` を伴って delegate に問い合わせ、未実装時は空の `CGRect` を返す。
 
 ## References
-- [`WKUIDelegatePrivate.h#L330`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L330)
-- [`UIDelegate.mm#L1146`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L1146)
+- [`WKUIDelegatePrivate.h#L321`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L321)
+- [`UIDelegate.mm#L139`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L139)
 
 ## Metadata
 | Key | Value |

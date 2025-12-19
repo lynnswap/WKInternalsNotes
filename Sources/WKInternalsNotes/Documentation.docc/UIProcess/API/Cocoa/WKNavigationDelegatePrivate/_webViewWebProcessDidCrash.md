@@ -12,7 +12,7 @@ Web プロセスのクラッシュを通知する。
 
 ## References
 - [`WKNavigationDelegatePrivate.h#L77`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationDelegatePrivate.h#L77)
-- [`NavigationState.mm#L1296`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm#L1296)
+- [`NavigationState.mm`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm)
 
 ## Metadata
 | Key | Value |

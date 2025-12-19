@@ -15,7 +15,7 @@ setter は `setAllowsJSHandleCreationInPageWorld` を呼び、getter は `allows
 
 ## References
 - [`WKWebpagePreferencesPrivate.h#L136`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferencesPrivate.h#L136)
-- [`WKWebpagePreferences.mm#L821`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L821)
+- [`WKWebpagePreferences.mm#L826`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L826)
 - [`WKWebpagePreferences.mm#L826`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L826)
 
 ## Metadata

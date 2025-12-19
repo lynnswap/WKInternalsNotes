@@ -11,8 +11,8 @@
 WKContentViewInteraction が画像プレビュー処理で default actions と elementInfo を渡し、delegate が応答すればその view controller を採用する。未実装時は `WKImagePreviewViewController` を生成して代替する。
 
 ## References
-- [`WKUIDelegatePrivate.h#L274`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L274)
-- [`WKContentViewInteraction.mm#L14953`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14953)
+- [`WKUIDelegatePrivate.h#L250`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L250)
+- [`WKContentViewInteraction.mm#L14788`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L14788)
 
 ## Metadata
 | Key | Value |

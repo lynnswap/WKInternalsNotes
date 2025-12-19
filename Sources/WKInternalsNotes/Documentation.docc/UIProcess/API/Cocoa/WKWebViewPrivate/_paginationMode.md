@@ -11,9 +11,9 @@
 getter/setter を通じて値を取得/設定する。 setter は `_setPaginationMode:`。
 
 ## References
-- [`API/Cocoa/WKWebViewPrivate.h#L373`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L373)
-- [`API/Cocoa/WKWebView.mm#L5515`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L5515)
-- [`API/Cocoa/WKWebView.mm#L5534`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L5534)
+- [`WKWebViewPrivate.h#L373`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L373)
+- [`WKWebView.mm#L5515`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L5515)
+- [`WKWebView.mm#L5515`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L5515)
 
 ## Metadata
 | Key | Value |

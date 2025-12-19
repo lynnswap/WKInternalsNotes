@@ -11,9 +11,9 @@
 getter/setter を通じて値を取得/設定する。 setter は `_setGapBetweenPages:`。
 
 ## References
-- [`API/Cocoa/WKWebViewPrivate.h#L379`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L379)
-- [`API/Cocoa/WKWebView.mm#L5583`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L5583)
-- [`API/Cocoa/WKWebView.mm#L5588`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L5588)
+- [`WKWebViewPrivate.h#L379`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L379)
+- [`WKWebView.mm#L5583`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L5583)
+- [`WKWebView.mm#L5583`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L5583)
 
 ## Metadata
 | Key | Value |

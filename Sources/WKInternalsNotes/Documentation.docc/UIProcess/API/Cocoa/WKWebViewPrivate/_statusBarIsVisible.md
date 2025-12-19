@@ -11,9 +11,9 @@
 getter/setter を通じて値を取得/設定する。 setter は `_setStatusBarIsVisible:`。
 
 ## References
-- [`API/Cocoa/WKWebViewPrivate.h#L446`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L446)
-- [`API/Cocoa/WKWebView.mm#L4336`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L4336)
-- [`API/Cocoa/WKWebView.mm#L4331`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L4331)
+- [`WKWebViewPrivate.h#L446`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L446)
+- [`WKWebView.mm#L4336`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L4336)
+- [`WKWebView.mm#L4336`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L4336)
 
 ## Metadata
 | Key | Value |

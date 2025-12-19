@@ -12,7 +12,7 @@ processDidBecomeResponsive で delegate を確認して呼び出す。
 
 ## References
 - [`WKNavigationDelegatePrivate.h#L78`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationDelegatePrivate.h#L78)
-- [`NavigationState.mm#L1313`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm#L1313)
+- [`NavigationState.mm`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm)
 
 ## Metadata
 | Key | Value |

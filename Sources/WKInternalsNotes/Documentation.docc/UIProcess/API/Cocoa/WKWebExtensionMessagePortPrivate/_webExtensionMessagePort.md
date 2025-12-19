@@ -14,8 +14,8 @@
 `_webExtensionMessagePort` を参照して返すだけで、`WKObject` 実装から内部 C++ オブジェクトへアクセスするために使われる。
 
 ## References
-- [`WKWebExtensionMessagePortInternal.h#L45`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebExtensionMessagePortInternal.h#L45)
-- [`WKWebExtensionMessagePort.mm#L101`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebExtensionMessagePort.mm#L101)
+- [`WKWebExtensionMessagePortInternal.h#L42`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebExtensionMessagePortInternal.h#L42)
+- [`WKWebExtensionMessagePort.mm#L43`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebExtensionMessagePort.mm#L43)
 
 ## Metadata
 | Key | Value |

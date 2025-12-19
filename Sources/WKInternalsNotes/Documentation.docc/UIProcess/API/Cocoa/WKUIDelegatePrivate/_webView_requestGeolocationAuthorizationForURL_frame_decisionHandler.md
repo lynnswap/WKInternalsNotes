@@ -11,8 +11,8 @@
 WKGeolocationProviderIOS が `WKFrameInfo` を作成し、`CompletionHandlerCallChecker` で結果を受け取って `geolocationAuthorizationGranted` を通知する。
 
 ## References
-- [`WKUIDelegatePrivate.h#L238`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L238)
-- [`WKGeolocationProviderIOS.mm#L199`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKGeolocationProviderIOS.mm#L199)
+- [`WKUIDelegatePrivate.h#L215`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L215)
+- [`WKGeolocationProviderIOS.mm#L196`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKGeolocationProviderIOS.mm#L196)
 
 ## Metadata
 | Key | Value |

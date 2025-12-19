@@ -12,7 +12,7 @@ WKContentView の `canBecomeFocused` で delegate が実装していれば結果
 
 ## References
 - [`WKUIDelegatePrivate.h#L300`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L300)
-- [`WKContentView.mm#L802`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.mm#L802)
+- [`WKContentView.mm`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.mm)
 
 ## Metadata
 | Key | Value |

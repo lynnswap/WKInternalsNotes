@@ -14,9 +14,9 @@
 setter は各 selector を 1 要素のセットとしてラップし、`_visibilityAdjustmentSelectorsIncludingShadowHosts` に委譲する。getter は shadow root を含む selector 群を除外して返す。
 
 ## References
-- [`WKWebpagePreferencesPrivate.h#L126`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferencesPrivate.h#L126)
-- [`WKWebpagePreferences.mm#L767`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L767)
-- [`WKWebpagePreferences.mm#L775`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L775)
+- [`WKWebpagePreferencesPrivate.h#L125`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferencesPrivate.h#L125)
+- [`WKWebpagePreferences.mm#L751`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L751)
+- [`WKWebpagePreferences.mm#L751`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L751)
 
 ## Metadata
 | Key | Value |

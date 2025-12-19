@@ -12,7 +12,7 @@ navigationGestureWillEnd で `willNavigate` に応じた item を渡して呼び
 
 ## References
 - [`WKNavigationDelegatePrivate.h#L93`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationDelegatePrivate.h#L93)
-- [`NavigationState.mm#L290`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm#L290)
+- [`NavigationState.mm#L228`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm#L228)
 
 ## Metadata
 | Key | Value |

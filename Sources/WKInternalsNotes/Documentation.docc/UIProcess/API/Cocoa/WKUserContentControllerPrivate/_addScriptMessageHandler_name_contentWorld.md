@@ -11,8 +11,8 @@ ContentWorld を指定して script message handler を追加する。
 `contentWorld._userContentWorld` を使って `userContentWorld` 版の API に委譲する。
 
 ## References
-- [`WKUserContentControllerPrivate.h#L55`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUserContentControllerPrivate.h#L55)
-- [`WKUserContentController.mm#L327`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUserContentController.mm#L327)
+- [`WKUserContentControllerPrivate.h#L54`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUserContentControllerPrivate.h#L54)
+- [`WKUserContentController.mm#L193`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUserContentController.mm#L193)
 
 ## Metadata
 | Key | Value |

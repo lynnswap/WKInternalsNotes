@@ -11,8 +11,8 @@
 プレビュー dismiss 時に `committing` を含めて delegate に通知する。
 
 ## References
-- [`WKUIDelegatePrivate.h#L244`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L244)
-- [`WKContentViewInteraction.mm#L15748`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L15748)
+- [`WKUIDelegatePrivate.h#L227`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L227)
+- [`WKContentViewInteraction.mm#L15747`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L15747)
 
 ## Metadata
 | Key | Value |

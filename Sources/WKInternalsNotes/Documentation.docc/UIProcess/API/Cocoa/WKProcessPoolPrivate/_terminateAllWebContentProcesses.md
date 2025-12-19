@@ -11,7 +11,7 @@
 `terminateAllWebContentProcesses(ProcessTerminationReason::RequestedByClient)` を呼び出す。
 
 ## References
-- [`WKProcessPoolPrivate.h#L135`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L135)
+- [`WKProcessPoolPrivate.h#L136`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L136)
 - [`WKProcessPool.mm#L675`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L675)
 
 ## Metadata

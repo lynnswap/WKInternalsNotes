@@ -11,9 +11,9 @@
 getter/setter を通じて値を取得/設定する。 setter は `_setDefaultSTSLabel:`。
 
 ## References
-- [`API/Cocoa/WKWebViewPrivate.h#L797`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L797)
-- [`API/ios/WKWebViewIOS.mm#L5277`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/ios/WKWebViewIOS.mm#L5277)
-- [`API/ios/WKWebViewIOS.mm#L5282`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/ios/WKWebViewIOS.mm#L5282)
+- [`WKWebViewPrivate.h#L797`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L797)
+- [`WKWebViewIOS.mm#L5277`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/ios/WKWebViewIOS.mm#L5277)
+- [`WKWebViewIOS.mm#L5277`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/ios/WKWebViewIOS.mm#L5277)
 
 ## Metadata
 | Key | Value |

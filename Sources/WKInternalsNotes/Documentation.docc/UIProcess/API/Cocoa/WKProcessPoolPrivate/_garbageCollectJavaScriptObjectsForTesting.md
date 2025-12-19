@@ -11,7 +11,7 @@ WebProcess 内の JavaScript オブジェクトを GC する（テスト用）�
 `protectedProcessPool(self)->garbageCollectJavaScriptObjects()` を呼び出す。
 
 ## References
-- [`WKProcessPoolPrivate.h#L187`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L187)
+- [`WKProcessPoolPrivate.h#L188`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L188)
 - [`WKProcessPool.mm#L650`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L650)
 
 ## Metadata

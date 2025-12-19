@@ -11,8 +11,8 @@ content rule list の通知をまとめて受け取る。
 contentRuleListNotification で results から identifiers と notifications を収集し、URL を NSURL に変換して呼び出す。通知が無い場合は呼ばれない。
 
 ## References
-- [`WKNavigationDelegatePrivate.h#L99`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationDelegatePrivate.h#L99)
-- [`NavigationState.mm#L753`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm#L753)
+- [`WKNavigationDelegatePrivate.h#L75`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationDelegatePrivate.h#L75)
+- [`NavigationState.mm#L208`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm#L208)
 
 ## Metadata
 | Key | Value |

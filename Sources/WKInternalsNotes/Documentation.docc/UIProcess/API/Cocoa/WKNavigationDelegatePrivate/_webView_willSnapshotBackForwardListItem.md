@@ -11,8 +11,8 @@
 willRecordNavigationSnapshot で BackForwardListItem をラップして呼び出す。
 
 ## References
-- [`WKNavigationDelegatePrivate.h#L94`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationDelegatePrivate.h#L94)
-- [`NavigationState.mm#L314`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm#L314)
+- [`WKNavigationDelegatePrivate.h#L72`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationDelegatePrivate.h#L72)
+- [`NavigationState.mm#L206`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm#L206)
 
 ## Metadata
 | Key | Value |

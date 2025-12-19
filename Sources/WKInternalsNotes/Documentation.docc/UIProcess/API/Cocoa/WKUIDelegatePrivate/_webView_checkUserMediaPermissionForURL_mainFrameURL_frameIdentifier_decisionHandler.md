@@ -11,7 +11,7 @@
 ヘッダに「This delegate is no longer called.」と記載されており、UIProcess 内の呼び出しも見当たらない。
 
 ## References
-- [`WKUIDelegatePrivate.h#L168`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L168)
+- [`WKUIDelegatePrivate.h#L146`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L146)
 
 ## Metadata
 | Key | Value |

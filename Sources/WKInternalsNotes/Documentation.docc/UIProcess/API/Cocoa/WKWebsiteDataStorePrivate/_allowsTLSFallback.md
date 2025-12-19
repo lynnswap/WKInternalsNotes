@@ -15,7 +15,7 @@ getter は `NO` を返し、setter は空実装。
 
 ## References
 - [`WKWebsiteDataStorePrivate.h#L69`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStorePrivate.h#L69)
-- [`WKWebsiteDataStore.mm#L911`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStore.mm#L911)
+- [`WKWebsiteDataStore.mm#L915`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStore.mm#L915)
 - [`WKWebsiteDataStore.mm#L915`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStore.mm#L915)
 
 ## Metadata

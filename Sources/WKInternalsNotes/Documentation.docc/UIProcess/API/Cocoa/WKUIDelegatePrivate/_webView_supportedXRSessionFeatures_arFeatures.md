@@ -11,8 +11,8 @@ XR セッションの対応 feature を delegate から取得する。
 delegate が VR/AR 用 feature flags を設定し、UIClient が `PlatformXR` 用の feature list に変換して保持する。
 
 ## References
-- [`WKUIDelegatePrivate.h#L209`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L209)
-- [`UIDelegate.mm#L2187`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L2187)
+- [`WKUIDelegatePrivate.h#L185`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L185)
+- [`UIDelegate.mm#L213`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L213)
 
 ## Metadata
 | Key | Value |

@@ -11,8 +11,8 @@
 読み取り専用のため setter は持たない。 getter は `_isKeyboardScrollingAnimationRunning`。
 
 ## References
-- [`API/ios/WKWebViewPrivateForTestingIOS.h#L53`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/ios/WKWebViewPrivateForTestingIOS.h#L53)
-- [`API/ios/WKWebViewTestingIOS.mm#L408`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/ios/WKWebViewTestingIOS.mm#L408)
+- [`WKWebViewPrivateForTestingIOS.h#L53`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/ios/WKWebViewPrivateForTestingIOS.h#L53)
+- [`WKWebViewTestingIOS.mm`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/ios/WKWebViewTestingIOS.mm)
 
 ## Metadata
 | Key | Value |

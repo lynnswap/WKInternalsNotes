@@ -11,9 +11,9 @@
 getter/setter を通じて値を取得/設定する。 setter は `_setUnobscuredSafeAreaInsets:`。
 
 ## References
-- [`API/Cocoa/WKWebViewPrivate.h#L702`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L702)
-- [`API/ios/WKWebViewIOS.mm#L4351`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/ios/WKWebViewIOS.mm#L4351)
-- [`API/ios/WKWebViewIOS.mm#L4356`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/ios/WKWebViewIOS.mm#L4356)
+- [`WKWebViewPrivate.h#L702`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L702)
+- [`WKWebViewIOS.mm#L818`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/ios/WKWebViewIOS.mm#L818)
+- [`WKWebViewIOS.mm#L818`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/ios/WKWebViewIOS.mm#L818)
 
 ## Metadata
 | Key | Value |

@@ -11,9 +11,9 @@
 getter/setter を通じて値を取得/設定する。 setter は `_setDrawsBackground:`。
 
 ## References
-- [`API/Cocoa/WKWebViewPrivate.h#L843`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L843)
-- [`API/mac/WKWebViewMac.mm#L1557`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1557)
-- [`API/mac/WKWebViewMac.mm#L1562`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1562)
+- [`WKWebViewPrivate.h#L843`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L843)
+- [`WKWebViewMac.mm#L1557`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1557)
+- [`WKWebViewMac.mm#L1557`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1557)
 
 ## Metadata
 | Key | Value |

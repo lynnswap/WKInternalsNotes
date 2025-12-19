@@ -11,8 +11,8 @@ XR セッションの権限を delegate に問い合わせる（旧シグネチ�
 UIDelegate::UIClient が新シグネチャ未実装時にこの旧 API を使い、`_WKXRSessionFeatureFlags` を渡して許可された features を受け取る。
 
 ## References
-- [`WKUIDelegatePrivate.h#L207`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L207)
-- [`UIDelegate.mm#L2169`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L2169)
+- [`WKUIDelegatePrivate.h#L183`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L183)
+- [`UIDelegate.mm#L213`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L213)
 
 ## Metadata
 | Key | Value |

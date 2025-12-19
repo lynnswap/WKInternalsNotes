@@ -11,7 +11,7 @@ IPC メッセージ検証失敗時にクラッシュする設定を有効化す�
 `IPC::Connection::setShouldCrashOnMessageCheckFailure(true)` を呼び出す。
 
 ## References
-- [`WKProcessPoolPrivate.h#L163`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L163)
+- [`WKProcessPoolPrivate.h#L164`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L164)
 - [`WKProcessPool.mm#L547`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L547)
 
 ## Metadata

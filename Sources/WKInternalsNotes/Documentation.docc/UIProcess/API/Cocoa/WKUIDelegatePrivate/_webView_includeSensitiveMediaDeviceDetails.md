@@ -11,7 +11,7 @@
 ヘッダのコメントに「この delegate はもはや呼ばれない」とある通り、UIProcess 内に呼び出しが存在しない。
 
 ## References
-- [`WKUIDelegatePrivate.h#L171`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L171)
+- [`WKUIDelegatePrivate.h#L147`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L147)
 
 ## Metadata
 | Key | Value |

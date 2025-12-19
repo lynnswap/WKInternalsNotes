@@ -15,9 +15,9 @@ setter は `setLockdownModeEnabled` を呼ぶ。iOS では無効化時に entitl
 
 ## References
 - [`WKWebpagePreferencesPrivate.h#L117`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferencesPrivate.h#L117)
-- [`WKWebpagePreferences.mm#L512`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L512)
 - [`WKWebpagePreferences.mm#L523`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L523)
-- [`APIWebsitePolicies.cpp#L83`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/APIWebsitePolicies.cpp#L83)
+- [`WKWebpagePreferences.mm#L523`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L523)
+- [`APIWebsitePolicies.cpp`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/APIWebsitePolicies.cpp)
 
 ## Metadata
 | Key | Value |

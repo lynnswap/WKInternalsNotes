@@ -11,8 +11,8 @@ Quick Look ドキュメントの読み込み完了を通知する。
 didFinishLoadForQuickLookDocumentInMainFrame でバッファを NSData に変換して渡す。
 
 ## References
-- [`WKNavigationDelegatePrivate.h#L117`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationDelegatePrivate.h#L117)
-- [`NavigationState.mm#L1441`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm#L1441)
+- [`WKNavigationDelegatePrivate.h#L94`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationDelegatePrivate.h#L94)
+- [`NavigationState.mm#L214`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm#L214)
 
 ## Metadata
 | Key | Value |

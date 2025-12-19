@@ -16,7 +16,7 @@ Context menu の要素情報から _WKActivatedElementInfo を生成して返す
 ## References
 - [`WKContextMenuElementInfoPrivate.h#L34`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKContextMenuElementInfoPrivate.h#L34)
 - [`WKContextMenuElementInfo.mm#L59`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKContextMenuElementInfo.mm#L59)
-- [`_WKActivatedElementInfoInternal.h#L37`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKActivatedElementInfoInternal.h#L37)
+- [`_WKActivatedElementInfoInternal.h`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKActivatedElementInfoInternal.h)
 
 ## Metadata
 | Key | Value |

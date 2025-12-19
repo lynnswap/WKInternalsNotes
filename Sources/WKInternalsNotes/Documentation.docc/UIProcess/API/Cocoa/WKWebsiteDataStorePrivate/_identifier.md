@@ -15,7 +15,7 @@ configuration に identifier がない場合は `nil`。
 
 ## References
 - [`WKWebsiteDataStorePrivate.h#L151`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStorePrivate.h#L151)
-- [`WKWebsiteDataStore.mm#L1473`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStore.mm#L1473)
+- [`WKWebsiteDataStore.mm#L546`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStore.mm#L546)
 
 ## Metadata
 | Key | Value |

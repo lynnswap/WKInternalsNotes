@@ -11,9 +11,9 @@ WebView の提示に使う view controller を返す。
 UIClient が `_presentingViewControllerForWebView` を呼び出して提示先を取得し、SOAuthorizationSession では埋め込み承認ビューの可否判断に利用される。
 
 ## References
-- [`WKUIDelegatePrivate.h#L268`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L268)
-- [`UIDelegate.mm#L1715`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L1715)
-- [`SOAuthorizationSession.mm#L262`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/SOAuthorization/SOAuthorizationSession.mm#L262)
+- [`WKUIDelegatePrivate.h#L269`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L269)
+- [`UIDelegate.mm`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm)
+- [`SOAuthorizationSession.mm`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/SOAuthorization/SOAuthorizationSession.mm)
 
 ## Metadata
 | Key | Value |

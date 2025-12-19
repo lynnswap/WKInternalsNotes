@@ -11,7 +11,7 @@ CSP をバイパスする URL scheme を登録する。
 `registerURLSchemeAsBypassingContentSecurityPolicy(scheme)` を呼び出す。
 
 ## References
-- [`WKProcessPoolPrivate.h#L121`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L121)
+- [`WKProcessPoolPrivate.h#L122`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L122)
 - [`WKProcessPool.mm#L243`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L243)
 
 ## Metadata

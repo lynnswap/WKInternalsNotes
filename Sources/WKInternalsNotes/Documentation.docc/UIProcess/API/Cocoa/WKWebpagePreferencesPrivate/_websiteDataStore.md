@@ -16,7 +16,7 @@ getter は `websiteDataStore()` をラップして返す。setter は `WKWebsite
 ## References
 - [`WKWebpagePreferencesPrivate.h#L104`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferencesPrivate.h#L104)
 - [`WKWebpagePreferences.mm#L412`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L412)
-- [`WKWebpagePreferences.mm#L417`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L417)
+- [`WKWebpagePreferences.mm#L412`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L412)
 
 ## Metadata
 | Key | Value |

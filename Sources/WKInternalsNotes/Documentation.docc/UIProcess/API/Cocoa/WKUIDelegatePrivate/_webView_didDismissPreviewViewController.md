@@ -11,8 +11,8 @@
 `didDismissPreviewViewController:committing:` 未実装時にこちらを呼び出す。
 
 ## References
-- [`WKUIDelegatePrivate.h#L245`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L245)
-- [`WKContentViewInteraction.mm#L15750`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L15750)
+- [`WKUIDelegatePrivate.h#L227`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L227)
+- [`WKContentViewInteraction.mm#L15747`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L15747)
 
 ## Metadata
 | Key | Value |

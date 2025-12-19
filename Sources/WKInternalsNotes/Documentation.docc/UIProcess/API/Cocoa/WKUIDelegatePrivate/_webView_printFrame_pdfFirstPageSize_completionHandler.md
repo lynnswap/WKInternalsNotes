@@ -11,8 +11,8 @@ PDF 1ページ目サイズを含めて印刷処理を delegate に依頼する�
 UIDelegate::UIClient が `CompletionHandlerCallChecker` を使って delegate へ依頼し、完了時に `completionHandler` を呼ぶ。
 
 ## References
-- [`WKUIDelegatePrivate.h#L147`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L147)
-- [`UIDelegate.mm#L1514`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L1514)
+- [`WKUIDelegatePrivate.h#L141`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L141)
+- [`UIDelegate.mm#L159`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L159)
 
 ## Metadata
 | Key | Value |

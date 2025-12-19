@@ -11,8 +11,8 @@ Attachment のデータ無効化を通知する。
 Attachment のデータが無効になったタイミングで delegate を呼び出す。
 
 ## References
-- [`WKUIDelegatePrivate.h#L182`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L182)
-- [`WKWebView.mm#L2112`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L2112)
+- [`WKUIDelegatePrivate.h#L159`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L159)
+- [`WKWebView.mm#L2097`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L2097)
 
 ## Metadata
 | Key | Value |

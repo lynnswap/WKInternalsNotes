@@ -11,7 +11,7 @@
 `WebExtensionSidebar::notifyDelegateOfPropertyUpdate` で delegate が実装していれば呼び出される。
 
 ## References
-- [`WKWebExtensionControllerDelegatePrivate.h#L115`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebExtensionControllerDelegatePrivate.h#L115)
+- [`WKWebExtensionControllerDelegatePrivate.h#L97`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebExtensionControllerDelegatePrivate.h#L97)
 - [`WebExtensionSidebarCocoa.mm#L529`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Extensions/Cocoa/WebExtensionSidebarCocoa.mm#L529)
 
 ## Metadata

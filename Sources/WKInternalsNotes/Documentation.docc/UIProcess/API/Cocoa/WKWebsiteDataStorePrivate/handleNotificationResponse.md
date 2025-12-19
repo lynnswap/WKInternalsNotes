@@ -12,7 +12,7 @@ iOS では `_WKWebsiteDataStoreBSActionHandler` に委譲し、他プラット�
 
 ## References
 - [`WKWebsiteDataStorePrivate.h#L155`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStorePrivate.h#L155)
-- [`WKWebsiteDataStore.mm#L1531`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStore.mm#L1531)
+- [`WKWebsiteDataStore.mm#L387`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStore.mm#L387)
 
 ## Metadata
 | Key | Value |

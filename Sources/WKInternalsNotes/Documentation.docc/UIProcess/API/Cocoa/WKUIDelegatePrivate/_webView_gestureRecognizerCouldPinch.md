@@ -11,8 +11,8 @@
 スクロールビュー以外の `UIPinchGestureRecognizer` が対象のとき、delegate の返答でズーム可否を判断する。
 
 ## References
-- [`WKUIDelegatePrivate.h#L298`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L298)
-- [`WKContentViewInteraction.mm#L2372`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L2372)
+- [`WKUIDelegatePrivate.h#L274`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L274)
+- [`WKContentViewInteraction.mm#L2371`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L2371)
 
 ## Metadata
 | Key | Value |

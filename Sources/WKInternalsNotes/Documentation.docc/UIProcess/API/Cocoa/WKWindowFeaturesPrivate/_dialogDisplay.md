@@ -11,7 +11,7 @@ dialog 表示
 windowFeatures().dialog があれば NSNumber を返し、なければ `nil`。
 
 ## References
-- [`WKWindowFeaturesPrivate.h#L33`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWindowFeaturesPrivate.h#L33)
+- [`WKWindowFeaturesPrivate.h#L38`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWindowFeaturesPrivate.h#L38)
 - [`WKWindowFeatures.mm#L164`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWindowFeatures.mm#L164)
 
 ## Metadata

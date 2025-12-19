@@ -11,9 +11,9 @@
 WKWebView が delegate に色の調整を問い合わせ、未実装時は元の色を返す。delegate が `nil` を返した場合も元の色にフォールバックする。
 
 ## References
-- [`WKUIDelegatePrivate.h#L355`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L355)
+- [`WKUIDelegatePrivate.h#L332`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L332)
 - [`WKWebView.mm#L3386`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L3386)
-- [`WKWebView.mm#L3391`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L3391)
+- [`WKWebView.mm#L3386`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebView.mm#L3386)
 
 ## Metadata
 | Key | Value |

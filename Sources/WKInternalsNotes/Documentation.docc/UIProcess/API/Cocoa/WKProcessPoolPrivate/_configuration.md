@@ -14,7 +14,7 @@
 WebKit::WebProcessPool の設定をコピーし、`_WKProcessPoolConfiguration` の wrapper を autorelease で返す。
 
 ## References
-- [`WKProcessPoolPrivate.h#L83`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L83)
+- [`WKProcessPoolPrivate.h#L84`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L84)
 - [`WKProcessPool.mm#L170`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L170)
 
 ## Metadata

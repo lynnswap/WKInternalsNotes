@@ -11,8 +11,8 @@ safe area が obscured insets に影響するかの変更を通知する。
 WKWebView の `avoidsUnsafeArea` 更新後に delegate を呼び出す。
 
 ## References
-- [`WKUIDelegatePrivate.h#L294`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L294)
-- [`WKWebViewIOS.mm#L3630`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/ios/WKWebViewIOS.mm#L3630)
+- [`WKUIDelegatePrivate.h#L272`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L272)
+- [`WKWebViewIOS.mm#L3629`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/ios/WKWebViewIOS.mm#L3629)
 
 ## Metadata
 | Key | Value |

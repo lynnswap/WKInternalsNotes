@@ -11,9 +11,9 @@
 getter/setter を通じて値を取得/設定する。 setter は `_setEphemeralUIEventAttribution:`。
 
 ## References
-- [`API/Cocoa/WKWebViewPrivate.h#L672`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L672)
-- [`API/ios/WKWebViewIOS.mm#L4283`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/ios/WKWebViewIOS.mm#L4283)
-- [`API/ios/WKWebViewIOS.mm#L4259`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/ios/WKWebViewIOS.mm#L4259)
+- [`WKWebViewPrivate.h#L672`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L672)
+- [`WKWebViewIOS.mm#L4283`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/ios/WKWebViewIOS.mm#L4283)
+- [`WKWebViewIOS.mm#L4283`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/ios/WKWebViewIOS.mm#L4283)
 
 ## Metadata
 | Key | Value |

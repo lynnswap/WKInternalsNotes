@@ -11,7 +11,7 @@ Data interaction の item providers を調整するための delegate フック�
 UIProcess 配下の `.m/.mm` では呼び出しが見当たらず、宣言のみ確認できる。
 
 ## References
-- [`WKUIDelegatePrivate.h#L274`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L274)
+- [`WKUIDelegatePrivate.h#L253`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L253)
 
 ## Metadata
 | Key | Value |

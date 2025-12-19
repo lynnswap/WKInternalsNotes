@@ -11,8 +11,8 @@
 リンクプレビュー処理中、アニメーション画像かつ URL が有効な場合に delegate へ問い合わせ、旧 API として `ALLOW_DEPRECATED_DECLARATIONS` 内で利用される。
 
 ## References
-- [`WKUIDelegatePrivate.h#L268`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L268)
-- [`WKContentViewInteraction.mm#L15623`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L15623)
+- [`WKUIDelegatePrivate.h#L244`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L244)
+- [`WKContentViewInteraction.mm#L15620`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L15620)
 
 ## Metadata
 | Key | Value |

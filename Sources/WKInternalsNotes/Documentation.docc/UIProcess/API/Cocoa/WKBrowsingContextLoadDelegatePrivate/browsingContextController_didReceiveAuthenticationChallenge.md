@@ -11,7 +11,7 @@
 `WKBrowsingContextLoadDelegatePrivate` の optional メソッドとして定義され、`NSURLAuthenticationChallenge` を受け取ってハンドリングできる。
 
 ## References
-- [`WKBrowsingContextLoadDelegatePrivate.h#L34`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKBrowsingContextLoadDelegatePrivate.h#L34)
+- [`WKBrowsingContextLoadDelegatePrivate.h#L33`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKBrowsingContextLoadDelegatePrivate.h#L33)
 
 ## Metadata
 | Key | Value |

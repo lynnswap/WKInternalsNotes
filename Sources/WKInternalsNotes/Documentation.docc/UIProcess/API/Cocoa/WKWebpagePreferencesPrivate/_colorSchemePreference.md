@@ -16,7 +16,7 @@ getter は `ColorSchemePreference` を `_WKWebsiteColorSchemePreference` に変�
 ## References
 - [`WKWebpagePreferencesPrivate.h#L120`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferencesPrivate.h#L120)
 - [`WKWebpagePreferences.mm#L538`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L538)
-- [`WKWebpagePreferences.mm#L550`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L550)
+- [`WKWebpagePreferences.mm#L538`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L538)
 
 ## Metadata
 | Key | Value |

@@ -11,8 +11,8 @@
 `WebCore::FontAttributes` を辞書に変換して delegate に渡す。
 
 ## References
-- [`WKUIDelegatePrivate.h#L189`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L189)
-- [`UIDelegate.mm#L1298`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L1298)
+- [`WKUIDelegatePrivate.h#L166`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L166)
+- [`UIDelegate.mm#L179`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L179)
 
 ## Metadata
 | Key | Value |

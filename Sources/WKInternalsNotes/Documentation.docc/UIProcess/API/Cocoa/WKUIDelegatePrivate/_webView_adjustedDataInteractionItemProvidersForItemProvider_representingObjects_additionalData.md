@@ -11,8 +11,8 @@
 WKContentViewInteraction が `NSItemProvider` と対応する `representingObjects` / `additionalData` をまとめ、delegate が返した配列を drag items に追加する。
 
 ## References
-- [`WKUIDelegatePrivate.h#L275`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L275)
-- [`WKContentViewInteraction.mm#L11009`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L11009)
+- [`WKUIDelegatePrivate.h#L253`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L253)
+- [`WKContentViewInteraction.mm#L10994`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L10994)
 
 ## Metadata
 | Key | Value |

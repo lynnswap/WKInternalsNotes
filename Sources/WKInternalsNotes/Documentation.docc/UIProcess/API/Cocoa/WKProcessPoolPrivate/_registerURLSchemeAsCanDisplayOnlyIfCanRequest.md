@@ -11,7 +11,7 @@
 `registerURLSchemeAsCanDisplayOnlyIfCanRequest(scheme)` を呼び出す。
 
 ## References
-- [`WKProcessPoolPrivate.h#L119`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L119)
+- [`WKProcessPoolPrivate.h#L120`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h#L120)
 - [`WKProcessPool.mm#L233`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPool.mm#L233)
 
 ## Metadata

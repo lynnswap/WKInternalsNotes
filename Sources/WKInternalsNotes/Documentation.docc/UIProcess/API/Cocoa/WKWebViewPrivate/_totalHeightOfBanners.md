@@ -11,9 +11,9 @@
 getter/setter を通じて値を取得/設定する。 setter は `_setTotalHeightOfBanners:`。
 
 ## References
-- [`API/Cocoa/WKWebViewPrivate.h#L842`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L842)
-- [`API/mac/WKWebViewMac.mm#L1552`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1552)
-- [`API/mac/WKWebViewMac.mm#L1547`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1547)
+- [`WKWebViewPrivate.h#L842`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivate.h#L842)
+- [`WKWebViewMac.mm#L1552`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1552)
+- [`WKWebViewMac.mm#L1552`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/mac/WKWebViewMac.mm#L1552)
 
 ## Metadata
 | Key | Value |

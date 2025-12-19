@@ -11,8 +11,8 @@ Quick Look ドキュメントの読み込み開始を通知する。
 didStartLoadForQuickLookDocumentInMainFrame で fileName/uti を NSString に変換して渡す。
 
 ## References
-- [`WKNavigationDelegatePrivate.h#L116`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationDelegatePrivate.h#L116)
-- [`NavigationState.mm#L1425`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm#L1425)
+- [`WKNavigationDelegatePrivate.h#L94`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationDelegatePrivate.h#L94)
+- [`NavigationState.mm#L212`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/NavigationState.mm#L212)
 
 ## Metadata
 | Key | Value |

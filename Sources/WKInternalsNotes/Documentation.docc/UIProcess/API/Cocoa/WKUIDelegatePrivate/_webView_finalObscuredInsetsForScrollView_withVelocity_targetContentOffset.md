@@ -11,8 +11,8 @@
 非同期スクロール時に delegate へ問い合わせ、返答がない場合は `_computedObscuredInset` を使う。取得したインセットを `UIEdgeInsetsInsetRect` に反映し、スナップ位置調整に利用する。
 
 ## References
-- [`WKUIDelegatePrivate.h#L265`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L265)
-- [`WKWebViewIOS.mm#L2334`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/ios/WKWebViewIOS.mm#L2334)
+- [`WKUIDelegatePrivate.h#L241`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L241)
+- [`WKWebViewIOS.mm#L2333`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/ios/WKWebViewIOS.mm#L2333)
 
 ## Metadata
 | Key | Value |

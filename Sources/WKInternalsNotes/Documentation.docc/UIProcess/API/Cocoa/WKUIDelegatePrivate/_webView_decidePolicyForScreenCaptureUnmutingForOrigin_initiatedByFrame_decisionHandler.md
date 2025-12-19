@@ -11,8 +11,8 @@
 delegate 実装時に origin と frame を渡して問い合わせ、結果を completionHandler に反映する。
 
 ## References
-- [`WKUIDelegatePrivate.h#L166`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L166)
-- [`UIDelegate.mm#L1481`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L1481)
+- [`WKUIDelegatePrivate.h#L144`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L144)
+- [`UIDelegate.mm#L1442`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L1442)
 
 ## Metadata
 | Key | Value |

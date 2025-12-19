@@ -11,8 +11,8 @@ XR セッション開始を delegate に依頼する（features/format 指定）
 UIClient がセッション feature と Metal の pixel format を渡し、`CompletionHandlerCallChecker` で結果と view controller を受け取る。
 
 ## References
-- [`WKUIDelegatePrivate.h#L304`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L304)
-- [`UIDelegate.mm#L2238`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L2238)
+- [`WKUIDelegatePrivate.h#L280`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L280)
+- [`UIDelegate.mm#L215`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/UIDelegate.mm#L215)
 
 ## Metadata
 | Key | Value |

@@ -15,7 +15,7 @@ setter は `ENABLE(DEVICE_ORIENTATION)` 有効時に `DeviceOrientationOrMotionP
 
 ## References
 - [`WKWebpagePreferencesPrivate.h#L109`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferencesPrivate.h#L109)
-- [`WKWebpagePreferences.mm#L336`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L336)
+- [`WKWebpagePreferences.mm#L358`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L358)
 - [`WKWebpagePreferences.mm#L358`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferences.mm#L358)
 
 ## Metadata
