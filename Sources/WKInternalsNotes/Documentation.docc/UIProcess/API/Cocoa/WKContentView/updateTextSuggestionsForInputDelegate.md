@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/updateTextSuggestionsForInputDelegate()``
 
-宣言のみ確認（実装未調査）。
+入力候補の提示内容を input delegate に反映する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_formInputSession` の suggestions があればそれを優先して提供し、次に datalist の候補を使う。どちらも無い場合は `nil` を渡して候補をクリアする。
 
 ## References
 - [`WKContentViewInteraction.h#L912`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L912)
+- [`WKContentViewInteraction.mm#L9622`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L9622)
 
 ## Metadata
 | Key | Value |

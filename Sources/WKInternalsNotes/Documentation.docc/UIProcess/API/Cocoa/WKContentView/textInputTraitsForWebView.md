@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/textInputTraitsForWebView``
 
-宣言のみ確認（実装未調査）。
+WebView 向けの `UITextInputTraits` を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+未生成なら `UITextInputTraits` を生成し、必要なら更新して返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_legacyTextInputTraits` が未生成の場合に `UITextInputTraits` を生成する。フォーカスを外す処理中でない場合は `_updateTextInputTraits:` を呼んで内容を更新し、そのインスタンスを返す。
 
 ## References
 - [`WKContentViewInteraction.h#L731`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L731)
+- [`WKContentViewInteraction.mm#L7209`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L7209)
 
 ## Metadata
 | Key | Value |
