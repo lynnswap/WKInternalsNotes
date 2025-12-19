@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_elementDidBlur()``
 
-宣言のみ確認（実装未調査）。
+フォーカスが外れた際の入力状態をクリーンアップする。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+入力セッションや補助ビューを終了し、フォーカス情報や編集状態のフラグを初期化する。必要に応じてキーボードの非表示や UI 更新を行う。
 
 ## References
 - [`WKContentViewInteraction.h#L812`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L812)
+- [`WKContentViewInteraction.mm#L8620`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L8620)
 
 ## Metadata
 | Key | Value |

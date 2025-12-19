@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_setAccessibilityWebProcessToken(_:)``
 
-宣言のみ確認（実装未調査）。
+Webプロセスのアクセシビリティトークン受信を反映する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+Webプロセスがチェックインしたことを契機に、UIプロセス側のアクセシビリティ登録を更新する。
 
 ## References
 - [`WKContentView.h#L131`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.h#L131)
+- [`WKContentView.mm#L834`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.mm#L834)
 
 ## Metadata
 | Key | Value |

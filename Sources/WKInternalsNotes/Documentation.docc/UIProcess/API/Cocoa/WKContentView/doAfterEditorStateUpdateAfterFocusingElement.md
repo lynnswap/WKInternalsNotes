@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/doAfterEditorStateUpdateAfterFocusingElement(_:)``
 
-宣言のみ確認（実装未調査）。
+フォーカス後の editor state 更新を待って処理を実行する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+更新待ちでなければ即時にブロックを実行し、待機中であれば後続実行キューに積む。
 
 ## References
 - [`WKContentViewInteraction.h#L884`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L884)
+- [`WKContentViewInteraction.mm#L8814`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L8814)
 
 ## Metadata
 | Key | Value |
