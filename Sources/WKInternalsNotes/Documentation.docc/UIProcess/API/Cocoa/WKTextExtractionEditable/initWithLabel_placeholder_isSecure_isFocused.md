@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTextExtractionEditable/initWithLabel(_:placeholder:isSecure:isFocused:)``
 
-宣言のみ確認（実装未調査）。
+編集可能要素のラベルや状態を初期化する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`label` / `placeholder` / `isSecure` / `isFocused` を保持する Swift initializer。
 
 ## References
 - [`_WKTextExtractionInternal.h#L107`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtractionInternal.h#L107)
+- [`_WKTextExtraction.swift#L250`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtraction.swift#L250)
 
 ## Metadata
 | Key | Value |

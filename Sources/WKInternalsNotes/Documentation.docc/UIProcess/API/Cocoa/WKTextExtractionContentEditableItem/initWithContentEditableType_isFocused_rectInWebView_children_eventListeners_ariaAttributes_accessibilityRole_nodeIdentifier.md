@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTextExtractionContentEditableItem/initWithContentEditableType(_:isFocused:rectInWebView:children:eventListeners:ariaAttributes:accessibilityRole:nodeIdentifier:)``
 
-宣言のみ確認（実装未調査）。
+contenteditable 要素の情報を初期化する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+Swift extension の `init` で `contentEditableType` と `isFocused` を保持し、`WKTextExtractionItem` の `init(with:)` に他の引数を渡して初期化する。
 
 ## References
 - [`_WKTextExtractionInternal.h#L135`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtractionInternal.h#L135)
+- [`_WKTextExtraction.swift#L110`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtraction.swift#L110)
 
 ## Metadata
 | Key | Value |

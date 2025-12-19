@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTextExtractionEditable/secure``
 
-宣言のみ確認（実装未調査）。
+セキュア入力かどうかを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`init` に渡した `isSecure` が保持される。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`backingIsSecure` を `@objc(secure)` の getter で返す。
 
 ## References
 - [`_WKTextExtractionInternal.h#L110`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtractionInternal.h#L110)
+- [`_WKTextExtraction.swift#L228`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtraction.swift#L228)
 
 ## Metadata
 | Key | Value |

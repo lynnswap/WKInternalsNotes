@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTextExtractionContentEditableItem/contentEditableType``
 
-宣言のみ確認（実装未調査）。
+contenteditable の種別を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`init` の引数で与えた `contentEditableType` が保持される。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+Swift の `@_objcImplementation` extension で `contentEditableType` を保持し、初期化時に引数から設定される。
 
 ## References
 - [`_WKTextExtractionInternal.h#L135`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtractionInternal.h#L135)
+- [`_WKTextExtraction.swift#L99`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtraction.swift#L99)
 
 ## Metadata
 | Key | Value |
