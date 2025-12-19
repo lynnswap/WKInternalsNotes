@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTextExtractionTextFormControlItem/readonly``
 
-宣言のみ確認（実装未調査）。
+読み取り専用かどうかを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`init` に渡した `isReadonly` を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`backingIsReadonly` を `@objc(readonly)` の getter で返す。
 
 ## References
 - [`_WKTextExtractionInternal.h#L62`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtractionInternal.h#L62)
+- [`_WKTextExtraction.swift#L166`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtraction.swift#L166)
 
 ## Metadata
 | Key | Value |

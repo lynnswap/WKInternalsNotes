@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTextExtractionTextFormControlItem/initWithEditable(_:controlType:autocomplete:isReadonly:isDisabled:isChecked:rectInWebView:children:eventListeners:ariaAttributes:accessibilityRole:nodeIdentifier:)``
 
-宣言のみ確認（実装未調査）。
+テキストフォームコントロールの情報を初期化する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`editable` や各種フラグを保持し、`WKTextExtractionItem` の `init(with:)` に共通項目を渡して初期化する。
 
 ## References
 - [`_WKTextExtractionInternal.h#L141`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtractionInternal.h#L141)
+- [`_WKTextExtraction.swift#L190`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtraction.swift#L190)
 
 ## Metadata
 | Key | Value |
