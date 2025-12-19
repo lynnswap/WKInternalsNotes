@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/setUpTextIndicator(_:)``
 
-宣言のみ確認（実装未調査）。
+テキストインジケータの表示を準備する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+同一インジケータなら早期リターンし、既存レイヤーを破棄したうえで `WebTextIndicatorLayer` を作成して追加する。必要に応じて `present` を実行し、フェードアウト開始を遅延スケジュールする。
 
 ## References
 - [`WKContentViewInteraction.h#L928`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L928)
+- [`WKContentViewInteraction.mm#L12561`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L12561)
 
 ## Metadata
 | Key | Value |

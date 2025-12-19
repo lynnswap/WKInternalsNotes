@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/textIndicatorInstallationLayer()``
 
-宣言のみ確認（実装未調査）。
+テキストインジケータを載せるレイヤーを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+自身の `CALayer` をそのまま返す。
 
 ## References
 - [`WKContentViewInteraction.h#L932`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L932)
+- [`WKContentViewInteraction.mm#L12556`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L12556)
 
 ## Metadata
 | Key | Value |
