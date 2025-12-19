@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/setUpInteraction()``
 
-宣言のみ確認（実装未調査）。
+インタラクション関連の初期化を行う。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+ページが稼働していれば、コンテナビューやスクロールアニメータ、各種ジェスチャ/インタラクションを作成して登録する。
 
 ## References
 - [`WKContentViewInteraction.h#L747`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L747)
+- [`WKContentViewInteraction.mm#L1290`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L1290)
 
 ## Metadata
 | Key | Value |

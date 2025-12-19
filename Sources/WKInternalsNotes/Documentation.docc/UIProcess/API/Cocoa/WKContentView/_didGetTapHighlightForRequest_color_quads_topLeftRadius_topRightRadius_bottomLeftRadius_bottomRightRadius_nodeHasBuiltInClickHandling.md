@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_didGetTapHighlightForRequest(_:color:quads:topLeftRadius:topRightRadius:bottomLeftRadius:bottomRightRadius:nodeHasBuiltInClickHandling:)``
 
-宣言のみ確認（実装未調査）。
+タップハイライト情報を受け取って表示を更新する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+リクエストIDの整合性やフォーカス要素を確認した上で、ハイライト矩形や色を保存する。ポテンシャルタップ中はフラグを立て、通常時はハイライト表示を行う。
 
 ## References
 - [`WKContentViewInteraction.h#L803`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L803)
+- [`WKContentViewInteraction.mm#L2660`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L2660)
 
 ## Metadata
 | Key | Value |

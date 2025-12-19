@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_showPlaybackTargetPicker(_:fromRect:routeSharingPolicy:routingContextUID:)``
 
-宣言のみ確認（実装未調査）。
+再生デバイス選択ピッカーを表示する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKAirPlayRoutePicker` を生成して、指定ポリシーとコンテキストで表示する。
 
 ## References
 - [`WKContentViewInteraction.h#L828`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L828)
+- [`WKContentViewInteraction.mm#L9671`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L9671)
 
 ## Metadata
 | Key | Value |

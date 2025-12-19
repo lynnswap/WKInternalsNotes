@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/reloadContextViewForPresentedListViewController()``
 
-宣言のみ確認（実装未調査）。
+表示中のリストビューコントローラのコンテキストを再読み込みする。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKTextInputListViewController` が表示中であれば `reloadContextView` を呼ぶ。
 
 ## References
 - [`WKContentViewInteraction.h#L910`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L910)
+- [`WKContentViewInteraction.mm#L8896`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L8896)
 
 ## Metadata
 | Key | Value |

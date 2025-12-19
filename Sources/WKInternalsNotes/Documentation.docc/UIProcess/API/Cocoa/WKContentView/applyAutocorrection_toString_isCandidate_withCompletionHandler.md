@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/applyAutocorrection(_:toString:isCandidate:withCompletionHandler:)``
 
-宣言のみ確認（実装未調査）。
+オートコレクションを適用し、結果の矩形を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+内部置換処理を実行し、適用できた場合は補正後の先頭/末尾矩形を `UIWKAutocorrectionRects` として返す。
 
 ## References
 - [`WKContentViewInteraction.h#L923`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L923)
+- [`WKContentViewInteraction.mm#L5966`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L5966)
 
 ## Metadata
 | Key | Value |

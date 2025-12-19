@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/initWithFrame(_:processPool:configuration:webView:)``
 
-宣言のみ確認（実装未調査）。
+WKContentView を初期化する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKWebView` を使って superclass を初期化し、`PageClientImpl` を構築した上で `_commonInitializationWithProcessPool:configuration:` を呼び出す。
 
 ## References
 - [`WKContentView.h#L72`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.h#L72)
+- [`WKContentView.mm#L484`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentView.mm#L484)
 
 ## Metadata
 | Key | Value |

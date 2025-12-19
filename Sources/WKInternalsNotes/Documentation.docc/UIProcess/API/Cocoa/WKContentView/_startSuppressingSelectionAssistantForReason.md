@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_startSuppressingSelectionAssistantForReason(_:)``
 
-宣言のみ確認（実装未調査）。
+選択アシスタントの抑制理由を追加する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+抑制理由を記録し、初めて抑制状態になった場合は選択を非アクティブ化する。
 
 ## References
 - [`WKContentViewInteraction.h#L765`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L765)
+- [`WKContentViewInteraction.mm#L9572`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L9572)
 
 ## Metadata
 | Key | Value |

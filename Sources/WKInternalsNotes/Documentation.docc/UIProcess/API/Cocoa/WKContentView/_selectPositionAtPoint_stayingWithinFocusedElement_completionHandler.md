@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_selectPositionAtPoint(_:stayingWithinFocusedElement:completionHandler:)``
 
-宣言のみ確認（実装未調査）。
+指定位置の選択を開始する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+テキスト選択のコンテキストを更新し、`WebPageProxy::selectPositionAtPoint` を呼んで選択を開始する。完了時にジェスチャ選択中フラグを解除する。
 
 ## References
 - [`WKContentViewInteraction.h#L763`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L763)
+- [`WKContentViewInteraction.mm#L5771`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L5771)
 
 ## Metadata
 | Key | Value |

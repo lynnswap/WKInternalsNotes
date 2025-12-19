@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/dismissPickersIfNeededWithReason(_:)``
 
-宣言のみ確認（実装未調査）。
+表示中のピッカーやシートを必要に応じて閉じる。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+ファイルアップロードパネルや共有シート、連絡先ピッカーなどを理由付きで閉じ、閉じた場合は参照を解放する。
 
 ## References
 - [`WKContentViewInteraction.h#L751`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L751)
+- [`WKContentViewInteraction.mm#L9812`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L9812)
 
 ## Metadata
 | Key | Value |
