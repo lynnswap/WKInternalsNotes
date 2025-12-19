@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/updateSelection()``
 
-宣言のみ確認（実装未調査）。
+現在の選択操作状態に応じて選択を更新する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`SelectionInteractionType` に応じてタッチ選択または範囲選択の更新処理に分岐する。
 
 ## References
 - [`WKContentViewInteraction.h#L777`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L777)
+- [`WKContentViewInteraction.mm#L5446`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L5446)
 
 ## Metadata
 | Key | Value |

@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/setGrammarCheckingEnabled(_:)``
 
-宣言のみ確認（実装未調査）。
+文法チェックの有効/無効を設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+現在の状態と同じ場合は何もしない。変更が必要な場合は `TextChecker` を更新し、Web プロセスへ反映する。
 
 ## References
 - [`WKContentViewInteraction.h#L949`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L949)
+- [`WKContentViewInteraction.mm#L12163`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L12163)
 
 ## Metadata
 | Key | Value |
