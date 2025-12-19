@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_writePromisedAttachmentToPasteboard(_:)``
 
-宣言のみ確認（実装未調査）。
+添付ファイルをペーストボードに書き込む。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+対応プラットフォームでは `ItemProvider` を作成し、data owner を設定してペーストボードへ登録する。watchOS/Apple TV では no-op。
 
 ## References
 - [`WKContentViewInteraction.h#L964`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L964)
+- [`WKContentViewInteraction.mm#L12514`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L12514)
 
 ## Metadata
 | Key | Value |

@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_doneDeferringTouchMove(_:)``
 
-宣言のみ確認（実装未調査）。
+タッチ移動のデファリングを終了する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_touchMoveDeferringGestureRecognizer` に `endDeferral` を伝える。
 
 ## References
 - [`WKContentViewInteraction.h#L794`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L794)
+- [`WKContentViewInteraction.mm#L2523`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L2523)
 
 ## Metadata
 | Key | Value |
