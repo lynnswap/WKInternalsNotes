@@ -1,20 +1,18 @@
 # ``WKInternalsNotes/WKWebViewContentProvider/web_contentView``
 
-宣言のみ確認（実装未調査）。
+コンテンツ表示用のビューを返す。
 
 ## Objective-C Declaration
 ```objective-c
 @property (nonatomic, readonly) UIView *web_contentView;
 ```
 
-## Default Value
-未調査（初期化経路の確認が必要）。
-
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKUSDPreviewView` では自分自身 (`self`) を返す。
 
 ## References
 - [`WKWebViewContentProvider.h#L51`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/WKWebViewContentProvider.h#L51)
+- [`WKUSDPreviewView.mm#L173`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKUSDPreviewView.mm#L173)
 
 ## Metadata
 | Key | Value |

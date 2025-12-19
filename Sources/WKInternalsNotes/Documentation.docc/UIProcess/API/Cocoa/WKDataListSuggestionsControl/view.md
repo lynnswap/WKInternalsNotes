@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKDataListSuggestionsControl/view``
 
-宣言のみ確認（実装未調査）。
+候補 UI の関連 `WKContentView` を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`initWithInformation:inView:` で設定され、それ以前は `nil`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+初期化時に保持した `WKContentView` を参照する。
 
 ## References
 - [`WebDataListSuggestionsDropdownIOS.mm#L47`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WebDataListSuggestionsDropdownIOS.mm#L47)
+- [`WebDataListSuggestionsDropdownIOS.mm#L163`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WebDataListSuggestionsDropdownIOS.mm#L163)
 
 ## Metadata
 | Key | Value |

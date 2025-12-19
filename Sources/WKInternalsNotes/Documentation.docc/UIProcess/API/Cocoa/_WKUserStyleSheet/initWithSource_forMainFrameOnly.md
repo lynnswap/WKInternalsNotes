@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKUserStyleSheet/initWithSource(_:forMainFrameOnly:)``
 
-宣言のみ確認（実装未調査）。
+CSS ソースを指定してユーザースタイルシートを初期化する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+WebKit 初期化後に `API::UserStyleSheet` を構築する。`forMainFrameOnly` に応じて `InjectInTopFrameOnly` または `InjectInAllFrames` を設定し、`User` レベルかつ page content world を使用する。
 
 ## References
 - [`_WKUserStyleSheet.h#L49`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKUserStyleSheet.h#L49)
+- [`_WKUserStyleSheet.mm#L42`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKUserStyleSheet.mm#L42)
 
 ## Metadata
 | Key | Value |

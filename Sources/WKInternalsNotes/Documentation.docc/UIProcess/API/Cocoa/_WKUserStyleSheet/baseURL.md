@@ -1,20 +1,18 @@
 # ``WKInternalsNotes/_WKUserStyleSheet/baseURL``
 
-宣言のみ確認（実装未調査）。
+スタイルシートの base URL を返す。
 
 ## Objective-C Declaration
 ```objective-c
 @property (nonatomic, readonly, copy) NSURL *baseURL;
 ```
 
-## Default Value
-未調査（初期化経路の確認が必要）。
-
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+内部の `UserStyleSheet` が保持する URL を `NSURL` に変換して返す。
 
 ## References
 - [`_WKUserStyleSheet.h#L45`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKUserStyleSheet.h#L45)
+- [`_WKUserStyleSheet.mm#L79`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKUserStyleSheet.mm#L79)
 
 ## Metadata
 | Key | Value |

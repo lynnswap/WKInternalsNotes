@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKDataListSuggestionsControl/initWithInformation(_:inView:)``
 
-宣言のみ確認（実装未調査）。
+datalist 候補情報と対象ビューを指定して初期化する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`view` を保持し、候補リストを `information.suggestions` から取り込む。`_setDataListSuggestionsControl:` を通じて `WKContentView` に登録する。
 
 ## References
 - [`WebDataListSuggestionsDropdownIOS.h#L45`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WebDataListSuggestionsDropdownIOS.h#L45)
+- [`WebDataListSuggestionsDropdownIOS.mm#L163`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WebDataListSuggestionsDropdownIOS.mm#L163)
 
 ## Metadata
 | Key | Value |

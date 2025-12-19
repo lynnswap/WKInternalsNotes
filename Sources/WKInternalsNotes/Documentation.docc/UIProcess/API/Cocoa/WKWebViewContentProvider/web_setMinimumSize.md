@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKWebViewContentProvider/web_setMinimumSize(_:)``
 
-宣言のみ確認（実装未調査）。
+コンテンツの最小サイズを設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKUSDPreviewView` の実装は空で、特別な処理を行わない。
 
 ## References
 - [`WKWebViewContentProvider.h#L43`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/WKWebViewContentProvider.h#L43)
+- [`WKUSDPreviewView.mm#L178`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKUSDPreviewView.mm#L178)
 
 ## Metadata
 | Key | Value |

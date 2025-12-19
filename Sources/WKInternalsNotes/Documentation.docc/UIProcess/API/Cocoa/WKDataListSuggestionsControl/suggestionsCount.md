@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKDataListSuggestionsControl/suggestionsCount()``
 
-宣言のみ確認（実装未調査）。
+候補の件数を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,10 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_suggestions` の要素数を返す。
 
 ## References
-- [`WebDataListSuggestionsDropdownIOS.mm#L53`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WebDataListSuggestionsDropdownIOS.mm#L53)
+- [`WebDataListSuggestionsDropdownIOS.mm#L208`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WebDataListSuggestionsDropdownIOS.mm#L208)
 
 ## Metadata
 | Key | Value |

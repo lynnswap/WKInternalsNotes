@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKDataListSuggestionsControl/showSuggestionsDropdown(_:activationType:)``
 
-宣言のみ確認（実装未調査）。
+dropdown への参照を設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,10 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`dropdown` を `_dropdown` に保存する。`activationType` は現状このメソッド内では使用しない。
 
 ## References
-- [`WebDataListSuggestionsDropdownIOS.mm#L50`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WebDataListSuggestionsDropdownIOS.mm#L50)
+- [`WebDataListSuggestionsDropdownIOS.mm#L181`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WebDataListSuggestionsDropdownIOS.mm#L181)
 
 ## Metadata
 | Key | Value |

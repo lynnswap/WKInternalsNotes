@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKWebViewContentProvider/web_findString(_:options:maxCount:)``
 
-宣言のみ確認（実装未調査）。
+文字列検索結果を通知する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKUSDPreviewView` では `findClient().didFailToFindString` を呼び、検索失敗として扱う。
 
 ## References
 - [`WKWebViewContentProvider.h#L49`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/WKWebViewContentProvider.h#L49)
+- [`WKUSDPreviewView.mm#L212`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKUSDPreviewView.mm#L212)
 
 ## Metadata
 | Key | Value |

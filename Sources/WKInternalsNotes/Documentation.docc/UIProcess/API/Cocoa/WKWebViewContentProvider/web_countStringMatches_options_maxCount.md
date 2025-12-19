@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKWebViewContentProvider/web_countStringMatches(_:options:maxCount:)``
 
-宣言のみ確認（実装未調査）。
+文字列の一致数を報告する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKUSDPreviewView` では `findClient().didCountStringMatches` を呼び、0 件として報告する。
 
 ## References
 - [`WKWebViewContentProvider.h#L48`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/WKWebViewContentProvider.h#L48)
+- [`WKUSDPreviewView.mm#L206`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKUSDPreviewView.mm#L206)
 
 ## Metadata
 | Key | Value |

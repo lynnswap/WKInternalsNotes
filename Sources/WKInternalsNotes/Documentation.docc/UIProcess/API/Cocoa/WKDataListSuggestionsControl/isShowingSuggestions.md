@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKDataListSuggestionsControl/isShowingSuggestions``
 
-宣言のみ確認（実装未調査）。
+候補 UI が表示中かどうかを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,14 +8,15 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+初期は `NO`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+dropdown の表示/非表示に合わせて `YES/NO` が更新される。
 
 ## References
 - [`WebDataListSuggestionsDropdownIOS.h#L43`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WebDataListSuggestionsDropdownIOS.h#L43)
-- [`WebDataListSuggestionsDropdownIOS.mm#L48`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WebDataListSuggestionsDropdownIOS.mm#L48)
+- [`WebDataListSuggestionsDropdownIOS.mm#L568`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WebDataListSuggestionsDropdownIOS.mm#L568)
+- [`WebDataListSuggestionsDropdownIOS.mm#L575`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WebDataListSuggestionsDropdownIOS.mm#L575)
 
 ## Metadata
 | Key | Value |

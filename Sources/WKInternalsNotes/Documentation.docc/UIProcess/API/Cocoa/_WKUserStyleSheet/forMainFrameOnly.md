@@ -1,20 +1,18 @@
 # ``WKInternalsNotes/_WKUserStyleSheet/forMainFrameOnly``
 
-宣言のみ確認（実装未調査）。
+メインフレームのみへ注入するかを返す。
 
 ## Objective-C Declaration
 ```objective-c
 @property (nonatomic, readonly, getter=isForMainFrameOnly) BOOL forMainFrameOnly;
 ```
 
-## Default Value
-未調査（初期化経路の確認が必要）。
-
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`UserStyleSheet` の `injectedFrames` が `InjectInTopFrameOnly` かどうかを返す。
 
 ## References
 - [`_WKUserStyleSheet.h#L47`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKUserStyleSheet.h#L47)
+- [`_WKUserStyleSheet.mm#L84`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKUserStyleSheet.mm#L84)
 
 ## Metadata
 | Key | Value |

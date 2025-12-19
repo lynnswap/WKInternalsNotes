@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKDataListSuggestionsControl/invalidate()``
 
-宣言のみ確認（実装未調査）。
+Suggestions control を無効化する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+現時点では何もしない空実装。
 
 ## References
 - [`WebDataListSuggestionsDropdownIOS.h#L48`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WebDataListSuggestionsDropdownIOS.h#L48)
+- [`WebDataListSuggestionsDropdownIOS.mm#L191`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WebDataListSuggestionsDropdownIOS.mm#L191)
 
 ## Metadata
 | Key | Value |

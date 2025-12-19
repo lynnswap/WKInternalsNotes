@@ -1,17 +1,18 @@
 # ``WKInternalsNotes/WKWebViewContentProvider/web_initWithFrame(_:webView:mimeType:)``
 
-宣言のみ確認（実装未調査）。
+コンテンツプロバイダ用ビューを初期化する。
 
 ## Objective-C Declaration
 ```objective-c
-- (instancetype)web_initWithFrame:(CGRect)frame webView:(WKWebView *)webView mimeType:(NSString *)mimeType __attribute__((objc_method_family(init)));
+- (instancetype)web_initWithFrame:(CGRect)frame webView:(WKWebView *)webView mimeType:(NSString *)mimeType;
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKUSDPreviewView` では背景色を設定し、`webView` と `mimeType` を保持した上で `scrollView` の最小/最大ズームを 1 に固定する。
 
 ## References
 - [`WKWebViewContentProvider.h#L41`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/WKWebViewContentProvider.h#L41)
+- [`WKUSDPreviewView.mm#L73`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKUSDPreviewView.mm#L73)
 
 ## Metadata
 | Key | Value |

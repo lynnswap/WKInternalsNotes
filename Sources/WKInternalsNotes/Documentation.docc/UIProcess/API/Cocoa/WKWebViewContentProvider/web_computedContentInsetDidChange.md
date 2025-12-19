@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKWebViewContentProvider/web_computedContentInsetDidChange()``
 
-宣言のみ確認（実装未調査）。
+計算済み content inset の変更を通知する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKUSDPreviewView` では `_layoutThumbnailView` を呼び、サムネイルのレイアウトを更新する。
 
 ## References
 - [`WKWebViewContentProvider.h#L45`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/WKWebViewContentProvider.h#L45)
+- [`WKUSDPreviewView.mm#L186`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKUSDPreviewView.mm#L186)
 
 ## Metadata
 | Key | Value |
