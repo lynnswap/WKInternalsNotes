@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_didNotHandleTapAsClick(_:)``
 
-宣言のみ確認（実装未調査）。
+タップをクリックとして扱わなかった場合の後処理を行う。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+入力ビュー更新の遅延を解除し、ダブルタップ待機中ならスマート拡大を処理して待機を解除する。
 
 ## References
 - [`WKContentViewInteraction.h#L798`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L798)
+- [`WKContentViewInteraction.mm#L3958`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L3958)
 
 ## Metadata
 | Key | Value |

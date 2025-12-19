@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_didHandleTapAsHover()``
 
-宣言のみ確認（実装未調査）。
+タップをホバーとして扱った後の後処理を行う。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+入力ビュー更新の遅延を解除する。
 
 ## References
 - [`WKContentViewInteraction.h#L799`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L799)
+- [`WKContentViewInteraction.mm#L3969`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L3969)
 
 ## Metadata
 | Key | Value |

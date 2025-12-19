@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContentView/_commitPotentialTapFailed()``
 
-宣言のみ確認（実装未調査）。
+潜在タップの確定に失敗した場合の後処理を行う。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,11 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+タッチ識別子を解放し、インタラクションをキャンセルして入力ビュー更新の遅延を解除する。
 
 ## References
 - [`WKContentViewInteraction.h#L797`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.h#L797)
+- [`WKContentViewInteraction.mm#L3948`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L3948)
 
 ## Metadata
 | Key | Value |
