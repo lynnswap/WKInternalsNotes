@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKPublicKeyCredentialUserEntity/displayName``
 
-宣言のみ確認（実装未調査）。
+ユーザーの表示名を保持する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`initWithName:identifier:displayName:` で指定された値が設定される。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`initWithName:identifier:displayName:` で `displayName` を `self.displayName` に設定する。`copy` 属性のため文字列をコピー保持する。
 
 ## References
-- [`_WKPublicKeyCredentialUserEntity.h#L38`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKPublicKeyCredentialUserEntity.h#L38)
+- [`_WKPublicKeyCredentialUserEntity.h#L41`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKPublicKeyCredentialUserEntity.h#L41)
+- [`_WKPublicKeyCredentialUserEntity.mm#L31`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKPublicKeyCredentialUserEntity.mm#L31)
+- [`_WKPublicKeyCredentialUserEntity.mm#L37`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKPublicKeyCredentialUserEntity.mm#L37)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |
