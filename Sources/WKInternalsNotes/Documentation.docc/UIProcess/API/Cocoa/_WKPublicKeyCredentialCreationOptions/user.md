@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKPublicKeyCredentialCreationOptions/user``
 
-宣言のみ確認（実装未調査）。
+ユーザー情報を保持する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`initWithRelyingParty:user:publicKeyCredentialParamaters:` で指定された値が設定される。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`initWithRelyingParty:user:publicKeyCredentialParamaters:` で `user` を `self.user` に設定する。
 
 ## References
-- [`_WKPublicKeyCredentialCreationOptions.h#L53`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKPublicKeyCredentialCreationOptions.h#L53)
+- [`_WKPublicKeyCredentialCreationOptions.h#L56`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKPublicKeyCredentialCreationOptions.h#L56)
+- [`_WKPublicKeyCredentialCreationOptions.mm#L34`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKPublicKeyCredentialCreationOptions.mm#L34)
+- [`_WKPublicKeyCredentialCreationOptions.mm#L40`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKPublicKeyCredentialCreationOptions.mm#L40)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |
