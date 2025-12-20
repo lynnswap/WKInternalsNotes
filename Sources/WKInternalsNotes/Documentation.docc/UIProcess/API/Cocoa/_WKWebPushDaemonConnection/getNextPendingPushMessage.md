@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebPushDaemonConnection/getNextPendingPushMessage(_:)``
 
-宣言のみ確認（実装未調査）。
+保留中の Push メッセージを取得する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,16 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`getNextPendingPushMessage` の結果が存在しない場合は `nil` を返し、存在する場合は `WebPushMessage` をラップして返す。
 
 ## References
 - [`_WKWebPushDaemonConnection.h#L65`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebPushDaemonConnection.h#L65)
+- [`_WKWebPushDaemonConnection.mm#L173`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebPushDaemonConnection.mm#L173)
+- [`_WKWebPushDaemonConnection.mm#L175`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebPushDaemonConnection.mm#L175)
+- [`_WKWebPushDaemonConnection.mm#L179`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebPushDaemonConnection.mm#L179)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |

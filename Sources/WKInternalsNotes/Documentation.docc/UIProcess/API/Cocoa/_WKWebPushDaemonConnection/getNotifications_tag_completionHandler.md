@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebPushDaemonConnection/getNotifications(_:tag:completionHandler:)``
 
-宣言のみ確認（実装未調査）。
+通知一覧を取得する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,17 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`getNotifications` の成功時は `WebPushNotificationData` を `_WKNotificationData` に変換して配列を返す。失敗時は `WKErrorDomain` と `WKErrorUnknown` を使った `NSError` を生成して返す。
 
 ## References
 - [`_WKWebPushDaemonConnection.h#L67`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebPushDaemonConnection.h#L67)
+- [`_WKWebPushDaemonConnection.mm#L191`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebPushDaemonConnection.mm#L191)
+- [`_WKWebPushDaemonConnection.mm#L193`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebPushDaemonConnection.mm#L193)
+- [`_WKWebPushDaemonConnection.mm#L195`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebPushDaemonConnection.mm#L195)
+- [`_WKWebPushDaemonConnection.mm#L202`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebPushDaemonConnection.mm#L202)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |
