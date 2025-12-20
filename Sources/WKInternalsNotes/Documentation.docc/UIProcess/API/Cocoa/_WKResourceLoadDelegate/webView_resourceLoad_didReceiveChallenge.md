@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKResourceLoadDelegate/webView(_:resourceLoad:didReceiveChallenge:)``
 
-宣言のみ確認（実装未調査）。
+認証チャレンジを通知する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`AuthenticationChallenge` を `NSURLAuthenticationChallenge` に変換し、delegate にそのまま渡す。
 
 ## References
-- [`_WKResourceLoadDelegate.h#L37`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKResourceLoadDelegate.h#L37)
+- [`_WKResourceLoadDelegate.h#L42`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKResourceLoadDelegate.h#L42)
+- [`ResourceLoadDelegate.mm#L106`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/ResourceLoadDelegate.mm#L106)
+- [`ResourceLoadDelegate.mm#L115`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/ResourceLoadDelegate.mm#L115)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |
