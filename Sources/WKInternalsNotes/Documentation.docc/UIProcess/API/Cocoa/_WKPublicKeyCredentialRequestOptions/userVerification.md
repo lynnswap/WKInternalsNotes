@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKPublicKeyCredentialRequestOptions/userVerification``
 
-宣言のみ確認（実装未調査）。
+ユーザー検証の要求を保持する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,19 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+既定値は `_WKUserVerificationRequirementPreferred`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`init` で `_WKUserVerificationRequirementPreferred` に初期化される。
 
 ## References
+- [`_WKPublicKeyCredentialRequestOptions.h#L45`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKPublicKeyCredentialRequestOptions.h#L45)
 - [`_WKPublicKeyCredentialRequestOptions.h#L46`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKPublicKeyCredentialRequestOptions.h#L46)
+- [`_WKPublicKeyCredentialRequestOptions.mm#L31`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKPublicKeyCredentialRequestOptions.mm#L31)
+- [`_WKPublicKeyCredentialRequestOptions.mm#L36`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKPublicKeyCredentialRequestOptions.mm#L36)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |
