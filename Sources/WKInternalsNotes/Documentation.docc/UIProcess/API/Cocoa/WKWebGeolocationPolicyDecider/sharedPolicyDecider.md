@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKWebGeolocationPolicyDecider/sharedPolicyDecider()``
 
-宣言のみ確認（実装未調査）。
+共有インスタンスを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+静的変数に保持しているインスタンスを返す。未生成の場合は `init` で生成してから返す。
 
 ## References
 - [`WKWebGeolocationPolicyDecider.h#L40`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKWebGeolocationPolicyDecider.h#L40)
+- [`WKWebGeolocationPolicyDeciderIOS.mm#L117`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKWebGeolocationPolicyDeciderIOS.mm#L117)
+- [`WKWebGeolocationPolicyDeciderIOS.mm#L119`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKWebGeolocationPolicyDeciderIOS.mm#L119)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |
