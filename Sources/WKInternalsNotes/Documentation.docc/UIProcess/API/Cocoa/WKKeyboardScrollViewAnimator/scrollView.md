@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKKeyboardScrollViewAnimator/scrollView()``
 
-宣言のみ確認（実装未調査）。
+現在のスクロール対象を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`beginWithEvent:scrollView:` で保持した `WKBaseScrollView` を返す。
 
 ## References
 - [`WKKeyboardScrollingAnimator.h#L56`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKKeyboardScrollingAnimator.h#L56)
+- [`WKKeyboardScrollingAnimator.mm#L636`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKKeyboardScrollingAnimator.mm#L636)
+- [`WKKeyboardScrollingAnimator.mm#L638`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKKeyboardScrollingAnimator.mm#L638)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |

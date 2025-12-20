@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKKeyboardScrollViewAnimator/invalidate()``
 
-宣言のみ確認（実装未調査）。
+内部状態を無効化する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,16 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+保持している `scrollView` を `nil` にし、内部の `WKKeyboardScrollingAnimator` を `invalidate` したうえで解放する。
 
 ## References
 - [`WKKeyboardScrollingAnimator.h#L43`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKKeyboardScrollingAnimator.h#L43)
+- [`WKKeyboardScrollingAnimator.mm#L584`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKKeyboardScrollingAnimator.mm#L584)
+- [`WKKeyboardScrollingAnimator.mm#L586`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKKeyboardScrollingAnimator.mm#L586)
+- [`WKKeyboardScrollingAnimator.mm#L588`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKKeyboardScrollingAnimator.mm#L588)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |
