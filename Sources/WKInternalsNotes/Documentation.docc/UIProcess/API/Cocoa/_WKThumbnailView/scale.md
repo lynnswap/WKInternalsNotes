@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKThumbnailView/scale``
 
-宣言のみ確認（実装未調査）。
+サムネイルのスケールを設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,21 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`initWithFrame:` で 1 に設定される。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+値が変わるとスナップショット再取得を要求し、`sublayerTransform` をスケールと `_sublayerTranslation` で更新する。
 
 ## References
 - [`_WKThumbnailView.h#L44`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKThumbnailView.h#L44)
+- [`_WKThumbnailView.mm#L70`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKThumbnailView.mm#L70)
+- [`_WKThumbnailView.mm#L75`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKThumbnailView.mm#L75)
+- [`_WKThumbnailView.mm#L279`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKThumbnailView.mm#L279)
+- [`_WKThumbnailView.mm#L286`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKThumbnailView.mm#L286)
+- [`_WKThumbnailView.mm#L288`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKThumbnailView.mm#L288)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |

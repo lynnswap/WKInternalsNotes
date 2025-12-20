@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKThumbnailView/maximumSnapshotSize``
 
-宣言のみ確認（実装未調査）。
+スナップショットの最大サイズ制約を設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,20 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`CGSizeZero` の場合は制約なし。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`requestSnapshot` で `bitmapSize` を最大サイズに合わせてスケールし、`setMaximumSnapshotSize:` で値が変わると再スナップショットを要求する。
 
 ## References
 - [`_WKThumbnailView.h#L46`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKThumbnailView.h#L46)
+- [`_WKThumbnailView.mm#L154`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKThumbnailView.mm#L154)
+- [`_WKThumbnailView.mm#L156`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKThumbnailView.mm#L156)
+- [`_WKThumbnailView.mm#L301`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKThumbnailView.mm#L301)
+- [`_WKThumbnailView.mm#L306`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKThumbnailView.mm#L306)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |
