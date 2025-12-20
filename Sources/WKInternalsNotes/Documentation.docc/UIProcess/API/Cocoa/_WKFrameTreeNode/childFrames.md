@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKFrameTreeNode/childFrames``
 
-宣言のみ確認（実装未調査）。
+子フレームに対応する `_WKFrameTreeNode` 配列を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,19 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+子フレームが存在しない場合は空配列になる。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+内部の `FrameTreeNode` が持つ `childFrames()` を列挙し、各要素を `WebKit::FrameTreeNodeData` 経由で `API::FrameTreeNode::create` に渡してラップする。
 
 ## References
 - [`_WKFrameTreeNode.h#L35`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKFrameTreeNode.h#L35)
+- [`_WKFrameTreeNode.mm#L53`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKFrameTreeNode.mm#L53)
+- [`_WKFrameTreeNode.mm#L55`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKFrameTreeNode.mm#L55)
+- [`_WKFrameTreeNode.mm#L56`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKFrameTreeNode.mm#L56)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |

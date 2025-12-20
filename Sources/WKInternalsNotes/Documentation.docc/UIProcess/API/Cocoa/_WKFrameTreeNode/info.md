@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKFrameTreeNode/info``
 
-宣言のみ確認（実装未調査）。
+フレームノードに対応する `WKFrameInfo` を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+内部の `FrameTreeNode` が保持する `FrameInfo` から都度生成されるため固定の既定値はない。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+getter は `_node->info()` を `WebKit::FrameInfoData` に変換し、`API::FrameInfo::create` のラッパーを `WKFrameInfo` として返す。
 
 ## References
 - [`_WKFrameTreeNode.h#L34`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKFrameTreeNode.h#L34)
+- [`_WKFrameTreeNode.mm#L48`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKFrameTreeNode.mm#L48)
+- [`_WKFrameTreeNode.mm#L50`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKFrameTreeNode.mm#L50)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |
