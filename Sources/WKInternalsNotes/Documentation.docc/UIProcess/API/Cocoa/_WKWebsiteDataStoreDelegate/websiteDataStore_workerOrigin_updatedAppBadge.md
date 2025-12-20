@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebsiteDataStoreDelegate/websiteDataStore(_:workerOrigin:updatedAppBadge:)``
 
-宣言のみ確認（実装未調査）。
+Service Worker の app badge 更新を通知する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+delegate または `dataStore` が未設定の場合は呼ばれない。`badge` が `nil` の場合はクリア扱いで、そのまま `nil` を渡す。
 
 ## References
-- [`_WKWebsiteDataStoreDelegate.h#L63`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreDelegate.h#L63)
+- [`_WKWebsiteDataStoreDelegate.h#L67`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreDelegate.h#L67)
+- [`WKWebsiteDataStore.mm#L263`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStore.mm#L263)
+- [`WKWebsiteDataStore.mm#L273`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStore.mm#L273)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |

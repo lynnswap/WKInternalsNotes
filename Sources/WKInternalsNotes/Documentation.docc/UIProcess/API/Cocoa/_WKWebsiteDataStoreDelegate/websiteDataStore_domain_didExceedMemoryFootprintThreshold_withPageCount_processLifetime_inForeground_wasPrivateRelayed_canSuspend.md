@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebsiteDataStoreDelegate/websiteDataStore(_:domain:didExceedMemoryFootprintThreshold:withPageCount:processLifetime:inForeground:wasPrivateRelayed:canSuspend:)``
 
-宣言のみ確認（実装未調査）。
+メモリフットプリントの閾値超過を通知する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+delegate が未実装の場合は呼ばれない。`processLifetime` は秒に変換し、`wasPrivateRelayed` と `canSuspend` は内部列挙から `BOOL` に変換して渡す。
 
 ## References
-- [`_WKWebsiteDataStoreDelegate.h#L63`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreDelegate.h#L63)
+- [`_WKWebsiteDataStoreDelegate.h#L74`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreDelegate.h#L74)
+- [`WKWebsiteDataStore.mm#L354`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStore.mm#L354)
+- [`WKWebsiteDataStore.mm#L359`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStore.mm#L359)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |
