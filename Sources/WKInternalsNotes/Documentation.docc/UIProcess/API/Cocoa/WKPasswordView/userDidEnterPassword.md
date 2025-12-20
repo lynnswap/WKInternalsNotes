@@ -1,23 +1,22 @@
 # ``WKInternalsNotes/WKPasswordView/userDidEnterPassword``
 
-宣言のみ確認（実装未調査）。
+パスワード入力完了時に呼び出されるハンドラを設定する。
 
 ## Objective-C Declaration
 ```objective-c
 @property (nonatomic, copy) void (^userDidEnterPassword)(NSString *);
 ```
 
-## Default Value
-未調査（初期化経路の確認が必要）。
-
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`UIDocumentPasswordViewDelegate` の `userDidEnterPassword:forPasswordView:` で、このブロックが設定されていれば入力されたパスワードを渡して呼び出す。
 
 ## References
 - [`WKPasswordView.h#L38`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKPasswordView.h#L38)
+- [`WKPasswordView.mm#L167`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKPasswordView.mm#L167)
+- [`WKPasswordView.mm#L170`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKPasswordView.mm#L170)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |
