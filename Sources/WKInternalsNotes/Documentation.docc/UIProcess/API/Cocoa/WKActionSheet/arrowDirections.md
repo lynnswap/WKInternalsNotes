@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKActionSheet/arrowDirections``
 
-宣言のみ確認（実装未調査）。
+ポップオーバー矢印の表示方向を設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,19 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`init` で `UIPopoverArrowDirectionAny` に設定される。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`presentSheetFromRect:` で `permittedArrowDirections` に設定される。
 
 ## References
 - [`WKActionSheet.h#L43`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKActionSheet.h#L43)
+- [`WKActionSheet.mm#L47`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKActionSheet.mm#L47)
+- [`WKActionSheet.mm#L53`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKActionSheet.mm#L53)
+- [`WKActionSheet.mm#L120`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKActionSheet.mm#L120)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |

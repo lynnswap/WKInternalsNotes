@@ -1,23 +1,23 @@
 # ``WKInternalsNotes/WKActionSheet/sheetDelegate``
 
-宣言のみ確認（実装未調査）。
+アクションシートの表示情報を提供する delegate を設定する。
 
 ## Objective-C Declaration
 ```objective-c
 @property (nonatomic, assign) id <WKActionSheetDelegate> sheetDelegate;
 ```
 
-## Default Value
-未調査（初期化経路の確認が必要）。
-
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`presentSheet:` / `presentSheetFromRect:` / `updateSheetPosition` などで、表示位置やホストビューの取得に使用される。
 
 ## References
 - [`WKActionSheet.h#L42`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKActionSheet.h#L42)
+- [`WKActionSheet.mm#L97`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKActionSheet.mm#L97)
+- [`WKActionSheet.mm#L110`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKActionSheet.mm#L110)
+- [`WKActionSheet.mm#L223`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKActionSheet.mm#L223)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |
