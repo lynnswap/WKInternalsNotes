@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKDownload/originatingFrame``
 
-宣言のみ確認（実装未調査）。
+ダウンロード開始元のフレーム情報を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+内部の `DownloadProxy` が保持する frameInfo を返すため固定の既定値はない。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`DownloadProxy::frameInfo` を `WKFrameInfo` にラップして返す。
 
 ## References
 - [`_WKDownload.h#L46`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKDownload.h#L46)
+- [`_WKDownload.mm#L113`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKDownload.mm#L113)
+- [`_WKDownload.mm#L115`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKDownload.mm#L115)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |
