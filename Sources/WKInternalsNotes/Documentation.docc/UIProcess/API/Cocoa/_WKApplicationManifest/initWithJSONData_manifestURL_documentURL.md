@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKApplicationManifest/initWithJSONData(_:manifestURL:documentURL:)``
 
-宣言のみ確認（実装未調査）。
+JSON データからアプリケーションマニフェストを生成する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+JSON を UTF-8 文字列に変換し、`ApplicationManifestParser::parseWithValidation` で検証付き解析を行う。変換や解析に失敗した場合は `nil` を返す。
 
 ## References
 - [`_WKApplicationManifest.h#L73`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKApplicationManifest.h#L73)
+- [`_WKApplicationManifest.mm#L244`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKApplicationManifest.mm#L244)
+- [`_WKApplicationManifest.mm#L253`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKApplicationManifest.mm#L253)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |

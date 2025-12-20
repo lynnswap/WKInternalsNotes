@@ -1,23 +1,22 @@
 # ``WKInternalsNotes/_WKApplicationManifestIcon/sizes``
 
-宣言のみ確認（実装未調査）。
+アイコンサイズの配列を返す。
 
 ## Objective-C Declaration
 ```objective-c
 @property (nonatomic, readonly, copy) NSArray<NSString *> *sizes;
 ```
 
-## Default Value
-未調査（初期化経路の確認が必要）。
-
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`initWithCoreIcon:` で `icon->sizes` を `NSArray<NSString *>` に変換して保持し、そのまま返す。
 
 ## References
 - [`_WKApplicationManifest.h#L110`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKApplicationManifest.h#L110)
+- [`_WKApplicationManifest.mm#L121`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKApplicationManifest.mm#L121)
+- [`_WKApplicationManifest.mm#L146`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKApplicationManifest.mm#L146)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |

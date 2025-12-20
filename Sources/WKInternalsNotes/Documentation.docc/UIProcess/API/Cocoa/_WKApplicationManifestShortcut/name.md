@@ -1,23 +1,22 @@
 # ``WKInternalsNotes/_WKApplicationManifestShortcut/name``
 
-宣言のみ確認（実装未調査）。
+ショートカット名を返す。
 
 ## Objective-C Declaration
 ```objective-c
 @property (nonatomic, readonly, copy) NSString *name;
 ```
 
-## Default Value
-未調査（初期化経路の確認が必要）。
-
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`initWithCoreShortcut:` で `shortcut->name` を `NSString` に変換して保持し、そのまま返す。
 
 ## References
-- [`_WKApplicationManifest.h#L77`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKApplicationManifest.h#L77)
+- [`_WKApplicationManifest.h#L119`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKApplicationManifest.h#L119)
+- [`_WKApplicationManifest.mm#L194`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKApplicationManifest.mm#L194)
+- [`_WKApplicationManifest.mm#L214`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKApplicationManifest.mm#L214)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |

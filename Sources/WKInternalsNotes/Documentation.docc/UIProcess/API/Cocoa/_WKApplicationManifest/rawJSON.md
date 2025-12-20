@@ -1,23 +1,21 @@
 # ``WKInternalsNotes/_WKApplicationManifest/rawJSON``
 
-宣言のみ確認（実装未調査）。
+マニフェストの生 JSON 文字列を返す。
 
 ## Objective-C Declaration
 ```objective-c
 @property (nonatomic, readonly, nullable, copy) NSString *rawJSON;
 ```
 
-## Default Value
-未調査（初期化経路の確認が必要）。
-
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`ApplicationManifest` の `rawJSON` を `NSString` に変換して返す（`null` の場合は `nil`）。
 
 ## References
 - [`_WKApplicationManifest.h#L75`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKApplicationManifest.h#L75)
+- [`_WKApplicationManifest.mm#L367`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKApplicationManifest.mm#L367)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |

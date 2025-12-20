@@ -1,23 +1,22 @@
 # ``WKInternalsNotes/_WKApplicationManifest/icons``
 
-宣言のみ確認（実装未調査）。
+アイコン一覧を返す。
 
 ## Objective-C Declaration
 ```objective-c
 @property (nonatomic, readonly, copy) NSArray<_WKApplicationManifestIcon *> *icons WK_API_AVAILABLE(macos(13.0), ios(16.0));
 ```
 
-## Default Value
-未調査（初期化経路の確認が必要）。
-
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`ApplicationManifest` のアイコン配列を `_WKApplicationManifestIcon` の配列として生成して返す。
 
 ## References
 - [`_WKApplicationManifest.h#L87`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKApplicationManifest.h#L87)
+- [`_WKApplicationManifest.mm#L484`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKApplicationManifest.mm#L484)
+- [`_WKApplicationManifest.mm#L486`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKApplicationManifest.mm#L486)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |

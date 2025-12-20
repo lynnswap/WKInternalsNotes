@@ -1,23 +1,21 @@
 # ``WKInternalsNotes/_WKApplicationManifest/startURL``
 
-宣言のみ確認（実装未調査）。
+起動 URL を返す。
 
 ## Objective-C Declaration
 ```objective-c
 @property (nonatomic, readonly, copy) NSURL *startURL;
 ```
 
-## Default Value
-未調査（初期化経路の確認が必要）。
-
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`ApplicationManifest` の `startURL` を `NSURL` に変換して返す。
 
 ## References
 - [`_WKApplicationManifest.h#L83`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKApplicationManifest.h#L83)
+- [`_WKApplicationManifest.mm#L418`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKApplicationManifest.mm#L418)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |
