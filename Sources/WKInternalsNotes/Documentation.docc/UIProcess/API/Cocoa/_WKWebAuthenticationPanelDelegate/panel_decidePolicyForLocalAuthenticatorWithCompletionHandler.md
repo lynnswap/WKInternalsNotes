@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebAuthenticationPanelDelegate/panel(_:decidePolicyForLocalAuthenticatorWithCompletionHandler:)``
 
-宣言のみ確認（実装未調査）。
+ローカル認証器の利用可否ポリシーを決定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WebAuthenticationPanelClient::decidePolicyForLocalAuthenticator` から呼ばれる。delegate が未設定または未実装の場合は `LocalAuthenticatorPolicy::Disallow` を返す。実装済みの場合は `CompletionHandlerCallChecker` を使って一度だけ完了させ、`_WKLocalAuthenticatorPolicy` を内部列挙に変換して返す。
 
 ## References
-- [`_WKWebAuthenticationPanel.h#L118`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebAuthenticationPanel.h#L118)
+- [`_WKWebAuthenticationPanel.h#L125`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebAuthenticationPanel.h#L125)
+- [`WebAuthenticationPanelClient.mm#L237`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/WebAuthentication/Cocoa/WebAuthenticationPanelClient.mm#L237)
+- [`WebAuthenticationPanelClient.mm#L255`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/WebAuthentication/Cocoa/WebAuthenticationPanelClient.mm#L255)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |
