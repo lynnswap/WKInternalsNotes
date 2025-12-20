@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebPushMessage/partition``
 
-宣言のみ確認（実装未調査）。
+プッシュメッセージのパーティション識別子を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+内部の `WebPushMessage` が保持する値を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`API::WebPushMessage` の `partition()` を `NSString` に変換して返す。
 
 ## References
 - [`_WKWebPushMessage.h#L38`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebPushMessage.h#L38)
+- [`_WKWebPushMessage.mm#L56`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebPushMessage.mm#L56)
+- [`_WKWebPushMessage.mm#L58`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebPushMessage.mm#L58)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |

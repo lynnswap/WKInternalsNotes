@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebPushMessage/data``
 
-宣言のみ確認（実装未調査）。
+プッシュメッセージの payload データを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,19 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+データが存在しない場合は `nil` を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`API::WebPushMessage` の `data()` を `NSData` に変換して返す。
 
 ## References
 - [`_WKWebPushMessage.h#L37`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebPushMessage.h#L37)
+- [`_WKWebPushMessage.mm#L43`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebPushMessage.mm#L43)
+- [`_WKWebPushMessage.mm#L45`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebPushMessage.mm#L45)
+- [`_WKWebPushMessage.mm#L46`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebPushMessage.mm#L46)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |

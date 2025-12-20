@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebPushMessage/scopeURL``
 
-宣言のみ確認（実装未調査）。
+プッシュメッセージの scope URL を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+内部の `WebPushMessage` が保持する scope から生成される。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`API::WebPushMessage` の `scope()` を `NSURL` に変換して返す。
 
 ## References
 - [`_WKWebPushMessage.h#L36`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebPushMessage.h#L36)
+- [`_WKWebPushMessage.mm#L51`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebPushMessage.mm#L51)
+- [`_WKWebPushMessage.mm#L53`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebPushMessage.mm#L53)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |
