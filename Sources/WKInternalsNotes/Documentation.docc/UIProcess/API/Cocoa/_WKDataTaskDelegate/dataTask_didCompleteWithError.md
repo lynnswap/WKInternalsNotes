@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKDataTaskDelegate/dataTask(_:didCompleteWithError:)``
 
-宣言のみ確認（実装未調査）。
+タスク完了を通知する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+完了時に `NSError` を渡して通知し、delegate 参照を `nil` にして解放する。
 
 ## References
-- [`_WKDataTaskDelegate.h#L47`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKDataTaskDelegate.h#L47)
+- [`_WKDataTaskDelegate.h#L53`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKDataTaskDelegate.h#L53)
+- [`_WKDataTask.mm#L111`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKDataTask.mm#L111)
+- [`_WKDataTask.mm#L117`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKDataTask.mm#L117)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |

@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKDataTaskDelegate/dataTask(_:didReceiveData:)``
 
-宣言のみ確認（実装未調査）。
+受信データを通知する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`std::span` で受け取ったデータを `NSData` に変換して delegate に渡す。
 
 ## References
-- [`_WKDataTaskDelegate.h#L47`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKDataTaskDelegate.h#L47)
+- [`_WKDataTaskDelegate.h#L52`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKDataTaskDelegate.h#L52)
+- [`_WKDataTask.mm#L103`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKDataTask.mm#L103)
+- [`_WKDataTask.mm#L108`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKDataTask.mm#L108)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |

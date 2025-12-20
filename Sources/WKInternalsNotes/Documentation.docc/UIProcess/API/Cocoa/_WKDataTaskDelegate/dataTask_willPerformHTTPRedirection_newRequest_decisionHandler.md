@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKDataTaskDelegate/dataTask(_:willPerformHTTPRedirection:newRequest:decisionHandler:)``
 
-宣言のみ確認（実装未調査）。
+リダイレクト可否を delegate で決定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+delegate が未実装の場合は `Allow` として扱う。実装されている場合は `_WKDataTaskRedirectPolicy` を `bool` に変換して処理する。
 
 ## References
-- [`_WKDataTaskDelegate.h#L47`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKDataTaskDelegate.h#L47)
+- [`_WKDataTaskDelegate.h#L50`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKDataTaskDelegate.h#L50)
+- [`_WKDataTask.mm#L75`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKDataTask.mm#L75)
+- [`_WKDataTask.mm#L81`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKDataTask.mm#L81)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |
