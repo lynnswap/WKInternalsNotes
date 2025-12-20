@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebAuthenticationPanel/exportLocalAuthenticatorCredentialWithGroupAndID(_:credential:error:)``
 
-宣言のみ確認（実装未調査）。
+指定した access group の credential を CBOR 形式でエクスポートする。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+Keychain から秘密鍵と属性を取得し、`privateKey`/`keyType`/`keySize`/`relyingParty`/`applicationTag` を含む CBOR マップを組み立てて返す。取得に失敗した場合は `WKErrorCredentialNotFound` または `WKErrorMalformedCredential` を設定する。
 
 ## References
 - [`_WKWebAuthenticationPanel.h#L145`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebAuthenticationPanel.h#L145)
+- [`_WKWebAuthenticationPanel.mm#L736`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebAuthenticationPanel.mm#L736)
+- [`_WKWebAuthenticationPanel.mm#L805`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebAuthenticationPanel.mm#L805)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |

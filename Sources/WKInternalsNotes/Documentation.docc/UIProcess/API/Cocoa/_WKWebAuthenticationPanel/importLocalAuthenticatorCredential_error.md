@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebAuthenticationPanel/importLocalAuthenticatorCredential(_:error:)``
 
-宣言のみ確認（実装未調査）。
+credential blob をインポートして credentialID を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`importLocalAuthenticatorWithAccessGroup:credential:error:` を既定の access group（`LocalAuthenticatorAccessGroup`）で呼び出す。
 
 ## References
 - [`_WKWebAuthenticationPanel.h#L146`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebAuthenticationPanel.h#L146)
+- [`_WKWebAuthenticationPanel.mm#L594`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebAuthenticationPanel.mm#L594)
+- [`_WKWebAuthenticationPanel.mm#L596`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebAuthenticationPanel.mm#L596)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |
