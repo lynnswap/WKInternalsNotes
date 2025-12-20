@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKNumberPadViewController/didSelectKey(_:)``
 
-宣言のみ確認（実装未調査）。
+キー入力を処理する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_handleKeyPress:` に委譲し、入力テキストや確定操作を処理する。
 
 ## References
 - [`WKNumberPadViewController.h#L34`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKNumberPadViewController.h#L34)
+- [`WKNumberPadViewController.mm#L139`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKNumberPadViewController.mm#L139)
+- [`WKNumberPadViewController.mm#L141`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKNumberPadViewController.mm#L141)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |

@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKNumberPadViewController/initWithDelegate(_:initialText:inputMode:)``
 
-宣言のみ確認（実装未調査）。
+初期テキストと入力モードを指定して初期化する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`[super initWithDelegate:]` が成功した場合、`initialText` の可変コピーを保持し、`_inputMode` を設定する。`_shouldDismissWithFadeAnimation` は `NO` に初期化される。
 
 ## References
 - [`WKNumberPadViewController.h#L33`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKNumberPadViewController.h#L33)
+- [`WKNumberPadViewController.mm#L61`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKNumberPadViewController.mm#L61)
+- [`WKNumberPadViewController.mm#L68`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKNumberPadViewController.mm#L68)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |

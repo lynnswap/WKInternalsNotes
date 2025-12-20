@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKNumberPadViewController/inputMode``
 
-宣言のみ確認（実装未調査）。
+数値入力モードを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+初期化時に渡された `inputMode` を保持する。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`initWithDelegate:initialText:inputMode:` で設定された `_inputMode` を返す。
 
 ## References
-- [`WKNumberPadViewController.h#L33`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKNumberPadViewController.h#L33)
+- [`WKNumberPadViewController.h#L36`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKNumberPadViewController.h#L36)
+- [`WKNumberPadViewController.mm#L67`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKNumberPadViewController.mm#L67)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |
