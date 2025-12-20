@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKTextPreview/initWithSnapshotImage(_:presentationFrame:)``
 
-宣言のみ確認（実装未調査）。
+スナップショット画像と表示フレームを設定して初期化する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`[self init]` が失敗した場合は `nil` を返す。成功時は `snapshotImage` を保持し、`presentationFrame` を `_presentationFrame` に設定する。
 
 ## References
 - [`_WKTextPreview.h#L38`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextPreview.h#L38)
+- [`_WKTextPreview.mm#L34`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextPreview.mm#L34)
+- [`_WKTextPreview.mm#L40`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextPreview.mm#L40)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |

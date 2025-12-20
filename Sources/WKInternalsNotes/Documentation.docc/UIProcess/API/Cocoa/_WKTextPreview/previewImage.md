@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKTextPreview/previewImage``
 
-宣言のみ確認（実装未調査）。
+プレビュー画像を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+初期化時に渡された `snapshotImage` を保持する。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`initWithSnapshotImage:presentationFrame:` で保持した `_previewImage` をそのまま返す。
 
 ## References
 - [`_WKTextPreview.h#L33`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextPreview.h#L33)
+- [`_WKTextPreview.mm#L39`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextPreview.mm#L39)
+- [`_WKTextPreview.mm#L45`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextPreview.mm#L45)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |
