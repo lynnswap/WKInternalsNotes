@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebAuthenticationPanel/userName``
 
-宣言のみ確認（実装未調査）。
+認証対象ユーザー名を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+内部の `WebAuthenticationPanel` が保持する user name に依存する。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WebAuthenticationPanel::userName()` を `NSString` に変換して返す。
 
 ## References
 - [`_WKWebAuthenticationPanel.h#L179`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebAuthenticationPanel.h#L179)
+- [`_WKWebAuthenticationPanel.mm#L254`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebAuthenticationPanel.mm#L254)
+- [`_WKWebAuthenticationPanel.mm#L256`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebAuthenticationPanel.mm#L256)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |

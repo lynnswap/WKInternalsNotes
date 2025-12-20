@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebAuthenticationPanel/transports``
 
-宣言のみ確認（実装未調査）。
+対応するトランスポートの集合を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,19 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`_panel->transports()` から初回に生成しキャッシュする。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WebAuthenticationPanel` が提供する transports を `_WKWebAuthenticationTransport` に変換して `NSSet` に詰める。初回生成後は `_transports` を返す。
 
 ## References
 - [`_WKWebAuthenticationPanel.h#L177`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebAuthenticationPanel.h#L177)
+- [`_WKWebAuthenticationPanel.mm#L209`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebAuthenticationPanel.mm#L209)
+- [`_WKWebAuthenticationPanel.mm#L214`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebAuthenticationPanel.mm#L214)
+- [`_WKWebAuthenticationPanel.mm#L217`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebAuthenticationPanel.mm#L217)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |
