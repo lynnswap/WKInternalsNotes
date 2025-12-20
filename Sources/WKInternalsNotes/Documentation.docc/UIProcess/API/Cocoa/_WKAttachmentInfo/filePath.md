@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKAttachmentInfo/filePath``
 
-宣言のみ確認（実装未調査）。
+添付のファイルパスを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,19 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+初期化時に `attachment.filePath()` から取得した値を保持する。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`initWithAttachment:` で保持した `_filePath` をそのまま返す。
 
 ## References
 - [`_WKAttachment.h#L45`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKAttachment.h#L45)
+- [`_WKAttachment.mm#L61`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKAttachment.mm#L61)
+- [`_WKAttachment.mm#L86`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKAttachment.mm#L86)
+- [`_WKAttachment.mm#L88`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKAttachment.mm#L88)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |

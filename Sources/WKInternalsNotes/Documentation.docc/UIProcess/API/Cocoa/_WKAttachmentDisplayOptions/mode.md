@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKAttachmentDisplayOptions/mode``
 
-宣言のみ確認（実装未調査）。
+添付の表示モードを指定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+明示的な初期化は行われず、生成直後はゼロ初期化状態のままになる。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+実装は空で、プロパティの保持以外の処理は行わない。
 
 ## References
 - [`_WKAttachment.h#L38`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKAttachment.h#L38)
+- [`_WKAttachment.mm#L45`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKAttachment.mm#L45)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |

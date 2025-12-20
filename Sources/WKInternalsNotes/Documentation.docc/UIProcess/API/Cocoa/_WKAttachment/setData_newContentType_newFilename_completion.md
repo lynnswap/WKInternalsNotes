@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKAttachment/setData(_:newContentType:newFilename:completion:)``
 
-宣言のみ確認（実装未調査）。
+データから添付内容を更新し、必要ならファイル名も設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,17 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`data` から `NSFileWrapper` を生成し、`newFilename` が指定されている場合は `preferredFilename` を設定する。最後に `setFileWrapper:contentType:completion:` を呼び出して更新する。
 
 ## References
 - [`_WKAttachment.h#L62`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKAttachment.h#L62)
+- [`_WKAttachment.mm#L173`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKAttachment.mm#L173)
+- [`_WKAttachment.mm#L175`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKAttachment.mm#L175)
+- [`_WKAttachment.mm#L176`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKAttachment.mm#L176)
+- [`_WKAttachment.mm#L178`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKAttachment.mm#L178)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |
