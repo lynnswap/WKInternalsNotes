@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKImagePreviewViewController/initWithCGImage(_:defaultActions:elementInfo:)``
 
-宣言のみ確認（実装未調査）。
+CGImage からプレビュー表示用のビューコントローラを初期化する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,17 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`initWithNibName:bundle:` を `nil` で初期化した後、`_image` を保持し、`UIImageView` を生成して `UIViewContentModeScaleAspectFill` を設定する。`CGImage` から `UIImage` を作成して設定し、画面サイズに収まるよう `_scaleSizeWithinSize` で算出したサイズを `preferredContentSize` と `imageView` の frame に反映する。最後に `actions` と `elementInfo` を `_imageActions` / `_activatedElementInfo` として保持する。
 
 ## References
 - [`WKImagePreviewViewController.h#L41`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/WKImagePreviewViewController.h#L41)
+- [`WKImagePreviewViewController.mm#L47`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/WKImagePreviewViewController.mm#L47)
+- [`WKImagePreviewViewController.mm#L55`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/WKImagePreviewViewController.mm#L55)
+- [`WKImagePreviewViewController.mm#L64`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/WKImagePreviewViewController.mm#L64)
+- [`WKImagePreviewViewController.mm#L68`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/WKImagePreviewViewController.mm#L68)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |
