@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKDownloadDelegate/_download(_:decideDestinationWithSuggestedFilename:allowOverwrite:)``
 
-宣言のみ確認（実装未調査）。
+ダウンロード先を同期的に決定する（deprecated）。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`LegacyDownloadClient` はこの旧 API を優先的に呼び出し、`allowOverwrite` と返却されたパスを completion handler に変換して渡す。
 
 ## References
-- [`_WKDownloadDelegate.h#L37`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKDownloadDelegate.h#L37)
+- [`_WKDownloadDelegate.h#L52`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKDownloadDelegate.h#L52)
+- [`LegacyDownloadClient.mm#L147`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/LegacyDownloadClient.mm#L147)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |

@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKDownloadDelegate/_download(_:shouldDecodeSourceDataOfMIMEType:)``
 
-宣言のみ確認（実装未調査）。
+ソースデータをデコードするかどうかを問い合わせる。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`LegacyDownloadClient` は selector の有無をチェックするだけで、UIProcess/Cocoa からの呼び出し箇所は見当たらない。
 
 ## References
-- [`_WKDownloadDelegate.h#L37`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKDownloadDelegate.h#L37)
+- [`_WKDownloadDelegate.h#L50`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKDownloadDelegate.h#L50)
+- [`LegacyDownloadClient.mm#L69`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/LegacyDownloadClient.mm#L69)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |

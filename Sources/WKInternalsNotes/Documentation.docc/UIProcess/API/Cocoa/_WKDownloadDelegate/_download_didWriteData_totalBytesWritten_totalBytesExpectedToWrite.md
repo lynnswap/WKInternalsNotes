@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKDownloadDelegate/_download(_:didWriteData:totalBytesWritten:totalBytesExpectedToWrite:)``
 
-宣言のみ確認（実装未調査）。
+書き込み済みバイト数の詳細を通知する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`LegacyDownloadClient::didReceiveData` で優先的に呼び出され、`didReceiveData:` より新しい詳細通知として扱われる。
 
 ## References
-- [`_WKDownloadDelegate.h#L37`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKDownloadDelegate.h#L37)
+- [`_WKDownloadDelegate.h#L42`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKDownloadDelegate.h#L42)
+- [`LegacyDownloadClient.mm#L86`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/LegacyDownloadClient.mm#L86)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |
