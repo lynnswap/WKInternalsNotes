@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKModelView/preview``
 
-宣言のみ確認（実装未調査）。
+ASVInlinePreview を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+プレビュー生成前は `nil`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`createPreview` で `ASVInlinePreview` を生成した後に `_preview` を保持し、このプロパティで返す。
 
 ## References
 - [`WKModelView.h#L48`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKModelView.h#L48)
+- [`WKModelView.mm#L60`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKModelView.mm#L60)
+- [`WKModelView.mm#L129`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKModelView.mm#L129)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |
