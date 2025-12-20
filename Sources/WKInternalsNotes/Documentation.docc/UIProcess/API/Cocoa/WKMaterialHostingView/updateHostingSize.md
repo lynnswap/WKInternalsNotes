@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKMaterialHostingView/updateHostingSize(_:)``
 
-宣言のみ確認（実装未調査）。
+ホスティングビューのサイズを更新する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_hostingView` の frame を `(0, 0, size.width, size.height)` に設定する。
 
 ## References
 - [`RemoteLayerTreeViews.h#L79`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/RemoteLayerTree/ios/RemoteLayerTreeViews.h#L79)
+- [`RemoteLayerTreeViews.mm#L421`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/RemoteLayerTree/ios/RemoteLayerTreeViews.mm#L421)
+- [`RemoteLayerTreeViews.mm#L423`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/RemoteLayerTree/ios/RemoteLayerTreeViews.mm#L423)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |
