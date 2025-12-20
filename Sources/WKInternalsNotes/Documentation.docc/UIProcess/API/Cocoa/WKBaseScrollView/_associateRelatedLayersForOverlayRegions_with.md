@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKBaseScrollView/_associateRelatedLayersForOverlayRegions(_:with:)``
 
-宣言のみ確認（実装未調査）。
+オーバーレイ領域に関連するレイヤーを関連付ける。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+OSS の実装では no-op。内部追加実装が存在する場合はそちらが利用される。
 
 ## References
 - [`WKBaseScrollView.h#L69`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKBaseScrollView.h#L69)
+- [`WKBaseScrollView.mm#L265`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKBaseScrollView.mm#L265)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |

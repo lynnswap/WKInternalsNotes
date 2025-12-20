@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKBaseScrollView/axesToPreventMomentumScrolling``
 
-宣言のみ確認（実装未調査）。
+モメンタムスクロールを抑止する軸を示す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,19 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`initWithFrame:` で `UIAxisNeither` に初期化される。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_updatePanGestureToPreventScrolling` で translation が調整された軸を OR で蓄積し、次回のパン開始時にリセットされる。
 
 ## References
 - [`WKBaseScrollView.h#L56`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKBaseScrollView.h#L56)
+- [`WKBaseScrollView.mm#L136`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKBaseScrollView.mm#L136)
+- [`WKBaseScrollView.mm#L213`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKBaseScrollView.mm#L213)
+- [`WKBaseScrollView.mm#L287`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKBaseScrollView.mm#L287)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |

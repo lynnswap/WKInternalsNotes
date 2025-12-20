@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKBaseScrollView/updateInteractiveScrollVelocity()``
 
-宣言のみ確認（実装未調査）。
+インタラクティブスクロール速度の更新を行う。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`tracking` または `decelerating` でない場合は何もしない。スクロール中は `contentOffset` を `_scrollingDeltaWindow` に記録する。
 
 ## References
 - [`WKBaseScrollView.h#L59`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKBaseScrollView.h#L59)
+- [`WKBaseScrollView.mm#L244`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKBaseScrollView.mm#L244)
+- [`WKBaseScrollView.mm#L249`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKBaseScrollView.mm#L249)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |

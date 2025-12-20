@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKBaseScrollView/overlayRegionRects``
 
-宣言のみ確認（実装未調査）。
+オーバーレイ領域の矩形セットを返す（テスト用）。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+空の `HashSet`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+テスト用にオーバーレイ領域を参照するためのプロパティ。OSS では更新系メソッドが no-op のため、内部追加実装が無い限り空のままになる。
 
 ## References
 - [`WKBaseScrollView.h#L63`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKBaseScrollView.h#L63)
+- [`WKBaseScrollView.mm#L118`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKBaseScrollView.mm#L118)
+- [`WKWebViewTestingIOS.mm#L257`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/ios/WKWebViewTestingIOS.mm#L257)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |
