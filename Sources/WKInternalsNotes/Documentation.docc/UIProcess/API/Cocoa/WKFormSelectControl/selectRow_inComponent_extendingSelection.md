@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKFormSelectControl/selectRow(_:inComponent:extendingSelection:)``
 
-宣言のみ確認（実装未調査）。
+テスト用に選択行の変更を委譲する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`control` が `selectRow:inComponent:extendingSelection:` に応答できる場合のみ、`WKSelectTesting` としてそのまま転送する。
 
 ## References
 - [`WKFormSelectControl.h#L43`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFormSelectControl.h#L43)
+- [`WKFormSelectControl.mm#L103`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFormSelectControl.mm#L103)
+- [`WKFormSelectControl.mm#L105`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFormSelectControl.mm#L105)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |

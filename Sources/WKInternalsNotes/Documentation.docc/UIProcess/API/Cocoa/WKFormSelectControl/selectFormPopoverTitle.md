@@ -1,23 +1,22 @@
 # ``WKInternalsNotes/WKFormSelectControl/selectFormPopoverTitle``
 
-宣言のみ確認（実装未調査）。
+ポップオーバー表示時のタイトルを返す。
 
 ## Objective-C Declaration
 ```objective-c
 @property (nonatomic, readonly) NSString *selectFormPopoverTitle;
 ```
 
-## Default Value
-未調査（初期化経路の確認が必要）。
-
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`control` が `WKSelectPopover` の場合は `tableViewController.title` を返す。該当しない場合は `nil` を返す。
 
 ## References
 - [`WKFormSelectControl.h#L45`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFormSelectControl.h#L45)
+- [`WKFormSelectControl.mm#L109`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFormSelectControl.mm#L109)
+- [`WKFormSelectControl.mm#L111`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFormSelectControl.mm#L111)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-20 |
