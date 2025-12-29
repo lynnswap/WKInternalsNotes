@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKObservablePageState/serverTrust``
 
-宣言のみ確認（実装未調査）。
+現在のページのサーバ証明書（`SecTrustRef`）を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+初期値は `nil`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+KVO 非対応。getter は `pageLoadState().certificateInfo().trust().get()` を返す。
 
 ## References
+- [`WKPagePrivateMac.mm#L116`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/C/mac/WKPagePrivateMac.mm#L116)
+- [`PageLoadState.h#L248`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/PageLoadState.h#L248)
 - [`WKPagePrivateMac.h#L52`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/C/mac/WKPagePrivateMac.h#L52)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
