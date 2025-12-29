@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKARPresentationSession/startFrame()``
 
-宣言のみ確認（実装未調査）。
+フレーム開始処理を行う。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`currentFrame` を取得できない場合は 0 を返す。取得できた場合は `capturedImage` と `nextDrawable` を取得し、`renderingFrameIndex` を更新して 1 を返す。
 
 ## References
+- [`WKARPresentationSession.mm#L195`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/XR/ios/WKARPresentationSession.mm#L195)
 - [`WKARPresentationSession.h#L55`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/XR/ios/WKARPresentationSession.h#L55)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
