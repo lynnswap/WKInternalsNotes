@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKObservablePageState/title``
 
-宣言のみ確認（実装未調査）。
+ページのタイトルを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,19 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+初期値は `nil`（`PageLoadState` のタイトル未設定時）。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+getter は `PageLoadState::title()` を `NSString` 化して返す。`titleFromBrowsingWarning` が設定されている場合はそれを優先する。
 
 ## References
+- [`WKPagePrivateMac.mm#L86`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/C/mac/WKPagePrivateMac.mm#L86)
+- [`PageLoadState.cpp#L364`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/PageLoadState.cpp#L364)
+- [`PageLoadState.h#L236`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/PageLoadState.h#L236)
 - [`WKPagePrivateMac.h#L43`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/C/mac/WKPagePrivateMac.h#L43)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
