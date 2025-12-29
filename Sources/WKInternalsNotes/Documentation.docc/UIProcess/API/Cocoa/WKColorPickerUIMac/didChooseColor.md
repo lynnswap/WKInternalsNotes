@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKColorPickerUIMac/didChooseColor(_:)``
 
-宣言のみ確認（実装未調査）。
+ユーザーが色を選択したときの通知を処理する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKColorPopoverMac` 実装では `sender` が `WKPopoverColorWell` でない場合は無視する。プログラム変更の場合はフラグのみ戻して終了し、ユーザー変更なら `WebColorPickerMac` に選択色を通知する。
 
 ## References
 - [`WebColorPickerMac.h#L52`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/mac/WebColorPickerMac.h#L52)
+- [`WebColorPickerMac.mm#L208`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/mac/WebColorPickerMac.mm#L208)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
