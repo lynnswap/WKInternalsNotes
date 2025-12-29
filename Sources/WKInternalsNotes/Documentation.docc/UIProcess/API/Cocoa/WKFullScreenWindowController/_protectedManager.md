@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKFullScreenWindowController/_protectedManager()``
 
-宣言のみ確認（実装未調査）。
+`WebPageProxy` の `fullScreenManager()` を `RefPtr` で返し、取得したマネージャの寿命を保持する。ページが無い場合は `nullptr` 相当を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,13 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_page` が有効なときだけ `fullScreenManager()` を返し、無効なら空の `RefPtr` を返す。`_manager` と同じ取得経路だが、戻り値の型で寿命を延長する点が異なる。
 
 ## References
-- [`WKFullScreenWindowController.mm#L193`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/mac/WKFullScreenWindowController.mm#L193)
+- [`WKFullScreenWindowController.mm#L925`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/mac/WKFullScreenWindowController.mm#L925)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
