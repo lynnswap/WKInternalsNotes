@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKTextExtractionInteraction/replaceAll``
 
-宣言のみ確認（実装未調査）。
+テキスト置換を全置換にするかを設定/取得する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`NO`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+内部の `replaceAll` フラグを保持する。初期値は `NO`。
 
 ## References
+- [`_WKTextExtraction.mm#L57`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtraction.mm#L57)
 - [`_WKTextExtraction.h#L85`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtraction.h#L85)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
