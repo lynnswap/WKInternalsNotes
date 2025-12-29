@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKDigitalCredentialsPicker/dismissWithCompletionHandler(_:)``
 
-宣言のみ確認（実装未調査）。
+デジタルクレデンシャル UI を閉じ、完了ハンドラに `true` を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`dismiss` を呼び出して UI を取り下げた後、`completionHandler(true)` を実行する。
 
 ## References
 - [`WKDigitalCredentialsPicker.h#L65`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/DigitalCredentials/WKDigitalCredentialsPicker.h#L65)
+- [`WKDigitalCredentialsPicker.mm#L292`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/DigitalCredentials/WKDigitalCredentialsPicker.mm#L292)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
