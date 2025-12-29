@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKProcessPoolConfiguration/presentingApplicationProcessToken``
 
-宣言のみ確認（実装未調査）。
+提示元プロセスの `audit_token_t` を設定/取得する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+既定値は未設定（空の token）。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+setter は `ProcessPoolConfiguration` に token を保存し、getter は未設定時にゼロ初期化の `audit_token_t` を返す。
 
 ## References
-- [`_WKProcessPoolConfiguration.h#L68`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKProcessPoolConfiguration.h#L68)
+- [`_WKProcessPoolConfiguration.mm#L224`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKProcessPoolConfiguration.mm#L224)
+- [`_WKProcessPoolConfiguration.mm#L229`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKProcessPoolConfiguration.mm#L229)
+- [`APIProcessPoolConfiguration.h#L212`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/APIProcessPoolConfiguration.h#L212)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
