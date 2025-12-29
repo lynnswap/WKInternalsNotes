@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKActionSheetAssistant/showDataDetectorsUIForPositionInformation(_:)``
 
-宣言のみ確認（実装未調査）。
+データ検出結果に基づいてUIを提示する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+DATA_DETECTION 有効時のみ動作する。デリゲートがなければ終了し、`positionInformation` を保持した上で `DataDetection::canBePresentedByDataDetectors` を満たすURLのみ処理する。即時実行可能な場合はデフォルトアクションを実行し、それ以外はアクション一覧を取得してコンテキストメニュー（対応環境）またはアクションシートとして表示する。
 
 ## References
 - [`WKActionSheetAssistant.h#L115`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKActionSheetAssistant.h#L115)
+- [`WKActionSheetAssistant.mm#L768`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKActionSheetAssistant.mm#L768)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
