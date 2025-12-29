@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKWebInspectorPreferenceObserver/observeValueForKeyPath(_:ofObject:change:context:)``
 
-宣言のみ確認（実装未調査）。
+設定変更に応じてリモートインスペクタを有効化する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+メインランループにディスパッチし、すべての `WebProcessPool` とプロセスに対して `enableRemoteInspectorIfNeeded()` を呼ぶ。
 
 ## References
 - [`WebInspectorPreferenceObserver.h#L28`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/WebInspectorPreferenceObserver.h#L28)
+- [`WebInspectorPreferenceObserver.mm#L71`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/WebInspectorPreferenceObserver.mm#L71)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
