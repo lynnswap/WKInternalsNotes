@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKViewLayoutStrategy/invalidate()``
 
-宣言のみ確認（実装未調査）。
+保持しているページ/ビュー参照を破棄する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_page` と `_webViewImpl` を `nullptr` にし、`_view` を `nil` にする。
 
 ## References
+- [`WKViewLayoutStrategy.mm#L90`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/mac/WKViewLayoutStrategy.mm#L90)
 - [`WKViewLayoutStrategy.h#L52`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/mac/WKViewLayoutStrategy.h#L52)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
