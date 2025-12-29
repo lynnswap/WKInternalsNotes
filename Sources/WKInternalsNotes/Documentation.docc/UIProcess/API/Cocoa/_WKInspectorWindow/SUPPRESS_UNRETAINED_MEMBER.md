@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKInspectorWindow/SUPPRESS_UNRETAINED_MEMBER``
 
-宣言のみ確認（実装未調査）。
+`inspectedWebView` の弱参照宣言に付与された内部向けマクロ。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,10 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`nil`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_WKInspectorWindow` の内部ヘッダで、`inspectedWebView` の `weak` プロパティに `SUPPRESS_UNRETAINED_MEMBER` を付けて警告を抑制するための宣言。実装は自動合成。
 
 ## References
 - [`_WKInspectorWindowInternal.h#L35`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKInspectorWindowInternal.h#L35)
@@ -20,4 +20,4 @@
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
