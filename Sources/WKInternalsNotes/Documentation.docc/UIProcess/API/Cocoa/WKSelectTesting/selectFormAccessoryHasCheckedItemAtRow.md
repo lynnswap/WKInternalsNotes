@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKSelectTesting/selectFormAccessoryHasCheckedItemAtRow(_:)``
 
-宣言のみ確認（実装未調査）。
+指定行がチェック状態かを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,15 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+行番号が範囲外の場合は `NO`。コンテキストメニュー利用時は `UIAction` の state を参照する。
 
 ## References
+- [`WKFormSelectPicker.mm#L342`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFormSelectPicker.mm#L342)
+- [`WKFormSelectPicker.mm#L747`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFormSelectPicker.mm#L747)
 - [`WKFormSelectControl.h#L44`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFormSelectControl.h#L44)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
