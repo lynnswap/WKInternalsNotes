@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKProcessPoolConfiguration/shouldTakeUIBackgroundAssertion``
 
-宣言のみ確認（実装未調査）。
+iOS で UIProcess がバックグラウンドアサーションを取得するかを制御する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+既定値は `true`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`PLATFORM(IOS_FAMILY)` でのみ利用され、getter/setter は `ProcessPoolConfiguration` の `shouldTakeUIBackgroundAssertion` を直接操作する。
 
 ## References
-- [`_WKProcessPoolConfiguration.h#L65`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKProcessPoolConfiguration.h#L65)
+- [`_WKProcessPoolConfiguration.mm#L327`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKProcessPoolConfiguration.mm#L327)
+- [`_WKProcessPoolConfiguration.mm#L332`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKProcessPoolConfiguration.mm#L332)
+- [`APIProcessPoolConfiguration.h#L185`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/APIProcessPoolConfiguration.h#L185)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
