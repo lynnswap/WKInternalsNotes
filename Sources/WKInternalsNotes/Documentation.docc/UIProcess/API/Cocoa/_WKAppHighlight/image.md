@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKAppHighlight/image``
 
-宣言のみ確認（実装未調査）。
+ハイライトに関連する画像を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`nil`（`initWithHighlight:text:image:` で設定される）。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+内部で保持している `CocoaImage` をそのまま返す。プラットフォームに応じて `UIImage`/`NSImage` となる。
 
 ## References
 - [`_WKAppHighlight.h#L44`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKAppHighlight.h#L44)
+- [`_WKAppHighlight.mm#L57`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKAppHighlight.mm#L57)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
