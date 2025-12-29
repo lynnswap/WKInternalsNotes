@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKFullScreenWindowController/prefersSceneDimming``
 
-宣言のみ確認（実装未調査）。
+visionOS でシーン暗転を行うべきかを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,16 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+既定は `NO`。設定や動画状態に応じて `YES` になる。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`fullscreenSceneDimmingEnabled` が無効なら常に `NO`。有効な場合は、要素フルスクリーン中の `bestVideo` があれば `playbackSessionModel()->prefersAutoDimming()` の値を返す。
 
 ## References
-- [`WKFullScreenWindowControllerIOS.h#L39`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenWindowControllerIOS.h#L39)
+- [`WKFullScreenWindowControllerIOS.mm#L1977`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenWindowControllerIOS.mm#L1977)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
