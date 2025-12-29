@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKContentWorldConfiguration/name``
 
-宣言のみ確認（実装未調査）。
+コンテンツワールドの名前を設定/取得する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,19 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+未設定の場合は `nil`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+setter で `String` に保持し、getter で `NSString` に変換して返す。`WKContentWorld` 生成時に `sharedWorldWithName` へ渡される。
 
 ## References
+- [`WKContentWorldConfiguration.mm#L35`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKContentWorldConfiguration.mm#L35)
+- [`WKContentWorldConfiguration.mm#L40`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKContentWorldConfiguration.mm#L40)
+- [`WKContentWorld.mm#L101`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKContentWorld.mm#L101)
 - [`_WKContentWorldConfiguration.h#L39`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKContentWorldConfiguration.h#L39)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
