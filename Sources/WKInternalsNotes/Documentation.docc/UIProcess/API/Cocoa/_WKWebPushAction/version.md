@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebPushAction/version``
 
-宣言のみ確認（実装未調査）。
+Web Push アクションのバージョン番号を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,10 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`nil`（辞書から生成した場合に設定される）。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+内部で読み書き可能なプロパティで、`webPushActionWithDictionary:` が `dictionary` から取得した `NSNumber` を設定する。通知応答から生成する経路では設定されない。
 
 ## References
 - [`_WKWebPushAction.h#L45`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebPushAction.h#L45)
@@ -21,4 +21,4 @@
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
