@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKImageAnalysisGestureRecognizerDelegate/imageAnalysisGestureDidFail(_:)``
 
-宣言のみ確認（実装未調査）。
+画像解析ジェスチャ失敗時の後始末を行う。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKContentView` 側の実装では `_endImageAnalysisGestureDeferral:` を呼び出し、ジェスチャ抑制を行わずに終了させる。
 
 ## References
 - [`WKImageAnalysisGestureRecognizer.h#L36`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKImageAnalysisGestureRecognizer.h#L36)
+- [`WKContentViewInteraction.mm#L13308`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L13308)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
