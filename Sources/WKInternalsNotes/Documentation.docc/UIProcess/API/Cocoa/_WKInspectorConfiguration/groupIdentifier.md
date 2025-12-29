@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKInspectorConfiguration/groupIdentifier``
 
-宣言のみ確認（実装未調査）。
+インスペクター関連ページに付与するグループ識別子。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`nil`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`applyToWebViewConfiguration:` と `copyWithZone:` で参照され、指定されている場合に `WKWebViewConfiguration` へ反映される。
 
 ## References
 - [`_WKInspectorConfiguration.h#L61`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKInspectorConfiguration.h#L61)
+- [`_WKInspectorConfiguration.mm#L90`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKInspectorConfiguration.mm#L90)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
