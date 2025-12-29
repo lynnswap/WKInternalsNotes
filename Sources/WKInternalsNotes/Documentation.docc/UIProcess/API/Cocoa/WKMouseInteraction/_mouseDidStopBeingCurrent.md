@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKMouseInteraction/_mouseDidStopBeingCurrent(_:)``
 
-宣言のみ確認（実装未調査）。
+ポインタロック中のマウス切断を処理する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+ロックが有効な場合にデリゲートへ通知し、ポインタロックを終了する。
 
 ## References
 - [`WKMouseInteraction.mm#L73`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKMouseInteraction.mm#L73)
+- [`WKMouseInteraction.mm#L530`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKMouseInteraction.mm#L530)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
