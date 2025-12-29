@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKFullScreenWindowController/requestRestoreFullScreen(_:)``
 
-宣言のみ確認（実装未調査）。
+フルスクリーン復帰をマネージャに要求する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,13 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`NotInFullScreen` 以外の状態では `completionHandler(false)` で終了する。`WebPageProxy` があれば `fullscreenMayReturnToInline` を通知し、`WebFullScreenManagerProxy` に `requestRestoreFullScreen` を転送する。マネージャが無い場合は失敗として終了する。
 
 ## References
-- [`WKFullScreenWindowControllerIOS.h#L52`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenWindowControllerIOS.h#L52)
+- [`WKFullScreenWindowControllerIOS.mm#L1325`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenWindowControllerIOS.mm#L1325)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
