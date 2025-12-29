@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKStylusDeviceObserver/hasStylusDevice``
 
-宣言のみ確認（実装未調査）。
+スタイラス入力が期待されるかどうかを示す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`UIScribbleInteraction.isPencilInputExpected` の値。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+内部 setter では値が変化したときに `WebProcessProxy::notifyHasStylusDeviceChanged` を通知し、タイマーを停止して状態を更新する。公開 API は読み取り専用。
 
 ## References
 - [`WKStylusDeviceObserver.h#L37`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKStylusDeviceObserver.h#L37)
+- [`WKStylusDeviceObserver.mm#L72`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKStylusDeviceObserver.mm#L72)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
