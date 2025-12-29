@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTextInputListViewControllerDelegate/shouldDisplayInputContextViewForListViewController(_:)``
 
-宣言のみ確認（実装未調査）。
+入力コンテキストビューを表示するかを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+真の場合は `inputContextViewForViewController:` が使われ、偽の場合はコンテキストビューを表示しない。
 
 ## References
 - [`WKTextInputListViewController.h#L48`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKTextInputListViewController.h#L48)
+- [`WKTextInputListViewController.mm#L71`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKTextInputListViewController.mm#L71)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
