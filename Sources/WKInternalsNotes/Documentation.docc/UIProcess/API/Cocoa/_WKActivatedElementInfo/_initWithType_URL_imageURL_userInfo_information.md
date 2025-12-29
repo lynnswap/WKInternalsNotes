@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKActivatedElementInfo/_initWithType(_:URL:imageURL:userInfo:information:)``
 
-宣言のみ確認（実装未調査）。
+指定されたURLと画像URL、ユーザー情報で初期化する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`information.image` を渡して下位イニシャライザへ委譲する。
 
 ## References
 - [`_WKActivatedElementInfoInternal.h#L42`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKActivatedElementInfoInternal.h#L42)
+- [`_WKActivatedElementInfo.mm#L129`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKActivatedElementInfo.mm#L129)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
