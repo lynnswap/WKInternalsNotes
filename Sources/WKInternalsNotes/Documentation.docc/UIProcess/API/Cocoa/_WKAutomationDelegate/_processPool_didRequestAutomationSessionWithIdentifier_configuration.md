@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKAutomationDelegate/_processPool(_:didRequestAutomationSessionWithIdentifier:configuration:)``
 
-宣言のみ確認（実装未調査）。
+オートメーションセッションの作成要求を通知する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`AutomationClient::requestAutomationSession` からメインスレッドにディスパッチされ、`sessionCapabilities` を反映した `configuration` を渡して呼び出される。
 
 ## References
 - [`_WKAutomationDelegate.h#L36`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKAutomationDelegate.h#L36)
+- [`AutomationClient.mm#L77`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/AutomationClient.mm#L77)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
