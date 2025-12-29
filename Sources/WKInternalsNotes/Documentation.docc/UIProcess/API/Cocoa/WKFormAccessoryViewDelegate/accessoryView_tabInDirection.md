@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKFormAccessoryViewDelegate/accessoryView(_:tabInDirection:)``
 
-宣言のみ確認（実装未調査）。
+前後の入力要素へ移動する要求を通知する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,16 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKFormAccessoryView` の前後ボタンから呼ばれる。`WKContentViewInteraction` では入力を終了して `focusNextFocusedElement` を実行し、完了後に `reloadInputViews` してフォーカス移動状態を解除する。
 
 ## References
+- [`WKFormAccessoryView.mm#L292`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFormAccessoryView.mm#L292)
+- [`WKFormAccessoryView.mm#L297`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFormAccessoryView.mm#L297)
+- [`WKContentViewInteraction.mm#L6271`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L6271)
 - [`WKFormAccessoryView.h#L41`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFormAccessoryView.h#L41)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
