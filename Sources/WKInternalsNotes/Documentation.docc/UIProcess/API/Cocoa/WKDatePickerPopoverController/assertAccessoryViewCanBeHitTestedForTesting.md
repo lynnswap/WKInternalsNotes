@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKDatePickerPopoverController/assertAccessoryViewCanBeHitTestedForTesting()``
 
-宣言のみ確認（実装未調査）。
+アクセサリービューへのヒットテスト可否を検証する（テスト用）。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`accessoryView` と `viewIfLoaded` の存在を `RELEASE_ASSERT` で確認し、アクセサリービューの中心点がヒットテストで取得できるかを検証する。ヒットテストの結果がアクセサリービュー階層に到達しなければ `RELEASE_ASSERT` で失敗させる。
 
 ## References
 - [`WKDatePickerPopoverController.h#L46`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKDatePickerPopoverController.h#L46)
+- [`WKDatePickerPopoverController.mm#L285`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKDatePickerPopoverController.mm#L285)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
