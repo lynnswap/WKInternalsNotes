@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKFullScreenViewController/configureEnvironmentPickerOrFullscreenVideoButtonView()``
 
-宣言のみ確認（実装未調査）。
+環境ピッカーまたはフルスクリーン動画ボタンの表示を構成する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`ENABLE(LINEAR_MEDIA_PLAYER)` のときのみ動作。設定や `PlaybackSessionModel` の対応状況に応じて、環境ピッカーやフルスクリーン動画ボタンを追加/削除し、delegate に `bestVideoPresentationInterfaceDidChange` を通知する。
 
 ## References
+- [`WKFullScreenViewController.mm#L483`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenViewController.mm#L483)
 - [`WKFullScreenViewController.h#L71`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenViewController.h#L71)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
