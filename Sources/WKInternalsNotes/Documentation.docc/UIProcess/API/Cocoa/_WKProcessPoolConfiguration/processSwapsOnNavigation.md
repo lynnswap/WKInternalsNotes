@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKProcessPoolConfiguration/processSwapsOnNavigation``
 
-宣言のみ確認（実装未調査）。
+ナビゲーション時のプロセススワップを有効/無効にする。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+既定値は `false`（クライアント未設定時は実験機能の値にフォールバック）。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+setter は `setProcessSwapsOnNavigation` を設定し、getter は `processSwapsOnNavigation()` を返す。クライアントが未設定の場合は実験機能側の設定値が使われる。
 
 ## References
-- [`_WKProcessPoolConfiguration.h#L69`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKProcessPoolConfiguration.h#L69)
+- [`_WKProcessPoolConfiguration.mm#L236`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKProcessPoolConfiguration.mm#L236)
+- [`_WKProcessPoolConfiguration.mm#L241`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKProcessPoolConfiguration.mm#L241)
+- [`APIProcessPoolConfiguration.h#L189`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/APIProcessPoolConfiguration.h#L189)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
