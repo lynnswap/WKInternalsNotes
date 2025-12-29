@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKResourceLoadStatisticsFirstParty/new()``
 
-宣言のみ確認（実装未調査）。
+利用不可の生成メソッド。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,7 +8,7 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`NS_UNAVAILABLE` 指定のため使用不可。
 
 ## References
 - [`_WKResourceLoadStatisticsFirstParty.h#L33`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKResourceLoadStatisticsFirstParty.h#L33)
@@ -17,4 +17,4 @@
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
