@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKAutomationSessionDelegate/_automationSession(_:loadWebExtensionWithOptions:resource:completionHandler:)``
 
-宣言のみ確認（実装未調査）。
+Web拡張の読み込みを要求する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`AutomationSessionClient::loadWebExtensionWithOptions` から呼び出され、拡張の識別子を `completionHandler` で返す。デリゲート未実装時は空文字列を返す。
 
 ## References
 - [`_WKAutomationSessionDelegate.h#L63`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKAutomationSessionDelegate.h#L63)
+- [`AutomationSessionClient.mm#L142`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/AutomationSessionClient.mm#L142)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
