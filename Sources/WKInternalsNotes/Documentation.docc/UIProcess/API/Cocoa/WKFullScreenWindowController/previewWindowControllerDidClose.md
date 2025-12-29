@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKFullScreenWindowController/previewWindowControllerDidClose(_:)``
 
-宣言のみ確認（実装未調査）。
+QuickLook プレビューが閉じられた際にフルスクリーン退出を要求する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,13 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+通知元が現在の `_previewWindowController` と一致する場合のみ `requestExitFullScreen` を呼び、その他のインスタンスからの通知は無視する。
 
 ## References
-- [`WKFullScreenWindowControllerIOS.mm#L773`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenWindowControllerIOS.mm#L773)
+- [`WKFullScreenWindowControllerIOS.mm#L2276`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenWindowControllerIOS.mm#L2276)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
