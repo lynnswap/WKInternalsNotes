@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKInspectorDebuggableInfo/targetPlatformName``
 
-宣言のみ確認（実装未調査）。
+デバッグ対象のプラットフォーム名を設定/取得する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`DebuggableInfoData` の初期値に依存する。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`API::DebuggableInfo` の `targetPlatformName` を `NSString` として取得/設定する。
 
 ## References
 - [`_WKInspectorDebuggableInfo.h#L46`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKInspectorDebuggableInfo.h#L46)
+- [`_WKInspectorDebuggableInfo.mm#L53`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKInspectorDebuggableInfo.mm#L53)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
