@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKFormInputSession/requiresStrongPasswordAssistance``
 
-宣言のみ確認（実装未調査）。
+強いパスワード補助が必要かを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+初期化時に渡された値。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+初期化時に設定した `_requiresStrongPasswordAssistance` をそのまま返す。
 
 ## References
+- [`WKContentViewInteraction.mm#L775`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L775)
+- [`WKContentViewInteraction.mm#L893`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L893)
 - [`_WKFormInputSession.h#L46`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKFormInputSession.h#L46)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
