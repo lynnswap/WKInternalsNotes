@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKPDFHUDView/handleMouseDown(_:)``
 
-宣言のみ確認（実装未調査）。
+マウスダウンを処理し、押下状態を反映する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+イベント位置から対象コントロールを特定し、セパレータの場合は無視する。コントロールがあれば対応レイヤーの不透明度を下げて押下状態を表示し、`true` を返す。
 
 ## References
+- [`WKPDFHUDView.mm#L190`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/PDF/WKPDFHUDView.mm#L190)
 - [`WKPDFHUDView.h#L42`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/PDF/WKPDFHUDView.h#L42)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
