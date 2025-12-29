@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKFormInputSession/reloadFocusedElementContextView()``
 
-宣言のみ確認（実装未調査）。
+フォーカス要素のコンテキストビューを再読み込みする。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKContentView` の `reloadContextViewForPresentedListViewController` を呼び出す。
 
 ## References
+- [`WKContentViewInteraction.mm#L903`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L903)
 - [`_WKFormInputSession.h#L48`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKFormInputSession.h#L48)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
