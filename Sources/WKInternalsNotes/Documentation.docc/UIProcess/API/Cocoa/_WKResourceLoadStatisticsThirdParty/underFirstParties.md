@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKResourceLoadStatisticsThirdParty/underFirstParties``
 
-宣言のみ確認（実装未調査）。
+関連する First Party の一覧を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`API::ResourceLoadStatisticsThirdParty::underFirstParties()` の値。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_thirdParty->underFirstParties()` を `_WKResourceLoadStatisticsFirstParty` に変換して配列で返す。
 
 ## References
 - [`_WKResourceLoadStatisticsThirdParty.h#L39`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKResourceLoadStatisticsThirdParty.h#L39)
+- [`_WKResourceLoadStatisticsThirdParty.mm#L48`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKResourceLoadStatisticsThirdParty.mm#L48)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
