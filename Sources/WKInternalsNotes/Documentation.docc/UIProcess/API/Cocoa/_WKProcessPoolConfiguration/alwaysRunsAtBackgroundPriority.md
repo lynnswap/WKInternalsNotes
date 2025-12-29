@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKProcessPoolConfiguration/alwaysRunsAtBackgroundPriority``
 
-宣言のみ確認（実装未調査）。
+iOS で WebContent プロセスを常にバックグラウンド優先度で動かすかを設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+既定値は `false`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+getter/setter は `ProcessPoolConfiguration` の `alwaysRunsAtBackgroundPriority` を直接操作する。
 
 ## References
-- [`_WKProcessPoolConfiguration.h#L64`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKProcessPoolConfiguration.h#L64)
+- [`_WKProcessPoolConfiguration.mm#L317`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKProcessPoolConfiguration.mm#L317)
+- [`_WKProcessPoolConfiguration.mm#L322`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKProcessPoolConfiguration.mm#L322)
+- [`APIProcessPoolConfiguration.h#L184`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/APIProcessPoolConfiguration.h#L184)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
