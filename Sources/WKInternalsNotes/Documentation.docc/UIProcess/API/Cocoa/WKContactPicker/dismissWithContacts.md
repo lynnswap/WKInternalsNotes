@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContactPicker/dismissWithContacts(_:)``
 
-宣言のみ確認（実装未調査）。
+テスト用に指定した連絡先でピッカーを閉じる。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`CNContactPickerViewController` をアニメーションなしで閉じ、`contacts` を `CNContact` に変換して `didSelectContacts:` を呼び出す。
 
 ## References
 - [`WKContactPicker.h#L64`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/WKContactPicker.h#L64)
+- [`WKContactPicker.mm#L255`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/WKContactPicker.mm#L255)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
