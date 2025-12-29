@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKFullScreenWindowController/toggleSceneDimming()``
 
-宣言のみ確認（実装未調査）。
+visionOS のシーン暗転設定をトグルし、必要ならステージ暗さを更新する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,13 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`prefersSceneDimming` を反転した値を `playbackSessionModel()->setPrefersAutoDimming` に設定する。フルスクリーン中であれば `MRUIStage` の `preferredDarkness` を更新し、暗転の有無を反映する。
 
 ## References
-- [`WKFullScreenWindowControllerIOS.h#L67`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenWindowControllerIOS.h#L67)
+- [`WKFullScreenWindowControllerIOS.mm#L2181`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenWindowControllerIOS.mm#L2181)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
