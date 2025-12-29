@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTextFinderClient/initWithPage(_:view:usePlatformFindUI:)``
 
-宣言のみ確認（実装未調査）。
+ページとビュー、検索UI設定を保持して初期化する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_page` と `_view`、`_usePlatformFindUI` を設定し、ページに `FindMatchesClient`/`FindClient` を登録する。
 
 ## References
 - [`WKTextFinderClient.h#L40`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/mac/WKTextFinderClient.h#L40)
+- [`WKTextFinderClient.mm#L173`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/mac/WKTextFinderClient.mm#L173)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
