@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKKeyboardScrollableInternal/rubberbandableDirections()``
 
-宣言のみ確認（実装未調査）。
+ラバーバンド可能な方向を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,13 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_wk_canScrollVerticallyWithoutBouncing` と `_wk_canScrollHorizontallyWithoutBouncing` を使って上下左右の可否を設定する。
 
 ## References
-- [`WKKeyboardScrollingAnimator.mm#L73`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKKeyboardScrollingAnimator.mm#L73)
+- [`WKKeyboardScrollingAnimator.mm#L742`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKKeyboardScrollingAnimator.mm#L742)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |

@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKKeyboardScrollableInternal/didFinishScrolling()``
 
-宣言のみ確認（実装未調査）。
+スクロール完了時の後処理を行う。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,13 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+delegate が `keyboardScrollViewAnimatorDidFinishScrolling:` に応答できる場合は通知し、`_scrollView` を `nil` にする。
 
 ## References
-- [`WKKeyboardScrollingAnimator.mm#L74`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKKeyboardScrollingAnimator.mm#L74)
+- [`WKKeyboardScrollingAnimator.mm#L757`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKKeyboardScrollingAnimator.mm#L757)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |

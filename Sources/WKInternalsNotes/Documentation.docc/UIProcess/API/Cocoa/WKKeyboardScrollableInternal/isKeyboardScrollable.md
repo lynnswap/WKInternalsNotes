@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKKeyboardScrollableInternal/isKeyboardScrollable()``
 
-宣言のみ確認（実装未調査）。
+キーボードスクロールを許可するかどうかを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,13 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+delegate が `isScrollableForKeyboardScrollViewAnimator:` に応答できる場合はその結果を返す。未実装の場合は `YES`。
 
 ## References
-- [`WKKeyboardScrollingAnimator.mm#L65`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKKeyboardScrollingAnimator.mm#L65)
+- [`WKKeyboardScrollingAnimator.mm#L651`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKKeyboardScrollingAnimator.mm#L651)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
