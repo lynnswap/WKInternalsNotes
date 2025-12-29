@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKActionSheetAssistant/interactionDidStartWithPositionInformation(_:)``
 
-宣言のみ確認（実装未調査）。
+データ検出のインタラクション開始を通知する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+DATA_DETECTION 有効時のみ動作する。デリゲートが存在し、URLがデータ検出対象である場合に `DDDetectionController` の `interactionDidStartForURL:` を呼ぶ。
 
 ## References
 - [`WKActionSheetAssistant.h#L124`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKActionSheetAssistant.h#L124)
+- [`WKActionSheetAssistant.mm#L298`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKActionSheetAssistant.mm#L298)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
