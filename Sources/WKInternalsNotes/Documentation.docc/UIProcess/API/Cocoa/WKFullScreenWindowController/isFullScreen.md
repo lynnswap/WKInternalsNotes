@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKFullScreenWindowController/isFullScreen``
 
-宣言のみ確認（実装未調査）。
+内部状態に基づいてフルスクリーン中かどうかを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+初期状態では `NO`。状態フラグの遷移に応じて値が変化する。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+mac 版は `WaitingToEnterFullScreen` / `EnteringFullScreen` / `InFullScreen` を `true` とする。iOS 版はさらに `WaitingToExitFullScreen` / `ExitingFullScreen` も `true` として扱い、退出処理中もフルスクリーン扱いとする。
 
 ## References
-- [`WKFullScreenWindowControllerIOS.h#L37`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenWindowControllerIOS.h#L37)
+- [`WKFullScreenWindowController.mm#L295`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/mac/WKFullScreenWindowController.mm#L295)
+- [`WKFullScreenWindowControllerIOS.mm#L900`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenWindowControllerIOS.mm#L900)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
