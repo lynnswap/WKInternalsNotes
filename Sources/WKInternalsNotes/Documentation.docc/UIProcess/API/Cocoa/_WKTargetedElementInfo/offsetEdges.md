@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKTargetedElementInfo/offsetEdges``
 
-宣言のみ確認（実装未調査）。
+オフセットされた辺をビットマスクで返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`API::TargetedElementInfo::offsetEdges()` を `_WKRectEdge` に変換した値。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`offsetEdges()` の top/left/bottom/right を `_WKRectEdge` のフラグに変換して返す。
 
 ## References
 - [`_WKTargetedElementInfo.h#L59`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTargetedElementInfo.h#L59)
+- [`_WKTargetedElementInfo.mm#L123`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTargetedElementInfo.mm#L123)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
