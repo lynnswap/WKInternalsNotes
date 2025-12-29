@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKAutomationSessionDelegate/_automationSession(_:acceptCurrentJavaScriptDialogForWebView:)``
 
-宣言のみ確認（実装未調査）。
+自動化セッションから現在のJavaScriptダイアログを受け入れるよう通知する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`AutomationSessionClient::acceptCurrentJavaScriptDialogOnPage` から、対象の `WKWebView` がある場合に呼び出される。
 
 ## References
 - [`_WKAutomationSessionDelegate.h#L63`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKAutomationSessionDelegate.h#L63)
+- [`AutomationSessionClient.mm#L183`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/AutomationSessionClient.mm#L183)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
