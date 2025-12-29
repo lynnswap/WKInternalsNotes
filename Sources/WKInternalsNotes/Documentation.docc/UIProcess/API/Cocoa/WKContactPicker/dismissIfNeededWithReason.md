@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContactPicker/dismissIfNeededWithReason(_:)``
 
-宣言のみ確認（実装未調査）。
+終了理由に応じてピッカーを閉じる。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`ViewRemoved` でフルスクリーン提示中の場合は閉じずに `NO` を返す。`ProcessExited` または `ViewRemoved` の場合は `delegate` を解除し、`dismiss` を呼んで `YES` を返す。
 
 ## References
 - [`WKContactPicker.h#L51`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/WKContactPicker.h#L51)
+- [`WKContactPicker.mm#L190`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/WKContactPicker.mm#L190)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
