@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKContextMenuElementInfo/hitTestResult``
 
-宣言のみ確認（実装未調査）。
+コンテキストメニュー対象のヒットテスト結果を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`ContextMenuContextData` の `WebHitTestResultData` から都度生成される。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_contextMenuElementInfoMac->hitTestResultData()` と `page()` を使って `API::HitTestResult::create` で生成し、`_WKHitTestResult` として返す。
 
 ## References
+- [`_WKContextMenuElementInfo.mm#L53`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKContextMenuElementInfo.mm#L53)
+- [`APIContextMenuElementInfoMac.h#L48`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/APIContextMenuElementInfoMac.h#L48)
 - [`_WKContextMenuElementInfo.h#L37`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKContextMenuElementInfo.h#L37)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
