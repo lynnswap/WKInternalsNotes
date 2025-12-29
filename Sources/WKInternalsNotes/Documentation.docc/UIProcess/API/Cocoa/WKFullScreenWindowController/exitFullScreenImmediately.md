@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKFullScreenWindowController/exitFullScreenImmediately()``
 
-宣言のみ確認（実装未調査）。
+フルスクリーン状態を即時終了し、通常の退出完了処理を強制的に走らせる。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,13 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`NotInFullScreen` なら何もしない。`WebFullScreenManagerProxy` に退出を要求し、退出警告を非表示にしたうえで状態を `ExitingFullScreen` に切り替え、`finishedExitFullScreenAnimationAndExitImmediately:YES` を呼んで終了処理を即時実行する。
 
 ## References
-- [`WKFullScreenWindowController.h#L84`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/mac/WKFullScreenWindowController.h#L84)
+- [`WKFullScreenWindowController.mm#L614`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/mac/WKFullScreenWindowController.mm#L614)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
