@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKProcessPoolConfiguration/cachePartitionedURLSchemes``
 
-宣言のみ確認（実装未調査）。
+キャッシュをパーティション分離する URL スキームを設定/取得する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+未設定時は空配列を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+getter は `cachePartitionedURLSchemes` のベクタを `NSArray` に変換して返し、setter は文字列配列を `Vector<String>` に変換して保持する。
 
 ## References
-- [`_WKProcessPoolConfiguration.h#L57`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKProcessPoolConfiguration.h#L57)
+- [`_WKProcessPoolConfiguration.mm#L176`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKProcessPoolConfiguration.mm#L176)
+- [`_WKProcessPoolConfiguration.mm#L181`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKProcessPoolConfiguration.mm#L181)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
