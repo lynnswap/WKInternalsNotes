@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKProcessPoolConfiguration/JITEnabled``
 
-宣言のみ確認（実装未調査）。
+WebContent プロセスの JIT を有効/無効にする。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+既定値は `true`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+getter/setter は `ProcessPoolConfiguration` の `isJITEnabled`/`setJITEnabled` に直結し、JIT の使用可否を切り替える。
 
 ## References
-- [`_WKProcessPoolConfiguration.h#L75`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKProcessPoolConfiguration.h#L75)
+- [`_WKProcessPoolConfiguration.mm#L306`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKProcessPoolConfiguration.mm#L306)
+- [`_WKProcessPoolConfiguration.mm#L311`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKProcessPoolConfiguration.mm#L311)
+- [`APIProcessPoolConfiguration.h#L197`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/APIProcessPoolConfiguration.h#L197)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
