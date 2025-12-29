@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKFullscreenDelegate/_webView(_:requestPresentingViewControllerWithCompletionHandler:)``
 
-宣言のみ確認（実装未調査）。
+表示用の `UIViewController` を要求する（iOS）。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`FullscreenClient::requestPresentingViewController` から呼び出され、未実装の場合は `completionHandler(nil, nil)` が実行される。
 
 ## References
 - [`_WKFullscreenDelegate.h#L44`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKFullscreenDelegate.h#L44)
+- [`FullscreenClient.mm#L143`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/FullscreenClient.mm#L143)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
