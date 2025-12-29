@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKViewLayoutStrategy/willStartLiveResize()``
 
-宣言のみ確認（実装未調査）。
+ライブリサイズ開始を通知する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+基底実装は no-op。
 
 ## References
+- [`WKViewLayoutStrategy.mm#L123`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/mac/WKViewLayoutStrategy.mm#L123)
 - [`WKViewLayoutStrategy.h#L59`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/mac/WKViewLayoutStrategy.h#L59)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
