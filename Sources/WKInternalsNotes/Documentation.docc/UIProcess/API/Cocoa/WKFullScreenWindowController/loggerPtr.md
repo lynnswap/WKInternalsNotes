@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKFullScreenWindowController/loggerPtr``
 
-宣言のみ確認（実装未調査）。
+ログ出力用の `Logger` を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,19 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+初期値は `nullptr`。初期化時に `WebPageProxy` の `logger()` を保存する。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_logger.get()` を返すアクセサで、mac/iOS いずれも初期化時に `WebPageProxy` から取得したロガーを保持する。
 
 ## References
-- [`WKFullScreenWindowControllerIOS.mm#L805`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenWindowControllerIOS.mm#L805)
+- [`WKFullScreenWindowController.mm#L1095`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/mac/WKFullScreenWindowController.mm#L1095)
+- [`WKFullScreenWindowController.mm#L262`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/mac/WKFullScreenWindowController.mm#L262)
+- [`WKFullScreenWindowControllerIOS.mm#L2294`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenWindowControllerIOS.mm#L2294)
+- [`WKFullScreenWindowControllerIOS.mm#L876`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenWindowControllerIOS.mm#L876)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
