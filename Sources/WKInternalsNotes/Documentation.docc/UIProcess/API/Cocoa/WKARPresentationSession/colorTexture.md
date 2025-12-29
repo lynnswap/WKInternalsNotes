@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKARPresentationSession/colorTexture``
 
-宣言のみ確認（実装未調査）。
+現在の描画先テクスチャを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`startFrame` で取得した drawable の `texture`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_currentDrawable` の `texture` を返す。`startFrame` が成功していない場合は `nil`。
 
 ## References
+- [`WKARPresentationSession.mm#L191`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/XR/ios/WKARPresentationSession.mm#L191)
+- [`WKARPresentationSession.mm#L195`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/XR/ios/WKARPresentationSession.mm#L195)
 - [`WKARPresentationSession.h#L51`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/XR/ios/WKARPresentationSession.h#L51)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
