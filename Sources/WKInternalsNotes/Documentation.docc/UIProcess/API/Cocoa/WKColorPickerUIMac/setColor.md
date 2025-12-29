@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKColorPickerUIMac/setColor(_:)``
 
-宣言のみ確認（実装未調査）。
+カラーピッカーの現在色を更新する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKColorPopoverMac` 実装では `_lastChangedByUser` を `NO` にしてから `WKPopoverColorWell` の色を更新する。
 
 ## References
 - [`WebColorPickerMac.h#L51`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/mac/WebColorPickerMac.h#L51)
+- [`WebColorPickerMac.mm#L231`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/mac/WebColorPickerMac.mm#L231)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
