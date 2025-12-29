@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKProcessPoolConfiguration/ignoreSynchronousMessagingTimeoutsForTesting``
 
-宣言のみ確認（実装未調査）。
+同期メッセージのタイムアウトを無視するか（テスト用）を設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+既定値は `false`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+getter/setter は `ProcessPoolConfiguration` の `ignoreSynchronousMessagingTimeoutsForTesting` に直結する。
 
 ## References
-- [`_WKProcessPoolConfiguration.h#L41`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKProcessPoolConfiguration.h#L41)
+- [`_WKProcessPoolConfiguration.mm#L110`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKProcessPoolConfiguration.mm#L110)
+- [`_WKProcessPoolConfiguration.mm#L115`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKProcessPoolConfiguration.mm#L115)
+- [`APIProcessPoolConfiguration.h#L181`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/APIProcessPoolConfiguration.h#L181)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
