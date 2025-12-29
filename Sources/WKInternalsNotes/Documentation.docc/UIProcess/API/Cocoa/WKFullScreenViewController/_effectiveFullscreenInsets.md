@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKFullScreenViewController/_effectiveFullscreenInsets``
 
-宣言のみ確認（実装未調査）。
+フルスクリーン時に適用する実効インセットを計算する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`safeAreaInsets` を基に都度計算される。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`safeAreaInsets` から `FloatBoxExtent` を作成し、キャンセルボタンの下端位置に合わせて上側インセットを調整する。
 
 ## References
 - [`WKFullScreenViewController.mm#L146`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenViewController.mm#L146)
+- [`WKFullScreenViewController.mm#L1005`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenViewController.mm#L1005)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
