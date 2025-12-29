@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKResourceLoadStatisticsFirstParty/thirdPartyStorageAccessGranted``
 
-宣言のみ確認（実装未調査）。
+サードパーティのストレージアクセス許可状態を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`API::ResourceLoadStatisticsFirstParty::storageAccess()` の値。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+実装では `-storageAccess` が定義されており、内部の `storageAccess()` を返す。
 
 ## References
 - [`_WKResourceLoadStatisticsFirstParty.h#L37`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKResourceLoadStatisticsFirstParty.h#L37)
+- [`_WKResourceLoadStatisticsFirstParty.mm#L46`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKResourceLoadStatisticsFirstParty.mm#L46)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
