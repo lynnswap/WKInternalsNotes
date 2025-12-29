@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebExtensionDeclarativeNetRequestRule/init()``
 
-宣言のみ確認（実装未調査）。
+デフォルト初期化は利用不可。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,7 +8,7 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`NS_UNAVAILABLE` のため使用できない。`initWithDictionary:rulesetID:errorString:` を使う。
 
 ## References
 - [`_WKWebExtensionDeclarativeNetRequestRule.h#L38`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Extensions/Cocoa/_WKWebExtensionDeclarativeNetRequestRule.h#L38)
@@ -17,4 +17,4 @@
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
