@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKProcessPoolConfiguration/memoryFootprintNotificationThresholds``
 
-宣言のみ確認（実装未調査）。
+メモリ使用量通知のしきい値一覧を設定/取得する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+未設定時は空配列を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+getter は `memoryFootprintNotificationThresholds` の数値配列を `NSArray` に変換して返し、setter は `NSNumber` 配列を `Vector<uint64_t>` に変換して保存する。
 
 ## References
-- [`_WKProcessPoolConfiguration.h#L82`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKProcessPoolConfiguration.h#L82)
+- [`_WKProcessPoolConfiguration.mm#L392`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKProcessPoolConfiguration.mm#L392)
+- [`_WKProcessPoolConfiguration.mm#L401`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKProcessPoolConfiguration.mm#L401)
+- [`APIProcessPoolConfiguration.h#L216`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/APIProcessPoolConfiguration.h#L216)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
