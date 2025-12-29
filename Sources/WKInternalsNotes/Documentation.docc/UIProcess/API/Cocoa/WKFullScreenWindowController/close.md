@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKFullScreenWindowController/close()``
 
-宣言のみ確認（実装未調査）。
+フルスクリーンを即時終了し、ウィンドウや参照を解放する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+mac 版は `exitFullScreenImmediately` で即時終了処理を走らせた後に `NSWindowController` の `close` を実行し、`_webView` を `nil` にする。iOS 版も `_exitFullscreenImmediately` を呼んだうえで `self._webView` を `nil` にし、迅速なクリーンアップを行う。
 
 ## References
-- [`WKFullScreenWindowControllerIOS.h#L58`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenWindowControllerIOS.h#L58)
+- [`WKFullScreenWindowController.mm#L809`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/mac/WKFullScreenWindowController.mm#L809)
+- [`WKFullScreenWindowControllerIOS.mm#L1562`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenWindowControllerIOS.mm#L1562)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
