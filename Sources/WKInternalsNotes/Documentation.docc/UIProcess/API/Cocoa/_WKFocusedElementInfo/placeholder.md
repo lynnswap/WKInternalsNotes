@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKFocusedElementInfo/placeholder``
 
-宣言のみ確認（実装未調査）。
+プレースホルダ文字列を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`FocusedElementInformation::placeholder` の値。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+初期化時に `information.placeholder` を `NSString` 化して保持し、その値を返す。
 
 ## References
 - [`_WKFocusedElementInfo.h#L73`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKFocusedElementInfo.h#L73)
+- [`WKContentViewInteraction.mm#L1019`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L1019)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |

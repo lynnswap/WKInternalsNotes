@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKFocusedElementInfo/frame``
 
-宣言のみ確認（実装未調査）。
+要素が属するフレーム情報を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`FocusedElementInformation::frame` がある場合はその情報から生成された `WKFrameInfo`。無い場合は `nil`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`information.frame` が存在する場合に `API::FrameInfo` から `WKFrameInfo` を生成して保持し、その値を返す。
 
 ## References
 - [`_WKFocusedElementInfo.h#L79`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKFocusedElementInfo.h#L79)
+- [`WKContentViewInteraction.mm#L1024`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L1024)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
