@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKActionSheetAssistant/needsLinkIndicator``
 
-宣言のみ確認（実装未調査）。
+リンクインジケータの表示が必要かを示す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`NO`（未設定）。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_needsLinkIndicator` を返し、内部処理で `YES/NO` に更新される。
 
 ## References
 - [`WKActionSheetAssistant.h#L111`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKActionSheetAssistant.h#L111)
+- [`WKActionSheetAssistant.mm#L636`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKActionSheetAssistant.mm#L636)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
