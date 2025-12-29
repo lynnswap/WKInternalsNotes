@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebPushAction/coreNotificationData``
 
-宣言のみ確認（実装未調査）。
+通知応答から復元した `NotificationData` を保持する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,10 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+空 (`std::nullopt`)。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+内部で読み書き可能なプロパティ。`_webPushActionWithNotificationResponse:` が `NotificationData::fromDictionary` で復元した値を設定する。辞書から生成する経路では設定されない。
 
 ## References
 - [`_WKWebPushActionInternal.h#L31`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebPushActionInternal.h#L31)
@@ -21,4 +21,4 @@
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
