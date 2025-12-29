@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKFullScreenViewController/delegate``
 
-宣言のみ確認（実装未調査）。
+フルスクリーン UI の通知先を設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,20 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+初期値は `nil`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+getter/setter は弱参照を保持するだけ。`showUI`/`hideUI`/`invalidate` などで delegate メソッドが呼ばれる。
 
 ## References
+- [`WKFullScreenViewController.mm#L264`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenViewController.mm#L264)
+- [`WKFullScreenViewController.mm#L293`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenViewController.mm#L293)
+- [`WKFullScreenViewController.mm#L319`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenViewController.mm#L319)
+- [`WKFullScreenViewController.mm#L235`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenViewController.mm#L235)
 - [`WKFullScreenViewController.h#L47`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenViewController.h#L47)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
