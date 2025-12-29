@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKFullScreenViewController/_webView``
 
-宣言のみ確認（実装未調査）。
+フルスクリーン対象の `WKWebView` への弱参照。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+初期値は `nil`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+循環参照を避けるため弱参照として保持し、`initWithWebView:` で設定される。
 
 ## References
 - [`WKFullScreenViewController.mm#L144`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenViewController.mm#L144)
+- [`WKFullScreenViewController.mm#L197`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenViewController.mm#L197)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
