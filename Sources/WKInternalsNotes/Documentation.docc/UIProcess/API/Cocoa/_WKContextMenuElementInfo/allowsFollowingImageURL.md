@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKContextMenuElementInfo/allowsFollowingImageURL``
 
-宣言のみ確認（実装未調査）。
+画像 URL の追従を許可するかを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`false`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`ContextMenuContextData` の `allowsFollowingImageURL` を保持した値を返す。
 
 ## References
+- [`_WKContextMenuElementInfo.mm#L76`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKContextMenuElementInfo.mm#L76)
+- [`APIContextMenuElementInfoMac.h#L62`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/APIContextMenuElementInfoMac.h#L62)
 - [`_WKContextMenuElementInfo.h#L41`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKContextMenuElementInfo.h#L41)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
