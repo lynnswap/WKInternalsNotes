@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKFullScreenWindowController/isUsingQuickLook``
 
-宣言のみ確認（実装未調査）。
+QuickLook を使ったフルスクリーン表示かどうかを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+初期値は `NO`。QuickLook 経路に入った場合のみ `YES` になる。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+アクセサは `_isUsingQuickLook` を返す。`_enterFullScreen` で `manager->isImageElement()` と entitlement を満たすと `YES` に設定される。
 
 ## References
-- [`WKFullScreenWindowControllerIOS.h#L42`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenWindowControllerIOS.h#L42)
+- [`WKFullScreenWindowControllerIOS.mm#L920`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenWindowControllerIOS.mm#L920)
+- [`WKFullScreenWindowControllerIOS.mm#L1028`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenWindowControllerIOS.mm#L1028)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
