@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKProcessPoolConfiguration/shouldThrowExceptionForGlobalConstantRedeclaration``
 
-宣言のみ確認（実装未調査）。
+グローバル定数の再宣言時に例外を投げるかを制御する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+既定値は `true`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+getter/setter は `ProcessPoolConfiguration` の `shouldThrowExceptionForGlobalConstantRedeclaration` を直接操作する。
 
 ## References
-- [`_WKProcessPoolConfiguration.h#L45`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKProcessPoolConfiguration.h#L45)
+- [`_WKProcessPoolConfiguration.mm#L130`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKProcessPoolConfiguration.mm#L130)
+- [`_WKProcessPoolConfiguration.mm#L135`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKProcessPoolConfiguration.mm#L135)
+- [`APIProcessPoolConfiguration.h#L183`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/APIProcessPoolConfiguration.h#L183)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
