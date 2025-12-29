@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKFullScreenWindowController/webViewDidRemoveFromSuperviewWhileInFullscreen()``
 
-宣言のみ確認（実装未調査）。
+フルスクリーン中に WebView が外された場合の異常系処理を行う。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,13 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`InFullScreen` かつ WebView のウィンドウがフルスクリーン用ウィンドウと異なる場合に `_exitFullscreenImmediately` を呼び、強制的に終了する。
 
 ## References
-- [`WKFullScreenWindowControllerIOS.h#L59`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenWindowControllerIOS.h#L59)
+- [`WKFullScreenWindowControllerIOS.mm#L1569`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenWindowControllerIOS.mm#L1569)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
