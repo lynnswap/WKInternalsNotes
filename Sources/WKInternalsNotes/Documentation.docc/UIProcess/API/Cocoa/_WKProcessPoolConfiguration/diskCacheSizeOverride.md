@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKProcessPoolConfiguration/diskCacheSizeOverride``
 
-宣言のみ確認（実装未調査）。
+ディスクキャッシュサイズの上書きを返すが、現在は常に 0。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+常に `0` を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+getter は 0 を返し、setter は空実装のため値を保持しない（deprecated）。
 
 ## References
-- [`_WKProcessPoolConfiguration.h#L56`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKProcessPoolConfiguration.h#L56)
+- [`_WKProcessPoolConfiguration.mm#L92`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKProcessPoolConfiguration.mm#L92)
+- [`_WKProcessPoolConfiguration.mm#L97`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKProcessPoolConfiguration.mm#L97)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
