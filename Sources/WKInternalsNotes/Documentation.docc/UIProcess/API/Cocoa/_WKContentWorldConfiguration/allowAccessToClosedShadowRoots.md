@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKContentWorldConfiguration/allowAccessToClosedShadowRoots``
 
-宣言のみ確認（実装未調査）。
+閉じた ShadowRoot へのアクセスを許可するかを設定/取得する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,19 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`NO`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKContentWorld` 生成時に `AllowAccessToClosedShadowRoots` オプションへ反映され、既存の world と値が一致しない場合は例外になる。
 
 ## References
+- [`WKContentWorld.mm#L32`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKContentWorld.mm#L32)
+- [`WKContentWorld.mm#L101`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKContentWorld.mm#L101)
+- [`WKContentWorldConfiguration.mm#L52`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKContentWorldConfiguration.mm#L52)
 - [`_WKContentWorldConfiguration.h#L42`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKContentWorldConfiguration.h#L42)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
