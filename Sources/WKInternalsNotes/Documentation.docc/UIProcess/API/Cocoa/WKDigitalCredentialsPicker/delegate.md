@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKDigitalCredentialsPicker/delegate``
 
-宣言のみ確認（実装未調査）。
+表示/非表示の通知を受け取るデリゲート。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`nil`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+内部では `WeakObjCPtr` として保持し、`presentWithRequestData:completionHandler:` と `dismiss` のタイミングで `digitalCredentialsPickerDidPresent:` / `digitalCredentialsPickerDidDismiss:` を呼び出す。
 
 ## References
 - [`WKDigitalCredentialsPicker.h#L60`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/DigitalCredentials/WKDigitalCredentialsPicker.h#L60)
+- [`WKDigitalCredentialsPicker.mm#L224`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/DigitalCredentials/WKDigitalCredentialsPicker.mm#L224)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
