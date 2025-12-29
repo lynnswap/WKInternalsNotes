@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKFormInputSession/forceSecureTextEntry``
 
-宣言のみ確認（実装未調査）。
+セキュアテキスト入力を強制するかを設定/取得する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`false`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+setter で変更があれば保持して `reloadInputViews` を呼び、getter は保持している値を返す。
 
 ## References
+- [`WKContentViewInteraction.mm#L831`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L831)
+- [`WKContentViewInteraction.mm#L836`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L836)
 - [`_WKFormInputSession.h#L45`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKFormInputSession.h#L45)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
