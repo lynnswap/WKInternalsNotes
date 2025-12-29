@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKContactPicker/delegate``
 
-宣言のみ確認（実装未調査）。
+連絡先ピッカーの表示/非表示通知を受け取るデリゲート。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`nil`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+内部では `WeakObjCPtr` として保持し、提示完了時に `contactPickerDidPresent:`、終了時に `contactPickerDidDismiss:` を通知する。
 
 ## References
 - [`WKContactPicker.h#L53`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/WKContactPicker.h#L53)
+- [`WKContactPicker.mm#L136`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/WKContactPicker.mm#L136)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
