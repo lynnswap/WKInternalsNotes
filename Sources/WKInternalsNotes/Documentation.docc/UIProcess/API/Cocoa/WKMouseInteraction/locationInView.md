@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKMouseInteraction/locationInView(_:)``
 
-宣言のみ確認（実装未調査）。
+現在のマウス/ホバー位置を指定ビュー座標で返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`mouseTouch` が存在し、かつキャンセル/退出状態でなければ `locationInView:` を返す。そうでなければ `(-1, -1)` を返す。
 
 ## References
 - [`WKMouseInteraction.h#L46`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKMouseInteraction.h#L46)
+- [`WKMouseInteraction.mm#L430`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKMouseInteraction.mm#L430)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
