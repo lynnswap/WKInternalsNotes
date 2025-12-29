@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebExtensionDeclarativeNetRequestRule/condition``
 
-宣言のみ確認（実装未調査）。
+条件辞書を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,20 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`initWithDictionary:rulesetID:errorString:` で指定した値。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`ruleDictionary` の `condition` を保持する。`regexFilter` と `urlFilter` の併用や `resourceTypes` と `excludedResourceTypes` の併用など、条件の整合性チェックに失敗した場合は初期化が失敗する。WebKit 形式の変換に使用される。
 
 ## References
-- [`_WKWebExtensionDeclarativeNetRequestRule.h#L5`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Extensions/Cocoa/_WKWebExtensionDeclarativeNetRequestRule.h#L5)
+- [`_WKWebExtensionDeclarativeNetRequestRule.mm#L208`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Extensions/Cocoa/_WKWebExtensionDeclarativeNetRequestRule.mm#L208)
+- [`_WKWebExtensionDeclarativeNetRequestRule.mm#L233`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Extensions/Cocoa/_WKWebExtensionDeclarativeNetRequestRule.mm#L233)
+- [`_WKWebExtensionDeclarativeNetRequestRule.mm#L265`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Extensions/Cocoa/_WKWebExtensionDeclarativeNetRequestRule.mm#L265)
+- [`_WKWebExtensionDeclarativeNetRequestRule.mm#L797`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Extensions/Cocoa/_WKWebExtensionDeclarativeNetRequestRule.mm#L797)
+- [`_WKWebExtensionDeclarativeNetRequestRule.h#L46`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Extensions/Cocoa/_WKWebExtensionDeclarativeNetRequestRule.h#L46)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
