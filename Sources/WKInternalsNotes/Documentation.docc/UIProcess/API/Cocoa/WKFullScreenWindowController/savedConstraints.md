@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKFullScreenWindowController/savedConstraints``
 
-宣言のみ確認（実装未調査）。
+フルスクリーン遷移中に退避した Auto Layout 制約を保持する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+初期値は `nil`。WebView の差し替え時に退避される。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+setter/getter は `_savedConstraints` を保持するだけで、`_saveConstraintsOf:` が `NSAutoresizingMaskLayoutConstraint` を除外して保存する。復帰時に `activateConstraints:` で戻される。
 
 ## References
-- [`WKFullScreenWindowController.h#L61`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/mac/WKFullScreenWindowController.h#L61)
+- [`WKFullScreenWindowController.mm#L307`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/mac/WKFullScreenWindowController.mm#L307)
+- [`WKFullScreenWindowController.mm#L956`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/mac/WKFullScreenWindowController.mm#L956)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
