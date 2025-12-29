@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKTextExtractionInteraction/debugDescriptionInWebView(_:completionHandler:)``
 
-宣言のみ確認（実装未調査）。
+指定した `WKWebView` でのデバッグ記述を取得する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKWebView` の `_describeInteraction:completionHandler:` を呼び出して、説明文字列とエラーを返す。
 
 ## References
+- [`_WKTextExtraction.mm#L97`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtraction.mm#L97)
 - [`_WKTextExtraction.h#L80`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextExtraction.h#L80)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
