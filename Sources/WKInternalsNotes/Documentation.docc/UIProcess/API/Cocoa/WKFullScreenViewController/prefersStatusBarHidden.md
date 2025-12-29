@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKFullScreenViewController/prefersStatusBarHidden``
 
-宣言のみ確認（実装未調査）。
+ステータスバーの非表示を希望するかを設定/取得する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+初期値は `NO`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+setter は `_prefersStatusBarHidden` を更新し、ステータスバーの更新とフルスクリーンインセット更新を行う。getter は `_animating` または `_prefersStatusBarHidden` が `true` の場合に `YES` を返す。
 
 ## References
+- [`WKFullScreenViewController.mm#L658`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenViewController.mm#L658)
+- [`WKFullScreenViewController.mm#L975`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenViewController.mm#L975)
 - [`WKFullScreenViewController.h#L49`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenViewController.h#L49)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
