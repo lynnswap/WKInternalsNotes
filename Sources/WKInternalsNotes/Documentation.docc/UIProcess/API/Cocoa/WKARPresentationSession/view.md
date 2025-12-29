@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKARPresentationSession/view``
 
-宣言のみ確認（実装未調査）。
+AR 表示用の `UIView` を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`loadView` で生成されるビュー。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`loadView` で画面サイズのビューを生成し、`_WKTransientGestureRecognizer` を追加して `self.view` に設定する。
 
 ## References
+- [`WKARPresentationSession.mm#L244`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/XR/ios/WKARPresentationSession.mm#L244)
 - [`WKARPresentationSession.h#L47`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/XR/ios/WKARPresentationSession.h#L47)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
