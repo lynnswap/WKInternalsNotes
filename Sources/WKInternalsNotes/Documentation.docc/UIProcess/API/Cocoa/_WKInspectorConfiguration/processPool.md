@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKInspectorConfiguration/processPool``
 
-宣言のみ確認（実装未調査）。
+インスペクターが使用する `WKProcessPool`。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`nil`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+setter で `API::InspectorConfiguration` に `processPool` を設定し、getter は内部の `WebProcessPool` を `WKProcessPool` にラップして返す。
 
 ## References
 - [`_WKInspectorConfiguration.h#L54`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKInspectorConfiguration.h#L54)
+- [`_WKInspectorConfiguration.mm#L72`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKInspectorConfiguration.mm#L72)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
