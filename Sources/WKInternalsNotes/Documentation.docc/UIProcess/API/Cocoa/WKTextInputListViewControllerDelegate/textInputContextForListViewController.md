@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTextInputListViewControllerDelegate/textInputContextForListViewController(_:)``
 
-宣言のみ確認（実装未調査）。
+テキスト入力コンテキストを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`initWithDelegate:` 内で `textInputContext` に設定される。
 
 ## References
 - [`WKTextInputListViewController.h#L44`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKTextInputListViewController.h#L44)
+- [`WKTextInputListViewController.mm#L48`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKTextInputListViewController.mm#L48)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
