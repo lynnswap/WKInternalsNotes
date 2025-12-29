@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKFormInputSession/suggestions``
 
-宣言のみ確認（実装未調査）。
+テキスト入力の候補一覧を設定/取得する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`nil`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+setter で変更があれば `copy` して保持し、`updateTextSuggestionsForInputDelegate` を呼ぶ。getter は保持している配列を返す。
 
 ## References
+- [`WKContentViewInteraction.mm#L879`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L879)
+- [`WKContentViewInteraction.mm#L884`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L884)
 - [`_WKFormInputSession.h#L43`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKFormInputSession.h#L43)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
