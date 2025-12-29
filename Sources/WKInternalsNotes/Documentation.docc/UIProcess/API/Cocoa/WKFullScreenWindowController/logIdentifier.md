@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKFullScreenWindowController/logIdentifier``
 
-宣言のみ確認（実装未調査）。
+ログ出力用の識別子を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,19 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+初期値は 0。初期化時に `WebPageProxy` の `logIdentifier` を保存する。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_logIdentifier` を返すだけのアクセサ。mac 版は `initWithWindow:webView:page:`、iOS 版は `initWithWebView:` で `WebPageProxy` の値を取り込む。
 
 ## References
-- [`WKFullScreenWindowControllerIOS.mm#L804`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenWindowControllerIOS.mm#L804)
+- [`WKFullScreenWindowController.mm#L1090`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/mac/WKFullScreenWindowController.mm#L1090)
+- [`WKFullScreenWindowController.mm#L263`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/mac/WKFullScreenWindowController.mm#L263)
+- [`WKFullScreenWindowControllerIOS.mm#L2289`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenWindowControllerIOS.mm#L2289)
+- [`WKFullScreenWindowControllerIOS.mm#L877`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenWindowControllerIOS.mm#L877)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
