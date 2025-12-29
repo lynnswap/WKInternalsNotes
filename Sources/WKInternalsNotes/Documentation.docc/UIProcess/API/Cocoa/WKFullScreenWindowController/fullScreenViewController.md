@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKFullScreenWindowController/fullScreenViewController``
 
-宣言のみ確認（実装未調査）。
+フルスクリーン表示を担当する `WKFullScreenViewController` を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+初期値は `nil`。フルスクリーン開始時に生成され、終了時に `nil` へ戻る。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+アクセサは `_fullscreenViewController` をそのまま返す。インスタンスは `_enterFullScreen` で生成・設定され、終了や `close` のタイミングで `invalidate` されて破棄される。
 
 ## References
-- [`WKFullScreenWindowControllerIOS.h#L36`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenWindowControllerIOS.h#L36)
+- [`WKFullScreenWindowControllerIOS.mm#L914`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenWindowControllerIOS.mm#L914)
+- [`WKFullScreenWindowControllerIOS.mm#L1101`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenWindowControllerIOS.mm#L1101)
+- [`WKFullScreenWindowControllerIOS.mm#L1559`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenWindowControllerIOS.mm#L1559)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
