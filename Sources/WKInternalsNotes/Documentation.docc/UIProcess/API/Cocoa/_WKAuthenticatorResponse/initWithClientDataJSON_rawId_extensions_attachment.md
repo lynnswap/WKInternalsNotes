@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKAuthenticatorResponse/initWithClientDataJSON(_:rawId:extensions:attachment:)``
 
-宣言のみ確認（実装未調査）。
+クライアントデータと拡張出力、アタッチメントを保持して初期化する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`[super init]` の成功後に `clientDataJSON` と `rawId` を retain し、`extensions` をムーブして保持し、`attachment` を保存する。
 
 ## References
 - [`_WKAuthenticatorResponseInternal.h#L37`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKAuthenticatorResponseInternal.h#L37)
+- [`_WKAuthenticatorResponse.mm#L36`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKAuthenticatorResponse.mm#L36)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
