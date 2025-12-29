@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKActivatedElementInfo/imageURL``
 
-宣言のみ確認（実装未調査）。
+要素に関連する画像 URL を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`nil`（初期化時に設定される）。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+初期化時に `InteractionInformationAtPosition` の `imageURL` を保持し、その値を返す。
 
 ## References
 - [`_WKActivatedElementInfo.h#L45`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKActivatedElementInfo.h#L45)
+- [`_WKActivatedElementInfo.mm#L154`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKActivatedElementInfo.mm#L154)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
