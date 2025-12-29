@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebPushAction/type``
 
-宣言のみ確認（実装未調査）。
+Web Push アクションの種別文字列を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,10 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`nil`（生成時に設定される）。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+インスタンス生成時に設定される読み取り専用プロパティ。辞書から生成する場合は `dictionary` の type をそのまま設定し、通知応答から生成する場合は `_WKWebPushActionTypeNotificationClick` または `_WKWebPushActionTypeNotificationClose` を設定する。
 
 ## References
 - [`_WKWebPushAction.h#L30`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebPushAction.h#L30)
@@ -21,4 +21,4 @@
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
