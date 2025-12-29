@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKFullScreenViewControllerDelegate/hideUI()``
 
-宣言のみ確認（実装未調査）。
+フルスクリーン UI を隠すよう通知する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKFullScreenWindowControllerIOS` の実装では、visionOS で QuickLook 使用時を除き `UIWindowScene` の chrome オプションを非表示にする。
 
 ## References
 - [`WKFullScreenViewController.h#L39`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenViewController.h#L39)
+- [`WKFullScreenWindowControllerIOS.mm#L2232`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenWindowControllerIOS.mm#L2232)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
