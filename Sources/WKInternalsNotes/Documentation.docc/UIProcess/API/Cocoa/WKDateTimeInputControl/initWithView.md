@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKDateTimeInputControl/initWithView(_:)``
 
-宣言のみ確認（実装未調査）。
+対象要素の種類に応じた日時入力コントロールを生成する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`focusedElementInformation.elementType` を見て `WKDateTimePicker` を生成し、対応外の型では `nil` を返す。
 
 ## References
 - [`WKDateTimeInputControl.h#L33`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKDateTimeInputControl.h#L33)
+- [`WKDateTimeInputControl.mm#L400`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKDateTimeInputControl.mm#L400)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
