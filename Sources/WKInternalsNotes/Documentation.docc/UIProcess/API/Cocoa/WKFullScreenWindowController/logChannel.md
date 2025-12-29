@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKFullScreenWindowController/logChannel``
 
-宣言のみ確認（実装未調査）。
+フルスクリーン系ログの出力チャネルを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+常に `&WebKit2LogFullscreen` を返す。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+mac/iOS とも `WebKit2LogFullscreen` のアドレスを返す固定実装で、インスタンス状態には依存しない。
 
 ## References
-- [`WKFullScreenWindowControllerIOS.mm#L806`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenWindowControllerIOS.mm#L806)
+- [`WKFullScreenWindowController.mm#L1100`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/mac/WKFullScreenWindowController.mm#L1100)
+- [`WKFullScreenWindowControllerIOS.mm#L2299`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenWindowControllerIOS.mm#L2299)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
