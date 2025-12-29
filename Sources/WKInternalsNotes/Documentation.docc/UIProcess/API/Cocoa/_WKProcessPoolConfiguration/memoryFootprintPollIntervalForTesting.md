@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKProcessPoolConfiguration/memoryFootprintPollIntervalForTesting``
 
-宣言のみ確認（実装未調査）。
+メモリフットプリントのポーリング間隔（テスト用）を設定/取得する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+既定値は 0 秒。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+setter は `NSTimeInterval` を `Seconds` に変換して保存し、getter は `seconds()` を返す。
 
 ## References
-- [`_WKProcessPoolConfiguration.h#L81`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKProcessPoolConfiguration.h#L81)
+- [`_WKProcessPoolConfiguration.mm#L382`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKProcessPoolConfiguration.mm#L382)
+- [`_WKProcessPoolConfiguration.mm#L387`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKProcessPoolConfiguration.mm#L387)
+- [`APIProcessPoolConfiguration.h#L215`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/APIProcessPoolConfiguration.h#L215)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
