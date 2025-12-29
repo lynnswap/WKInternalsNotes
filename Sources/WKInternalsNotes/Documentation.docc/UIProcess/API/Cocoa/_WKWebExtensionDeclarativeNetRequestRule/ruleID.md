@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebExtensionDeclarativeNetRequestRule/ruleID``
 
-宣言のみ確認（実装未調査）。
+ルールの ID を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`initWithDictionary:rulesetID:errorString:` で指定した値。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`ruleDictionary` の `id` を `NSInteger` として保持する。`id` が欠落または 1 未満の場合は初期化が失敗する。
 
 ## References
+- [`_WKWebExtensionDeclarativeNetRequestRule.mm#L137`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Extensions/Cocoa/_WKWebExtensionDeclarativeNetRequestRule.mm#L137)
+- [`_WKWebExtensionDeclarativeNetRequestRule.mm#L158`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Extensions/Cocoa/_WKWebExtensionDeclarativeNetRequestRule.mm#L158)
 - [`_WKWebExtensionDeclarativeNetRequestRule.h#L42`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Extensions/Cocoa/_WKWebExtensionDeclarativeNetRequestRule.h#L42)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
