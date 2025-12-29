@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKActivatedElementInfo/_isUsingAlternateURLForImage``
 
-宣言のみ確認（実装未調査）。
+画像の代替URLを使用しているかを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`_initWithInteractionInformationAtPosition:isUsingAlternateURLForImage:userInfo:` の `isUsingAlternateURLForImage` で決まる。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+初期化時に `_isUsingAlternateURLForImage` を設定し、getter で返す。
 
 ## References
 - [`_WKActivatedElementInfoInternal.h#L53`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKActivatedElementInfoInternal.h#L53)
+- [`_WKActivatedElementInfo.mm#L95`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKActivatedElementInfo.mm#L95)
+- [`_WKActivatedElementInfo.mm#L204`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKActivatedElementInfo.mm#L204)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
