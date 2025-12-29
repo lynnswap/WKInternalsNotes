@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKMouseInteractionDelegate/mouseInteractionDidLoseMouseDeviceDuringPointerLock(_:)``
 
-宣言のみ確認（実装未調査）。
+ポインタロック中にマウスデバイスを失ったことを通知する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+ポインタロック中にマウスが切断された通知を受けると呼ばれ、`endPointerLockMouseTracking` が実行される。
 
 ## References
+- [`WKMouseInteraction.mm#L530`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKMouseInteraction.mm#L530)
 - [`WKMouseInteraction.h#L38`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKMouseInteraction.h#L38)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
