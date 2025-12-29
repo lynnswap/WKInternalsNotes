@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKRemoteWebInspectorViewControllerDelegate/inspectorViewControllerInspectorDidClose(_:)``
 
-宣言のみ確認（実装未調査）。
+インスペクタが閉じられたことを通知する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+フロントエンドからの close 要求で `closeFromFrontend` が呼ばれた際に、`respondsToSelector:` を確認してデリゲートへ通知する。
 
 ## References
 - [`_WKRemoteWebInspectorViewController.h#L59`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKRemoteWebInspectorViewController.h#L59)
+- [`_WKRemoteWebInspectorViewController.mm#L156`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKRemoteWebInspectorViewController.mm#L156)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
