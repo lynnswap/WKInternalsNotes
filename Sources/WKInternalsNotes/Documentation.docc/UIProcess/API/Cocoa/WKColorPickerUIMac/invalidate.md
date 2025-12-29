@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKColorPickerUIMac/invalidate()``
 
-宣言のみ確認（実装未調査）。
+カラーピッカー UI を破棄する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKColorPopoverMac` 実装では popover のビューを除去し、ターゲット/アクションを解除して無効化する。関連参照を `nil` にし、共有 `NSColorPanel` の delegate が自分なら解除して閉じる。
 
 ## References
 - [`WebColorPickerMac.h#L50`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/mac/WebColorPickerMac.h#L50)
+- [`WebColorPickerMac.mm#L190`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/mac/WebColorPickerMac.mm#L190)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
