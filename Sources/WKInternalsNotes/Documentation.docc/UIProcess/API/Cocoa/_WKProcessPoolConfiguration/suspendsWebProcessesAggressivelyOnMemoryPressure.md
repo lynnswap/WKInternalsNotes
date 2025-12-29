@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKProcessPoolConfiguration/suspendsWebProcessesAggressivelyOnMemoryPressure``
 
-宣言のみ確認（実装未調査）。
+メモリ圧迫時に WebProcess を積極的にサスペンドするかを制御する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+既定値は `false`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`ENABLE(WEB_PROCESS_SUSPENSION_DELAY)` 有効時のみ `ProcessPoolConfiguration` に保存され、無効時は getter が `NO` を返し setter は no-op になる。
 
 ## References
-- [`_WKProcessPoolConfiguration.h#L84`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKProcessPoolConfiguration.h#L84)
+- [`_WKProcessPoolConfiguration.mm#L410`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKProcessPoolConfiguration.mm#L410)
+- [`_WKProcessPoolConfiguration.mm#L419`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKProcessPoolConfiguration.mm#L419)
+- [`APIProcessPoolConfiguration.h#L218`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/APIProcessPoolConfiguration.h#L218)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
