@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKContentWorldConfiguration/allowNodeSerialization``
 
-宣言のみ確認（実装未調査）。
+`window.webkit.serializeNode` の利用可否を設定/取得する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`NO`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKContentWorld` 生成時に `AllowNodeSerialization` オプションへ反映される。
 
 ## References
+- [`WKContentWorld.mm#L101`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKContentWorld.mm#L101)
 - [`_WKContentWorldConfiguration.h#L57`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKContentWorldConfiguration.h#L57)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
