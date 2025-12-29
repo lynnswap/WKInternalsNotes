@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebPushAction/webClipIdentifier``
 
-宣言のみ確認（実装未調査）。
+Web Push 対象の WebClip 識別子を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,10 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`nil`（生成時に設定される）。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+辞書または通知応答から取り出した `pushPartition` を UUID に変換し、`webClipIdentifier` として保持する。UUID に変換できない場合は生成処理自体が `nil` を返す。
 
 ## References
 - [`_WKWebPushAction.h#L46`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebPushAction.h#L46)
@@ -21,4 +21,4 @@
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
