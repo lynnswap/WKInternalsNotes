@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKFullScreenViewController/pictureInPictureActive``
 
-宣言のみ確認（実装未調査）。
+ピクチャ・イン・ピクチャ（PiP）のアクティブ状態を表す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+初期値は `NO`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+setter は `_pictureInPictureActive` を更新し、PiP ボタンの選択状態を変更する。
 
 ## References
+- [`WKFullScreenViewController.mm#L695`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenViewController.mm#L695)
 - [`WKFullScreenViewController.h#L52`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenViewController.h#L52)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
