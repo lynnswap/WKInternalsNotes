@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKFullScreenViewController/videosInElementFullscreenChanged()``
 
-宣言のみ確認（実装未調査）。
+要素フルスクリーン内の動画状態変化を通知する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`ENABLE(LINEAR_MEDIA_PLAYER)` の場合、`viewDidAppear` 後に `configureEnvironmentPickerOrFullscreenVideoButtonView` を呼んで UI を再構成する。
 
 ## References
+- [`WKFullScreenViewController.mm#L434`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenViewController.mm#L434)
 - [`WKFullScreenViewController.h#L63`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/fullscreen/WKFullScreenViewController.h#L63)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-29 |
