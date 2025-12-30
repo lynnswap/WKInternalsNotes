@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKVisitedLinkStore/removeAll()``
 
-宣言のみ確認（実装未調査）。
+訪問済みリンクを全削除する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`removeAll()` を呼び出す。
 
 ## References
 - [`_WKVisitedLinkStore.h#L34`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKVisitedLinkStore.h#L34)
+- [`_WKVisitedLinkStore.mm#L67`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKVisitedLinkStore.mm#L67)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
