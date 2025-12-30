@@ -9,7 +9,7 @@ DocCのドキュメント拡張と合成シンボルグラフで管理してい�
 https://lynnswap.github.io/WKInternalsNotes/
 
 ## 対象範囲
-- WebKit の Cocoa API
+- `Source/WebKit/UIProcess` 配下の Cocoa API
 - 内部 API と挙動の調査メモ
 
 ## 基準リビジョン
