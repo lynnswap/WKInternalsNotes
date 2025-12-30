@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKGeolocationCoreLocationProvider/stop()``
 
-宣言のみ確認（実装未調査）。
+WebCore が更新停止した際に位置更新を停止する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKGeolocationProviderIOS` の `_stopUpdating` が `_coreLocationProvider stop` を呼び出す。
 
 ## References
 - [`_WKGeolocationCoreLocationProvider.h#L50`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKGeolocationCoreLocationProvider.h#L50)
+- [`WKGeolocationProviderIOS.mm#L113`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKGeolocationProviderIOS.mm#L113)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |

@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTapHighlightView/setMinimumCornerRadius(_:)``
 
-宣言のみ確認（実装未調査）。
+最小コーナー半径を保持する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_minimumCornerRadius` に代入するのみ。
 
 ## References
 - [`WKTapHighlightView.h#L38`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTapHighlightView.h#L38)
+- [`WKTapHighlightView.mm#L61`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTapHighlightView.mm#L61)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |

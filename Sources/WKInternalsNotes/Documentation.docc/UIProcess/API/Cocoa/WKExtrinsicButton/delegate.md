@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKExtrinsicButton/delegate``
 
-宣言のみ確認（実装未調査）。
+コンテキストメニューの表示/終了を通知する delegate。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+初期値は `nil`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`contextMenuInteraction:willDisplayMenuForConfiguration:` と `willEndForConfiguration:` で delegate メソッドを呼び出す。
 
 ## References
 - [`WKExtrinsicButton.h#L39`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKExtrinsicButton.h#L39)
+- [`WKExtrinsicButton.mm#L45`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKExtrinsicButton.mm#L45)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
