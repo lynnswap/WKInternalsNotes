@@ -2,6 +2,8 @@
 
 [English](README.en.md)
 
+DocC: https://lynnswap.github.io/WKInternalsNotes/
+
 WebKit UIProcess の Objective-C API（公開/非公開）に関する調査メモを、
 DocC のドキュメント拡張と合成シンボルグラフで管理しています。
 
