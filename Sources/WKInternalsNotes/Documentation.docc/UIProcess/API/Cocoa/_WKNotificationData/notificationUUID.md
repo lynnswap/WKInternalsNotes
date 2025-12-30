@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKNotificationData/notificationUUID``
 
-宣言のみ確認（実装未調査）。
+内部の readwrite UUID プロパティ。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,10 +8,10 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+自動合成されるため初期値は `nil`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+クラス拡張で宣言されているが、明示的な getter/setter 実装は無い。
 
 ## References
 - [`_WKNotificationData.mm#L52`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKNotificationData.mm#L52)
@@ -20,4 +20,4 @@
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
