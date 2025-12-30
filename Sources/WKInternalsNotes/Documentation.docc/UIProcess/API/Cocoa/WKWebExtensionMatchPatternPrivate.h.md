@@ -1,21 +1,19 @@
 # ``WKInternalsNotes/WKWebExtensionMatchPattern``
 
-WKWebExtensionMatchPattern は、URL のグループを指定する方法を表すオブジェクトです。
-
 ## Topics
 
-### Class Extension
+### Properties
 
-#### Properties
 - ``WKInternalsNotes/WKWebExtensionMatchPattern/_webExtensionMatchPattern``
 
-#### Methods
+### Methods
+
 - ``WKInternalsNotes/WKWebExtensionMatchPattern/_protectedWebExtensionMatchPattern()``
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
 | WebKit revision | [`WebKit-7623.1.14.10.9`](https://github.com/WebKit/WebKit/tree/WebKit-7623.1.14.10.9) |
 | Header (WebKit repo-relative path) | [`WKWebExtensionMatchPatternPrivate.h`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebExtensionMatchPatternPrivate.h) |

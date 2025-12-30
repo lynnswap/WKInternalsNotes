@@ -2,20 +2,8 @@
 
 ## Topics
 
-### WKPrivate
+### Properties (from _WKInspector.h)
 
-- ``WKInternalsNotes/_WKInspector/_diagnosticLoggingDelegate``
-- ``WKInternalsNotes/_WKInspector/extensionHostWebView``
-
-### WKTesting
-
-- ``WKInternalsNotes/_WKInspector/_fetchURLForTesting(_:)``
-- ``WKInternalsNotes/_WKInspector/_openURLExternallyForTesting(_:useFrontendAPI:)``
-- ``WKInternalsNotes/_WKInspector/inspectorWebView()``
-
-### Type
-
-#### Properties
 - ``WKInternalsNotes/_WKInspector/delegate``
 - ``WKInternalsNotes/_WKInspector/isConnected``
 - ``WKInternalsNotes/_WKInspector/isElementSelectionActive``
@@ -24,7 +12,8 @@
 - ``WKInternalsNotes/_WKInspector/isVisible``
 - ``WKInternalsNotes/_WKInspector/webView``
 
-#### Methods
+### Methods (from _WKInspector.h)
+
 - ``WKInternalsNotes/_WKInspector/attach()``
 - ``WKInternalsNotes/_WKInspector/connect()``
 - ``WKInternalsNotes/_WKInspector/detach()``
@@ -35,10 +24,21 @@
 - ``WKInternalsNotes/_WKInspector/toggleElementSelection()``
 - ``WKInternalsNotes/_WKInspector/togglePageProfiling()``
 
+### Properties (from _WKInspectorPrivate.h)
+
+- ``WKInternalsNotes/_WKInspector/_diagnosticLoggingDelegate``
+- ``WKInternalsNotes/_WKInspector/extensionHostWebView``
+
+### Methods (from _WKInspectorPrivateForTesting.h)
+
+- ``WKInternalsNotes/_WKInspector/_fetchURLForTesting(_:)``
+- ``WKInternalsNotes/_WKInspector/_openURLExternallyForTesting(_:useFrontendAPI:)``
+- ``WKInternalsNotes/_WKInspector/inspectorWebView()``
+
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
 | WebKit revision | [`WebKit-7623.1.14.10.9`](https://github.com/WebKit/WebKit/tree/WebKit-7623.1.14.10.9) |
 | Header (WebKit repo-relative path) | [`_WKInspectorPrivate.h`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKInspectorPrivate.h) |

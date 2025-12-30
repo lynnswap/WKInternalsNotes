@@ -2,22 +2,19 @@
 
 ## Topics
 
-### Testing
+### Properties
 
-- ``WKInternalsNotes/WKTimePickerViewController/setHour(_:minute:)``
-
-### Type
-
-#### Properties
 - ``WKInternalsNotes/WKTimePickerViewController/delegate``
 
-#### Methods
+### Methods
+
 - ``WKInternalsNotes/WKTimePickerViewController/initWithCoder(_:)``
 - ``WKInternalsNotes/WKTimePickerViewController/initWithDelegate(_:)``
+- ``WKInternalsNotes/WKTimePickerViewController/setHour(_:minute:)``
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
 | WebKit revision | [`WebKit-7623.1.14.10.9`](https://github.com/WebKit/WebKit/tree/WebKit-7623.1.14.10.9) |

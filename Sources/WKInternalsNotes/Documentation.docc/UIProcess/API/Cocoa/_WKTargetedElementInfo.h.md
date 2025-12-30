@@ -2,9 +2,8 @@
 
 ## Topics
 
-### Type
+### Properties
 
-#### Properties
 - ``WKInternalsNotes/_WKTargetedElementInfo/bounds``
 - ``WKInternalsNotes/_WKTargetedElementInfo/boundsInClientCoordinates``
 - ``WKInternalsNotes/_WKTargetedElementInfo/boundsInWebView``
@@ -23,7 +22,8 @@
 - ``WKInternalsNotes/_WKTargetedElementInfo/selectors``
 - ``WKInternalsNotes/_WKTargetedElementInfo/selectorsIncludingShadowHosts``
 
-#### Methods
+### Methods
+
 - ``WKInternalsNotes/_WKTargetedElementInfo/getChildFrames(_:)``
 - ``WKInternalsNotes/_WKTargetedElementInfo/isSameElement(_:)``
 - ``WKInternalsNotes/_WKTargetedElementInfo/takeSnapshotWithCompletionHandler(_:)``
@@ -32,6 +32,6 @@
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
 | WebKit revision | [`WebKit-7623.1.14.10.9`](https://github.com/WebKit/WebKit/tree/WebKit-7623.1.14.10.9) |
 | Header (WebKit repo-relative path) | [`_WKTargetedElementInfo.h`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTargetedElementInfo.h) |

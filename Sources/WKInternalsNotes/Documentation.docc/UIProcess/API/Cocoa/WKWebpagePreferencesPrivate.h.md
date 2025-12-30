@@ -2,14 +2,13 @@
 
 ## Topics
 
-### WKPrivate
+### Properties (from WKWebpagePreferencesPrivate.h)
 
-#### Properties
 - ``WKInternalsNotes/WKWebpagePreferences/_activeContentRuleListActionPatterns``
+- ``WKInternalsNotes/WKWebpagePreferences/_allowedAutoplayQuirks``
 - ``WKInternalsNotes/WKWebpagePreferences/_allowPrivacyProxy``
 - ``WKInternalsNotes/WKWebpagePreferences/_allowSharedProcess``
 - ``WKInternalsNotes/WKWebpagePreferences/_allowSiteSpecificQuirksToOverrideCompatibilityMode``
-- ``WKInternalsNotes/WKWebpagePreferences/_allowedAutoplayQuirks``
 - ``WKInternalsNotes/WKWebpagePreferences/_allowsJSHandleCreationInPageWorld``
 - ``WKInternalsNotes/WKWebpagePreferences/_alternateRequest``
 - ``WKInternalsNotes/WKWebpagePreferences/_applicationNameForUserAgentWithModernCompatibility``
@@ -34,10 +33,11 @@
 - ``WKInternalsNotes/WKWebpagePreferences/_visibilityAdjustmentSelectorsIncludingShadowHosts``
 - ``WKInternalsNotes/WKWebpagePreferences/_websiteDataStore``
 
-#### Methods
+### Methods
+
 - ``WKInternalsNotes/WKWebpagePreferences/_setContentRuleListsEnabled(_:exceptions:)``
 
-### Class Extension
+### Properties (from WKWebpagePreferencesInternal.h)
 
 - ``WKInternalsNotes/WKWebpagePreferences/defaultPreferences``
 
@@ -45,6 +45,6 @@
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
 | WebKit revision | [`WebKit-7623.1.14.10.9`](https://github.com/WebKit/WebKit/tree/WebKit-7623.1.14.10.9) |
 | Header (WebKit repo-relative path) | [`WKWebpagePreferencesPrivate.h`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebpagePreferencesPrivate.h) |

@@ -2,16 +2,16 @@
 
 ## Topics
 
-### WKPrivate
+### Properties (from WKBackForwardListItemPrivate.h)
 
-#### Properties
 - ``WKInternalsNotes/WKBackForwardListItem/_scrollPosition``
 - ``WKInternalsNotes/WKBackForwardListItem/_wasCreatedByJSWithoutUserInteraction``
 
-#### Methods
+### Methods
+
 - ``WKInternalsNotes/WKBackForwardListItem/_copySnapshotForTesting()``
 
-### Class Extension
+### Properties (from WKBackForwardListItemInternal.h)
 
 - ``WKInternalsNotes/WKBackForwardListItem/_item``
 
@@ -19,6 +19,6 @@
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
 | WebKit revision | [`WebKit-7623.1.14.10.9`](https://github.com/WebKit/WebKit/tree/WebKit-7623.1.14.10.9) |
 | Header (WebKit repo-relative path) | [`WKBackForwardListItemPrivate.h`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKBackForwardListItemPrivate.h) |

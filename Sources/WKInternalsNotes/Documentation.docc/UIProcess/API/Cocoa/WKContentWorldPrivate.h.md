@@ -1,21 +1,19 @@
 # ``WKInternalsNotes/WKContentWorld``
 
-WKContentWorld は、WKWebView に表示されるコンテンツとのやり取りを、互いに干渉しない複数の役割（world）に分離するためのオブジェクトです。
-
 ## Topics
 
-### WKPrivate
+### Properties
 
-#### Properties
 - ``WKInternalsNotes/WKContentWorld/_userContentWorld``
 
-#### Methods
+### Methods
+
 - ``WKInternalsNotes/WKContentWorld/_worldWithConfiguration(_:)``
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
 | WebKit revision | [`WebKit-7623.1.14.10.9`](https://github.com/WebKit/WebKit/tree/WebKit-7623.1.14.10.9) |
 | Header (WebKit repo-relative path) | [`WKContentWorldPrivate.h`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKContentWorldPrivate.h) |

@@ -2,19 +2,16 @@
 
 ## Topics
 
-### WKTesting
+### Properties
 
-- ``WKInternalsNotes/WKActionSheetAssistant/currentlyAvailableActionTitles()``
-- ``WKInternalsNotes/WKActionSheetAssistant/currentlyAvailableMediaControlsContextMenuItems()``
-
-### Type
-
-#### Properties
 - ``WKInternalsNotes/WKActionSheetAssistant/delegate``
 - ``WKInternalsNotes/WKActionSheetAssistant/needsLinkIndicator``
 
-#### Methods
+### Methods
+
 - ``WKInternalsNotes/WKActionSheetAssistant/cleanupSheet()``
+- ``WKInternalsNotes/WKActionSheetAssistant/currentlyAvailableActionTitles()``
+- ``WKInternalsNotes/WKActionSheetAssistant/currentlyAvailableMediaControlsContextMenuItems()``
 - ``WKInternalsNotes/WKActionSheetAssistant/defaultActionsForImageSheet(_:)``
 - ``WKInternalsNotes/WKActionSheetAssistant/defaultActionsForLinkSheet(_:)``
 - ``WKInternalsNotes/WKActionSheetAssistant/handleElementActionWithType(_:element:needsInteraction:)``
@@ -33,5 +30,5 @@
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
 | WebKit revision | [`WebKit-7623.1.14.10.9`](https://github.com/WebKit/WebKit/tree/WebKit-7623.1.14.10.9) |

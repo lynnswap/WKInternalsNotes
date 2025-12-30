@@ -4,8 +4,9 @@ Generate DocC type pages from the synthetic symbol index.
 
 This script reads:
   - Sources/WKInternalsNotes/Documentation.docc/SymbolGraphs/WKInternalsNotes.WKAPI.symbols.index.json
+  - Sources/WKInternalsNotes/Documentation.docc/SymbolGraphs/WKInternalsNotes.WKAPI.symbols.header-index.json
 
-and generates documentation extension pages (type pages) that group members by Objective-C category:
+and generates documentation extension pages (type pages) that group members by header:
   - Sources/WKInternalsNotes/Documentation.docc/UIProcess/API/Cocoa/<HeaderName>.h.md
   - Sources/WKInternalsNotes/Documentation.docc/UIProcess/API/Cocoa/<Symbol>.md
 
@@ -30,6 +31,7 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 REVISION_FILE = REPO_ROOT / "WebKit.revision"
 DOCC_ROOT = REPO_ROOT / "Sources" / "WKInternalsNotes" / "Documentation.docc"
 INDEX_PATH = DOCC_ROOT / "SymbolGraphs" / "WKInternalsNotes.WKAPI.symbols.index.json"
+HEADER_INDEX_PATH = DOCC_ROOT / "SymbolGraphs" / "WKInternalsNotes.WKAPI.symbols.header-index.json"
 OUTPUT_DIR = DOCC_ROOT / "UIProcess" / "API" / "Cocoa"
 
 DEFAULT_WEBKIT_CHECKOUT = REPO_ROOT / "References" / "WebKit"
@@ -63,55 +65,99 @@ def _find_header_for_symbol(symbol: str, *, webkit_headers_dir: Path) -> str | N
     return None
 
 
-def _category_sort_key(category: str) -> tuple[int, str]:
-    priority = {
-        "WKPrivate": 0,
-        "WKPrivateDeprecated": 1,
-        "WKPrivateIOS": 2,
-        "WKPrivateMac": 3,
-        "WKPrivateVision": 4,
-        "WKInternalMac": 5,
-        "WKTesting": 10,
-        "WKTestingIOS": 11,
-        "WKTestingMac": 12,
-        "Class Extension": 90,
-        "Type": 91,
-    }
-    return (priority.get(category, 50), category.casefold())
+def _header_sort_key(name: str) -> tuple[int, str]:
+    lower = name.casefold()
+    if "internal" in lower:
+        return (2, lower)
+    if "private" in lower:
+        return (1, lower)
+    return (0, lower)
 
 
 def _format_symbol_link(container: str, member: str) -> str:
     return f"- ``{MODULE_NAME}/{container}/{member}``"
 
+def _append_topic_group(
+    lines: list[str],
+    *,
+    title: str,
+    container: str,
+    members: list[str],
+) -> None:
+    if not members:
+        return
+    lines.append(f"### {title}")
+    lines.append("")
+    lines.extend(_format_symbol_link(container, m) for m in members)
+    lines.append("")
 
-def _render_topics(container: str, categories: dict[str, list[str]]) -> list[str]:
+
+def _render_topics(
+    container: str,
+    categories: dict[str, list[str]],
+    *,
+    header_index: dict[str, dict[str, str]],
+) -> list[str]:
     lines: list[str] = []
     lines.append("## Topics")
     lines.append("")
 
-    for category in sorted(categories.keys(), key=_category_sort_key):
-        members = list(categories.get(category, []))
-        if not members:
-            continue
+    all_members = {member for members in categories.values() for member in members}
+    members_by_header: dict[str, dict[str, list[str]]] = {}
+    unresolved = {"properties": [], "methods": []}
+    member_headers = header_index.get(container, {})
 
-        properties = [m for m in members if "(" not in m]
-        methods = [m for m in members if "(" in m]
+    for member in sorted(all_members, key=str.casefold):
+        header_name = member_headers.get(member)
+        target = unresolved if header_name is None else members_by_header.setdefault(
+            header_name,
+            {"properties": [], "methods": []},
+        )
+        bucket = "methods" if "(" in member else "properties"
+        target[bucket].append(member)
 
-        lines.append(f"### {category}")
+    properties_headers = [
+        header_name for header_name, groups in members_by_header.items() if groups["properties"]
+    ]
+    methods_headers = [header_name for header_name, groups in members_by_header.items() if groups["methods"]]
+    show_properties_from = len(properties_headers) > 1 or bool(unresolved["properties"])
+    show_methods_from = len(methods_headers) > 1 or bool(unresolved["methods"])
 
-        if properties and methods:
-            lines.append("")
-            lines.append("#### Properties")
-            lines.extend(_format_symbol_link(container, m) for m in properties)
-            lines.append("")
-            lines.append("#### Methods")
-            lines.extend(_format_symbol_link(container, m) for m in methods)
-            lines.append("")
-            continue
+    for header_name in sorted(members_by_header.keys(), key=_header_sort_key):
+        groups = members_by_header[header_name]
+        groups["properties"].sort(key=str.casefold)
+        groups["methods"].sort(key=str.casefold)
+        properties_title = (
+            f"Properties (from {header_name})" if show_properties_from else "Properties"
+        )
+        methods_title = f"Methods (from {header_name})" if show_methods_from else "Methods"
+        _append_topic_group(
+            lines,
+            title=properties_title,
+            container=container,
+            members=groups["properties"],
+        )
+        _append_topic_group(
+            lines,
+            title=methods_title,
+            container=container,
+            members=groups["methods"],
+        )
 
-        lines.append("")
-        lines.extend(_format_symbol_link(container, m) for m in (properties or methods))
-        lines.append("")
+    unresolved["properties"].sort(key=str.casefold)
+    unresolved["methods"].sort(key=str.casefold)
+    _append_topic_group(
+        lines,
+        title="Properties",
+        container=container,
+        members=unresolved["properties"],
+    )
+    _append_topic_group(
+        lines,
+        title="Methods",
+        container=container,
+        members=unresolved["methods"],
+    )
 
     # Drop trailing blank line if present.
     while lines and lines[-1] == "":
@@ -138,12 +184,19 @@ def _render_metadata(*, revision: str, header_name: str | None, today: str) -> l
     return lines + [""]
 
 
-def _render_page(*, symbol: str, categories: dict[str, list[str]], revision: str, header_name: str | None) -> str:
+def _render_page(
+    *,
+    symbol: str,
+    categories: dict[str, list[str]],
+    revision: str,
+    header_name: str | None,
+    header_index: dict[str, dict[str, str]],
+) -> str:
     today = date.today().isoformat()
     out: list[str] = []
     out.append(f"# ``{MODULE_NAME}/{symbol}``")
     out.append("")
-    out.extend(_render_topics(symbol, categories))
+    out.extend(_render_topics(symbol, categories, header_index=header_index))
     out.extend(_render_metadata(revision=revision, header_name=header_name, today=today))
     return "\n".join(out)
 
@@ -191,6 +244,11 @@ def main() -> int:
 
     revision = _read_revision()
     index: dict[str, dict[str, list[str]]] = json.loads(INDEX_PATH.read_text(encoding="utf-8"))
+    header_index: dict[str, dict[str, str]] = {}
+    if HEADER_INDEX_PATH.exists():
+        header_index = json.loads(HEADER_INDEX_PATH.read_text(encoding="utf-8"))
+    else:
+        print(f"warning: missing header index: {HEADER_INDEX_PATH.relative_to(REPO_ROOT)}")
 
     webkit_headers_dir = args.webkit_root / WEBKIT_COCOA_HEADERS_DIR_REL
     if not webkit_headers_dir.exists():
@@ -230,7 +288,13 @@ def main() -> int:
             continue
 
         out_path.write_text(
-            _render_page(symbol=symbol, categories=categories, revision=revision, header_name=header_name),
+            _render_page(
+                symbol=symbol,
+                categories=categories,
+                revision=revision,
+                header_name=header_name,
+                header_index=header_index,
+            ),
             encoding="utf-8",
         )
         print(f"wrote: {out_path.relative_to(REPO_ROOT)}")

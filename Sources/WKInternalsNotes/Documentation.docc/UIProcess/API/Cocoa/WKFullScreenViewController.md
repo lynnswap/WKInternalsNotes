@@ -2,15 +2,8 @@
 
 ## Topics
 
-### Class Extension
+### Properties (from WKFullScreenViewController.h)
 
-- ``WKInternalsNotes/WKFullScreenViewController/_effectiveFullscreenInsets``
-- ``WKInternalsNotes/WKFullScreenViewController/_manager``
-- ``WKInternalsNotes/WKFullScreenViewController/_webView``
-
-### Type
-
-#### Properties
 - ``WKInternalsNotes/WKFullScreenViewController/animating``
 - ``WKInternalsNotes/WKFullScreenViewController/delegate``
 - ``WKInternalsNotes/WKFullScreenViewController/inWindowFullscreenActive``
@@ -20,7 +13,8 @@
 - ``WKInternalsNotes/WKFullScreenViewController/prefersHomeIndicatorAutoHidden``
 - ``WKInternalsNotes/WKFullScreenViewController/prefersStatusBarHidden``
 
-#### Methods
+### Methods
+
 - ``WKInternalsNotes/WKFullScreenViewController/configureEnvironmentPickerOrFullscreenVideoButtonView()``
 - ``WKInternalsNotes/WKFullScreenViewController/hideBanner()``
 - ``WKInternalsNotes/WKFullScreenViewController/hideCustomControls(_:)``
@@ -35,9 +29,15 @@
 - ``WKInternalsNotes/WKFullScreenViewController/videoControlsManagerDidChange()``
 - ``WKInternalsNotes/WKFullScreenViewController/videosInElementFullscreenChanged()``
 
+### Properties
+
+- ``WKInternalsNotes/WKFullScreenViewController/_effectiveFullscreenInsets``
+- ``WKInternalsNotes/WKFullScreenViewController/_manager``
+- ``WKInternalsNotes/WKFullScreenViewController/_webView``
+
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
 | WebKit revision | [`WebKit-7623.1.14.10.9`](https://github.com/WebKit/WebKit/tree/WebKit-7623.1.14.10.9) |

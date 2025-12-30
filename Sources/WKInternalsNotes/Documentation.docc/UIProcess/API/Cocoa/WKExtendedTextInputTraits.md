@@ -2,9 +2,8 @@
 
 ## Topics
 
-### Type
+### Properties
 
-#### Properties
 - ``WKInternalsNotes/WKExtendedTextInputTraits/allowsNumberPadPopover``
 - ``WKInternalsNotes/WKExtendedTextInputTraits/autocapitalizationType``
 - ``WKInternalsNotes/WKExtendedTextInputTraits/autocorrectionType``
@@ -27,7 +26,8 @@
 - ``WKInternalsNotes/WKExtendedTextInputTraits/textContentType``
 - ``WKInternalsNotes/WKExtendedTextInputTraits/typingAdaptationEnabled``
 
-#### Methods
+### Methods
+
 - ``WKInternalsNotes/WKExtendedTextInputTraits/restoreDefaultValues()``
 - ``WKInternalsNotes/WKExtendedTextInputTraits/setSelectionColorsToMatchTintColor(_:)``
 
@@ -35,5 +35,5 @@
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
 | WebKit revision | [`WebKit-7623.1.14.10.9`](https://github.com/WebKit/WebKit/tree/WebKit-7623.1.14.10.9) |

@@ -37,6 +37,7 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 DOCC_ROOT = REPO_ROOT / "Sources" / "WKInternalsNotes" / "Documentation.docc"
 OUTPUT_DIR = DOCC_ROOT / "SymbolGraphs"
 OUTPUT_PATH = OUTPUT_DIR / "WKInternalsNotes.WKAPI.symbols.json"
+HEADER_INDEX_PATH = OUTPUT_DIR / "WKInternalsNotes.WKAPI.symbols.header-index.json"
 
 DEFAULT_WEBKIT_CHECKOUT = REPO_ROOT / "References" / "WebKit"
 WEBKIT_UI_PROCESS_DIR = Path("Source/WebKit/UIProcess")
@@ -80,6 +81,19 @@ def _iter_files(root: Path, *, exts: tuple[str, ...]) -> Iterable[Path]:
         if EXCLUDED_PORT_PATH_PARTS.intersection(path.parts):
             continue
         yield path
+
+
+def _header_sort_key(name: str) -> tuple[int, str]:
+    lower = name.casefold()
+    if "internal" in lower:
+        return (2, lower)
+    if "private" in lower:
+        return (1, lower)
+    return (0, lower)
+
+
+def _select_preferred_header(headers: set[str]) -> str:
+    return sorted(headers, key=_header_sort_key)[0]
 
 
 def _strip_swift_comments(text: str) -> str:
@@ -841,7 +855,12 @@ def _collect_symbols_from_headers(
     public: PublicSet,
     include_implementations: bool,
     include_swift: bool,
-) -> tuple[list[dict[str, Any]], list[dict[str, Any]], dict[str, dict[str, list[str]]]]:
+) -> tuple[
+    list[dict[str, Any]],
+    list[dict[str, Any]],
+    dict[str, dict[str, list[str]]],
+    dict[str, dict[str, str]],
+]:
     ui_process_root = webkit_root / WEBKIT_UI_PROCESS_DIR
     if not ui_process_root.exists():
         raise RuntimeError(f"missing WebKit UIProcess dir: {ui_process_root}")
@@ -853,6 +872,7 @@ def _collect_symbols_from_headers(
 
     members_by_type_and_category: dict[str, dict[str, set[str]]] = {}
     included_types: set[str] = set()
+    member_headers_by_type: dict[str, dict[str, set[str]]] = {}
 
     def add_symbol(symbol: dict[str, Any]) -> None:
         precise = symbol["identifier"]["precise"]
@@ -961,6 +981,9 @@ def _collect_symbols_from_headers(
                 except Exception:
                     continue
 
+                if path.suffix == ".h":
+                    member_headers_by_type.setdefault(block.name, {}).setdefault(member_path, set()).add(path.name)
+
                 members_by_type_and_category.setdefault(block.name, {}).setdefault("Type", set()).add(member_path)
 
         # Interface blocks (types + members).
@@ -1005,6 +1028,9 @@ def _collect_symbols_from_headers(
                         continue
                 except Exception:
                     continue
+
+                if path.suffix == ".h":
+                    member_headers_by_type.setdefault(block.type_name, {}).setdefault(member_path, set()).add(path.name)
 
                 included_types.add(block.type_name)
 
@@ -1056,7 +1082,14 @@ def _collect_symbols_from_headers(
     for type_name, categories in members_by_type_and_category.items():
         members_index[type_name] = {category: sorted(paths) for category, paths in categories.items()}
 
-    return symbols, relationships, members_index
+    member_header_index: dict[str, dict[str, str]] = {}
+    for type_name, members in member_headers_by_type.items():
+        for member_path, headers in members.items():
+            if not headers:
+                continue
+            member_header_index.setdefault(type_name, {})[member_path] = _select_preferred_header(headers)
+
+    return symbols, relationships, members_index, member_header_index
 
 
 def main() -> int:
@@ -1082,7 +1115,7 @@ def main() -> int:
 
     public = _build_public_set(args.webkit_root)
 
-    symbols, relationships, members_index = _collect_symbols_from_headers(
+    symbols, relationships, members_index, member_header_index = _collect_symbols_from_headers(
         args.webkit_root,
         public=public,
         include_implementations=args.include_implementations,
@@ -1111,6 +1144,10 @@ def main() -> int:
     if args.write_index:
         index_path = OUTPUT_PATH.with_suffix(".index.json")
         index_path.write_text(json.dumps(members_index, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+        HEADER_INDEX_PATH.write_text(
+            json.dumps(member_header_index, indent=2, sort_keys=True) + "\n",
+            encoding="utf-8",
+        )
 
     print(f"Wrote: {OUTPUT_PATH.relative_to(REPO_ROOT)} ({len(symbols)} symbols, {len(relationships)} relationships)")
     return 0

@@ -2,16 +2,16 @@
 
 ## Topics
 
-### Type
+### Properties
 
-#### Properties
 - ``WKInternalsNotes/_WKTextManipulationExclusionRule/attributeName``
 - ``WKInternalsNotes/_WKTextManipulationExclusionRule/attributeValue``
 - ``WKInternalsNotes/_WKTextManipulationExclusionRule/className``
 - ``WKInternalsNotes/_WKTextManipulationExclusionRule/elementName``
 - ``WKInternalsNotes/_WKTextManipulationExclusionRule/isExclusion``
 
-#### Methods
+### Methods
+
 - ``WKInternalsNotes/_WKTextManipulationExclusionRule/init()``
 - ``WKInternalsNotes/_WKTextManipulationExclusionRule/initExclusion(_:forAttribute:value:)``
 - ``WKInternalsNotes/_WKTextManipulationExclusionRule/initExclusion(_:forClass:)``
@@ -21,6 +21,6 @@
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
 | WebKit revision | [`WebKit-7623.1.14.10.9`](https://github.com/WebKit/WebKit/tree/WebKit-7623.1.14.10.9) |
 | Header (WebKit repo-relative path) | [`_WKTextManipulationExclusionRule.h`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextManipulationExclusionRule.h) |

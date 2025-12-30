@@ -2,12 +2,12 @@
 
 ## Topics
 
-### Type
+### Properties
 
-#### Properties
 - ``WKInternalsNotes/WKFileUploadPanel/delegate``
 
-#### Methods
+### Methods
+
 - ``WKInternalsNotes/WKFileUploadPanel/_moveToNewTemporaryDirectory(_:fileCoordinator:fileManager:asCopy:)``
 - ``WKInternalsNotes/WKFileUploadPanel/acceptedTypeIdentifiers()``
 - ``WKInternalsNotes/WKFileUploadPanel/currentAvailableActionTitles()``
@@ -20,5 +20,5 @@
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
 | WebKit revision | [`WebKit-7623.1.14.10.9`](https://github.com/WebKit/WebKit/tree/WebKit-7623.1.14.10.9) |

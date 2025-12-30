@@ -2,20 +2,20 @@
 
 ## Topics
 
-### Type
+### Properties
 
-#### Properties
 - ``WKInternalsNotes/WKTextExtractionEditable/focused``
 - ``WKInternalsNotes/WKTextExtractionEditable/label``
 - ``WKInternalsNotes/WKTextExtractionEditable/placeholder``
 - ``WKInternalsNotes/WKTextExtractionEditable/secure``
 
-#### Methods
+### Methods
+
 - ``WKInternalsNotes/WKTextExtractionEditable/initWithLabel(_:placeholder:isSecure:isFocused:)``
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
 | WebKit revision | [`WebKit-7623.1.14.10.9`](https://github.com/WebKit/WebKit/tree/WebKit-7623.1.14.10.9) |

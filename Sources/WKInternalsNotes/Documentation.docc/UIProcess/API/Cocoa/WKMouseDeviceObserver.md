@@ -2,17 +2,14 @@
 
 ## Topics
 
-### Cpp
+### Properties
 
-- ``WKInternalsNotes/WKMouseDeviceObserver/mousePointerDevicesDidChange(_:)``
-
-### Type
-
-#### Properties
 - ``WKInternalsNotes/WKMouseDeviceObserver/hasMouseDevice``
 
-#### Methods
+### Methods
+
 - ``WKInternalsNotes/WKMouseDeviceObserver/_setHasMouseDeviceForTesting(_:)``
+- ``WKInternalsNotes/WKMouseDeviceObserver/mousePointerDevicesDidChange(_:)``
 - ``WKInternalsNotes/WKMouseDeviceObserver/new()``
 - ``WKInternalsNotes/WKMouseDeviceObserver/sharedInstance()``
 - ``WKInternalsNotes/WKMouseDeviceObserver/start()``
@@ -22,5 +19,5 @@
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
 | WebKit revision | [`WebKit-7623.1.14.10.9`](https://github.com/WebKit/WebKit/tree/WebKit-7623.1.14.10.9) |

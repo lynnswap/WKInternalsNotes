@@ -2,29 +2,16 @@
 
 ## Topics
 
-### WKTesting
+### Properties (from _WKWebAuthenticationPanel.h)
 
-#### Properties
-- ``WKInternalsNotes/_WKWebAuthenticationPanel/mockConfiguration``
-
-#### Methods
-- ``WKInternalsNotes/_WKWebAuthenticationPanel/convertToCoreCreationOptionsWithOptions(_:)``
-- ``WKInternalsNotes/_WKWebAuthenticationPanel/convertToCoreRequestOptionsWithOptions(_:)``
-- ``WKInternalsNotes/_WKWebAuthenticationPanel/encodeMakeCredentialCommandWithClientDataHash(_:options:userVerificationAvailability:authenticatorSupportedCredentialParameters:)``
-- ``WKInternalsNotes/_WKWebAuthenticationPanel/getAllLocalAuthenticatorCredentialsWithAccessGroup(_:)``
-- ``WKInternalsNotes/_WKWebAuthenticationPanel/getAllLocalAuthenticatorCredentialsWithCredentialIDAndAccessGroup(_:credentialID:)``
-- ``WKInternalsNotes/_WKWebAuthenticationPanel/getAllLocalAuthenticatorCredentialsWithRPIDAndAccessGroup(_:rpID:)``
-
-### Type
-
-#### Properties
 - ``WKInternalsNotes/_WKWebAuthenticationPanel/delegate``
 - ``WKInternalsNotes/_WKWebAuthenticationPanel/relyingPartyID``
 - ``WKInternalsNotes/_WKWebAuthenticationPanel/transports``
 - ``WKInternalsNotes/_WKWebAuthenticationPanel/type``
 - ``WKInternalsNotes/_WKWebAuthenticationPanel/userName``
 
-#### Methods
+### Methods (from _WKWebAuthenticationPanel.h)
+
 - ``WKInternalsNotes/_WKWebAuthenticationPanel/cancel()``
 - ``WKInternalsNotes/_WKWebAuthenticationPanel/clearAllLocalAuthenticatorCredentials()``
 - ``WKInternalsNotes/_WKWebAuthenticationPanel/deleteLocalAuthenticatorCredentialWithGroupAndID(_:credential:)``
@@ -57,10 +44,23 @@
 - ``WKInternalsNotes/_WKWebAuthenticationPanel/setDisplayNameForLocalCredentialWithGroupAndID(_:credential:displayName:)``
 - ``WKInternalsNotes/_WKWebAuthenticationPanel/setNameForLocalCredentialWithGroupAndID(_:credential:name:)``
 
+### Properties (from _WKWebAuthenticationPanelForTesting.h)
+
+- ``WKInternalsNotes/_WKWebAuthenticationPanel/mockConfiguration``
+
+### Methods (from _WKWebAuthenticationPanelForTesting.h)
+
+- ``WKInternalsNotes/_WKWebAuthenticationPanel/convertToCoreCreationOptionsWithOptions(_:)``
+- ``WKInternalsNotes/_WKWebAuthenticationPanel/convertToCoreRequestOptionsWithOptions(_:)``
+- ``WKInternalsNotes/_WKWebAuthenticationPanel/encodeMakeCredentialCommandWithClientDataHash(_:options:userVerificationAvailability:authenticatorSupportedCredentialParameters:)``
+- ``WKInternalsNotes/_WKWebAuthenticationPanel/getAllLocalAuthenticatorCredentialsWithAccessGroup(_:)``
+- ``WKInternalsNotes/_WKWebAuthenticationPanel/getAllLocalAuthenticatorCredentialsWithCredentialIDAndAccessGroup(_:credentialID:)``
+- ``WKInternalsNotes/_WKWebAuthenticationPanel/getAllLocalAuthenticatorCredentialsWithRPIDAndAccessGroup(_:rpID:)``
+
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
 | WebKit revision | [`WebKit-7623.1.14.10.9`](https://github.com/WebKit/WebKit/tree/WebKit-7623.1.14.10.9) |
 | Header (WebKit repo-relative path) | [`_WKWebAuthenticationPanel.h`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebAuthenticationPanel.h) |

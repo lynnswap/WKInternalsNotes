@@ -2,9 +2,8 @@
 
 ## Topics
 
-### Type
+### Properties
 
-#### Properties
 - ``WKInternalsNotes/_WKWebsiteDataStoreConfiguration/_cacheStorageDirectory``
 - ``WKInternalsNotes/_WKWebsiteDataStoreConfiguration/_cookieStorageFile``
 - ``WKInternalsNotes/_WKWebsiteDataStoreConfiguration/_indexedDBDatabaseDirectory``
@@ -63,7 +62,8 @@
 - ``WKInternalsNotes/_WKWebsiteDataStoreConfiguration/webPushMachServiceName``
 - ``WKInternalsNotes/_WKWebsiteDataStoreConfiguration/webPushPartitionString``
 
-#### Methods
+### Methods
+
 - ``WKInternalsNotes/_WKWebsiteDataStoreConfiguration/init()``
 - ``WKInternalsNotes/_WKWebsiteDataStoreConfiguration/initNonPersistentConfiguration()``
 - ``WKInternalsNotes/_WKWebsiteDataStoreConfiguration/initWithDirectory(_:)``
@@ -73,6 +73,6 @@
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
 | WebKit revision | [`WebKit-7623.1.14.10.9`](https://github.com/WebKit/WebKit/tree/WebKit-7623.1.14.10.9) |
 | Header (WebKit repo-relative path) | [`_WKWebsiteDataStoreConfiguration.h`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebsiteDataStoreConfiguration.h) |

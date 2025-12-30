@@ -2,15 +2,15 @@
 
 ## Topics
 
-### Type
+### Properties
 
-#### Properties
 - ``WKInternalsNotes/WKScrollView/_contentInsetAdjustmentBehaviorWasExternallyOverridden``
 - ``WKInternalsNotes/WKScrollView/_contentInsetWasExternallyOverridden``
 - ``WKInternalsNotes/WKScrollView/_usesHardTopScrollEdgeEffect``
 - ``WKInternalsNotes/WKScrollView/internalDelegate``
 
-#### Methods
+### Methods
+
 - ``WKInternalsNotes/WKScrollView/_didChangeTopScrollEdgeEffectStyle()``
 - ``WKInternalsNotes/WKScrollView/_resetContentInset()``
 - ``WKInternalsNotes/WKScrollView/_resetContentInsetAdjustmentBehavior()``
@@ -33,5 +33,5 @@
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
 | WebKit revision | [`WebKit-7623.1.14.10.9`](https://github.com/WebKit/WebKit/tree/WebKit-7623.1.14.10.9) |

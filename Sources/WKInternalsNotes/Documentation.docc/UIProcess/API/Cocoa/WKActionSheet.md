@@ -2,13 +2,13 @@
 
 ## Topics
 
-### Type
+### Properties
 
-#### Properties
 - ``WKInternalsNotes/WKActionSheet/arrowDirections``
 - ``WKInternalsNotes/WKActionSheet/sheetDelegate``
 
-#### Methods
+### Methods
+
 - ``WKInternalsNotes/WKActionSheet/doneWithSheet(_:)``
 - ``WKInternalsNotes/WKActionSheet/presentSheet(_:)``
 - ``WKInternalsNotes/WKActionSheet/presentSheetFromRect(_:)``
@@ -18,5 +18,5 @@
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
 | WebKit revision | [`WebKit-7623.1.14.10.9`](https://github.com/WebKit/WebKit/tree/WebKit-7623.1.14.10.9) |

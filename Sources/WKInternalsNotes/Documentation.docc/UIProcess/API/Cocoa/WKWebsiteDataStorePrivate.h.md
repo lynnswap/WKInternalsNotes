@@ -2,9 +2,8 @@
 
 ## Topics
 
-### WKPrivate
+### Properties
 
-#### Properties
 - ``WKInternalsNotes/WKWebsiteDataStore/_allowsCellularAccess``
 - ``WKInternalsNotes/WKWebsiteDataStore/_allowsTLSFallback``
 - ``WKInternalsNotes/WKWebsiteDataStore/_boundInterfaceIdentifier``
@@ -19,11 +18,12 @@
 - ``WKInternalsNotes/WKWebsiteDataStore/_storageSiteValidationEnabled``
 - ``WKInternalsNotes/WKWebsiteDataStore/_webPushPartition``
 
-#### Methods
+### Methods (from WKWebsiteDataStorePrivate.h)
+
 - ``WKInternalsNotes/WKWebsiteDataStore/_abortBackgroundFetch(_:completionHandler:)``
-- ``WKInternalsNotes/WKWebsiteDataStore/_allWebsiteDataTypesIncludingPrivate()``
 - ``WKInternalsNotes/WKWebsiteDataStore/_allowTLSCertificateChain(_:forHost:)``
 - ``WKInternalsNotes/WKWebsiteDataStore/_allowWebsiteDataRecordsForAllOrigins()``
+- ``WKInternalsNotes/WKWebsiteDataStore/_allWebsiteDataTypesIncludingPrivate()``
 - ``WKInternalsNotes/WKWebsiteDataStore/_appBoundDomains(_:)``
 - ``WKInternalsNotes/WKWebsiteDataStore/_appBoundSchemes(_:)``
 - ``WKInternalsNotes/WKWebsiteDataStore/_clearLoadedSubresourceDomainsFor(_:)``
@@ -97,7 +97,7 @@
 - ``WKInternalsNotes/WKWebsiteDataStore/_trustServerForLocalPCMTesting(_:)``
 - ``WKInternalsNotes/WKWebsiteDataStore/handleNotificationResponse(_:)``
 
-### WKWebPushHandling
+### Methods
 
 - ``WKInternalsNotes/WKWebsiteDataStore/_handleWebPushAction(_:)``
 
@@ -105,6 +105,6 @@
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
 | WebKit revision | [`WebKit-7623.1.14.10.9`](https://github.com/WebKit/WebKit/tree/WebKit-7623.1.14.10.9) |
 | Header (WebKit repo-relative path) | [`WKWebsiteDataStorePrivate.h`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebsiteDataStorePrivate.h) |

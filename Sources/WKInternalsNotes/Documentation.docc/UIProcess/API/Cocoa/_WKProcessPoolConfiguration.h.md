@@ -2,9 +2,8 @@
 
 ## Topics
 
-### Type
+### Properties
 
-- ``WKInternalsNotes/_WKProcessPoolConfiguration/JITEnabled``
 - ``WKInternalsNotes/_WKProcessPoolConfiguration/additionalReadAccessAllowedURLs``
 - ``WKInternalsNotes/_WKProcessPoolConfiguration/alwaysKeepAndReuseSwappedProcesses``
 - ``WKInternalsNotes/_WKProcessPoolConfiguration/alwaysRevalidatedURLSchemes``
@@ -18,6 +17,7 @@
 - ``WKInternalsNotes/_WKProcessPoolConfiguration/diskCacheSpeculativeValidationEnabled``
 - ``WKInternalsNotes/_WKProcessPoolConfiguration/ignoreSynchronousMessagingTimeoutsForTesting``
 - ``WKInternalsNotes/_WKProcessPoolConfiguration/injectedBundleURL``
+- ``WKInternalsNotes/_WKProcessPoolConfiguration/JITEnabled``
 - ``WKInternalsNotes/_WKProcessPoolConfiguration/maximumProcessCount``
 - ``WKInternalsNotes/_WKProcessPoolConfiguration/memoryFootprintNotificationThresholds``
 - ``WKInternalsNotes/_WKProcessPoolConfiguration/memoryFootprintPollIntervalForTesting``
@@ -43,6 +43,6 @@
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
 | WebKit revision | [`WebKit-7623.1.14.10.9`](https://github.com/WebKit/WebKit/tree/WebKit-7623.1.14.10.9) |
 | Header (WebKit repo-relative path) | [`_WKProcessPoolConfiguration.h`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKProcessPoolConfiguration.h) |

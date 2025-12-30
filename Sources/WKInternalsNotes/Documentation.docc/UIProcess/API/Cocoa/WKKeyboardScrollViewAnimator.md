@@ -2,12 +2,12 @@
 
 ## Topics
 
-### Type
+### Properties
 
-#### Properties
 - ``WKInternalsNotes/WKKeyboardScrollViewAnimator/delegate``
 
-#### Methods
+### Methods
+
 - ``WKInternalsNotes/WKKeyboardScrollViewAnimator/beginWithEvent(_:scrollView:)``
 - ``WKInternalsNotes/WKKeyboardScrollViewAnimator/handleKeyEvent(_:)``
 - ``WKInternalsNotes/WKKeyboardScrollViewAnimator/init()``
@@ -21,5 +21,5 @@
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
 | WebKit revision | [`WebKit-7623.1.14.10.9`](https://github.com/WebKit/WebKit/tree/WebKit-7623.1.14.10.9) |

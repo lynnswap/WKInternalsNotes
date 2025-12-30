@@ -2,12 +2,12 @@
 
 ## Topics
 
-### Type
+### Properties
 
-#### Properties
 - ``WKInternalsNotes/WKViewLayoutStrategy/layoutMode``
 
-#### Methods
+### Methods
+
 - ``WKInternalsNotes/WKViewLayoutStrategy/didChangeFrameSize()``
 - ``WKInternalsNotes/WKViewLayoutStrategy/didChangeViewScale()``
 - ``WKInternalsNotes/WKViewLayoutStrategy/didEndLiveResize()``
@@ -23,5 +23,5 @@
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
 | WebKit revision | [`WebKit-7623.1.14.10.9`](https://github.com/WebKit/WebKit/tree/WebKit-7623.1.14.10.9) |

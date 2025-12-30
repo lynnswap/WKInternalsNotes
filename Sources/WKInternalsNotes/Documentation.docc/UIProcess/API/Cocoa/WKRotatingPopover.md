@@ -2,15 +2,15 @@
 
 ## Topics
 
-### Type
+### Properties
 
-#### Properties
 - ``WKInternalsNotes/WKRotatingPopover/dismissionDelegate``
 - ``WKInternalsNotes/WKRotatingPopover/popoverController``
 - ``WKInternalsNotes/WKRotatingPopover/presentationPoint``
 - ``WKInternalsNotes/WKRotatingPopover/view``
 
-#### Methods
+### Methods
+
 - ``WKInternalsNotes/WKRotatingPopover/dismissPopoverAnimated(_:)``
 - ``WKInternalsNotes/WKRotatingPopover/initWithView(_:)``
 - ``WKInternalsNotes/WKRotatingPopover/popoverArrowDirections()``
@@ -20,5 +20,5 @@
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
 | WebKit revision | [`WebKit-7623.1.14.10.9`](https://github.com/WebKit/WebKit/tree/WebKit-7623.1.14.10.9) |

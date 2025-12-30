@@ -2,9 +2,8 @@
 
 ## Topics
 
-### Private
+### Properties (from WKViewPrivate.h)
 
-#### Properties
 - ``WKInternalsNotes/WKView/_automaticallyAdjustsContentInsets``
 - ``WKInternalsNotes/WKView/_backgroundColor``
 - ``WKInternalsNotes/WKView/_fixedLayoutSize``
@@ -31,7 +30,8 @@
 - ``WKInternalsNotes/WKView/underlayColor``
 - ``WKInternalsNotes/WKView/usingUISideCompositing``
 
-#### Methods
+### Methods
+
 - ``WKInternalsNotes/WKView/_addMediaPlaybackControlsView(_:)``
 - ``WKInternalsNotes/WKView/_cancelImmediateActionAnimation()``
 - ``WKInternalsNotes/WKView/_completeImmediateActionAnimation()``
@@ -48,6 +48,7 @@
 - ``WKInternalsNotes/WKView/_setCustomSwipeViewsTopContentInset(_:)``
 - ``WKInternalsNotes/WKView/_setDidMoveSwipeSnapshotCallback(_:)``
 - ``WKInternalsNotes/WKView/_setShouldSuppressFirstResponderChanges(_:)``
+- ``WKInternalsNotes/WKView/_shouldLoadIconWithParameters(_:completionHandler:)``
 - ``WKInternalsNotes/WKView/_simulateMouseMove(_:)``
 - ``WKInternalsNotes/WKView/_tryToSwipeWithEvent(_:ignoringPinnedState:)``
 - ``WKInternalsNotes/WKView/allowsLinkPreview()``
@@ -74,11 +75,7 @@
 - ``WKInternalsNotes/WKView/setWindowOcclusionDetectionEnabled(_:)``
 - ``WKInternalsNotes/WKView/windowOcclusionDetectionEnabled()``
 
-### PrivateForSubclassToDefine
-
-- ``WKInternalsNotes/WKView/_shouldLoadIconWithParameters(_:completionHandler:)``
-
-### Class Extension
+### Properties (from WKViewInternal.h)
 
 - ``WKInternalsNotes/WKView/_thumbnailView``
 
@@ -86,6 +83,6 @@
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
 | WebKit revision | [`WebKit-7623.1.14.10.9`](https://github.com/WebKit/WebKit/tree/WebKit-7623.1.14.10.9) |
 | Header (WebKit repo-relative path) | [`WKViewPrivate.h`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKViewPrivate.h) |

@@ -2,9 +2,8 @@
 
 ## Topics
 
-### WKPrivate
+### Properties (from WKProcessPoolPrivate.h)
 
-#### Properties
 - ``WKInternalsNotes/WKProcessPool/_automationDelegate``
 - ``WKInternalsNotes/WKProcessPool/_configuration``
 - ``WKInternalsNotes/WKProcessPool/_cookieStoragePartitioningEnabled``
@@ -13,7 +12,8 @@
 - ``WKInternalsNotes/WKProcessPool/_javaScriptConfigurationDirectory``
 - ``WKInternalsNotes/WKProcessPool/_pluginLoadClientPolicies``
 
-#### Methods
+### Methods
+
 - ``WKInternalsNotes/WKProcessPool/_addSupportedPlugin(_:named:withMimeTypes:withExtensions:)``
 - ``WKInternalsNotes/WKProcessPool/_allProcessPoolsForTesting()``
 - ``WKInternalsNotes/WKProcessPool/_automationCapabilitiesDidChange()``
@@ -30,6 +30,7 @@
 - ``WKInternalsNotes/WKProcessPool/_gpuProcessInfo()``
 - ``WKInternalsNotes/WKProcessPool/_hasAudibleMediaActivity()``
 - ``WKInternalsNotes/WKProcessPool/_hasPrewarmedWebProcess()``
+- ``WKInternalsNotes/WKProcessPool/_initWithConfiguration(_:)``
 - ``WKInternalsNotes/WKProcessPool/_isJITDisabledInAllRemoteWorkerProcesses(_:)``
 - ``WKInternalsNotes/WKProcessPool/_isMetalDebugDeviceEnabledInGPUProcessForTesting()``
 - ``WKInternalsNotes/WKProcessPool/_isMetalShaderValidationEnabledInGPUProcessForTesting()``
@@ -48,6 +49,7 @@
 - ``WKInternalsNotes/WKProcessPool/_prewarmedProcessIdentifiersForTesting()``
 - ``WKInternalsNotes/WKProcessPool/_processCacheCapacity()``
 - ``WKInternalsNotes/WKProcessPool/_processCacheSize()``
+- ``WKInternalsNotes/WKProcessPool/_registerAdditionalFonts(_:)``
 - ``WKInternalsNotes/WKProcessPool/_registerURLSchemeAsBypassingContentSecurityPolicy(_:)``
 - ``WKInternalsNotes/WKProcessPool/_registerURLSchemeAsCanDisplayOnlyIfCanRequest(_:)``
 - ``WKInternalsNotes/WKProcessPool/_registerURLSchemeAsSecure(_:)``
@@ -84,22 +86,14 @@
 - ``WKInternalsNotes/WKProcessPool/_websiteDataURLForContainerWithURL(_:)``
 - ``WKInternalsNotes/WKProcessPool/_websiteDataURLForContainerWithURL(_:bundleIdentifierIfNotInContainer:)``
 
-### WKPrivateMac
+### Properties (from WKProcessPoolInternal.h)
 
-- ``WKInternalsNotes/WKProcessPool/_registerAdditionalFonts(_:)``
-
-### Class Extension
-
-#### Properties
 - ``WKInternalsNotes/WKProcessPool/_geolocationProvider``
-
-#### Methods
-- ``WKInternalsNotes/WKProcessPool/_initWithConfiguration(_:)``
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
 | WebKit revision | [`WebKit-7623.1.14.10.9`](https://github.com/WebKit/WebKit/tree/WebKit-7623.1.14.10.9) |
 | Header (WebKit repo-relative path) | [`WKProcessPoolPrivate.h`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKProcessPoolPrivate.h) |

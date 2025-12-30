@@ -2,12 +2,12 @@
 
 ## Topics
 
-### WKPrivate
+### Properties
 
-#### Properties
 - ``WKInternalsNotes/WKUserContentController/_userStyleSheets``
 
-#### Methods
+### Methods (from WKUserContentControllerPrivate.h)
+
 - ``WKInternalsNotes/WKUserContentController/_addContentRuleList(_:extensionBaseURL:)``
 - ``WKInternalsNotes/WKUserContentController/_addScriptMessageHandler(_:name:contentWorld:)``
 - ``WKInternalsNotes/WKUserContentController/_addScriptMessageHandler(_:name:userContentWorld:)``
@@ -24,7 +24,7 @@
 - ``WKInternalsNotes/WKUserContentController/_removeUserScript(_:)``
 - ``WKInternalsNotes/WKUserContentController/_removeUserStyleSheet(_:)``
 
-### Class Extension
+### Methods (from WKUserContentControllerInternal.h)
 
 - ``WKInternalsNotes/WKUserContentController/_addScriptMessageHandler(_:)``
 
@@ -32,6 +32,6 @@
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
 | WebKit revision | [`WebKit-7623.1.14.10.9`](https://github.com/WebKit/WebKit/tree/WebKit-7623.1.14.10.9) |
 | Header (WebKit repo-relative path) | [`WKUserContentControllerPrivate.h`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUserContentControllerPrivate.h) |

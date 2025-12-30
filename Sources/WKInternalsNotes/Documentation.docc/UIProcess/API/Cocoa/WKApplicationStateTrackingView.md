@@ -2,13 +2,13 @@
 
 ## Topics
 
-### Type
+### Properties
 
-#### Properties
 - ``WKInternalsNotes/WKApplicationStateTrackingView/_contentView``
 - ``WKInternalsNotes/WKApplicationStateTrackingView/isBackground``
 
-#### Methods
+### Methods
+
 - ``WKInternalsNotes/WKApplicationStateTrackingView/_applicationWillEnterForeground()``
 - ``WKInternalsNotes/WKApplicationStateTrackingView/initWithFrame(_:webView:)``
 
@@ -16,5 +16,5 @@
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
 | WebKit revision | [`WebKit-7623.1.14.10.9`](https://github.com/WebKit/WebKit/tree/WebKit-7623.1.14.10.9) |

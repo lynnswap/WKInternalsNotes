@@ -2,13 +2,13 @@
 
 ## Topics
 
-### Type
+### Properties
 
-#### Properties
 - ``WKInternalsNotes/WKWebViewContentProvider/web_contentView``
 - ``WKInternalsNotes/WKWebViewContentProvider/web_isBackground``
 
-#### Methods
+### Methods
+
 - ``WKInternalsNotes/WKWebViewContentProvider/web_computedContentInsetDidChange()``
 - ``WKInternalsNotes/WKWebViewContentProvider/web_countStringMatches(_:options:maxCount:)``
 - ``WKInternalsNotes/WKWebViewContentProvider/web_didSameDocumentNavigation(_:)``
@@ -24,5 +24,5 @@
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
 | WebKit revision | [`WebKit-7623.1.14.10.9`](https://github.com/WebKit/WebKit/tree/WebKit-7623.1.14.10.9) |

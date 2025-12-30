@@ -2,12 +2,12 @@
 
 ## Topics
 
-### Type
+### Properties
 
-#### Properties
 - ``WKInternalsNotes/WKMaterialHostingView/contentView``
 
-#### Methods
+### Methods
+
 - ``WKInternalsNotes/WKMaterialHostingView/updateHostingSize(_:)``
 - ``WKInternalsNotes/WKMaterialHostingView/updateMaterialEffectType(_:colorScheme:cornerRadius:)``
 
@@ -15,5 +15,5 @@
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
 | WebKit revision | [`WebKit-7623.1.14.10.9`](https://github.com/WebKit/WebKit/tree/WebKit-7623.1.14.10.9) |

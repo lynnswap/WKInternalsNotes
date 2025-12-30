@@ -2,13 +2,13 @@
 
 ## Topics
 
-### Type
+### Properties
 
-#### Properties
 - ``WKInternalsNotes/_WKFrameTreeNode/childFrames``
 - ``WKInternalsNotes/_WKFrameTreeNode/info``
 
-#### Methods
+### Methods
+
 - ``WKInternalsNotes/_WKFrameTreeNode/init()``
 - ``WKInternalsNotes/_WKFrameTreeNode/new()``
 
@@ -16,6 +16,6 @@
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
 | WebKit revision | [`WebKit-7623.1.14.10.9`](https://github.com/WebKit/WebKit/tree/WebKit-7623.1.14.10.9) |
 | Header (WebKit repo-relative path) | [`_WKFrameTreeNode.h`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKFrameTreeNode.h) |

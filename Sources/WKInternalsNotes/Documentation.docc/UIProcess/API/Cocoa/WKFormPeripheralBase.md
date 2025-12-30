@@ -2,15 +2,15 @@
 
 ## Topics
 
-### Type
+### Properties
 
-#### Properties
 - ``WKInternalsNotes/WKFormPeripheralBase/control``
 - ``WKInternalsNotes/WKFormPeripheralBase/editing``
 - ``WKInternalsNotes/WKFormPeripheralBase/singleTapShouldEndEditing``
 - ``WKInternalsNotes/WKFormPeripheralBase/view``
 
-#### Methods
+### Methods
+
 - ``WKInternalsNotes/WKFormPeripheralBase/assistantView()``
 - ``WKInternalsNotes/WKFormPeripheralBase/beginEditing()``
 - ``WKInternalsNotes/WKFormPeripheralBase/endEditing()``
@@ -23,5 +23,5 @@
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
 | WebKit revision | [`WebKit-7623.1.14.10.9`](https://github.com/WebKit/WebKit/tree/WebKit-7623.1.14.10.9) |

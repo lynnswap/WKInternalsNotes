@@ -2,9 +2,8 @@
 
 ## Topics
 
-### Type
+### Properties
 
-#### Properties
 - ``WKInternalsNotes/WKARPresentationSession/colorTexture``
 - ``WKInternalsNotes/WKARPresentationSession/completionEvent``
 - ``WKInternalsNotes/WKARPresentationSession/currentFrame``
@@ -13,7 +12,8 @@
 - ``WKInternalsNotes/WKARPresentationSession/sessionEndRequested``
 - ``WKInternalsNotes/WKARPresentationSession/view``
 
-#### Methods
+### Methods
+
 - ``WKInternalsNotes/WKARPresentationSession/collectInputSources()``
 - ``WKInternalsNotes/WKARPresentationSession/present()``
 - ``WKInternalsNotes/WKARPresentationSession/startFrame()``
@@ -23,5 +23,5 @@
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
 | WebKit revision | [`WebKit-7623.1.14.10.9`](https://github.com/WebKit/WebKit/tree/WebKit-7623.1.14.10.9) |

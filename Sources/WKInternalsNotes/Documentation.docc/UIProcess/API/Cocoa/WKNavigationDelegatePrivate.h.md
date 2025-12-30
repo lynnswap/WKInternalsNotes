@@ -2,11 +2,10 @@
 
 ## Topics
 
-### Type
+### Methods
 
 - ``WKInternalsNotes/WKNavigationDelegatePrivate/_webCryptoMasterKeyForWebView(_:)``
 - ``WKInternalsNotes/WKNavigationDelegatePrivate/_webCryptoMasterKeyForWebView(_:completionHandler:)``
-- ``WKInternalsNotes/WKNavigationDelegatePrivate/_webView(_:URL:contentRuleListIdentifiers:notifications:)``
 - ``WKInternalsNotes/WKNavigationDelegatePrivate/_webView(_:authenticationChallenge:shouldAllowLegacyTLS:)``
 - ``WKInternalsNotes/WKNavigationDelegatePrivate/_webView(_:backForwardListItemAdded:removed:)``
 - ``WKInternalsNotes/WKNavigationDelegatePrivate/_webView(_:contentRuleListWithIdentifier:performedAction:forURL:)``
@@ -35,6 +34,7 @@
 - ``WKInternalsNotes/WKNavigationDelegatePrivate/_webView(_:navigationDidFinishDocumentLoad:)``
 - ``WKInternalsNotes/WKNavigationDelegatePrivate/_webView(_:renderingProgressDidChange:)``
 - ``WKInternalsNotes/WKNavigationDelegatePrivate/_webView(_:shouldGoToBackForwardListItem:inPageCache:completionHandler:)``
+- ``WKInternalsNotes/WKNavigationDelegatePrivate/_webView(_:URL:contentRuleListIdentifiers:notifications:)``
 - ``WKInternalsNotes/WKNavigationDelegatePrivate/_webView(_:webContentProcessDidTerminateWithReason:)``
 - ``WKInternalsNotes/WKNavigationDelegatePrivate/_webView(_:willGoToBackForwardListItem:inPageCache:)``
 - ``WKInternalsNotes/WKNavigationDelegatePrivate/_webView(_:willPerformClientRedirectToURL:delay:)``
@@ -54,6 +54,6 @@
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
 | WebKit revision | [`WebKit-7623.1.14.10.9`](https://github.com/WebKit/WebKit/tree/WebKit-7623.1.14.10.9) |
 | Header (WebKit repo-relative path) | [`WKNavigationDelegatePrivate.h`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKNavigationDelegatePrivate.h) |

@@ -2,12 +2,12 @@
 
 ## Topics
 
-### Type
+### Properties
 
-#### Properties
 - ``WKInternalsNotes/_WKWebViewPrintProvider/_wk_printFormatterRequiresMainThread``
 
-#### Methods
+### Methods
+
 - ``WKInternalsNotes/_WKWebViewPrintProvider/_wk_pageCountForPrintFormatter(_:)``
 - ``WKInternalsNotes/_WKWebViewPrintProvider/_wk_requestDocumentForPrintFormatter(_:)``
 - ``WKInternalsNotes/_WKWebViewPrintProvider/_wk_requestImageForPrintFormatter(_:)``
@@ -16,5 +16,5 @@
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
 | WebKit revision | [`WebKit-7623.1.14.10.9`](https://github.com/WebKit/WebKit/tree/WebKit-7623.1.14.10.9) |
