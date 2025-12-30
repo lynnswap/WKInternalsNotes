@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKMediaSessionCoordinatorDelegate/pauseSessionWithCompletion(_:)``
 
-宣言のみ確認（実装未調査）。
+`MediaSessionCoordinatorClient` の `pauseSession` を呼ぶ。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKMediaSessionCoordinatorHelper` が `pauseSession` に `completionHandler` を転送する。
 
 ## References
 - [`WKWebViewPrivateForTesting.h#L213`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivateForTesting.h#L213)
+- [`WKWebViewTesting.mm#L1172`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewTesting.mm#L1172)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
