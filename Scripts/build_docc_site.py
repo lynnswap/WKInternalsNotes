@@ -21,6 +21,7 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_TARGET = "WKInternalsNotes"
 DEFAULT_HOSTING_BASE_PATH = REPO_ROOT.name
 DEFAULT_OUTPUT_DIR = REPO_ROOT / "docs"
+GA4_MEASUREMENT_ID = "G-S77B1SXVCF"
 
 
 def _run(cmd: list[str], *, cwd: Path | None = None) -> str:
@@ -42,6 +43,42 @@ def _normalize_hosting_base_path(value: str) -> str:
     if s in ("", "/", "."):
         return ""
     return s.strip("/")
+
+def _build_ga4_snippet(measurement_id: str) -> str:
+    return (
+        "\n    <!-- Google tag (gtag.js) -->\n"
+        f'    <script async src="https://www.googletagmanager.com/gtag/js?id={measurement_id}"></script>\n'
+        "    <script>\n"
+        "      window.dataLayer = window.dataLayer || [];\n"
+        "      function gtag(){dataLayer.push(arguments);}\n"
+        "      gtag('js', new Date());\n"
+        "\n"
+        f"      gtag('config', '{measurement_id}');\n"
+        "    </script>\n"
+    )
+
+
+def _inject_ga4_snippet(html: str, snippet: str) -> tuple[str, bool]:
+    if "googletagmanager.com/gtag/js?id=" in html:
+        return html, False
+    marker = "</head>"
+    index = html.rfind(marker)
+    if index == -1:
+        return html, False
+    return html[:index] + snippet + html[index:], True
+
+
+def _inject_ga4_into_html_files(output_dir: Path, measurement_id: str) -> None:
+    snippet = _build_ga4_snippet(measurement_id)
+    injected = 0
+    for path in output_dir.rglob("*.html"):
+        html = path.read_text(encoding="utf-8")
+        updated, changed = _inject_ga4_snippet(html, snippet)
+        if changed:
+            path.write_text(updated, encoding="utf-8")
+            injected += 1
+    print(f"GA4 injection: {injected} file(s)")
+
 
 def _write_root_redirect(output_dir: Path) -> None:
     doc_root = output_dir / "documentation"
@@ -122,6 +159,7 @@ def main() -> int:
     _run(cmd, cwd=REPO_ROOT)
 
     _write_root_redirect(output_dir)
+    _inject_ga4_into_html_files(output_dir, GA4_MEASUREMENT_ID)
 
     print(f"Output: {output_dir}")
     if hosting_base_path:
