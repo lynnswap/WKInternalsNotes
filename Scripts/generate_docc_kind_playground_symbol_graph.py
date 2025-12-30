@@ -8,7 +8,7 @@ contains one symbol per kind. This makes it easy to visually compare how DocC
 renders different kinds (navigator icon, role heading, etc.).
 
 Default swift-docc checkout path:
-  /Users/kn/Dev/swift-docc
+  ~/Dev/swift-docc (override with SWIFT_DOCC_ROOT)
 
 Output (default):
   Sources/DocCKindPlayground/Documentation.docc/SymbolGraphs/DocCKindPlayground.Kinds.symbols.json
@@ -18,6 +18,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import sys
 from dataclasses import dataclass
@@ -29,7 +30,9 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 DOCC_ROOT = REPO_ROOT / "Sources" / "DocCKindPlayground" / "Documentation.docc"
 DEFAULT_OUTPUT_PATH = DOCC_ROOT / "SymbolGraphs" / "DocCKindPlayground.Kinds.symbols.json"
 
-DEFAULT_SWIFT_DOCC_ROOT = Path("/Users/kn/Dev/swift-docc")
+DEFAULT_SWIFT_DOCC_ROOT = Path(
+    os.environ.get("SWIFT_DOCC_ROOT", str(Path.home() / "Dev" / "swift-docc"))
+)
 KIND_SWIFT_RELATIVE_PATH = Path("Sources/SwiftDocC/Model/Kind.swift")
 
 DEFAULT_MODULE_NAME = "DocCKindPlayground"
@@ -107,7 +110,10 @@ def _parse_args(argv: list[str]) -> argparse.Namespace:
         "--swift-docc-root",
         type=Path,
         default=DEFAULT_SWIFT_DOCC_ROOT,
-        help=f"Path to a swift-docc checkout (default: {DEFAULT_SWIFT_DOCC_ROOT})",
+        help=(
+            "Path to a swift-docc checkout "
+            f"(default: {DEFAULT_SWIFT_DOCC_ROOT}; or set SWIFT_DOCC_ROOT)"
+        ),
     )
     parser.add_argument(
         "--output",
