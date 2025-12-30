@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKMediaSessionCoordinator/delegate``
 
-宣言のみ確認（実装未調査）。
+テスト用の coordinator では helper が delegate に設定される。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+通常は `nil`。テスト用 coordinator 作成時に設定される。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKMediaSessionCoordinatorForTesting` 生成時に `WKMediaSessionCoordinatorHelper` を作成して `delegate` に設定し、delegate 呼び出しを `MediaSessionCoordinatorClient` に転送する。
 
 ## References
 - [`WKWebViewPrivateForTesting.h#L219`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewPrivateForTesting.h#L219)
+- [`WKWebViewTesting.mm#L749`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKWebViewTesting.mm#L749)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |

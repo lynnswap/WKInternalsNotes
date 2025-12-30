@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKUIScrollEdgeEffect/usesHardStyle``
 
-宣言のみ確認（実装未調査）。
+`UIScrollEdgeEffectStyle.hardStyle` を使用しているかを示す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+初期値は `NO`（`setStyle:` で更新）。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`setStyle:` で `style` が `hardStyle` かどうかを判定して `_usesHardStyle` を更新し、上辺のエフェクトで値が変化した場合に `WKScrollView` へ通知する。
 
 ## References
 - [`WKUIScrollEdgeEffect.h#L42`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKUIScrollEdgeEffect.h#L42)
+- [`WKUIScrollEdgeEffect.mm#L119`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKUIScrollEdgeEffect.mm#L119)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |

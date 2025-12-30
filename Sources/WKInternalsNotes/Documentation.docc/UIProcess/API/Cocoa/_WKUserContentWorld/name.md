@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKUserContentWorld/name``
 
-宣言のみ確認（実装未調査）。
+`WKContentWorld` の名前を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+保持している `WKContentWorld` の `name` に依存。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`[_contentWorld name]` の結果を返す。
 
 ## References
-- [`_WKUserContentWorld.h#L33`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKUserContentWorld.h#L33)
+- [`_WKUserContentWorld.h#L36`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKUserContentWorld.h#L36)
+- [`_WKUserContentWorld.mm#L71`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKUserContentWorld.mm#L71)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |

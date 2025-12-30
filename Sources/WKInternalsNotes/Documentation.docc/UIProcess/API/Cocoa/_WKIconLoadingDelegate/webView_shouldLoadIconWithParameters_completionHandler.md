@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKIconLoadingDelegate/webView(_:shouldLoadIconWithParameters:completionHandler:)``
 
-宣言のみ確認（実装未調査）。
+アイコン読み込みの可否と取得方法を delegate に委ねる。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+HTTP/HTTPS または `data:` の URL のみ対象で、delegate 未設定/未実装の場合は `completionHandler(nil)` を返す。`_WKLinkIconParameters` を生成して delegate を呼び出し、delegate が渡した `loadCompletionHandler` があれば `API::Data*` を `NSData` に変換して実行する。
 
 ## References
 - [`_WKIconLoadingDelegate.h#L35`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKIconLoadingDelegate.h#L35)
+- [`IconLoadingDelegate.mm#L80`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/IconLoadingDelegate.mm#L80)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
