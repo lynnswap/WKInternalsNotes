@@ -1,0 +1,80 @@
+name: Deploy DocC (manual)
+
+on:
+  workflow_dispatch:
+    inputs:
+      target:
+        description: SwiftPM target to document
+        required: false
+        default: WKInternalsNotes
+      version:
+        description: WebKit version directory (default: read from WebKit.revision)
+        required: false
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Swift
+        uses: swift-actions/setup-swift@v2
+        with:
+          swift-version: "6.2"
+
+      - name: Resolve version
+        id: vars
+        run: |
+          if [ -n "${{ inputs.version }}" ]; then
+            version="${{ inputs.version }}"
+          else
+            version=$(python3 - <<'PY'
+          from pathlib import Path
+          for line in Path("WebKit.revision").read_text(encoding="utf-8").splitlines():
+              s = line.strip()
+              if not s or s.startswith("#"):
+                  continue
+              print(s)
+              break
+          PY
+          )
+          fi
+
+          if [ -z "$version" ]; then
+            echo "Failed to resolve WebKit version." >&2
+            exit 1
+          fi
+
+          repo="${GITHUB_REPOSITORY#*/}"
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "repo_name=$repo" >> "$GITHUB_OUTPUT"
+
+      - name: Build DocC
+        env:
+          TARGET: ${{ inputs.target }}
+          VERSION: ${{ steps.vars.outputs.version }}
+          REPO_NAME: ${{ steps.vars.outputs.repo_name }}
+        run: |
+          output_dir=".docc-output"
+          base_path="${REPO_NAME}/${VERSION}"
+          python3 Scripts/build_docc_site.py \
+            --target "$TARGET" \
+            --hosting-base-path "$base_path" \
+            --output-dir "$output_dir"
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: .docc-output
+          destination_dir: ${{ steps.vars.outputs.version }}
+          keep_files: true
+          user_name: github-actions[bot]
+          user_email: 41898282+github-actions[bot]@users.noreply.github.com
