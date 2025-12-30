@@ -18,7 +18,7 @@ DocC のドキュメント拡張と合成シンボルグラフで管理してい
 - `Scripts`: 生成・同期用のスクリプト群
 - `WebKit.revision`: 参照 WebKit リビジョン
 - `References/WebKit`: WebKit のローカルチェックアウト
-- [`Developers.md`](Developers.md): 開発者向けメモ（合成シンボル生成など）
+- `Developers.md`: 開発者向けメモ（合成シンボル生成など）
 
 ## 開発者向け
 - 生成/同期スクリプトの使い方は [`Developers.md`](Developers.md) を参照してください。
@@ -26,6 +26,7 @@ DocC のドキュメント拡張と合成シンボルグラフで管理してい
 ## 補足
 - 各ページに、挙動や既定値、参照した WebKit ソースのパスを記録します。
 - 内容は調査の進行に合わせて随時更新します。
+- 内容は調査メモであり、正確性・完全性を保証しません（利用は自己責任でお願いします）。
 
 ## ライセンスと帰属
 - WebKit に関する著作権およびライセンスは [WebKit](https://github.com/WebKit/WebKit) プロジェクトに帰属します。
