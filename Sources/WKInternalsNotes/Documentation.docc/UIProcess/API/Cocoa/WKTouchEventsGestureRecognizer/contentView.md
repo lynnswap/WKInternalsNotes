@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTouchEventsGestureRecognizer/contentView``
 
-宣言のみ確認（実装未調査）。
+`initWithContentView:` で設定された `WKContentView` を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`initWithContentView:` で設定される（それまでは `nil`）。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+弱参照のため、`WKContentView` が解放されると `nil` になる。
 
 ## References
 - [`WKTouchEventsGestureRecognizer.h#L77`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTouchEventsGestureRecognizer.h#L77)
+- [`WKTouchEventsGestureRecognizer.mm#L84`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTouchEventsGestureRecognizer.mm#L84)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |

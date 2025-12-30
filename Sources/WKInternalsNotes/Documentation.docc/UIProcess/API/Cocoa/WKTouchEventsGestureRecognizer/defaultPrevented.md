@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTouchEventsGestureRecognizer/defaultPrevented``
 
-宣言のみ確認（実装未調査）。
+タッチイベントの既定動作を抑止したかを示すフラグ。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,19 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`reset` で `NO` に戻される。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_processTouches` 内で `YES` の場合に recognizer の状態を `Began` / `Changed` に設定し、他の recognizer をキャンセルさせる。
 
 ## References
 - [`WKTouchEventsGestureRecognizer.h#L72`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTouchEventsGestureRecognizer.h#L72)
+- [`WKTouchEventsGestureRecognizer.mm#L62`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTouchEventsGestureRecognizer.mm#L62)
+- [`WKTouchEventsGestureRecognizer.mm#L107`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTouchEventsGestureRecognizer.mm#L107)
+- [`WKTouchEventsGestureRecognizer.mm#L485`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTouchEventsGestureRecognizer.mm#L485)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |

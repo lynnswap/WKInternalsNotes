@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebExtensionMenuItem/handler``
 
-宣言のみ確認（実装未調査）。
+`_handler` にコピー保持され、`_performAction:` から実行される。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,19 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`initWithTitle:handler:` でコピーされる（それ以外は `nil` のまま）。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`copy` 属性のためブロックはコピーされ、`_performAction:` が `ASSERT` 後に `_handler(sender)` を実行する。`copyWithZone:` でも `_handler` をコピーする。
 
 ## References
-- [`WebExtensionMenuItem.h#L54`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Extensions/WebExtensionMenuItem.h#L54)
+- [`WebExtensionMenuItem.h#L56`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Extensions/WebExtensionMenuItem.h#L56)
+- [`WebExtensionMenuItemCocoa.mm#L64`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Extensions/Cocoa/WebExtensionMenuItemCocoa.mm#L64)
+- [`WebExtensionMenuItemCocoa.mm#L69`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Extensions/Cocoa/WebExtensionMenuItemCocoa.mm#L69)
+- [`WebExtensionMenuItemCocoa.mm#L76`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Extensions/Cocoa/WebExtensionMenuItemCocoa.mm#L76)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |

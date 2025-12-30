@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKTextRun/text``
 
-宣言のみ確認（実装未調査）。
+内部の `API::TextRun` が保持する文字列を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`API::TextRun` の文字列に依存。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_textRun->string()` を `NSString` に変換して返す。
 
 ## References
 - [`_WKTextRun.h#L35`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextRun.h#L35)
+- [`_WKTextRun.mm#L47`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextRun.mm#L47)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
