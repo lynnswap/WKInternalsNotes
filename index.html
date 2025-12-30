@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -158,6 +158,15 @@
         color: var(--muted);
       }
 
+      .foot a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      .foot a:hover {
+        text-decoration: underline;
+      }
+
       @keyframes rise {
         from {
           opacity: 0;
@@ -180,10 +189,10 @@
     <main class="wrap">
       <header>
         <p class="eyebrow">WKInternalsNotes</p>
-        <h1>WebKit notes by revision</h1>
+        <h1>WKInternalsNotes</h1>
         <p class="lead">
-          DocC snapshots are organized by WebKit revision. Use the latest entry
-          below to open the current documentation set.
+          WebKitのAPIに関する調査メモをDocCで公開しています。リビジョン別に整理しているため、
+          下のカードから最新のドキュメントにアクセスできます。
         </p>
       </header>
 
@@ -197,7 +206,7 @@
       </section>
 
       <footer class="foot">
-        Generated via GitHub Actions - hosted on gh-pages.
+        リポジトリ: <a href="https://github.com/lynnswap/WKInternalsNotes">WKInternalsNotes</a>
       </footer>
     </main>
   </body>
