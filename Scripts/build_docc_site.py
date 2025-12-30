@@ -12,6 +12,7 @@ The output directory is cleaned before generation when it's inside the repo.
 from __future__ import annotations
 
 import argparse
+import re
 import shutil
 import subprocess
 from pathlib import Path
@@ -21,7 +22,7 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_TARGET = "WKInternalsNotes"
 DEFAULT_HOSTING_BASE_PATH = REPO_ROOT.name
 DEFAULT_OUTPUT_DIR = REPO_ROOT / "docs"
-GA4_MEASUREMENT_ID = "G-S77B1SXVCF"
+GTM_CONTAINER_ID = "GTM-523NMMLN"
 
 
 def _run(cmd: list[str], *, cwd: Path | None = None) -> str:
@@ -44,40 +45,56 @@ def _normalize_hosting_base_path(value: str) -> str:
         return ""
     return s.strip("/")
 
-def _build_ga4_snippet(measurement_id: str) -> str:
+def _build_gtm_head_snippet(container_id: str) -> str:
     return (
-        "\n    <!-- Google tag (gtag.js) -->\n"
-        f'    <script async src="https://www.googletagmanager.com/gtag/js?id={measurement_id}"></script>\n'
-        "    <script>\n"
-        "      window.dataLayer = window.dataLayer || [];\n"
-        "      function gtag(){dataLayer.push(arguments);}\n"
-        "      gtag('js', new Date());\n"
-        "\n"
-        f"      gtag('config', '{measurement_id}');\n"
-        "    </script>\n"
+        "\n    <!-- Google Tag Manager -->\n"
+        "    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n"
+        "    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n"
+        "    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n"
+        "    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n"
+        "    })(window,document,'script','dataLayer','" + container_id + "');</script>\n"
+        "    <!-- End Google Tag Manager -->\n"
     )
 
 
-def _inject_ga4_snippet(html: str, snippet: str) -> tuple[str, bool]:
-    if "googletagmanager.com/gtag/js?id=" in html:
-        return html, False
-    marker = "</head>"
-    index = html.rfind(marker)
-    if index == -1:
-        return html, False
-    return html[:index] + snippet + html[index:], True
+def _build_gtm_noscript_snippet(container_id: str) -> str:
+    return (
+        "\n    <!-- Google Tag Manager (noscript) -->\n"
+        f'    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={container_id}"\n'
+        '    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>\n'
+        "    <!-- End Google Tag Manager (noscript) -->\n"
+    )
 
 
-def _inject_ga4_into_html_files(output_dir: Path, measurement_id: str) -> None:
-    snippet = _build_ga4_snippet(measurement_id)
+def _inject_gtm_snippets(html: str, head_snippet: str, noscript_snippet: str) -> tuple[str, bool]:
+    updated = html
+    changed = False
+    if "googletagmanager.com/gtm.js?id=" not in updated:
+        marker = "</head>"
+        index = updated.rfind(marker)
+        if index != -1:
+            updated = updated[:index] + head_snippet + updated[index:]
+            changed = True
+    if "googletagmanager.com/ns.html?id=" not in updated:
+        body_match = re.search(r"<body\b[^>]*>", updated, re.IGNORECASE)
+        if body_match:
+            insert_at = body_match.end()
+            updated = updated[:insert_at] + noscript_snippet + updated[insert_at:]
+            changed = True
+    return updated, changed
+
+
+def _inject_gtm_into_html_files(output_dir: Path, container_id: str) -> None:
+    head_snippet = _build_gtm_head_snippet(container_id)
+    noscript_snippet = _build_gtm_noscript_snippet(container_id)
     injected = 0
     for path in output_dir.rglob("*.html"):
         html = path.read_text(encoding="utf-8")
-        updated, changed = _inject_ga4_snippet(html, snippet)
+        updated, changed = _inject_gtm_snippets(html, head_snippet, noscript_snippet)
         if changed:
             path.write_text(updated, encoding="utf-8")
             injected += 1
-    print(f"GA4 injection: {injected} file(s)")
+    print(f"GTM injection: {injected} file(s)")
 
 
 def _write_root_redirect(output_dir: Path) -> None:
@@ -159,7 +176,7 @@ def main() -> int:
     _run(cmd, cwd=REPO_ROOT)
 
     _write_root_redirect(output_dir)
-    _inject_ga4_into_html_files(output_dir, GA4_MEASUREMENT_ID)
+    _inject_gtm_into_html_files(output_dir, GTM_CONTAINER_ID)
 
     print(f"Output: {output_dir}")
     if hosting_base_path:
