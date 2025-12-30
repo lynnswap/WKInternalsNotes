@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKTextManipulationConfiguration/includeSubframes``
 
-宣言のみ確認（実装未調査）。
+サブフレームを含めるかどうかのフラグ。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+自動合成された `includeSubframes` の値（初期値は `NO`）。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+追加の実装は無く、自動合成プロパティとして扱われる。
 
 ## References
 - [`_WKTextManipulationConfiguration.h#L35`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextManipulationConfiguration.h#L35)
+- [`_WKTextManipulationConfiguration.mm#L29`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextManipulationConfiguration.mm#L29)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |

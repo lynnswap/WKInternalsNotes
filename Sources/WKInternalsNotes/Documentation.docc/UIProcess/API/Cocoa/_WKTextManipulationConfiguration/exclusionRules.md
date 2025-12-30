@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKTextManipulationConfiguration/exclusionRules``
 
-宣言のみ確認（実装未調査）。
+除外ルール配列を保持する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+自動合成された `_exclusionRules` の値。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`dealloc` で `_exclusionRules` を release する以外の追加処理は無い。
 
 ## References
 - [`_WKTextManipulationConfiguration.h#L34`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextManipulationConfiguration.h#L34)
+- [`_WKTextManipulationConfiguration.mm#L31`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTextManipulationConfiguration.mm#L31)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
