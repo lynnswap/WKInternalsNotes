@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WKInternalsNotes</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&family=IBM+Plex+Mono:wght@500&display=swap");
+
+      :root {
+        --ink: #1c1b1a;
+        --muted: #5f5b57;
+        --accent: #2b6b63;
+        --accent-2: #dfe9e5;
+        --card: #ffffff;
+        --border: rgba(28, 27, 26, 0.08);
+        --shadow: 0 24px 60px rgba(28, 27, 26, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        color: var(--ink);
+        font-family: "IBM Plex Sans", "Hiragino Sans", "Noto Sans JP", sans-serif;
+        background:
+          radial-gradient(1200px 600px at 10% -10%, #f3f0e8, transparent 60%),
+          radial-gradient(900px 500px at 90% 10%, #e3efe9, transparent 65%),
+          linear-gradient(180deg, #f8f6f1 0%, #eef1ec 100%);
+      }
+
+      body::before,
+      body::after {
+        content: "";
+        position: fixed;
+        z-index: 0;
+        border-radius: 999px;
+        filter: blur(0px);
+        opacity: 0.35;
+        pointer-events: none;
+      }
+
+      body::before {
+        width: 280px;
+        height: 280px;
+        left: -120px;
+        top: 140px;
+        background: #d9e8e2;
+      }
+
+      body::after {
+        width: 360px;
+        height: 360px;
+        right: -180px;
+        bottom: 80px;
+        background: #f1dfcc;
+      }
+
+      .wrap {
+        position: relative;
+        z-index: 1;
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 56px 24px 72px;
+      }
+
+      .eyebrow {
+        font-family: "IBM Plex Mono", "SFMono-Regular", ui-monospace, monospace;
+        font-size: 13px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin: 0 0 12px;
+      }
+
+      h1 {
+        font-size: clamp(32px, 5vw, 54px);
+        margin: 0 0 14px;
+        line-height: 1.1;
+      }
+
+      .lead {
+        font-size: clamp(16px, 2.4vw, 20px);
+        color: var(--muted);
+        max-width: 560px;
+        margin: 0 0 40px;
+      }
+
+      .grid {
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      }
+
+      .card {
+        display: block;
+        padding: 20px 22px;
+        border-radius: 18px;
+        background: var(--card);
+        border: 1px solid var(--border);
+        box-shadow: var(--shadow);
+        text-decoration: none;
+        color: inherit;
+        position: relative;
+        overflow: hidden;
+        animation: rise 600ms ease both;
+      }
+
+      .card::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(120deg, rgba(43, 107, 99, 0.1), transparent 65%);
+        opacity: 0;
+        transition: opacity 200ms ease;
+      }
+
+      .card:hover::after {
+        opacity: 1;
+      }
+
+      .tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--accent);
+        background: var(--accent-2);
+        padding: 6px 10px;
+        border-radius: 999px;
+        margin-bottom: 14px;
+      }
+
+      .card h2 {
+        font-size: 20px;
+        margin: 0 0 6px;
+      }
+
+      .card p {
+        margin: 0 0 16px;
+        color: var(--muted);
+        line-height: 1.4;
+      }
+
+      .cta {
+        font-family: "IBM Plex Mono", "SFMono-Regular", ui-monospace, monospace;
+        font-size: 13px;
+        color: var(--accent);
+      }
+
+      .foot {
+        margin-top: 48px;
+        font-size: 13px;
+        color: var(--muted);
+      }
+
+      @keyframes rise {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .card {
+          animation: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <header>
+        <p class="eyebrow">WKInternalsNotes</p>
+        <h1>WebKit notes by revision</h1>
+        <p class="lead">
+          DocC snapshots are organized by WebKit revision. Use the latest entry
+          below to open the current documentation set.
+        </p>
+      </header>
+
+      <section class="grid">
+        <a class="card" href="./WebKit-7623.1.14.10.9/">
+          <div class="tag">Current</div>
+          <h2>WebKit-7623.1.14.10.9</h2>
+          <p>DocC reference for this revision.</p>
+          <span class="cta">Open docs</span>
+        </a>
+      </section>
+
+      <footer class="foot">
+        Generated via GitHub Actions - hosted on gh-pages.
+      </footer>
+    </main>
+  </body>
+</html>
