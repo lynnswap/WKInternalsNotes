@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKFocusedFormControlView/delegate``
 
-宣言のみ確認（実装未調査）。
+`WKFocusedFormControlViewDelegate` を弱参照で保持する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`initWithFrame:delegate:` で設定される（未設定なら `nil`）。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+getter は `WeakObjCPtr` の値を返し、setter は `_delegate` を更新する。
 
 ## References
-- [`WKFocusedFormControlView.h#L54`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFocusedFormControlView.h#L54)
+- [`WKFocusedFormControlView.h#L67`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFocusedFormControlView.h#L67)
+- [`WKFocusedFormControlView.mm#L177`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFocusedFormControlView.mm#L177)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |

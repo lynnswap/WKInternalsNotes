@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKFocusedFormControlView/dimmingMaskLayer``
 
-宣言のみ確認（実装未調査）。
+`_dimmingView` の `mask` として使う `CAShapeLayer` を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`initWithFrame:delegate:` で `CAShapeLayer` を生成して `mask` に設定する。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`(CAShapeLayer *)[_dimmingView layer].mask` を返す。
 
 ## References
 - [`WKFocusedFormControlView.mm#L62`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFocusedFormControlView.mm#L62)
+- [`WKFocusedFormControlView.mm#L187`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFocusedFormControlView.mm#L187)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |

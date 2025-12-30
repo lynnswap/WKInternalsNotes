@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKFocusedFormControlView/submitActionName``
 
-宣言のみ確認（実装未調査）。
+送信ボタンの表示名を保持し、ボタン表示を更新する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+初期値は `nil`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+getter は `_submitActionName` を返す。setter は値が変わった場合に `_submitButton` の attributed title を更新し、`setNeedsLayout` を呼ぶ。
 
 ## References
 - [`WKFocusedFormControlView.mm#L66`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFocusedFormControlView.mm#L66)
+- [`WKFocusedFormControlView.mm#L320`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFocusedFormControlView.mm#L320)
+- [`WKFocusedFormControlView.mm#L330`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFocusedFormControlView.mm#L330)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |

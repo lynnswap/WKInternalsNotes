@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKFocusedFormControlView/suggestions``
 
-宣言のみ確認（実装未調査）。
+表示可能な `UITextSuggestion` の配列を保持する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+初期値は `nil`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+setter は `displayText` を持つ候補だけを抽出して `_textSuggestions` を更新し、変更があれば delegate に通知する。
 
 ## References
 - [`WKFocusedFormControlView.h#L69`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFocusedFormControlView.h#L69)
+- [`WKFocusedFormControlView.mm#L457`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFocusedFormControlView.mm#L457)
+- [`WKFocusedFormControlView.mm#L462`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFocusedFormControlView.mm#L462)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
