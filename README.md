@@ -18,10 +18,10 @@ DocC のドキュメント拡張と合成シンボルグラフで管理してい
 - `Scripts`: 生成・同期用のスクリプト群
 - `WebKit.revision`: 参照 WebKit リビジョン
 - `References/WebKit`: WebKit のローカルチェックアウト
-- `Developers.md`: 開発者向けメモ（合成シンボル生成など）
+- [`Developers.md`](Developers.md): 開発者向けメモ（合成シンボル生成など）
 
 ## 開発者向け
-- 生成/同期スクリプトの使い方は `Developers.md` を参照してください。
+- 生成/同期スクリプトの使い方は [`Developers.md`](Developers.md) を参照してください。
 
 ## 補足
 - 各ページに、挙動や既定値、参照した WebKit ソースのパスを記録します。

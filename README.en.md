@@ -16,10 +16,10 @@ DocC documentation extensions and synthetic symbol graphs.
 - `Scripts`: generation and sync helpers
 - `WebKit.revision`: pinned WebKit revision
 - `References/WebKit`: local WebKit checkout
-- `Developers.md`: developer notes (symbol graph generation, scripts)
+- [`Developers.md`](Developers.md): developer notes (symbol graph generation, scripts)
 
 ## For developers
-- See `Developers.md` for developer workflows.
+- See [`Developers.md`](Developers.md) for developer workflows.
 
 ## Notes
 - Each entry records behavior, defaults, and the WebKit source paths it refers to.
