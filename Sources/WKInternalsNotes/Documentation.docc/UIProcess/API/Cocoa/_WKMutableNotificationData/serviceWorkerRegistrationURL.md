@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKMutableNotificationData/serviceWorkerRegistrationURL``
 
-宣言のみ確認（実装未調査）。
+`@dynamic` のためアクセサ実装は `_WKNotificationData` を利用する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,19 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`WebCore::NotificationData` の既定値に依存。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_coreData.serviceWorkerRegistrationURL` に保存し、取得時は `createNSURL()` で返す。
 
 ## References
-- [`_WKNotificationData.h#L53`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKNotificationData.h#L53)
+- [`_WKNotificationData.h#L75`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKNotificationData.h#L75)
+- [`_WKNotificationData.mm#L198`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKNotificationData.mm#L198)
+- [`_WKNotificationData.mm#L203`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKNotificationData.mm#L203)
+- [`_WKNotificationData.mm#L254`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKNotificationData.mm#L254)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |

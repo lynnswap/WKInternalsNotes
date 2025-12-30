@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKMutableNotificationData/title``
 
-宣言のみ確認（実装未調査）。
+`@dynamic` のためアクセサ実装は `_WKNotificationData` を利用する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,19 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`WebCore::NotificationData` の既定値に依存。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_coreData.title` に代入し、取得時は `createNSString()` で返す。
 
 ## References
-- [`_WKNotificationData.h#L43`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKNotificationData.h#L43)
+- [`_WKNotificationData.h#L67`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKNotificationData.h#L67)
+- [`_WKNotificationData.mm#L84`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKNotificationData.mm#L84)
+- [`_WKNotificationData.mm#L89`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKNotificationData.mm#L89)
+- [`_WKNotificationData.mm#L246`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKNotificationData.mm#L246)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
