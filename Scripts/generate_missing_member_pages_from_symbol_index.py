@@ -376,7 +376,7 @@ def _render_page(
     out: list[str] = []
     out.append(f"# ``{MODULE_NAME}/{container}/{member}``")
     out.append("")
-    out.append("宣言のみ確認（実装未調査）。")
+    out.append("実装未調査。")
     out.append("")
 
     out.append("## Objective-C Declaration")
