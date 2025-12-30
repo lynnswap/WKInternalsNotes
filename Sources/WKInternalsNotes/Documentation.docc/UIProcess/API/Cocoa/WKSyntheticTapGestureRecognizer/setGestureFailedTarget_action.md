@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKSyntheticTapGestureRecognizer/setGestureFailedTarget(_:action:)``
 
-宣言のみ確認（実装未調査）。
+失敗時に呼び出す target/action を設定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_gestureFailedTarget` と `_gestureFailedAction` に保存し、`setState:` が `Failed` のときに呼ばれる。
 
 ## References
 - [`WKSyntheticTapGestureRecognizer.h#L38`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKSyntheticTapGestureRecognizer.h#L38)
+- [`WKSyntheticTapGestureRecognizer.mm#L52`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKSyntheticTapGestureRecognizer.mm#L52)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
