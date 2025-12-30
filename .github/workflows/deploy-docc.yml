@@ -8,7 +8,7 @@ on:
         required: false
         default: WKInternalsNotes
       version:
-        description: WebKit version directory (default: read from WebKit.revision)
+        description: "WebKit version directory (default: read from WebKit.revision)"
         required: false
 
 permissions:
@@ -34,16 +34,7 @@ jobs:
           if [ -n "${{ inputs.version }}" ]; then
             version="${{ inputs.version }}"
           else
-            version=$(python3 - <<'PY'
-          from pathlib import Path
-          for line in Path("WebKit.revision").read_text(encoding="utf-8").splitlines():
-              s = line.strip()
-              if not s or s.startswith("#"):
-                  continue
-              print(s)
-              break
-          PY
-          )
+            version=$(awk 'NF { line=$0; sub(/^[[:space:]]+/, "", line); sub(/[[:space:]]+$/, "", line); if (line !~ /^#/) { print line; exit } }' WebKit.revision)
           fi
 
           if [ -z "$version" ]; then
