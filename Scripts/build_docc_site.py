@@ -43,6 +43,33 @@ def _normalize_hosting_base_path(value: str) -> str:
         return ""
     return s.strip("/")
 
+def _write_root_redirect(output_dir: Path) -> None:
+    doc_root = output_dir / "documentation"
+    if not doc_root.is_dir():
+        return
+
+    entries = sorted(p.name for p in doc_root.iterdir() if p.is_dir())
+    if len(entries) != 1:
+        print("Skip root redirect: expected a single documentation root.")
+        return
+
+    target = f"documentation/{entries[0]}/"
+    html = f"""<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="0; url={target}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Documentation</title>
+  </head>
+  <body>
+    <p>Redirecting to <a href="{target}">{target}</a>...</p>
+  </body>
+</html>
+"""
+    (output_dir / "index.html").write_text(html, encoding="utf-8")
+    print(f"Root redirect: / -> {target}")
+
 def _is_within_repo(path: Path) -> bool:
     try:
         path.resolve().relative_to(REPO_ROOT.resolve())
@@ -93,6 +120,8 @@ def main() -> int:
 
     print("Generating DocC documentation...")
     _run(cmd, cwd=REPO_ROOT)
+
+    _write_root_redirect(output_dir)
 
     print(f"Output: {output_dir}")
     if hosting_base_path:
