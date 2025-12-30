@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKInspectorViewControllerDelegate/inspectorViewControllerDidBecomeActive(_:)``
 
-宣言のみ確認（実装未調査）。
+Inspector がアクティブになった通知を受ける。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WebInspectorUIProxy` を保持している場合に `didBecomeActive()` を呼ぶ。
 
 ## References
 - [`WKInspectorViewController.h#L57`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Inspector/mac/WKInspectorViewController.h#L57)
+- [`WebInspectorUIProxyMac.mm#L187`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Inspector/mac/WebInspectorUIProxyMac.mm#L187)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
