@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKInputDelegate/_webViewAdditionalContextForStrongPasswordAssistance(_:)``
 
-宣言のみ確認（実装未調査）。
+強力パスワード支援用の追加コンテキストを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKContentViewInteraction` の `_continueElementDidFocus` で、delegate が実装していれば呼ばれる。戻り値は `_additionalContextForStrongPasswordAssistance` に保持され、未実装時は空の辞書を使用する。
 
 ## References
 - [`_WKInputDelegate.h#L61`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKInputDelegate.h#L61)
+- [`WKContentViewInteraction.mm#L8504`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L8504)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |

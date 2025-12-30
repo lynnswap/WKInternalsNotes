@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTouchActionGestureRecognizer/clearTouchActionsForTouchIdentifier(_:)``
 
-宣言のみ確認（実装未調査）。
+タッチ識別子の設定を削除する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_touchActionsByTouchIdentifier` から該当エントリを削除する。
 
 ## References
 - [`WKTouchActionGestureRecognizer.h#L37`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTouchActionGestureRecognizer.h#L37)
+- [`WKTouchActionGestureRecognizer.mm#L52`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKTouchActionGestureRecognizer.mm#L52)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |

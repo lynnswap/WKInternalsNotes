@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebExtensionBookmark/bookmarkTypeForWebExtensionContext(_:)``
 
-宣言のみ確認（実装未調査）。
+ブックマーク種別を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+ブックマークのフラット化処理やフォルダ判定で参照される。
 
 ## References
 - [`_WKWebExtensionBookmarks.h#L61`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKWebExtensionBookmarks.h#L61)
+- [`WebExtensionContextAPIBookmarksCocoa.mm#L128`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Extensions/Cocoa/API/WebExtensionContextAPIBookmarksCocoa.mm#L128)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |

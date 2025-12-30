@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKElementAction/runActionWithElementInfo(_:)``
 
-宣言のみ確認（実装未調査）。
+既定のアクションシートアシスタントで実行する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_defaultActionSheetAssistant` を渡して `_runActionWithElementInfo:forActionSheetAssistant:` を呼び出す。
 
 ## References
 - [`_WKElementAction.h#L78`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKElementAction.h#L78)
+- [`_WKElementAction.mm#L272`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKElementAction.mm#L272)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |

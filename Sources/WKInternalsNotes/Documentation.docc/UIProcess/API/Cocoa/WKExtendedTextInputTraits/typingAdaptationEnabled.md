@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKExtendedTextInputTraits/typingAdaptationEnabled``
 
-宣言のみ確認（実装未調査）。
+タイピング適応が有効かどうかを示す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+初期値は `YES`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`init` と `restoreDefaultValues` の両方で `YES` に設定される。
 
 ## References
 - [`WKExtendedTextInputTraits.h#L52`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKExtendedTextInputTraits.h#L52)
+- [`WKExtendedTextInputTraits.mm#L50`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKExtendedTextInputTraits.mm#L50)
+- [`WKExtendedTextInputTraits.mm#L130`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKExtendedTextInputTraits.mm#L130)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |

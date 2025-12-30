@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKScrollViewTrackingTapGestureRecognizer/lastTouchedScrollView``
 
-宣言のみ確認（実装未調査）。
+最後にタッチされた `UIScrollView` を返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+初期値は `nil`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`touchesBegan` で `scrollViewForTouches` から取得して設定し、`reset` で `nil` に戻す。
 
 ## References
 - [`WKScrollViewTrackingTapGestureRecognizer.h#L34`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKScrollViewTrackingTapGestureRecognizer.h#L34)
+- [`WKScrollViewTrackingTapGestureRecognizer.mm#L35`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKScrollViewTrackingTapGestureRecognizer.mm#L35)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |

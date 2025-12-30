@@ -8,7 +8,7 @@ URL に対する代替アクション通知用の delegate フック（UIProcess
 ```
 
 ## Discussion
-UIProcess 配下の `.m/.mm` では呼び出しが見当たらず、宣言のみ確認できる。
+UIProcess 配下の `.m/.mm` では呼び出しが見当たらず、使用箇所は確認できていない。
 
 ## References
 - [`WKUIDelegatePrivate.h#L237`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L237)
@@ -17,4 +17,4 @@ UIProcess 配下の `.m/.mm` では呼び出しが見当たらず、宣言のみ
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |

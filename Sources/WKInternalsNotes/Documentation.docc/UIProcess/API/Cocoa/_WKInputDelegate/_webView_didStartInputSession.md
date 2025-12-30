@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKInputDelegate/_webView(_:didStartInputSession:)``
 
-宣言のみ確認（実装未調査）。
+入力セッション開始後に通知する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WKContentViewInteraction` で `_inputPeripheral` の編集開始後に呼ばれる。
 
 ## References
 - [`_WKInputDelegate.h#L48`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKInputDelegate.h#L48)
+- [`WKContentViewInteraction.mm#L8615`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L8615)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |

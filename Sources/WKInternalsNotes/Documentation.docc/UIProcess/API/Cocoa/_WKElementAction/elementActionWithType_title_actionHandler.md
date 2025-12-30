@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKElementAction/elementActionWithType(_:title:actionHandler:)``
 
-宣言のみ確認（実装未調査）。
+タイプとタイトル、ハンドラを指定してアクションを作成する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+内部の `_elementActionWithType:title:actionHandler:` に委譲し、ハンドラを `WKActionSheetAssistant` 無しの形に変換して保持する。
 
 ## References
 - [`_WKElementAction.h#L69`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKElementAction.h#L69)
+- [`_WKElementAction.mm#L127`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKElementAction.mm#L127)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |

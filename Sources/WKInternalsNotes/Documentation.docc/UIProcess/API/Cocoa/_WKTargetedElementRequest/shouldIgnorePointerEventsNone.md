@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKTargetedElementRequest/shouldIgnorePointerEventsNone``
 
-宣言のみ確認（実装未調査）。
+`pointer-events: none` を無視するかを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`NO`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_request->shouldIgnorePointerEventsNone()` の getter/setter を直接委譲する。
 
 ## References
 - [`_WKTargetedElementRequest.h#L42`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTargetedElementRequest.h#L42)
+- [`_WKTargetedElementRequest.mm#L104`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKTargetedElementRequest.mm#L104)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |

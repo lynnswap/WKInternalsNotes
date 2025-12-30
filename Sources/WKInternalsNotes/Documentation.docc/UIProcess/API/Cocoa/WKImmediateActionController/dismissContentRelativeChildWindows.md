@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKImmediateActionController/dismissContentRelativeChildWindows()``
 
-宣言のみ確認（実装未調査）。
+関連する子ウィンドウを閉じる。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`setMaintainsInactiveSelection(false)` を呼び、現在の Quick Look メニュー項目を閉じる。
 
 ## References
 - [`WKImmediateActionController.h#L83`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/mac/WKImmediateActionController.h#L83)
+- [`WKImmediateActionController.mm#L151`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/mac/WKImmediateActionController.mm#L151)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |

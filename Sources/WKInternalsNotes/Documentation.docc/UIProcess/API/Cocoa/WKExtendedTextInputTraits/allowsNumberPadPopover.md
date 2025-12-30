@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKExtendedTextInputTraits/allowsNumberPadPopover``
 
-宣言のみ確認（実装未調査）。
+ナンバーパッドのポップオーバー表示可否を指定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+初期値は `NO`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`init` と `restoreDefaultValues` の両方で `NO` に設定される。
 
 ## References
 - [`WKExtendedTextInputTraits.h#L66`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKExtendedTextInputTraits.h#L66)
+- [`WKExtendedTextInputTraits.mm#L49`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKExtendedTextInputTraits.mm#L49)
+- [`WKExtendedTextInputTraits.mm#L141`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKExtendedTextInputTraits.mm#L141)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |

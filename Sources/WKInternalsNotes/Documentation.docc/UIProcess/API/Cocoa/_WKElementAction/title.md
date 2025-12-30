@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKElementAction/title``
 
-宣言のみ確認（実装未調査）。
+アクションの表示タイトルを返す。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+作成時に設定される（`customTitle` または既定のタイトル）。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+初期化時に `title` をコピーして保持し、`title` はその値を返す。
 
 ## References
 - [`_WKElementAction.h#L70`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKElementAction.h#L70)
+- [`_WKElementAction.mm#L90`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKElementAction.mm#L90)
+- [`_WKElementAction.mm#L262`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKElementAction.mm#L262)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |

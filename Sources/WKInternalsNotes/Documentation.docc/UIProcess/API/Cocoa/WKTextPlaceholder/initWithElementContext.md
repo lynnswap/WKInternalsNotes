@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTextPlaceholder/initWithElementContext(_:)``
 
-宣言のみ確認（実装未調査）。
+要素コンテキストを保持して初期化する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`[self init]` で初期化した後、`_elementContext` を保持して返す。
 
 ## References
 - [`WKTextPlaceholder.h#L42`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/WKTextPlaceholder.h#L42)
+- [`WKTextPlaceholder.mm#L39`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/WKTextPlaceholder.mm#L39)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |

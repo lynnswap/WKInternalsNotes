@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKNumberPadView/initWithFrame(_:controller:)``
 
-宣言のみ確認（実装未調査）。
+ナンバーパッドビューを初期化する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_controller` と `_contentView` を設定し、`_initKeypad` を呼んでキー配置を初期化する。
 
 ## References
 - [`WKNumberPadView.h#L77`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKNumberPadView.h#L77)
+- [`WKNumberPadView.mm#L357`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKNumberPadView.mm#L357)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |

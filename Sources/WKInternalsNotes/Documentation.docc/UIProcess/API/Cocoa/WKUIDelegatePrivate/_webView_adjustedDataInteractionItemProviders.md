@@ -8,13 +8,14 @@ Data interaction の item providers を調整するための delegate フック�
 ```
 
 ## Discussion
-UIProcess 配下の `.m/.mm` では呼び出しが見当たらず、宣言のみ確認できる。
+UIProcess 配下の `.m/.mm` では呼び出しが見当たらない。実装側では `adjustedDataInteractionItemProvidersForItemProvider:representingObjects:additionalData:` が使用されている。
 
 ## References
 - [`WKUIDelegatePrivate.h#L253`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/WKUIDelegatePrivate.h#L253)
+- [`WKContentViewInteraction.mm#L10994`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L10994)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
