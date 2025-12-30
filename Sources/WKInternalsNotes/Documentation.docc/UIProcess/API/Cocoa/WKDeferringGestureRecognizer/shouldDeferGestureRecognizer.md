@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKDeferringGestureRecognizer/shouldDeferGestureRecognizer(_:)``
 
-宣言のみ確認（実装未調査）。
+指定のジェスチャを遅延すべきか判定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`deferringGestureRecognizer:shouldDeferOtherGestureRecognizer:` をデリゲートに委譲する。
 
 ## References
 - [`WKDeferringGestureRecognizer.h#L50`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKDeferringGestureRecognizer.h#L50)
+- [`WKDeferringGestureRecognizer.mm#L82`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKDeferringGestureRecognizer.mm#L82)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |

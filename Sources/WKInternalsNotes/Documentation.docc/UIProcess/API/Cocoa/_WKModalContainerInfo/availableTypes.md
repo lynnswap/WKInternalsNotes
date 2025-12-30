@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKModalContainerInfo/availableTypes``
 
-宣言のみ確認（実装未調査）。
+利用可能なボタン種別のビットマスク。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,17 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`initWithTypes:` で設定される。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`WebCore::ModalContainerControlType` の `OptionSet` を `_WKModalContainerControlTypes` に変換した結果を保持する。
 
 ## References
 - [`_WKModalContainerInfo.h#L38`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKModalContainerInfo.h#L38)
+- [`_WKModalContainerInfo.mm#L33`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKModalContainerInfo.mm#L33)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |

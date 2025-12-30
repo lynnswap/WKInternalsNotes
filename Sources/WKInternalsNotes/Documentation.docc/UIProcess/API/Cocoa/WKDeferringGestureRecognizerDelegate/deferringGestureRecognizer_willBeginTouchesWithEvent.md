@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKDeferringGestureRecognizerDelegate/deferringGestureRecognizer(_:willBeginTouchesWithEvent:)``
 
-宣言のみ確認（実装未調査）。
+タッチ開始時にジェスチャの遅延可否を判定する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+ジェスチャの追跡を開始し、画像解析で操作可能な項目がある場合は `ShouldDeferGestures::No` を返す。慣性スクロールの割り込みがある場合も `No`、それ以外は `Yes` を返す。
 
 ## References
 - [`WKDeferringGestureRecognizer.h#L40`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKDeferringGestureRecognizer.h#L40)
+- [`WKContentViewInteraction.mm#L10380`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/WKContentViewInteraction.mm#L10380)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |

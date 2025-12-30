@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKInspectorExtensionHost/showExtensionTabWithIdentifier(_:completionHandler:)``
 
-宣言のみ確認（実装未調査）。
+Inspector 拡張タブを表示する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`extensionController` が無い場合は `InvalidRequest` をエラーとして返す。存在する場合は `showExtensionTab` を呼び、結果に応じて `NSError` または `nil` を返す。
 
 ## References
 - [`_WKInspectorExtensionHost.h#L64`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKInspectorExtensionHost.h#L64)
+- [`_WKInspector.mm#L286`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/API/Cocoa/_WKInspector.mm#L286)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |

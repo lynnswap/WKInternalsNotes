@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/_WKWebViewPrintFormatter/frameToPrint``
 
-宣言のみ確認（実装未調査）。
+印刷対象のフレームを保持する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,16 +8,18 @@
 ```
 
 ## Default Value
-未調査（初期化経路の確認が必要）。
+`nil`。
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_frameToPrint` の getter/setter を提供し、印刷対象フレームを保持する。
 
 ## References
 - [`_WKWebViewPrintFormatter.h#L36`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/_WKWebViewPrintFormatter.h#L36)
+- [`_WKWebViewPrintFormatter.mm#L59`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/_WKWebViewPrintFormatter.mm#L59)
+- [`_WKWebViewPrintFormatter.mm#L64`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/_WKWebViewPrintFormatter.mm#L64)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |

@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTextAnimationManager/removeTextAnimationForAnimationID(_:)``
 
-宣言のみ確認（実装未調査）。
+指定 ID のエフェクトを削除する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`_chunkToEffect` から `effectID` を取得して `_effectView` から削除し、辞書から取り除く。
 
 ## References
 - [`WKTextAnimationManagerMac.h#L44`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/mac/WKTextAnimationManagerMac.h#L44)
+- [`WKTextAnimationManagerMac.mm#L188`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/mac/WKTextAnimationManagerMac.mm#L188)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |

@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKTextSelectionRect/initWithSelectionGeometry(_:delegate:)``
 
-宣言のみ確認（実装未調査）。
+選択ジオメトリとデリゲートで初期化する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`[super init]` に成功した場合、`_selectionGeometry` と `_delegate` を設定して返す。初期化に失敗した場合は `nil` を返す。
 
 ## References
 - [`WKTextSelectionRect.h#L53`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/WKTextSelectionRect.h#L53)
+- [`WKTextSelectionRect.mm#L93`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/Cocoa/WKTextSelectionRect.mm#L93)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |

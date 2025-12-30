@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKFocusedFormControlViewDelegate/focusedFormControlViewDidCancel(_:)``
 
-宣言のみ確認（実装未調査）。
+キャンセル操作時に呼ばれる。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,14 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+`didDismiss` から delegate を呼び出す。
 
 ## References
 - [`WKFocusedFormControlView.h#L35`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFocusedFormControlView.h#L35)
+- [`WKFocusedFormControlView.mm#L210`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKFocusedFormControlView.mm#L210)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |

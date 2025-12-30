@@ -1,6 +1,6 @@
 # ``WKInternalsNotes/WKDatePickerViewController/didBeginInteractingWithDatePicker(_:)``
 
-宣言のみ確認（実装未調査）。
+フォーカス中のピッカーを更新する。
 
 ## Objective-C Declaration
 ```objective-c
@@ -8,13 +8,13 @@
 ```
 
 ## Discussion
-実装未調査。宣言と対応実装の確認が必要。
+同じ `datePicker` が既に `_focusedPicker` の場合は何もしない。各ピッカーのフォーカスアウトラインとラベル表示を切り替え、`_focusedPicker` を更新して `becomeFirstResponder` を呼ぶ。
 
 ## References
-- [`WKDatePickerViewController.mm#L119`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKDatePickerViewController.mm#L119)
+- [`WKDatePickerViewController.mm#L616`](https://github.com/WebKit/WebKit/blob/WebKit-7623.1.14.10.9/Source/WebKit/UIProcess/ios/forms/WKDatePickerViewController.mm#L616)
 
 ## Metadata
 | Key | Value |
 | --- | ----- |
 | Status | Draft |
-| Last updated | 2025-12-19 |
+| Last updated | 2025-12-30 |
