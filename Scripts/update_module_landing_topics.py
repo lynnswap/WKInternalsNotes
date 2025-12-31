@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
-Update the module landing page Types list from the synthetic symbol graph.
+Update the module landing page Topics list from the synthetic symbol graph.
 
 Reads:
   - Sources/WKInternalsNotes/Documentation.docc/SymbolGraphs/WKInternalsNotes.WKAPI.symbols.json
 
 Rewrites:
   - Sources/WKInternalsNotes/Documentation.docc/WKInternalsNotes.md
-    (the bullet list under "### Cocoa (UIProcess/API/Cocoa)")
+    (the type lists under "## Topics")
 """
 
 from __future__ import annotations
@@ -23,18 +23,28 @@ LANDING_PAGE = DOCC_ROOT / "WKInternalsNotes.md"
 SYMBOL_GRAPH_PATH = DOCC_ROOT / "SymbolGraphs" / "WKInternalsNotes.WKAPI.symbols.json"
 MODULE_NAME = "WKInternalsNotes"
 
-PREFERRED_SECTION_HEADING = "### Types"
-SECTION_HEADING_CANDIDATES = [
-    PREFERRED_SECTION_HEADING,
-    "### Cocoa (UIProcess/API/Cocoa)",  # legacy
-]
-
 TYPE_SECTION_ORDER: list[tuple[str, str]] = [
     ("Classes", "swift.class"),
-    ("Structs", "swift.struct"),
-    ("Enums", "swift.enum"),
+    ("Structures", "swift.struct"),
+    ("Enumerations", "swift.enum"),
     ("Protocols", "swift.protocol"),
     ("Actors", "swift.actor"),
+]
+TOPICS_HEADING = "## Topics"
+LEGACY_SECTION_HEADING = "### Types"
+LEGACY_SECTION_HEADING_CANDIDATES = [
+    LEGACY_SECTION_HEADING,
+    "### Cocoa (UIProcess/API/Cocoa)",  # legacy
+]
+NEW_TYPE_HEADINGS = [f"### {name}" for name, _ in TYPE_SECTION_ORDER]
+LEGACY_TYPE_HEADINGS = [
+    "#### Classes",
+    "#### Structs",
+    "#### Structures",
+    "#### Enums",
+    "#### Enumerations",
+    "#### Protocols",
+    "#### Actors",
 ]
 
 
@@ -58,48 +68,73 @@ def _collect_types() -> dict[str, list[str]]:
     return {key: sorted(values, key=str.casefold) for key, values in sections.items()}
 
 
-def _rewrite_types_section(lines: list[str], *, heading: str, sections: dict[str, list[str]]) -> list[str]:
-    heading_index = None
-    found_heading = None
+def _rewrite_types_section(lines: list[str], sections: dict[str, list[str]]) -> list[str]:
+    topics_index = None
     for i, line in enumerate(lines):
-        candidate = line.rstrip("\n")
-        if candidate in SECTION_HEADING_CANDIDATES:
-            heading_index = i
-            found_heading = candidate
+        if line.rstrip("\n") == TOPICS_HEADING:
+            topics_index = i
             break
-    if heading_index is None or found_heading is None:
-        raise RuntimeError(f"missing section heading: {heading}")
+    if topics_index is None:
+        raise RuntimeError(f"missing section heading: {TOPICS_HEADING}")
 
-    if found_heading != heading:
-        lines = list(lines)
-        lines[heading_index] = heading + ("\n" if lines[heading_index].endswith("\n") else "")
-
-    start = heading_index + 1
-    end = start
-    while end < len(lines):
-        if lines[end].startswith("### ") or lines[end].startswith("## "):
+    topics_end = len(lines)
+    for i in range(topics_index + 1, len(lines)):
+        if lines[i].startswith("## "):
+            topics_end = i
             break
-        end += 1
 
-    preamble: list[str] = []
-    preamble_end = start
-    while preamble_end < end:
-        if lines[preamble_end].startswith("#### ") or lines[preamble_end].startswith("- "):
+    start = None
+    mode = None
+    for i in range(topics_index + 1, topics_end):
+        candidate = lines[i].rstrip("\n")
+        if candidate in LEGACY_SECTION_HEADING_CANDIDATES:
+            start = i
+            mode = "legacy"
             break
-        preamble.append(lines[preamble_end])
-        preamble_end += 1
+    if start is None:
+        for i in range(topics_index + 1, topics_end):
+            candidate = lines[i].rstrip("\n")
+            if candidate in NEW_TYPE_HEADINGS:
+                start = i
+                mode = "flat"
+                break
+    if start is None:
+        for i in range(topics_index + 1, topics_end):
+            candidate = lines[i].rstrip("\n")
+            if candidate in LEGACY_TYPE_HEADINGS:
+                start = i
+                mode = "legacy-subheadings"
+                break
+
+    if start is None or mode is None:
+        raise RuntimeError("missing type headings under ## Topics")
+
+    end = start + 1
+    if mode == "flat":
+        while end < topics_end:
+            line = lines[end]
+            if line.startswith("## "):
+                break
+            if line.startswith("### ") and line.rstrip("\n") not in NEW_TYPE_HEADINGS:
+                break
+            end += 1
+    else:
+        while end < topics_end:
+            line = lines[end]
+            if line.startswith("## ") or line.startswith("### "):
+                break
+            end += 1
 
     new_block: list[str] = []
     new_block.extend(lines[:start])
-    new_block.extend(preamble)
-    if preamble and preamble[-1].strip() != "":
+    if new_block and new_block[-1].strip() != "":
         new_block.append("\n")
 
     for section_name, _kind_id in TYPE_SECTION_ORDER:
         items = sections.get(section_name, [])
         if not items:
             continue
-        new_block.append(f"#### {section_name}\n")
+        new_block.append(f"### {section_name}\n")
         for item in items:
             new_block.append(f"- ``{item}``\n")
         new_block.append("\n")
@@ -125,7 +160,7 @@ def main() -> int:
         return 2
 
     original_lines = LANDING_PAGE.read_text(encoding="utf-8").splitlines(keepends=True)
-    updated_lines = _rewrite_types_section(original_lines, heading=PREFERRED_SECTION_HEADING, sections=sections)
+    updated_lines = _rewrite_types_section(original_lines, sections=sections)
     updated_text = "".join(updated_lines)
     original_text = "".join(original_lines)
 

@@ -3,15 +3,20 @@
 ## Overview
 - Baseline WebKit revision: [`WebKit-7623.1.14.10.9`](https://github.com/WebKit/WebKit/tree/WebKit-7623.1.14.10.9)
 このモジュールは WebKit の UIProcess で使われる Objective-C API（公開/非公開を含む）の調査メモです。
-Swift-DocC のシンボルページとして読めるように、WebKit のソース（`Source/WebKit/UIProcess/`）から合成した symbol graph を同梱しています。
-各型のページでは Objective-C category 名（例: `WKPrivate`）ごとにメンバーを整理し、個別ページで挙動/既定値/参照（WebKit のパス）を追跡します。
+Swift-DocC のシンボルページとして読めるように、WebKit のソースから合成した symbol graph を同梱しています。
+
+## Scope
+- UIProcess の Cocoa API を対象
+- 参照元: `Source/WebKit/UIProcess/` と `Source/WebKit/UIProcess/API/Cocoa/`
+
+## How to Read
+- 各型のページは Objective-C category 名（例: `WKPrivate`）ごとにメンバーを整理
+- 個別ページで挙動/既定値/参照（WebKit のパス）を追跡
 
 ## Topics
-
-### Types
 WebKit UIProcess に登場する型（class/protocol など）の一覧。
 
-#### Classes
+### Classes
 - ``WKInternalsNotes/_WKActivatedElementInfo``
 - ``WKInternalsNotes/_WKAppHighlight``
 - ``WKInternalsNotes/_WKApplicationManifest``
@@ -168,7 +173,6 @@ WebKit UIProcess に登場する型（class/protocol など）の一覧。
 - ``WKInternalsNotes/WKMultipleSelectPicker``
 - ``WKInternalsNotes/WKNavigation``
 - ``WKInternalsNotes/WKNavigationAction``
-- ``WKInternalsNotes/WKNavigationDelegateAdapter``
 - ``WKInternalsNotes/WKNavigationResponse``
 - ``WKInternalsNotes/WKNFReaderSessionDelegate``
 - ``WKInternalsNotes/WKNumberPadView``
@@ -229,9 +233,7 @@ WebKit UIProcess に登場する型（class/protocol など）の一覧。
 - ``WKInternalsNotes/WKTimePickerViewController``
 - ``WKInternalsNotes/WKTouchActionGestureRecognizer``
 - ``WKInternalsNotes/WKTouchEventsGestureRecognizer``
-- ``WKInternalsNotes/WKUIDelegateAdapter``
 - ``WKInternalsNotes/WKUIScrollEdgeEffect``
-- ``WKInternalsNotes/WKURLSchemeHandlerAdapter``
 - ``WKInternalsNotes/WKUserContentController``
 - ``WKInternalsNotes/WKUserScript``
 - ``WKInternalsNotes/WKVideoView``
@@ -257,12 +259,7 @@ WebKit UIProcess に登場する型（class/protocol など）の一覧。
 - ``WKInternalsNotes/WKWebViewContentProviderRegistry``
 - ``WKInternalsNotes/WKWindowFeatures``
 
-#### Structs
-- ``WKInternalsNotes/DefaultDialogPresenting``
-- ``WKInternalsNotes/DefaultNavigationDecider``
-- ``WKInternalsNotes/UncheckedSendableKeyPathBox``
-
-#### Enums
+### Enumerations
 - ``WKInternalsNotes/_WKActivatedElementType``
 - ``WKInternalsNotes/_WKApplicationManifestDirection``
 - ``WKInternalsNotes/_WKApplicationManifestDisplayMode``
@@ -358,7 +355,6 @@ WebKit UIProcess に登場する型（class/protocol など）の一覧。
 - ``WKInternalsNotes/_WKXRSessionEndReason``
 - ``WKInternalsNotes/_WKXRSessionFeatureFlags``
 - ``WKInternalsNotes/_WKXRSessionMode``
-- ``WKInternalsNotes/ObjCBlockConversion``
 - ``WKInternalsNotes/WKActionSheetPresentationStyle``
 - ``WKInternalsNotes/WKBackgroundFetchChange``
 - ``WKInternalsNotes/WKDisplayCapturePermissionDecision``
@@ -377,7 +373,7 @@ WebKit UIProcess に登場する型（class/protocol など）の一覧。
 - ``WKInternalsNotes/WKTextExtractionEventListenerTypes``
 - ``WKInternalsNotes/WKWindowProxyProperty``
 
-#### Protocols
+### Protocols
 - ``WKInternalsNotes/_WKAppHighlightDelegate``
 - ``WKInternalsNotes/_WKAutomationDelegate``
 - ``WKInternalsNotes/_WKAutomationSessionDelegate``
