@@ -94,6 +94,32 @@ OBJC_TO_SWIFT_BRIDGED_TYPE_NAMES: dict[str, str] = {
     "NSUUID": "UUID",
 }
 
+OBJC_BLOCK_TYPEALIASES: dict[str, list[str]] = {
+    "dispatch_block_t": [],
+    "NSAttributedStringCompletionHandler": [
+        "NSAttributedString * _Nullable",
+        "NSDictionary<NSAttributedStringDocumentAttributeKey, id> * _Nullable",
+        "NSError * _Nullable",
+    ],
+}
+
+C_TYPE_SWIFT_NAME_MAP: dict[str, str] = {
+    "size_t": "Int",
+    "pid_t": "Int32",
+    "int8_t": "Int8",
+    "int16_t": "Int16",
+    "int32_t": "Int32",
+    "int64_t": "Int64",
+    "uint8_t": "UInt8",
+    "uint16_t": "UInt16",
+    "uint32_t": "UInt32",
+    "uint64_t": "UInt64",
+}
+
+OBJC_PRESERVED_TYPE_NAMES: set[str] = {
+    "audit_token_t",
+}
+
 
 PLATFORM_DOMAIN_MAP: dict[str, str] = {
     "macos": "macOS",
@@ -361,6 +387,20 @@ def _objc_type_to_swift(objc_type: str) -> SwiftType:
     if not s:
         return SwiftType("Any")
 
+    s_no_qual = s
+    s_no_qual = re.sub(r"\b(_Nullable|_Nonnull|_Null_unspecified|nullable|nonnull|null_unspecified|__kindof|inout)\b", "", s_no_qual)
+    s_no_qual = re.sub(r"\b(__unsafe_unretained|__strong|__weak|__autoreleasing)\b", "", s_no_qual)
+    s_no_qual = re.sub(r"\b(const|volatile)\b", "", s_no_qual)
+    s_no_qual = re.sub(r"\s+", " ", s_no_qual).strip()
+
+    alias_params = OBJC_BLOCK_TYPEALIASES.get(s_no_qual)
+    if alias_params is not None:
+        swift_params = [_objc_type_to_swift(param).name for param in alias_params]
+        return SwiftType(f"({', '.join(swift_params)}) -> Void")
+
+    if re.match(r"^void\s*\*$", s_no_qual):
+        return SwiftType("UnsafeMutableRawPointer")
+
     # Translate WebKit's C++ CompletionHandler into a Swift closure when possible.
     # Example:
     #   CompletionHandler<void(BOOL, NSURL *)>&& -> (Bool, URL) -> Void
@@ -407,10 +447,10 @@ def _objc_type_to_swift(objc_type: str) -> SwiftType:
         return SwiftType("Any")
 
     # C++ types leaked into Objective-C++ headers (.h/.mm) are common in UIProcess internals.
-    # There is no meaningful Swift spelling for `WebKit::Foo` / `WebCore::Foo` / etc, so prefer
-    # an opaque type over a misleading identifier like "WebKit".
-    if "::" in s:
-        return SwiftType("Any")
+    # Keep the original spelling so DocC shows the internal type names.
+    if "::" in s_no_qual:
+        cpp_spelling = re.sub(r"\s*[\*&]+$", "", s_no_qual).strip()
+        return SwiftType(cpp_spelling)
 
     # Preserve protocol-qualified Objective-C "id<...>" as a protocol type rather than "Any".
     #
@@ -418,12 +458,6 @@ def _objc_type_to_swift(objc_type: str) -> SwiftType:
     #   - id<NSSecureCoding> -> NSSecureCoding
     #   - id<WKURLSchemeHandler> -> WKURLSchemeHandler
     #   - id<NSSecureCoding, NSCopying> -> NSSecureCoding & NSCopying
-    s_no_qual = s
-    s_no_qual = re.sub(r"\b(_Nullable|_Nonnull|nullable|nonnull)\b", "", s_no_qual)
-    s_no_qual = re.sub(r"\b(__unsafe_unretained|__strong|__weak|__autoreleasing)\b", "", s_no_qual)
-    s_no_qual = re.sub(r"\b(const|volatile)\b", "", s_no_qual)
-    s_no_qual = re.sub(r"\s+", " ", s_no_qual).strip()
-
     m_id_proto = re.match(r"^id\s*<\s*(.+?)\s*>$", s_no_qual)
     if m_id_proto:
         raw = m_id_proto.group(1).strip()
@@ -471,10 +505,7 @@ def _objc_type_to_swift(objc_type: str) -> SwiftType:
 
                     return SwiftType(f"({', '.join(swift_params)}) -> {swift_return}")
 
-    normalized = s
-    normalized = re.sub(r"\b(_Nullable|_Nonnull|nullable|nonnull)\b", "", normalized)
-    normalized = re.sub(r"\b(__unsafe_unretained|__strong|__weak|__autoreleasing)\b", "", normalized)
-    normalized = re.sub(r"\b(const|volatile)\b", "", normalized)
+    normalized = s_no_qual
     normalized = normalized.replace("*", " ")
     normalized = re.sub(r"<[^>]+>", " ", normalized)
     normalized = re.sub(r"\s+", " ", normalized).strip()
@@ -487,6 +518,12 @@ def _objc_type_to_swift(objc_type: str) -> SwiftType:
         return SwiftType("AnyClass")
     if normalized in {"SEL"}:
         return SwiftType("Selector")
+
+    mapped = C_TYPE_SWIFT_NAME_MAP.get(normalized)
+    if mapped is not None:
+        return SwiftType(mapped, SWIFT_PRECISE_TYPE_IDS.get(mapped))
+    if normalized in OBJC_PRESERVED_TYPE_NAMES:
+        return SwiftType(normalized)
 
     if re.search(r"\bBOOL\b|\bbool\b", normalized):
         return SwiftType("Bool", SWIFT_PRECISE_TYPE_IDS["Bool"])
@@ -564,6 +601,31 @@ class MethodSig:
     path_component: str
     return_type: SwiftType | None
     params: list[tuple[str, str, SwiftType]]  # (external_label, internal_name, type)
+    is_init: bool = False
+
+
+def _swift_lowercase_identifier(text: str) -> str:
+    if not text:
+        return text
+    for i, ch in enumerate(text):
+        if ch.islower():
+            if i == 0:
+                return text
+            if i == 1:
+                return text[0].lower() + text[1:]
+            return text[: i - 1].lower() + text[i - 1 :]
+    return text.lower()
+
+
+def _swiftify_init_label(label: str) -> str:
+    if not label.startswith("init"):
+        return label
+    tail = label[len("init") :]
+    if tail.startswith("With"):
+        tail = tail[len("With") :]
+    if not tail:
+        return "_"
+    return _swift_lowercase_identifier(tail)
 
 
 def _parse_method_symbol(objc_decl: str) -> MethodSig:
@@ -591,6 +653,9 @@ def _parse_method_symbol(objc_decl: str) -> MethodSig:
     params: list[tuple[str, str, SwiftType]] = []
     if ":" not in rest:
         base_name = rest.split()[0]
+        is_init = kind == "instance" and base_name.startswith("init")
+        if is_init:
+            return MethodSig(kind, "init", "init()", None, params, is_init=True)
         return MethodSig(kind, base_name, f"{base_name}()", return_type, params)
 
     segments: list[tuple[str, str, SwiftType]] = []
@@ -638,13 +703,19 @@ def _parse_method_symbol(objc_decl: str) -> MethodSig:
         return MethodSig(kind, base_name, f"{base_name}()", return_type, params)
 
     base_name = segments[0][0]
+    is_init = kind == "instance" and base_name.startswith("init")
+    if is_init:
+        base_name = "init"
     for idx, (label, internal_name, swift_type) in enumerate(segments):
-        external_label = "_" if idx == 0 else label
+        if is_init:
+            external_label = _swiftify_init_label(label) if idx == 0 else label
+        else:
+            external_label = "_" if idx == 0 else label
         params.append((external_label, internal_name, swift_type))
 
     labels = [p[0] + ":" for p in params]
     path_component = f"{base_name}({''.join(labels)})"
-    return MethodSig(kind, base_name, path_component, return_type, params)
+    return MethodSig(kind, base_name, path_component, None if is_init else return_type, params, is_init=is_init)
 
 
 def _parse_enum_symbol(objc_decl: str) -> tuple[str, list[str]]:
@@ -921,6 +992,64 @@ def _make_property_symbol(container: str, name: str, swift_type: SwiftType, *, a
 
 
 def _make_method_symbol(container: str, sig: MethodSig, *, availability: list[dict[str, Any]]) -> dict[str, Any]:
+    if sig.is_init:
+        decl: list[dict[str, Any]] = []
+        decl.append(_fragment("keyword", "init"))
+        decl.append(_fragment("text", "("))
+
+        for idx, (external, internal, swift_type) in enumerate(sig.params):
+            if idx > 0:
+                decl.append(_fragment("text", ", "))
+            if external == "_" or external != internal:
+                decl.append(_fragment("externalParam", external))
+                decl.append(_fragment("text", " "))
+                decl.append(_fragment("internalParam", internal))
+            else:
+                decl.append(_fragment("externalParam", external))
+            decl.append(_fragment("text", ": "))
+            decl.append(_type_fragment(swift_type))
+
+        decl.append(_fragment("text", ")"))
+
+        sub: list[dict[str, Any]] = []
+        sub.append(_fragment("keyword", "init"))
+        sub.append(_fragment("text", "("))
+        for idx, (external, _internal, swift_type) in enumerate(sig.params):
+            if idx > 0:
+                sub.append(_fragment("text", ", "))
+            if idx == 0 and external == "_":
+                sub.append(_type_fragment(swift_type))
+            else:
+                sub.append(_fragment("externalParam", external))
+                sub.append(_fragment("text", ": "))
+                sub.append(_type_fragment(swift_type))
+        sub.append(_fragment("text", ")"))
+
+        symbol: dict[str, Any] = {
+            "accessLevel": "public",
+            "kind": {"identifier": "swift.init", "displayName": "Initializer"},
+            "identifier": {"precise": _make_precise_id(container, sig.path_component), "interfaceLanguage": "swift"},
+            "pathComponents": [container, sig.path_component],
+            "names": {"title": sig.path_component, "subHeading": sub},
+            "declarationFragments": decl,
+            "functionSignature": {
+                "parameters": [
+                    {
+                        "name": internal,
+                        "declarationFragments": [
+                            _fragment("identifier", internal),
+                            _fragment("text", ": "),
+                            _type_fragment(swift_type),
+                        ],
+                    }
+                    for (_external, internal, swift_type) in sig.params
+                ],
+            },
+        }
+        if availability:
+            symbol["availability"] = availability
+        return symbol
+
     kind_id = "swift.method" if sig.kind == "instance" else "swift.type.method"
     kind_display = "Instance Method" if sig.kind == "instance" else "Type Method"
 
